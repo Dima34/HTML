@@ -1,0 +1,178 @@
+.cl{
+width: 150px;
+height: 50px;
+background-color: bisque;
+border: 1px solid black;
+text-align: center;
+line-height: 50px;
+float: right;
+margin: 0px;
+
+}
+#test{
+position: relative;
+top: 100px;
+}
+.al{
+    
+width: 150px;
+height: 50px;
+background-color: bisque;
+border: 1px solid black;
+border-radius: 00px 20px 20px 00px;
+text-align: center;
+line-height: 50px;
+float: right;
+margin: 0px;    
+}
+.ol{
+width: 150px;
+height: 50px;
+background-color: bisque;
+border: 1px solid black;
+border-radius: 20px 00px 00px 20px;
+text-align: center;
+line-height: 50px;
+float: right;
+margin: 0px; 
+}
+
+
+
+.cls{
+width: 150px;
+height: 50px;
+background-color: bisque;
+border: 1px solid black;
+text-align: center;
+line-height: 50px;
+float: right;
+margin: 0px;
+
+}
+#tests{
+position: relative;
+top: 150px;
+}
+.als{
+color: black;
+width: 150px;
+height: 50px;
+background-color: bisque;
+border: 1px solid black;
+border-radius: 00px 20px 20px 00px;
+text-align: center;
+line-height: 50px;
+float: right;
+margin: 0px;    
+}
+.ols{
+width: 150px;
+height: 50px;
+background-color: bisque;
+border: 1px solid black;
+border-radius: 20px 00px 00px 20px;
+text-align: center;
+line-height: 50px;
+float: right;
+margin: 0px; 
+}
+
+
+img{
+
+position: relative;
+
+border: 1px solid orange;
+border: 40px solid white;
+border-radius: 5px;
+}
+
+.ap{
+position: relative;
+float: left;
+font-size: 20px;
+
+}
+
+.as{
+position: relative;
+font-size: 20px;
+
+}
+.ass{
+position: absolute;
+top: 300px
+}
+
+.maina{
+position: relative;
+top: 1300px; 
+}
+.lk{
+position:relative;
+top: 100px;
+left:-10px;
+width: 300px;
+height:200px;
+border: 1px solid black;
+float: left;
+}
+
+.lm{
+position: relative;
+top: 100px;
+    
+}
+
+.qwer{
+width: 150px;
+height: 50px;
+background-color: bisque;
+border: 1px solid black;
+text-align: center;
+line-height: 50px;
+float: right;
+margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

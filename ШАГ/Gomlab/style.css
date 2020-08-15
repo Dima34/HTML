@@ -1,0 +1,304 @@
+.main{
+width: 1300px;
+height: 70px;
+position: absolute;
+top: 0px;
+left: 0px;
+border-bottom: 1px solid silver;
+}
+.logo{
+position: absolute;
+top: 16px;
+left: 140px;
+}
+.ul{
+line-height: 18px;
+position: relative;
+top: 3px;
+left: -35px
+}
+.div{
+font-family: monospace;
+font-size: 20px;
+width: 120px;
+height: 17px;
+text-align: center;
+float: left;
+position: relative;
+top: 10px;
+left: 300px;
+border-left: 1px solid silver;
+}
+.diva{
+font-family: monospace;
+font-size: 20px;
+width: 120px;
+height: 17px;
+text-align: center;
+float: left;
+position: relative;
+top: 10px;
+left: 300px;
+color: orange;
+}
+.divd{
+font-family: monospace;
+font-size: 20px;
+width: 135px;
+height: 17px;
+text-align: center;
+float: left;
+position: relative;
+top: 10px;
+left: 300px;
+border-left: 1px solid silver;
+}
+
+
+.signin{
+position: relative;
+width: 200px;
+top: 0px;
+left: 820px;
+line-height: 11px;
+font-size: 14px;
+font-family: monospace;
+color: #8B8989;
+}
+
+.signining{
+float: left;
+position: relative;
+width: 41px;
+height: 11px;
+border-right: 1px solid silver;
+}
+.register{
+float: left;
+width: 104px;
+text-align: center;
+}
+.russian{
+width: 130px;
+height: 26px;
+position: absolute;
+left: 1020px;
+border: 1px solid silver;
+border-radius: 20px;
+top: 25px
+}
+.a{
+position: absolute;
+left: 1027px;
+top: 31px;
+font-family: monospace;
+color: #8B8989;
+
+}
+.mainleft{
+position: absolute;
+width: 200px;
+height: 460px;
+border: 1px solid silver;
+top: 90px
+}
+
+.mainleftfirst{
+position: relative;
+width: 202px;
+height: 101px;
+left: -41px;
+top: -17px;
+background-color: #FF4500;
+text-align: center;
+line-height: 100px;
+color: white;
+font-weight: bolder;
+
+}
+.aqs{
+position: relative;
+width: 180px;
+height: 39px;
+left: -40px;
+top: -16px;
+line-height: 40px;
+border-bottom: 1px dotted silver;
+padding-left: 20px;
+
+}
+.ab{
+color: orange;
+}
+
+.maincenter{
+position: relative;
+width: 740px;
+height: 394px;
+top: 69px;
+left: 222px;
+background-color: #FF4500;
+color: white;
+
+}
+
+.GOMFirst {
+position: relative;
+width: 500px;
+text-align: center;
+left: -12px;
+top: 5px;
+}
+
+.GOM{
+position: relative;
+left: -168px
+}
+.as{
+position: relative;
+top: -20px;
+text-align: left;
+left: 40px;
+}
+.az{
+position: relative;
+text-align: left;
+left: 40px;
+top:-20px;
+font-size: 15px
+}
+
+.download{
+position: relative;
+height: 60px;
+text-align: center;
+line-height: 55px;
+width: 385px;
+left: 40px;
+border-radius: 8px;
+background-color: white;
+color: black;
+font-size: 25px;
+}
+.divcenterright{
+position: relative;
+top: -351px;
+left: 460px;
+width: 500px
+}
+.po{
+position: relative;
+top: -10px;
+font-size: 12px;
+}
+
+.center{
+position: relative;
+width: 740px;
+height: 900px;
+left: 214px;
+top: 500px;
+border: 1px solid black;
+}
+.centerleft{
+position: relative;
+width:290px;
+height: 902px;
+left: 80px;
+top: -20px
+}
+
+.centerright{
+position: absolute;
+top: -922px;
+width: 370px;
+left: 369px;
+height: 900px;
+border: 1px solid black;
+}
+.p{
+position: relative;
+top: -10px; 
+}
+.leftimages{
+position: relative;
+bottom: 402px;
+left: 215px;
+width: 80px;
+height: 902px;
+}
+
+.first{
+position: relative;
+top: 45px
+}
+.second{
+position: relative;     
+top: 85px
+}
+.third{
+position: relative;
+top:160px
+}
+.fourth{
+position: relative;
+top:273px
+}
+.five{
+position: relative;
+top: 408px
+}
+
+h4{
+position: relative;
+top: -20px
+}
+
+.centerright{
+position:relative;
+top: -1304px;
+width: 370px;
+left: 584px;
+height: 900px;
+border: 1px solid black;
+}
+
+.centerright1{
+position: relative;
+top: -2206px;
+width: 370px;
+height: 356px;
+left: 584px;
+color: 	dimgray ;
+border: 1px solid silver;
+}
+
+.set{
+position: relative;
+line-height: 25px;
+height: 35px;
+left: 20px;
+top:-5px
+}
+.set1{
+position: relative;
+left:20px;
+top:-15px
+}
+.set2{
+position: relative;
+top:-30px
+}
+
+.centerright3{
+
+}
+
+
+
+
+
+
+
+
+

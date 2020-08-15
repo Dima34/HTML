@@ -1,0 +1,20 @@
+Системные требования
+Минимальные системные требования
+Microsoft Windows 8.1 (32бит/64бит) , 8 (32бит/64бит) , 7 (32бит/64бит) , Vista (32бит/64бит), XP SP2 или выше
+Intel Pentium 4 или AMD Athlon 64 или эквивалентный
+Более 16 Мб свободной оперативной памяти
+Более 25 МБ свободного места на жестком диске
+Примечание
+Некоторые видео могут требовать новейшую версию DirectX или Windows Media Player.
+Рекомендованные настройки могут различаться между типами видео-файлов.
+Поддерживаемые форматы
+Форматы видео
+flv,mp4, mov, mpg, ts, avi, divx, asx, wmv, m4v, dat, ifo, vob, 3gp/3gp2, rm/rmvb, mkv, ogm. Дополнительные форматы могут быть воспроизведены с внешними кодеками.
+Форматы аудио
+mp3, .m4a, .aac, .ogg, .flac, .wav
+Форматы субтитров
+.smi, .srt, .rt, .sub (c IDX)
+форматы списка воспроизведения
+.asx, .pls
+Встроенные кодеки
+Vorbis, FLAC, ADPCM, XVID, DIV1, DIV2, DIV3, DIV4, DIV5, DIV6, DIVX, DX50, MP41, MP42, MP43, H263, AP41, MPG4, MP4S, M4S2, MP4V, BLZO, MJPG, RMP4, DXGM, H264, DVSD, THEO, VP8, VC1, MPEG1, MPEG2, VP6, FPS1, IV50, IV40, SVQ3, H265, TSCC, TSCC2, Cinepak, SVQ1, G2M4, LAGARITH, TRUEMOTION2, DVCP, DVPP, QTRLE, RPZA, PRORES, MSZH, Nellymoser

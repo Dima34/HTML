@@ -1,0 +1,52 @@
+.main{
+background-image: url(http://tutorial.promo.net.ua/images/js/setka3.png);
+background-position:top right;
+height: 300px;
+width: 300px
+    
+}
+.m,.s,.a{
+height: 100px;
+width: 100px;
+}
+.m {
+background: red;
+
+}
+.s {
+background: green;
+position: relative;
+Left:100px;
+
+}
+.a{
+background: gold;
+position: relative;
+left:200px;
+}
+
+
+
+.q,.w,.e{
+height: 100px;
+width: 100px;
+}
+.q {
+background: red;
+position:relative;
+top:90px;
+left:90px;
+
+}
+.w {
+background: green;
+position: relative;
+Left:100px;
+
+}
+.e{
+background: gold;
+position: absolute;
+left:116px;
+bottom:252px
+}
