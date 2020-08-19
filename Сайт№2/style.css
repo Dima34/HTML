@@ -1,3 +1,36 @@
+/* ------------------------------------ */
+/* --------=======FONTS=======--------- */
+/* ------------------------------------ */
+@font-face {
+    font-family: Century_Gothic;
+    src: url(fonts/century_gothic.ttf);
+}
+@font-face {
+	font-family: 'Cicle_Fina';
+	src: url('fonts/Cicle Fina.eot');
+	src: local('☺'), url('fonts/Cicle Fina.woff') format('woff'), url('fonts/Cicle Fina.ttf') format('truetype'), url('fonts/Cicle Fina.svg') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Colaborate_Regular';
+	src: url('fonts/colaborate-regular_[allfont.ru].eot');
+	src: local('☺'), url('fonts/colaborate-regular_[allfont.ru].woff') format('woff'), url('fonts/colaborate-regular_[allfont.ru].ttf') format('truetype'), url('fonts/colaborate-regular_[allfont.ru].svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family:Helvetina_LT_Ultra_Compressed;
+    src: url(fonts/helvetica_lt_ultra_compressed.ttf);
+}
+@font-face {
+    font-family:Bebas;
+    src: url(fonts/bebas_regular.ttf);
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -37,26 +70,43 @@ body{
     display: flex;
     background-color: #faa61a;
     width: fit-content;
-    padding: 5px 0 5px 20px;
     float: right;
+    margin-top: 1px;
 }
 .search div{
+    position: relative;
     width: 30px;
-    height: 20px;
+    height: 26px;
     text-align: center;
     border-left: 1px solid white;
+    top: 3px;
+}
+.search div:nth-of-type(1) img{
+    position: relative;
+    top: -1px;
+}
+.search div:nth-of-type(2) img{
+    position: relative;
+    top: 1px;
+    right: 1px;
 }
 .search input[type = 'search']{
-    width: 225px;
-    height: 20px;
+    width: 224px;
+    height: 19px;
+    border: 0;
+    margin: 4px 0 6px 21px;
 }
 .search input[type = 'submit']{
+    position:relative;
+    top:1px;
+    font-family: "Century_Gothic";
+    font-size:14px;
     width: fit-content;
     height: 20px;
     color: black;
     background-color: #faa61a;
     border: none;
-    padding: 0 10px;
+    padding: 4px 22px 6px 10px;
 }
 .bottom{
     display: flex;
@@ -64,7 +114,7 @@ body{
     justify-content: space-between;
 }
 .bottom img{
-    padding-left: 1px;
+    padding-left: 2px;
     padding-top: 11px;
     width: fit-content;
     height: fit-content;
@@ -72,11 +122,14 @@ body{
 .bottom .nav{
     display: flex;
     align-items: flex-end;
+    margin-bottom: 5px;
 }
 .nav a{
+    font-family: "Cicle_Fina";
     position: relative;
     color: black;
     margin-left: 30px;
+    font-size:15px;
 }
 .nav a:hover{
     color: #faa61a;
@@ -87,7 +140,7 @@ body{
     content: url(images/arrow.png);
     height: fit-content;
     left: -17px;
-    bottom:3px;
+    bottom:2px;
 }
 
 /* ------------------------------------ */
@@ -96,40 +149,48 @@ body{
 .media{
     width: 100%;
     background-color: #faa61a;
-    margin-top: 44px;
-    padding-bottom: 44px;
+    margin-top: 42px;
+    padding-bottom: 35px;
 }
 .media h1{
-    font-size:  66px;
+    font-family:  "Helvetina_LT_Ultra_Compressed";
+    font-size:  124px;
+    font-weight: 500;
     text-align: center;
-    padding: 15px 0 15px 0;
+    padding-top: 2px;
 }
 .presentation{
+    position: relative;
+    top:-3px;
     display: flex;
     width:974px;
     margin: 0 auto;
 }
 .presentation .left{
     width:  660px;
-    height: 365px;
+    height: 364px;
     background-color: grey;
 }
 .presentation .right{
     display: flex;
     flex-direction: column;
     width:280px;
-    height: 365px;
-    margin-left: 40px;
+    height: 364px;
+    margin-left: 27px;
     background-color: white;
 }
 .presentation h2{
-    font-size: 20px;
+    font-family: "Bebas";
+    font-weight: 400;
+    font-size: 25px;
     margin-left: 13px;
-    margin-top: 2px;
+    margin-bottom: 1px;
 }
 .presentation p{
+    font-family: "Colaborate";
     font-size: 16px;
-    margin:  22px 15px 16px 15px;
+    line-height: 22px;
+    margin:  15px 15px 24px 15px;
     height: 125px;
 }
 .btn{
@@ -140,7 +201,9 @@ body{
 }
 .btn_pos1{
     align-self: flex-end;
-    right: 5px;
+    right: 6px;
+    bottom: 6px;
+    font-family: serif;
 }
 .btn a{
     display:flex;
@@ -149,16 +212,17 @@ body{
     align-items: center;
 }
 .btn p{
-   margin:0;
-   padding: 0 5px 0 6px;
-   height: fit-content;
-   width: fit-content;
-   font-size:11px;
-   text-align: center;
+    margin:0;
+    padding: 0 5px 0 5px;
+    height: fit-content;
+    width: fit-content;
+    font-size: 12px;
+    text-align: center;
+    font-family: sans-serif;
 }
 .btn img{
     height: 10px;
-    width: 12px;
+    width: 13px;
     background-color: #faa61a;
     padding: 6.5px 7px;
 }
@@ -177,51 +241,75 @@ body{
 /* -------=======SERVICES=======------- */
 /* ------------------------------------ */
 .info{
-    margin: 35px 0 0 0;
+    margin: 15px 0 0 0;
     display: grid;
-    grid-template-columns: 27.3% 40.5% 32.2%;
+    grid-template-columns: 27.6% 40.2% 32.2%;
 }
 
 .services, .know, .contact{
     position: relative;
     min-height: 288px;
-    padding: 6px 0 0 40px;
+    padding: 0px 0 0 42px;
 }
 
+
 .know{
+    padding: 0px 0 0 40px;
     display: flex;
     flex-direction: column;
+}
+.contact{
+    padding: 0px 0 0 47px;
     border-left: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
+}
+.contact h2{
+    margin-bottom: 18px !important;
 }
 span{
     color: #faa61a;
     width: fit-content;
 }
+.services{
+    border-right: 1px solid #cccccc;
+}
 .services li{
-    margin-bottom: 20px;
+    position: relative;
+    margin-bottom: 15px;
     margin-left:4px;
-    font-size: 14px;
+    font-size: 18px;
     height: fit-content;
 }
 .services li::before{
-    content: url(images/arrow-2.png);
+    position: relative;
+    background-image: url(images/arrow-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9px;
+    content:"";
+    top:3px;
+    display: inline-block;
+    width: 10px; 
+    height: 10px;
     background-color: #faa61a;
-    padding:1px 6px;
     margin-right: 13px;
+    padding: 3.5px 5.5px;
 }
 .info h2{
-    margin-bottom: 22px;
+    margin-bottom: 17px;
 }
 .know div:nth-of-type(1){
     width:345px;
     margin-bottom: 85px;
 }
+.know div:nth-of-type(1) p{
+    line-height: 24px;
+    margin-left: 3px;
+}
 .btn_pos2{
     display: block;
     position: absolute;
-    bottom:21px;
-    right:41px;
+    bottom:23px;
+    right:40px;
     align-self: flex-end;
 }
 
@@ -234,8 +322,8 @@ span{
     flex-direction: column;
 }
 .adress__list .image{
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
 }
 .adress__list .image img{
     margin: auto;
@@ -244,13 +332,23 @@ span{
 .adress__list p{
     background-color: black;
     color:white;
-    margin-bottom: 15px;
-    margin-left: 17px;
+    margin: 2px 0 18px 16px;
     width:fit-content;
-    padding: 0 15px 0 2px;
+    padding: 0 15px 1px 2px;
+    font-size:18px;
 }
+.adress__list div:nth-of-type(3) p{
+    margin-top: 4px;
+}
+.adress__list div:nth-of-type(3){
+    margin-top: 2px;
+}
+.adress__list div:nth-of-type(4) div:nth-child(2){
+    margin-top: 7px;
+}
+
 .adress__list div:nth-child(4) p{
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 .adress__list div:nth-child(3) p, .adress__list div:nth-child(4) p:last-child{
     padding-right: 50px;
@@ -259,12 +357,23 @@ span{
     padding-right: 3px;
 }
 
+.services li, .know div:nth-of-type(1) p, .adress__list p{
+    font-family: "Cicle_Fina";
+}
+.know h2, .contact h2, .services h2{
+    font-family: "Bebas";
+}
+.know h2 span, .contact h2 span, .services h2 span{
+    font-family: "Bebas";
+    font-weight: 200;
+}
+
 /* INFORMATION BORDER */
 .b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9, .b10, .b11, .b12{
     display: flex;
 }
 .b1, .b2, .b3{
-    height: 20px;
+    height: 21px;
 }
 .b4, .b5, .b6{
     height: 19px;
@@ -280,8 +389,8 @@ span{
 }
 
 .b1 div:nth-child(2) div:nth-child(2), .b2 div:nth-child(3) div:nth-child(2){
-    width: 21px;
-    height: 10px;
+    width: 22px;
+    height: 11px;
     border-bottom: 2px solid #faa61a;
     border-right: 2px solid #faa61a;
     box-sizing: border-box;
@@ -291,11 +400,17 @@ span{
     border-bottom: none;
     height: 10px;
 }
-.b2 div:nth-child(1) div:nth-child(1),.b2 div:nth-child(3) div:nth-child(1), .b3 div:nth-child(1) div:nth-child(1){
+.b2 div:nth-child(3) div:nth-child(1){
     height: 10px;
 }
-.b2 div:nth-child(1) div:nth-child(2), .b3 div:nth-child(1) div:nth-child(2){
+.b2 div:nth-child(1) div:nth-child(1), .b3 div:nth-child(1) div:nth-child(1){
     height: 10px;
+}
+.b3 div:nth-child(1) div:nth-child(1){
+    border-left: 1px solid #cccccc;
+}
+.b2 div:nth-child(1) div:nth-child(2), .b3 div:nth-child(1) div:nth-child(2){
+    height: 11px;
     border-left: 2px solid #faa61a;
     width: 8px;
     border-bottom: 2px solid #faa61a;
@@ -304,7 +419,7 @@ span{
 
 .b4 div:nth-child(2) div, .b5 div:nth-child(3) div{
     box-sizing: border-box;
-    width: 21px;
+    width: 22px;
     height: 19px;
     border-top: 2px solid #faa61a;
     border-right: 2px solid #faa61a;
@@ -320,26 +435,27 @@ span{
 
 .b7 div:nth-child(2) div,  .b8 div:nth-child(3) div{
     box-sizing: border-box;
-    width: 21px;
-    height: 19px;
+    width: 22px;
+    height: 20px;
     border-bottom: 2px solid #faa61a;
     border-right: 2px solid #faa61a;
 }
 .b8 div:nth-child(1) div ,.b9 div:nth-child(1) div{
     box-sizing: border-box;
     width: 8px;
-    height: 19px;
+    height: 20px;
     border-bottom: 2px solid #faa61a;
     border-left: 2px solid #faa61a;
 }
 
-.b10 div:nth-child(1),.b11 div:nth-child(2), .b12 div:nth-child(2){
-    border-top: 1px solid #cccccc;
-    box-sizing: border-box;
+.bottom_line{
+    height: 19px !important;
+    border-bottom: 1px solid #cccccc;
 }
+
 .b10 div:nth-child(2) div:nth-child(1),.b11 div:nth-child(3) div:nth-child(1) {
-    width: 21px;
-    height: 10px;
+    width: 22px;
+    height: 11px;
     border-top: 2px solid #faa61a;
     border-right: 2px solid #faa61a;
     box-sizing: border-box;
@@ -347,12 +463,12 @@ span{
 }
 .b10 div:nth-child(2) div:nth-child(2),.b11 div:nth-child(3) div:nth-child(2){
     border-right: 1px solid #cccccc;
-    height: 10px;
+    height: 14px;
     border-bottom: none;
     border-top: none;
 }
 .b11 div:nth-child(1) div:nth-child(1),.b12 div:nth-child(1) div:nth-child(1){
-    height: 10px;
+    height: 11px;
     border-left: 2px solid #faa61a;
     width: 8px;
     border-top: 2px solid #faa61a;
@@ -405,6 +521,7 @@ span{
     
 }
 .footer__right{
+    font-family: "Century_Gothic";
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -465,6 +582,7 @@ span{
     .presentation .right p{
         height: fit-content;
     }
+    
     .presentation .right h2{
         width: fit-content;
         margin: 10px auto;
