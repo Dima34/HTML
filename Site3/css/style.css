@@ -458,6 +458,9 @@ p, h1, h2, h3, figcaption, input{
   color: white;
   background:#1B7DFF;
   border: none;
+  box-sizing: border-box;
+  height: 58px;
+  width: 171px
 }
 .search-form__submit:hover,.search-form__submit:focus,.search-form__submit:active{
    color: #1B7DFF;
@@ -625,6 +628,9 @@ p, h1, h2, h3, figcaption, input{
    height:100%;
    z-index: 4;
 }
+.places__view-all_mobile{
+   display: none;
+}
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -640,7 +646,7 @@ p, h1, h2, h3, figcaption, input{
 .tours__tour{
    display: grid;
    grid-template-columns: repeat(2,1fr);
-   column-gap: 0 108px;
+   column-gap: 108px;
    align-items: center;
    margin-bottom: 77px;
 }
@@ -687,13 +693,14 @@ p, h1, h2, h3, figcaption, input{
 }
 .top__cards{
    display:grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat(6, 1fr);
    column-gap: 57px;
    row-gap: 59px;
 }
 .top__card{
    display: flex;
    flex-direction: column;
+   grid-column: span 2;
 }
 .top__card-pic{
    position: relative;
@@ -738,7 +745,6 @@ p, h1, h2, h3, figcaption, input{
    font-size: 16px;
    line-height: 24px;
    margin-bottom: 31px;
-   max-height: 110px;
    text-overflow: ellipsis;
    overflow: hidden;
 }
@@ -838,6 +844,93 @@ p, h1, h2, h3, figcaption, input{
 /* ------------------------------------ */
 /* ------------------------------------ */
 
+
+
+@media screen and (max-width: 1015px){
+   /* ------------------------------------ */
+   /* -------========INTRO========-------- */
+   /* ------------------------------------ */
+   .search-form__field{
+      margin-bottom:30px;
+   }
+
+   /* ------------------------------------ */
+   /* ------========BENEFITS========------ */
+   /* ------------------------------------ */
+   .benefits__cards{
+      padding: 0 15px;
+      column-gap: 35px;
+   }
+   .benefits__title{
+      padding: 45px 15px;
+   }
+   .benefits__wrapper{
+      box-shadow: none;
+   }
+   .benefits__card{
+      margin-bottom: 50px;
+   }
+   /* ------------------------------------ */
+   /* -------========PLACES========------- */
+   /* ------------------------------------ */
+   .places__card_size_lg, .places__card_size_s{
+      grid-column: span 6;
+   }
+   /* ------------------------------------ */
+   /* ------=========TOURS=========------- */
+   /* ------------------------------------ */
+   .tours__tour{
+      column-gap: 35px;
+   }
+   .tour__title{
+      margin-bottom: 15px;
+   }
+   .tour__desc{
+      margin-bottom:15px;
+      padding-left:10px;
+   }
+   .tour__info{
+      padding-left: 0;
+   }
+   .tour__more{
+      padding-left: 10px;
+   }
+   /* ------------------------------------ */
+   /* ------=======TOP PLACES=======------ */
+   /* ------------------------------------ */
+   .top__cards{
+      column-gap:30px;
+      row-gap: 50px;
+   }
+   .top__card{
+      grid-column: span 3;
+   }
+   /* ------------------------------------ */
+   /* -------========FOOTER========------- */
+   /* ------------------------------------ */
+
+   .footer{
+      padding: 60px 0;;
+   }
+   .footer__logo{
+      width: 40%;
+   }
+   .footer__nav{
+      width:60%;
+   }
+}
+
+@media screen and (max-width: 835px){
+   /* ------------------------------------ */
+   /* -------========INTRO========-------- */
+   /* ------------------------------------ */
+
+   .search-form__submit{
+      position: relative;
+      bottom: 10px;
+   }
+}
+
 @media screen and (max-width: 767px){
    /* ------------------------------------ */
    /* -------========HEADER========------- */
@@ -883,7 +976,7 @@ p, h1, h2, h3, figcaption, input{
       width:40px;
       height: 40px;
       position: absolute;
-      top:56px;
+      top:15px;
       right:15px;
       z-index: 11;
       display: flex;
@@ -902,6 +995,75 @@ p, h1, h2, h3, figcaption, input{
    .header__nav-close-line-second{
       transform: rotate(-45deg);
    }
+   /* ------------------------------------ */
+   /* -------=======BENEFITS=======------- */
+   /* ------------------------------------ */
+   .benefits{
+      margin-bottom: 50px;
+   }
+}
+@media screen and (max-width:647px){
+   /* ------------------------------------ */
+   /* -------========PLACES========------- */
+   /* ------------------------------------ */
+   .places{
+      margin-bottom: 60px;
+   }
+   .places__caption{
+      margin-bottom: 35px;
+   }
+   .places__title{
+      width: fit-content;
+      margin: 0 auto;
+   }
+   .section-title::after{
+      position: relative;
+      margin: 10px auto 0 auto;
+      width: 70%;
+   }
+   .places__view-all{
+      display: none;
+   }
+   .places__card{
+      border-radius: 10px 10px 10px 10px;
+   }
+   .places__view-all-btn-block_mobile{
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      margin-top: 10px;
+   }
+   .places__view-all_mobile{
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      background:#006DFE;
+      padding: 15px 32px;
+      white-space: nowrap;
+      border-radius:5px;
+      width: 100%;
+      box-sizing: border-box;
+   }
 }
 
+@media screen and (max-width:579px){
+   /* ------------------------------------ */
+   /* -------=======BENEFITS=======------- */
+   /* ------------------------------------ */
+   .benefits__title{
+      text-align: center;
+   }
+   .benefits__card{
+      grid-column: span 3;
+      text-align: center;
+   }
+   .benefits__card-pic{
+      margin: 0 auto 33px auto;
+   }
+   .benefits__card-desc{
+      max-width: 300px;
+      margin: 0 auto 39px auto;
+   }
 
+   
+}
