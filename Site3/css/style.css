@@ -639,6 +639,9 @@ p, h1, h2, h3, figcaption, input{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+.tours__tour_mobile{
+   display:none;
+}
 
 .tours{
    margin-bottom: 139px;
@@ -650,6 +653,7 @@ p, h1, h2, h3, figcaption, input{
    align-items: center;
    margin-bottom: 77px;
 }
+
 .tour__title{
    font-size: 30px;
    line-height: 40px;
@@ -726,6 +730,7 @@ p, h1, h2, h3, figcaption, input{
    box-sizing: border-box;
 }
 
+
 .top__card-likes,.top__card-comments{
    font-weight: 400;
    font-size: 16px;
@@ -735,7 +740,7 @@ p, h1, h2, h3, figcaption, input{
 .top__card-likes{
    padding-right: 20px;
    background: url(../images/svg/heart-ico.svg) no-repeat right;
-   margin-right: 14px;
+   margin: 0 14px 0 15px;
 }
 .top__card-comments{
    padding-right: 23px;
@@ -976,7 +981,7 @@ p, h1, h2, h3, figcaption, input{
       width:40px;
       height: 40px;
       position: absolute;
-      top:15px;
+      top: 56px;
       right:15px;
       z-index: 11;
       display: flex;
@@ -1007,7 +1012,7 @@ p, h1, h2, h3, figcaption, input{
    /* -------========PLACES========------- */
    /* ------------------------------------ */
    .places{
-      margin-bottom: 60px;
+      margin-bottom: 100px;
    }
    .places__caption{
       margin-bottom: 35px;
@@ -1044,6 +1049,50 @@ p, h1, h2, h3, figcaption, input{
       width: 100%;
       box-sizing: border-box;
    }
+   /* ------------------------------------ */
+   /* -------========TOURS========-------- */
+   /* ------------------------------------ */
+   .tours{
+      margin-bottom:100px;
+   }
+   .tours__tour{
+      display: none;
+   }
+   .tours__tour_mobile{
+      display: block;
+      width: 100%;
+   }
+   .tour__title_mobile{
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 25px;
+   }
+   .tour__thumb_mobile{
+      border-radius: 15px;
+   }
+   .tour__desc_mobile{
+      font-size: 16px;
+      line-height: 24px;
+      margin: 20px auto 15px auto;
+      max-width:450px;
+   }
+   .tour__more_mobile{
+      margin-bottom: 50px;
+      text-align: center;
+   }
+   .tour__more-btn_mobile{
+      text-decoration: none;
+      background: url(/Site3/images/svg/arrow-right-ico.svg) no-repeat 100% center;
+      font-size: 16px;
+      line-height: 24px;
+      color: #006DFE;
+      padding-right: 59px;
+   }
+   .tour__more_mobile-btn:hover, .tour__more:visited, .tour__more:focus{
+      opacity: .65;
+   }
 }
 
 @media screen and (max-width:579px){
@@ -1064,6 +1113,21 @@ p, h1, h2, h3, figcaption, input{
       max-width: 300px;
       margin: 0 auto 39px auto;
    }
-
-   
+   /* ------------------------------------ */
+   /* ---------========TOP========-------- */
+   /* ------------------------------------ */
+   .top-title{
+      text-align: center;
+   }
+   .top__card{
+      grid-column: span 6;
+   }
+   .top__card-pic{
+      width: fit-content;
+      margin: 0 auto 30px auto;
+      border-radius: 15px;
+   }
+   .top__card-likes{
+      margin-right: 7px;
+   }
 }
