@@ -36,14 +36,25 @@
 } ());
 
 (function(){
-    window_width = document.documentElement.clientWidth;
-    const topPlaces__card_imageBlock = document.querySelector(".top__card-pic")
+    const topPlaces__card_imageBlock = document.querySelector(".top__card-thumb")
     const topPlaces__card_desc = document.querySelectorAll(".top__card-desc")
     const topPlaces__card_more = document.querySelectorAll(".top__card-more")
-    if(window_width <=579){
-        console.log(topPlaces__card_imageBlock.clientWidth)
-        console.log(topPlaces__card_more)
-    }
+    
+    window_width = document.documentElement.clientWidth;
+    topPlaces__card_imageBlock_width = getComputedStyle(topPlaces__card_imageBlock).width;
+    console.log("Start width = ", topPlaces__card_imageBlock_width);
+    
+    window.addEventListener("resize", () => {
+        window_width = document.documentElement.clientWidth;
+        if(window_width <=579){
+            /*topPlaces__card_imageBlock_width = getComputedStyle(topPlaces__card_imageBlock).width;*/
+            topPlaces__card_imageBlock_width = topPlaces__card_imageBlock.clientWidth;
+            console.log(topPlaces__card_desc[1].style.width)
+        }
+    });
+    
+    
+    
     
  } ());
 
