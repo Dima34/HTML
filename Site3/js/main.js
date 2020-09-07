@@ -49,12 +49,8 @@
         if(window_width <=579){
             /*topPlaces__card_imageBlock_width = getComputedStyle(topPlaces__card_imageBlock).width;*/
             topPlaces__card_imageBlock_width = topPlaces__card_imageBlock.clientWidth;
-            console.log(topPlaces__card_desc[1].style.width)
+            console.log("Description width = ", topPlaces__card_desc[1].style.width)
         }
     });
-    
-    
-    
-    
  } ());
 
