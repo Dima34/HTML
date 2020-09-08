@@ -1093,9 +1093,38 @@ p, h1, h2, h3, figcaption, input{
    .tour__more_mobile-btn:hover, .tour__more:visited, .tour__more:focus{
       opacity: .65;
    }
+   /* ------------------------------------ */
+   /* ---------=======TOP========--------- */
+   /* ------------------------------------ */
+   .top__card-thumb{
+      border-radius: 15px;
+   }
+   .top__card-more{
+      border-radius: 5px;
+   }
+   .top__card-stats{
+      border-radius: 0 0 15px 15px;
+   }
 }
 
 @media screen and (max-width:579px){
+   .section-title{
+      text-align: center;
+   }
+
+   /* ------------------------------------ */
+   /* --------========INTRO========------- */
+   /* ------------------------------------ */
+   .search-form__field{
+      margin-right: 0;
+      width: 90%;
+   }
+   .search-form__submit{
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+
    /* ------------------------------------ */
    /* -------=======BENEFITS=======------- */
    /* ------------------------------------ */
@@ -1116,9 +1145,7 @@ p, h1, h2, h3, figcaption, input{
    /* ------------------------------------ */
    /* ---------========TOP========-------- */
    /* ------------------------------------ */
-   .top-title{
-      text-align: center;
-   }
+   
    .top__card{
       grid-column: span 6;
    }
@@ -1129,5 +1156,25 @@ p, h1, h2, h3, figcaption, input{
    }
    .top__card-likes{
       margin-right: 7px;
+   }
+   .top__card-desc{
+      margin: 0 auto;
+   }
+
+   /* ------------------------------------ */
+   /* --------=======FOOTER=======-------- */
+   /* ------------------------------------ */
+   .footer{
+      padding-top: 30px;
+   }
+   .footer__item{
+      flex-direction: column;
+   }
+   .footer__logo{
+      width: 40%;
+      margin-bottom: 15px;
+   }
+   .footer__nav{
+      width: 100%;
    }
 }
