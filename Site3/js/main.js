@@ -1,7 +1,7 @@
 (function () {
     const header = document.querySelector(".header");
     const header__nav_close = document.querySelector(".header__nav-close");
-    const header__nav_list = document.querySelector(".header__list");
+    const header__nav_bar = document.querySelector(".header__nav-bar");
     window.onscroll = () => {
         if(window.pageYOffset > 50){
             header.classList.add("header__active");
@@ -15,7 +15,7 @@
             padding_top = 56 - (window.pageYOffset*0.72);
             header.style.padding = padding_top + 'px' + " 0 " + " 20px " + " 0";
             header__nav_close.style.top = padding_top + "px";
-            header__nav_list.style.margin = padding_top + 'px' + " 0 " + " 0 " + " 0";
+            header__nav_bar.style.margin = padding_top + 'px' + " 0 " + " 0 " + " 0";
         }
     }
 }());
@@ -46,10 +46,13 @@ window.onload = function(){
     topPlaces__card_imageBlock_marginLeft = getComputedStyle(topPlaces__card_imageBlock).marginLeft;
 
     const amountOfCards = topPlaces__card_desc.length
-    for(var i = 0; i < amountOfCards; i++){
-        topPlaces__card_desc[i].style.width = topPlaces__card_imageBlock.clientWidth + "px";
-        topPlaces__card_more[i].style.margin = "15px 0 0 " + topPlaces__card_imageBlock_marginLeft;
-        
+    window_width = document.documentElement.clientWidth;
+    if(window_width <=579){
+        for(var i = 0; i < amountOfCards; i++){
+            topPlaces__card_desc[i].style.width = topPlaces__card_imageBlock.clientWidth + "px";
+            topPlaces__card_more[i].style.margin = "15px 0 0 " + topPlaces__card_imageBlock_marginLeft;
+            
+        }
     }
     
     
@@ -63,6 +66,35 @@ window.onload = function(){
                 topPlaces__card_more[i].style.margin = "15px 0 0 " + topPlaces__card_imageBlock_marginLeft;
             };
         }
+        else{
+            for(var i = 0; i < amountOfCards; i++){
+                topPlaces__card_desc[i].style.width = "100%";
+                topPlaces__card_more[i].style.margin = "0";
+            };
+            
+        }
     });
- };
+};
+
+(function(){
+    const langEn_button = document.querySelector(".header__lang-en");
+    const langRu_button = document.querySelector(".header__lang-ru");
+    const langRu_elements = document.querySelectorAll(".lang-ru");
+    const langEn_elements = document.querySelectorAll(".lang-en");
+    const langElements_count = langEn_elements.length;
+
+    langEn_button.addEventListener("click", () => {
+        for(var i = 0; i < langElements_count; i++){
+            langEn_elements[i].style.display = "inline-block";
+            langRu_elements[i].style.display = "none";
+        }
+    });
+    langRu_button.addEventListener("click", () => {
+        for(var i = 0; i < langElements_count; i++){
+            langEn_elements[i].style.display = "none";
+            langRu_elements[i].style.display = "inline-block";
+        }
+    });
+    
+} ())
 

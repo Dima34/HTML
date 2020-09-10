@@ -14,30 +14,37 @@
                     <a href="/" class="heder__logo-link">
                     <img src="images/svg/odigo-logo.svg" alt="odigo logo" class="header__logo-pic"></a>
                 </div>
-                <nav class="header__nav">
-                    <ul class="header__list">
-                        <li class="header__item">
-                            <a href="#" class="header__link">Articles</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Locations</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Videos</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Sign in</a>
-                        </li>
-                    </ul>
-                    <div class="header__nav-close">
-                        <span class="header__nav-close-line header__nav-close-line-first"></span>
-                        <span class="header__nav-close-line header__nav-close-line-second"></span>
+                <div class="header__nav-bar">
+                    <div class="header__lang">
+                        <div class="header__lang-en">EN</div>
+                        <div class="header__lang_switch-separator">|</div>
+                        <div class="header__lang-ru">RU</div>
                     </div>
-                </nav>
-                <div class="header__burger burger">
-                    <span class="burger__line burger__line-first"></span>
-                    <span class="burger__line burger__line-second"></span>
-                    <span class="burger__line burger__line-third"></span>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#" class="header__link"><span class="lang-en">Articles</span> <span class="lang-ru">Статьи</span></a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link"><span class="lang-en">Locations</span><span class="lang-ru">Места</span></a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link"><span class="lang-en">Videos</span><span class="lang-ru">Видео</span></a>
+                            </li>
+                            <li class="header__item">
+                                <a href="#" class="header__link"><span class="lang-en">Sign in</span><span class="lang-ru">Войти</span></a>
+                            </li>
+                        </ul>
+                        <div class="header__nav-close">
+                            <span class="header__nav-close-line header__nav-close-line-first"></span>
+                            <span class="header__nav-close-line header__nav-close-line-second"></span>
+                        </div>
+                    </nav>
+                    <div class="header__burger burger">
+                        <span class="burger__line burger__line-first"></span>
+                        <span class="burger__line burger__line-second"></span>
+                        <span class="burger__line burger__line-third"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,17 +53,21 @@
         <section class="intro">
             <div class="wrapper">
                 <h1 class="intro__title">
-                    Discover Amazing places in Japan
+                    <span class="lang-en">Discover Amazing places in Japan</span>
+                    <span class="lang-ru">Откройте для себя удивительные места в Японии</span>
                 </h1>
                 <p class="intro__subtitle">
-                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
-                </p>
+                    <span class="lang-en">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
+                    </span><span class="lang-ru">Япония – островное государство в Тихом океане, которое славится своими густонаселенными городами, императорскими дворцами, национальными парками, храмами и святилищами.</span>
+                    </p>
                 <form class="serch-form">
                     <fieldset class="search-form__wrap">
                         <p class="search-form__intro">
-                            <input type="text" name="user-like-to-do" class="search-form__field" placeholder="What would you like to do?">
-                            <input type="text" name="user-like-to-go" class="search-form__field" placeholder="Where would you like to go?">
-                            <button type="submit" class="search-form__submit">search</button>
+                            <input type="text" name="user-like-to-do" class="search-form__field lang-en" placeholder="What would you like to do?">
+                            <input type="text" name="user-like-to-go" class="search-form__field lang-en" placeholder="Where would you like to go?">
+                            <input type="text" name="user-like-to-do" class="search-form__field lang-ru" placeholder="Чем бы Вы хотели заняться?">
+                            <input type="text" name="user-like-to-go" class="search-form__field lang-ru" placeholder="Куда бы вы поехали?">
+                            <button type="submit" class="search-form__submit"><span class="lang-en">search</span><span class="lang-ru">поиск</span></button>
                         </p>
                     </fieldset>
                 </form>
@@ -64,30 +75,44 @@
         </section>
         <section class="benefits">
             <div class="benefits__wrapper">
-                <h2 class = "benefits__title">Benefits of Odigo</h2>
+                <h2 class = "benefits__title">
+                    <span class="lang-en">Benefits of Odigo</span> 
+                    <span class="lang-ru">Преимущества Odigo</span></h2>
                 <div class="benefits__cards">
                     <div class="benefits__card">
                         <div class="benefits__card-pic">
                             <img src="images/svg/welcome_image.svg" alt="church" class="benefits__card-thumb">
                         </div>
-                        <h3 class="benefits__card-title">Welcome to Odigo!</h3>
-                        <p class="benefits__card-desc">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</p>
-                        <a href="#" class="benefits__card-more">LEARN MORE</a>
+                        <h3 class="benefits__card-title">
+                            <span class="lang-en">Welcome to Odigo!</span> 
+                            <span class="lang-ru">Добро пожаловать в Ogido!</span>
+                        </h3>
+                        <p class="benefits__card-desc">
+                            <span class="lang-en">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</span> 
+                            <span class="lang-ru">Япония – островное государство в Тихом океане, которое славится своими густонаселенными городами, императорскими дворцами, национальными парками, храмами и святилищами.</span>
+                        </p>
+                        <a href="#" class="benefits__card-more">
+                            <span class="lang-en">LEARN MORE</span> 
+                            <span class="lang-ru">ЧИТАТЬ ДАЛЬШЕ</span>
+                            
+                        </a>
                     </div>
                     <div class="benefits__card">
                         <div class="benefits__card-pic">
                             <img src="images/svg/personal_image.png" alt="personal information" class="benefits__card-thumb">
                         </div>
                         <h3 class="benefits__card-title">
-                            Your Personal Japan Guide
+                            
+                            <span class="lang-en">Your Personal Japan Guide</span> 
+                            <span class="lang-ru">Ваш личный гид по Японии</span>
                         </h3>
                         <p class="benefits__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-                        
+                            <span class="lang-en">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</span> 
+                            <span class="lang-ru">Япония – островное государство в Тихом океане, которое славится своими густонаселенными городами, императорскими дворцами, национальными парками, храмами и святилищами.</span>
                         </p>
                         <a href="#" class="benefits__card-more">
-                            LEARN MORE
+                            <span class="lang-en">LEARN MORE</span> 
+                            <span class="lang-ru">ЧИТАТЬ ДАЛЬШЕ</span>
                         </a>
                     </div>
                     <div class="benefits__card">
@@ -95,13 +120,16 @@
                             <img src="images/svg/promoting_image.png" alt="promoting" class="benefits__card-thumb">
                         </div>
                         <h3 class="benefits__card-title">
-                            Promoting Local Businesses
+                            <span class="lang-en">Promoting Local Businesses</span> 
+                            <span class="lang-ru">Продвижение местного бизнеса</span>
                         </h3>
                         <p class="benefits__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                            <span class="lang-en">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.</span> 
+                            <span class="lang-ru">Япония – островное государство в Тихом океане, которое славится своими густонаселенными городами, императорскими дворцами, национальными парками, храмами и святилищами.</span>
                         </p>
                         <a href="#" class="benefits__card-more">
-                            LEARN MORE
+                            <span class="lang-en">LEARN MORE</span> 
+                            <span class="lang-ru">ЧИТАТЬ ДАЛЬШЕ</span>
                         </a>
                     </div>
                 </div>
@@ -111,46 +139,52 @@
             <div class="wrapper-full">
                 <div class="places__caption">
                     <h2 class="places__title section-title">
-                        Get inspired for your next trip
+                        <span class="lang-en">Get inspired for your next trip</span> 
+                        <span class="lang-ru">Получите вдохновение для следующей поездки</span>
                     </h2>
-                    <a href="#" class="places__view-all">VIEW ALL</a>
+                    <a href="#" class="places__view-all"><span class="lang-en">VIEW ALL</span><span class="lang-ru">ЧИТАТЬ ПОЛНОСТЬЮ</span></a>
                 </div>
 
                 <div class="places__cards">
                     <figure class="places__card places__card_size_lg">
                         <img src="images/obj1.jpg" alt="Mount Fuji" class="places__card-pic places__card-pic_size_lg">
                         <figcaption class="places__card-title">
-                            Mount Fuji
+                            <span class="lang-en">Mount Fuji</span> 
+                            <span class="lang-ru">Гора Фудзи</span>
                         </figcaption>
                         <a href="#" class="places__card-link"></a>
                     </figure>
                     <figure class="places__card places__card_size_lg">
                         <img src="images/obj2.jpg" alt="Kyoto" class="places__card-pic places__card-pic_size_lg">
                         <figcaption class="places__card-title">
-                            Kyoto
+                            <span class="lang-en">Kyoto</span> 
+                            <span class="lang-ru">Киото</span>
                         </figcaption>
                     </figure>
                     <figure class="places__card places__card_size_s">
                         <img src="images/obj3.jpg" alt="Tokyo" class="places__card-pic places__card-pic_size_s">
                         <figcaption class="places__card-title">
-                            Tokyo
+                            <span class="lang-en">Tokyo</span> 
+                            <span class="lang-ru">Токио</span>
                         </figcaption>
                     </figure>
                     <figure class="places__card places__card_size_s">
                         <img src="images/obj4.jpg" alt="Niigata" class="places__card-pic places__card-pic_size_s">
                         <figcaption class="places__card-title">
-                            Niigata
+                            <span class="lang-en">Niigata</span> 
+                            <span class="lang-ru">Ниигата</span>
                         </figcaption>
                     </figure>
                     <figure class="places__card places__card_size_s">
                         <img src="images/obj5.jpg" alt="Sapporo" class="places__card-pic places__card-pic_size_s">
                         <figcaption class="places__card-title">
-                            Sapporo
+                            <span class="lang-en">Sapporo</span> 
+                            <span class="lang-ru">Саппоро</span>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="places__view-all-btn-block_mobile">
-                    <a href="#!" class="places__view-all_mobile ">VIEW ALL</a>
+                    <a href="#!" class="places__view-all_mobile "><span class="lang-en">VIEW ALL</span><span class="lang-ru">ЧИТАТЬ ПОЛНОСТЬЮ</span></a>
                 </div> 
             </div>
         </section>
@@ -162,23 +196,33 @@
                     </div>
                     <div class="tour__info">
                         <h3 class="tour__title">
-                            Prefecture in Focus: Tottori
+                            <span class="lang-en">Prefecture in Focus: Tottori</span> 
+                            <span class="lang-ru">В фокусе префектура: Тоттори</span>
                         </h3>
                         <p class="tour__desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
+                            <span class="lang-en">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door</span> 
+                            <span class="lang-ru">Тоттори — префектура, расположенная в регионе Тюгоку на острове Хонсю, Япония. Площадь префектуры составляет 3507,28 км², население — 574 301 человек, плотность населения — 163,75 чел./км². Административный центр префектуры — город Тоттори.</span>
                         </p>
-                        <a href="#!" class="tour__more">VIEW PREFECTURE</a>
+                        <a href="#!" class="tour__more">
+                            <span class="lang-en tour__more_text">VIEW PREFECTURE</span> 
+                            <span class="lang-ru tour__more_text">СМОТРЕТЬ ПРЕФЕКТУРУ</span>
+                        </a>
                     </div>
                 </div>
                 <div class="tours__tour tour">
                     <div class="tour__info">
                         <h3 class="tour__title">
-                            Featured Neighborhood: Kyoto’s Arashiyama
+                            <span class="lang-en">Featured Neighborhood: Kyoto’s Arashiyama</span> 
+                            <span class="lang-ru">Рекомендуемый район: Арасияма в Киото.</span>
                         </h3>
-                        <p class="tour__desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
+                        <p class="tour__desc"> 
+                            <span class="lang-en">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door</span> 
+                            <span class="lang-ru">Описывать красоты красоты этого района трудно и получается очень избито, но уж попробую как смогу, И так, бамбуковая роща находятся за храмом Тэнрюдзи, который мы посетили вчера, и идет вдоль дороги к вилле Окоти Сансо</span>
                         </p>
-                        <a href="#!" class="tour__more">VIEW PREFECTURE</a>
+                        <a href="#!" class="tour__more">
+                            <span class="lang-en tour__more_text">VIEW PREFECTURE</span> 
+                            <span class="lang-ru tour__more_text">СМОТРЕТЬ ПРЕФЕКТУРУ</span>
+                        </a>
                     </div>
                     <div class="tour__pic">
                         <img src="images/tour2.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour__thumb">
@@ -188,32 +232,42 @@
                 
                 <div class="tours__tour_mobile tour_mobile">                 
                     <h3 class="tour__title_mobile">
-                        Prefecture in Focus: Tottori
+                        <span class="lang-en">Prefecture in Focus: Tottori</span> 
+                        <span class="lang-ru">В фокусе префектура: Тоттори</span>
                     </h3>
                     <div class="tour__pic_mobile">
                         <img src="images/tour1.jpg" alt="Prefecture in Focus: Tottori" class="tour__thumb_mobile">
                     </div>
                     <p class="tour__desc_mobile">
-                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
+                        <span class="lang-en">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door</span> 
+                        <span class="lang-ru">Тоттори — префектура, расположенная в регионе Тюгоку на острове Хонсю, Япония. Площадь префектуры составляет 3507,28 км², население — 574 301 человек, плотность населения — 163,75 чел./км². Административный центр префектуры — город Тоттори.</span>
                     </p>
                     <div class="tour__more_mobile">
-                        <a href="#!" class="tour__more-btn_mobile">VIEW PREFECTURE</a>
+                        <a href="#!" class="tour__more-btn_mobile">
+                            <span class="lang-en">VIEW PREFECTURE</span> 
+                            <span class="lang-ru">СМОТРЕТЬ ПРЕФЕКТУРУ</span>
+                        </a>
                     </div>
                     
                     
                 </div>
                 <div class="tours__tour_mobile tour_mobile">
                     <h3 class="tour__title_mobile">
-                        Featured Neighborhood: Kyoto’s Arashiyama
+                        <span class="lang-en">Featured Neighborhood: Kyoto’s Arashiyama</span> 
+                        <span class="lang-ru">Рекомендуемый район: Арасияма в Киото.</span>
                     </h3>
                     <div class="tour__pic_mobile">
                         <img src="images/tour2.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour__thumb_mobile">
                     </div>
                     <p class="tour__desc_mobile">
-                        Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
+                        <span class="lang-en">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door</span> 
+                        <span class="lang-ru">Описывать красоты красоты этого района трудно и получается очень избито, но уж попробую как смогу, И так, бамбуковая роща находятся за храмом Тэнрюдзи, который мы посетили вчера, и идет вдоль дороги к вилле Окоти Сансо</span>
                     </p>
                     <div class="tour__more_mobile">
-                        <a href="#!" class="tour__more-btn_mobile">VIEW PREFECTURE</a>
+                        <a href="#!" class="tour__more-btn_mobile">
+                            <span class="lang-en">VIEW PREFECTURE</span> 
+                            <span class="lang-ru">СМОТРЕТЬ ПРЕФЕКТУРУ</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -221,7 +275,8 @@
         <section class="top">
             <div class="wrapper-full">
                 <h2 class="top-title section-title">
-                    Today top places to visit
+                    <span class="lang-en">Today top places to visit</span> 
+                    <span class="lang-ru">Лучшие места для посещения сегодня</span>
                 </h2>
                 <div class="top__cards">
                     <div class="top__card">
@@ -229,7 +284,8 @@
                             <img src="images/top-pic-1.png" alt="NAGOYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                    NAGOYA
+                                    <span class="lang-en">NAGOYA</span> 
+                                    <span class="lang-ru">НАГОЯ</span>
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">
@@ -243,11 +299,13 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="top__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                        <p class="top__card-desc"> 
+                            <span class="lang-en">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</span> 
+                            <span class="lang-ru">Нагоя – столица японской префектуры Айти, крупный промышленный и портовый город в центральной части острова Хонсю. Городской район Нака славится своими музеями и залами патинко (игровых автоматов). Здесь же расположен развлекательный квартал Сакаэ, где туристов привлекает колесо обозрения "Небесная лодка", встроенное в здание торгового центра.</span>
                         </p>
                         <a href="#!" class="top__card-more">
-                            SEE MORE
+                            <span class="lang-en">SEE MORE</span> 
+                            <span class="lang-ru">СМОТРЕТЬ БОЛЬШЕ</span>
                         </a>
                     </div>
                     <div class="top__card">
@@ -255,7 +313,8 @@
                             <img src="images/top-pic-2.png" alt="NIIGATA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                    NIIGATA
+                                    <span class="lang-en">NIIGATA</span> 
+                                    <span class="lang-ru">НИИАГАТА</span>
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">
@@ -270,12 +329,13 @@
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
-                           
+                            <span class="lang-en">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                                Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</span> 
+                            <span class="lang-ru">Ниигаата — город, определённый указом правительства Японии, административный центр префектуры Ниигата. Основан 1 апреля 1889 года. Площадь города составляет 726,10 км², население — 808 189 человек, плотность населения — 1113,05 чел./км². Ниигата — крупный порт на побережье Японского моря.</span>
                         </p>
                         <a href="#!" class="top__card-more">
-                            SEE MORE
+                            <span class="lang-en">SEE MORE</span> 
+                            <span class="lang-ru">СМОТРЕТЬ БОЛЬШЕ</span>
                         </a>
                     </div>
                     <div class="top__card">
@@ -283,7 +343,8 @@
                             <img src="images/top-pic-3.png" alt="OSAKA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                    OSAKA
+                                    <span class="lang-en">OSAKA</span> 
+                                    <span class="lang-ru">ОСАКА</span>
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">
@@ -298,10 +359,12 @@
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                            <span class="lang-en">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</span> 
+                            <span class="lang-ru">Осака – крупный портовый и торговый город на острове Японского архипелага Хонсю, который славится своей современной архитектурой, ночными заведениями, кафе и закусочными. Главная историческая достопримечательность города – самурайский замок XVI века, который претерпел несколько реконструкций.</span>
                         </p>
                         <a href="#!" class="top__card-more">
-                            SEE MORE
+                            <span class="lang-en">SEE MORE</span> 
+                            <span class="lang-ru">СМОТРЕТЬ БОЛЬШЕ</span>
                         </a>
                     </div>
                     <div class="top__card">
@@ -309,7 +372,8 @@
                             <img src="images/top-pic-4.png" alt="SAITAMA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                    SAITAMA
+                                    <span class="lang-en">SAITAMA</span> 
+                                    <span class="lang-ru">САЙТАМА</span>
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">
@@ -324,10 +388,12 @@
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                            <span class="lang-en">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</span> 
+                            <span class="lang-ru">Административный центр префектуры Сайтама. Город входит в агломерацию Большого Токио. Площадь города составляет 217,49 км²[1], население — 1 250 928 человек (1 августа 2014)[2], плотность населения — 5751,66 чел./км². Город был образован 1 мая 2001 года вследствие объединения городов Урава, Омия[en] и Йоно[en]. 1 апреля 2005 года к Сайтаме на востоке был присоединён город Ивацуки. Сайтама является городом, определённым указом правительства с 1 апреля 2003 года.</span>
                         </p>
                         <a href="#!" class="top__card-more">
-                            SEE MORE
+                            <span class="lang-en">SEE MORE</span> 
+                            <span class="lang-ru">СМОТРЕТЬ БОЛЬШЕ</span>
                         </a>
                     </div>
                     <div class="top__card">
@@ -335,7 +401,8 @@
                             <img src="images/top-pic-5.png" alt="UENO" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                    UENO
+                                    <span class="lang-en">UENO</span> 
+                                    <span class="lang-ru">УЭНО</span>
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">
@@ -350,10 +417,12 @@
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                            <span class="lang-en">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</span> 
+                            <span class="lang-ru">Уэно – традиционный район с изящными синтоистскими святилищами и буддийскими храмами. На острове в парке Уэно находится храм богини Бэндзантэн, построенный в XVII веке. В Токийском национальном музее можно посмотреть на старинные японские произведения искусства, а в Национальном музее западного искусства – на работы Винсента Ван Гога и Пабло Пикассо.</span>
                         </p>
                         <a href="#!" class="top__card-more">
-                            SEE MORE
+                            <span class="lang-en">SEE MORE</span> 
+                            <span class="lang-ru">СМОТРЕТЬ БОЛЬШЕ</span>
                         </a>
                     </div>
                     <div class="top__card">
@@ -361,7 +430,9 @@
                             <img src="images/top-pic-6.png" alt="SHIBUYA" class="top__card-thumb">
                             <div class="top__card-stats">
                                 <h3 class="top__card-title">
-                                    SHIBUYA
+                                    
+                                    <span class="lang-en">SHIBUYA</span> 
+                                    <span class="lang-ru">СИБУЯ</span>
                                 </h3>
                                 <div class="top__card-likes">
                                     <span class="top__card-likes-value">
@@ -376,10 +447,12 @@
                             </div>
                         </div>
                         <p class="top__card-desc">
-                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                            <span class="lang-en">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.</span> 
+                            <span class="lang-ru">Сибуя — один из 23 специальных районов Токио. По состоянию на 1 мая 2020 года население составляет 236 537 человек, плотность населения — 15,654 чел/км². Общая площадь района — 15,11 км²</span>
                         </p>
                         <a href="#!" class="top__card-more">
-                            SEE MORE
+                            <span class="lang-en">SEE MORE</span> 
+                            <span class="lang-ru">СМОТРЕТЬ БОЛЬШЕ</span>
                         </a>
                     </div>
                 </div>
@@ -392,8 +465,6 @@
             </div>
         </div>
     </main>
-    <script src="js/main.js"></script>
-
     <footer class="footer">
         <div class="wrapper">
             <div class="footer__item">
@@ -402,83 +473,100 @@
                 </div>
                 <nav class="footer__nav">
                     <ul class="footer__menu">
+                        
+                        <h3 class="footer__menu-title">
+                            <span class="lang-en">Company</span> 
+                            <span class="lang-ru">Компания</span>
+                        </h3>
+                        <ul class="footer__menu_item-block">
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    <span class="lang-en">About</span> 
+                                    <span class="lang-ru">О нас</span>
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    <span class="lang-en">Team</span> 
+                                    <span class="lang-ru">Команда</span>
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    <span class="lang-en">Careers</span> 
+                                    <span class="lang-ru">Карьера</span>
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    <span class="lang-en">Privacy Policy</span> 
+                                    <span class="lang-ru">Политика <br>конфиденциальности</span>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </ul>
+                    <ul class="footer__menu">
                         <li class="footer__menu-item">
                             <h3 class="footer__menu-title">
-                                Company
+                                <span class="lang-en">Locations</span> 
+                                <span class="lang-ru">Места</span>
                             </h3>
                         </li>
                         <li class="footer__menu-item">
                             <a href="#!" class="footer__menu-link">
-                                About
+                                <span class="lang-en">Tokyo</span> 
+                                <span class="lang-ru">Токио</span>
                             </a>
                         </li>
                         <li class="footer__menu-item">
                             <a href="#!" class="footer__menu-link">
-                                Team
+                                <span class="lang-en">Kyoto</span> 
+                                <span class="lang-ru">Киото</span>
                             </a>
                         </li>
                         <li class="footer__menu-item">
                             <a href="#!" class="footer__menu-link">
-                                Careers
+                                <span class="lang-en">Osaka</span> 
+                                <span class="lang-ru">Осака</span>
                             </a>
                         </li>
                         <li class="footer__menu-item">
                             <a href="#!" class="footer__menu-link">
-                                Privacy Policy
+                                <span class="lang-en">Hokkaido</span> 
+                                <span class="lang-ru">Хоккайдо</span>
                             </a>
                         </li>
                     </ul>
                     <ul class="footer__menu">
                         <li class="footer__menu-item">
                             <h3 class="footer__menu-title">
-                                Locations
+                                <span class="lang-en">Social Media</span> 
+                                <span class="lang-ru">Социальные медиа</span>
                             </h3>
                         </li>
                         <li class="footer__menu-item">
                             <a href="#!" class="footer__menu-link">
-                                Tokyo
+                                <span class="lang-en">Facebook</span> 
+                                <span class="lang-ru">Facebook</span>
                             </a>
                         </li>
                         <li class="footer__menu-item">
                             <a href="#!" class="footer__menu-link">
-                                Kyoto
+                                <span class="lang-en">Twitter</span> 
+                                <span class="lang-ru">Twitter</span>
                             </a>
                         </li>
                         <li class="footer__menu-item">
                             <a href="#!" class="footer__menu-link">
-                                Osaka
+                                <span class="lang-en">Instagram</span> 
+                                <span class="lang-ru">Instagram</span>
                             </a>
                         </li>
                         <li class="footer__menu-item">
                             <a href="#!" class="footer__menu-link">
-                                Hokkaido
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="footer__menu">
-                        <li class="footer__menu-item">
-                            <h3 class="footer__menu-title">
-                                Social Media
-                            </h3>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">
-                                Facebook
-                            </a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">
-                                Twitter
-                            </a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">
-                                Instagram
-                            </a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a href="#!" class="footer__menu-link">
-                                Youtube
+                                <span class="lang-en">Youtube</span> 
+                                <span class="lang-ru">Youtube</span>
                             </a>
                         </li>
                     </ul>
@@ -486,5 +574,8 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
+
+   
 </body>
 </html>
