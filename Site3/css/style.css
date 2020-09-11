@@ -384,6 +384,7 @@ textarea {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+
 html{
    box-sizing: border-box;
 }
@@ -438,6 +439,63 @@ p, h1, h2, h3, figcaption, input{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* ------======ALERT WINDOW======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.alert{
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+   z-index: 1000;
+   transition-duration: .4s;
+}
+.alert__background{
+   position: fixed;
+   z-index: 500;
+   width: 100%;
+   height: 100%;
+   background-color: #000;
+   opacity: .5;
+   
+}
+.alert__window{
+   text-align: center;
+   width: 500px;
+   height: 300px;
+   background-color: white;
+   z-index: 1000;
+   border-radius: 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.alert__title{
+   font-size: 30px;
+}
+.alert__accept-btn{
+   border:0;
+   background-color: #006DFE;
+   width: fit-content;
+   height: fit-content;
+   padding: 10px 25px;
+   color: white;
+   border-radius: 15px;
+   margin-top: 30px;
+   transition-duration: .4s;
+}
+.alert__accept-btn:hover, .alert__accept-btn:focus{
+   transform: translateY(-2px);
+}
+
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* -------=======HEADER=======--------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -459,7 +517,7 @@ p, h1, h2, h3, figcaption, input{
 .header__wrapper{
   display: flex;
   flex-wrap: wrap;
-  align-items:flex-end;
+  align-items:center;
   justify-content: space-between;
 }
 
@@ -1140,6 +1198,10 @@ p, h1, h2, h3, figcaption, input{
    .header__nav-close-line-second{
       transform: rotate(-45deg);
    }
+   .header__lang{
+      height: fit-content;
+      margin: auto 15px;
+   }
    /* ------------------------------------ */
    /* -------=======BENEFITS=======------- */
    /* ------------------------------------ */
@@ -1152,10 +1214,21 @@ p, h1, h2, h3, figcaption, input{
    .footer {
       padding: 26px 0;
    }
-   .footer__item{
-      align-items: center;
+   .footer__nav{
+      align-content: center;
    }
-   
+   .footer__menu{
+      position: relative;
+   }
+   .footer__menu-title{
+      
+      width: 100%;
+      padding-right: 20px;
+   }
+   .footer__menu_items{
+      position: absolute;
+      display: none;
+   }
 }
 @media screen and (max-width:647px){
    .section-title{
@@ -1266,6 +1339,15 @@ p, h1, h2, h3, figcaption, input{
 
 @media screen and (max-width:579px){
    /* ------------------------------------ */
+   /* --------========ALERT========------- */
+   /* ------------------------------------ */
+   .alert__window{
+      width: 90%;
+   }
+   .alert__title{
+      font-size: 30px;
+   }
+   /* ------------------------------------ */
    /* --------========INTRO========------- */
    /* ------------------------------------ */
    .search-form__field{
@@ -1335,6 +1417,13 @@ p, h1, h2, h3, figcaption, input{
 
 
 @media screen and (max-width:380px){
+   /* ------------------------------------ */
+   /* --------========ALERT========------- */
+   /* ------------------------------------ */
+   
+   .alert__title{
+      font-size: 25px;
+   }
    /* ------------------------------------ */
    /* --------=======INTRO========-------- */
    /* ------------------------------------ */

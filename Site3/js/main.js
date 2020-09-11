@@ -1,7 +1,6 @@
 (function () {
     const header = document.querySelector(".header");
     const header__nav_close = document.querySelector(".header__nav-close");
-    const header__nav_bar = document.querySelector(".header__nav-bar");
     window.onscroll = () => {
         if(window.pageYOffset > 50){
             header.classList.add("header__active");
@@ -15,11 +14,18 @@
             padding_top = 56 - (window.pageYOffset*0.72);
             header.style.padding = padding_top + 'px' + " 0 " + " 20px " + " 0";
             header__nav_close.style.top = padding_top + "px";
-            header__nav_bar.style.margin = padding_top + 'px' + " 0 " + " 0 " + " 0";
         }
     }
 }());
 
+(function() {
+    const alertAcceptBtn = document.querySelector(".alert__accept-btn");
+    const alert = document.querySelector(".alert");
+    
+    alertAcceptBtn.addEventListener("click", () =>{
+        alert.style.display = "none";
+    })
+})
 (function() {
     const burgerItem = document.querySelector(".burger");
     const menu = document.querySelector(".header__nav");
@@ -37,6 +43,8 @@
 
 
 window.onload = function(){
+    
+    
     const topPlaces__card_imageBlock = document.querySelector(".top__card-pic")
     const topPlaces__card_desc = document.querySelectorAll(".top__card-desc")
     const topPlaces__card_more = document.querySelectorAll(".top__card-more")
@@ -73,16 +81,30 @@ window.onload = function(){
             };
             
         }
+
     });
 };
 
-(function(){
+window.onload = function(){
+    const defaultLanguage = "ru"
     const langEn_button = document.querySelector(".header__lang-en");
     const langRu_button = document.querySelector(".header__lang-ru");
     const langRu_elements = document.querySelectorAll(".lang-ru");
     const langEn_elements = document.querySelectorAll(".lang-en");
     const langElements_count = langEn_elements.length;
 
+    if(defaultLanguage == "ru"){
+        for(var i = 0; i < langElements_count; i++){
+            langEn_elements[i].style.display = "none";
+            langRu_elements[i].style.display = "inline-block";
+        }
+    }
+    else if(defaultLanguage == "en"){
+        for(var i = 0; i < langElements_count; i++){
+            langEn_elements[i].style.display = "inline-block";
+            langRu_elements[i].style.display = "none";
+        }
+    }
     langEn_button.addEventListener("click", () => {
         for(var i = 0; i < langElements_count; i++){
             langEn_elements[i].style.display = "inline-block";
@@ -96,5 +118,5 @@ window.onload = function(){
         }
     });
     
-} ())
+} ()
 
