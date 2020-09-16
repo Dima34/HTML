@@ -120,3 +120,69 @@ window.onload = function(){
     
 } ()
 
+// Animation
+document.addEventListener("DOMContentLoaded", scrolling);
+document.addEventListener("scroll",scrolling);
+
+function isPartiallyVisible(el){
+    var elementBoundary = el.getBoundingClientRect();
+    var top = elementBoundary.top - 71;
+    var bottom = elementBoundary.bottom;
+    var height = elementBoundary.height;
+
+    return((top + height >= 0) && (height + window.innerHeight >= bottom));
+}
+function isFullyVisible(el) {
+    var elementBoundary = el.getBoundingClientRect();
+    
+    var top = elementBoundary.top;
+    var bottom = elementBoundary.bottom;
+
+    return ((top >= 0) && (bottom <= window.innerHeight));
+}
+
+// Elements
+function animPartiallyVisible(elem,Class){
+    if(isPartiallyVisible(elem)){
+        elem.classList.add(Class);
+    } else{
+        elem.classList.remove(Class);
+    }
+}
+function animPartiallyVisibleALL(elem,Class,arrLen){
+    for(var i = 0; i < arrLen;i++){
+        if(isPartiallyVisible(elem[i])){
+            elem[i].classList.add(Class);
+        } else{
+            elem[i].classList.remove(Class);
+        }
+    }
+    
+}
+
+var introTitle = document.querySelector(".intro__title")
+var introSubtitle = document.querySelector(".intro__subtitle");
+var introSearchForm = document.querySelector(".search-form__intro");
+var benefitsTitle = document.querySelectorAll(".benefits__title span")
+var benefitsCardThumb = document.querySelectorAll(".benefits__card-thumb")
+var benefitsCardText = document.querySelectorAll(".benefits__card-title, .benefits__card-desc, .benefits__card-more")
+var sectionTitle = document.querySelectorAll(".section-title")
+var sectionTitleAfter = document.querySelectorAll(".section-title:after")
+var placesCard = document.querySelectorAll(".places__card")
+
+
+// Movement
+function scrolling(){
+    animPartiallyVisible(introTitle,"intro__title-anim")
+    animPartiallyVisible(introSubtitle,"intro__subtitle-anim")
+    animPartiallyVisible(introSearchForm,"serch-form-anim")
+    animPartiallyVisibleALL(benefitsTitle, "benefits__title-anim",benefitsTitle.length)
+    animPartiallyVisibleALL(benefitsCardThumb, "benefits__card-thumb-anim", benefitsCardThumb.length)
+    animPartiallyVisibleALL(benefitsCardText, "benefits__card-text-anim", benefitsCardText.length)
+    animPartiallyVisibleALL(sectionTitle, "section-title-anim", sectionTitle.length)
+    animPartiallyVisibleALL(sectionTitleAfter, ".section-title-anim:after", sectionTitleAfter.length)
+    animPartiallyVisibleALL(placesCard, "places__card-anim", placesCard.length)
+}
+    
+
+

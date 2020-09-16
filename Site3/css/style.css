@@ -476,6 +476,7 @@ p, h1, h2, h3, figcaption, input{
 }
 .alert__title{
    font-size: 30px;
+   margin: 10px;
 }
 .alert__accept-btn{
    border:0;
@@ -1441,4 +1442,107 @@ p, h1, h2, h3, figcaption, input{
    .search-form__field::placeholder{
       font-size: 16px;
    }
+}
+
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======ANIMATION=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+@keyframes slideLeft{
+   0%{
+      transform: translateX(-40px);
+      opacity: 0;
+   }
+   100%{
+      transform: translateX(0px);
+      opacity: 1;
+   }
+}
+@keyframes slideRight{
+   0%{
+      transform: translateX(40px);
+      opacity: 0;
+   }
+   100%{
+      transform: translateX(0px);
+      opacity: 1;
+   }
+}
+@keyframes slideBottom{
+   0%{
+      transform: translateY(40px);
+      opacity: 0;
+   }
+   100%{
+      transform: translateY(0px);
+      opacity: 1;
+   }
+}
+@keyframes scaleAppe{
+   0%{
+      transform: scale(.3);
+      opacity: 0;
+   }
+   100%{
+      transform: scale(1);
+      opacity: 1;
+   }
+}
+@keyframes appe{
+   0%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 1;
+   }
+}
+@keyframes scalingX{
+   0%{
+      transform: translateX(-126px) scaleX(0);
+   }
+   100%{
+      transform: translateX(0px) scaleX(1);
+   }
+}
+
+.intro__title-anim{
+   animation: slideLeft 1s;
+}
+.intro__subtitle-anim{
+   animation: slideRight 1s;
+}
+.serch-form-anim{
+   animation: scaleAppe .6s;
+}
+.benefits__title-anim{
+   animation: scaleAppe 1s;
+}
+.benefits__card-thumb-anim{
+   animation: appe 2s;
+}
+.benefits__card-text-anim{
+   animation: slideBottom 1s;
+}
+.section-title-anim{
+   animation: scaleAppe 1s;
+}
+.section-title-anim:after {
+   display: block;
+   content: "";
+   width: 253px !important;
+   height: 3px;
+   transition: .2s linear;
+   background-color: #006DFE;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   animation: scalingX 1s;
+}
+.places__card-anim{
+   animation: scaleAppe 1s;
 }
