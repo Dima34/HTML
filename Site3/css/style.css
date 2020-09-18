@@ -400,13 +400,14 @@ body{
 .wrapper{
   max-width: 1060px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 img{
    max-width: 100%;
    height:auto;
 }
 .wrapper-full{
+   overflow:  hidden;
    max-width: 1262px;
    margin:0 auto;
    padding: 0 15px;
@@ -594,6 +595,7 @@ p, h1, h2, h3, figcaption, input{
   padding-top: 263px;
   padding-bottom: 223px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .intro__title{
   font-weight: 500;
@@ -766,7 +768,7 @@ p, h1, h2, h3, figcaption, input{
    transform: scale(1.05)
 }
 
-.places__card::after{
+.places__card-wrap::after{
    display: block;
    content: "";
    width: 100%;
@@ -971,6 +973,7 @@ p, h1, h2, h3, figcaption, input{
 
 .videos{
    width:100%;
+   overflow: hidden;
 }
 
 .videos__wrapper{
@@ -1509,6 +1512,23 @@ p, h1, h2, h3, figcaption, input{
       transform: translateX(0px) scaleX(1);
    }
 }
+@keyframes video-anim{
+   0%{
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid red;
+   }
+   100%{
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid red;
+   }
+}
+
 
 .intro__title-anim{
    animation: slideLeft 1s;
@@ -1531,18 +1551,33 @@ p, h1, h2, h3, figcaption, input{
 .section-title-anim{
    animation: scaleAppe 1s;
 }
-.section-title-anim:after {
-   display: block;
-   content: "";
-   width: 253px !important;
-   height: 3px;
-   transition: .2s linear;
-   background-color: #006DFE;
-   position: absolute;
-   bottom: 0;
-   left: 0;
+.section-title-after-anim:after{
    animation: scalingX 1s;
 }
 .places__card-anim{
+   animation: scaleAppe 1s;
+}
+.tours__tour_leftSide-anim{
+   animation: slideLeft 1s;
+}
+.tours__tour_rightSide-anim{
+   animation: slideRight 1s;
+}
+.top-title-after-anim:after{
+   animation: scalingX 1s;
+}
+.top__card-left-side-anim{
+   animation: slideLeft 1s;
+}
+.top__card-right-side-anim{
+   animation: slideRight 1s;
+}
+.top__card-center-anim{
+   animation: slideBottom 1.5s;
+}
+.top__card-all-anim{
+   animation: appe 1s;
+}
+.videos__wrapper-anim{
    animation: scaleAppe 1s;
 }
