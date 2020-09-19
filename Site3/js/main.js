@@ -42,48 +42,6 @@
 } ());
 
 
-window.onload = function(){
-    
-    
-    const topPlaces__card_imageBlock = document.querySelector(".top__card-pic")
-    const topPlaces__card_desc = document.querySelectorAll(".top__card-desc")
-    const topPlaces__card_more = document.querySelectorAll(".top__card-more")
-    
-    window_width = document.documentElement.clientWidth;
-    topPlaces__card_imageBlock_width = topPlaces__card_imageBlock.clientWidth;
-    topPlaces__card_imageBlock_marginLeft = getComputedStyle(topPlaces__card_imageBlock).marginLeft;
-
-    const amountOfCards = topPlaces__card_desc.length
-    window_width = document.documentElement.clientWidth;
-    if(window_width <=579){
-        for(var i = 0; i < amountOfCards; i++){
-            topPlaces__card_desc[i].style.width = topPlaces__card_imageBlock.clientWidth + "px";
-            topPlaces__card_more[i].style.margin = "15px 0 0 " + topPlaces__card_imageBlock_marginLeft;
-            
-        }
-    }
-    
-    
-    window.addEventListener("resize", () => {
-        window_width = document.documentElement.clientWidth;
-        if(window_width <=579){
-            topPlaces__card_imageBlock_width = topPlaces__card_imageBlock.clientWidth;
-            topPlaces__card_imageBlock_marginLeft = getComputedStyle(topPlaces__card_imageBlock).marginLeft;
-            for(var i = 0; i < amountOfCards; i++){
-                topPlaces__card_desc[i].style.width = topPlaces__card_imageBlock.clientWidth + "px";
-                topPlaces__card_more[i].style.margin = "15px 0 0 " + topPlaces__card_imageBlock_marginLeft;
-            };
-        }
-        else{
-            for(var i = 0; i < amountOfCards; i++){
-                topPlaces__card_desc[i].style.width = "100%";
-                topPlaces__card_more[i].style.margin = "0";
-            };
-            
-        }
-
-    });
-};
 
 window.onload = function(){
     const defaultLanguage = "ru"
@@ -118,6 +76,47 @@ window.onload = function(){
         }
     });
     
+    // top__card_desc resize
+    const topPlaces__card_imageBlock = document.querySelector(".top__card-pic")
+    console.log("asfdsadf")
+    const topPlaces__card_desc = document.querySelectorAll(".top__card-desc")
+    const topPlaces__card_more = document.querySelectorAll(".top__card-more")
+    
+    window_width = document.documentElement.clientWidth;
+    topPlaces__card_imageBlock_width = topPlaces__card_imageBlock.clientWidth;
+    topPlaces__card_imageBlock_marginLeft = getComputedStyle(topPlaces__card_imageBlock).marginLeft;
+
+    const amountOfCards = topPlaces__card_desc.length
+    window_width = document.documentElement.clientWidth;
+    if(window_width <=579){
+        for(var i = 0; i < amountOfCards; i++){
+            topPlaces__card_desc[i].style.width = topPlaces__card_imageBlock.clientWidth + "px";
+            topPlaces__card_more[i].style.margin = "15px 0 0 " + topPlaces__card_imageBlock_marginLeft;
+            topPlaces__card_more[i].style.width = topPlaces__card_imageBlock.clientWidth + "px";
+        }
+    }
+    
+    
+    window.addEventListener("resize", () => {
+        window_width = window.innerWidth;
+        if(window_width <=579){
+            topPlaces__card_imageBlock_width = topPlaces__card_imageBlock.clientWidth;
+            topPlaces__card_imageBlock_marginLeft = getComputedStyle(topPlaces__card_imageBlock).marginLeft;
+            for(var i = 0; i < amountOfCards; i++){
+                topPlaces__card_desc[i].style.width = topPlaces__card_imageBlock.clientWidth + "px";
+                topPlaces__card_more[i].style.margin = "15px 0 0 " + topPlaces__card_imageBlock_marginLeft;
+                topPlaces__card_more[i].style.width = topPlaces__card_imageBlock.clientWidth + "px";
+            };
+        }
+        else{
+            for(var i = 0; i < amountOfCards; i++){
+                topPlaces__card_desc[i].style.width = "100%";
+                topPlaces__card_more[i].style.margin = "0";
+            };
+            
+        }
+
+    });
 
     // Animation
     document.addEventListener("DOMContentLoaded", scrolling);
