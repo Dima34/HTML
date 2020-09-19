@@ -78,7 +78,6 @@ window.onload = function(){
     
     // top__card_desc resize
     const topPlaces__card_imageBlock = document.querySelector(".top__card-pic")
-    console.log("asfdsadf")
     const topPlaces__card_desc = document.querySelectorAll(".top__card-desc")
     const topPlaces__card_more = document.querySelectorAll(".top__card-more")
     
