@@ -184,8 +184,6 @@ window.onload = function(){
             } else{
                 toElem.classList.remove(Class);
             }
-        
-        
     }
 
     let introTitle = document.querySelector(".intro__title")
@@ -194,7 +192,9 @@ window.onload = function(){
     let benefitsTitle = document.querySelector(".benefits__title");
     let benefitsTitle_span = document.querySelectorAll(".benefits__title span")
     let benefitsCardThumb = document.querySelectorAll(".benefits__card-thumb")
-    let benefitsCardText = document.querySelectorAll(".benefits__card-title, .benefits__card-desc, .benefits__card-more")
+    let benefitsCardTitle = document.querySelectorAll(".benefits__card-title")
+    let benefitsCardDesc = document.querySelectorAll(".benefits__card-desc")
+    let benefitsCardMore = document.querySelectorAll(".benefits__card-more")
     let placesTitle = document.querySelector(".places__title")
     let sectionTitle = document.querySelectorAll(".section-title")
     let placesTitle_span = document.querySelectorAll(".places__title span")
@@ -210,7 +210,6 @@ window.onload = function(){
     let videosWrapper = document.querySelector(".videos__wrapper")
 
 
-
     // Movement
     function scrolling(){
         animPartiallyVisible(introTitle,"intro__title-anim")
@@ -218,7 +217,18 @@ window.onload = function(){
         animPartiallyVisible(introSearchForm,"serch-form-anim")
         animPartiallyVisibleRaChildALL(benefitsTitle,benefitsTitle_span, "benefits__title-anim", benefitsTitle_span.length)
         animPartiallyVisibleALL(benefitsCardThumb, "benefits__card-thumb-anim")
-        animPartiallyVisibleALL(benefitsCardText, "benefits__card-text-anim")
+        for(let i = 0; i < benefitsCardTitle.length; i++){
+            animPartiallyVisibleRaChildALL(benefitsCardTitle[i],benefitsCardTitle[i].querySelectorAll("span"),"benefits__card-text-anim")
+        }
+        for(let i = 0; i < benefitsCardDesc.length; i++){
+            animPartiallyVisibleRaChildALL(benefitsCardDesc[i],benefitsCardDesc[i].querySelectorAll("span"),"benefits__card-text-anim")
+        }
+        for(let i = 0; i < benefitsCardMore.length; i++){
+            animPartiallyVisibleRaChildALL(benefitsCardMore[i],benefitsCardMore[i].querySelectorAll("span"),"benefits__card-text-anim")
+        }
+        
+        
+        
         animPartiallyVisibleRaChildALL(placesTitle,placesTitle_span, "section-title-anim")
         animPartiallyVisible(sectionTitle[0], "section-title-after-anim")
         animPartiallyVisibleRaALL(placesCard,placesCard_wrap, "places__card-anim", placesCard.length)
