@@ -26,6 +26,7 @@
         alert.style.display = "none";
     })
 })
+
 (function() {
     const burgerItem = document.querySelector(".burger");
     const menu = document.querySelector(".header__nav");
@@ -40,6 +41,7 @@
     });
     
 } ());
+
 
 
 
@@ -80,20 +82,19 @@ window.onload = function(){
     const topPlaces__card_imageBlock = document.querySelector(".top__card-pic")
     const topPlaces__card_desc = document.querySelectorAll(".top__card-desc")
     const topPlaces__card_more = document.querySelectorAll(".top__card-more")
-
-    
-    window_width = window.innerWidth;
-    topPlaces__card_imageBlock_width = topPlaces__card_imageBlock.clientWidth;
-    topPlaces__card_imageBlock_marginLeft = getComputedStyle(topPlaces__card_imageBlock).marginLeft;
-
-    console.log(topPlaces__card_imageBlock_width)
+    var window_width = window.innerWidth;
     const amountOfCards = topPlaces__card_desc.length
+
     if(window_width <=579){
-        for(var i = 0; i < amountOfCards; i++){
+        var topPlaces__card_imageBlock_width = topPlaces__card_imageBlock.clientWidth;
+        var topPlaces__card_imageBlock_marginLeft = getComputedStyle(topPlaces__card_imageBlock).marginLeft;
+        
+        console.log(topPlaces__card_imageBlock_width);
+        for(let i = 0; i < amountOfCards; i++){
             topPlaces__card_desc[i].style.width = topPlaces__card_imageBlock_width + "px";
             topPlaces__card_more[i].style.margin = "15px 0 0 " + topPlaces__card_imageBlock_marginLeft;
             topPlaces__card_more[i].style.width = topPlaces__card_imageBlock_width + "px";
-        }
+        };
     }
     
     
@@ -103,15 +104,16 @@ window.onload = function(){
             topPlaces__card_imageBlock_width = topPlaces__card_imageBlock.clientWidth;
             topPlaces__card_imageBlock_marginLeft = getComputedStyle(topPlaces__card_imageBlock).marginLeft;
             for(var i = 0; i < amountOfCards; i++){
-                topPlaces__card_desc[i].style.width = topPlaces__card_imageBlock.clientWidth + "px";
+                topPlaces__card_desc[i].style.width = topPlaces__card_imageBlock_width + "px";
                 topPlaces__card_more[i].style.margin = "15px 0 0 " + topPlaces__card_imageBlock_marginLeft;
-                topPlaces__card_more[i].style.width = topPlaces__card_imageBlock.clientWidth + "px";
+                topPlaces__card_more[i].style.width = topPlaces__card_imageBlock_width + "px";
             };
         }
         else{
             for(var i = 0; i < amountOfCards; i++){
                 topPlaces__card_desc[i].style.width = "100%";
                 topPlaces__card_more[i].style.margin = "0";
+                topPlaces__card_more[i].style.width = "auto";
             };
             
         }
