@@ -80,18 +80,19 @@ window.onload = function(){
     const topPlaces__card_imageBlock = document.querySelector(".top__card-pic")
     const topPlaces__card_desc = document.querySelectorAll(".top__card-desc")
     const topPlaces__card_more = document.querySelectorAll(".top__card-more")
+
     
-    window_width = document.documentElement.clientWidth;
+    window_width = window.innerWidth;
     topPlaces__card_imageBlock_width = topPlaces__card_imageBlock.clientWidth;
     topPlaces__card_imageBlock_marginLeft = getComputedStyle(topPlaces__card_imageBlock).marginLeft;
 
+    console.log(topPlaces__card_imageBlock_width)
     const amountOfCards = topPlaces__card_desc.length
-    window_width = document.documentElement.clientWidth;
     if(window_width <=579){
         for(var i = 0; i < amountOfCards; i++){
-            topPlaces__card_desc[i].style.width = topPlaces__card_imageBlock.clientWidth + "px";
+            topPlaces__card_desc[i].style.width = topPlaces__card_imageBlock_width + "px";
             topPlaces__card_more[i].style.margin = "15px 0 0 " + topPlaces__card_imageBlock_marginLeft;
-            topPlaces__card_more[i].style.width = topPlaces__card_imageBlock.clientWidth + "px";
+            topPlaces__card_more[i].style.width = topPlaces__card_imageBlock_width + "px";
         }
     }
     
@@ -156,6 +157,13 @@ window.onload = function(){
         }
         
     }
+    function animPartiallyVisibleReadress(elem,toElem,Class){
+        if(isPartiallyVisible(elem)){
+            toElem.classList.add(Class);
+        } else{
+            toElem.classList.remove(Class);
+        }
+    }
     function animPartiallyVisibleRaALL(elem,toElem,Class,arrLen){
         for(var i = 0; i < arrLen;i++){
             if(isPartiallyVisible(elem[i])){
@@ -186,7 +194,8 @@ window.onload = function(){
 
     let introTitle = document.querySelector(".intro__title")
     let introSubtitle = document.querySelector(".intro__subtitle");
-    let introSearchForm = document.querySelector(".search-form__intro");
+    let introSearchForm_wrap = document.querySelector(".search-form__wrap");
+    let introSearchForm = introSearchForm_wrap.querySelector(".search-form__intro")
     let benefitsTitle = document.querySelector(".benefits__title");
     let benefitsTitle_span = document.querySelectorAll(".benefits__title span")
     let benefitsCardThumb = document.querySelectorAll(".benefits__card-thumb")
@@ -212,7 +221,7 @@ window.onload = function(){
     function scrolling(){
         animPartiallyVisible(introTitle,"intro__title-anim")
         animPartiallyVisible(introSubtitle,"intro__subtitle-anim")
-        animPartiallyVisible(introSearchForm,"serch-form-anim")
+        animPartiallyVisibleReadress(introSearchForm_wrap,introSearchForm,"serch-form-anim")
         animPartiallyVisibleRaChildALL(benefitsTitle,benefitsTitle_span, "benefits__title-anim", benefitsTitle_span.length)
         animPartiallyVisibleALL(benefitsCardThumb, "benefits__card-thumb-anim")
         for(let i = 0; i < benefitsCardTitle.length; i++){
