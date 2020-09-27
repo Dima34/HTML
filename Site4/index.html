@@ -46,39 +46,49 @@
                         <p class="timer_title">
                             До конца акции:
                         </p>
-                        <div class="title_timer">
-                            <div class="timer_items">
-                                <div class="timer_item">
-                                    <p class="timer_hours"></p>
-                                    <p class="timer_subtitle">Часов</p>
-                                </div>
-                                <div class="timer_item">
-                                    <p class="timer_minutes"></p>
-                                    <p class="timer_subtitle">Минут</p>
-                                </div>
-                                <div class="timer-item">
-                                    <p class="timer_seconds"></p>
-                                    <p class="timer_subtitle">Секунд</p>
-                                </div>
+                        
+                        <div class="timer_items">
+                            <div class="timer_clock-face">
+                                <p class="timer_h">00</p>
+                                <p class="timer_subtitle">Часов</p>
+                            </div>
+                            <div class="timer_clock-face">
+                                <p class="timer_min">00</p>
+                                <p class="timer_subtitle">Минут</p>
+                            </div>
+                            <div class="timer_clock-face">
+                                <p class="timer_sec">00</p>
+                                <p class="timer_subtitle">Секунд</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="intro__calc">
                     <h2 class="calc_title">
-                        второй потолок <span>в подарок!</span>
+                        калькулятор расчета стоимости
                     </h2>
                     <div class="calc_fields">
                         <div class="calc_input-fields">
-                            
+                            <div class="input_field">
+                                <h5 class="input_field_title">Площадь потолка</h5>
+                                <input type="text" name="" id="floor_area" value = "4" class="input_input">
+                            </div>
+                            <div class="input_field">
+                                <h5 class="input_field_title">Количество углов</h5>
+                                <input type="text" name="" id="square_amount" value = "4" class="input_input">
+                            </div>
+                            <div class="input_field">
+                                <h5 class="input_field_title">Количество светильников</h5>
+                                <input type="text" name="" id="lights_amount" value = "4" class="input_input">
+                            </div>
                         </div>
                         <div class="calc_output-fields">
                             <p class="output-title">
                                 Стоимость потолка
                             </p>
                             <p class="output-result">
-                                <h2 class="result-num"></h2>
-                                <h3 class="result-currency"></h3>
+                                <h2 class="result-num">5550</h2>
+                                <h4 class="result-currency">рублей</h4>
                             </p>
                         </div>
                     </div>
@@ -98,8 +108,130 @@
             </div>
         </div>
     </div>
-    
-
+    <div class="sale">
+        <div class="wrapper">
+            <h2 class="sale_sale-text section-title">
+                скидка более <span>35%</span>, торопитесь! акция только до <span>27 сентября</span>
+            </h2>
+        </div>
+    </div>
+    <div class="special-offers">
+        <div class="special-offers_wrapper">
+            <div class="special-offers_offers">
+                <div class="offers_offer">
+                    <h2 class="offer_title">Специальное предложение</h2>
+                    <p class="offer_top-size">Кухня 9м2</p>
+                    <p class="offer_top-type">Матовый белый потолок</p>
+                    <img class = "offer_img" src="./images/offer-1-pic.jpeg" alt="img1">
+                    <p class="offer_bottom-matherial">Материал производство</p>
+                    <p class="offer_bottom-country">Россия</p>
+                    <p class="offer-price">Стоимость - <span>5500 руб.</span></p>
+                    <button class="offer_order">Заказать</button>
+                </div>
+                <div class="offers_offer">
+                    <h2 class="offer_title">Специальное предложение</h2>
+                    <p class="offer_top-size">Спальня 12м2</p>
+                    <p class="offer_top-type">Матовый белый потолок</p>
+                    <img class = "offer_img" src="./images/offer-2-pic.jpeg" alt="img2">
+                    <p class="offer_bottom-matherial">Материал производство</p>
+                    <p class="offer_bottom-country">Россия</p>
+                    <p class="offer-price">Стоимость - <span>5500 руб.</span></p>
+                    <button class="offer_order">Заказать</button>
+                </div>
+                <div class="offers_offer">
+                    <h2 class="offer_title">Специальное предложение</h2>
+                    <p class="offer_top-size">Гостиная 20м2</p>
+                    <p class="offer_top-type">Матовый белый потолок</p>
+                    <img class = "offer_img" src="./images/offer-2-pic.jpeg" alt="img2">
+                    <p class="offer_bottom-matherial">Материал производство</p>
+                    <p class="offer_bottom-country">Россия</p>
+                    <p class="offer-price">Стоимость - <span>5500 руб.</span></p>
+                    <button class="offer_order">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="install">
+        <div class="wrapper-small">
+            <h2 class="section-title">БЕЗОПАСНЫЙ МОНТАЖ <br> БЕЗ ПЫЛИ И ГРЯЗИ</h2>
+            <div class="install_info">
+                <div class="install_info-items">
+                    <div class="info_item">
+                        <img src="./images/thumb-1.png" alt="thumb1" class="info-item-thumb">
+                        <h2 class="info-item-title">ЗАЩИТА СТЕН ПЛЁНКОЙ</h2>
+                        <p class="info-item-desc">По вашему желанию мы можем перед началом работ наклеить на стены плёнку. Это защитит их от возможных загрязнений</p>
+                    </div>
+                    <div class="info_item">
+                        <img src="./images/thumb-2.png" alt="thumb2" class="info-item-thumb">
+                        <h2 class="info-item-title">МИНИМАЛЬНОЕ КОЛИЧЕСТВО ПЫЛИ</h2>
+                        <p class="info-item-desc">В работе мы используем перфоратор со встроенным пылесосом. Количество пыли после монтажа будет минимальным</p>
+                    </div>
+                    <div class="info_item">
+                        <img src="./images/thumb-3.png" alt="thumb3" class="info-item-thumb">
+                        <h2 class="info-item-title">БЕЗОПАСНОСТЬ МОНТАЖА</h2>
+                        <p class="info-item-desc">При монтаже мы используем газовые безопасные полимерно-композитные баллоны</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section class="top-brands">
+        <div class="wrapper-small">
+            <h2 class="top-brands-title section-title">ТОЛЬКО ЛУЧШИЕ <br> ТОРГОВЫЕ МАРКИ</h2>
+            <div class="top-brands_brands">
+                <div class="brand_img-wrap"><img src="./images/brand-1.jpg" alt="clipso" class="brand-img"></div>
+                <div class="brand_img-wrap"><img src="./images/brand-2.jpg" alt="malpesa" class="brand-img"></div>
+                <div class="brand_img-wrap"><img src="./images/brand-3.jpg" alt="polyplast" class="brand-img"></div>
+                <div class="brand_img-wrap"><img src="./images/brand-4.jpg" alt="pongs" class="brand-img"></div>
+                <div class="brand_img-wrap"><img src="./images/brand-5.jpg" alt="descor" class="brand-img"></div>
+            </div>
+        </div>
+    </section>
+    <section class="why">
+        <h2 class="section-title why__title">Почему натяжные потолки лучше, <br><span>чем побелённые, подвесные и потолки </span><br> <span> из гипсокартона?</span></h2>
+        <div class="why__table">
+            <div class="table_item">
+                <h2 class="table_item-title">БЕЗ ПРЕДВАРИТЕЛЬНОЙ ПОДГОТОВКИ</h2>
+                <p class="table_item-desc"></p>
+                <img src="" alt="" class="table_img">
+            </div>
+            <div class="table_item">
+                <h2 class="table_item-title">ИДЕАЛЬНАЯ ПРОВЕРХНОСТЬ</h2>
+                <p class="table_item-desc"></p>
+                <img src="" alt="" class="table_img">
+            </div>
+            <div class="table_item">
+                <h2 class="table_item-title">ДОЛГОВЕЧНОСТЬ</h2>
+                <p class="table_item-desc"></p>
+                <img src="" alt="" class="table_img">
+            </div>
+            <div class="table_item">
+                <h2 class="table_item-title">КАЧЕСТВЕННАЯ ШУМОИЗОЛЯЦИЯ</h2>
+                <p class="table_item-desc"></p>
+                <img src="" alt="" class="table_img">
+            </div>
+            <div class="table_item">
+                <h2 class="table_item-title">ЗАЩИТА ОТ ПРОТЕЧЕК</h2>
+                <p class="table_item-desc"></p>
+                <img src="" alt="" class="table_img">
+            </div>
+            <div class="table_item">
+                <h2 class="table_item-title">СТАБИЛЬНАЯ ВЛАЖНОСТЬ В ЛЮБОЕ ВРЕМЯ ГОДА</h2>
+                <p class="table_item-desc"></p>
+                <img src="" alt="" class="table_img">
+            </div>
+            <div class="table_item">
+                <h2 class="table_item-title">ПРОСТОТА УХОДА</h2>
+                <p class="table_item-desc"></p>
+                <img src="" alt="" class="table_img">
+            </div>
+            <div class="table_item">
+                <h2 class="table_item-title">БЫСТРАЯ УСТАНОВКА</h2>
+                <p class="table_item-desc"></p>
+                <img src="" alt="" class="table_img">
+            </div>
+        </div>
+    </section>
     <script src="./js/script.js"></script>
 </body>
 </html>

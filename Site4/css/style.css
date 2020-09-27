@@ -252,9 +252,41 @@ a{
    font-family: 'PT Sans', sans-serif !important
 }
 .wrapper{
-   max-width: 1280px;
+   max-width: 1200px;
    margin: 0 auto;
 }
+.wrapper-small{
+   max-width: 960px;
+   margin: 0 auto;
+}
+
+.section-title{
+   font-size: 40px;
+   margin: 50px 0;
+   text-transform: uppercase;
+   line-height: 40px;
+   text-align: center;
+   font-weight: 700;
+   position: relative;
+}
+
+.section-title:after, .section-title:before{
+   position: absolute;
+   content: "";
+   width: 140px;
+   height: 2px;
+   left: 50%;
+   transform: translateX(-50%);
+   text-align: center;
+   background: #e7302a;
+}
+.section-title:after{
+   bottom: -22px;
+}
+.section-title:before{
+   top: -22px;
+}
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -263,7 +295,9 @@ a{
 /* ------------------------------------ */
 /* ------------------------------------ */
 .header{
-   position: absolute;
+   position: fixed;
+   z-index: 10;
+   top: 0;
    width: 100%;
    height: 95px;
    background-color:#fff;
@@ -384,6 +418,7 @@ a{
 .intro{
    width: 100%;
    background: url(../images/header__background-pic.jpg) no-repeat center center;
+   background-position: top;
    background-size: cover;
    min-height: 725px;
    margin-top:97px;
@@ -393,12 +428,13 @@ a{
 }
 .intro__wrapper{
    display: flex;
+   flex-direction: row;
    justify-content: space-between;
    margin: 0 auto;
    max-width: 935px;
 }
 .intro__sale, .intro__calc{
-   margin-top: 193px;
+   margin-top: 200px;
 }
 .intro__sale_title{
    display: flex;
@@ -415,6 +451,177 @@ a{
    color: red;
    text-shadow: 1px 1px black;
 }
+.intro__sale_timer{
+   margin-top: 20px;
+}
+.timer_title{
+   text-shadow: 0px 0px 20px white;
+   font-size: 30px;
+   text-align: left;
+   color: #000;
+   margin: 0 0 20px 0;
+   font-weight: 700;
+}
+.timer_items{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.timer_clock-face{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 60px;
+   box-shadow: none;
+   color: #FFFFFF;
+   text-shadow: 3px 1px black;
+   background: rgba(255, 255, 255, 0.15);
+   text-align: center;
+   padding: 10px 20px;
+   border: 1px solid;
+   margin:0 10px;
+}
+.timer_clock-face:nth-child(1){
+   margin-left: 0px;
+}
+.timer_clock-face:last-child{
+   color: red;
+}
+.timer_subtitle{
+   font-size: 30px;
+   text-shadow: 1px 1px 0px black;
+}
+.intro__calc{
+   background: rgba(0, 0, 0, 0.5);
+   width: 476px;
+   border: 2px solid #ed5d45;
+   border-radius: 15px;
+}
+.calc_title{
+   font-size: 20px;
+   font-weight: bold;
+   color: #fff;
+   line-height: 50px;
+   display: block;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+}
+.calc_input-fields{
+   display: flex;
+   justify-content: space-around;
+   padding-top: 5px;
+}
+.calc_fields{
+   background: rgba(0, 0, 0, 0.4);
+   height: 190px;
+   border-top: 4px solid #fff;
+   border-bottom: 4px solid #fff;
+}
+.input_field{
+   width: 130px !important;
+   height: 90px !important;
+   border-radius: 5px;
+   background: linear-gradient( to bottom, #fdd745 0%,#fcae33 100%);
+   height: fit-content;
+   width: fit-content;
+}
+.input_field_title{
+   font-size: 18px;
+   text-shadow: none;
+   color: black;
+   font-weight: bold;
+   text-align: center;
+   line-height: 18px;
+   padding: 7px 0 5px 0;
+}
+.input_input{
+   width: 65px;
+   color: #fff;
+   background: rgba(0, 0, 0, 0.7);
+   border: 1px solid white;
+   border-radius: 5px;
+   padding: 5px 15px;
+   font-size: 27px;
+   display: block;
+   margin: 5px auto 0;
+   text-align: center;
+   font-weight: bold;
+   height: 38px;
+}
+.calc_output-fields{
+   margin-top:25px;
+   display: flex;
+}
+.output-title{
+   font-size: 24px;
+   margin: 10px 0 0 30px;
+   color: #F00800;
+   font-family: 'PT Serif';
+   width: 125px;
+   line-height: 18.5px;
+   display: inline-block;
+}
+
+.result-num{
+   font-weight: bold;
+   color: #fff;
+   font-size: 52px;
+   margin: 0 0 0 56px;
+}
+.result-currency{
+   display: inline-block;
+   position: relative;
+   font-size: 24px;
+   font-weight: bold;
+   color: #fff;
+   bottom: -13px;
+   right: -15px;
+}
+.calc_call-block{
+   margin-top: 43px;
+   display: flex;
+   justify-content: space-between;
+}
+.call-block_title{
+   font-size: 22px;
+   text-align: center;
+   color: #fff;
+   width: 220px;
+   line-height: 22px;
+   margin: 0 15px 0 17px;
+}
+.call-block_form{
+   width: 230px;
+}
+.call-block_num-input{
+   font-size: 18px;
+   font-weight: bold;
+   height: 45px;
+   border: 1px solid #ac1756;
+   width: 205px;
+   padding: 0 0 0 5px;
+   background: rgba(0, 0, 0, 0.7);
+   color: #fff;
+   border-radius: 5px;
+}
+.call-block_num-input::placeholder{
+   text-align: center;
+}
+.call-block_send{
+   box-shadow: none;
+   background: red;
+   background-color: #DF8518;
+   background: linear-gradient(to bottom, #fdd745 0%,#fcae33 100%);
+   border-radius: 25px;
+   border: 1px solid #fff;
+   text-align: center;
+   width: 200px;
+   font-size: 24px;
+   min-height: 37px;
+   cursor: pointer;
+   margin: 28px 0 18px 6px;
+}
 
 .intro__quality{
    position: absolute;
@@ -424,4 +631,153 @@ a{
 .intro_quality-img{
    width: 200px;
    height: auto;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------========SALE========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.sale span{
+   color: #FF0000;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----======SPACIAL OFFERS======----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.special-offers{
+   background: url(../images/special-bg.png);
+   min-height: 570px;
+   text-align: center;
+   padding: 60px 0 0 0;
+}
+.special-offers_wrapper{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.special-offers_offers{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+.offers_offer{
+   background: #696969;
+   padding: 5px 0 0 0;
+   text-align: center;
+   max-width: 313px;
+   border: 1px solid #fff;
+   font-size: 24px;
+   margin: 0px 11px 0 0;
+   position: relative;
+}
+.offer_title, .offer_top-size, .offer_top-type, .offer_bottom-matherial, .offer_bottom-country{
+   color: #fff;
+   text-shadow: 3px 1px 10px #000;
+   margin: 0px 0 10px 0;
+}
+.offer_title{
+   color: #FF0000;
+   font-size: 23px;
+   text-shadow: 0px 0px 20px #000;
+}
+.offer_img{
+   width: 100%;
+}
+.offer-price{
+   color: #000;
+   margin: 0 0 30px 0;
+}
+.offer-price span{
+   color: #FF0000;
+}
+.offer_order{
+   width: 237px;
+   display: block;
+   font-size: 20px;
+   border: solid 2px #f7931e;
+   box-shadow: none;
+   padding: 3px 0;
+   position: absolute;
+   bottom: 0;
+   left:50%;
+   transform: translate(-50%, 50%);
+   text-align: center;
+   color: #000;
+   border-radius: 8px;
+   cursor: pointer;
+   text-shadow: 0px 1px 0px #fedf2f;
+   background: linear-gradient(to bottom, #ffcd08 0%,#faa41a 100%);
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------======INSTALL======--------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.install_info{
+   background: url(../images/install-bg.png) top center no-repeat;
+   padding-top: 75px;
+}
+.install_info-items{
+   display: flex;
+   text-align: center;
+   justify-content: space-around;
+}
+.info_item{
+   width: 240px;
+}
+.info-item-thumb{
+   width: 25px;
+   height: 25px;
+   padding: 7px;
+   background-color: red;
+   margin-bottom: 15px;
+}
+.info-item-title{
+   position: relative;
+   margin-bottom:20px;
+}
+.info-item-title::after{
+   position: absolute;
+   content: '';
+   width: 60px;
+   height: 1px;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: -10px;
+   background: #e7302a;
+}
+
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------======INSTALL======--------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.top-brands{
+   margin-top: 120px;
+   margin-bottom: 50px;
+}
+.top-brands_brands{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.brand_img-wrap{
+   border: 1px solid rgb(203, 203, 203);
+   border-radius: 8px;
 }
