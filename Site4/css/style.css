@@ -252,11 +252,11 @@ a{
    font-family: 'PT Sans', sans-serif !important;
    box-sizing: border-box;
 }
-.wrapper{
+.wrapper-intro{
    max-width: 1200px;
    margin: 0 auto;
 }
-.wrapper-small{
+.wrapper{
    max-width: 960px;
    margin: 0 auto;
 }
@@ -739,8 +739,8 @@ a{
    width: 240px;
 }
 .info-item-thumb{
-   width: 25px;
-   height: 25px;
+   width: 35px;
+   height: 35px;
    padding: 7px;
    background-color: red;
    margin-bottom: 15px;
@@ -805,6 +805,7 @@ a{
    grid-template-rows: 1fr;
    justify-content: center;
    column-gap: 1px;
+   row-gap: 1px;
 }
 .table_item{
    width: 450px;
@@ -813,6 +814,9 @@ a{
    color: #fff;
    font-size: 15px;
    line-height: 18px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 .adv-1{
    background: url(../images/adv-1.jpg);
@@ -837,4 +841,342 @@ a{
 }
 .adv-8{
    background: url(../images/adv-8.jpg);
+}
+.table_item-title, .table_item-desc{
+   width: 40%;
+}
+.table_item-title{
+   font-size: 17px;
+   line-height: 20px;
+   text-transform: uppercase;
+   margin-bottom: 16px;
+   position: relative;
+}
+.table_item-title:after{
+   position: absolute;
+   content: "";
+   width: 60px;
+   height: 1px;
+   left: 0;
+   bottom: -8px;
+   background: #e7302a;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------======CATHALOG======--------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.cathalog{
+   background: url(../images/cathalog-bg.jpg) no-repeat center;
+   min-height: 300px;
+   padding: 65px 0 65px 0;
+}
+.cathalog__desc{
+   text-align: left;
+   padding-left: 100px;
+}
+.cathalog_title{
+   margin: 0 0 75px 0;
+   font-size: 36px;
+   font-weight: 700;
+   position: relative;
+}
+.cathalog_title::after{
+   position: absolute;
+   content: "";
+   height: 1px;
+   left: 0;
+   bottom: -38px;
+   width: 60px;
+   background: #e7302a;
+}
+
+.cathalog_heading{
+   font-size: 20px;
+   line-height: 20px;
+   margin-bottom: 8px;
+}
+.cathalog_description{
+   margin: 0 0 10px 0;
+   font-size: 15px;
+   width: 275px;
+}
+.cathalog_appeal{
+   color: #dc5e48;
+   font-size: 20px;
+   line-height: 23px;
+   width: 275px;
+}
+.cathalog__download{
+   width: fit-content;
+   margin:0 auto;
+}
+.download_btn{
+   background: linear-gradient(to bottom, #fdd745 0%,#fcae33 100%);
+   position: relative;
+   text-align: center;
+   color: #000;
+   font-size: 20px;
+   border: #f7931e solid 1px;
+   border-radius: 8px;
+   text-shadow: 0px 1px 0px #fedf2f;
+   box-shadow: inset 0px 0px 0px 1px #feed30, 0px 2px 5px rgba(134,61,29,1), 0px 0px 0px 5px #fff, 0px 0px 0px 6px rgba(219,179,133,0.26);
+   width: 476px;
+   height: 45px;
+   line-height: 45px;
+   margin: 55px auto 0 auto;
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------======SERVICE======--------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.services{
+   background: url(../images/services-bg.jpg) no-repeat center center;
+   min-height: 675px;
+   background-size: cover;
+   padding: 40px 0 0 0
+}
+
+.service_details{
+   display: flex;
+   justify-content: space-between;
+}
+.detail_item{
+   width: 320px;
+   text-align: center;
+}
+.detail_item_title{
+   position: relative;
+   color: #e43832;
+   font-size: 34px;
+   line-height: 36px;
+   margin-bottom: 20px;
+   text-align: center;
+}
+.detail_item_title::after{
+   position: absolute;
+   width: 60px;
+   height: 1px;
+   content: "";
+   bottom: 0;
+   background: #e7302a;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: -11px;
+}
+.service__middle{
+   border:1px solid red;
+   margin: 42px auto;
+   width: fit-content;
+   border: rgba(167,167,167,0.2) solid 10px;
+   text-align: center;
+}
+.service_superiority{
+   padding: 60px;
+   font-size: 45px;
+   line-height: 45px;
+   width: 480px;
+}
+.service_superiority span{
+   font-size: 64px;
+   line-height: 64px;
+   text-transform: uppercase;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=====HOW WE INSTALL=====------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.how-we-intall{
+   background: url(../images/how-to-install-bg.jpg) no-repeat center 0;
+   padding: 100px 0 75px 0;
+   min-height: 750px;
+   color:white;
+}
+.how-we-intall__title{
+   width: 535px;
+   margin: 0 auto;
+}
+.how-we-intall__stages{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.stages_top{
+   width: 272px;
+   height: fit-content;
+   padding-top: 35px;
+   margin: 0 auto 71px auto;
+   border: rgba(217,33,31,0.32) solid 4px;
+   margin-top: 90px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   position: relative;
+}
+.top_stage_thumb,.bottom_stages_stage_thumb{
+   margin: 0 auto;
+   width: 35px;
+   height: 35px;
+   background: #e7302a;
+   line-height: 36px;
+   font-size: 18px;
+}
+.top_stage_title, .bottom_stages_stage_title{
+   display: block;
+   position: relative;
+   margin:22px auto 35px auto;
+   width: 140px;
+}
+.top_stage_title::after,.bottom_stages_stage_title::after{
+   position: absolute;
+   content: '';
+   width: 60px;
+   height: 1px;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: -17px;
+   background: #e7302a;
+}
+.top_stage_btn{
+   margin: 25px auto 25px;
+   width: 150px;
+   height: 31px;
+   border: #f7931e solid 1px;
+   border-radius: 8px;
+   box-shadow: none;
+   font-size: 16px;
+   line-height: 28px;
+   position: relative;
+   text-align: center;
+   color: #000;
+   text-shadow: 0px 1px 0px #fedf2f;
+   background: linear-gradient(to bottom, #ffcd08 0%,#faa41a 100%);
+}
+.top_stage_btn:hover{
+   background: linear-gradient(to bottom, #fdd745 0%,#fcae33 100%);
+}
+.stages_bottom_stages{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+.bottom_stages_stage{
+   width: 240px;
+   text-align: center;
+   position: relative;
+}
+.bottom_stages_stage::after{
+   position: absolute;
+   content: "";
+   width: 80px;
+   height: 1px;
+   background: #5d5d5d;
+   right: -80px;
+   top: 18px;
+}
+.bottom_stages_stage::before{
+   position: absolute;
+   content: "";
+   width: 80px;
+   height: 1px;
+   background: #5d5d5d;
+   left: -80px;
+   top: 18px;
+}
+.bottom_stages_stage:first-child::before{
+   display: none;
+}
+.bottom_stages_stage:last-child::after{
+   display: none;
+}
+.bottom_stages_stage_desc{
+   width: 200px;
+   margin: 0 auto;
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------========WARN========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.why-we{
+   padding:50px 0;
+}
+.why-we__title{
+   margin-bottom: 80px;
+}
+.why-we__warn{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   border: 2px solid #ff814e;
+   padding:20px 0;
+}
+.warn_img{
+   width: auto;
+   height: 100%;
+   margin: 55px 25px;
+}
+.warn_paragraphs{
+   width: 100%;
+}
+.pargraphs_p{
+   padding: 0;
+   font-size: 22px;
+   text-align: left;
+   margin-bottom: 15px;
+   display: block;
+}
+.why-we__rewiews_title{
+   margin: 0 auto;
+   width: fit-content;
+   font-size: 20px;
+   margin-top: 70px;
+}
+.why-we__rewiews{
+   margin-top: 50px;
+   display: grid;
+   grid-template-columns: repeat(2, 390px);
+   justify-content: space-between;
+   row-gap: 15px;
+}
+.why-we-rewiew{
+   margin-left: 20px;
+}
+.rewiewer_photo{
+   border-top: 2px solid rgb(222, 79, 37);
+   border-left: 2px solid rgb(222, 79, 37);
+   border-right: 2px solid rgb(222, 79, 37);
+   border-radius: 10px 10px 0 0 ;
+   width: 139px;
+   height: 123px;
+}
+.rewiewer_name{
+   position: relative;
+   background: none repeat scroll 0 0 #DE4F25;
+   color: #FFFFFF;
+   display: block;
+   font-size: 16px;
+   font-style: normal;
+   height: 42px;
+   line-height: 45px;
+   padding: 0 15px;
+}
+.rewiewer_rewiew{
+   margin-top: 13px;
+   font-size: 18px;
+   line-height: 22px;
 }
