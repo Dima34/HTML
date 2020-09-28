@@ -781,3 +781,62 @@ a{
    border: 1px solid rgb(203, 203, 203);
    border-radius: 8px;
 }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ----------======WHY======----------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.why{
+   background: url(../images/why-bg.png);
+   min-height: 500px;
+   padding: 90px 0 60px 0;
+}
+.why__title span{
+   font-size: 24px;
+   line-height: 28px;
+}
+.why__table{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: 1fr;
+   justify-items: center;
+   column-gap: 1px;
+}
+.table_item{
+   width: 450px;
+   height: 240px;
+   padding: 0 0 0 20px;
+   float: left;
+   margin: 0 1px 1px 0;
+   display: table;
+   color: #fff;
+   font-size: 15px;
+   line-height: 18px;
+}
+.adv-1{
+   background: url(../images/adv-1.jpg);
+}
+.adv-2{
+   background: url(../images/adv-2.jpg);
+}
+.adv-3{
+   background: url(../images/adv-3.jpg);
+}
+.adv-4{
+   background: url(../images/adv-4.jpg);
+}
+.adv-5{
+   background: url(../images/adv-5.jpg);
+}
+.adv-6{
+   background: url(../images/adv-6.jpg);
+}
+.adv-7{
+   background: url(../images/adv-7.jpg);
+}
+.adv-8{
+   background: url(../images/adv-8.jpg);
+}
