@@ -377,6 +377,10 @@ a{
    font-size: 13px;
    line-height: 16px;
    color: #FFFFFF;
+   letter-spacing: 0.1em;
+}
+.intro_dest-link span{
+   color: rgb(223, 225, 38);
 }
 .intro__weekly{
    background-color: white;
@@ -410,14 +414,17 @@ a{
 
 .info{
    z-index: 100;
+   position: relative;
 }
 .info__sale{
-   width: 346px;
-   height: 346px;
+   width: 399px;
+   height: 399px;
    float: right;
    background: url(../images/info__sale-bg.png);
    background-size: cover;
-   
+   margin-top: 138px;
+   transition-duration: .3s;
+   border-bottom: 7px solid #FFF738;
 }
 .info_text{
    padding-top: 426px;
