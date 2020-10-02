@@ -427,5 +427,10 @@ a{
    border-bottom: 7px solid #FFF738;
 }
 .info_text{
-   padding-top: 426px;
+   padding-top: 458px;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 151.9%;
+   letter-spacing: 0.03em;
 }
