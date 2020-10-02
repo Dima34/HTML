@@ -17,11 +17,17 @@
             </div>
             <nav class="header__nav">
                 <ul class="header__nav-items">
+                    <li class="header__nav-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </li>
                     <li class="header__nav-item"><a href="#!" class="header__nav-link"><span class = "nav__first-text-elem">Главная</span><span class = "nav__second-text-elem">Главная</span></a></li>
                     <li class="header__nav-item"><a href="#!" class="header__nav-link"><span class = "nav__first-text-elem">Спец предлодения</span><span class = "nav__second-text-elem">Спец предлодения</span></a></li>
                     <li class="header__nav-item"><a href="#!" class="header__nav-link"><span class = "nav__first-text-elem">Фото</span><span class = "nav__second-text-elem">Фото</span></a></li>
                     <li class="header__nav-item"><a href="#!" class="header__nav-link"><span class = "nav__first-text-elem">Отзывы</span><span class = "nav__second-text-elem">Отзывы</span></a></li>
                     <li class="header__nav-item"><a href="#!" class="header__nav-link"><span class = "nav__first-text-elem">Контакты</span><span class = "nav__second-text-elem">Контакты</span></a></li>
+                    
                 </ul>
             </nav>
             <div class="header__call-block">
@@ -34,13 +40,12 @@
         </div>
     </div>
     <div class="intro">
-        <div class="wrapper-intro">
             <div class="intro__wrapper">
                 <div class="intro__sale">
                     <h1 class="intro__sale_title">
                         <span>второй</span>
                         <span>потолок</span>
-                        <span>в подорок!</span>
+                        <span>в подарок!</span>
                     </h1>
                     <div class="intro__sale_timer">
                         <p class="timer_title">
@@ -101,12 +106,14 @@
                             <input type="submit" value="Отправить" class="call-block_send">
                         </div>
                     </div>
+                    
+                </div>
+                <div class="intro__quality">
+                    <img src="./images/quality.png" alt="quality качество гарантия 100% гарантия качества" class="intro_quality-img">
                 </div>
             </div>
-            <div class="intro__quality">
-                <img src="./images/quality.png" alt="quality качество гарантия 100% гарантия качества" class="intro_quality-img">
-            </div>
-        </div>
+            
+
     </div>
     <div class="sale">
         <div class="wrapper">
@@ -229,8 +236,9 @@
     <div class="cathalog">
         <div class="wrapper">
             <div class="cathalog__desc">
-                <h2 class="cathalog_title">Создайте особое <br>настроение в доме</h2>
-                <div class="cathalog_text">
+                <div class="cathalog_left">
+                    <h2 class="cathalog_title">Создайте особое <br>настроение в доме</h2>
+                    <div class="cathalog_text">
                     <h3 class="cathalog_heading">
                         Фотопечать на потолке
                     </h3>
@@ -245,8 +253,13 @@
                     </h2>
                 </div>
             </div>
+            <div class="cathalog_right">
+                <img src="./images/cathalog.jpg" alt="" class="cathalog_img">
+            </div>  
+            </div>
             <div class="cathalog__download">
-                <button type="submit" class = "download_btn">Скачать каталог изображений для фотопечати</button></div>
+                <button type="submit" class = "download_btn">Скачать каталог изображений для фотопечати</button>
+            </div>
         </div>
     </div>
     <div class="services">
@@ -392,7 +405,15 @@
     <section class="examples">
         <div class="wrapper">
             <h2 class="examplex_title section-title">ПРИМЕРЫ ВЫПОЛНЕННЫХ РАБОТ</h2>
-            <div class="examples__sort"></div>
+            <div class="examples__sort">
+                <ul class="sort_nav">
+                    <li class="sort_nav_item"> <a href="#!" class="nav_item_link">Все</a></li>
+                    <li class="sort_nav_item"><a href="#!" class="nav_item_link">Цветные</a></li>
+                    <li class="sort_nav_item"><a href="#!" class="nav_item_link">Многоуровневые</a></li>
+                    <li class="sort_nav_item"><a href="#!" class="nav_item_link">C фотопечатью</a></li>
+                    <li class="sort_nav_item"><a href="#!" class="nav_item_link">Подсветка</a></li>
+                </ul>
+            </div>
             <div class="examples__examples">
                 <img src="./images/ex1.jpg" alt="" class="example">
                 <img src="./images/ex2.jpg" alt="" class="example">
@@ -430,6 +451,63 @@
             </div>
         </div>
     </section>
+    <section class="questions">
+        <div class="wrapper">
+            <h2 class="questoins__title section-title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+            <div class="questions__questions">
+                <div class="question_block">
+                    <div class="questions_question">
+                        <h2 class="question_title"> <span>01.</span> Говорят, что при установке опускается потолок, насколько это ощутимо?</h2>
+                        <p class="question_text">Вертикальные размеры помещения сократятся мизерно. Натяжной потолк монтируются в 3х см от существующего потолка, скрывая при этом перепады перекрытий</p>
+                    </div>
+                    <div class="questions_question">
+                        <h2 class="question_title"> <span>02.</span>  Как скрывают шов на полотне потолка от сварки?</h2>
+                        <p class="question_text">Ширина сварной зоны составляет всего 0.2 мм, а это вряд ли будет заметно на глаз</p>
+                    </div>
+                </div>
+                <div class="question_block">
+                    <div class="questions_question">
+                        <h2 class="question_title"> <span>03.</span> Как потолки выдерживают, если затопят?</h2>
+                        <p class="question_text">Наши потолки выдерживали до тонны воды при испытаниях на одну комнату. Этого достаточно, чтобы в случае затопления сверху вы смогли вызвать нашего специалиста и аккуратно слить воду. Если это произойдёт, просто позвоните нам, мы сохраним целостность полотна.</p>
+                    </div>
+                    <div class="questions_question">
+                        <h2 class="question_title"> <span>04.</span> Как мебель и обои смогут выдержать температуру в комнате при монтаже?</h2>
+                        <p class="question_text">Монтаж производится при температуре до 60 С. Мебель и обои при этом легко сохранят свой внешний вид. Все таки, особенно ценные вещи, комнатные растения лучше вынести из помещения, где будет проводиться установка натяжных потолков.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="location">
+        <div class="wrapper">
+            <h2 class="location__title section-title">
+                Работаем по всей Москве и Московской Области
+            </h2>
+            <div class="location__adress">
+                <div class="location_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4490.769870748795!2d37.61300287929978!3d55.75181506018085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a56d4d47f59%3A0x5598d1beb607b92e!2z0JzQvtGB0LrQvsyB0LLRgdC60LjQuSDQmtGA0LXQvNC70YwsINCc0L7RgdC60LLQsCwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2sua!4v1601395439908!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="location_adress">
+                    <h2 class="location_adress_title">
+                        Наш адрес
+                    </h2>
+                    <div class="location_adress_street">
+                        <img src="./images/street-thumb.png" alt="street thumb" class="street-thumb">
+                        <p class="street_street"> <a href="https://www.google.com/maps/place/%D0%9B%D1%8E%D0%B1%D0%BB%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB.,+5+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81+4,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F,+109518/@55.7159318,37.7298522,15.83z/data=!4m5!3m4!1s0x414ab517b8dfb531:0x84f290275c1d7c6!8m2!3d55.716443!4d37.730894" class="street_street_link" target="_blank">Москва ул. Люблинская д.5</a></p>
+                    </div>
+                    <a href="tel:+74952233299" class="street_number">7(495)223-32-99</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="wrapper">
+            <div class="footer__content">
+                <h2 class="footer_signature">© "Beauty Line" 2020</h2>
+                <a href="#!" class="footer_install-floor-btn">Установить натяжной потолок!</a>
+            </div>
+        </div>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 </html>
