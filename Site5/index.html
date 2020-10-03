@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WildWay - Ремонт велосипедов</title>
+    <title>Wild Way - Ремонт велосипедов</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -56,11 +56,13 @@
             </div>
         </div>
     </section>
-    <div class="info">
+    <div class="company-desc">
         <div class="wrapper">
-            <div class="info__items">
-                <div class="info__sale"></div>
-                <p class="info_text">Профессиональный ремонт велосипедов в Новосибирске осуществляют специалисты нашего 
+            <div class="company-desc__items">
+                <div class="company-desc__sale">
+                    <button type="submit" class="sale_sale-btn">СКИДКА 10%</button>
+                </div>
+                <p class="company-desc_text">Профессиональный ремонт велосипедов в Новосибирске осуществляют специалисты нашего 
                     велосервиса. Велоремонт может потребоваться любому велосипедисту вне зависимости от того, велосипед какой марки он использует. Даже самые сложные поломки смогут исправить наши специалисты! <br>
 
                     Несмотря на бренд велосипеда и его стоимость, с ним могут случаться мелкие поломки. Им
@@ -86,8 +88,796 @@
                     
                     "Выезд мастера на дом" - ремонт велосипеда на дому нашими специалистами.
                     "Доставка велосипеда из дома в сервис и обратно" - заберём ваш велосипед, отремонтируем и привезём обратно!
-                    "Эвакуация велосипеда после поломки" - заберём ваш велосипед (и доставим Вас до населённого пункта) при поломках, из-за которых дальнейшее катание не представляется возможным.
-                    "Экстренный выезд мастера на место" - выездная велопомощь прибывает на место происшествия неисправности велосипеда и устраняет её в  кратчайшие сроки.</p>
+                    "Эвакуация велосипеда после поломки" - заберём ваш велосипед (и доставим Вас до населённого пункта) при поломках, из-за которых дальнейшее катание не представляется возможным.
+                    "Экстренный выезд мастера на место" - выездная велопомощь прибывает на место происшествия неисправности велосипеда и устраняет её в кратчайшие сроки.</p>
+                <button type="submit" class="company-desc_show-all-btn">Отобразить текст полностью</button>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <div class="wrapper">
+            <div class="info__nav">
+                <ul class="info__nav_items">
+                    <li class="info__nav_item"><a href="#!" class="info__nav_item-link">СТОИМОСТЬ УСЛУГ</a></li>
+                    <li class="info__nav_item"><a href="#!" class="info__nav_item-link">ОТЗЫВЫ </a></li>
+                    <li class="info__nav_item"><a href="#!" class="info__nav_item-link">ПРИМЕРЫ РАБОТ</a></li>
+                    <li class="info__nav_item"><a href="#!" class="info__nav_item-link"><span class = "info__nav_item-link_qa-desc">ВОПРОС-ОТВЕТ</span><span class = "info__nav_item-link_qa-mob">F.A.Q</span></a></li>
+                </ul>
+                <button type="submit" class="info__nav_ask-q-btn">Задать вопрос</button>
+            </div>
+            <div class="info__nav_blocks">
+                <div class="nav__blocks_block blocks_block_serv-price">
+                    <!--  -->
+                    <div class="serv-price_accessories serv-price-block">
+                        <div class="serv_header"><h2 class="serv_header_text">Аксесуары</h2></div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name"></h3>
+                            <div class="serv_column-values">
+                                <div class="counter">КОЛ-ВО</div>
+                                <p class="serv_price">ЦЕНА</p>
+                                <p class="serv_summ">СУММА</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка велокомпьютера</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price">200</p>
+                                <p class="serv_summ">200 руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка багажника</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price">150</p>
+                                <p class="serv_summ">150 руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка детского кресла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price">100</p>
+                                <p class="serv_summ">100 руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка крыльев</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price">100</p>
+                                <p class="serv_summ">100 руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка звонков, фонарей и др.</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price">100</p>
+                                <p class="serv_summ">100 руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка седла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price">100</p>
+                                <p class="serv_summ">100 руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Прочие работы по желанию клиента</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    
+                                </div>
+                                <p class="serv_price">100</p>
+                                <p class="serv_summ">100 руб</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="serv-price_cleaning serv-price-block">
+                        <div class="serv_header"><h2 class="serv_header_text">ЧИСТКА</h2></div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name"></h3>
+                            <div class="serv_column-values">
+                                <div class="counter">КОЛ-ВО</div>
+                                <p class="serv_price">ЦЕНА</p>
+                                <p class="serv_summ">СУММА</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка велокомпьютера</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка багажника</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка детского кресла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка крыльев</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка звонков, фонарей и др.</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка седла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Прочие работы по желанию клиента</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="serv-price_fork serv-price-block">
+                        <div class="serv_header"><h2 class="serv_header_text">ВИЛКА</h2></div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name"></h3>
+                            <div class="serv_column-values">
+                                <div class="counter">КОЛ-ВО</div>
+                                <p class="serv_price">ЦЕНА</p>
+                                <p class="serv_summ">СУММА</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка велокомпьютера</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка багажника</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка детского кресла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка крыльев</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка звонков, фонарей и др.</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка седла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Прочие работы по желанию клиента</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="serv-price_bicycle-wheel serv-price-block">
+                        <div class="serv_header"><h2 class="serv_header_text">РУЛЬ/РУЛЕВАЯ КОЛОНКА</h2></div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name"></h3>
+                            <div class="serv_column-values">
+                                <div class="counter">КОЛ-ВО</div>
+                                <p class="serv_price">ЦЕНА</p>
+                                <p class="serv_summ">СУММА</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка велокомпьютера</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка багажника</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка детского кресла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка крыльев</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка звонков, фонарей и др.</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка седла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Прочие работы по желанию клиента</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="serv-price_selector serv-price-block">
+                        <div class="serv_header"><h2 class="serv_header_text">ПЕРЕКЛЮЧАТЕЛИ СКОРОСТЕЙ</h2></div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name"></h3>
+                            <div class="serv_column-values">
+                                <div class="counter">КОЛ-ВО</div>
+                                <p class="serv_price">ЦЕНА</p>
+                                <p class="serv_summ">СУММА</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка велокомпьютера</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка багажника</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка детского кресла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка крыльев</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка звонков, фонарей и др.</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка седла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Прочие работы по желанию клиента</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="serv-price_brakes serv-price-block">
+                        <div class="serv_header"><h2 class="serv_header_text">ТОРМОЗА</h2></div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name"></h3>
+                            <div class="serv_column-values">
+                                <div class="counter">КОЛ-ВО</div>
+                                <p class="serv_price">ЦЕНА</p>
+                                <p class="serv_summ">СУММА</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка велокомпьютера</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка багажника</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка детского кресла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка крыльев</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка звонков, фонарей и др.</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка седла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Прочие работы по желанию клиента</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="serv-price_sys serv-price-block">
+                        <div class="serv_header"><h2 class="serv_header_text">СИСТЕМА / КАРЕТКА / КАССЕТА</h2></div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name"></h3>
+                            <div class="serv_column-values">
+                                <div class="counter">КОЛ-ВО</div>
+                                <p class="serv_price">ЦЕНА</p>
+                                <p class="serv_summ">СУММА</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка велокомпьютера</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка багажника</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка детского кресла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка крыльев</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка звонков, фонарей и др.</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка седла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Прочие работы по желанию клиента</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="serv-price_wheels serv-price-block">
+                        <div class="serv_header"><h2 class="serv_header_text">КОЛЕСА</h2></div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name"></h3>
+                            <div class="serv_column-values">
+                                <div class="counter">КОЛ-ВО</div>
+                                <p class="serv_price">ЦЕНА</p>
+                                <p class="serv_summ">СУММА</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка велокомпьютера</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка багажника</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка детского кресла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка крыльев</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка звонков, фонарей и др.</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Установка седла</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                        <div class="serv-price_block_item block_item">
+                            <h3 class="serv_name">Прочие работы по желанию клиента</h3>
+                            <div class="serv_column-values">
+                                <div class="counter">
+                                    <p class="counter_minus">-</p>
+                                    <p class="counter_count">0</p>
+                                    <p class="counter_plus">+</p>
+                                </div>
+                                <p class="serv_price"></p>
+                                <p class="serv_summ"> руб</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav__blocks_block blocks_block_rew"></div>
+                <div class="nav__blocks_block blocks_block_ex"></div>
+                <div class="nav__blocks_block blocks_block_qa"></div>
             </div>
         </div>
     </div>

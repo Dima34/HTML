@@ -238,7 +238,6 @@ a{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* pt-sans-regular - latin_cyrillic */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 
@@ -407,16 +406,18 @@ a{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* --------========INFO========-------- */
+/* -----=======COMPANY DESC=======----- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
 
-.info{
+.company-desc{
    z-index: 100;
    position: relative;
+   padding-bottom: 41px;
 }
-.info__sale{
+.company-desc__sale{
+   position: relative;
    width: 399px;
    height: 399px;
    float: right;
@@ -426,11 +427,154 @@ a{
    transition-duration: .3s;
    border-bottom: 7px solid #FFF738;
 }
-.info_text{
+.sale_sale-btn{
+   position: absolute;
+   padding: 19px 69px 19px 42px;
+   border: none;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 20px;
+   letter-spacing: 0.03em;
+   background: url(../images/svg/arrow-rigt-blk.svg) no-repeat,#FFF738;
+   background-position: 160px center;
+   background-blend-mode: multiply;
+   transition-duration: .3s;
+   bottom: 31px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.sale_sale-btn:hover{
+   background-position: 165px center;
+}
+.company-desc_text{
    padding-top: 458px;
    font-style: normal;
    font-weight: normal;
    font-size: 15px;
    line-height: 151.9%;
    letter-spacing: 0.03em;
+}
+.company-desc_show-all-btn{
+   display: none;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------========INFO========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.info__nav{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.info__nav_items{
+   display: flex;
+}
+
+.info__nav_item-link{
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 18px;
+   letter-spacing: 0.03em;
+   padding: 10px 31.5px;
+}
+.info__nav_item:first-child .info__nav_item-link{
+   padding: 10px 31.5px 10px 0;
+}
+.info__nav_item-link-active{
+   font-weight: 600;
+}
+.info__nav_ask-q-btn{
+   padding: 19px 66px 19px 27px;
+   font-size: 16px;
+   line-height: 20px;
+   letter-spacing: 0.03em;
+   border: none;
+   background: url(../images/svg/arrow-rigt-blk.svg) no-repeat,#FFF738;
+   background-position: 150px center;
+   background-blend-mode: multiply;
+   transition-duration: .3s;
+}
+.info__nav_ask-q-btn:hover{
+   background-position: 155px center;
+}
+.info__nav_item-link_qa-mob{
+   display: none;
+}
+.info__nav_blocks{
+   margin-top: 18px;
+}
+.nav__blocks_block{
+   width: 100%;
+}
+.serv_header{
+   width: 100%;
+   height: 41px;
+   padding-left: 28px;
+   padding-right: 22px;
+   background: #202020;
+   font-weight: 600;
+   color: white;
+   display: flex;
+   align-items: center;
+   letter-spacing: 0.03em;
+}
+.serv_header_text{
+   background: url(../images/svg/serv_price_block_arrow.svg) no-repeat;
+   background-position: center right;
+   width: 100%;
+}
+.block_item{
+   display: flex;
+   justify-content: space-between;
+   padding:12px 34px 12px 28px
+}
+.serv_column-values{
+   display: grid;
+   grid-template-columns: 80px 70px 70px;
+   text-align: center;
+}
+.counter{
+   display: flex;
+   max-width: 80px;
+   margin: 0 auto;
+}
+
+.blocks_block_serv-price div div:nth-child(2) div:nth-child(2) div,.blocks_block_serv-price div div:nth-child(2) div:nth-child(2) p {
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 18px;
+   letter-spacing: 0.03em;
+}
+.counter{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.counter_plus,.counter_minus{
+   background-color: #FFF738;
+   width: 19px;
+   height: 19px;
+   border-radius: 20px;
+   text-align: center;
+   vertical-align: middle;
+   cursor: pointer;
+}
+.counter_plus{
+   padding-top: 2px;
+}
+.counter_count{
+   margin: 0 15px;
+}
+.serv-price-block{
+   height: 41px;
+   overflow: hidden;
+   margin-bottom: 3px;
+   cursor: pointer;
 }
