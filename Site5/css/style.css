@@ -252,7 +252,9 @@ a{
    font-family: 'Montserrat', sans-serif !important;
    box-sizing: border-box;
 }
-
+a:focus, a:visited{
+   outline: none;
+}
 .wrapper{
    max-width: 1236px;
    margin: 0 auto;
@@ -384,7 +386,10 @@ a{
 .intro__weekly{
    background-color: white;
    padding-top: 30px;
-   padding-left: 128px;
+   
+}
+.weekly_items{
+   padding-left: 75px;
 }
 .weekly_text:first-child{
    font-style: normal;
@@ -485,9 +490,6 @@ a{
    line-height: 18px;
    letter-spacing: 0.03em;
    padding: 10px 31.5px;
-}
-.info__nav_item-link:visited, .info__nav_item-link:focus{
-   border: none;
 }
 .info__nav_item:first-child .info__nav_item-link{
    padding: 10px 31.5px 10px 0;
@@ -691,4 +693,98 @@ a{
 }
 .block-active{
    display: block;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------======ASK QUESTION======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.ask-q{
+   background: url(../images/q-bg.png) no-repeat;
+   
+   z-index: 2;
+}
+.ask-q .wrapper{
+   border: 12px solid #F9F9F9;
+   display: flex;
+   justify-content: flex-end;
+   position: relative;
+   overflow: hidden;
+}
+
+.q__form{
+   width: fit-content;
+   margin-top: 75px;
+}
+.q_title{
+   font-style: normal;
+   font-weight: bold;
+   font-size: 2.5vw;
+   line-height: 102.4%;
+   letter-spacing: 0.03em;
+   width: 30vw;
+   color: black;
+}
+.q_title-desc{
+   font-style: normal;
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 18px;
+   letter-spacing: 0.03em;
+   width: 25vw;
+   color: #000000;
+}
+.q_forms{
+   margin-top: 40px;
+}
+.q_forms_number-form{
+   background: #FFFFFF;
+   mix-blend-mode: normal;
+   border: 1px solid #A3A3A3;
+   height: 55px;
+   padding-right: 62px;
+   padding-left: 37px;
+}
+.q_forms_number-form::placeholder{
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 22px;
+   letter-spacing: 0.03em;
+   color: #DBDBDB;
+}
+.q_forms_send-btn{
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 20px;
+   letter-spacing: 0.03em;
+   color: #000000;
+   border: none;
+   height: 55px;
+   padding-right: 49px;
+   padding-left: 31px;
+   background: url(../images/svg/arrow-rigt-blk.svg) no-repeat ,#FFF738;
+   background-position: 92% center;
+   background-blend-mode: multiply;
+   transition-duration: .3s;
+}
+.q_forms_send-btn:hover{
+   background-position: 95% center;
+}
+.q_form-desc{
+   font-style: normal;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 18px;
+   letter-spacing: 0.03em;
+   color: #000000;
+   max-width: 544px;
+   margin-top:40px;
+}
+.q_form-desc span{
+   font-weight: 600;
 }
