@@ -295,6 +295,7 @@ a:focus, a:visited{
    padding: 20px 11px 14px;
    transition-duration: .3s;
    border-bottom: 0px solid #FFF738;
+   position: relative;
 }
 .nav-one_item_link:hover{
    border-bottom: 7px solid #FFF738;
@@ -312,6 +313,69 @@ a:focus, a:visited{
    transition-duration: .3s;
    padding:20px 0;
 }
+.under-text-menu{
+   position: absolute;
+   z-index: 2;
+   background: white;
+   display: flex;
+   justify-content: space-between;
+   padding: 24px 0px 25px 52px;
+   margin-top: 20px;
+}
+.under-text-menu_items-title{
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 18px;
+   letter-spacing: 0.03em;
+}
+.under-text-menu_items-list{
+   margin-top: 24px;
+}
+.under-text-menu_item{
+   padding: 0px 28px 12px 0;
+   width: fit-content;
+   
+   
+}
+.under-text-menu_item:hover{
+   background: url(../images/svg/arrow-rigt-blk.svg) no-repeat;
+   background-position: 97% 6px;
+}
+.under-text-menu_item-link{
+   padding: 0px 0 12px 0;
+   width: fit-content;
+   font-weight: 300;
+   font-size: 15px;
+   line-height: 18px;
+   letter-spacing: 0.03em;
+   position: relative;
+   transition-duration: .3s;
+}
+.under-text-menu_item-link:hover::after{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 3px;
+   left: 0;
+   bottom: 8px;
+   background: #FFF738;;
+}
+.under-text-menu_items:nth-child(2){
+   margin-left: 174px;
+}
+.under-text-menu_items:nth-child(2) .under-text-menu_items-list{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   max-width: 240px;
+}
+
+.under-text-menu{
+   display: none;
+}
+.nav-one_item:hover .under-text-menu{
+   display: flex;
+}
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -326,7 +390,6 @@ a:focus, a:visited{
    background-blend-mode: overlay;
    background-size: cover;
    min-height: 200px;
-   position: absolute;
    width: 100%;
    z-index: 1;
 }
@@ -337,7 +400,6 @@ a:focus, a:visited{
    position: relative;
    width: 100%;
    display: flex;
-   z-index: 100;
 }
 .intro_tel, .intro_order-call{
    color: white;
@@ -358,7 +420,24 @@ a:focus, a:visited{
    letter-spacing: 0.03em;
    padding-right: 29px;
    background: url(../images/svg/arrow-right.svg) no-repeat center right;
+   position: relative;
+   transition-duration: .3s;
 }
+.intro_order-call:after{
+   position: absolute;
+   top:27px;
+   left: 0;
+   content: "";
+   width: 0%;
+   height: 3px;
+   background: #FFF738;
+   border-radius: 2px;
+   transition-duration: .3s;
+}
+.intro_order-call:hover:after{
+   width: 85%;
+}
+
 .intro__bottom{
    width: 100%;
    padding-bottom: 30px;
@@ -386,12 +465,12 @@ a:focus, a:visited{
    color: rgb(223, 225, 38);
 }
 .intro__weekly{
-   background-color: white;
+   background-color: #F9F9F9;;
    padding-top: 30px;
-   
 }
 .weekly_items{
    padding-left: 75px;
+   padding-bottom: 25px;
 }
 .weekly_text:first-child{
    font-style: normal;
@@ -419,9 +498,10 @@ a:focus, a:visited{
 /* ------------------------------------ */
 
 .company-desc{
-   z-index: 100;
+   z-index: 2;
    position: relative;
    padding-bottom: 41px;
+   padding-top: 20px;
 }
 .company-desc__sale{
    position: relative;
@@ -430,7 +510,7 @@ a:focus, a:visited{
    float: right;
    background: url(../images/info__sale-bg.png);
    background-size: cover;
-   margin-top: 138px;
+   margin-top: -300px;
    transition-duration: .3s;
    border-bottom: 7px solid #FFF738;
 }
@@ -455,7 +535,6 @@ a:focus, a:visited{
    background-position: 165px center;
 }
 .company-desc_text{
-   padding-top: 458px;
    font-style: normal;
    font-weight: normal;
    font-size: 15px;
@@ -886,3 +965,11 @@ a:focus, a:visited{
 .footer_item:nth-child(3){
    margin-right: 91px;
 }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------========MEDIA========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
