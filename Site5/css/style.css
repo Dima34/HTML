@@ -608,7 +608,7 @@ a:focus, a:visited{
 .nav__blocks_block{
    width: 100%;
 }
-.serv_header, .qa-block_header{
+.serv_header-desktop, .qa-block_header{
    width: 100%;
    height: 41px;
    padding-left: 28px;
@@ -621,7 +621,7 @@ a:focus, a:visited{
    letter-spacing: 0.03em;
    position: relative;
 }
-.serv_header:after, .qa-block_header:after{
+.serv_header-desktop:after, .qa-block_header:after{
    background: url(../images/svg/serv_price_block_arrow.svg) no-repeat;
    content: "";
    background-position: center right;
@@ -676,19 +676,22 @@ a:focus, a:visited{
 .counter_count{
    margin: 0 15px;
 }
-.serv-price-block,.qa-block{
+.serv-price-block-desktop,.qa-block{
    height: 41px;
    overflow: hidden;
    margin-bottom: 3px;
    cursor: pointer;
    transition-duration: .3s;
 }
-.serv-price-block-active, .qa-block-active{ 
-   height: unset;
-   transition-duration: .3s;
+.serv-price-block-mobile{
+   display: none;
 }
-.serv-price-block-active .serv_header::after,.qa-block-active .qa-block_header::after{
-   transform: rotate(90deg) translateX(-50%);
+.serv-price-block-active, .qa-block-active{ 
+   height: unset !important;
+   transition-duration: .3s !important;
+}
+.serv-price-block-active .serv_header-desktop::after,.qa-block-active .qa-block_header::after,.serv-price-block-active .serv_header-mobile:after{
+   transform: rotate(90deg) translateX(-50%) !important;
 }
 .serv-price_block_calc_summ{
    width: 100%;
@@ -1487,11 +1490,127 @@ a:focus, a:visited{
       border-bottom: 7px solid #FFF738;
       margin:20px auto;
    }
+
    .serv_header_text, .qa-block_header_text {
       font-weight: 600;
       font-size: 12px;
       line-height: 17px;
    }
+   .serv-price-block-desktop{
+      display: none;
+   }
+   .serv-price-block-mobile{
+      display: block;
+      overflow: hidden;
+      margin-bottom: 3px;
+      cursor: pointer;
+      transition-duration: .3s;
+      height: 41px;
+   }
+   .serv_header-mobile{
+      width: 100%;
+      height: 41px;
+      padding-left: 28px;
+      padding-right: 22px;
+      background: #202020;
+      font-weight: 600;
+      color: white;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+      position: relative;
+   }
+   .serv_header-mobile:after{
+      background: url(../images/svg/serv_price_block_arrow.svg) no-repeat;
+      content: "";
+      background-position: center right;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      right: 35px;
+      top:50%;
+      transform: translateY(-50%);
+      transition: .3s;
+   }
+   .serv-price_block_item{
+      padding-right: 15px;
+   }
+   .serv-price_block_item_amount-text{
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.03em;
+      color: #808080;
+      padding:6px 30px 0px 0px;
+      text-align: right;
+   }
+   .serv-price_block_item{
+      display: flex;
+      justify-content: space-between;
+   }
+   .serv-name{
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 126.4%;
+   }
+   .serv-price_block_item-left{
+      display: flex;
+      flex-direction: column;
+      margin-right: 47px;
+   }
+   .serv-price,.serv-summ{
+      display: flex;
+      justify-content: space-between;
+      font-weight: normal;
+      font-size: 11px !important;
+      line-height: 13px ;
+      letter-spacing: 0.03em;
+      color: #808080;
+      height: fit-content;
+      
+   }
+   .serv-price_price-text,.serv-price_price-num{
+      font-weight: normal !important;
+      font-size: 11px !important;
+      
+   }
+   .serv-price{
+      margin-top: 18px;
+   }
+   .serv-price_summ-num,.serv-price_price-num{
+      color:black;
+   }
+   .counter{
+      max-width: 121px;
+      width: 95px;
+   }
+   .counter_count{
+      margin:0
+   }
+   .counter_btn{
+      width: unset;
+      height: unset;
+      border: none;
+      padding: 15px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 50%;
+      position: relative;
+   }
+   .counter_plus::after,.counter_minus::after{
+      position: absolute;
+      top: 7px;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "+";
+   }
+   .counter_minus::after{
+      content: "-";
+      top: 5px;
+   }
+   
    .q_img{
       display: none;
    }
@@ -1624,6 +1743,7 @@ a:focus, a:visited{
       font-size: 11px;
       line-height: 13px;
    }
+   
    .footer_nav_item-link{
       font-weight: 500;
       font-size: 12px;
