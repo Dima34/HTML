@@ -649,8 +649,9 @@ a:focus, a:visited{
    max-width: 80px;
    margin: 0 auto;
 }
-
-.blocks_block_serv-price div div:nth-child(2) div:nth-child(2) div,.blocks_block_serv-price div div:nth-child(2) div:nth-child(2) p {
+.serv-price-block-desktop .serv-price_block_item:nth-child(2) .serv_column-values .counter,
+.serv-price-block-desktop .serv-price_block_item:nth-child(2) .serv_column-values .serv_price,
+.serv-price-block-desktop .serv-price_block_item:nth-child(2) .serv_column-values .serv_summ{
    font-weight: 600;
    font-size: 15px;
    line-height: 18px;
@@ -1562,17 +1563,11 @@ a:focus, a:visited{
       display: flex;
       justify-content: space-between;
       font-weight: normal;
-      font-size: 11px !important;
+      font-size: 11px;
       line-height: 13px ;
       letter-spacing: 0.03em;
       color: #808080;
       height: fit-content;
-      
-   }
-   .serv-price_price-text,.serv-price_price-num{
-      font-weight: normal !important;
-      font-size: 11px !important;
-      
    }
    .serv-price{
       margin-top: 18px;
