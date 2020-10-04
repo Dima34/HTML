@@ -389,7 +389,7 @@ a:focus, a:visited{
 /* ------------------------------------ */
 
 .intro{
-   background:url(../images/intro-bg.png) no-repeat,rgba(0, 0, 0, 0.5);
+   background:url(../images/intro-bg.webp) no-repeat,rgba(0, 0, 0, 0.5);
    background-blend-mode: overlay;
    background-size: cover;
    min-height: 200px;
@@ -513,7 +513,7 @@ a:focus, a:visited{
    width: 399px;
    height: 399px;
    float: right;
-   background: url(../images/info__sale-bg.png);
+   background: url(../images/info__sale-bg.webp);
    background-size: cover;
    margin-top: -300px;
    transition-duration: .3s;
@@ -742,13 +742,13 @@ a:focus, a:visited{
    position: relative;
 }
 #example_img-1{
-   background-image: url(../images/ex-pic-1.png);
+   background-image: url(../images/ex-pic-1.webp);
 }
 #example_img-2{
-   background-image: url(../images/ex-pic-2.png);
+   background-image: url(../images/ex-pic-2.webp);
 }
 #example_img-3{
-   background-image: url(../images/ex-pic-3.png);
+   background-image: url(../images/ex-pic-3.webp);
 }
 .img_desc{
    position: absolute;
@@ -804,7 +804,7 @@ a:focus, a:visited{
 .q_img{
    width: 100%;
    height: 100%;
-   background: url(../images/q-bg.png) no-repeat;
+   background: url(../images/q-bg.webp) no-repeat;
    min-height: 200px;
    position: absolute;
    left: -30%;
@@ -1382,6 +1382,19 @@ a:focus, a:visited{
    .q_img{
       left: -58%;
       width: 106%;
+   }
+   .ex_items{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .ex_example{
+      width: 50%;
+      margin-bottom: 20px;
+      text-align: center;
+   }
+   .img_desc_text{
+      width: 60%;
    }
 }
 @media screen and (max-width: 720px){
