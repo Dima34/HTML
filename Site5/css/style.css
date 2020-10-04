@@ -1448,10 +1448,10 @@ a:focus, a:visited{
       font-size: 12px;
    }
    .info__nav_item:first-child .info__nav_item-link{
-      padding: 10px 15px 10px 0;
+      padding: 10px 15px 10px 15px;
    }
    .info__nav_item:last-child .info__nav_item-link{
-      padding: 10px 0 10px 15px;
+      padding: 10px 15px 10px 15px;
    }
    .street_link{
       font-size:12px;
