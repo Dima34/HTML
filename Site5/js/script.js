@@ -6,17 +6,38 @@
     let serv_header_mobile = document.querySelectorAll(".serv_header-mobile")
     let qa_header = document.querySelectorAll(".qa-block_header")
 
-    
     if(window.outerWidth<=550){
         serv_price_blocks=serv_price_blocks_mobile
         serv_header=serv_header_mobile
         console.log("Changed")
     }
-    console.log(serv_price_blocks)
+    
+    window.addEventListener("resize", ()=>{
+        if(window.outerWidth>=550){
+            serv_header = document.querySelectorAll(".serv_header-desktop")
+            serv_price_blocks = document.querySelectorAll(".serv-price-block-desktop")
+        }
+        else{
+            serv_price_blocks=serv_price_blocks_mobile
+            serv_header=serv_header_mobile
+        }
+        for(let i = 0; i < serv_header.length; i++){
+            serv_header[i].addEventListener("click",() => {
+                classlist = Object.values(serv_price_blocks[i].classList)
+                if(classlist.indexOf("serv-price-block-active") != -1){
+                    serv_price_blocks[i].classList.remove("serv-price-block-active");
+                }
+                else{
+                    serv_price_blocks[i].classList.add("serv-price-block-active");
+                }
+            })
+        }
+    })
+    
+    
 
     for(let i = 0; i < serv_header.length; i++){
         serv_header[i].addEventListener("click",() => {
-            console.log(serv_price_blocks[i])
             classlist = Object.values(serv_price_blocks[i].classList)
             if(classlist.indexOf("serv-price-block-active") != -1){
                 serv_price_blocks[i].classList.remove("serv-price-block-active");
