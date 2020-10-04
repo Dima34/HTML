@@ -1,9 +1,11 @@
 (function(){
     let serv_price_blocks = document.querySelectorAll(".serv-price-block")
     let qa_blocks = document.querySelectorAll(".qa-block")
+    let serv_header = document.querySelectorAll(".serv_header")
+    let qa_header = document.querySelectorAll(".qa-block_header")
 
-    for(let i = 0; i < serv_price_blocks.length; i++){
-        serv_price_blocks[i].addEventListener("click",() => {
+    for(let i = 0; i < serv_header.length; i++){
+        serv_header[i].addEventListener("click",() => {
             classlist = Object.values(serv_price_blocks[i].classList)
             console.log()
             if(classlist.indexOf("serv-price-block-active") != -1){
@@ -14,8 +16,8 @@
             }
         })
     }
-    for(let i = 0; i < qa_blocks.length; i++){
-        qa_blocks[i].addEventListener("click",() => {
+    for(let i = 0; i < qa_header.length; i++){
+        qa_header[i].addEventListener("click",() => {
             classlist = Object.values(qa_blocks[i].classList)
             console.log()
             if(classlist.indexOf("qa-block-active") != -1){

@@ -1438,6 +1438,8 @@ a:focus, a:visited{
    .footer_nav_item-link{
       font-size: 14px;
    }
+   
+   
    .info__nav_item-link{
       padding: 10px 15px 10px 15px;
       font-size: 12px;
@@ -1484,6 +1486,11 @@ a:focus, a:visited{
       transition-duration: .3s;
       border-bottom: 7px solid #FFF738;
       margin:20px auto;
+   }
+   .serv_header_text, .qa-block_header_text {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 17px;
    }
    .q_img{
       display: none;
@@ -1558,14 +1565,20 @@ a:focus, a:visited{
    
 }
 @media screen and (max-width: 513px){
+   .info__nav_item-link-active{
+      color: black !important;
+      border-bottom: 2px solid black;
+   }
    .info__nav_item-link{
       font-size: 14px;
+      color:#94979A;
    }
    .info__nav_item-link_qa-desc{
       display: none;
    }
    .info__nav_item-link_qa-mob{
       display: inline-block;
+      
    }
 }
 
@@ -1605,6 +1618,7 @@ a:focus, a:visited{
    }
    .info__nav_item:last-child .info__nav_item-link{
       padding: 10px 0 10px 10px;
+   }
    .serv_header_text{
       font-weight: 600;
       font-size: 11px;
