@@ -51,4 +51,14 @@
         })
     }
 
+    let burger = document.querySelector(".mobile__nav_burger")
+    let burger_close = document.querySelector(".mobile__nav-list_burger-close")
+    let nav_list = document.querySelector(".mobile__nav-list")
+    
+    burger.addEventListener("click", () => {
+        nav_list.classList.add("mobile__nav-list-active");
+    })
+    burger_close.addEventListener("click", () => {
+        nav_list.classList.remove("mobile__nav-list-active");
+    })
 }())
