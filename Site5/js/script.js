@@ -1,48 +1,50 @@
 (function(){
-    let serv_price_blocks = document.querySelectorAll(".serv-price-block-desktop")
-    let serv_price_blocks_mobile = document.querySelectorAll(".serv-price-block-mobile")
-    let qa_blocks = document.querySelectorAll(".qa-block")
-    let serv_header = document.querySelectorAll(".serv_header-desktop")
-    let serv_header_mobile = document.querySelectorAll(".serv_header-mobile")
+    let serv_header = document.querySelectorAll(".serv_header")
+    let serv_main = document.querySelectorAll(".serv_main")
     let qa_header = document.querySelectorAll(".qa-block_header")
-
-    
-    
+    let qa_main = document.querySelectorAll(".qa-block_main")
+    let serv_header_mobile = document.querySelectorAll(".serv_header-mobile")
+    let serv_main_mobile = document.querySelectorAll(".serv_main-mobile")
 
     for(let i = 0; i < serv_header.length; i++){
         serv_header[i].addEventListener("click",() => {
-            classlist = Object.values(serv_price_blocks[i].classList)
-            if(classlist.indexOf("serv-price-block-active") != -1){
-                serv_price_blocks[i].classList.remove("serv-price-block-active");
+            classlist = Object.values(serv_main[i].classList)
+            if(classlist.indexOf("serv_main-active") != -1){
+                serv_main[i].classList.remove("serv_main-active");
+                serv_header[i].classList.remove("serv_header-active");
             }
             else{
-                serv_price_blocks[i].classList.add("serv-price-block-active");
+                serv_main[i].classList.add("serv_main-active");
+                serv_header[i].classList.add("serv_header-active");
             }
         })
     }
     for(let i = 0; i < serv_header_mobile.length; i++){
         serv_header_mobile[i].addEventListener("click",() => {
-            classlist = Object.values(serv_price_blocks_mobile[i].classList)
-            if(classlist.indexOf("serv-price-block-active") != -1){
-                serv_price_blocks_mobile[i].classList.remove("serv-price-block-active");
+            classlist = Object.values(serv_main_mobile[i].classList)
+            if(classlist.indexOf("serv_main-mobile-active") != -1){
+                serv_main_mobile[i].classList.remove("serv_main-mobile-active");
+                serv_header_mobile[i].classList.remove("serv_header-mobile-active");
             }
             else{
-                serv_price_blocks_mobile[i].classList.add("serv-price-block-active");
+                serv_main_mobile[i].classList.add("serv_main-mobile-active");
+                serv_header_mobile[i].classList.add("serv_header-mobile-active");
             }
         })
     }
     for(let i = 0; i < qa_header.length; i++){
         qa_header[i].addEventListener("click",() => {
-            classlist = Object.values(qa_blocks[i].classList)
-            if(classlist.indexOf("qa-block-active") != -1){
-                qa_blocks[i].classList.remove("qa-block-active");
+            classlist = Object.values(qa_main[i].classList)
+            if(classlist.indexOf("qa-block_main-active") != -1){
+                qa_main[i].classList.remove("qa-block_main-active");
+                qa_header[i].classList.remove("qa-block_header-active");
             }
             else{
-                qa_blocks[i].classList.add("qa-block-active");
+                qa_main[i].classList.add("qa-block_main-active");
+                qa_header[i].classList.add("qa-block_header-active");
             }
         })
     }
-
     
 
     let info__nav_items = document.querySelectorAll(".info__nav_item-link");
