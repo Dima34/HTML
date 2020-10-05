@@ -1486,7 +1486,7 @@ a:focus, a:visited{
 
 @media screen and (max-width: 550px){
    .mobile__nav-list-item{
-      height: fit-content;
+      width: fit-content;
    }
    .mobile__nav-list-item-link{
       font-size: 5vw;
