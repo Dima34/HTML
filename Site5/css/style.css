@@ -251,6 +251,7 @@ a{
 *{
    font-family: 'Montserrat', sans-serif !important;
    box-sizing: border-box;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a:focus, a:visited{
    outline: none;
@@ -656,6 +657,9 @@ a:focus, a:visited{
    font-size: 15px;
    line-height: 18px;
    letter-spacing: 0.03em;
+}
+.serv-price-block-desktop:focus{
+   outline: none;
 }
 .counter{
    display: flex;
@@ -1389,7 +1393,8 @@ a:focus, a:visited{
       align-items: center;
    }
    .ex_example{
-      width: 50%;
+      width: 90%;
+      max-width: 382px;
       margin-bottom: 20px;
       text-align: center;
    }
@@ -1498,7 +1503,7 @@ a:focus, a:visited{
       position: relative;
       width: 284px;
       height: 284px;
-      background: url(../images/info__sale-bg.png);
+      background: url(../images/info__sale-bg.webp);
       background-size: cover;
       transition-duration: .3s;
       border-bottom: 7px solid #FFF738;
