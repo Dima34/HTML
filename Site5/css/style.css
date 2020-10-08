@@ -942,6 +942,7 @@ a:focus, a:visited{
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
+   white-space: nowrap;
 }
 .adress_street, .street_link,.number-link{
    font-style: normal;
@@ -954,6 +955,7 @@ a:focus, a:visited{
 .number-link{
    font-weight: 600;
    text-align: right;
+   white-space: nowrap;
 }
 .footer_nav-title,.footer_social-title{
    font-weight: 600;
