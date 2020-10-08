@@ -1102,6 +1102,22 @@ a:focus, a:visited{
       font-size: 13px;
       line-height: 151.9%;
    }
+   .company-desc_show-all-btn{
+      display: block;
+      background: 0;
+      border: 0;
+      color: #94979A;
+      padding: 10px 35px 10px 0;
+      background: url(../images/svg/arrow-rigt-blk.svg) no-repeat right center;
+      transition-duration: .3s;
+      margin-top: 5px;
+   }
+   .company-desc_show-all-btn-active{
+      background-image: none;
+   }
+   .company-desc_show-all-btn:hover{
+      padding: 10px 40px 10px 0;
+   }
    .info__nav_item-link{
       font-weight: 300;
       font-size: 14px;
@@ -1149,7 +1165,7 @@ a:focus, a:visited{
    }
    .q_forms_number-form{
       height: 50px;
-      padding: 17px 29px;
+      padding: 17px 25px;
       width: 200px;
    }
    .q_forms_number-form::placeholder{

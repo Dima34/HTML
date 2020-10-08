@@ -83,4 +83,129 @@
     burger_close.addEventListener("click", () => {
         nav_list.classList.remove("mobile__nav-list-active");
     })
+
+    // Full Text
+    
+    let text_p=document.querySelectorAll(".company-desc_text");
+    let show_text=document.querySelector(".company-desc_show-all-btn");
+    let to = 0;
+    let isShowed = false;
+
+    if(window.innerWidth <= 998){
+        to = 3;
+        for(let i=0; i < text_p.length; i++){
+            if(i>to){
+                text_p[i].style.display = "none";
+            }
+        }
+    }
+    if(window.innerWidth <= 768){
+        for(let i=0; i < text_p.length; i++){
+            to = 2;
+            if(i>to){
+                text_p[i].style.display = "none";
+            }
+        }
+    }
+    if(window.innerWidth <= 576){
+        to = 1;
+        for(let i=0; i < text_p.length; i++){
+            if(i>to){
+                text_p[i].style.display = "none";
+            }
+        }
+    }
+
+    show_text.addEventListener("click", () => {
+        if(isShowed){
+            isShowed=false;
+            if(window.innerWidth <= 998){
+                to = 3;
+                for(let i=0; i < text_p.length; i++){
+                    if(i>to){
+                        text_p[i].style.display = "none";
+                    }
+                }
+                for(let i=0; i <= to; i++){
+                    text_p[i].style.display = "block";
+                }
+    
+            }
+            if(window.innerWidth <= 768){
+                for(let i=0; i < text_p.length; i++){
+                    to = 2;
+                    if(i>to){
+                        text_p[i].style.display = "none";
+                    }
+                }
+                for(let i=0; i <= to; i++){
+                    text_p[i].style.display = "block";
+                }
+            }
+            if(window.innerWidth <= 576){
+                to = 1;
+                for(let i=0; i < text_p.length; i++){
+                    if(i>to){
+                        text_p[i].style.display = "none";
+                    }
+                }
+                for(let i=0; i <= to; i++){
+                    text_p[i].style.display = "block";
+                }
+            }
+            show_text.classList.remove("company-desc_show-all-btn-active")
+            show_text.textContent = "Отобразить текст полностью"
+        }
+        else{
+            isShowed=true;
+            for(let i=0; i < text_p.length; i++){
+                text_p[i].style.display = "block";
+            }
+            show_text.textContent = "Скрыть"
+            show_text.classList.add("company-desc_show-all-btn-active")
+        }
+    })
+    window.addEventListener("resize", () => {
+        if(isShowed==false){
+            if(window.innerWidth <= 998){
+                to = 3;
+                for(let i=0; i < text_p.length; i++){
+                    if(i>to){
+                        text_p[i].style.display = "none";
+                    }
+                }
+                for(let i=0; i <= to; i++){
+                    text_p[i].style.display = "block";
+                }
+    
+            }
+            if(window.innerWidth <= 768){
+                for(let i=0; i < text_p.length; i++){
+                    to = 2;
+                    if(i>to){
+                        text_p[i].style.display = "none";
+                    }
+                }
+                for(let i=0; i <= to; i++){
+                    text_p[i].style.display = "block";
+                }
+            }
+            if(window.innerWidth <= 576){
+                to = 1;
+                for(let i=0; i < text_p.length; i++){
+                    if(i>to){
+                        text_p[i].style.display = "none";
+                    }
+                }
+                for(let i=0; i <= to; i++){
+                    text_p[i].style.display = "block";
+                }
+            }
+            if(window.innerWidth > 998){
+                for(let i=0; i < text_p.length; i++){
+                    text_p[i].style.display = "block";
+                }
+            }
+        }
+    })
 }())
