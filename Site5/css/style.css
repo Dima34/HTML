@@ -288,6 +288,7 @@ a:focus, a:visited{
 }
 .nav-one_item{
    margin-right: 25px;
+   white-space: nowrap;
 }
 .nav-one_item_link{
    color: black;
@@ -300,12 +301,14 @@ a:focus, a:visited{
    transition-duration: .3s;
    border-bottom: 0px solid #FFF738;
    position: relative;
+   white-space: nowrap;
 }
 .nav-one_item_link:hover{
    border-bottom: 7px solid #FFF738;
 }
 .nav-two_item{
    margin-left: 33px;
+   white-space: nowrap;
 }
 .nav-two_item_link{
    color: black;
@@ -316,6 +319,7 @@ a:focus, a:visited{
    letter-spacing: 0.03em;
    transition-duration: .3s;
    padding:20px 0;
+   white-space: nowrap;
 }
 .under-text-menu{
    position: absolute;
@@ -951,6 +955,7 @@ a:focus, a:visited{
    line-height: 18px;
    letter-spacing: 0.03em;
    color: #FFFFFF;
+   white-space: nowrap;
 }
 .number-link{
    font-weight: 600;
@@ -989,6 +994,9 @@ a:focus, a:visited{
 }
 .footer_item:nth-child(3){
    margin-right: 91px;
+}
+.footer_item:nth-child(2){
+   margin-left: 3px;
 }
 .reserverd_text{
    font-weight: 300;
@@ -1056,7 +1064,6 @@ a:focus, a:visited{
    .nav-one_item_link,.nav-two_item_link{
       font-size: 13px;
       line-height: 16px;
-      
    }
    .nav-one_item{
       margin-right: 18px;
