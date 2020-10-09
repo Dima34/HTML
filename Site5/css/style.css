@@ -591,7 +591,7 @@ a:focus, a:visited{
    font-weight: 600 !important;
 }
 .info__nav_ask-q-btn{
-   padding: 19px 66px 19px 27px;
+   padding: 19px 50px 19px 20px;
    font-size: 16px;
    line-height: 20px;
    letter-spacing: 0.03em;
@@ -755,16 +755,33 @@ a:focus, a:visited{
    grid-template-columns: repeat(3, 1fr);
    column-gap: 32px;
 }
-.example_blk{
+.ex_example{
    position: relative;
+   width: 100%;
+   padding-bottom: 100%;
+}
+#ex-1{
+   background: url(../images/ex-pic-1.webp) center center no-repeat;
+}
+#ex-2{
+   background: url(../images/ex-pic-2.webp) center center no-repeat;
+}
+#ex-3{
+   background: url(../images/ex-pic-3.webp) center center no-repeat;
 }
 .examle_image{
    width: 100%;
    height: auto;
 }
-.img_desc{
+.example_figcaption{
    position: absolute;
-   height: 32.68%;
+   width: 100%;
+   height: 48.52%;
+   left: 0;
+   bottom: 0;
+}
+.img_desc{
+   height: 70%;
    width: 100%;
    left: 0;
    display: flex;
@@ -782,7 +799,8 @@ a:focus, a:visited{
    width: 100%;
    border: 0;
    text-decoration: none;
-   padding: 18px 0;
+   height: 30%;
+   padding: 0;
    background: url(../images/svg/arrow-rigt-blk.svg) center right no-repeat;
    background-color: #FFF738;
    background-position: 70% center;
@@ -1326,6 +1344,7 @@ a:focus, a:visited{
    .reserverd_text{
       width: 90%;
       padding-left: 15px;
+      padding: 0px 20px 0px 0px;
    }
    
    .ask-q .wrapper{
@@ -1783,6 +1802,9 @@ a:focus, a:visited{
    }
    .ex_example{
       width: 95%;
+   }
+   .footer_nav{
+      grid-template-columns: 1fr;
    }
    .footer_nav_item-link{
       font-weight: 500;
