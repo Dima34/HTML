@@ -1192,7 +1192,7 @@ a:focus, a:visited{
    }
    .q_forms_send-btn{
       height: 50px;
-      padding: 17px 43px 17px 19px;
+      padding: 0px 20px 0px 0px;
       font-size: 13px;
       line-height: 16px;
    }
@@ -1344,7 +1344,7 @@ a:focus, a:visited{
    .reserverd_text{
       width: 90%;
       padding-left: 15px;
-      padding: 0px 20px 0px 0px;
+      padding: 0px 0px 0px 57px;
    }
    
    .ask-q .wrapper{
