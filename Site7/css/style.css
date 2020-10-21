@@ -255,7 +255,7 @@ a{
 /* ------------------------------------ */
 /* ------------------------------------ */
 *{
-    font-family: "Avenir";
+    font-family: "Avenir" !important;
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     
@@ -462,7 +462,7 @@ a:focus, a:visited{
     .main-menu__nav_container{
         display: flex;
     }
-    .main-menu_nav-item{
+    .main-menu_nav-item,.examples_nav-item{
         background: #ECF0F3;
         box-shadow: 6px 6px 5px #D1D9E6, -6px -6px 10px #FFFFFF;
         border-radius: 12px;
@@ -596,7 +596,7 @@ a:focus, a:visited{
     }
     .review_desc{
         position: absolute;
-        width: 100%;
+        width: 100.4%;
         height: 55%;
         background: linear-gradient(180deg, rgba(69, 89, 107, 0) 0%, rgba(69, 89, 107, 0.25) 22.4%, rgba(69, 89, 107, 0.71) 38.54%, rgba(69, 89, 107, 0.97) 64.06%, rgba(69, 89, 107, 0.92) 83.33%), linear-gradient(180deg, rgba(69, 89, 107, 0) 0%, rgba(69, 89, 107, 0) 0.01%, rgba(69, 89, 107, 0.85) 63.54%, rgba(69, 89, 107, 0.85) 80.73%, rgba(69, 89, 107, 0.85) 85.42%);
         bottom: 0;
@@ -780,7 +780,331 @@ a:focus, a:visited{
     .pop-up-call{
         background: #36A234;
     }
+
+
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !------=======REVIEWS=======-------! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---------=======MAIN=======--------- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */ 
+    .rev-header,.review-header,.examples-header,.services-header{
+        background: white;
+        padding: 20px 0 20px 23px;
+    }
+    .header-back-link{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: -0.24px;
+        color: #45596B;
+        background: url(../images/svg/menu-arrow-l-ico.svg) left center no-repeat;
+        padding: 10px 10px 10px 18px;
+    }
+    .reviews__title{
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 103%;
+        color: #45596B;
+        padding: 34px 0 46px 0;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* --------=======REVIEW=======-------- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */ 
+    .rev-review{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        background: #EFF1F5;
+    }
+    .rev-review .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .review-header{
+        padding-left: 23px;
+    }
+    .review-header .header-back-link{
+        background-image: url(../images/svg/close.svg);
+        padding-left: 20px;
+    }
+    .review-reviewer{
+        display: flex;
+        align-items: center;
+        padding: 19px 0;
+    }
+    .review_username{
+        font-size: 13px;
+        line-height: 15px;
+        color: #45596B;
+        margin-left: 24px;
+    }
+    .review_title{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 103%;
+        color: #45596B;
+        margin-bottom: 33px;
+    }
+    .review_comment{
+        font-size: 14px;
+        line-height: 111%;
+        color: rgba(69, 89, 107, 0.57);
+    }
+    .review_comment p{
+        margin-bottom: 20px;
+    }
+    .review_gallery{
+        margin-bottom: 35px;
+    }
+    .rev_submit-btn{
+        padding: 15px 20px 15px 21px;
+        border: none;
+        background: radial-gradient(25.48% 50% at 50% 50%, #FACC00 6.77%, rgba(255, 248, 217, 0.29) 17.19%, rgba(252, 235, 159, 0) 92.71%), linear-gradient(180deg, #FACC00 24.48%, #FACC00 100%);
+        box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        color: white;
+        line-height: 11px;
+        width: fit-content;
+    }
+    .rev_submit-btn::after{
+        content: url(../images/svg/w-arrow-r.svg);
+        margin-left: 10px;
+    }
+    
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !------=======EXAMPLES=======-------! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+
+    .ex_examples{
+        margin-bottom: 50px;
+    }
+    
+    
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !-------======SERVICES======-------! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+
+    .services_title{
+        text-align: center;
+        padding:35px 0;
+        color: #45596B;
+        font-weight: 600;
+    }
+    .examples_nav_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .examples_nav-item{
+        margin-bottom: 10px;
+        font-size: 14px;
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !----====SERVICES SUB PAGE=====----! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* --------=======HEADER=======-------- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .service-header{
+        justify-content: flex-end;
+        top: 0;  
+        z-index: 2;  
+    }
+    .service-header__back-btn{
+        position: absolute;
+        padding-left: 18px;
+        background: url(../images/svg/menu-arrow-l-ico.svg) left center no-repeat;
+        margin-left: 21px;
+        left: 0;
+    }
+    .service-header__stories{
+        display: flex;
+        flex-shrink: 0;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 75%;
+        position: relative;
+        right:0;
+    }
+    .header-stories__story-cont{
+        width: 60px;
+        height: 60px;
+    }
+    .header-stories__story-cont:first-child{
+        width: 20px;
+    }
+    
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* --------=======SERVICE=======------- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    
+    .service-intro{
+        min-height: 265px;
+        background: url(../images/service-intro-bg.png) no-repeat;
+        padding: 107px 120px 0 20px;
+        position: relative;
+        margin-bottom: 59px;
+    }
+    .service-intro__title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #45596B;
+    }
+    .service-intro__advantages{
+        position: absolute;
+        right: 0;
+        bottom: -35px;
+        max-width: 317px;
+        height: 71px;
+    }
+    .advantages_list{
+        display: flex;
+        min-width:317px;
+        background: #FFFFFF;
+        padding-left: 40px;
+        padding: 10px 15px 10px 40px;
+        justify-content: space-between;
+        box-shadow: 0px 5px 10px rgba(69, 89, 107, 0.2);
+        border-radius: 50px 0 0 50px;
+
+    }
+    .advantages_list-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .list-item-ico{
+        width: fit-content;
+        height: auto;
+        margin-bottom: 4px;
+    }
+    .list-item-desc{
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 105%;
+        text-align: center;
+        color: #45596B;
+        width: max-content;
+    }
+
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* --------=======CONTENT=======------- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+
+    .cont_desc{
+        font-size: 14px;
+        line-height: 103%;
+        color: rgba(69, 89, 107, 0.6);
+        margin-bottom: 20px; 
+    }
+    .cont_desc p{
+        margin-bottom: 20px;
+    }
+
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* --------=======EXAMPLES======------- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .service-intro__ex_title{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 103%;
+        color: #45596B;
+        margin-bottom: 28px;
+    }
+    .service-intro__ex_examples{
+        display: flex;
+        flex-shrink: 0;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .examples_img{
+        width: 130px;
+        height: 130px;
+        margin-right: 10px;
+        background: #45596B;
+        border-radius: 10px;
+        color: white;
+    }
+    .examples_img-send-order, .examples_img-call{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        font-size: 14px;
+        line-height: 103%;
+        
+    }
+    
+    .examples_img-call img{
+        margin-bottom: 14px;
+        margin-top: 27px;
+    }
+    .examples_img-send-order img{
+        margin-top: 19px;
+    }
+    
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------=======CLEINT REV======------- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+
+    
 }
-
-
 
