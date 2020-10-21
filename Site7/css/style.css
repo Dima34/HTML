@@ -1057,6 +1057,9 @@ a:focus, a:visited{
     /* ------------------------------------ */
     /* ------------------------------------ */
     /* ------------------------------------ */
+    .service-intro__ex{
+        margin-bottom: 38px;
+    }
     .service-intro__ex_title{
         font-weight: 600;
         font-size: 18px;
@@ -1075,7 +1078,6 @@ a:focus, a:visited{
         width: 130px;
         height: 130px;
         margin-right: 10px;
-        background: #45596B;
         border-radius: 10px;
         color: white;
     }
@@ -1086,7 +1088,7 @@ a:focus, a:visited{
         flex-direction: column;
         font-size: 14px;
         line-height: 103%;
-        
+        background: #45596B;
     }
     
     .examples_img-call img{
@@ -1104,7 +1106,46 @@ a:focus, a:visited{
     /* ------------------------------------ */
     /* ------------------------------------ */
     /* ------------------------------------ */
-
-    
+    .service-intro__client-rev{
+        margin-bottom: 100px;
+    }
+    .service-intro__client-rev_examples{
+        display: flex;
+        flex-direction: row;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    .client-rev_examples_review{
+        margin-right: 10px;
+        position: relative;
+    }
+    .client-rev_examples_desc-img{
+        height: 188px;
+        width: 269px;
+    }
+    .client-rev_examples_desc{
+        position: absolute;
+        width: 100.4%;
+        height: 55%;
+        background: linear-gradient(180deg, rgba(69, 89, 107, 0) 0%, rgba(69, 89, 107, 0.25) 22.4%, rgba(69, 89, 107, 0.71) 38.54%, rgba(69, 89, 107, 0.97) 64.06%, rgba(69, 89, 107, 0.92) 83.33%), linear-gradient(180deg, rgba(69, 89, 107, 0) 0%, rgba(69, 89, 107, 0) 0.01%, rgba(69, 89, 107, 0.85) 63.54%, rgba(69, 89, 107, 0.85) 80.73%, rgba(69, 89, 107, 0.85) 85.42%);
+        bottom: 0;
+        left:0;
+        border: 0;
+        padding:35px 19px 7px 19px;
+        border-radius: 0 0 10px 10px;
+    }
+    .client-rev_examples_top{
+        font-weight: 450;
+        font-size: 15px;
+        line-height: 103%;
+        color: #FFFFFF;
+        margin-bottom: 12px;
+    }
+    .client-rev_examples_bottom{
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        line-height: 103%;
+    }
 }
 
