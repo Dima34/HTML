@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site 6</title>
+    <link rel="stylesheet" href="./dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
+</head>
+<body style="height: 5000px;">
+    <nav class="navbar sticky-top navbar-expand-lg bg-secondary navbar-light">
+        <div class="container">
+            <a href="" class="navbar-brand">Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto mb-2">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Blog</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class = "btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">Sign in</button>
+                    <button class="btn btn-outline-danger ml-3">Sign out</button>
+                </div>
+            </div>
+        </div>   
+    </nav>
+    <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Form
+                        </h5>
+                        <button class="btn-close" data-dismiss="modal" arial-label="close">
+
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="row mb-3">
+                                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id = "inputEmail">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputPass" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id = "inputPass">
+                                </div>
+                            </div>
+                            <fieldset>
+                                <div class="row mb-3">
+                                    <legend class="col-form-label col-sm-2">Radio</legend>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="radios" id = "radios1" value="option1" checked>
+                                            <label for="" class="form-check-label">Radio 1</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" name="radios" id = "radios1" value="option2">
+                                            <label for="" class="form-check-label">Radio 2</label>
+                                        </div>
+                                        <div class="form-check" disabled>
+                                            <input type="radio" class="form-check-input" name="radios" id = "radios3" value="option3" disabled>
+                                            <label for="" class="form-check-label">Radio 3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-form-label col-sm-2">
+                                        Checkbox
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <div class="form-check">
+                                            <input type="checkbox" id = "gridCheck" class="form-check-input">
+                                            <label for="gridCheck" class="form-check-label">Save password</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button class="btn btn-secondary">
+                            Save Changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Modal -->
+    <main>
+        <div class="carousel slide" id="carouselControls" data-ride="carousel">
+            <div class="carousel-inner" style = "height: 100vh; position: relative;">
+                <div class="carousel-item active w-100 h-100">
+                  <img src="https://images.pexels.com/photos/2771135/pexels-photo-2771135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="d-block w-100">
+                </div>
+                <div class="carousel-item w-100 h-100">
+                  <img src="https://images.pexels.com/photos/917494/pexels-photo-917494.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="d-block w-100">
+                </div>
+                <div class="carousel-item w-100 h-100">
+                  <img src="https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="d-block w-100">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+            
+        </div>
+        <div class="container-lg my-5">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <img class = "w-100" src="https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                </div>
+                <div class="col-md-8 text-center col-sm-12">
+                    <h2 class ="my-3">
+                        about us
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis suscipit delectus numquam sequi qui! Asperiores nisi eveniet reprehenderit, sint quibusdam itaque, aliquam adipisci enim totam vel maiores laboriosam similique distinctio porro tempora, doloribus dolorem explicabo fuga! Dolores nobis sit, quam aliquid tempore nihil voluptas accusantium ducimus voluptates temporibus, voluptatibus ut!</p>
+                </div>
+            </div>
+            <h2 class="text-center my-5">Lorem ipsum dolor sit.</h2>
+            <div class="row gy-5">
+                <div class="col-md-4 col-sm-6 text-center">
+                    <h4>Lorem, ipsum.</h4>
+                    <svg width="1.0625em" height="1em" viewBox="0 0 17 16" class="bi bi-exclamation-triangle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 5zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempore reiciendis, dolore voluptates praesentium dolores.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center">
+                    <h4>Lorem, ipsum.</h4>
+                    <svg width="1.0625em" height="1em" viewBox="0 0 17 16" class="bi bi-exclamation-triangle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 5zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempore reiciendis, dolore voluptates praesentium dolores.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center">
+                    <h4>Lorem, ipsum.</h4>
+                    <svg width="1.0625em" height="1em" viewBox="0 0 17 16" class="bi bi-exclamation-triangle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 5zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempore reiciendis, dolore voluptates praesentium dolores.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center">
+                    <h4>Lorem, ipsum.</h4>
+                    <svg width="1.0625em" height="1em" viewBox="0 0 17 16" class="bi bi-exclamation-triangle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 5zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempore reiciendis, dolore voluptates praesentium dolores.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center">
+                    <h4>Lorem, ipsum.</h4>
+                    <svg width="1.0625em" height="1em" viewBox="0 0 17 16" class="bi bi-exclamation-triangle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 5zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempore reiciendis, dolore voluptates praesentium dolores.</p>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center">
+                    <h4>Lorem, ipsum.</h4>
+                    <svg width="1.0625em" height="1em" viewBox="0 0 17 16" class="bi bi-exclamation-triangle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 5zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempore reiciendis, dolore voluptates praesentium dolores.</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container text-center">
+            <p>
+                <a href="#multiCollapse1" data-toggle="collapse" aria-controlls="multiCollapse1" class="btn btn-secondary" role="button" aria-expanded="false">Hello</a>
+                <button class="btn btn-secondary" data-toggle="collapse" type="button" data-target="#multiCollapse2" aria-expanded="false" aria-controls="multiCollapse2">World</button>
+                <button class="btn btn-secondary" data-toggle="collapse" type="button" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapse1 multiCollapse2">Hello World</button>
+            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse show" id = "multiCollapse1">
+                        <div class="card card-body">
+                            <img src="https://images.pexels.com/photos/1758531/pexels-photo-1758531.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class = "w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse show" id = "multiCollapse2">
+                        <div class="card card-body">
+                            <img src="https://images.pexels.com/photos/840666/pexels-photo-840666.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class = "w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse show" id = "multiCollapse1">
+                        <div class="card card-body">
+                            <img src="https://images.pexels.com/photos/1130847/pexels-photo-1130847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class = "w-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse show" id = "multiCollapse2">
+                        <div class="card card-body">
+                            <img src="https://images.pexels.com/photos/831056/pexels-photo-831056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class = "w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="d-flex flex-row-reverse justify-content-center align-items-start" style = "height: 300px; border: 1px solid red;">
+                <div class = "p-5">Web dev block</div>
+                <div class = "p-5">Web dev block</div>
+                <div class = "p-5">Web dev block</div>
+            </div>
+        </div>
+        <div class="container">
+            <p class="w-50 mx-auto mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, minus exercitationem. Doloribus ad alias itaque saepe, architecto quidem ipsam inventore suscipit iusto dolorum animi nostrum tenetur molestias repudiandae ratione mollitia dicta temporibus similique esse consectetur quo. Voluptas aspernatur minus quisquam.</p>
+        </div>
+    </main>
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row text-center">
+            <div class="col-12 col-md">
+                <h5>Web dev blog</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Web dev blog</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Web dev blog</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Web dev blog</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                    <li><a href="" class="link-secondary">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <!-- JavaScript Bundle with Popper.js -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+</body>
+</html>

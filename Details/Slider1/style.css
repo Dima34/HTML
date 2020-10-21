@@ -1,0 +1,19 @@
+.slider{
+    width: 600px;
+    height: 200px;
+    border:2px solid red;
+    margin: 0 auto;
+}
+.slider-content{
+    position: relative;
+    width: 300%;
+    height: 100%;
+    background-color: salmon;
+    left: -100%;
+}
+.slider-item{
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    background-color: blueviolet;
+}
