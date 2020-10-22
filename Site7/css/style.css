@@ -327,6 +327,7 @@ a:focus, a:visited{
         width: 100%;
         overflow-x: scroll;
         overflow-y: hidden;
+        border-radius: 0 35px 35px 0;
     }
     .header-stories__story-cont{
         height: 60px;
@@ -964,6 +965,7 @@ a:focus, a:visited{
         width: 75%;
         position: relative;
         right:0;
+        border-radius: 0 35px 35px 0;
     }
     .header-stories__story-cont{
         width: 60px;
@@ -1147,5 +1149,159 @@ a:focus, a:visited{
         font-size: 12px;
         line-height: 103%;
     }
+    .bottom-menu_cleaner-list .item-thumb{
+        bottom: 14px !important;
+    }
+    .service-intro__bottom-menu_list{
+        padding-left: 44px;
+    }
+    .service-intro__bottom-menu_list li:nth-child(2){
+        margin-left: 15px;
+    }
+    
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------======SERVICE ABOUT======----- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+
+    .service-about_intro .wrapper{
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        margin-bottom: 30px;
+    }
+    .service-about_intro .wrapper .main-menu_second-list{
+        font-weight: 600;
+    }
+    .service-about_intro_make-an-order{
+        width: 100%;
+        background: #45596B;
+        text-align: center;
+        padding:11px;
+    }
+    .make-an-order-btn{
+        background: radial-gradient(25.48% 50% at 50% 50%, #FACC00 6.77%, rgba(255, 248, 217, 0.29) 17.19%, rgba(252, 235, 159, 0) 92.71%), linear-gradient(180deg, #FACC00 17.19%, #FACC00 63.02%);
+        box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        border:0;
+        color: #FFFFFF;
+        padding: 15px 26px 15px 47px;
+        position: relative;
+    }
+    .make-an-order-btn::before{
+        position: absolute;
+        content:url(../images/plus.png);
+        width: 11px;
+        height: 11px;
+        left: 30px;
+        top: 16px;
+    }
+
+    .service-about_intro__sub-page{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #EFF1F5;
+        z-index: 2;
+        overflow: auto;
+    }
+    .sub-page_header{
+        padding: 30px 21px;
+        margin-bottom: 27px;
+    }
+    .sub-page_header_back-btn{
+        padding: 18px;
+        color: #45596B;
+        background: url(../images/svg/menu-arrow-l-ico.svg) left center no-repeat;
+    }
+    .sub-page_main_title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #45596B;
+        margin-bottom: 50px;
+    }
+    .sub-page_main_dropdown_container{
+        padding-right: 5px;
+        margin-bottom: 70px;
+    }
+    .main_dropdown_item{
+        border-bottom: 1px solid rgba(69, 89, 107, 0.8);;
+        padding-bottom: 17px;
+    }
+    .dropdown_header{
+        padding: 16px 54px 22px 0;
+        position: relative;
+        height: fit-content;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: #45596B;
+    }
+    .dropdown_main{
+
+    }
+    .dropdown_header::after{
+        display: block;
+        content: url(../images/svg/menu-arrow-r-ico.svg);
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !------======CALCULATOR======------! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+    /* !----------------------------------! */
+
+    .calc_header{
+        margin: 17px 0 38px 10px;
+        max-width: 365px;
+        box-sizing: border-box;
+        background: #FACC00;
+        box-shadow: 6px 6px 5px #D1D9E6, -6px -6px 10px #FFFFFF, inset 3px 3px 10px rgba(69, 89, 107, 0.18), inset -3px -3px 5px rgba(255, 255, 255, 0.4);
+        border-radius: 12px 0px 0px 12px;
+        padding: 13px 26px 13px 20px;
+        color: #FFFFFF;
+    }
+    .calc_header__back-btn{
+        font-weight: 450;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.24px;
+        padding-left: 20px;
+        background: url(../images/svg/burger-menu-close-btn.svg) left center no-repeat;
+        color: #FFFFFF;
+    }
+    .calc_header__main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+        margin-top: 20px;
+    }
+    .main_title{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 25px;
+        max-width: 200px;
+    }
+    .main_stage{
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 20px;
+        letter-spacing: -0.24px; 
+    }
+    
 }
 
