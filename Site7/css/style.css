@@ -1754,6 +1754,7 @@ a:focus, a:visited{
     .make-order,.page_state,.page__navbar{
         z-index: 5;
     }
+    
     .page5 .page_title{
         padding-bottom: 74px;
     }
@@ -1769,6 +1770,7 @@ a:focus, a:visited{
         margin-bottom: 33px;
         display: flex;
         flex-shrink: 0;
+        overflow-x: scroll;
     }
     /* .input_carousel input{
         display: none;
@@ -1787,7 +1789,6 @@ a:focus, a:visited{
         margin-right: 13px;
     }
     .input_carousel input:checked + .input_carousel label{
-        
         background: #FACC00;
         box-shadow: 6px 6px 5px #D1D9E6, -6px -6px 10px #FFFFFF, inset 3px 3px 5px rgba(69, 89, 107, 0.18), inset -3px -3px 5px rgba(255, 255, 255, 0.4);
         border-radius: 12px;
