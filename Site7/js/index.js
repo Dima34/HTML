@@ -8,6 +8,8 @@
     let main_menu_subpages_links = document.querySelectorAll(".main-menu_first-list .main-menu_list-item");
     let main_menu_subpages_btn_back = document.querySelectorAll(".sub-menu_header-link");
 
+    
+    
     burger.addEventListener("click", () => {
         main_menu.classList.add("x_active")
     })
