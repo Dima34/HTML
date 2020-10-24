@@ -867,6 +867,9 @@ a:focus, a:visited{
     /* ------------------------------------ */
     /* ------------------------------------ */
     /* ------------------------------------ */ 
+    .rev-main{
+        margin-bottom: 80px;
+    }
     .rev-review{
         position: fixed;
         top: 0;
@@ -874,6 +877,8 @@ a:focus, a:visited{
         width: 100%;
         min-height: 100%;
         background: #EFF1F5;
+        transition: .3s;
+        transform: translateX(100%);
     }
     .rev-review .wrapper{
         display: flex;
@@ -951,7 +956,7 @@ a:focus, a:visited{
     /* !----------------------------------! */
     /* !----------------------------------! */
     /* !----------------------------------! */
-    .services-header, .examples-header{
+    .services-header, .examples-header,.rev-header,.review-header{
         width: 100%;
         background: #FFFFFF;
         padding: 20px 0 20px 28px;
