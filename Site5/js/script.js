@@ -35,12 +35,12 @@
     for(let i = 0; i < qa_header.length; i++){
         qa_header[i].addEventListener("click",() => {
             classlist = Object.values(qa_main[i].classList)
-            qa_main[i].classList.add("qa-block_main-active");
-            qa_header[i].classList.add("qa-block_header-active");
+            qa_main[i].classList.add("x_active");
+            qa_header[i].classList.add("nav-item-active");
             for(let b = 0; b < qa_header.length; b++){
                 if(b != i){
-                    qa_main[b].classList.remove("qa-block_main-active");
-                    qa_header[b].classList.remove("qa-block_header-active");
+                    qa_main[b].classList.remove("x_active");
+                    qa_header[b].classList.remove("nav-item-active");
                 } 
             }
         })
