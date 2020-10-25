@@ -4,23 +4,24 @@
     let prev_btn = document.querySelectorAll(".prev-btn");
     let page = document.querySelectorAll(".calc_main__page");
     let bottom_nav = document.querySelectorAll(".bottom-nav");
-    let header_btn = document.querySelectorAll(".calc_header__close-btn");
+
+    let header_btn = document.querySelectorAll(".calc_header__btn");
     let header_title = document.querySelectorAll(".main_title");
     let header_stage = document.querySelectorAll(".main_stage");
+
+    console.log(header_btn)
 
     function pageCheck(p_num){
         for(let i = 0; i < page.length; i++){
             if(i == p_num){
-                page[i].classList.add("page_active");
+                page[i].classList.remove("page_non-active");
             }
             else{
-                page[i].classList.remove("page_active");
+                page[i].classList.add("page_non-active");
             }
         }
     }
     function bottomCheck(p_num){
-        
-        console.log(p_num, "pnum");
         if(p_num == 0 || p_num == 1){
             b_num = 0;
         } else if(p_num == 2){
@@ -43,7 +44,6 @@
             t_num = 0;
             s_num = 0;
         } else if(p_num == 1){
-            console.log("ok")
             btn_num = 1;
             t_num = 1;
             s_num = 1;
@@ -52,12 +52,12 @@
             t_num = 2;
             s_num = 2;
         } else if(p_num == 3){
-            btn_num = 3;
+            btn_num = 1;
             t_num = 3;
             s_num = 0;
         }
         else if(p_num == 4){
-            btn_num = 3;
+            btn_num = 1;
             t_num = 3;
             s_num = 1;
         }
@@ -67,7 +67,7 @@
             s_num = 2;
         }
         for(let i = 0; i < header_btn.length; i++){
-            if(i == b_num){
+            if(i == btn_num){
                 header_btn[i].classList.add("header-active");
             }
             else{
