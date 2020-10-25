@@ -871,19 +871,16 @@ a:focus, a:visited{
         margin-bottom: 80px;
     }
     .rev-review{
-        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         min-height: 100%;
         background: #EFF1F5;
-        transition: .3s;
-        transform: translateX(100%);
+        padding-bottom: 50px;
     }
     .rev-review .wrapper{
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
     .review-header{
         padding-left: 23px;
@@ -918,7 +915,7 @@ a:focus, a:visited{
     .review_comment p{
         margin-bottom: 20px;
     }
-    .review_gallery{
+    .review_gallery .ex_examples{
         margin-bottom: 35px;
     }
     .rev_submit-btn{
@@ -930,6 +927,7 @@ a:focus, a:visited{
         color: white;
         line-height: 11px;
         width: fit-content;
+        align-self: center;
     }
     .rev_submit-btn::after{
         content: url(../images/svg/w-arrow-r.svg);
@@ -1257,6 +1255,8 @@ a:focus, a:visited{
         background: #45596B;
         text-align: center;
         padding:11px;
+        display: flex;
+        justify-content: center;
     }
     .make-an-order-btn{
         display: block;
@@ -1267,6 +1267,7 @@ a:focus, a:visited{
         color: #FFFFFF;
         padding: 15px 26px 15px 47px;
         position: relative;
+        max-width: 310px;
     }
     .make-an-order-btn::before{
         position: absolute;
@@ -1345,6 +1346,21 @@ a:focus, a:visited{
     .calc_main{
         margin-bottom: 100px;
     }
+    .calc_main .wrapper{
+        position: relative;
+    }
+    .calc_main__page{
+        transform: translateX(150%);
+        position: absolute;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+    }
+    .page_active{
+        transform: translateX(0%);
+        overflow: visible;
+        height: fit-content;
+    }
     .calc_header{
         margin: 17px 0 38px 10px;
         max-width: 365px;
@@ -1354,8 +1370,12 @@ a:focus, a:visited{
         border-radius: 12px 0px 0px 12px;
         padding: 13px 26px 13px 20px;
         color: #FFFFFF;
+        height: 115px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
-    .calc_header__back-btn{
+    .calc_header__close-btn{
         font-weight: 450;
         font-size: 16px;
         line-height: 20px;
@@ -1363,6 +1383,10 @@ a:focus, a:visited{
         padding-left: 20px;
         background: url(../images/svg/burger-menu-close-btn.svg) left center no-repeat;
         color: #FFFFFF;
+    }
+    .calc_header__back-btn{
+        padding-left: 20px;
+        background: url(../images/svg/w-menu-arrow-l-ico.svg) left center no-repeat;
     }
     .calc_header__main{
         display: flex;
@@ -1878,8 +1902,7 @@ a:focus, a:visited{
     .result_holder-full .result_option{
         max-width: 100%;
     }
-    .calc__order-made{
-        position: fixed;
+    .page6{
         left: 0;
         top: 0;
         width: 100%;
@@ -1887,7 +1910,7 @@ a:focus, a:visited{
         background-color:#FACC00; 
         z-index: 6;
     }
-    .calc__order-made .wrapper{
+    .page6 .wrapper{
         margin-left: 30px;
         margin-right: 30px;
     }
@@ -1928,6 +1951,34 @@ a:focus, a:visited{
         margin-top: 20px;
         display: flex;
         justify-content: space-between;
+    }
+    .bottom-nav{
+        visibility: hidden;
+    }
+    .bottom-active{
+        visibility: visible;
+    }
+    .header-non-active{
+        display: none;
+    }
+    .header-active{
+        display: inline;
+    }
+    .calc_header_summ{
+        background: 0;
+        padding-left: 0;
+    }
+    .page7{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: #FACC00;
+        z-index: 6;
+    }
+    .page7 .page_active{
+        
+        height: 100%;
     }
 }
 

@@ -14,20 +14,5 @@ bottom_menu_connect.addEventListener("click", () => {
     }
 })
 
-// Review
-
-let review_block = document.querySelectorAll(".rew_review");
-let review_page = document.querySelectorAll(".rev-review");
-let review_close = document.querySelectorAll(".rev-header-back")
-console.log(review_close)
-
-for(let i = 0; i < review_block.length; i++){
-    review_block[i].addEventListener("click", ()=>{
-        review_page[i].classList.add("x_active");
-    });
-    review_close[i].addEventListener("click", ()=>{
-        review_page[i].classList.remove("x_active");
-    });
-}
 
 

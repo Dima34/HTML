@@ -8,15 +8,35 @@
 </head>
 <body>
     <div class="calc_header">
-        <a href="" class="calc_header__back-btn">Закрыть</a>
-        <p class="calc_header_summ" style="color: #45596B;">2800 р. - Стандартная уборка</p>
+        <a href="./index.html" class="calc_header__close-btn header-non-active">Закрыть</a>
+        <p class="calc_header_summ header-non-active calc_header__close-btn" style="color: #45596B;">2800 р. - Стандартная уборка</p>
+        <p href="./index.html" class="calc_header__back-btn header-non-active">Закрыть</p>
         <div class="calc_header__main">
-            <h2 class="main_title">
+            <h2 class="main_title header-non-active">
                 Давайте узнаем стоимость работ
             </h2>
-            <p class="main_stage">
+            <h2 class="main_title header-non-active">
+                Дополнительные опции
+            </h2>
+            <h2 class="main_title header-non-active">
+                ИТОГО
+            </h2>
+            <h2 class="main_title header-non-active">
+                Оформление заказа
+            </h2>
+            <h2 class="main_title header-non-active">
+                Ваш <br> заказ
+            </h2>
+            <p class="main_stage header-non-active">
                 1/3
             </p>
+            <p class="main_stage header-non-active">
+                2/3
+            </p>
+            <p class="main_stage header-non-active">
+                3/3
+            </p>
+           
         </div>
     </div>
     <div class="calc_main">
@@ -377,62 +397,66 @@
                     </div>
                 </div>
             </div>
+            
         </div>
-        <div class="make-order">
-            <button class="make-order-btn">
+        <div class="calc_main__page page7">
+            <a href="./index.html" class="order-made__close-btn"><img src="./images/svg/calc_close.svg" alt=""></a>
+        <div class="wrapper">
+            <h2 class="order-made__title">
+                Ваша заявка успешно отправлена!
+            </h2>
+            <p class="order-made__desc">
+                Мы свяжемся с вами по телефону, чтобы уточнить необходимые нюансы.
+            </p>
+            <div class="order-made__stories">
+                <h3 class="stories_title">
+                    Следите за нашей работой!
+                </h3>
+                <div class="stories_stories">
+                    <div class="stories_story-cont">
+                        <img src="./images/sstory1.png" alt="cleaner">
+                    </div>
+                    <div class="stories_story-cont">
+                        <img src="./images/sstory2.png" alt="cleaner">
+                    </div>
+                    <div class="stories_story-cont">
+                        <img src="./images/sstory3.png" alt="cleaner">
+                    </div>
+                    <div class="stories_story-cont">
+                        <img src="./images/sstory4.png" alt="cleaner">
+                    </div>
+                    <div class="stories_story-cont">
+                        <img src="./images/sstory5.png" alt="cleaner">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="page_state bottom-nav">
+            <div class="state__states">
+                <p href="#!" class="state_price">2000 руб</p>
+                <p href="!#" class="state_next-btn next-btn">Далее</p>
+            </div>
+        </div>
+        <div class="make-order bottom-nav">
+            <button class="make-order-btn next-btn">
                 ЗАКАЗАТЬ УСЛУГУ
             </button>
         </div>
-        <div class="page_state">
-            <div class="state__states">
-                <a href="#!" class="state_price">2000 руб</a>
-                <a href="!#" class="state_next-btn">Далее</a>
-            </div>
-        </div>
-        <div class="page__navbar">
-            <button class="navbar_prev">
+        <div class="page__navbar bottom-nav">
+            <button class="navbar_prev prev-btn">
                 <img src="./images/svg/arrow-r-o.svg" alt="arrow right">
             </button>
-            <button class="navbar_next">
+            <button class="navbar_next next-btn">
                 ДАЛЕЕ
             </button>
         </div>
         <div class="calc__order-made">
-            <button class="order-made__close-btn"><img src="./images/svg/calc_close.svg" alt=""></button>
-            <div class="wrapper">
-                <h2 class="order-made__title">
-                    Ваша заявка успешно отправлена!
-                </h2>
-                <p class="order-made__desc">
-                    Мы свяжемся с вами по телефону, чтобы уточнить необходимые нюансы.
-                </p>
-                <div class="order-made__stories">
-                    <h3 class="stories_title">
-                        Следите за нашей работой!
-                    </h3>
-                    <div class="stories_stories">
-                        <div class="stories_story-cont">
-                            <img src="./images/sstory1.png" alt="cleaner">
-                        </div>
-                        <div class="stories_story-cont">
-                            <img src="./images/sstory2.png" alt="cleaner">
-                        </div>
-                        <div class="stories_story-cont">
-                            <img src="./images/sstory3.png" alt="cleaner">
-                        </div>
-                        <div class="stories_story-cont">
-                            <img src="./images/sstory4.png" alt="cleaner">
-                        </div>
-                        <div class="stories_story-cont">
-                            <img src="./images/sstory5.png" alt="cleaner">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             
         </div>
     </div>
     
-    <script src="./js/script.js"></script>
+    <script src="./js/calculator.js"></script>
 </body>
 </html>
