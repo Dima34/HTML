@@ -115,6 +115,29 @@
         })
     }
 
+    //page1 block selector
+
+    let slider_items = document.querySelectorAll(".page1_slider2 .main-menu_nav-item");
+    let slider_blocks = document.querySelectorAll(".page1_slider2_blk");
+    console.log(slider_blocks);
+    let default_slide = 0;
+  
+    slider_blocks[default_slide].classList.add("visible");
+    slider_items[default_slide].classList.add("nav-item-active");
+  
+    for(let i = 0; i < slider_items.length; i++){
+        slider_items[i].addEventListener("click",() => {
+            classlist = Object.values(slider_blocks[i].classList)
+            slider_blocks[i].classList.add("visible");
+            slider_items[i].classList.add("nav-item-active");
+            for(let b = 0; b < slider_items.length; b++){
+                if(b != i){
+                    slider_blocks[b].classList.remove("visible");
+                    slider_items[b].classList.remove("nav-item-active");
+                } 
+            }
+        })
+    }
 
     // Date choose
 
