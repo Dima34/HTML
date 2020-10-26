@@ -17,7 +17,7 @@ function touchMove(event){
 }
 
 function touchEnd(event){
-    
+    console.log(moveArr)
     if(moveArr[0] < moveArr[moveArr.length]){
         console.log("moveLeft")
     }
