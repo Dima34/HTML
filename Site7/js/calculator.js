@@ -9,8 +9,6 @@
     let header_title = document.querySelectorAll(".main_title");
     let header_stage = document.querySelectorAll(".main_stage");
 
-    console.log(header_btn)
-
     function pageCheck(p_num){
         for(let i = 0; i < page.length; i++){
             if(i == p_num){
@@ -100,7 +98,6 @@
         next_btn[i].addEventListener("click", () => {
             if(page_number < page.length-1){
                 page_number++;
-                console.log(page_number)
                 pageCheck(page_number);
                 bottomCheck(page_number);
                 headerCheck(page_number);
@@ -111,12 +108,125 @@
         prev_btn[i].addEventListener("click", () => {
             if(page_number > 0){
                 page_number--;
-                console.log(page_number)
                 pageCheck(page_number);
                 bottomCheck(page_number);
                 headerCheck(page_number);
             }
         })
     }
+
+
+    // Date choose
+
+    let touchstartX = 0;
+    let touchstartY = 0;
+    let touchendX = 0;
+    let touchendY = 0;
+    let curr_translate1 = 0;
+    let curr_translate2 = 0;
+
+    let carousel_blk = document.querySelectorAll(".input_carousel label");
+    let blk_width = Number(window.getComputedStyle(carousel_blk[0]).width.substr(0,window.getComputedStyle(carousel_blk[0]).width.length-2)) + Number(window.getComputedStyle(carousel_blk[0]).marginRight.substr(0,window.getComputedStyle(carousel_blk[0]).marginRight.length-2));
+    
+    let line1 = document.getElementById("carousel1_line");
+    let line1_blk = line1.querySelectorAll(".input_carousel input");
+    let line1_active = 2-1;
+
+    let line2 = document.getElementById("carousel2_line");
+    let line2_blk = line2.querySelectorAll(".input_carousel input");
+    let line2_active = 3-1;
+
+    function setActive(line_blks, line_active){
+        line_blks[line_active].checked = true;
+        line_blks[line_active].checked = "checked";
+    }
+    
+    setActive(line1_blk, line1_active);
+    setActive(line2_blk, line2_active);
+    
+    function lineSwipeLeft(line){
+        curr_translate1-=blk_width;
+        line.style.transform = "translateX(" + curr_translate1 + "px)";
+    }
+    function lineSwipeRight(line){
+        curr_translate1+=blk_width;
+        line.style.transform = "translateX(" + curr_translate1 + "px)";
+    }
+    function lineSwipeLeft2(line){
+        curr_translate2-=blk_width;
+        line.style.transform = "translateX(" + curr_translate2 + "px)";
+    }
+    function lineSwipeRight2(line){
+        curr_translate2+=blk_width;
+        line.style.transform = "translateX(" + curr_translate2 + "px)";
+    }
+
+    //First line
+    const gestureZone = document.getElementById('carousel1');
+
+    gestureZone.addEventListener('touchstart', function(event) {
+        touchstartX = event.changedTouches[0].screenX;
+        touchstartY = event.changedTouches[0].screenY;
+    }, false);
+
+    gestureZone.addEventListener('touchend', function(event) {
+        touchendX = event.changedTouches[0].screenX;
+        touchendY = event.changedTouches[0].screenY;
+        handleGestureFirst();
+    }, false); 
+
+    function handleGestureFirst() {
+        if (touchendX < touchstartX) {
+            if(line1_active < line1_blk.length-1){
+                lineSwipeLeft(line1);
+                line1_active++;
+                setActive(line1_blk, line1_active);
+            }
+            
+        }
+        if (touchendX > touchstartX) {
+            if(line1_active > 0){
+                lineSwipeRight(line1);
+                line1_active--;
+                setActive(line1_blk, line1_active);
+            }
+        }
+        
+    }
+    //Second line
+    const gestureZone1 = document.getElementById('carousel2');
+
+    gestureZone1.addEventListener('touchstart', function(event) {
+        touchstartX = event.changedTouches[0].screenX;
+        touchstartY = event.changedTouches[0].screenY;
+    }, false);
+
+    gestureZone1.addEventListener('touchend', function(event) {
+        touchendX = event.changedTouches[0].screenX;
+        touchendY = event.changedTouches[0].screenY;
+        handleGestureSecond();
+    }, false); 
+
+    function handleGestureSecond() {
+        if (touchendX < touchstartX) {
+            if(line2_active < line2_blk.length-1){
+                lineSwipeLeft2(line2);
+                line2_active++;
+                setActive(line2_blk, line2_active);
+            }
+            
+        }
+        if (touchendX > touchstartX) {
+            if(line2_active > 0){
+                lineSwipeRight2(line2);
+                line2_active--;
+                setActive(line2_blk, line2_active);
+            }
+        }
+        
+        
+    }
+
+    
 }())
 

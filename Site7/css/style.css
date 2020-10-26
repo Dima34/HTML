@@ -1883,15 +1883,26 @@ a:focus, a:visited{
         margin-bottom: 32px;
     }
     .input_carousel{
-        margin-bottom: 33px;
         display: flex;
         flex-shrink: 0;
-        overflow-x: scroll;
+        transition: .2s;
     }
-    /* .input_carousel input{
+    .input_carousel input{
         display: none;
-    } */
-    .input_carousel label{
+    }
+    .carousel_wrap{
+        height: 65px;
+        margin-bottom: 33px;
+        position: relative;
+    }
+    .carouse_click-block{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+
+    .input_carousel label,.carousel_gag{
         display: block;
         width: 65px;
         height: 65px;
@@ -1901,13 +1912,14 @@ a:focus, a:visited{
         font-weight: 600;
         font-size: 18px;
         line-height: 105%;
-        color: #FFFFFF;
-        margin-right: 13px;
+        color: #6E7686;
+        margin-right: 5px;
     }
-    .input_carousel input:checked + .input_carousel label{
+    .input_carousel input:checked +  label{
         background: #FACC00;
         box-shadow: 6px 6px 5px #D1D9E6, -6px -6px 10px #FFFFFF, inset 3px 3px 5px rgba(69, 89, 107, 0.18), inset -3px -3px 5px rgba(255, 255, 255, 0.4);
         border-radius: 12px;
+        color: white;
     }
     .page6 .page_title{
         padding-bottom: 12px;
