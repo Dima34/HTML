@@ -263,7 +263,7 @@ a:focus, a:visited{
    outline: none;
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:425px){
     .x_active{
         -webkit-transform: translateX(0) !important;
                 transform: translateX(0) !important;
