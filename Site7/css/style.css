@@ -842,6 +842,7 @@ a:focus, a:visited{
         border-radius: 5px;
         min-width: 134px;
         min-height: 40px;
+        height: fit-content;
     }
     .pop-up-tg{
         background: #47CFFC;  
