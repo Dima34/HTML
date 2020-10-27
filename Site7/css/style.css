@@ -450,7 +450,7 @@ a:focus, a:visited{
         font-size: 15px;
         line-height: 26px;
         color: #45596B;
-        width: 281px;
+        width: 100%;
     }
     .main-menu_list-item,.sub-menu-item{
         padding: 16px 0 16px 9px;
@@ -496,6 +496,7 @@ a:focus, a:visited{
     /* ------------------------------------ */
     .intro{
         background: url(../images/intro-bg.png);
+        background-size: cover;
         min-height: 214px;
         padding: 0px 46px 34px 23px;
         display: -webkit-box;
@@ -1203,6 +1204,7 @@ a:focus, a:visited{
     .service-intro{
         min-height: 265px;
         background: url(../images/service-intro-bg.png) no-repeat;
+        background-size: cover;
         padding: 107px 120px 0 20px;
         position: relative;
         margin-bottom: 59px;
