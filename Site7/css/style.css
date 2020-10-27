@@ -555,6 +555,7 @@ a:focus, a:visited{
         align-items: center;
         margin-bottom: 20px;
     }
+
     .service-img{
         border-radius: 10px;
         filter: drop-shadow(3px 0px 10px rgba(0, 0, 0, 0.1));
@@ -1632,7 +1633,7 @@ a:focus, a:visited{
         justify-content: space-between;
         align-items: center;
         padding: 10px 0;
-        border-bottom: 1px solid rgba(69, 89, 107, 0.8);
+        border-bottom: 1px solid rgba(110, 118, 134, 0.57);
     }
     .page2_item-left{
         max-width: 65%;
@@ -1816,9 +1817,6 @@ a:focus, a:visited{
     }
     .page4 .wrapper{
         padding-right: 5px;
-    }
-    .page4 .page_title{
-        padding-bottom: 77px;
     }
     .city_select_label{
         margin-bottom: 11px;
