@@ -9,6 +9,8 @@
     let header_title = document.querySelectorAll(".main_title");
     let header_stage = document.querySelectorAll(".main_stage");
 
+    console.log(header_stage)
+
     function pageCheck(p_num){
         for(let i = 0; i < page.length; i++){
             if(i == p_num){
@@ -24,9 +26,12 @@
             b_num = 0;
         } else if(p_num == 2){
             b_num = 1;
-        } else if(p_num > 2){
+        } else if(p_num > 2 && p_num <=5){
             b_num = 2;
+        } else if(p_num > 5){
+            b_num = 3;
         }
+        console.log(p_num)
         for(let i = 0; i < bottom_nav.length; i++){
             if(i == b_num){
                 bottom_nav[i].classList.add("bottom-active");
@@ -62,7 +67,7 @@
         else if(p_num == 5){
             btn_num = 3;
             t_num = 4;
-            s_num = 3;
+            s_num = 2;
         }
         for(let i = 0; i < header_btn.length; i++){
             if(i == btn_num){
@@ -119,7 +124,6 @@
 
     let slider_items = document.querySelectorAll(".page1_slider2 .main-menu_nav-item");
     let slider_blocks = document.querySelectorAll(".page1_slider2_blk");
-    console.log(slider_blocks);
     let default_slide = 0;
   
     slider_blocks[default_slide].classList.add("visible");
