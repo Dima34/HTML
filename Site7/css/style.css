@@ -2042,7 +2042,8 @@ a:focus, a:visited{
     .page1, .page2,.page3,.page4,.page5,.page6{
         height: fit-content;
         /* overflow-y: auto; */
-        margin-bottom: 120px;
+        margin-bottom: 80px;
+        padding-bottom: 80px;
     }
     .page1{
         overflow: visible;
@@ -2058,6 +2059,7 @@ a:focus, a:visited{
         overflow: visible;
     }
     .page_non-active{
+        display: none;
         height: 0;
         overflow: hidden;
     }
