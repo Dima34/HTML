@@ -832,13 +832,15 @@ a:focus, a:visited{
     }
     .pop-up_btn{
         text-align: center;
-        padding: 10px 34px;
+        padding: 10px;
         font-weight: 450;
         font-size: 15px;
         line-height: 20px;
         letter-spacing: -0.24px;
         color: #FFFFFF;
         border-radius: 5px;
+        min-width: 134px;
+        min-height: 40px;
     }
     .pop-up-tg{
         background: #47CFFC;  
