@@ -1291,6 +1291,9 @@ a:focus, a:visited{
         padding:11px;
         display: flex;
         justify-content: center;
+        position: sticky;
+        bottom: 0;
+        left: 0;
     }
     .make-an-order-btn{
         display: block;
