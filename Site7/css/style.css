@@ -1588,7 +1588,7 @@ a:focus, a:visited{
         width: 100%;
     }
     .calc_header{
-        margin: 17px 0 38px 10px;
+        margin: 17px 0px 37px auto;
         width: 365px;
         min-height: 115px;
         box-sizing: border-box;
