@@ -62,7 +62,7 @@
         else if(p_num == 5){
             btn_num = 3;
             t_num = 4;
-            s_num = 2;
+            s_num = 3;
         }
         for(let i = 0; i < header_btn.length; i++){
             if(i == btn_num){

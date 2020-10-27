@@ -1384,14 +1384,14 @@ a:focus, a:visited{
     }
     .calc_header{
         margin: 17px 0 38px 10px;
-        min-width: 365px;
+        width: 365px;
+        min-height: 115px;
         box-sizing: border-box;
         background: #FACC00;
         box-shadow: 6px 6px 5px #D1D9E6, -6px -6px 10px #FFFFFF, inset 3px 3px 10px rgba(69, 89, 107, 0.18), inset -3px -3px 5px rgba(255, 255, 255, 0.4);
         border-radius: 12px 0px 0px 12px;
         padding: 13px 26px 13px 20px;
         color: #FFFFFF;
-        height: 115px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1487,6 +1487,7 @@ a:focus, a:visited{
         top: 0;
         left: 0;
         display: none;
+        margin-bottom: 80px;
     }
     .page1_input_container_radiobox{
         margin-top: 12px;
