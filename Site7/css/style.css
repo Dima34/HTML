@@ -464,7 +464,12 @@ a:focus, a:visited{
     .intro{
         background: url(../images/intro-bg.png);
         min-height: 214px;
-        padding:120px 46px 0 23px;
+        padding: 0px 46px 34px 23px;
+        display: flex;
+        align-items: flex-end;
+    }
+    .intro .wrapper{
+        width: 100%;
     }
     .intro-title{
         font-weight: 600;

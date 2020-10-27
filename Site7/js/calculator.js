@@ -8,6 +8,7 @@
     let header_btn = document.querySelectorAll(".calc_header__btn");
     let header_title = document.querySelectorAll(".main_title");
     let header_stage = document.querySelectorAll(".main_stage");
+    let calc_header = document.querySelector(".calc_header");
 
     console.log(header_stage)
 
@@ -68,6 +69,9 @@
             btn_num = 3;
             t_num = 4;
             s_num = 2;
+        }
+        if(p_num == 6){
+            calc_header.style.display="none";
         }
         for(let i = 0; i < header_btn.length; i++){
             if(i == btn_num){
