@@ -1493,7 +1493,7 @@ a:focus, a:visited{
         top: 0;
         left: 0;
         display: none;
-        margin-bottom: 80px;
+        padding-bottom: 80px;
     }
     .page1_input_container_radiobox{
         margin-top: 12px;
