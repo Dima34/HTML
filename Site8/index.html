@@ -25,7 +25,7 @@
             <a href="tel:+79581114946" class="header__bottom_number">+79581114946</a>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    
     <section class="intro">
         <h1 class="intro__title">Стандартная (поддерживающая) уборка квартир от 2100 рублей</h1>
         <button type="submit" class="intro__btn btn">ЗАКАЗАТЬ УБОРКУ</button>
@@ -38,7 +38,7 @@
             </div>
         </h3>
         <div class="wrapper">
-            <div class="calculator__step1">
+            <div class="calculator__step1 calc_step">
                 <h1 class="calculator__title">
                     Расчёт стоимости уборки
                 </h1>
@@ -46,7 +46,7 @@
                     <h3 class="selector_title">
                         Выберите кол-во комнат
                     </h3>
-                    <div class="selector_btn-group">
+                    <div class="selector_btn-group group1">
                         <input type="radio" name="count" id="one" value="one" checked>
                         <label for="one">1</label>
                         <input type="radio" name="count" id="two" value="two">
@@ -57,21 +57,21 @@
                         <label for="four">4</label>
                         <input type="radio" name="count" id="five" value="five">
                         <label for="five">5</label>
-                        <div class="selector_slide-window"></div>
+                        <div class="selector_slide-window slider1"></div>
                     </div>
                 </div>
                 <div class="calculator__selector">
                     <h3 class="selector_title">
                         Выберите кол-во сан узлов
                     </h3>
-                    <div class="selector_btn-group">
+                    <div class="selector_btn-group group2">
                         <input type="radio" name="count1" id="one1" value="one1" checked>
                         <label for="one1">1</label>
                         <input type="radio" name="count1" id="two1" value="two1">
                         <label for="two1">2</label>
                         <input type="radio" name="count1" id="three1" value="three">
                         <label for="three1">3</label>
-                        <div class="selector_slide-window"></div>
+                        <div class="selector_slide-window slider2"></div>
                     </div>
                 </div>
                 <div class="calculator__additional-servs">
@@ -85,8 +85,15 @@
                     </div>
                 </div>
                 <button type="submit" class="btn add-serv-btn">+ Добавить доп. услуги</button>
+                <div class="calculator_summary">
+                    <div class="summary_header">
+                        <p>Итого</p>
+                        <p>~2800 руб</p>
+                    </div>
+                    <button type="submit" class = "btn summary_make-order next1">ЗАКАЗАТЬ УБОРКУ</button>
+                </div>
             </div>
-            <div class="calculator__step2">
+            <div class="calculator__step2 calc_step">
                 <h1 class="calculator__title">
                     Заполните форму
                 </h1>
@@ -97,15 +104,15 @@
                     <input type="checkbox" name="circs" id="circs">
                     <label for="circs">Я принимаю условия <br> пользовательского соглашения</label>
                 </div>
-                
-            </div>
-            <div class="calculator_summary">
-                <div class="summary_header">
-                    <p>Итого</p>
-                    <p>~2800 руб</p>
+                <div class="calculator_summary">
+                    <div class="summary_header">
+                        <p>Итого</p>
+                        <p>~2800 руб</p>
+                    </div>
+                    <button type="submit" class = "btn summary_make-order next1">ОТПРАВИТЬ ЗАКАЗ</button>
                 </div>
-                <button type="submit" class = "btn summary_make-order">ЗАКАЗАТЬ УБОРКУ</button>
             </div>
+            
             <div class="calculator__add-serv">
                 <div class="add-serv_blk">
                     <div class="wrapper">
@@ -499,7 +506,9 @@
         
     </section>
     
+
     <script src="./js/swiper-bundle.js"></script>
+    <script src="js/script.js"></script>
 
 	<script>
 	var appendNumber = 4;

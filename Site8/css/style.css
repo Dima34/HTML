@@ -260,16 +260,14 @@ a:focus, a:visited{
 }
 
 @media screen and (max-width:375px){
-    .x_active{
-        -webkit-transform: translateX(0) !important;
-        transform: translateX(0) !important;
-    }
     .visible{
         display: block !important;
     }
-    .y_active{
-        -webkit-transform: translateY(0) !important;
-        transform: translateY(0) !important;
+    .visible-fixed{
+        display: flex !important;
+    }
+    .text-active{
+        font-weight: 700;
     }
     html{
         background: #ECF0F3;
@@ -445,6 +443,9 @@ a:focus, a:visited{
         color: #45596B;
         padding: 23px 0;
     }
+    .calc_step{
+        display: none;
+    }
     .selector_title{
         font-size: 15px;
         line-height: 111%;
@@ -484,6 +485,9 @@ a:focus, a:visited{
         margin-right: 10px;
         z-index: 2;
     }
+    .selector_btn-group label:last-of-type{
+        margin-right: 0;
+    }
     .selector_slide-window{
         position: absolute;
         left: 0;
@@ -493,6 +497,7 @@ a:focus, a:visited{
         background: #FACC00;
         box-shadow: inset -3px -3px 3px rgba(255, 255, 255, 0.4), inset 3px 4px 4px rgba(69, 89, 107, 0.17);
         border-radius: 15px;
+        transition-duration: .3s;
     }
     .calculator__additional-servs{
         padding-top: 17px;
@@ -503,10 +508,14 @@ a:focus, a:visited{
         justify-content: space-between;
         color: rgba(69, 89, 107, 0.8);
     }
+    .additional-serv p{
+        margin-bottom: 3px;
+    }
     .additional-serv p:last-child{
         margin-left: 5px;
         margin-right: 3px;
         font-weight: 700;
+        margin-bottom: 0;
     }
     .add-serv-btn{
         min-width: 332px;
