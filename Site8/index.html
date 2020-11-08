@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preclean</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__top">
+            <div class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h2 class="header__city">Новосибирск</h2>
+            <img src="img/logo.png" alt="preclaen logo" class="header__logo">
+        </div>
+        
+        <div class="header__bottom">
+            <p class="header__bottom_back-btn">Назад</p>
+            <a href="tel:+79581114946" class="header__bottom_number">+79581114946</a>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <section class="intro">
+        <h1 class="intro__title">Стандартная (поддерживающая) уборка квартир от 2100 рублей</h1>
+        <button type="submit" class="intro__btn btn">ЗАКАЗАТЬ УБОРКУ</button>
+    </section>
+    <div class="section calculator">
+        <h3 class="calculator__step-header">
+            <div class="wrapper">
+                <span>Шаг 1</span>
+                <span>Шаг 2</span>
+            </div>
+        </h3>
+        <div class="wrapper">
+            <div class="calculator__step1">
+                <h1 class="calculator__title">
+                    Расчёт стоимости уборки
+                </h1>
+                <div class="calculator__selector">
+                    <h3 class="selector_title">
+                        Выберите кол-во комнат
+                    </h3>
+                    <div class="selector_btn-group">
+                        <input type="radio" name="count" id="one" value="one" checked>
+                        <label for="one">1</label>
+                        <input type="radio" name="count" id="two" value="two">
+                        <label for="two">2</label>
+                        <input type="radio" name="count" id="three" value="three">
+                        <label for="three">3</label>
+                        <input type="radio" name="count" id="four" value="four">
+                        <label for="four">4</label>
+                        <input type="radio" name="count" id="five" value="five">
+                        <label for="five">5</label>
+                        <div class="selector_slide-window"></div>
+                    </div>
+                </div>
+                <div class="calculator__selector">
+                    <h3 class="selector_title">
+                        Выберите кол-во сан узлов
+                    </h3>
+                    <div class="selector_btn-group">
+                        <input type="radio" name="count1" id="one1" value="one1" checked>
+                        <label for="one1">1</label>
+                        <input type="radio" name="count1" id="two1" value="two1">
+                        <label for="two1">2</label>
+                        <input type="radio" name="count1" id="three1" value="three">
+                        <label for="three1">3</label>
+                        <div class="selector_slide-window"></div>
+                    </div>
+                </div>
+                <div class="calculator__additional-servs">
+                    <div class="additional-serv">
+                        <p>+ мытье духовки внутри (1)</p>
+                        <p>400 р.</p>
+                    </div>
+                    <div class="additional-serv">
+                        <p>+ мытье духовки внутри (1)</p>
+                        <p>400 р.</p>
+                    </div>
+                </div>
+                <button type="submit" class="btn add-serv-btn">+ Добавить доп. услуги</button>
+            </div>
+            <div class="calculator__step2">
+                <h1 class="calculator__title">
+                    Заполните форму
+                </h1>
+                <input type="text" name="name" id="name" class="stage2_input" placeholder="Имя">
+                <input type="email" name="email" id="email" class = 'stage2_input' placeholder="Электронная почта">
+                <input type="tel" name="trl" id="tel" class="stage2_input" placeholder="Номер телефона">
+                <div class="calculator__aceept-blk">
+                    <input type="checkbox" name="circs" id="circs">
+                    <label for="circs">Я принимаю условия <br> пользовательского соглашения</label>
+                </div>
+                
+            </div>
+            <div class="calculator_summary">
+                <div class="summary_header">
+                    <p>Итого</p>
+                    <p>~2800 руб</p>
+                </div>
+                <button type="submit" class = "btn summary_make-order">ЗАКАЗАТЬ УБОРКУ</button>
+            </div>
+            <div class="calculator__add-serv">
+                <div class="add-serv_blk">
+                    <div class="wrapper">
+                        <div class="add-serv_header">
+                            <p class="add-serv_close">Закрыть</p>
+                        </div>
+                        <ul class="add-serv_item-list">
+                            <li class="add-serv_item">
+                                <div class="add-serv_item-left">
+                                    <h2 class="add-serv_item_title">
+                                        Мытьё кухонных шкафчиков
+                                    </h2>
+                                    <div class="add-serv_item_subtitle">
+                                        <p class="item_subtitle-price">450 p.</p>
+                                    </div>
+                                </div>
+                                <div class="add-serv_item-right">
+                                    <a href="" class="item-right_counter-min"><img src="./img/minus-btn.png" alt="minus"></a>
+                                    <p class="item-right_counter_count">0</p>
+                                    <a href="" class="item-right_counter-plus"><img src="./img/plus.png" alt="minus"></a>
+                                </div> 
+                            </li>
+                            <li class="add-serv_item">
+                                <div class="add-serv_item-left">
+                                    <h2 class="add-serv_item_title">
+                                        Мытьё кухонных шкафчиков
+                                    </h2>
+                                    <div class="add-serv_item_subtitle">
+                                        <p class="item_subtitle-price">450 p.</p>
+                                    </div>
+                                </div>
+                                <div class="add-serv_item-right">
+                                    <a href="" class="item-right_counter-min"><img src="./img/minus-btn.png" alt="minus"></a>
+                                    <p class="item-right_counter_count">0</p>
+                                    <a href="" class="item-right_counter-plus"><img src="./img/plus.png" alt="minus"></a>
+                                </div> 
+                            </li>
+                            <li class="add-serv_item">
+                                <div class="add-serv_item-left">
+                                    <h2 class="add-serv_item_title">
+                                        Мытьё кухонных шкафчиков
+                                    </h2>
+                                    <div class="add-serv_item_subtitle">
+                                        <p class="item_subtitle-price">450 p.</p>
+                                    </div>
+                                </div>
+                                <div class="add-serv_item-right">
+                                    <a href="" class="item-right_counter-min"><img src="./img/minus-btn.png" alt="minus"></a>
+                                    <p class="item-right_counter_count">0</p>
+                                    <a href="" class="item-right_counter-plus"><img src="./img/plus.png" alt="minus"></a>
+                                </div> 
+                            </li>
+                            <li class="add-serv_item">
+                                <div class="add-serv_item-left">
+                                    <h2 class="add-serv_item_title">
+                                        Мытьё кухонных шкафчиков
+                                    </h2>
+                                    <div class="add-serv_item_subtitle">
+                                        <p class="item_subtitle-price">450 p.</p>
+                                    </div>
+                                </div>
+                                <div class="add-serv_item-right">
+                                    <a href="" class="item-right_counter-min"><img src="./img/minus-btn.png" alt="minus"></a>
+                                    <p class="item-right_counter_count">0</p>
+                                    <a href="" class="item-right_counter-plus"><img src="./img/plus.png" alt="minus"></a>
+                                </div> 
+                            </li>
+                            <li class="add-serv_item">
+                                <div class="add-serv_item-left">
+                                    <h2 class="add-serv_item_title">
+                                        Мытьё кухонных шкафчиков
+                                    </h2>
+                                    <div class="add-serv_item_subtitle">
+                                        <p class="item_subtitle-price">450 p.</p>
+                                    </div>
+                                </div>
+                                <div class="add-serv_item-right">
+                                    <a href="" class="item-right_counter-min"><img src="./img/minus-btn.png" alt="minus"></a>
+                                    <p class="item-right_counter_count">0</p>
+                                    <a href="" class="item-right_counter-plus"><img src="./img/plus.png" alt="minus"></a>
+                                </div> 
+                            </li>
+                            <li class="add-serv_item">
+                                <div class="add-serv_item-left">
+                                    <h2 class="add-serv_item_title">
+                                        Мытьё кухонных шкафчиков
+                                    </h2>
+                                    <div class="add-serv_item_subtitle">
+                                        <p class="item_subtitle-price">450 p.</p>
+                                    </div>
+                                </div>
+                                <div class="add-serv_item-right">
+                                    <a href="" class="item-right_counter-min"><img src="./img/minus-btn.png" alt="minus"></a>
+                                    <p class="item-right_counter_count">0</p>
+                                    <a href="" class="item-right_counter-plus"><img src="./img/plus.png" alt="minus"></a>
+                                </div> 
+                            </li>
+                            <li class="add-serv_item">
+                                <div class="add-serv_item-left">
+                                    <h2 class="add-serv_item_title">
+                                        Мытьё кухонных шкафчиков
+                                    </h2>
+                                    <div class="add-serv_item_subtitle">
+                                        <p class="item_subtitle-price">450 p.</p>
+                                    </div>
+                                </div>
+                                <div class="add-serv_item-right">
+                                    <a href="" class="item-right_counter-min"><img src="./img/minus-btn.png" alt="minus"></a>
+                                    <p class="item-right_counter_count">0</p>
+                                    <a href="" class="item-right_counter-plus"><img src="./img/plus.png" alt="minus"></a>
+                                </div> 
+                            </li>
+                            <li class="add-serv_item">
+                                <div class="add-serv_item-left">
+                                    <h2 class="add-serv_item_title">
+                                        Мытьё кухонных шкафчиков
+                                    </h2>
+                                    <div class="add-serv_item_subtitle">
+                                        <p class="item_subtitle-price">450 p.</p>
+                                    </div>
+                                </div>
+                                <div class="add-serv_item-right">
+                                    <a href="" class="item-right_counter-min"><img src="./img/minus-btn.png" alt="minus"></a>
+                                    <p class="item-right_counter_count">0</p>
+                                    <a href="" class="item-right_counter-plus"><img src="./img/plus.png" alt="minus"></a>
+                                </div> 
+                            </li>
+                        </ul>
+                        <div class="summary_header">
+                            <p>Итого</p>
+                            <p>~2800 руб</p>
+                        </div>
+                        <button type="submit" class = "btn summary_make-order">ЗАКАЗАТЬ УБОРКУ</button>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="about what-inc">
+        <div class="wrapper">
+            <h2 class="about__header">
+                Что входит в стандартную уборку?   
+            </h2>
+            <div class="about__main">
+                <div class="dropdown_container">
+                    <div class="about_dropdown_item">
+                        <h2 class="dropdown_header about_dropdown_header">
+                            <img src="./img/corridor.png" alt="dropdown header">
+                            <p class = 'dropdown_header_title'>КОРИДОР</p>
+                            <div class="dropdown_header_arrow">
+                                <p>Свернуть</p>
+                                <img src="./img/dropdown-arrow.png" alt="dropdown">
+                            </div>
+                        </h2>
+                        <div class="about_dropdown_main about_dropdown_main">
+                            Отмоем окна и удалим все загрязнения и наполируем до прозрачной чистоты. С помощью парогенератора прочистим все резиновые уплотнители!
+                        </div>
+                    </div>
+                    <div class="about_dropdown_item">
+                        <h2 class="dropdown_header about_dropdown_header">
+                            <img src="./img/kitchen.png" alt="dropdown header">
+                            <p class = 'dropdown_header_title'>КУХНЯ</p>
+                            <div class="dropdown_header_arrow">
+                                <p>Свернуть</p>
+                                <img src="./img/dropdown-arrow.png" alt="dropdown">
+                            </div>
+                        </h2>
+                        <div class="about_dropdown_main about_dropdown_main">
+                            Отмоем окна и удалим все загрязнения и наполируем до прозрачной чистоты. С помощью парогенератора прочистим все резиновые уплотнители!
+                        </div>
+                    </div>
+                    <div class="about_dropdown_item">
+                        <h2 class="dropdown_header about_dropdown_header">
+                            <img src="./img/room.png" alt="dropdown header">
+                            <p class = 'dropdown_header_title'>КОМНАТА</p>
+                            <div class="dropdown_header_arrow">
+                                <p>Свернуть</p>
+                                <img src="./img/dropdown-arrow.png" alt="dropdown">
+                            </div>
+                        </h2>
+                        <div class="about_dropdown_main about_dropdown_main">
+                            Отмоем окна и удалим все загрязнения и наполируем до прозрачной чистоты. С помощью парогенератора прочистим все резиновые уплотнители!
+                        </div>
+                    </div>
+                    <div class="about_dropdown_item">
+                        <h2 class="dropdown_header about_dropdown_header">
+                            <img src="./img/bathroom.png" alt="dropdown header">
+                            <p class = 'dropdown_header_title'>САН УЗЕЛ</p>
+                            <div class="dropdown_header_arrow">
+                                <p>Свернуть</p>
+                                <img src="./img/dropdown-arrow.png" alt="dropdown">
+                            </div>
+                        </h2>
+                        <div class="about_dropdown_main about_dropdown_main">
+                            Отмоем окна и удалим все загрязнения и наполируем до прозрачной чистоты. С помощью парогенератора прочистим все резиновые уплотнители!
+                        </div>
+                    </div>
+                    <button type="submit" class = "btn about_make-order">ЗАКАЗАТЬ УБОРКУ</button>  
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="about_price">
+        <div class="wrapper">
+            <h2 class="about__header">
+                Примерные цены стандартной уборки квартиры  
+            </h2>
+            <div class="about__main price_main">
+                <div class="price_main_header">
+                    <p>Площадь квартиры</p>
+                    <p>Цены</p>
+                </div>
+                <div class="price_main_price">
+                    <p>до 30 м2</p>
+                    <p>от 2100 руб</p>
+                </div>
+                <div class="price_main_price">
+                    <p>1к кв. - до 50 м2</p>
+                    <p>от 2500 руб</p>
+                </div>
+                <div class="price_main_price">
+                    <p>2к кв. - от 51 м2 до 70 м2</p>
+                    <p>от 3100 руб</p>
+                </div>
+                <div class="price_main_price">
+                    <p>3к кв. - от 71 до 90 м2</p>
+                    <p>от 3900 руб</p>
+                </div>
+                <div class="price_main_price">
+                    <p>4к кв. - от 91 до 120 м2</p>
+                    <p>от 5600 руб</p>
+                </div>
+                <p class="price_main_alert">Цены носят ознакомительный характер. Точную стоимость определяет оператор по телефону.</p>
+                <button type="submit" class = "btn about_make-order">ЗАКАЗАТЬ УБОРКУ</button>
+            </div>
+        </div>  
+    </section>
+    <section class="examples swipe-wrap">
+        <div class="swiper-container">
+            <div class="swiper-top">
+                <p class="swipe-header">Примеры <br>работ</p>
+                <div class="swiper-arrows">
+                    <div class="swiper-button-next"><img src="./img/svg/swipe-r.svg" alt="swipe r"></div>
+                    <div class="swiper-button-prev"><img src="./img/svg/swipe-l.svg" alt="swipe l"></div>
+                </div>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide example-slide"><img src="./img/ex-img.png" alt="ex img"></div>
+                <div class="swiper-slide example-slide"><img src="./img/ex-img.png" alt="ex img"></div>
+                <div class="swiper-slide example-slide"><img src="./img/ex-img.png" alt="ex img"></div>
+                <div class="swiper-slide example-slide"><img src="./img/ex-img.png" alt="ex img"></div>
+            </div>
+        </div>
+    </section>
+    <section class="rewiews swipe-wrap">
+        <div class="swiper-container1">
+            <div class="swiper-top">
+                <p class="swipe-header">Отзывы <br>клиентов</p>
+                <div class="swiper-arrows">
+                    <div class="swiper-button-next"><img src="./img/svg/swipe-r.svg" alt="swipe r"></div>
+                    <div class="swiper-button-prev"><img src="./img/svg/swipe-l.svg" alt="swipe l"></div>
+                </div>
+            </div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide rewiews-slide">
+                    <a href="">
+                        <div class="rew_review">
+                            <img src="./img/rev-img.png" alt="cleaning cleaners" class="desc-img">
+                            <div class="review_desc">
+                                <div class="desc_top">
+                                    Отличная компания и наверное самые адекватные цены
+                                </div>
+                                <div class="desc_bottom">
+                                    <p class="desc_client-name">Андрей Чекмарев</p>
+                                    <p class="desc_post-date">19.10.2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide rewiews-slide">
+                    <a href="">
+                        <div class="rew_review">
+                            <img src="./img/rev-img.png" alt="cleaning cleaners" class="desc-img">
+                            <div class="review_desc">
+                                <div class="desc_top">
+                                    Отличная компания и наверное самые адекватные цены
+                                </div>
+                                <div class="desc_bottom">
+                                    <p class="desc_client-name">Андрей Чекмарев</p>
+                                    <p class="desc_post-date">19.10.2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide rewiews-slide">
+                    <a href="">
+                        <div class="rew_review">
+                            <img src="./img/rev-img.png" alt="cleaning cleaners" class="desc-img">
+                            <div class="review_desc">
+                                <div class="desc_top">
+                                    Отличная компания и наверное самые адекватные цены
+                                </div>
+                                <div class="desc_bottom">
+                                    <p class="desc_client-name">Андрей Чекмарев</p>
+                                    <p class="desc_post-date">19.10.2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about qa">
+        <div class="wrapper">
+            <h2 class="about__header">
+                Вопросы и ответы 
+            </h2>
+            <div class="about__main">
+                <div class="dropdown_container">
+                    <div class="qa_dropdown_item">
+                        <div class="qa_dropdown_header">
+                            <p class = 'qa_dropdown_header_title'>Могу ли я заказывать уборку на еженедельной основе?</p>
+                            <img src="./img/dropwdown-w.png" alt="dropdown">
+                        </div>
+                        <div class="qa_dropdown_main">
+                            Отмоем окна и удалим все загрязнения и наполируем до прозрачной чистоты. С помощью парогенератора прочистим все резиновые уплотнители!
+                        </div>
+                    </div>
+                    <div class="qa_dropdown_item">
+                        <div class="qa_dropdown_header">
+                            <p class = 'qa_dropdown_header_title'>Могу ли я заказывать уборку на еженедельной основе?</p>
+                            <img src="./img/dropwdown-w.png" alt="dropdown">
+                        </div>
+                        <div class="qa_dropdown_main">
+                            Отмоем окна и удалим все загрязнения и наполируем до прозрачной чистоты. С помощью парогенератора прочистим все резиновые уплотнители!
+                        </div>
+                    </div>
+                    <div class="qa_dropdown_item">
+                        <div class="qa_dropdown_header">
+                            <p class = 'qa_dropdown_header_title'>Могу ли я заказывать уборку на еженедельной основе?</p>
+                            <img src="./img/dropwdown-w.png" alt="dropdown">
+                        </div>
+                        <div class="qa_dropdown_main">
+                            Отмоем окна и удалим все загрязнения и наполируем до прозрачной чистоты. С помощью парогенератора прочистим все резиновые уплотнители!
+                        </div>
+                    </div>
+                    <div class="qa_dropdown_item">
+                        <div class="qa_dropdown_header">
+                            <p class = 'qa_dropdown_header_title'>Могу ли я заказывать уборку на еженедельной основе?</p>
+                            <img src="./img/dropwdown-w.png" alt="dropdown">
+                        </div>
+                        <div class="qa_dropdown_main">
+                            Отмоем окна и удалим все загрязнения и наполируем до прозрачной чистоты. С помощью парогенератора прочистим все резиновые уплотнители!
+                        </div>
+                    </div>
+                    <div class="qa_dropdown_item">
+                        <div class="qa_dropdown_header">
+                            <p class = 'qa_dropdown_header_title'>Могу ли я заказывать уборку на еженедельной основе?</p>
+                            <img src="./img/dropwdown-w.png" alt="dropdown">
+                        </div>
+                        <div class="qa_dropdown_main">
+                            Отмоем окна и удалим все загрязнения и наполируем до прозрачной чистоты. С помощью парогенератора прочистим все резиновые уплотнители!
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class = "btn about_make-order">ЗАКАЗАТЬ УБОРКУ</button>  
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+    <section class="make-an-order">
+        <div class="wrapper">
+            <h2 class="make-an-order__header">Заказать уборку</h2>
+            <input type="text" name="name" id="name1" class="make-an-order_input" placeholder="Имя">
+            <input type="tel" name="trl" id="tel1" class="make-an-order_input" placeholder="Номер телефона">
+            <div class="make-an-order__aceept-blk">
+                <input type="checkbox" name="circs1" id="circs1">
+                <label for="circs1">Я принимаю условия <br> пользовательского соглашения</label>
+            </div>
+            <button type="submit" class = "btn make-an-order-btn">ОСТАВИТЬ ЗАЯВКУ</button> 
+        </div>
+
+        
+    </section>
+    
+    <script src="./js/swiper-bundle.js"></script>
+
+	<script>
+	var appendNumber = 4;
+    var prependNumber = 1.5;
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1.5,
+      centeredSlides: true,
+      spaceBetween: -20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    var swiper1 = new Swiper('.swiper-container1', {
+      slidesPerView: 1.5,
+      centeredSlides: true,
+      spaceBetween: -30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+       
+	</script>
+</body>
+</html>

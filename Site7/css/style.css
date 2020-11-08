@@ -799,7 +799,7 @@ a:focus, a:visited{
     .ex_examples{
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (1fr)[2];
+        -ms-grid-columns: (1fr);
             grid-template-columns: repeat(2, 1fr);
         -webkit-column-gap: 12px;
            -moz-column-gap: 12px;
@@ -931,7 +931,7 @@ a:focus, a:visited{
         padding: 37px 31px 105px 31px;
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: (1fr)[2];
+        -ms-grid-columns: (1fr);
             grid-template-columns: repeat(2, 1fr);
         -webkit-column-gap: 43px;
            -moz-column-gap: 43px;
