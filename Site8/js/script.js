@@ -89,7 +89,41 @@
     addServeCloseBtn.addEventListener("click", ()=>{addServBlk.classList.remove("visible-fixed")});
 
 
-    
+    // Dropdowns
+
+    let about_header = document.querySelectorAll(".about_dropdown_header")
+    let about_main = document.querySelectorAll(".about_dropdown_main")
+
+    for(let i = 0; i < about_header.length; i++){
+        about_header[i].addEventListener("click",() => {
+            classlist = Object.values(about_main[i].classList)
+            if(classlist.indexOf("about_dropdown_main-active") != -1){
+                about_main[i].classList.remove("about_dropdown_main-active");
+                about_header[i].classList.remove("dropdown_header_arrow-active");
+            }
+            else{
+                about_main[i].classList.add("about_dropdown_main-active");
+                about_header[i].classList.add("dropdown_header_arrow-active");
+            }
+        })
+    }
+
+    let qa_header = document.querySelectorAll(".qa_dropdown_header")
+    let qa_main = document.querySelectorAll(".qa_dropdown_main")
+
+    for(let i = 0; i < qa_header.length; i++){
+        qa_header[i].addEventListener("click",() => {
+            classlist = Object.values(qa_main[i].classList)
+            if(classlist.indexOf("qa_dropdown_main-active") != -1){
+                qa_main[i].classList.remove("qa_dropdown_main-active");
+                qa_header[i].classList.remove("dropdown_header_arrow-active");
+            }
+            else{
+                qa_main[i].classList.add("qa_dropdown_main-active");
+                qa_header[i].classList.add("dropdown_header_arrow-active");
+            }
+        })
+    }
 
 }())
 
