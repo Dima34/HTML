@@ -259,7 +259,7 @@ a:focus, a:visited{
    outline: none;
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:425px){
     .visible{
         display: block !important;
     }
@@ -396,6 +396,7 @@ a:focus, a:visited{
         padding: 78px 28px 183px 28px;
         text-align: center;
         background: url(../img/intro-bg.png) no-repeat;
+        background-size: cover;
     }
     .intro__title{
         font-weight: 600;
