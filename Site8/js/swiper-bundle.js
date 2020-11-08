@@ -1902,6 +1902,7 @@
                   clientWidth = _slide$.clientWidth,
                   offsetWidth = _slide$.offsetWidth;
               slideSize = width + paddingLeft + paddingRight + marginLeft + marginRight + (offsetWidth - clientWidth);
+              
             }
           } else {
             var height = parseFloat(slideStyles.getPropertyValue('height') || 0);

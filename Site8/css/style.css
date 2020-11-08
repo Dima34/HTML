@@ -765,19 +765,24 @@ a:focus, a:visited{
     /* ------------------------------------ */
     /* ------------------------------------ */
 
+    .swiper-button-next1.swiper-button-disabled, .swiper-button-prev1.swiper-button-disabled {
+        opacity: .35;
+        cursor: auto;
+        pointer-events: none;
+    }
+
     .swiper-container, .swiper-container1{
-        transform: translateX(-14%);
-        width: 120%;
         margin: 20px auto;
+        overflow: visible;
     }
     .swipe-header{
-        margin-left: 18%;
         font-weight: 600;
         font-size: 25px;
         line-height: 103%;
         color: #45596B;
     }
     .swiper-slide {
+        
         text-align: center;
         font-size: 18px;
         display: -webkit-box;
@@ -793,6 +798,12 @@ a:focus, a:visited{
         -webkit-align-items: center;
         align-items: center;
         border-radius: 10px;;
+    }
+    .example-slide{
+        width: 275px;
+    }
+    .rewiews-slide{
+        width: 269px;
     }
     .append-buttons {
         text-align: center;
@@ -832,9 +843,7 @@ a:focus, a:visited{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-right: 6%;
         margin-bottom: 29px;
-        padding-left: 3%;
     }
     .swiper-arrows{
         display: flex;
@@ -852,9 +861,6 @@ a:focus, a:visited{
         position: relative;
     }
 
-    .swiper-container1{
-        transform: translateX(-14.5%);
-    }
     .rewiews{
         margin-bottom: 57px;
     }

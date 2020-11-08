@@ -83,8 +83,13 @@
     let addServBlk = document.querySelector(".calculator__add-serv");
     let addServBtn = document.querySelector(".add-serv-btn");
     let addServeCloseBtn = document.querySelector(".add-serv_close");
+    
 
     addServBtn.addEventListener("click", ()=>{addServBlk.classList.add("visible-fixed")});
     addServeCloseBtn.addEventListener("click", ()=>{addServBlk.classList.remove("visible-fixed")});
 
+
+    
+
 }())
+
