@@ -1464,7 +1464,6 @@ a:focus, a:visited{
                 align-items: center;
         width: -webkit-fit-content;
         width: -moz-fit-content;
-        width: fit-content;
         margin-bottom: 30px;
     }
     .service-about_intro .wrapper .main-menu_second-list{
