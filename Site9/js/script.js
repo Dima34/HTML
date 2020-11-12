@@ -31,6 +31,24 @@
        
         
     })
+
+    let cardDescBtn = document.querySelectorAll(".services_learn-more-btn");
+    let services_blk = document.querySelectorAll(".services_blk");
+
+    if(cardDescBtn != null){
+        for(let i = 0; i < cardDescBtn.length; i ++){
+            cardDescBtn[i].addEventListener("click",()=>{
+                services_blk[i].classList.add("services_blk-active");
+                for(let b = 0; b < cardDescBtn.length; b++){
+                    if(b != i){
+                        services_blk[b].classList.remove("services_blk-active");
+                    }
+                    
+                }
+            })
+        }
+    }
+
     
     
     

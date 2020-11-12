@@ -1130,7 +1130,17 @@ button{
 .service_desc{
     display: none;
 }
+.services_blk-active .services_learn-more-btn,.services_blk-active .service_title{
+    display: none;
+}
+.services_blk-active .service_desc{
+    display: block;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    color: #FFFFFF;
 
+}
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1233,6 +1243,9 @@ footer .wrapper .wrapper-mobile{
 }
 
 @media screen and (max-width:1440px){
+    .header{
+        padding: 0 20px;
+    }
     .header__logo img{
         height: 177px;
         width: auto;
@@ -1331,12 +1344,25 @@ footer .wrapper .wrapper-mobile{
     .projects_top {
         margin-bottom: 17px;
     }
+    .services_blk-active .service_desc {
+        display: block;
+        font-size: 34px;
+        line-height: 50px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .services_blk {
+        min-height: 350px;
+        margin-bottom: 40px;
+    }
+    .service_title {
+        font-size: 36px;
+        line-height: 50px;
+        padding: 0 20px;
+    }
 }
 
-@media screen and (max-width:834px){
-    .wrapper{
-        padding: 0 40px;
-    }
+@media screen and (max-width:1050px){
     .header{
         min-height: 59px;
     }
@@ -1354,6 +1380,31 @@ footer .wrapper .wrapper-mobile{
     }
     .nav_item-active::after{
         height: 103px;
+    }
+    .services_blk-active .service_desc {
+        display: block;
+        font-size: 30px;
+        line-height: 45px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .services_blk {
+        min-height: 350px;
+        margin-bottom: 40px;
+    }
+    .service_title {
+        font-size: 32px;
+        line-height: 45px;
+    }
+}
+
+@media screen and (max-width:834px){
+    .wrapper{
+        padding: 0 40px;
+    }
+    
+    .header {
+        padding: 0;
     }
     .intro{
         min-height: 457px;
@@ -1585,6 +1636,33 @@ footer .wrapper .wrapper-mobile{
     .projects_bottom {
         column-gap: 10px;
     }
+    .services .wrapper {
+        padding: 0 20px;
+    }
+    .services_blk-active .service_desc {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .services_blk {
+        min-height: 240px;
+        margin-bottom: 40px;
+    }
+    .service_title {
+        font-size: 32px;
+        line-height: 45px;
+        padding-top: 20px;
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .services_learn-more-btn{
+        margin-top: 40px;
+        min-width: 180px;
+        min-height: 45px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 12px 28px;
+    }
 }
 @media screen and (max-width:700px){
     .about-us__top{
@@ -1802,6 +1880,7 @@ footer .wrapper .wrapper-mobile{
     .projects_bottom {
         column-gap: 6px;
     }
+
 }
 
 
@@ -1832,6 +1911,9 @@ footer .wrapper .wrapper-mobile{
     .wrapper-mobile{
         display: flex !important;
         align-items: center;
+    }
+    img:first-child {
+        margin-right: 3px !important;
     }
     .footer__logo{
         height: fit-content;
@@ -1904,6 +1986,36 @@ footer .wrapper .wrapper-mobile{
     .projects_bottom .project_card:first-child, .projects_bottom .project_card:last-child{ 
         grid-column-start: unset;
         grid-column-end: unset;
+    }
+
+    .services {
+        padding: 20px 20px;
+    }
+    .services .wrapper {
+        padding: 0 0px;
+    }
+    .services_blk-active .service_desc {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .services_blk {
+        min-height: 240px;
+        margin-bottom: 20px;
+    }
+    .service_title {
+        font-size: 22px;
+        line-height: 45px;
+        padding-top: 20px;
+        line-height: 33px;
+    }
+    .services_learn-more-btn{
+        margin-top: 25px;
+        min-width: 180px;
+        min-height: 45px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 6px 12px;
     }
 }
 @media screen and (max-width:425px){
@@ -2167,6 +2279,35 @@ footer .wrapper .wrapper-mobile{
         margin-bottom: 15px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .services {
+        padding: 20px 0px;
+    }
+    .services .wrapper {
+        padding: 0 0px;
+    }
+    .services_blk-active .service_desc {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .services_blk {
+        min-height: 170px;
+        margin-bottom: 20px;
+    }
+    .service_title {
+        font-size: 18px;
+        line-height: 25px;
+        padding-top: 15px;
+    }
+    .services_learn-more-btn{
+        margin-top: 10px;
+        min-width: 180px;
+        min-height: 40px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        padding: 6px 12px;
     }
     
 }
