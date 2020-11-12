@@ -4,13 +4,15 @@
     let bepartner_show_btn = document.querySelector(".partner__be-partner-btn");
     let bepartner_close = document.querySelector(".bepartner_close-btn");
    
-
-    bepartner_show_btn.addEventListener("click", ()=>{
-        bepartner.classList.add("visible-flex");
-    })
-    bepartner_close.addEventListener("click", ()=>{
-        bepartner.classList.remove("visible-flex");
-    })
+    if(bepartner != null){
+        bepartner_show_btn.addEventListener("click", ()=>{
+            bepartner.classList.add("visible-flex");
+        })
+        bepartner_close.addEventListener("click", ()=>{
+            bepartner.classList.remove("visible-flex");
+        })
+    }
+    
 
     let burger = document.querySelector(".burger");
     let header_nav = document.querySelector(".nav_item-list");

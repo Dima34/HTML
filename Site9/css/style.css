@@ -312,11 +312,19 @@ button{
     max-width: 1338px;
     margin: 0 auto;
 }
+
 .visible-flex{
     display: flex !important;
 }
 .max-height{
     max-height: 500px !important;
+}
+.thicc_text{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 51px;
+    letter-spacing: 1.5%;
+    color: #094B86;
 }
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -348,7 +356,23 @@ button{
     justify-content: space-between;
 }
 .nav_item{
-    padding:23px 48px;
+    padding:23px 20px;
+    margin-left: 56px;
+    position: relative;
+}
+.nav_item-active a{
+    color: #FFFFFF !important;
+    position: relative;
+    z-index: 1;
+}
+.nav_item-active::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 132px;
+    top: 0;
+    left: 0;
+    background: rgba(1, 55, 89, 0.75);
 }
 .nav_item, .nav_item a{
     font-size: 18px;
@@ -427,11 +451,29 @@ button{
     line-height: 20px;
     color: #FFFFFF;
 }
-.swiper-slide-active{
+.swiper-container .swiper-slide-active{
     background-color: #0A4166;
 }
 .mobile-arrow{
     display: none;
+}
+.about_intro{
+    width: 100%;
+    min-height: 159px;
+    background: url(../img/about_intro.png);
+    background-size: cover;
+}
+.projects_intro{
+    width: 100%;
+    min-height: 159px;
+    background: url(../img/projects-intro-bg.jpg);
+    background-size: cover;
+}
+.services_intro{
+    width: 100%;
+    min-height: 159px;
+    background: url(../img/services-bg.png);
+    background-size: cover;
 }
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -623,7 +665,7 @@ button{
     display: flex;
     flex-direction: column;
 }
-.swiper-container1{
+.swiper-container1, .swiper-container2{
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -874,6 +916,225 @@ button{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* -------======TRADITIONS======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.traditions{
+    padding: 112px 390px 143px 390px;
+    min-height: 587px;
+    background: url(../img/traditions-bg.png);
+    background-size: cover;
+}
+.traditions__header{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 68px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 136px;
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------=======REWIEWS=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.reviews{
+    padding-bottom: 60px;
+}
+.reviews__header{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 68px;
+    text-align: center;
+    color: #0A4166;
+    margin: 60px 0 56px 0;
+}
+.reviews .wrapper{
+    padding: 0 155px;
+    position: relative;
+}
+.reviews-btn-group{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.reviews-slide{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+}
+.rewiews-slide_desc{
+    max-width: 585px;
+}
+.rewiews-slide_name{
+    font-size: 50px;
+    line-height: 68px;
+    color: #0A4166;
+}
+.rewiews-slide_position{
+    font-size: 36px;
+    line-height: 49px;
+    color: #0A4166; 
+}
+.rewiews-slide_about{
+    font-size: 30px;
+    line-height: 41px;
+    color: #0A4166;
+    margin-bottom: 45px;
+}
+.rewiews-slide_about:last-child{
+    margin-bottom: 10px;
+}
+.reviews .swiper-pagination{
+    position: unset;
+    margin-top: 20px;
+}
+.reviews .swiper-pagination-bullet{
+    background: rgb(0, 0, 0);
+    width: 7px;
+    height: 7px;
+    margin-right: 9px;
+}
+.reviews .swiper-pagination-bullet:last-child{
+    margin-right: 0;
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======PROJECTS=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.projects{
+    padding: 55px 0;
+    min-height: calc(100vh - 300px);
+}
+.projects_top{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 6px;
+}
+.projects_bottom{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 30px;
+}
+.project_card{
+    max-width: 440px;
+    min-height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+.project_carg-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.card-desc{
+    display: none;
+}
+.card__title{
+    font-size: 36px;
+    line-height: 144%;
+    color: #FFFFFF;
+}
+.project_card:hover .card-desc{
+    display: block;
+    font-size: 26px;
+    line-height: 144%;
+    text-align: center;
+    letter-spacing: 0.015em;
+    color: #FFFFFF;
+}
+.project_card:hover .card__title{
+    display: none;
+}
+.projects_bottom .project_card:first-child{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.projects_bottom .project_card:last-child{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+.projects_top{
+    margin-bottom: 36px;
+}
+.projects{
+    padding: 20px;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======SERVICES=======-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.services{
+    padding: 60px 20px;
+}
+.services .wrapper{
+    max-width: 1340px;
+}
+.services_blk{
+    width: 100%;
+    position: relative;
+    background: url(../img/services-card-bg.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 409px;
+    margin-bottom: 60px;
+}
+.services_blk:last-child{
+    
+    margin-bottom: 0px;
+}
+.services_learn-more-btn{
+    display: block;
+    border-radius: 10px;
+    min-height: 60px;
+    min-width: 250px;
+    padding: 17px;
+    margin: 0 auto;
+    margin-top: 90px;
+    color: #FFFFFF;
+    background-color: unset;
+    border: 3px solid #fff;
+}
+.service_title{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 1030px;
+}
+.service_desc{
+    display: none;
+}
+
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* -------========FOOTER=======-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -885,6 +1146,9 @@ footer{
     background-color: #02375A;
     padding-top: 32px;
     padding-bottom: 20px;
+}
+footer .wrapper{
+    padding: 0 20px;
 }
 footer .wrapper .wrapper-mobile,  footer .wrapper .wrapper-desc{
     display: flex;
@@ -929,6 +1193,44 @@ footer .wrapper .wrapper-mobile,  footer .wrapper .wrapper-desc{
 footer .wrapper .wrapper-mobile{
     display: none;
 }
+.activity-directions{
+    margin-bottom: 60px;
+}
+.activity-directions h1{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 51px;
+    letter-spacing: 1.5%;
+    color: #094B86;
+    padding: 60px 60px 60px 0;
+}
+.activity-directions__text{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #0A4166;
+    margin-bottom: 25px;
+}
+.activity-directions__text:last-child{
+    margin-bottom: 0;
+}
+.activity-directions_counter_counter{
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 131px;
+    color: #0A4166;
+}
+.activity-directions_counter_counter-desc{
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 48px;
+    color: #0A4166;
+}
+.activity-directions__counter-cont{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 161px;
+}
 
 @media screen and (max-width:1440px){
     .header__logo img{
@@ -965,6 +1267,70 @@ footer .wrapper .wrapper-mobile{
     .intro-button-next{
         margin-left: 10px;
     }
+    .traditions {
+        padding: 39px 150px 70px 150px;
+        min-height: unset;
+        background: url(../img/traditions-bg.png);
+        background-size: cover;
+    }
+    .reviews .wrapper {
+        padding: 0 88px;
+    }
+    .rewiews-slide_desc{
+        max-width: 627px;
+    }
+    .reviews-slide img{
+        width: 386px;
+        height: auto;
+        
+    }
+    .project_card{
+        max-width: 420px;
+        min-height: 285px;
+    }
+}
+
+@media screen and (max-width:1210px){
+    .reviews-slide img {
+        width: 100%;
+        height: unset;
+    }
+    .rewiews-slide_img{
+        width: 35%;
+    }
+    .rewiews-slide_name,.rewiews-slide_position{
+        font-size: 25px;
+        line-height: 27px;
+    }
+    .rewiews-slide_about{
+        font-size: 23px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    .rewiews-slide_desc{
+        max-width: 61%;
+    }
+    .reviews-btn-group{
+        padding: 0 40px;
+    }
+    .reviews-button-prev img, .reviews-button-next img{
+        width: 26px;
+    }
+    .project_card{
+        max-width: 300px;
+        min-height: 200px;
+    }
+    .card__title{
+        font-size: 25px;
+        line-height: 140%;
+    }
+    .project_card:hover .card-desc{
+        font-size: 16px;
+        line-height: 144%;
+    }
+    .projects_top {
+        margin-bottom: 17px;
+    }
 }
 
 @media screen and (max-width:834px){
@@ -978,12 +1344,16 @@ footer .wrapper .wrapper-mobile{
         height: 101px;
         width: auto;
     }
-    .nav_item, .nav_item a {
-        font-size: 16px;
-        line-height: 22px;
+    .nav_item{
+        font-size: 18px;
+        line-height: 25px;
+        color: #013759;
+        padding: 17px 12px;
+        margin-left: 14px;
+        width: fit-content;
     }
-    .nav_item {
-        padding: 18px 10px;
+    .nav_item-active::after{
+        height: 103px;
     }
     .intro{
         min-height: 457px;
@@ -1157,8 +1527,65 @@ footer .wrapper .wrapper-mobile{
     .footer__socials{
         margin-left: auto;
     }
+    .about_intro,.projects_intro,.services_intro{
+        min-height: 89px;
+    }
+    .activity-directions h1 {
+        padding: 30px 30px 30px 0;
+    }
+    .activity-directions__counter-cont{
+        padding: 46px 125px;
+        text-align: center;
+    }
+    .activity-directions_counter_counter{
+        font-weight: 600;
+        font-size: 76px;
+        line-height: 103px;
+    }
+    .activity-directions_counter_counter-desc{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .traditions {
+        padding: 50px 88px;
+    }
+    .traditions__header{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 40px;
+    }
+    .tranditions__btn {
+        min-height: 60px;
+        min-width: 250px;
+        padding: 13px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .projects .wrapper{
+        padding: 0;
+    }
+    .project_card{
+        max-width: 245px;
+        min-height: 170px;
+        padding: 19px 4px;
+    }
+    .card__title{
+        font-size: 18px;
+        line-height: 140%;
+    }
+    .project_card:hover .card-desc{
+        font-size: 15px;
+        line-height: 144%;
+    }
+    .projects_top {
+        margin-bottom: 30px;
+    }
+    .projects_bottom {
+        column-gap: 10px;
+    }
 }
-
 @media screen and (max-width:700px){
     .about-us__top{
         grid-template-columns: 1fr;
@@ -1246,28 +1673,6 @@ footer .wrapper .wrapper-mobile{
         margin-left: 61px;
         max-width: 200px;
     }
-
-}
-@media screen and (max-width:580px){
-    .header__logo img {
-        height: 84px;
-    }
-    .intro{
-        padding-bottom: 5px;
-        min-height: fit-content;
-    }
-    .intro__swiper{
-        box-shadow: none;
-        margin-right: 0;
-        margin-top: 20px;
-        max-width: 350px;
-    }
-    .intro__swiper_wrapper{
-        padding: 10px 20px 41px 20px;
-    }
-    .intro__swiper_header{
-        text-align: center;
-    }
     .nav_item-list{
         position: absolute;
         top: 54px;
@@ -1323,6 +1728,104 @@ footer .wrapper .wrapper-mobile{
         opacity: 1;
         transition: .4s;
     }
+    .reviews-slide{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3px;
+    }
+    .rewiews-slide_desc{
+        width: 100%;
+        max-width: unset;
+    }
+    .rewiews-slide_name,.rewiews-slide_position{
+        text-align: center;
+        margin-bottom: 3px;
+    }
+    .activity-directions h1 {
+        padding: 20px 20px 20px 0;
+        font-size: 26px;
+    }
+    .reviews__header{
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+    }
+    .rewiews-slide_name, .rewiews-slide_position {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .rewiews-slide_about {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    .activity-directions__text{
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .thicc_text{
+        font-size: 22px;
+        
+    }
+    .activity-directions__counter-cont {
+        padding: 46px 30px;
+        text-align: center;
+        font-size: 48px;
+        line-height: 65px;
+    }
+    .nav_item-active a {
+        color: #013759 !important;
+        position: relative;
+        z-index: 1;
+    }
+    .nav_item-active::after{
+        display: none;
+    }
+
+    .project_card{
+        max-width: 205px;
+        min-height: 130px;
+        padding: 19px 4px;
+    }
+    .card__title{
+        font-size: 15px;
+        line-height: 140%;
+    }
+    .project_card:hover .card-desc{
+        font-size: 11px;
+        line-height: 144%;
+    }
+    .projects_top {
+        margin-bottom: 20px;
+    }
+    .projects_bottom {
+        column-gap: 6px;
+    }
+}
+
+
+@media screen and (max-width:580px){
+    .header__logo img {
+        height: 84px;
+    }
+    .intro{
+        padding-bottom: 5px;
+        min-height: fit-content;
+    }
+    .intro__swiper{
+        box-shadow: none;
+        margin-right: 0;
+        margin-top: 20px;
+        max-width: 350px;
+    }
+    .intro__swiper_wrapper{
+        padding: 10px 20px 41px 20px;
+    }
+    .intro__swiper_header{
+        text-align: center;
+    }
+    
     .wrapper-desc{
         display: none !important;
     }
@@ -1350,7 +1853,58 @@ footer .wrapper .wrapper-mobile{
     .wrapper {
         padding: 0 25px;
     }
-    
+    .activity-directions__counter-cont{
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .activity-directions_counter_counter{
+        margin-bottom: 38px;
+    }
+    .activity-directions_counter_counter-desc{
+        margin-bottom: 29px;
+    }
+    .traditions__header{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .tranditions__btn {
+        min-height: 30px;
+        min-width: 125px;
+        padding: 13px 18px;
+        font-size: 13px;
+        line-height: 14px;
+    }
+
+    .project_card{
+        width: 305px;
+        min-width: unset;
+        max-width: unset;
+        min-height: 200px;
+        padding: 19px 4px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card__title{
+        font-size: 18px;
+        line-height: 140%;
+    }
+    .project_card:hover .card-desc{
+        font-size: 15px;
+        line-height: 144%;
+    }
+    .projects_top,.projects_bottom {
+        grid-template-columns: 1fr;
+        
+    }
+    .projects_top{
+        margin-bottom: 0px;
+    }
+    .projects_bottom .project_card:first-child, .projects_bottom .project_card:last-child{ 
+        grid-column-start: unset;
+        grid-column-end: unset;
+    }
 }
 @media screen and (max-width:425px){
     .intro__swiper {
@@ -1540,5 +2094,80 @@ footer .wrapper .wrapper-mobile{
         font-size: 10px;
         line-height: 14px;
     }
+    .activity-directions h1 {
+        font-size: 23px;
+        padding-right: 0;
+    }
+    .about_intro,.projects_intro,.services_intro{
+        min-height: 75px;
+    }
+    
+    .activity-directions__text{
+        font-size: 12px;
+        line-height: 17px;
+        margin-bottom: 20px;
+    }
+    .thicc_text{
+        font-size: 16px;
+        
+    }
+    .activity-directions__counter-cont {
+        padding: 0;
+        text-align: center;
+        font-size: 48px;
+        line-height: 65px;
+    }
+    .activity-directions_counter_counter{
+        font-size: 48px;
+        line-height: 65px;
+    }
+    .activity-directions_counter_counter-desc{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .traditions {
+        padding: 4px 26px 36px 26px;
+    }
+    .traditions__header{
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 22px;
+    }
+    .partner__be-partner-btn {
+        border: 1px solid #FFFFFF;
+    }
+    .reviews__header{
+        margin-top: 20px;
+        margin-bottom: 22px;
+    }
+    .rewiews-slide_name,.rewiews-slide_position{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .rewiews-slide_about{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .reviews .wrapper {
+        padding: 0 48px;
+    }
+    .reviews-btn-group {
+        padding: 0 25px;
+    }
+    .reviews-btn-group {
+        padding: 0 15px;
+    }
+
+    .project_card{
+        width: 245px;
+        min-width: unset;
+        max-width: unset;
+        min-height: 170px;
+        padding: 19px 4px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
 
