@@ -823,6 +823,7 @@ body .wrapper main{
    left: 0;
    right: 0;
    margin: 0;
+   height: fit-content;
 }
 .swiper-button-next:after, .swiper-button-prev:after{
    content: "";
@@ -1072,10 +1073,13 @@ body .wrapper main{
    padding-top: 4px;
    margin-bottom: 41px;
    display: block;
+   font-size: 1.111vw;
 }
 
 .contact-us_checkbox-label::after{
-   content: url(../img/svg/checkbox-border.svg);
+   content: "";
+   background: url(../img/svg/checkbox-border.svg) center center;
+   background-size: contain;
    position: absolute;
    top: 0;
    left: 0;
@@ -1505,10 +1509,25 @@ body .wrapper main{
       height:1.111vw;
    }
    .contact-us_checkbox-label::after {
-      content: url(../img/svg/checkbox-border.svg);
       width: 1.667vw;
+      height: 1.667vw;
    }
    .contact-us_input-title, .contact-us_input, .contact-us_input::placeholder{
+      font-size: 1.111vw;
+   }
+   .blog__blks-big .blog__blks_blk .blog_blk_img {
+      min-height: 13.333vw;
+   }
+   .advantages__blk_thumb {
+      width: 3.472vw;
+   }
+   .advantades__blk_btn {
+      margin-top: 5.556vw;
+   }
+   .more-services {
+      margin-bottom: 9.722vw;
+   }
+   .footer__adress p {
       font-size: 1.111vw;
    }
 }
@@ -1516,5 +1535,133 @@ body .wrapper main{
 @media screen and (max-width:1400px){
    .blog{
       margin: 0 auto;
+   }
+}
+@media screen and (max-width:767px){
+   .main__header{
+      display: none;
+   }
+   body .wrapper {
+      display: flex;
+      flex-direction: column;
+   }
+   .sidebar {
+      min-height: unset;
+      height: 90px;
+      border-right: 0;
+      padding: 0;
+      display: block;
+      position: unset;
+      overflow-y: hidden;
+      width: 100%;
+      border: 1px solid red;
+      border-bottom: 2px solid rgba(196, 196, 196, 0.5);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 31px 15px 17px 15px;
+   }
+   .sidebar__logo {
+      margin-bottom: 0;
+      width: 43px;
+      height: 43px;
+   }
+   .sidebar__nav-cont{
+      transform: translateX(100%);
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background-color: #181818;
+   }
+   .sidebar-wrap {
+      position: unset;
+   }
+   .sidebar__contacts {
+      margin-top: 5vw;
+      padding-top: 0px;
+      text-align: center;
+   }
+   .sidebar__nav {
+      padding-left: 0;
+      text-align: center;
+   }
+   .sidabar__nav_item a {
+      font-size: 5.389vw;
+      line-height: 4.389vw;
+   }
+   .sidbar__contacts_tel {
+      font-size: 3.389vw;
+      line-height: 4.389vw;
+      margin-bottom: 1.833vw;
+   }
+   .sidebar__contacts_links {
+      width: fit-content;
+   }
+   .sidebar__contacts_links a img {
+      width: 5.667vw;
+      height: 5.667vw;
+   }
+   .sidabar__nav_item {
+      padding: 3.5vw 0;
+   }
+   .burger_close{
+      position: absolute;
+      display: block !important;
+      right: 3.125vw;
+      top: 3.125vw;
+      width: 6.125vw;
+      height: 6.125vw;
+   }
+   .siedebar__burger{
+      display: block !important;
+   }
+   .intro {
+      padding: 8.130vw 12.821vw 22.083vw 11.111vw;
+      margin-bottom: 4.986vw;
+   }
+   body .wrapper{
+      max-width: 650px;
+   }
+   
+   main{
+      margin-top: 90px;
+      border-left: 2px solid rgba(196, 196, 196, 0.5);
+      border-right: 2px solid rgba(196, 196, 196, 0.5);
+   }
+   .sidebar-wrap{
+      position: absolute;
+      left: 0;
+      top:0;
+      width: 100%;
+   }
+   .intro__title, .intro__title span {
+      font-size: 3.5vw;
+      max-width: 50.181vw;
+   }
+   
+   .intro__subtitle {
+      max-width: 38.361vw;
+      font-size: 2vw;
+      margin-bottom: 2.986vw;
+   }
+   .intro__img {
+      width: 48.75vw;
+      height: 40.75vw;
+   }
+   .intro {
+      padding: 8.130vw 12.821vw 22.083vw 11.111vw;
+      margin-bottom: 15.986vw;
+   }
+   .our-portfolio {
+      max-width: 74.125vw;
+      margin-right: auto;
+      margin-bottom: auto;
    }
 }
