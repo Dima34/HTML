@@ -61,8 +61,7 @@ blog_blk.append(new_blog_blks);
 let blockAmount = 10;
 let Slider1 = document.querySelector(".ticker_slider");
 let Slide1 = document.querySelector(".slide");
-console.log(Slider1)
-console.log(Slide1)
+
 
 let Slider2 = document.querySelector(".ticker_slider1");
 let Slide2 = document.querySelector(".slide1");
@@ -80,17 +79,39 @@ for(let i = 0; i < blockAmount-1; i++){
 
 let block_containers = document.querySelectorAll(".ways__right_block")
 
-console.log(block_containers)
+
 
 for(let i = 0; i < block_containers.length; i+=5){
-    block_containers[i].style.margin = "0 0 57px 0px";
+    block_containers[i].style.margin = "0 0 3.958vw 0px";
 }
 for(let i = 1; i < block_containers.length; i+=5){
     block_containers[i].style.margin = "0px";
 }
 for(let i = 2; i < block_containers.length; i+=5){
-    block_containers[i].style.margin = "0 0 37px 0px";
+    block_containers[i].style.margin = "0 0 2.569vw 0px";
 }
 for(let i = 3; i < block_containers.length; i+=5){
-    block_containers[i].style.margin = "0 0 19px 0px";
+    block_containers[i].style.margin = "0 0 1.319vw 0px";
 }
+
+
+//
+// Auto resize
+//
+
+let swiper_wrappers = document.querySelectorAll(".swiper-wrapper");
+let swiper_btn_next = document.querySelector(".swiper-button-next");
+let swiper_btn_prev = document.querySelector(".swiper-button-prev");
+
+console.log("swiper n"+ swiper_btn_next)
+
+for(let i = 0; i < swiper_wrappers.length; i++){
+    swiper_wrappers[i].style.width = "fit-content";
+}
+
+swiper_btn_next.addEventListener("click", ()=>{
+    swiper_wrappers[i].style.width = "fit-content";
+})
+swiper_btn_prev.addEventListener("click", ()=>{
+    swiper_wrappers[i].style.width = "fit-content";
+})
