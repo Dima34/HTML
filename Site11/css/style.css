@@ -572,7 +572,7 @@ body .wrapper main{
    border-radius: 5px;
 }
 .blog__blks-big .blog__blks_blk .blog_blk_description{
-   width: 100%;
+   width: 100.1%;
    background:linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 39.8%);
    padding: 186px 104px 45px 35px;
    border-radius: 5px;
@@ -616,7 +616,7 @@ body .wrapper main{
    border-radius: 5px;
 }
 .blog__blks-small .blog__blks_blk .blog_blk_description{
-   width: 100%;
+   width: 100.1%;
    background:linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 43.8%);
    padding: 230px 30px 45px 35px;
    border-radius: 5px;
@@ -835,7 +835,8 @@ body .wrapper main{
 }
 .swiper-button-prev,.swiper1-button-prev{
    margin-right: 13px;
-   
+   height: fit-content;
+   width: fit-content;
 }
 .swiper-slide{
    width: 100%;
@@ -941,7 +942,8 @@ body .wrapper main{
 /* ------------------------------------ */
 .more-services{
    position: relative;
-   max-width: 1006px;
+   max-width: 1046px;
+   padding: 0 20px;
    margin: 0 auto;
    min-height: 200px;
    margin-bottom: 140px;
@@ -1034,6 +1036,7 @@ body .wrapper main{
 }
 .contact-us_input-title, .contact-us_input, .contact-us_input::placeholder{
    font-family: "HelveticaNeueCyr-500" !important;
+   
 }
 .contact-us_input{
    border: 0;
@@ -1426,9 +1429,11 @@ body .wrapper main{
    }
    .contact-us_input[type=tel] {
       background: url(../img/svg/phone.png) 1.181vw center no-repeat;
+      background-size:1.667vw;
    }
    .contact-us_input[type=text] {
       background: url(../img/svg/lisence.svg) 1.042vw center no-repeat;
+      background-size: 1.944vw 1.528vw;
    }
    .contact-us_checkbox-label {
       padding-left: 3.125vw;
@@ -1493,6 +1498,17 @@ body .wrapper main{
       height: 6.944vw;
    }
    .blog__blks-big .blog__blks_blk .blog_blk_subtitle {
+      font-size: 1.111vw;
+   }
+   .slider_project_page-btn::after {
+      width:1.111vw;
+      height:1.111vw;
+   }
+   .contact-us_checkbox-label::after {
+      content: url(../img/svg/checkbox-border.svg);
+      width: 1.667vw;
+   }
+   .contact-us_input-title, .contact-us_input, .contact-us_input::placeholder{
       font-size: 1.111vw;
    }
 }
