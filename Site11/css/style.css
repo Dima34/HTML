@@ -2223,7 +2223,7 @@ body .wrapper main{
    }
    .contact-us_input[type=tel] {
       background: url(../img/svg/phone.png) 5.181vw center no-repeat;
-      background-size: 6.400vw;
+      background-size: 6.200vw;
    }
    .contact-us_checkbox-label {
       padding-left:  11.733vw;
@@ -2236,4 +2236,43 @@ body .wrapper main{
       width: 5.867vw;
       height: 5.867vw;
    }
+   .contact-us_btn{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+      font-size: 4.800vw;
+      line-height: 6.933vw;
+      margin-bottom: 4vw;
+   }
+   .contact-us_notation {
+      font-size: 3.200vw;
+      max-width: 79.467vw;
+      margin-bottom: 17.333vw;
+   }
+   .footer{
+      padding: 31px 15px 40px 20px;
+   }
+   .footer__info{
+      display: none;
+   }
+   .footer__contancts {
+      height: 40vw;
+   }
+   .footer__contancts img {
+      height: 8vw;
+      width: 8vw;
+   }
+   .footer__adress p {
+      font-size: 4.267vw;
+      margin-top: 21px;
+   }   
+   .footer__adress p {
+      font-size: 16px;
+      line-height: 155%;
+      color: #FFFFFF;
+      padding-left: 33px;
+      background: url(../img/svg/footer_adress-ico.svg) left top no-repeat;
+      background-size: 5.333vw 3.733vw;
+      background-position-y: 1.067vw;
+   }
+  
 }
