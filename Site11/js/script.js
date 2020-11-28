@@ -1,3 +1,16 @@
+function ibg(){
+
+    let ibg=document.querySelectorAll(".ibg");
+    for (var i = 0; i < ibg.length; i++) {
+    if(ibg[i].querySelector('img')){
+    ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
+    }
+    }
+}
+    
+ibg();
+
+
 let blog_blk = document.querySelector(".blog");
 let blog_blks = document.querySelectorAll(".blog .blog__blks_blk");
 
@@ -102,16 +115,25 @@ for(let i = 3; i < block_containers.length; i+=5){
 let swiper_wrappers = document.querySelectorAll(".swiper-wrapper");
 let swiper_btn_next = document.querySelector(".swiper-button-next");
 let swiper_btn_prev = document.querySelector(".swiper-button-prev");
+let active_slide = document.querySelectorAll(".swiper-slide-active");
 
-console.log("swiper n"+ swiper_btn_next)
+console.log(active_slide)
+console.log(swiper_btn_next)
 
 for(let i = 0; i < swiper_wrappers.length; i++){
     swiper_wrappers[i].style.width = "fit-content";
+    //swiper_wrappers[i].style.height = window.getComputedStyle(active_slide[i]).height;
+    //console.log(window.getComputedStyle(active_slide[i]).height);
 }
 
 swiper_btn_next.addEventListener("click", ()=>{
-    swiper_wrappers[i].style.width = "fit-content";
+    //swiper_wrappers[i].style.width = "fit-content";
+    active_slide = document.querySelectorAll(".swiper-slide-active");
+    swiper_wrappers = document.querySelectorAll(".swiper-wrapper");
+    swiper_wrappers[0].style.height = window.getComputedStyle(active_slide[0]).height + "!important";
+    console.log("ok")
 })
 swiper_btn_prev.addEventListener("click", ()=>{
-    swiper_wrappers[i].style.width = "fit-content";
+    //swiper_wrappers[i].style.width = "fit-content";
+    //swiper_wrappers[i].style.height = window.getComputedStyle(active_slide[i]).height;
 })
