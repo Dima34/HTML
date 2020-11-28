@@ -1920,7 +1920,7 @@ body .wrapper main{
       max-width: 33.514vw;
       padding-left: 0.347vw;
    }
-   .blog__blks .blog__blks_blk a{
+   .blog__blks .blog__blks_blk{
       display: none;
    }
    .blog__blks .blog__blks-big .blog__blks_blk:first-child{

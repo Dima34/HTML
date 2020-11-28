@@ -136,17 +136,19 @@ window.addEventListener("resize", ()=>{
 //
 let moreBtn = document.getElementById("more_blk-items");
 let blocksAmount = 2;
+let addAmount = 2;
 let ba = document.querySelectorAll(".blog__blks_blk");
 let ba_lenght = ba.length
 console.log(ba[1])
 
 moreBtn.addEventListener("click", ()=>{
-    if(blocksAmount < ba_lenght && ba_lenght - blocksAmount > 1){
-        blocksAmount+=2;
+    ba = document.querySelectorAll(".blog__blks_blk");
+    if(blocksAmount < ba_lenght && ba_lenght - blocksAmount > addAmount-1){
+        blocksAmount+=addAmount;
         console.log(blocksAmount);
         
-        for(let i = blocksAmount; i < ba_lenght; i++){
-            console.log("to block" + ba[1]);
+        for(let i = addAmount; i < blocksAmount; i++){
+            console.log(ba[i]);
 
             ba[i].style.display = "flex";
             
@@ -156,7 +158,9 @@ moreBtn.addEventListener("click", ()=>{
         blocksAmount+=1;
         console.log(blocksAmount);
     }
-    
+    if(ba_lenght == blocksAmount){
+        moreBtn.style.display = "none";
+    }
 })
 
 //
