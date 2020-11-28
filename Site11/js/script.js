@@ -92,48 +92,43 @@ for(let i = 0; i < blockAmount-1; i++){
 
 let block_containers = document.querySelectorAll(".ways__right_block")
 
-
-
-for(let i = 0; i < block_containers.length; i+=5){
-    block_containers[i].style.margin = "0 0 3.958vw 0px";
+function waysMargin(){
+    if(window.innerWidth > 600){
+        for(let i = 0; i < block_containers.length; i+=5){
+            block_containers[i].style.margin = "0 0 3.958vw 0px";
+        }
+        for(let i = 1; i < block_containers.length; i+=5){
+            block_containers[i].style.margin = "0px";
+        }
+        for(let i = 2; i < block_containers.length; i+=5){
+            block_containers[i].style.margin = "0 0 2.569vw 0px";
+        }
+        for(let i = 3; i < block_containers.length; i+=5){
+            block_containers[i].style.margin = "0 0 1.319vw 0px";
+        }
+    }
+    else{
+        for(let i = 0; i < block_containers.length; i+=5){
+            block_containers[i].style.margin = "0 0 19.733vw 0px";
+        }
+        for(let i = 1; i < block_containers.length; i+=5){
+            block_containers[i].style.margin = "0px 0 6.933vw 0px";
+        }
+        for(let i = 2; i < block_containers.length; i+=5){
+            block_containers[i].style.margin = "0 0 20.267vw 0px";
+        }
+        for(let i = 3; i < block_containers.length; i+=5){
+            block_containers[i].style.margin = "0 0 17.600vw 0px";
+        }
+    }
 }
-for(let i = 1; i < block_containers.length; i+=5){
-    block_containers[i].style.margin = "0px";
-}
-for(let i = 2; i < block_containers.length; i+=5){
-    block_containers[i].style.margin = "0 0 2.569vw 0px";
-}
-for(let i = 3; i < block_containers.length; i+=5){
-    block_containers[i].style.margin = "0 0 1.319vw 0px";
-}
+waysMargin();
 
-
-//
-// Auto resize
-//
-
-let swiper_wrappers = document.querySelectorAll(".swiper-wrapper");
-let swiper_btn_next = document.querySelector(".swiper-button-next");
-let swiper_btn_prev = document.querySelector(".swiper-button-prev");
-let active_slide = document.querySelectorAll(".swiper-slide-active");
-
-console.log(active_slide)
-console.log(swiper_btn_next)
-
-for(let i = 0; i < swiper_wrappers.length; i++){
-    swiper_wrappers[i].style.width = "fit-content";
-    //swiper_wrappers[i].style.height = window.getComputedStyle(active_slide[i]).height;
-    //console.log(window.getComputedStyle(active_slide[i]).height);
-}
-
-swiper_btn_next.addEventListener("click", ()=>{
-    //swiper_wrappers[i].style.width = "fit-content";
-    active_slide = document.querySelectorAll(".swiper-slide-active");
-    swiper_wrappers = document.querySelectorAll(".swiper-wrapper");
-    swiper_wrappers[0].style.height = window.getComputedStyle(active_slide[0]).height + "!important";
-    console.log("ok")
+window.addEventListener("resize", ()=>{
+    waysMargin();
 })
-swiper_btn_prev.addEventListener("click", ()=>{
-    //swiper_wrappers[i].style.width = "fit-content";
-    //swiper_wrappers[i].style.height = window.getComputedStyle(active_slide[i]).height;
-})
+
+
+
+
+
