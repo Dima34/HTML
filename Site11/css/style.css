@@ -363,6 +363,9 @@ h2{
 h3{
    font-family: "HelveticaNeueCyr-500" !important;
 }
+.active-x{
+   transform: translateX(0) !important;
+}
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -661,6 +664,9 @@ body .wrapper main{
    font-size: 16px;
    line-height: 155%;
    color: #C4C4C4;
+}
+#more_blk-items{
+   display: none;
 }
 
 /* ------------------------------------ */
@@ -1608,6 +1614,7 @@ body .wrapper main{
       flex-direction: column;
       align-items: center;
       background-color: #181818;
+      transition: .3s;
    }
    .sidebar-wrap {
       position: unset;
@@ -2024,7 +2031,6 @@ body .wrapper main{
       margin: 0 auto;
       max-width: 100%;
       padding: 0 4.011vw;
-      margin-bottom: 16.043vw;
    }
    .advantages__blk_thumb{
       width: 13.369vw;
@@ -2274,5 +2280,13 @@ body .wrapper main{
       background-size: 5.333vw 3.733vw;
       background-position-y: 1.067vw;
    }
-  
+   #more_blk-items{
+      display: block;
+      position: relative;
+      top: unset;
+      bottom: unset;
+      width: fit-content;
+      margin: 0 auto;
+      margin-bottom: 12vw;
+   }
 }

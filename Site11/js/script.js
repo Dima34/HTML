@@ -60,6 +60,8 @@ for(let i = 2; i < blog_blks.length; i++){
 
 }
 
+
+
 new_blog_blks.append(new_blog_blks_b)
 new_blog_blks.append(new_blog_blks_s)
 
@@ -129,6 +131,48 @@ window.addEventListener("resize", ()=>{
 })
 
 
+//
+//  More blocks
+//
+let moreBtn = document.getElementById("more_blk-items");
+let blocksAmount = 2;
+let ba = document.querySelectorAll(".blog__blks_blk");
+let ba_lenght = ba.length
+console.log(ba[1])
+
+moreBtn.addEventListener("click", ()=>{
+    if(blocksAmount < ba_lenght && ba_lenght - blocksAmount > 1){
+        blocksAmount+=2;
+        console.log(blocksAmount);
+        
+        for(let i = blocksAmount; i < ba_lenght; i++){
+            console.log("to block" + ba[1]);
+
+            ba[i].style.display = "flex";
+            
+        }
+    }
+    else if(ba_lenght - blocksAmount == 1){
+        blocksAmount+=1;
+        console.log(blocksAmount);
+    }
+    
+})
+
+//
+//  Burger
+//
+
+let burgerOpen = document.querySelector(".siedebar__burger");
+let burgerMenu = document.querySelector(".sidebar__nav-cont");
+let burgerClose = document.querySelector(".burger_close");
+
+burgerOpen.addEventListener("click", ()=>{
+    burgerMenu.classList.add("active-x");
+})
+burgerClose.addEventListener("click", ()=>{
+    burgerMenu.classList.remove("active-x");
+})
 
 
 
