@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractal</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar-wrap">
+            <div class="sidebar">
+                <img src="./img/svg/logo.svg" alt="fractal logo" class="sidebar__logo">
+                <div class="sidebar__nav-cont">
+                    <ul class="sidebar__nav">
+                        <li class="sidabar__nav_item"><a href="">Услуги</a></li>
+                        <li class="sidabar__nav_item"><a href="">Блог</a></li>
+                        <li class="sidabar__nav_item"><a href="">О Нас</a></li>
+                        <li class="sidabar__nav_item"><a href="">Портфолио</a></li>
+                        <li class="sidabar__nav_item"><a href="">Доп. Услуги</a></li>
+                        <li class="sidabar__nav_item nav-active"><a href="">Заявка</a></li>
+                    </ul>
+                    <div class="sidebar__contacts">
+                        <a href="tel:+79999999999" class = "sidbar__contacts_tel">+7(999)999-99-99</a>
+                        <div class="sidebar__contacts_links">
+                            <a href=""><img src="./img/svg/instagram-ico.svg" alt="whatsapp"></a>
+                            <a href=""><img src="./img/svg/telegram-ico.svg" alt="telegram"></a>
+                            <a href=""><img src="./img/svg/whatsapp-ico.svg" alt="instagram"></a>
+                        </div>
+                    </div>
+                    <img src="./img/svg/close.png" style = "display: none;" alt="" class="burger_close">
+                </div>
+                
+                <img src="./img/svg/burger.svg" alt="burger" style = "display: none;" class="siedebar__burger">
+            </div>
+        </div>
+        
+        <main>
+            <h1 class = "blog__title">Blog title</h1>
+            <img src="" alt="" class="blog__image">
+            <p class="blog__descripton">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem libero eum dignissimos asperiores, voluptas omnis, quibusdam consequuntur quae alias esse pariatur eius consectetur nostrum, non inventore? Error dolores quidem nulla, eius cumque aspernatur dolore, itaque quis iure neque vero quasi? Natus unde aspernatur id ex, enim tempora et illum obcaecati?</p>
+        </main>
+    </div>
+    
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/ticker.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script>
+		var swiper = new Swiper('.first-swiper', {
+        autoHeight: true,
+        effect: 'fade',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+        
+    </script>
+    
+    <script>
+		var swiper1 = new Swiper('.second-swiper', {
+        autoHeight: true,
+        effect: 'fade',
+        navigation: {
+            nextEl: '.swiper1-button-next',
+            prevEl: '.swiper1-button-prev',
+        },
+        });
+        
+	</script>
+</body>
+</html>
