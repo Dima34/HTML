@@ -422,9 +422,8 @@ a:focus, a:visited{
    outline: none;
 }
 .wrapper{
-    max-width: 1290px;
-    margin: 0 auto;
-    overflow: hidden;
+   max-width: 1290px;
+   margin: 0 auto;
 }
 
 .active-x{
@@ -544,7 +543,15 @@ header .wrapper{
 /* ------------------------------------ */
 /* ------------------------------------ */
 
-menu{
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------========MENU========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.menu{
    padding-top: 150px;
    padding-bottom: 200px;
 }
@@ -579,10 +586,10 @@ menu{
    text-align: center;
    color: #000000;
 }
-
 .menu__dish-list_item{
    max-width: 630px;
    border-radius: 30px;
+   position: relative;
 }
 .menu__dish-list_item_img{
    width: 100%;
@@ -669,4 +676,11 @@ menu{
    height: 0;
    border-bottom: 1px solid white;
    transform: rotate(-14deg);
+}
+.menu__dish-list_item_corner-img{
+   position: absolute;
+   right: 0;
+   top: 0;
+   z-index: 2;
+   transform: translateX(30%) translateY(-30%);
 }
