@@ -435,7 +435,42 @@ a:focus, a:visited{
    line-height: 96px;
    color: #000;
 }
-
+.green{
+   color: #37D9A4 !important;
+   font-family: "Bernier" !important;
+}
+.input{
+   display: block;
+   font-weight: 500;
+   font-size: 25px;
+   line-height: 30px;
+   color: #FFFFFF;
+   border: 1px solid #EEEEEE;
+   border-radius: 10px;
+   padding: 10px 40px;
+   background: 0;
+   max-width: 410px;
+}
+.input::placeholder{
+   font-weight: 500;
+   font-size: 25px;
+   line-height: 30px;
+   color: #FFFFFF;
+}
+.btn{
+   display: block;
+   border:0;
+   border-radius: 30px;
+   color: #FFFFFF;
+   background: #FF003D;
+   font-size: 30px;
+   line-height: 37px;
+   padding: 11px 66px;
+}
+.green-bg{
+   background: #37D9A4 !important; 
+   color: #FFFFFF !important;
+}
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -683,4 +718,217 @@ header .wrapper{
    top: 0;
    z-index: 2;
    transform: translateX(30%) translateY(-30%);
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------========SALES========------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.sales{
+   background: url(../img/sales.png) no-repeat;
+   min-height: 650px;
+   width: 100%;
+   padding: 69px 162px 75px 0;
+   background-size: cover;
+}
+.sales .wrapper{
+   display: flex;
+   justify-content: flex-end;
+}
+.sales__right{
+   max-width: 578px;
+}
+.sales__title{
+   color: #FFFFFF;
+   margin-bottom: 19px;
+   font-size: 76px;
+}
+.sales__subtitle{
+   font-weight: 500;
+   font-size: 25px;
+   line-height: 30px;
+   color: #FFFFFF;
+   margin-bottom: 44px;
+   max-width: 479px;
+}
+.sales_input{
+   margin-bottom: 19px;
+}
+.sales input[type="tel"]{
+   margin-bottom: 40px;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------=======RATIONS=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.rations{
+   padding: 200px 0 198px 0;
+}
+
+.rations__header{
+   margin-bottom: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.rations__swiper-btns{
+   display: flex;
+   justify-content: space-between;
+   width: 100px;
+}
+.rations_card{
+   width: 300px;
+   margin-right: 30px;
+}
+.rations_card_img{
+   width: 100%;
+   height: 204px;
+   border-radius: 30px 30px 0px 0px;
+}
+.rations_card_bigdesc{
+   padding: 40px 23px 68px 23px;
+}
+.rations_card_bigdesc p{
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 24px;
+}
+.rations_card_price{
+   background: #FF003D;
+   border-radius: 0px 0px 30px 30px;
+   color: #FFFFFF;
+   text-align: center;
+   padding: 10px 20px 12px 20px;
+   font-size: 30px;
+   line-height: 37px;
+}
+.rations__swiper{
+   display: flex;
+}
+.swiper-container1{
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   overflow: hidden;
+   list-style: none;
+   padding: 0;
+   z-index: 1;
+   width: 960px;
+}
+.swiper-container1 .swiper-slide{
+   width: fit-content;
+}
+.rations_card_desc_inputbox input{
+   display: none;
+}
+.rations_card_desc_inputbox label{
+   display: block;
+   font-size: 25px;
+   line-height: 30px;
+   padding: 7px 20px 9px 20px;
+   text-align: center;
+   min-width: 177px;
+   width: fit-content;
+   border: 2px solid #C4C4C4;
+   color: #C4C4C4;
+   border-radius: 50px;
+   margin: 0 auto;
+}
+.rations_card_desc_inputbox input:checked + label{
+   color: #FF003D;
+   border: 2px solid #FF003D;
+}
+.rations_card_desc_inputbox label{
+   margin-bottom: 6px;
+}
+.rations_card_desc_inputbox label:last-of-type{
+   margin-bottom: 10px;
+}
+.rations_card_desc_title{
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 37px;
+   text-align: center;
+   color: #000000;
+   margin-bottom: 5px;
+}
+.rations_card_desc_subtitle{
+   font-size: 16px;
+   line-height: 20px;
+   text-align: center;
+   color: #878787;
+}
+.rations_card_desc{
+   padding: 25px 25px 15px 25px;
+}
+.swiper-slide:last-child .rations_card{
+   margin-right: 0;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======CALCULATOR=======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------=======WHY WE=======-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.why-we{
+   padding: 200px 0 60px 0;
+   margin-bottom: 39px;
+   position: relative;
+}
+.why-we__img{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: -1;
+   height: 366px;
+   width: auto;
+}
+.why-we__title{
+   margin-bottom: 100px;
+}
+.why-we__items{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   column-gap: 30px;
+   margin-bottom: 50px;
+}
+.why-we__items_item{
+   width: 100%;
+   text-align: center;
+}
+.why-we__items_item_image {
+   width: 300px;
+   height: 300px;
+   margin-bottom: 15px;
+}
+.why-we__items_item_subtitle{
+   display: block;
+   max-width: 252px;
+   margin: 0 auto;
+}
+.why-we__btn{
+   padding: 10px 20px 11px 20px;
+   min-width: 300px;
+   width: fit-content;
+   text-align: center;
+   margin: 0 auto;
 }
