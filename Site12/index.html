@@ -10,7 +10,7 @@
     
 
 </head>
-<body>
+<body class = "body">
     <header class = 'header'>
         <div class="wrapper">
             <img src="./img/svg/header-logo.svg" alt="header logo" class="header__logo">
@@ -90,7 +90,7 @@
                             </a>
                         </li>
                     </ul>
-                    <a href="" class="menu__faq-btn">
+                    <a href="#" class="menu__faq-btn">
                         <img src="./img/svg/faq.svg" alt="faq">
                     </a>
                 </div>
@@ -98,7 +98,7 @@
                 <div class="menu__dish-list">
                     <div class="menu__dish-list_item">
                         <img src="./img/svg/menu-corner-img.svg" alt="corner image" class="menu__dish-list_item_corner-img">
-                        <a href="">
+                        <div class="menu__dish-list_item-popup">
                             <div class="swiper-container menu__dish-list_item_img">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide ibg"><img src="./img/menu1.png" alt="menu"></div>
@@ -117,170 +117,260 @@
                             <div class="menu__dish-list_item_price">
                                 <p><span class = 'menu__dish-list_item_price_sale'>350₽</span>250₽</p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="menu__dish-list_item">
-                        <img src="./img/svg/menu-corner-img.svg" alt="corner image" class="menu__dish-list_item_corner-img">
-                        <a href="">
-                            <div class="swiper-container menu__dish-list_item_img">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide ibg"><img src="./img/menu1.png" alt="menu"></div>
-                                    <div class="swiper-slide ibg"><img src="./img/menu2.png" alt="menu"></div>
+                        </div>
+
+                        <!-- popup -->
+                        <div class="menu__dish-list_item__popup">
+                            <div class="menu__dish-list_item__popup_popup_blk">
+                                <div class="swiper-container menu__dish-list_item__popup_img">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide ibg"><img src="./img/menu1.png" alt="menu"></div>
+                                        <div class="swiper-slide ibg"><img src="./img/menu2.png" alt="menu"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                            <div class="menu__dish-list_item_desc">
-                                <h3 class="menu__dish-list_item_desc_title">
-                                    Название
-                                </h3>
-                                <p class="menu__dish-list_item_desc_subtitle">
-                                    Описание какие ингредиенты и тд
-                                </p>
-                            </div>
-                            <div class="menu__dish-list_item_price">
-                                <p><span class = 'menu__dish-list_item_price_sale'>350₽</span>250₽</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="menu__dish-list_item">
-                        <img src="./img/svg/menu-corner-img.svg" alt="corner image" class="menu__dish-list_item_corner-img">
-                        <a href="">
-                            <div class="swiper-container menu__dish-list_item_img">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide ibg"><img src="./img/menu1.png" alt="menu"></div>
-                                    <div class="swiper-slide ibg"><img src="./img/menu2.png" alt="menu"></div>
+                                <div class="menu__dish-list_item__popup_page1">
+                                    
                                 </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                            <div class="menu__dish-list_item_desc">
-                                <h3 class="menu__dish-list_item_desc_title">
-                                    Название
-                                </h3>
-                                <p class="menu__dish-list_item_desc_subtitle">
-                                    Описание какие ингредиенты и тд
-                                </p>
-                            </div>
-                            <div class="menu__dish-list_item_price">
-                                <p><span class = 'menu__dish-list_item_price_sale'>350₽</span>250₽</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="menu__dish-list_item">
-                        <img src="./img/svg/menu-corner-img.svg" alt="corner image" class="menu__dish-list_item_corner-img">
-                        <a href="">
-                            <div class="swiper-container menu__dish-list_item_img">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide ibg"><img src="./img/menu1.png" alt="menu"></div>
-                                    <div class="swiper-slide ibg"><img src="./img/menu2.png" alt="menu"></div>
+                                <div class="menu__dish-list_item__popup_popup_blk_header">
+                                    <h2 class="menu__dish-list_item__popup_popup_blk_header_title">
+                                        Название
+                                    </h2>
+                                    <img src="./img/svg/menu_next-btn.svg" alt="next" class="menu__dish-list_item__popup_popup_blk_header_next-btn">
+                                    <img src="./img/svg/menu_prev-btn.svg" alt="next" class="menu__dish-list_item__popup_popup_blk_header_prev-btn">
                                 </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                            <div class="menu__dish-list_item_desc">
-                                <h3 class="menu__dish-list_item_desc_title">
-                                    Название
-                                </h3>
-                                <p class="menu__dish-list_item_desc_subtitle">
-                                    Описание какие ингредиенты и тд
-                                </p>
-                            </div>
-                            <div class="menu__dish-list_item_price">
-                                <p><span class = 'menu__dish-list_item_price_sale'>350₽</span>250₽</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="menu__dish-list_item">
-                        <img src="./img/svg/menu-corner-img.svg" alt="corner image" class="menu__dish-list_item_corner-img">
-                        <a href="">
-                            <div class="swiper-container menu__dish-list_item_img">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide ibg"><img src="./img/menu1.png" alt="menu"></div>
-                                    <div class="swiper-slide ibg"><img src="./img/menu2.png" alt="menu"></div>
+                                <div class="menu__dish-list_item__popup_popup_blk_main">
+                                    <div class="menu__dish-list_item__popup_popup_blk_main_page1">
+                                        <div class="menu__dish-list_item__popup_popup_blk_main_ingredients">
+                                            <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_left">
+                                                <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_header menu__popup_title">
+                                                    Состав:
+                                                </p>
+                                                <ul class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_list">
+                                                    <li class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem">
+                                                        <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_name">
+                                                            черри
+                                                        </p>
+                                                        <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter">
+                                                            <img src="./img/svg/counter-less.svg" alt="less" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_less">
+                                                            <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_counter">30г</p>
+                                                            <img src="./img/svg/counter-more.svg" alt="more" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_more">
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem">
+                                                        <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_name">
+                                                            яйцо
+                                                        </p>
+                                                        <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter">
+                                                            <img src="./img/svg/counter-less.svg" alt="less" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_less">
+                                                            <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_counter">30г</p>
+                                                            <img src="./img/svg/counter-more.svg" alt="more" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_more">
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem">
+                                                        <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_name">
+                                                            тунец
+                                                        </p>
+                                                        <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter">
+                                                            <img src="./img/svg/counter-less.svg" alt="less" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_less">
+                                                            <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_counter">30г</p>
+                                                            <img src="./img/svg/counter-more.svg" alt="more" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_more">
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem">
+                                                        <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_name">
+                                                            что-то
+                                                        </p>
+                                                        <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter">
+                                                            <img src="./img/svg/counter-less.svg" alt="less" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_less">
+                                                            <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_counter">30г</p>
+                                                            <img src="./img/svg/counter-more.svg" alt="more" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_more">
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem">
+                                                        <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_name">
+                                                            помидор
+                                                        </p>
+                                                        <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter">
+                                                            <img src="./img/svg/counter-less.svg" alt="less" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_less">
+                                                            <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_counter">30г</p>
+                                                            <img src="./img/svg/counter-more.svg" alt="more" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_more">
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem">
+                                                        <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_name">
+                                                            нескафе
+                                                        </p>
+                                                        <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter">
+                                                            <img src="./img/svg/counter-less.svg" alt="less" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_less">
+                                                            <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_counter">30г</p>
+                                                            <img src="./img/svg/counter-more.svg" alt="more" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_listitem_counter_more">
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_right">
+                                                <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_header menu__popup_title">
+                                                    Я хочу добавить:                                          
+                                                </p>
+                                                <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_supplements">
+                                                    <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_supplements_supplement">
+                                                        <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_supplements_supplement_title">
+                                                            Соевый соус
+                                                        </p>
+                                                        <img src="./img/supplement-img.png" alt="supplement img" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_supplements_supplement_img">
+                                                    </div>
+                                                    <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_supplements_supplement">
+                                                        <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_supplements_supplement_title">
+                                                            Соевый соус
+                                                        </p>
+                                                        <img src="./img/supplement-img.png" alt="supplement img" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_supplements_supplement_img">
+                                                    </div>
+                                                    <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_supplements_supplement">
+                                                        <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_supplements_supplement_title">
+                                                            Соевый соус
+                                                        </p>
+                                                        <img src="./img/supplement-img.png" alt="supplement img" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_supplements_supplement_img">
+                                                    </div>
+                                                    <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_supplements_supplement">
+                                                        <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_supplements_supplement_title">
+                                                            Соевый соус
+                                                        </p>
+                                                        <img src="./img/supplement-img.png" alt="supplement img" class="menu__dish-list_item__popup_popup_blk_main_ingredients_left_supplements_supplement_img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_comment">
+                                            <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_comment_title menu__popup_title">
+                                                Комментарий:
+                                            </p>
+                                            <textarea name="" id="" placeholder="Положите мне отдельно тунец" maxlength="250" class="menu__dish-list_item__popup_popup_blk_main_ingredients_comment_textarea"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="menu__dish-list_item__popup_popup_blk_main_page2">
+                                        <div class="page2_table">
+                                            <h2 class="page2_table_header menu__popup_title">
+                                                Таблица полезных витаминов и минералов:
+                                            </h2>
+                                            <img src="./img/table.jpg" alt="table" class="page2_table_image">
+                                        </div>
+                                        <div class="page2_add">
+                                            <div class="page2_add_left">
+                                                Хотите знать больше информации? Тогда мы добавим к вашему заказу карточку с подробной инфографикой.
+                                            </div>
+                                            <div class="page2_add_right">
+                                                <input type="button"  class="btn page2_btn" value="Добавить карточку к заказу">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_summary">
+                                        <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_summary_left">
+                                            <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_summary_left_title menu__popup_title">
+                                                Промокод
+                                            </p>
+                                            <input type="text" name="promo" id="promo" placeholder="Промокод" class="input menu__dish-list_item__popup_popup_blk_main_ingredients_comment_title_promo">
+                                            <p class="menu__dish-list_item__popup_popup_blk_main_ingredients_summary_left_promodesc">Ваша скидка составляет 29%</p>
+                                        </div>
+                                        <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_summary_right">
+                                            <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_summary_right_summary">
+                                                <p class="summary_text">
+                                                    Итог:
+                                                </p>
+                                                <p class="summary_num">
+                                                    250₽
+                                                </p>
+                                            </div>
+                                            <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_summary_right_summ">
+                                                <p class="summ_text">
+                                                    Сумма
+                                                </p>
+                                                <p class="summ_num">
+                                                    350₽
+                                                </p>
+                                            </div>
+                                            <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_summary_right_discount">
+                                                <p class="discount_text">
+                                                    Скидка
+                                                </p>
+                                                <p class="discount_num">
+                                                    100₽
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="swiper-pagination"></div>
+                                <input type="button"  class="btn menu__popup_btn" value="Заказать">
                             </div>
-                            <div class="menu__dish-list_item_desc">
-                                <h3 class="menu__dish-list_item_desc_title">
-                                    Название
-                                </h3>
-                                <p class="menu__dish-list_item_desc_subtitle">
-                                    Описание какие ингредиенты и тд
-                                </p>
-                            </div>
-                            <div class="menu__dish-list_item_price">
-                                <p><span class = 'menu__dish-list_item_price_sale'>350₽</span>250₽</p>
-                            </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="menu__dish-list_item">
-                        <img src="./img/svg/menu-corner-img.svg" alt="corner image" class="menu__dish-list_item_corner-img">
-                        <a href="">
-                            <div class="swiper-container menu__dish-list_item_img">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide ibg"><img src="./img/menu1.png" alt="menu"></div>
-                                    <div class="swiper-slide ibg"><img src="./img/menu2.png" alt="menu"></div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                            <div class="menu__dish-list_item_desc">
-                                <h3 class="menu__dish-list_item_desc_title">
-                                    Название
-                                </h3>
-                                <p class="menu__dish-list_item_desc_subtitle">
-                                    Описание какие ингредиенты и тд
-                                </p>
-                            </div>
-                            <div class="menu__dish-list_item_price">
-                                <p><span class = 'menu__dish-list_item_price_sale'>350₽</span>250₽</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="menu__dish-list_item">
-                        <img src="./img/svg/menu-corner-img.svg" alt="corner image" class="menu__dish-list_item_corner-img">
-                        <a href="">
-                            <div class="swiper-container menu__dish-list_item_img">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide ibg"><img src="./img/menu1.png" alt="menu"></div>
-                                    <div class="swiper-slide ibg"><img src="./img/menu2.png" alt="menu"></div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                            <div class="menu__dish-list_item_desc">
-                                <h3 class="menu__dish-list_item_desc_title">
-                                    Название
-                                </h3>
-                                <p class="menu__dish-list_item_desc_subtitle">
-                                    Описание какие ингредиенты и тд
-                                </p>
-                            </div>
-                            <div class="menu__dish-list_item_price">
-                                <p><span class = 'menu__dish-list_item_price_sale'>350₽</span>250₽</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="menu__dish-list_item">
-                        <img src="./img/svg/menu-corner-img.svg" alt="corner image" class="menu__dish-list_item_corner-img">
-                        <a href="">
-                            <div class="swiper-container menu__dish-list_item_img">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide ibg"><img src="./img/menu1.png" alt="menu"></div>
-                                    <div class="swiper-slide ibg"><img src="./img/menu2.png" alt="menu"></div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                            <div class="menu__dish-list_item_desc">
-                                <h3 class="menu__dish-list_item_desc_title">
-                                    Название
-                                </h3>
-                                <p class="menu__dish-list_item_desc_subtitle">
-                                    Описание какие ингредиенты и тд
-                                </p>
-                            </div>
-                            <div class="menu__dish-list_item_price">
-                                <p><span class = 'menu__dish-list_item_price_sale'>350₽</span>250₽</p>
-                            </div>
-                        </a>
-                    </div>
+                   
                     
+                </div>
+            </div>
+            <div class="menu__popup">
+                <div class="menu__popup_popup_blk">
+                    <h2 class="menu__popup_popup_blk_title">
+                        Как удобно ориентироваться в нашем меню? 
+                    </h2>
+                    <div class="menu__popup_popup_blk_main">
+                        <div class="menu__popup_popup_blk_main_blk">
+                            <div class="menu__popup_popup_blk_main_number">
+                                <p>1</p>
+                            </div>
+                            <div class="menu__popup_popup_blk_main_text">
+                                <p>
+                                    Нажми на иконку и отсортируй по ней 
+                                </p>
+                            </div>
+                            <div class="menu__popup_popup_blk_main_thumbs">
+                                <img src="./img/svg/dinner1.svg" alt="dinner" class="menu__popup_popup_blk_main_thumbs_thumb">
+                                <p class="menu__popup_popup_blk_main_thumbs_decription">Ужин</p>
+                            </div> 
+                            <div class="menu__popup_popup_blk_main_thumbs">
+                                <img src="./img/svg/dinner2.svg" alt="dinner" class="menu__popup_popup_blk_main_thumbs_thumb">
+                                <p class="menu__popup_popup_blk_main_thumbs_decription">Ужин</p>
+                            </div> 
+                        </div>
+                        <div class="menu__popup_popup_blk_main_blk">
+                            <div class="menu__popup_popup_blk_main_number">
+                                <p>2</p>
+                            </div>
+                            <div class="menu__popup_popup_blk_main_text">
+                                <p>
+                                    Нажми на иконку и отсортируй по ней 
+                                </p>
+                            </div>
+                            <div class="menu__popup_popup_blk_main_thumbs">
+                                <img src="./img/svg/dinner3.svg" alt="dinner" class="menu__popup_popup_blk_main_thumbs_thumb">
+                                <p class="menu__popup_popup_blk_main_thumbs_decription">Ужин</p>
+                            </div> 
+                            <div class="menu__popup_popup_blk_main_thumbs">
+                                <img src="./img/svg/dinner4.svg" alt="dinner" class="menu__popup_popup_blk_main_thumbs_thumb">
+                                <p class="menu__popup_popup_blk_main_thumbs_decription">Ужин</p>
+                            </div> 
+                        </div>
+                        <div class="menu__popup_popup_blk_main_blk">
+                            <div class="menu__popup_popup_blk_main_number">
+                                <p>3</p>
+                            </div>
+                            <div class="menu__popup_popup_blk_main_text">
+                                <p>
+                                    Нажми на иконку и отсортируй по ней 
+                                </p>
+                            </div>
+                            <div class="menu__popup_popup_blk_main_thumbs">
+                                <img src="./img/svg/dinner5.svg" alt="dinner" class="menu__popup_popup_blk_main_thumbs_thumb">
+                                <p class="menu__popup_popup_blk_main_thumbs_decription">Ужин</p>
+                            </div> 
+                            <div class="menu__popup_popup_blk_main_thumbs">
+                                <img src="./img/svg/dinner1.svg" alt="dinner" class="menu__popup_popup_blk_main_thumbs_thumb">
+                                <p class="menu__popup_popup_blk_main_thumbs_decription">Ужин</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <input type="button"  class="btn popup_btn" value="Мне всё понятно">
                 </div>
             </div>
         </div>
@@ -506,11 +596,318 @@
                         <p class="why-we__items_item_subtitle">Никаких добавок, всё органично</p>
                     </div>
                 </div>
-                <a href="" class = "btn why-we__btn">Подробнее</a>
+                <a href="#" class = "btn why-we__btn">Подробнее</a>
             </div>
             
         </section>
+
+        <section class="how-we-working">
+            <div class="wrapper">
+                <h2 class="block_title how-we-working__title">
+                    Как мы <span class = "green">работаем</span>
+                </h2>
+                <div class="how-we-working__blocks">
+                    <div class="how-we-working_item">
+                        <div class="how-we-working_item_image ibg">
+                            <img src="./img/svg/how-we-working1.svg" alt="image">
+                        </div>
+                        <p class="how-we-working_item_subtitle">Оформление заказа</p>
+                    </div>
+                    <div class="how-we-working_item">
+                        <div class="how-we-working_item_image ibg">
+                            <img src="./img/svg/how-we-working2.svg" alt="image">
+                        </div>
+                        <p class="how-we-working_item_subtitle">Оформление заказа</p>
+                    </div>
+                    <div class="how-we-working_item">
+                        <div class="how-we-working_item_image ibg">
+                            <img src="./img/svg/how-we-working3.svg" alt="image">
+                        </div>
+                        <p class="how-we-working_item_subtitle">Оформление заказа</p>
+                    </div>
+                    <div class="how-we-working_item">
+                        <div class="how-we-working_item_image ibg">
+                            <img src="./img/svg/how-we-working4.svg" alt="image">
+                        </div>
+                        <p class="how-we-working_item_subtitle">Оформление заказа</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="sales1">
+            <div class="wrapper">
+                <div class="sales__right">
+                    <h2 class="sales__title block_title">
+                        Хочешь быть
+                        <span class = "green">в курсе всех акций</span>?
+                    </h2>
+                    <p class="sales__subtitle">
+                        Заполни короткую форму и узнавай первым о новинках и акциях
+                    </p>
+                    <input type="text" placeholder="Имя" class="input sales_input">
+                    <input type="tel" placeholder="Телефон" class="input sales_input">
+                    <input type="button"  class="btn sales_btn" value="Отправить">
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="about">
+            <div class="wrapper">
+                <h2 class = "block_title about__title">
+                    О <span class="red">LoVE</span><span class="green">MEALS</span>
+                </h2>
+                <div class="about__questions">
+                    <div class="about__questions_question">
+                        <div class="about__questions_question_header">
+                            <img src="./img/question-thumb.png" alt="thumb" class="about__questions_question_header_thumb">
+                            <p class="about__questions_question_header_question">Кто вы?</p>
+                        </div>
+                        <div class="about__questions_question_main">
+                            <p class="about__questions_question_main_answer">«LoveMeals» сервис доставки еды по Санкт-Петербургу. Готовим сбалансированное и правильное питания, полезное для твоего здоровья.</p>
+                            <img src="./img/svg/answer_thumb.svg" alt="thumb" class="about__questions_question_main_thumb">
+                        </div>
+                    </div>
+                    <div class="about__questions_question">
+                        <div class="about__questions_question_header">
+                            <img src="./img/question-thumb.png" alt="thumb" class="about__questions_question_header_thumb">
+                            <p class="about__questions_question_header_question">Почему я должна выбрать вас?</p>
+                        </div>
+                        <div class="about__questions_question_main">
+                            <p class="about__questions_question_main_answer">Наша фишка — это готовый подсчёт КБЖУ. Тебе не придётся больше самому рассчитывать количество калорий – мы сделаем это за тебя!</p>
+                            <img src="./img/svg/answer_thumb.svg" alt="thumb" class="about__questions_question_main_thumb">
+                        </div>
+                    </div>
+                    <div class="about__questions_question">
+                        <div class="about__questions_question_header">
+                            <img src="./img/question-thumb.png" alt="thumb" class="about__questions_question_header_thumb">
+                            <p class="about__questions_question_header_question">Что ещё?</p>
+                        </div>
+                        <div class="about__questions_question_main">
+                            <p class="about__questions_question_main_answer">Мы накормим тебя в любом случае! Даже когда нет времени на самостоятельную готовку, плохая питерская погода мешает тебе выскочить на обед или ты, усталый и голодный, возвращаешься домой после тяжелого трудового дня.</p>
+                            <img src="./img/svg/answer_thumb.svg" alt="thumb" class="about__questions_question_main_thumb">
+                        </div>
+                    </div>
+                    <div class="about__questions_question">
+                        <div class="about__questions_question_header">
+                            <img src="./img/question-thumb.png" alt="thumb" class="about__questions_question_header_thumb">
+                            <p class="about__questions_question_header_question">Для кого подходит LoveMeals?</p>
+                        </div>
+                        <div class="about__questions_question_main">
+                            <p class="about__questions_question_main_answer">
+                                - придерживаешься разнообразного рациона питания;
+                                <br><br>
+                                - ценишь свежеприготовленную еду;
+                                <br><br>
+                                - предпочитаешь в бешеном ритме современной жизни рационально и экономно тратить своё драгоценное время и деньги;
+                                <br><br>
+                                - заботишься о своём здоровье;
+                                <br><br>
+                                - хочешь держать себя в форме;
+                            </p>
+                            <img src="./img/svg/answer_thumb.svg" alt="thumb" class="about__questions_question_main_thumb">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="often-q">
+            <div class="wrapper">
+                <h2 class="block_title often-q__title">
+                    Часто <span class="green">задаваемые</span> вопросы
+                </h2>
+                <div class="often-q__dropdown">
+                    <div class="often-q__dropdown_block">
+                        <div class="often-q__dropdown_block_header">
+                            <div class="often-q__dropdown_block_header_thumb">
+                                <p>1</p>
+                            </div>
+                            <div class="often-q__dropdown_block_header_text">
+                                Могу ли я настроить тариф под свои вкусы?
+                            </div>
+                            <div class="often-q__dropdown_block_header_arrow">
+                                <img src="./img/svg/dropdown-arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                        <div class="often-q__dropdown_block_main">
+                            <p class="often-q__dropdown_block_main_text">
+                                Для каждого блюда есть возможность подобрать индивидуальный набор ингредиентов. Мы прозрачны и не скрываем то, что вы будете есть. Также мы даем возможность настроить блюдо под вас, учитывая вкусы и особенности клиента.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="often-q__dropdown_block">
+                        <div class="often-q__dropdown_block_header">
+                            <div class="often-q__dropdown_block_header_thumb">
+                                <p>2</p>
+                            </div>
+                            <div class="often-q__dropdown_block_header_text">
+                                Что если у меня будет аллергия на какой-то ингредиент?
+                            </div>
+                            <div class="often-q__dropdown_block_header_arrow">
+                                <img src="./img/svg/dropdown-arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                        <div class="often-q__dropdown_block_main">
+                            <p class="often-q__dropdown_block_main_text">
+                                Для каждого блюда есть возможность подобрать индивидуальный набор ингредиентов. Мы прозрачны и не скрываем то, что вы будете есть. Также мы даем возможность настроить блюдо под вас, учитывая вкусы и особенности клиента.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="often-q__dropdown_block">
+                        <div class="often-q__dropdown_block_header">
+                            <div class="often-q__dropdown_block_header_thumb">
+                                <p>3</p>
+                            </div>
+                            <div class="often-q__dropdown_block_header_text">
+                                Что если у меня будет аллергия на какой-то ингредиент?
+                            </div>
+                            <div class="often-q__dropdown_block_header_arrow">
+                                <img src="./img/svg/dropdown-arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                        <div class="often-q__dropdown_block_main">
+                            <p class="often-q__dropdown_block_main_text">
+                                Для каждого блюда есть возможность подобрать индивидуальный набор ингредиентов. Мы прозрачны и не скрываем то, что вы будете есть. Также мы даем возможность настроить блюдо под вас, учитывая вкусы и особенности клиента.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="often-q__dropdown_block">
+                        <div class="often-q__dropdown_block_header">
+                            <div class="often-q__dropdown_block_header_thumb">
+                                <p>4</p>
+                            </div>
+                            <div class="often-q__dropdown_block_header_text">
+                                Как оформить доставку?
+                            </div>
+                            <div class="often-q__dropdown_block_header_arrow">
+                                <img src="./img/svg/dropdown-arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                        <div class="often-q__dropdown_block_main">
+                            <p class="often-q__dropdown_block_main_text">
+                                Для каждого блюда есть возможность подобрать индивидуальный набор ингредиентов. Мы прозрачны и не скрываем то, что вы будете есть. Также мы даем возможность настроить блюдо под вас, учитывая вкусы и особенности клиента.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
     </main>
+    <footer>
+        <div class="wrapper">
+            <ul class="footer__nav">
+                <li class="footer__nav_item">
+                    <a href="">
+                        Меню
+                    </a>
+                </li>
+                <li class="footer__nav_item">
+                    <a href="">
+                        Рационы   
+                    </a>
+                </li>
+                <li class="footer__nav_item">
+                    <a href="">
+                        Почему мы?  
+                    </a>
+                </li>
+                <li class="footer__nav_item">
+                    <a href="">
+                        Как мы работаем? 
+                    </a>
+                </li>
+                <li class="footer__nav_item">
+                    <a href="">
+                        О нас
+                    </a>
+                </li>
+                <li class="footer__nav_item">
+                    <a href="">
+                        Вопросы
+                    </a>
+                </li>
+            </ul>
+            <img src="./img/svg/answer_thumb.svg" alt="logo" class = "footer__logo">
+            <div class="footer__contancts">
+                <a href="tel:+78121234567">
+                    <p>+7 812 123-45-67</p>
+                </a>
+                <p>LoveMeals@yandex.ru</p>
+                <p class = "footer__contancts_small-p">для коммерческих предложений</p>
+            </div>
+        </div>    
+    </footer>
+
+
+    <div class="dd__dropdown">
+        <div class="dd__dropdown_block">
+            <div class="dd__dropdown_block_header">
+                <div class="dd__dropdown_block_header_thumb">
+                    <p>1</p>
+                </div>
+                <div class="dd__dropdown_block_header_text">
+                    <p>
+                        Могу ли я настроить тариф под свои вкусы?
+                    </p>
+                </div>
+                <div class="dd__dropdown_block_header_arrow">
+                    <img src="./img/svg/dropdown-arrow.svg" alt="arrow">
+                </div>
+            </div>
+            <div class="dd__dropdown_block_main">
+                <p class="dd__dropdown_block_main_text">
+                    Текст дроп дауна
+                </p>
+            </div>
+        </div>
+        <div class="dd__dropdown_block">
+            <div class="dd__dropdown_block_header">
+                <div class="dd__dropdown_block_header_thumb">
+                    <p>1</p>
+                </div>
+                <div class="dd__dropdown_block_header_text">
+                    <p>
+                        Могу ли я настроить тариф под свои вкусы?
+                    </p>
+                </div>
+                <div class="dd__dropdown_block_header_arrow">
+                    <img src="./img/svg/dropdown-arrow.svg" alt="arrow">
+                </div>
+            </div>
+            <div class="dd__dropdown_block_main">
+                <p class="dd__dropdown_block_main_text">
+                    Текст дроп дауна
+                </p>
+            </div>
+        </div>
+        <div class="dd__dropdown_block">
+            <div class="dd__dropdown_block_header">
+                <div class="dd__dropdown_block_header_thumb">
+                    <p>1</p>
+                </div>
+                <div class="dd__dropdown_block_header_text">
+                    <p>
+                        Могу ли я настроить тариф под свои вкусы?
+                    </p>
+                </div>
+                <div class="dd__dropdown_block_header_arrow">
+                    <img src="./img/svg/dropdown-arrow.svg" alt="arrow">
+                </div>
+            </div>
+            <div class="dd__dropdown_block_main">
+                <p class="dd__dropdown_block_main_text">
+                    Текст дроп дауна
+                </p>
+            </div>
+        </div>
+    </div>
+    
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
@@ -523,6 +920,7 @@
         });
         
     </script>
+
     <script>
 		var swiper1 = new Swiper('.swiper-container1', {
       slidesPerView: "auto",
@@ -533,6 +931,7 @@
       },
     });
 	</script>
-
+    
 </body>
 </html>
+
