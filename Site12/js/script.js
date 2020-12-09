@@ -112,6 +112,40 @@ for (let d = 0; d < popups.length; d++) {
 }
 
 
+let rationpopup1Open = document.querySelectorAll(".multiple-card-price");
+let rationpopup1 = document.querySelectorAll(".ration_oneday__popup");
+let rationCard = document.querySelectorAll(".multiple-card");
+let ration_imgs, ration_title, ration_list_item;
+
+
+// let rationpopup1Close = document.querySelectorAll("");
+
+
+
+for (let i = 0; i < rationpopup1Open.length; i++) {
+    rationpopup1Open[0].addEventListener('click',()=>{
+        // rationpopup1[i].classList.add("ration_oneday__popup-active");
+        // body.style.overflow = "hidden";
+        ration_imgs = rationCard[0].querySelectorAll(".ration_card_popup-info .popup-info_imgs").cloneNode(true);
+        console.log(ration_imgs)
+
+        
+
+    });
+    // rationpopup1Close[i].addEventListener('click',()=>{
+    //     rationpopup1[i].classList.remove("ration_oneday__popup-active");
+    //     body.style.overflow = "auto";
+        
+    // });  
+}
+
+
+//
+//  Calculator
+//
+
+let nextBtns = document.querySelectorAll("swiper-button-next3")
+
 
 
 

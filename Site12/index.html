@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     
+    
 
 </head>
 <body class = "body">
@@ -263,7 +264,6 @@
                                                 <input type="button"  class="btn page2_btn" value="Добавить карточку к заказу">
                                             </div>
                                         </div>
-
                                     </div>
                                     <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_summary">
                                         <div class="menu__dish-list_item__popup_popup_blk_main_ingredients_summary_left">
@@ -400,8 +400,8 @@
                         Рационы
                     </h2>
                     <div class="rations__swiper-btns">
-		                <div class="swiper-next"><img src="./img/svg/slider-r-arrow.svg" alt="arrow"></div>
                         <div class="swiper-prev"><img src="./img/svg/slider-l-arrow.svg" alt="arrow"></div>
+		                <div class="swiper-next"><img src="./img/svg/slider-r-arrow.svg" alt="arrow"></div>
                     </div>
                     
                 </div>
@@ -416,7 +416,7 @@
                             </p>
                         </div>
                         <a href="#">
-                            <div class="rations_card_price green-bg">
+                            <div class="rations_card_price single-card-price green-bg">
                                 <p>Выбрать</p>
                             </div>  
                         </a>
@@ -424,7 +424,7 @@
                     <div class="swiper-container1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="rations_card">
+                                <div class="rations_card multiple-card">
                                     <div class="rations_card_img">
                                         <img src="./img/main ration.png" alt="img">
                                     </div>
@@ -437,120 +437,29 @@
                                         </p>
                                     </div>
                                     <div class="rations_card_desc_inputbox">
-                                        <input type="radio" name="three_days" id="three_days">
+                                        <input type="radio" name="three_days" id="three_days" checked>
                                         <label for="three_days">На 3 дня</label>
                                         <input type="radio" name="three_days" id="one_day">
                                         <label for="one_day">На 1 день</label>
                                     </div>
-                                    <a href="#">
-                                        <div class="rations_card_price">
-                                            <p>Выбрать</p>
-                                        </div>  
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="rations_card">
-                                    <div class="rations_card_img">
-                                        <img src="./img/main ration.png" alt="img">
+                                    <div class="rations_card_price multiple-card-price">
+                                        <p>Выбрать</p>
+                                    </div>  
+                                    <div class="ration_card_popup-info" style = "display: none;">
+                                        <div class="popup-info_imgs">
+                                            <div class="swiper-slide ibg"><img src="./img/menu1.png" alt="menu"></div>
+                                            <div class="swiper-slide ibg"><img src="./img/menu2.png" alt="menu"></div>
+                                            <div class="swiper-slide ibg"><img src="./img/menu1.png" alt="menu"></div>
+                                            <div class="swiper-slide ibg"><img src="./img/menu2.png" alt="menu"></div>
+                                        </div>
+                                        <div class="popup-info_title">Группа 1</div>
+                                        <div class="popup_info_list_item">
+                                            <li class="ration_oneday__popup_listitem">
+                                                <p class = "oneday__popup_listitem_name">Каша</p>
+                                                <p class = "oneday__popup_listitem_value">кбжу</p>
+                                            </li>
+                                        </div>
                                     </div>
-                                    <div class="rations_card_desc">
-                                        <p class="rations_card_desc_title">
-                                            1000ккал
-                                        </p>
-                                        <p class="rations_card_desc_subtitle">
-                                            Описание какие ингредиенты и тд
-                                        </p>
-                                    </div>
-                                    <div class="rations_card_desc_inputbox">
-                                        <input type="radio" name="three_days" id="three_days">
-                                        <label for="three_days">На 3 дня</label>
-                                        <input type="radio" name="three_days" id="one_day">
-                                        <label for="one_day">На 1 день</label>
-                                    </div>
-                                    <a href="#">
-                                        <div class="rations_card_price">
-                                            <p>Выбрать</p>
-                                        </div>  
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="rations_card">
-                                    <div class="rations_card_img">
-                                        <img src="./img/main ration.png" alt="img">
-                                    </div>
-                                    <div class="rations_card_desc">
-                                        <p class="rations_card_desc_title">
-                                            1000ккал
-                                        </p>
-                                        <p class="rations_card_desc_subtitle">
-                                            Описание какие ингредиенты и тд
-                                        </p>
-                                    </div>
-                                    <div class="rations_card_desc_inputbox">
-                                        <input type="radio" name="three_days" id="three_days">
-                                        <label for="three_days">На 3 дня</label>
-                                        <input type="radio" name="three_days" id="one_day">
-                                        <label for="one_day">На 1 день</label>
-                                    </div>
-                                    <a href="#">
-                                        <div class="rations_card_price">
-                                            <p>Выбрать</p>
-                                        </div>  
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="rations_card">
-                                    <div class="rations_card_img">
-                                        <img src="./img/main ration.png" alt="img">
-                                    </div>
-                                    <div class="rations_card_desc">
-                                        <p class="rations_card_desc_title">
-                                            1000ккал
-                                        </p>
-                                        <p class="rations_card_desc_subtitle">
-                                            Описание какие ингредиенты и тд
-                                        </p>
-                                    </div>
-                                    <div class="rations_card_desc_inputbox">
-                                        <input type="radio" name="three_days" id="three_days">
-                                        <label for="three_days">На 3 дня</label>
-                                        <input type="radio" name="three_days" id="one_day">
-                                        <label for="one_day">На 1 день</label>
-                                    </div>
-                                    <a href="#">
-                                        <div class="rations_card_price">
-                                            <p>Выбрать</p>
-                                        </div>  
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="rations_card">
-                                    <div class="rations_card_img">
-                                        <img src="./img/main ration.png" alt="img">
-                                    </div>
-                                    <div class="rations_card_desc">
-                                        <p class="rations_card_desc_title">
-                                            1000ккал
-                                        </p>
-                                        <p class="rations_card_desc_subtitle">
-                                            Описание какие ингредиенты и тд
-                                        </p>
-                                    </div>
-                                    <div class="rations_card_desc_inputbox">
-                                        <input type="radio" name="three_days" id="three_days">
-                                        <label for="three_days">На 3 дня</label>
-                                        <input type="radio" name="three_days" id="one_day">
-                                        <label for="one_day">На 1 день</label>
-                                    </div>
-                                    <a href="#">
-                                        <div class="rations_card_price">
-                                            <p>Выбрать</p>
-                                        </div>  
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -558,10 +467,144 @@
                     </div>
                 </div>
             </div>
+
+            <!-- ration popup -->
+            <div class="ration_oneday__popup">
+                <div class="ration_oneday__popup_popup_blk">
+                    <div class="swiper-container menu__dish-list_item__popup_img">
+                        <div class="swiper-wrapper">
+                            <!-- Slides must be here -->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="oneday__popup_header">
+                        <h2 class="oneday__popup_header_title">
+                            <!-- Name -->
+                        </h2>
+                        <img src="./img/svg/menu_next-btn.svg" alt="next" class="ration_oneday__popup_next-btn">
+                    </div>
+                    <div class="oneday__popup_main">
+                        <div class="oneday__popup_main_ingredients">
+                            <p class="popup_main_ingredients_header">
+                                <!-- Title -->
+                            </p>
+                            <ul class="ration_oneday__popup_list">
+                                <!-- List items here -->
+                            </ul>
+                        </div>
+                        <div class="popup_main_ingredients_comment">
+                            <p class="popup_main_ingredients_comment_title">
+                                Комментарий:
+                            </p>
+                            <textarea name="" id="" placeholder="Положите мне отдельно тунец" maxlength="250" class="popup_main_ingredients_comment_textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="popup_main_summary">
+                        <div class="popup_main_summary_left">
+                            <p class="popup_main_summary_left_title">
+                                Промокод
+                            </p>
+                            <input type="text" name="promo" id="promo" placeholder="Промокод" class="input popup_main_summary_left_promo">
+                            <p class="popup_main_summary_left_promodesc">Ваша скидка составляет 29%</p>
+                        </div>
+                        <div class="popup_main_summary_right">
+                            <div class="popup_main_summary_right_summary">
+                                <p class="summary_text">
+                                    Итог:
+                                </p>
+                                <p class="summary_num">
+                                    250₽
+                                </p>
+                            </div>
+                            <div class="popup_main_summary_right_summ">
+                                <p class="summ_text">
+                                    Сумма
+                                </p>
+                                <p class="summ_num">
+                                    350₽
+                                </p>
+                            </div>
+                            <div class="popup_main_summary_right_discount">
+                                <p class="discount_text">
+                                    Скидка
+                                </p>
+                                <p class="discount_num">
+                                    100₽
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="button"  class="btn popup_btn" value="Заказать">
+                </div>
+            </div>
+
         </section>
 
         <section class="calculator">
-
+            <div class="wrapper">
+                <div class="calc_main">
+                    <h2 class="calc_title block_title">Калькулятор <span class="green">КБЖУ</span></h2>
+                    <p class="calc_subtitle">Пройдите небольшой опрос и мы посчитаем суточную норму КБЖУ за вас</p>
+                    <div class="swiper-container2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="calc_stage_header">
+                                    <div class="stage_header_thumb">
+                                        <p>1</p>
+                                    </div>
+                                    <h3 class="stahe_header_title">Укажите Ваш вес</h3>
+                                    <p class="header_status">Готово: 0%</p>
+                                </div>
+                                <div class="calc_stage_main">
+                                    <input type="number" placeholder="50 кг" min="1"  class="input calc_input" id = "calc_weight">
+                                </div>
+                                <div class="calc_stage_nav">
+                                    <div class="swiper-button-next3">Далее</div>
+                                    <div class="swiper-button-prev3">Назад</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="calc_stage_header">
+                                    <div class="stage_header_thumb">
+                                        <p>2</p>
+                                    </div>
+                                    <h3 class="stahe_header_title">Укажите Ваш рост</h3>
+                                    <p class="header_status">Готово: 20%</p>
+                                </div>
+                                <div class="calc_stage_main">
+                                    <input type="number" placeholder="168 см"  min="1" class="input calc_input" id = "calc_height">
+                                </div>
+                                <div class="calc_stage_nav">
+                                    <div class="swiper-button-next3">Далее</div>
+                                    <div class="swiper-button-prev3">Назад</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="calc_stage_header">
+                                    <div class="stage_header_thumb">
+                                        <p>3</p>
+                                    </div>
+                                    <h3 class="stahe_header_title">Укажите Ваш пол</h3>
+                                    <p class="header_status">Готово: 60%</p>
+                                </div>
+                                <div class="calc_stage_main">
+                                    <input type="radio" name="sex" id="woomen">
+                                    <label for="woomen" class = "woomen"><img src="./img/svg/calc_woomen.svg" alt="woomen"></label>
+                                    <input type="radio" name="sex" id="man">
+                                    <label for="man" class = "man"><img src="./img/svg/calc_man.svg" alt="men"></label>
+                                    
+                                </div>
+                                <div class="calc_stage_nav">
+                                    <div class="swiper-button-next3">Далее</div>
+                                    <div class="swiper-button-prev3">Назад</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="why-we">
@@ -844,71 +887,6 @@
         </div>    
     </footer>
 
-
-    <div class="dd__dropdown">
-        <div class="dd__dropdown_block">
-            <div class="dd__dropdown_block_header">
-                <div class="dd__dropdown_block_header_thumb">
-                    <p>1</p>
-                </div>
-                <div class="dd__dropdown_block_header_text">
-                    <p>
-                        Могу ли я настроить тариф под свои вкусы?
-                    </p>
-                </div>
-                <div class="dd__dropdown_block_header_arrow">
-                    <img src="./img/svg/dropdown-arrow.svg" alt="arrow">
-                </div>
-            </div>
-            <div class="dd__dropdown_block_main">
-                <p class="dd__dropdown_block_main_text">
-                    Текст дроп дауна
-                </p>
-            </div>
-        </div>
-        <div class="dd__dropdown_block">
-            <div class="dd__dropdown_block_header">
-                <div class="dd__dropdown_block_header_thumb">
-                    <p>1</p>
-                </div>
-                <div class="dd__dropdown_block_header_text">
-                    <p>
-                        Могу ли я настроить тариф под свои вкусы?
-                    </p>
-                </div>
-                <div class="dd__dropdown_block_header_arrow">
-                    <img src="./img/svg/dropdown-arrow.svg" alt="arrow">
-                </div>
-            </div>
-            <div class="dd__dropdown_block_main">
-                <p class="dd__dropdown_block_main_text">
-                    Текст дроп дауна
-                </p>
-            </div>
-        </div>
-        <div class="dd__dropdown_block">
-            <div class="dd__dropdown_block_header">
-                <div class="dd__dropdown_block_header_thumb">
-                    <p>1</p>
-                </div>
-                <div class="dd__dropdown_block_header_text">
-                    <p>
-                        Могу ли я настроить тариф под свои вкусы?
-                    </p>
-                </div>
-                <div class="dd__dropdown_block_header_arrow">
-                    <img src="./img/svg/dropdown-arrow.svg" alt="arrow">
-                </div>
-            </div>
-            <div class="dd__dropdown_block_main">
-                <p class="dd__dropdown_block_main_text">
-                    Текст дроп дауна
-                </p>
-            </div>
-        </div>
-    </div>
-    
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 
@@ -918,7 +896,7 @@
                 el: '.swiper-pagination',
             },
         });
-        
+
     </script>
 
     <script>
@@ -929,6 +907,17 @@
         nextEl: '.swiper-next',
         prevEl: '.swiper-prev',
       },
+    });
+    </script>
+    
+    <script>
+		var swiper = new Swiper('.swiper-container2', {
+      navigation: {
+        nextEl: '.swiper-button-next3',
+        prevEl: '.swiper-button-prev3',
+      },
+      allowTouchMove: false,
+      effect: 'fade',
     });
 	</script>
     
