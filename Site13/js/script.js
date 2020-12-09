@@ -11,3 +11,15 @@ function ibg(){
 ibg();
 
 
+let hasChildrenList = document.querySelectorAll(".buger-menu_item-has-children");
+
+for (let i = 0; i < hasChildrenList.length; i++) {
+    hasChildrenList[i].addEventListener('click',()=>{
+        if(hasChildrenList[i].classList.contains("buger-menu_item-has-children-active")){
+            hasChildrenList[i].classList.remove("buger-menu_item-has-children-active");
+        }else{
+            hasChildrenList[i].classList.add("buger-menu_item-has-children-active");
+        }
+    });      
+}
+

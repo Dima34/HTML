@@ -2241,3 +2241,102 @@ footer{
         margin-bottom: 2.930vw;
     }
 }
+
+@media screen and (max-width: 600px) {
+    header{
+        .wrapper{
+            max-width: 90.667vw;
+            justify-content: space-between;
+            .header__logo{
+                height: 11.200vw;
+                width: auto;
+            }
+
+            .header__navigation{
+                .mavigation_burger{
+                    height: 3.733vw;
+                }
+                .navigation_page_name{
+                    display: none;
+                }
+            }
+            .header__contacts{
+                display: none;
+            }
+            .header__navigation:hover{
+                .navigation_buger-menu{
+                    pointer-events:none 
+                }
+            }
+            .header__navigation{
+                .navigation_buger-menu{
+                    opacity: 1;
+                    visibility: visible;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    max-width: unset;
+                    height: 100%;
+                    position: fixed;
+                    background: #fff;
+                    z-index: 1;
+                    padding: 100px;
+                    display: flex;
+                    justify-content: center;
+
+                    .navigation_buger-menu_items {
+                        padding: 0;
+                        width: unset;
+
+                        .buger-menu_item:nth-child(1):hover .menu_item_items, header .wrapper .header__navigation .navigation_buger-menu_items .buger-menu_item:nth-child(4):hover .menu_item_items, header .wrapper .header__navigation .navigation_buger-menu_items .buger-menu_item:nth-child(5):hover .menu_item_items {
+                            pointer-events:none
+                        }
+                        .buger-menu_item:nth-child(1) .menu_item_items {
+                            left: 0;
+                            padding: 0;
+                            width: unset;
+                            top: 0;
+                            position: relative;
+                            right: 0;
+                            transform: translateX(0);
+                            max-height: 0;
+                            visibility: visible;
+                            opacity: 1;
+                            overflow-y: hidden;
+                        }
+                        .buger-menu_item a{
+                            position: relative;
+                            padding-right: 22px;
+                            display: block;
+                            width: fit-content;
+                            font-size: 23px;
+                            overflow: unset;
+                            line-height: unset;
+                        }
+                        .buger-menu_item-has-children a:after{
+                            content: "";
+                            position: absolute;
+                            width: 17px;
+                            height: 9px;
+                            background: url(../img/svg/burger-arrow-down.svg) center no-repeat;
+                            top: 11px;
+                            background-size: cover;
+                            right: 0;
+                            left: unset;
+                        }
+                        .buger-menu_item-has-children .menu_item_items a:after{
+                            background: 0;
+                            width: 0;
+                            height: 0;
+                        }
+                        .buger-menu_item-has-children-active:nth-child(1) .menu_item_items{
+                            max-height: 500px;
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}

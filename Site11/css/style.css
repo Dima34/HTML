@@ -1339,6 +1339,28 @@ body .wrapper main{
    cursor: default;
 }
 
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======ARTICLES========------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.articles{
+   width: 1070px;
+   min-height: 400px;
+   background: #FABB03;
+   margin: 0 auto;
+}
+.article__header{
+   font-weight: bold;
+   font-size: 28px;
+}
+
+
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1930,6 +1952,16 @@ body .wrapper main{
    .more-details-blocks{
       margin:  0 auto;
    }
+
+
+   .articles{
+      width: 74.306vw;
+      min-height: 27.778vw;
+   }
+   .article__header{
+      font-size: 1.944vw;
+   }
+
 }
 @media screen and (max-width:600px){
    .intro__img{
@@ -2534,5 +2566,13 @@ body .wrapper main{
    .read-in-blog::after{
       width: 9.600vw;
       height: 8.800vw;
+   }
+
+   .articles{
+      width: 92vw;
+      min-height: 27.778vw;
+   }
+   .article__header{
+      font-size: 7.467vw;
    }
 }
