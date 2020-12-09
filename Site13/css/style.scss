@@ -2291,7 +2291,7 @@ footer{
                         .buger-menu_item:nth-child(1):hover .menu_item_items, header .wrapper .header__navigation .navigation_buger-menu_items .buger-menu_item:nth-child(4):hover .menu_item_items, header .wrapper .header__navigation .navigation_buger-menu_items .buger-menu_item:nth-child(5):hover .menu_item_items {
                             pointer-events:none
                         }
-                        .buger-menu_item:nth-child(1) .menu_item_items {
+                        .buger-menu_item:nth-child(1) .menu_item_items,.buger-menu_item:nth-child(4) .menu_item_items,.buger-menu_item:nth-child(5) .menu_item_items,.buger-menu_item:nth-child(5) .menu_item_items {
                             left: 0;
                             padding: 0;
                             width: unset;
@@ -2329,8 +2329,9 @@ footer{
                             width: 0;
                             height: 0;
                         }
-                        .buger-menu_item-has-children-active:nth-child(1) .menu_item_items{
-                            max-height: 500px;
+                        
+                        .buger-menu_item-has-children-active .menu_item_items{
+                            max-height: 500px !important;
                         }
                     }
 

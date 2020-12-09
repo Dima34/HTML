@@ -2215,7 +2215,7 @@ footer .wrapper .footer__links a:first-child {
   header .wrapper .header__navigation .navigation_buger-menu .navigation_buger-menu_items .buger-menu_item:nth-child(1):hover .menu_item_items, header .wrapper .header__navigation .navigation_buger-menu .navigation_buger-menu_items header .wrapper .header__navigation .navigation_buger-menu_items .buger-menu_item:nth-child(4):hover .menu_item_items, header .wrapper .header__navigation .navigation_buger-menu .navigation_buger-menu_items header .wrapper .header__navigation .navigation_buger-menu_items .buger-menu_item:nth-child(5):hover .menu_item_items {
     pointer-events: none;
   }
-  header .wrapper .header__navigation .navigation_buger-menu .navigation_buger-menu_items .buger-menu_item:nth-child(1) .menu_item_items {
+  header .wrapper .header__navigation .navigation_buger-menu .navigation_buger-menu_items .buger-menu_item:nth-child(1) .menu_item_items, header .wrapper .header__navigation .navigation_buger-menu .navigation_buger-menu_items .buger-menu_item:nth-child(4) .menu_item_items, header .wrapper .header__navigation .navigation_buger-menu .navigation_buger-menu_items .buger-menu_item:nth-child(5) .menu_item_items, header .wrapper .header__navigation .navigation_buger-menu .navigation_buger-menu_items .buger-menu_item:nth-child(5) .menu_item_items {
     left: 0;
     padding: 0;
     width: unset;
@@ -2255,7 +2255,7 @@ footer .wrapper .footer__links a:first-child {
     width: 0;
     height: 0;
   }
-  header .wrapper .header__navigation .navigation_buger-menu .navigation_buger-menu_items .buger-menu_item-has-children-active:nth-child(1) .menu_item_items {
-    max-height: 500px;
+  header .wrapper .header__navigation .navigation_buger-menu .navigation_buger-menu_items .buger-menu_item-has-children-active .menu_item_items {
+    max-height: 500px !important;
   }
 }
