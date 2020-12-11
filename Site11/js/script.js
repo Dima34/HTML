@@ -102,7 +102,6 @@ if(Slider1 != null){
 let block_containers = document.querySelectorAll(".ways__right_block")
 let serviceWays = document.querySelector(".service-ways");
 
-console.log(serviceWays)
 
 if(block_containers != null && serviceWays == null){
     function waysMargin1(){
@@ -149,7 +148,6 @@ if(serviceWays != null){
         serviceWays = document.querySelector(".service-ways");
         if(window.innerWidth > 1439){
             for(let i = 0; i < block_containers.length; i+=3){
-                console.log("ok")
                 block_containers[i].style.margin = "0 0 73px 0px";
             }
             for(let i = 1; i < block_containers.length; i+=3){
@@ -166,7 +164,6 @@ if(serviceWays != null){
             
         }
         else{
-            console.log(serviceWays.length)
             for(let i = 0; i < block_containers.length; i+=3){
                 
                 block_containers[i].style.margin = "0 0 24vw 0px";
@@ -210,6 +207,36 @@ if(moreBtn != null){
         }
         if(ba_lenght == blocksAmount){
             moreBtn.style.display = "none";
+        }
+    })
+
+}
+
+//
+//  Blog more blocks
+//
+let moreBtn1 = document.getElementById("more_blk-item");
+
+if(moreBtn1 != null){
+    blocksAmount = 6;
+    addAmount = 2;
+    ba = document.querySelectorAll(".more-details_blk");
+    ba_lenght = ba.length
+    console.log(ba)
+    
+    moreBtn1.addEventListener("click", ()=>{
+        ba = document.querySelectorAll(".more-details_blk");
+        if(blocksAmount < ba_lenght && ba_lenght - blocksAmount > addAmount-1){
+            blocksAmount+=addAmount;
+            for(let i = addAmount; i < blocksAmount; i++){
+                ba[i].style.display = "flex";
+            }
+        }
+        else if(ba_lenght - blocksAmount == 1){
+            blocksAmount+=1;
+        }
+        if(ba_lenght == blocksAmount){
+            moreBtn1.style.display = "none";
         }
     })
 
