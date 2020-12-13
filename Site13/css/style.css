@@ -3835,7 +3835,11 @@ footer .wrapper .footer__links a:first-child {
     display: flex;
     transition: 0.15s;
   }
+  header .wrapper .header__navigation .navigation_buger-menu .navigation_buger-menu_items{
+    display: none;
+  }
   header .wrapper .header__navigation .navigation_buger-menu-active .navigation_buger-menu_items {
+    display: block;
     padding: 0;
     width: unset;
     pointer-events: all;

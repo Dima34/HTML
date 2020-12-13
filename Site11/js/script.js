@@ -221,8 +221,7 @@ if(moreBtn1 != null){
     blocksAmount = 6;
     addAmount = 2;
     ba = document.querySelectorAll(".more-details_blk");
-    ba_lenght = ba.length
-    console.log(ba)
+    ba_lenght = ba.length;
     
     moreBtn1.addEventListener("click", ()=>{
         ba = document.querySelectorAll(".more-details_blk");
@@ -238,8 +237,18 @@ if(moreBtn1 != null){
         if(ba_lenght == blocksAmount){
             moreBtn1.style.display = "none";
         }
+        ibg();
+        console.log("1")
     })
 
+}
+let filterButtons = document.querySelectorAll(".fileter_blk");
+
+for (let i = 0; i < filterButtons.length; i++) {
+    filterButtons[i].addEventListener('click',()=>{
+        ibg();
+        console.log("1")
+    });
 }
 
 
