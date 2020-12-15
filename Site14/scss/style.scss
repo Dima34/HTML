@@ -894,7 +894,6 @@ header{
 /* ------------------------------------ */
 
 .get{
-
   .wrapper{
     width: 1440px;
     position: relative;
@@ -998,5 +997,271 @@ header{
       }
     }
     
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======READ MORE========------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.read-more{
+  padding:68px 0 40px 0;
+  .wrapper{
+    width: 1440px;
+    padding-left: 136px;
+    display: flex;
+
+    .read-more_left{
+      width: 870px;
+
+      .read-more_left_link{
+        font-size: 25px;
+        line-height: 34px;
+        letter-spacing: 0.03em;
+        @include Open(400);
+        color: #62402D;
+        width: 100%;
+        padding-right: 40px;
+        background: url(../img/svg/read-more-arrow.svg) right center no-repeat;
+        margin-bottom: 18px;
+        display: block;
+      }
+      .read-more_left_text{
+        font-size: 25px;
+        line-height: 34px;
+        letter-spacing: 0.02em;
+        @include Open(300);
+        color: #321A0C;
+      }
+    }
+
+    .read-mode_right{
+      padding-top: 62px;
+      padding-left: 27px;
+
+      .read-more_right_link{
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        @include Open(400);
+        color: #62402D;
+        background: url(../img/svg/read-more-inst.svg) 3px top no-repeat;
+        background-size: 25px 25px;
+        padding: 0 0 8px 45px;
+        border-bottom: 2px solid #B86536;
+        width: 400px;
+        height: fit-content;
+        display: block;
+      }
+
+    }
+
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------========REVIEVS========------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.reviews{
+  .wrapper{
+    width: 1440px;
+    padding-left: 136px;
+    padding-bottom: 105px;
+    padding-top: 25px;
+    position: relative;
+    overflow: hidden;
+
+    .reviews__title{
+      font-size: 40px;
+      line-height: 54px;
+      letter-spacing: 0.08em;
+      color: #DDAE94;
+      @include Open(600);
+      padding-right: 100px;
+      margin-bottom: 59px;
+    }
+    .reviews__main{
+      padding-left: 90px;
+      display: flex;
+
+      .swiper-container1{
+        margin-left: auto;
+        margin-right: 252px;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        width: 870px;
+        padding: 0 70px 0 107px;
+
+        .swiper-slide{
+          width: 693px;
+          opacity: 0 !important;
+
+          .slide_main{
+            width: 626px;
+            padding:57px 0 43px 101px;
+            background: rgba(255, 226, 210, 0.85);
+            display: flex;
+
+            .main_left{
+              width: 257px;
+              margin-right: 43px;
+
+              .main_header{
+                font-size: 27px;
+                line-height: 37px;
+                letter-spacing: 0.02em;
+                @include Open(400);
+                color: #321A0C;
+                margin-bottom: 15px;
+              }
+              .main_text{
+                font-size: 22px;
+                line-height: 30px;
+                letter-spacing: 0.02em;
+                @include Open(300);
+                color: #321A0C;
+                margin-bottom: 15px;
+              }
+              .main_date{
+                font-size: 22px;
+                line-height: 30px;
+                letter-spacing: 0.02em;
+                @include Open(300);
+                color: #B86536;
+                margin-bottom: 29px;
+              }
+              .main_stars{
+                width: 190px;
+                height: 30px;
+                background: #62402D;
+              }
+            }
+            .main_right{
+              margin-top: 45px;
+              width: 292px;
+              height: 243px;
+              margin-right: -67px;
+            }
+          }
+        }
+        .swiper-slide-active{
+          opacity: 1 !important;
+        }
+
+        .swiper-button-next1{
+          position: absolute;
+          right: 0;
+          top:50%;
+          transform: translateY(-50%);
+        }
+        .swiper-button-prev1{
+          position: absolute;
+          left: 0;
+          top:50%;
+          transform: translateY(-50%);
+        }
+      }
+      .reviews_btn{
+        background: #DDAE94;
+        font-size: 40px;
+        line-height: 54px;
+        letter-spacing: 0.08em;
+        font-family: 'Open Sans' !important;
+        font-weight: 600 !important;
+        color: #FFFFFF;
+        padding: 64px 17px;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+        writing-mode: tb-rl;
+        height: fit-content;
+        position: relative;
+        transform: translateY(20%) scale(-1,-1);
+      }
+    }
+
+    .palm1{
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .palm2{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------========FOOTER========------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+footer{
+  width: 100%;
+  padding: 50px 0;
+  background: #927064;
+
+  .wrapper{
+    display: flex;
+    align-items: center;
+
+    .header__logo{
+      margin-right: 49px;
+    }
+    .header__nav{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+
+      .nav_list{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .nav_item{
+          margin-right: 47px;
+          a{
+            @include Open(400);
+            font-size: 18px;
+            line-height: 25px;
+            color: #FFFFFF;
+          }
+        }
+      }
+      .nav_links{
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+
+        a{
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+          color: #ffffff;
+          @include Open(400);
+        }
+        a:first-child{
+          margin-right: 60px;
+        }
+      }
+    }
   }
 }

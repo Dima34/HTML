@@ -28,10 +28,20 @@ let burger = document.querySelector(".navigation_buger-menu")
 let burgerClose = document.querySelector(".burger-close");
 
 burgerOpen.addEventListener('click',()=>{
-    burger.classList.add("navigation_buger-menu-active");
-    burger.classList.remove("navigation_buger-menu");
+    if(window.innerWidth <=600){
+        burger.classList.add("navigation_buger-menu-active");
+        burger.classList.remove("navigation_buger-menu");
+    }
+    
 });
 burgerClose.addEventListener('click',()=>{
-    burger.classList.remove("navigation_buger-menu-active");
-    burger.classList.add("navigation_buger-menu");
+    if(window.innerWidth <=600){
+        burger.classList.remove("navigation_buger-menu-active");
+        burger.classList.add("navigation_buger-menu");  
+    }
 });
+
+window.addEventListener("resize", ()=>{
+    burger.classList.remove("navigation_buger-menu-active");
+    burger.classList.add("navigation_buger-menu"); 
+})
