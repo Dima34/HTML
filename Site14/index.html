@@ -11,17 +11,23 @@
     <header class="main_header">
         <div class="wrapper">
             <img src="./img/svg/logo-w.svg" alt="logo" class="header__logo">
+            <img src="./img/svg/header_logo-o.svg" alt="logo" style = "display: none;" class="header__logo-mobile">
+            <img src="./img/svg/header_burger.svg" alt="burger" style = "display: none" class = "burger">
             <div class="header__nav">
+                <img style="display: none;" src="./img/svg/burger-close.svg" alt="burger close" class="burger-close">
                 <ul class="nav_list">
                     <li class="nav_item"><a href="#"><span class="white">Meanings</span></a></li>
                     <li class="nav_item"><a href="#"><span class="white">Portfolio</span></a></li>
                     <li class="nav_item"><a href="#"><span class="white">Price</span></a></li>
                     <li class="nav_item"><a href="#"><span class="white">FAQ</span></a></li>
                     <li class="nav_item"><a href="#"><span class="white">Revi</span><span class="orange">ews</span></a></li>
-                    <li class="nav_item"><a href="#"><span class="white">Contacts</span></a></li>
+                    <li class="nav_item"><a href="#"><span class="orange">Contacts</span></a></li>
                 </ul>
                 <div class="nav_links">
-                    <a href="#"><img src="./img/svg/inst-orange.svg" alt="inst"></a>
+                    <a href="#">
+                        <img src="./img/svg/inst-orange.svg" alt="inst">
+                        <img style="display: none;" src="./img/svg/inst-w.svg" alt="inst">
+                    </a>
                     <a href="mailto:tattoofedor@gmail.com">Tattoofedor@gmail.com</a>
                 </div>
             </div>
@@ -29,135 +35,274 @@
     </header>
     
     <main>
-        <div class="intro">
-            <div class="wrapper">
-                <h1 class="intro__header"><span class="white">Get your custom </span><span class="orange">tattoo design</span></h1>
-                <div class="swiper-container">
+        <div class="desktop">
+            <div class="intro">
+                <div class="wrapper">
+                    <h1 class="intro__header"><span class="white">Get your custom </span><span class="orange">tattoo design</span></h1>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide-img-left ibg">
+                                    <img src="./img/swiper-left1.png" alt="img">
+                                </div>
+                                <div class="slide-img-right ibg">
+                                    <img class = "slide-img-right" src="./img/swiper-right1.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide-img-left ibg">
+                                    <img src="./img/swiper-left2.png" alt="img">
+                                </div>
+                                <div class="slide-img-right ibg">
+                                    <img class = "slide-img-right" src="./img/swiper-right2.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"><img src="./img/svg/slider-right-o.svg" alt="right"></div>
+                        <div class="swiper-button-prev"><img src="./img/svg/slider-left-w.svg" alt="left"></div>
+                    </div>   
+                </div> 
+            </div>
+    
+            <div class="portfolio">
+                <div class="wrapper">
+                    <div class="portfolio_left">
+                        <div class="left_img ibg">
+                            <img src="./img/portfolio-img.jpg" alt="portfolio img">
+                        </div>
+                    </div>
+                    <div class="portfolio_right">
+                        <p class="right_text">
+                            Hi, I'm Fedor - a professional tattoo artist. 
+                            I made this project especially for those 
+                            who are far from me and cannot come 
+                            to me for a session.<br>
+                            You have the opportunity to order a 
+                            personal design and have it done 
+                            by a tattoo artist in your place.
+                        </p>
+                        <a href="#" class="right_btn">Portfolio</a>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <section class="how-to-order">
+                <div class="wrapper">
+                    <h1 class="how-to-order__title">How to order a design?</h1>
+                    <div class="how-to-order__fist-line">
+                        <div class="first_line_left">
+                            <div class="first_line_left_img ibg">
+                                <img src="./img/how-to-order-first-line-img.jpg" alt="first line img">
+                            </div>
+                            
+                        </div>
+                        <div class="first_line_right">
+                            <div class="first_line_right_header">
+                                <p>I will help you with simple steps.</p>
+                            </div>
+                            <div class="first_line_right_main">
+                                <p>Firstable think about<br> what size you like<br> best.</p>
+                                <p>Choose which<br> style you like<br> best.</p>
+                                <p>Think about what elements<br> you would like to see<br> in your tattoo..</p>
+                            </div>
+                            <div class="first_line_right_footer">
+                                <p>You can highlight the elements you like from the already inserted tattoos or designs, or send your examples or describe in words.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="how-to-order_second-line">
+                        <div class="second-line_left">
+                            <div class="second-line_left_text">
+                                <p>You can highlight the elements you like from the already inserted tattoos or designs, or send your examples or describe in words.</p>
+                                <p>Now that you have formed your idea, just fill out the form or send it to me by mail <a href="mailto:tattoofedor@gmail.com">Tattoofedor@gmail.com</a>  </p>
+                            </div>
+                            <div class="second-line_left_photo ibg">
+                                <img src="./img/second-line_left_photo.jpg" alt="photo">
+                            </div>
+                        </div>
+                        <div class="second-line_right">
+                            <div class="second-line_right_photo ibg">
+                                <img src="./img/how-to-order-second-line-right.jpg" alt="photo">
+                            </div>
+                            <div class="second-line_right_text">
+                                <p>I know that you still have questions regarding the meaning of the tattoo, the time of execution, the price. I propose to go to the corresponding block with questions and answers.</p>
+                                <p>Check out my gallery of works on Instagram. There you will find many ideas for yourdesign or a ready-made design.</p>
+                            </div>
+                            <a href="#" class="second-line_right_btn">FAQ</a>
+                        </div>
+                    </div>
+                    <img src="./img/svg/how-to-order-palm.svg" alt="palm" class="how-to-order_palm">
+                </div>
+            </section>
+    
+            <section class="price">
+                <div class="wrapper">
+                    <div class="price__left">
+                        <h2 class="price_title">Price</h2>
+                        <p class="price_text">
+                            The price for a custom design starts from 85 euro. 
+                            The price does not include design correction. 
+                            The cost of one correction is 15 euros (no more than 30% of the design). 
+                            Payment is made after a personal consultation by email in full before 
+                            the very process of creating a design.<br><br>
+                            After the payment I will create one design and send you the screenshot in the next two days. 
+                            After that you check the design and if you have 
+                            to change some elements, I can make it but it 
+                            has separately price. After I will send you files 
+                            in next formats
+                            <span class="orange">: ai, pdf, jpg.</span><br><br>
+                            If you have any more questions, please see the answers to them in the section
+                            <a class = "link-with-arrow" href="#">FAQ.</a> 
+                        </p>
+                    </div>
+                    <div class="price__right">
+                        <div class="price__right_img ibg">
+                            <img src="./img/price_img.jpg" alt="price img">
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+        
+        <div class="mobile" style="display: none;">
+            <div class="intro">
+                <div class="intro_swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="slide-img-left ibg">
-                                <img src="./img/swiper-left1.png" alt="img">
-                            </div>
-                            <div class="slide-img-right ibg">
-                                <img class = "slide-img-right" src="./img/swiper-right1.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-img-left ibg">
-                                <img src="./img/swiper-left2.png" alt="img">
-                            </div>
-                            <div class="slide-img-right ibg">
-                                <img class = "slide-img-right" src="./img/swiper-right2.png" alt="img">
-                            </div>
-                        </div>
+                        <div class="swiper-slide ibg"><img src="./img/how-to-order-first-line-img.jpg" alt="mobile intro"></div>
+                        <div class="swiper-slide ibg"><img src="./img/how-to-order-second-line-left.jpg" alt="mobile intro"></div>
+                        <div class="swiper-slide ibg"><img src="./img/how-to-order-first-line-img.jpg" alt="mobile intro"></div>
                     </div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"><img src="./img/svg/slider-right-o.svg" alt="right"></div>
-                    <div class="swiper-button-prev"><img src="./img/svg/slider-left-w.svg" alt="left"></div>
-                </div>   
-            </div> 
-        </div>
-
-        <div class="portfolio">
-            <div class="wrapper">
-                <div class="portfolio_left">
-                    <div class="left_img ibg">
-                        <img src="./img/portfolio-img.jpg" alt="portfolio img">
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="intro__title">
+                    <p>Get your custom</p>
+                    <p>tattoo design</p>
+                </div>
+                <div class="intro__main">
+                    <div class="intro__subtitle">
+                        <p>
+                            Hi, I'm Fedor - a professional tattoo 
+                            artist. I made this project especially for 
+                            those who are far from me and cannot 
+                            come to me for a session. You have the opportunity to order a personal design 
+                            and have it done by a tattoo artist in 
+                            your place.
+                        </p>
+                    </div>
+                    <div class="intro__bottom-image ibg">
+                        <img src="./img/how-to-order-first-line-img.jpg" alt="img">
                     </div>
                 </div>
-                <div class="portfolio_right">
-                    <p class="right_text">
-                        Hi, I'm Fedor - a professional tattoo artist. 
-                        I made this project especially for those 
-                        who are far from me and cannot come 
-                        to me for a session.<br>
-                        You have the opportunity to order a 
-                        personal design and have it done 
-                        by a tattoo artist in your place.
+            </div>
+            <div class="how">
+                <h2 class="how__title">
+                    How to order a design?
+                    I will help you 
+                    with simple steps.
+                </h2>
+                <div class="how__main">
+                    <div class="main_block">
+                        <div class="main_text">
+                            <p>
+                                Firstable
+                                think about
+                                what size you
+                                like best.
+                            </p>
+                        </div>
+                        <div class="main_image ibg">
+                            <img src="./img/how1.png" alt="how">
+                        </div>
+                    </div>
+                    <div class="main_block">
+                        <div class="main_image ibg">
+                            <img src="./img/how1.png" alt="how">
+                        </div>
+                        <div class="main_text">
+                            <p>
+                                Choose which
+                                style you like best.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main_block">
+                        <div class="main_text">
+                            <p>
+                                Think about
+                                what elements
+                                you would 
+                                like to see
+                                in your tattoo.
+                            </p>
+                        </div>
+                        <div class="main_image ibg">
+                            <img src="./img/how1.png" alt="how">
+                        </div>
+                    </div>
+                   
+                    <div class="main_intro">
+                        <div class="intro_col1">
+                            <p>Moon</p>
+                            <p>Lotus</p>
+                            <p>Unalome</p>
+                        </div>
+                        <div class="intro_col2 ibg">
+                            <img src="./img/svg/long.svg" alt="long">
+                        </div>
+                        <div class="intro_col3">
+                            <p>“Feminine Energy”</p>
+                            <p>“Purity”</p>
+                            <p>“Path to enlightenment”</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="how_guide">
+                    <p class="guide_text guide_text1">
+                        You can highlight the elements 
+                        you like from  the already 
+                        inserted tattoos or designs, 
+                        or send your examples or 
+                        describe in words.
                     </p>
-                    <a href="#" class="right_btn">Portfolio</a>
-                </div>
-
-            </div>
-        </div>
-
-        <section class="how-to-order">
-            <div class="wrapper">
-                <h1 class="how-to-order__title">How to order a design?</h1>
-                <div class="how-to-order__fist-line">
-                    <div class="first_line_left">
-                        <div class="first_line_left_img ibg">
-                            <img src="./img/how-to-order-first-line-img.jpg" alt="first line img">
-                        </div>
-                        
+                    <div class="guide_image1 ibg">
+                        <img src="./img/guide_photo.png" alt="guide_photo">
                     </div>
-                    <div class="first_line_right">
-                        <div class="first_line_right_header">
-                            <p>I will help you with simple steps.</p>
-                        </div>
-                        <div class="first_line_right_main">
-                            <p>Firstable think about<br> what size you like<br> best.</p>
-                            <p>Choose which<br> style you like<br> best.</p>
-                            <p>Think about what elements<br> you would like to see<br> in your tattoo..</p>
-                        </div>
-                        <div class="first_line_right_footer">
-                            <p>You can highlight the elements you like from the already inserted tattoos or designs, or send your examples or describe in words.</p>
-                        </div>
+                    <div class="guide_image2 ibg">
+                        <img src="./img/guide_photo2.png" alt="guide_photo">
                     </div>
-                </div>
-                <div class="how-to-order_second-line">
-                    <div class="second-line_left">
-                        <div class="second-line_left_text">
-                            <p>You can highlight the elements you like from the already inserted tattoos or designs, or send your examples or describe in words.</p>
-                            <p>Now that you have formed your idea, just fill out the form or send it to me by mail <a href="mailto:tattoofedor@gmail.com">Tattoofedor@gmail.com</a>  </p>
-                        </div>
-                        <div class="second-line_left_photo ibg">
-                            <img src="./img/second-line_left_photo.jpg" alt="photo">
-                        </div>
-                    </div>
-                    <div class="second-line_right">
-                        <div class="second-line_right_photo ibg">
-                            <img src="./img/how-to-order-second-line-right.jpg" alt="photo">
-                        </div>
-                        <div class="second-line_right_text">
-                            <p>I know that you still have questions regarding the meaning of the tattoo, the time of execution, the price. I propose to go to the corresponding block with questions and answers.</p>
-                            <p>Check out my gallery of works on Instagram. There you will find many ideas for yourdesign or a ready-made design.</p>
-                        </div>
-                        <a href="#" class="second-line_right_btn">FAQ</a>
-                    </div>
-                </div>
-                <img src="./img/svg/how-to-order-palm.svg" alt="palm" class="how-to-order_palm">
-            </div>
-        </section>
-
-        <section class="price">
-            <div class="wrapper">
-                <div class="price__left">
-                    <h2 class="price_title">Price</h2>
-                    <p class="price_text">
-                        The price for a custom design starts from 85 euro. 
-                        The price does not include design correction. 
-                        The cost of one correction is 15 euros (no more than 30% of the design). 
-                        Payment is made after a personal consultation by email in full before 
-                        the very process of creating a design.<br><br>
-                        After the payment I will create one design and send you the screenshot in the next two days. 
-                        After that you check the design and if you have 
-                        to change some elements, I can make it but it 
-                        has separately price. After I will send you files 
-                        in next formats
-                        <span class="orange">: ai, pdf, jpg.</span><br><br>
-                        If you have any more questions, please see the answers to them in the section
-                        <a class = "link-with-arrow" href="#">FAQ.</a> 
+                    <p class="guide_text guide_text2">
+                        Now that you have formed 
+                        your idea, just fill out the 
+                        form or send it to me by <br>
+                        mail: <a href="mailto:tattoofedor@gmail.com ">Tattoofedor@gmail.com</a> 
                     </p>
-                </div>
-                <div class="price__right">
-                    <div class="price__right_img ibg">
-                        <img src="./img/price_img.jpg" alt="price img">
-                    </div>
+                    <img src="./img/svg/split_img1.svg" alt="split img" class="gude_split_img1">
+                    <p class="guide_text guide_text3">
+                        I know that you still have 
+                        <a href="#">questions</a> <!-- Ссылка на вопросы и ответы --> 
+                        regarding the 
+                        <a href="#">meaning</a> <!-- Сылка на значение татуировок -->
+                        of the tattoo,
+                        the time of execution, the price. I 
+                        propose to go to the corresponding 
+                        block with 
+                        <a href="#">questions and answers.</a> <!-- Ссылка на вопросы и ответы -->
+                    </p>
+                    <p class="guide_text guide_text4">
+                        Check out my gallery of works 
+                        on Instagram. There you will 
+                        find many ideas for your design 
+                        or a ready-made design
+                    </p>
+                    <img src="./img/svg/split_img2.svg" alt="split img" class="gude_split_img2">
                 </div>
             </div>
-            
-        </section>
+
+        </div>
 
         <section class="get">
             <div class="wrapper">
@@ -173,7 +318,9 @@
                         <label for="examples">Attach examples that reflect the size, complexity, composition / style of the future tattoo.</label>
                         <a href="#" class="form-send">Send</a>
                     </div>
+
                     <img src="./img/get-custom-bg.png" alt="get background" class="get_bg">
+                    <img src="./img/get_mobile.svg" style = "display: none;" alt="get background" class="get_bg-mobile">
                 </div>
             </div>
             
@@ -182,7 +329,7 @@
         <div class="read-more">
             <div class="wrapper">
                 <div class="read-more_left">
-                    <a href="#" class="read-more_left_link">You can see what the symbols mean in the corresponding section.</a>
+                    <a href="#" class="read-more_left_link">You can see what the symbols mean in the corresponding section. <span></span></a>
                     <p class="read-more_left_text">
                         Check out my gallery of works on Instagram.<br> 
                         There you will find ideas for your design or a ready-made design. 
@@ -211,7 +358,29 @@
                                             very much. 
                                         </p>
                                         <p class="main_date">08.12.2020</p>
-                                        <div class="main_stars"></div>
+                                        <div class="main_stars">
+                                            <span>
+                                                <img src="./img/svg/star-o.svg" alt="star">
+                                                <img style="display: none;" src="./img/svg/star-w.svg" alt="star">
+                                            </span>
+                                            <span>
+                                                <img src="./img/svg/star-o.svg" alt="star">
+                                                <img style="display: none;" src="./img/svg/star-w.svg" alt="star">
+                                            </span>
+                                            <span>
+                                                <img src="./img/svg/star-o.svg" alt="star">
+                                                <img style="display: none;" src="./img/svg/star-w.svg" alt="star">
+                                            </span>
+                                            <span>
+                                                <img src="./img/svg/star-o.svg" alt="star">
+                                                <img style="display: none;" src="./img/svg/star-w.svg" alt="star">
+                                            </span>
+                                            <span>
+                                                <img src="./img/svg/star-o.svg" alt="star">
+                                                <img style="display: none;" src="./img/svg/star-w.svg" alt="star">
+                                            </span>
+                                        </div>
+                                        
                                     </div>
                                     <div class="main_right ibg">
                                         <img src="./img/how-to-order-first-line-img.jpg" alt="img">
@@ -237,7 +406,28 @@
                                             very much. 
                                         </p>
                                         <p class="main_date">08.12.2020</p>
-                                        <div class="main_stars"></div>
+                                        <div class="main_stars">
+                                            <span>
+                                                <img src="./img/svg/star-o.svg" alt="star">
+                                                <img style="display: none;" src="./img/svg/star-w.svg" alt="star">
+                                            </span>
+                                            <span>
+                                                <img src="./img/svg/star-o.svg" alt="star">
+                                                <img style="display: none;" src="./img/svg/star-w.svg" alt="star">
+                                            </span>
+                                            <span>
+                                                <img src="./img/svg/star-o.svg" alt="star">
+                                                <img style="display: none;" src="./img/svg/star-w.svg" alt="star">
+                                            </span>
+                                            <span>
+                                                <img src="./img/svg/star-o.svg" alt="star">
+                                                <img style="display: none;" src="./img/svg/star-w.svg" alt="star">
+                                            </span>
+                                            <span>
+                                                <img src="./img/svg/star-o.svg" alt="star">
+                                                <img style="display: none;" src="./img/svg/star-w.svg" alt="star">
+                                            </span>
+                                        </div>
                                     </div>
                                     <div class="main_right ibg">
                                         <img src="./img/how-to-order-first-line-img.jpg" alt="img">
@@ -254,11 +444,13 @@
                 <img src="./img/svg/palm-r.svg" alt="palm" class="palm2">
             </div>
         </section>
+        
     </main>
 
     <footer>
         <div class="wrapper">
             <img src="./img/svg/logo-w.svg" alt="logo" class="header__logo">
+            <img style="display: none;" src="./img/svg/mobile_footer_logo.svg" alt="footer logo" class="footer_logo-mobile">
             <div class="header__nav">
                 <ul class="nav_list">
                     <li class="nav_item"><a href="#">Meanings</a></li>
@@ -298,6 +490,15 @@
             nextEl: '.swiper-button-next1',
             prevEl: '.swiper-button-prev1',
         },
+        });
+    </script>
+    <script>
+		var swiper = new Swiper('.intro_swiper', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            effect: 'fade',
+            loop:true,
         });
 	</script>
 </body>
