@@ -793,7 +793,7 @@ header {
     .get .wrapper .get_form_wrap .get_form {
       margin: 0 auto;
       width: 634px;
-      padding: 34px 78px 38px 78px;
+      padding: 78px 78px 44px 78px;
       background: #DDAE94;
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
       position: relative; }
@@ -962,7 +962,7 @@ header {
         opacity: 0 !important; }
         .reviews .wrapper .reviews__main .swiper-container1 .swiper-slide .slide_main {
           width: 626px;
-          padding: 57px 0 43px 101px;
+          padding: 57px 0 57px 101px;
           background: rgba(255, 226, 210, 0.85);
           display: flex; }
           .reviews .wrapper .reviews__main .swiper-container1 .swiper-slide .slide_main .main_left {
@@ -975,7 +975,8 @@ header {
               font-family: 'Open Sans' !important;
               font-weight: 400 !important;
               color: #321A0C;
-              margin-bottom: 15px; }
+              margin-bottom: 15px;
+              margin-top: 0; }
             .reviews .wrapper .reviews__main .swiper-container1 .swiper-slide .slide_main .main_left .main_text {
               font-size: 22px;
               line-height: 30px;
@@ -993,7 +994,7 @@ header {
               color: #B86536;
               margin-bottom: 29px; }
             .reviews .wrapper .reviews__main .swiper-container1 .swiper-slide .slide_main .main_left .main_stars {
-              width: 190px;
+              width: 210px;
               height: 30px; }
               .reviews .wrapper .reviews__main .swiper-container1 .swiper-slide .slide_main .main_left .main_stars img {
                 margin-right: 6px; }
@@ -1849,7 +1850,7 @@ footer {
       margin-bottom: 5.208vw; }
     .get .wrapper .get_form_wrap .get_form {
       width: 44.028vw;
-      padding: 2.361vw 5.417vw 2.639vw 5.417vw;
+      padding: 5.417vw 5.417vw 3.056vw 5.417vw;
       box-shadow: 0px 0.278vw 0.833vw rgba(0, 0, 0, 0.1); }
       .get .wrapper .get_form_wrap .get_form input, .get .wrapper .get_form_wrap .get_form textarea {
         font-size: 0.972vw;
@@ -1915,7 +1916,7 @@ footer {
           width: 48.125vw; }
           .reviews .wrapper .reviews__main .swiper-container1 .swiper-slide .slide_main {
             width: 43.472vw;
-            padding: 3.958vw 0 2.986vw 7.014vw; }
+            padding: 3.958vw 0 3.958vw 7.014vw; }
             .reviews .wrapper .reviews__main .swiper-container1 .swiper-slide .slide_main .main_left {
               width: 17.847vw;
               margin-right: 2.986vw; }
