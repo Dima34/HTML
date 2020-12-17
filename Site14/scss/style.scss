@@ -469,7 +469,7 @@ header{
   }
 }
 .main_header{
-  // top: 65px;
+  margin-top: 65px;
 }
 
 
@@ -1379,7 +1379,7 @@ footer{
 
     .p-portfolio_blk{
       width: 370px;
-      height: 404px;
+      height: 370px;
       box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.15);
       position: relative;
       z-index: 1;
@@ -1915,7 +1915,6 @@ footer{
         line-height: 5.067vw;
         letter-spacing: 0.03em;
         @include Open(400);
-        color: #ffffff;
         padding-bottom: 0.800vw;
         margin-bottom: 8.533vw;
   
@@ -2563,7 +2562,7 @@ footer{
 
       .p-portfolio_blk{
         width: 25.694vw;
-        height: 28.056vw;
+        height: 25.694vw;
       }
     }
     .p-portfolio__img{
@@ -3572,7 +3571,7 @@ footer{
   
       .p-portfolio_blk{
         width: 42.667vw;
-        height: 50.667vw;
+        height: 42.667vw;
         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
       }
     }
