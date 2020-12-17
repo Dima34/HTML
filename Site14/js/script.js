@@ -25,3 +25,49 @@ burgerOpen.addEventListener('click',()=>{
 burgerClose.addEventListener('click',()=>{
     burger.classList.remove("active");
 });
+
+//
+//  DropDown
+//
+
+let dropdownHeader = document.querySelectorAll(".faq__dropdown_block_header");
+let dropdownMain = document.querySelectorAll(".faq__dropdown_block_main");
+
+if(dropdownHeader){
+    for (let i = 0; i < dropdownHeader.length; i++) {
+        dropdownHeader[i].addEventListener('click',()=>{
+            if(dropdownHeader[i].classList.contains("faq__dropdown_block_header-active")){
+                dropdownHeader[i].classList.remove("faq__dropdown_block_header-active");
+                dropdownMain[i].classList.remove("faq__dropdown_block_main-active");
+            }else{
+                dropdownHeader[i].classList.add("faq__dropdown_block_header-active");
+                dropdownMain[i].classList.add("faq__dropdown_block_main-active");
+                for (let b = 0; b < dropdownHeader.length; b++) {
+                    if(b != i){
+                        dropdownHeader[b].classList.remove("faq__dropdown_block_header-active");
+                        dropdownMain[b].classList.remove("faq__dropdown_block_main-active"); 
+                    }
+                }
+            }
+        });
+    }
+    
+    for (let b = 1; b < dropdownHeader.length; b+=6) {
+        dropdownHeader[b].style.background="#FEDCC9";
+    }
+    for (let b = 2; b < dropdownHeader.length; b+=6) {
+        dropdownHeader[b].style.background="#EBD0C1";
+    }
+    for (let b = 3; b < dropdownHeader.length; b+=6) {
+        dropdownHeader[b].style.background="#F3D4CB";
+    }
+    for (let b = 4; b < dropdownHeader.length; b+=6) {
+        dropdownHeader[b].style.background="#E9C6BA";
+    }
+    for (let b = 5; b < dropdownHeader.length; b+=6) {
+        dropdownHeader[b].style.background="#E5C4B1";
+    }
+}
+
+
+
