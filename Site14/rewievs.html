@@ -117,10 +117,40 @@
                     </div>
                 </div>
 
-                <a href="#" class="r-reviews-btn">Leave feedback</a>
+                <p class="r-reviews-btn">Leave feedback</p>
             </div>
         </section>
         <img src="./img/svg/reviews-bg.svg" alt="palm" class = "r-reviews-bg">
+
+        <div class="r-rewiews__popup">
+            <div class="r-rewiews__popup_popup_blk">
+                <h2 class="r-rewiews__popup_popup_blk_title">
+                    Leave feedback
+                </h2>
+                <div class="r-rewiews__popup_popup_blk_main">
+                    <div class="r-rewiews__popup_inputs">
+                        <input type="text" name="name" id="name" placeholder="Your name">
+                        <input type="email" name="email" id="email" placeholder="Your E-mail">
+                        <textarea name="feedback" id="feedback" placeholder="Leave feedback"></textarea>
+                    </div>
+                   
+                    <div class="r-rewiews__popup_bottom">
+                        <!-- <a href="#" class="r-rewiews__popup_btn">Send</a> -->
+                        <p href="#" class="r-rewiews__popup_btn">Send</p>
+                        <div class="r-rewiews__popup_stars">
+                            <img src="./img/svg/star-w.svg" alt="star">
+                            <img src="./img/svg/star-w.svg" alt="star">
+                            <img src="./img/svg/star-w.svg" alt="star">
+                            <img src="./img/svg/star-w.svg" alt="star">
+                            <img src="./img/svg/star-w.svg" alt="star">
+                        </div>
+                        <input type="file" name="file" id="file">
+                        <label for="file"><img src="./img/svg/popup_add_file.svg" alt="Add file"></label>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </main>
 
     <footer>
@@ -144,37 +174,7 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 
-    <script>
-		var swiper = new Swiper('.swiper-container', {
-        effect: 'fade',
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        });
-    </script>
-
-    <script>
-		var swiper = new Swiper('.swiper-container1', {
-        effect: 'fade',
-        autoHeight: true,
-        navigation: {
-            nextEl: '.swiper-button-next1',
-            prevEl: '.swiper-button-prev1',
-        },
-        });
-    </script>
-    <script>
-		var swiper = new Swiper('.intro_swiper', {
-            pagination: {
-                el: '.swiper-pagination',
-            },
-            effect: 'fade',
-            loop:true,
-        });
-	</script>
 </body>
 </html>

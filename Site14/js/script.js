@@ -69,5 +69,27 @@ if(dropdownHeader){
     }
 }
 
+//
+//  DropDown
+//
 
+let popupOpen = document.querySelector(".r-reviews-btn");
+let popup = document.querySelector(".r-rewiews__popup");
+let popupClose = document.querySelector(".r-rewiews__popup_btn");
+
+if(popupOpen){
+
+    popupOpen.addEventListener('click',()=>{
+        if(window.innerWidth > 650){
+            popup.classList.add("r-rewiews__popup-active");
+        }
+    });
+    popupClose.addEventListener('click',()=>{
+        if(window.innerWidth > 650){
+            popup.classList.remove("r-rewiews__popup-active");
+        }
+        
+    });
+
+}
 
