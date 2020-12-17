@@ -1152,9 +1152,14 @@ footer {
         color: #62402D;
         width: 100%;
         padding-right: 40px;
-        background: url(../img/svg/read-more-arrow.svg) right center no-repeat;
         margin-bottom: 18px;
         display: block; }
+        .p-read-more .wrapper .read-more_left .read-more_left_link span {
+          display: inline;
+          padding: 18px;
+          background: url(../img/svg/read-more-arrow.svg) right center no-repeat;
+          background-size: 26px 15px;
+          padding-top: 13px; }
       .p-read-more .wrapper .read-more_left .read-more_left_text {
         font-size: 25px;
         line-height: 34px;
@@ -1991,6 +1996,10 @@ footer {
           line-height: 2.361vw;
           padding-right: 2.778vw;
           margin-bottom: 1.250vw; }
+          .p-read-more .wrapper .read-more_left .read-more_left_link span {
+            padding: 1.250vw;
+            background-size: 1.806vw 1.042vw;
+            padding-top: 0.903vw; }
         .p-read-more .wrapper .read-more_left .read-more_left_text {
           font-size: 1.736vw;
           line-height: 2vw; }
@@ -2705,6 +2714,10 @@ footer {
           padding-right: 0;
           background: 0;
           margin-bottom: 4.533vw; }
+          .p-read-more .wrapper .read-more_left .read-more_left_link span {
+            padding: 3.200vw;
+            background-size: 5.067vw 6.933vw;
+            padding-top: 2.133vw; }
         .p-read-more .wrapper .read-more_left .read-more_left_text {
           font-size: 4.267vw;
           line-height: 5.867vw; }
@@ -2718,7 +2731,7 @@ footer {
           font-size: 4.533vw;
           line-height: 6.133vw;
           background: url(../img/svg/read-more-inst.svg) right top no-repeat;
-          background-size: 6.667vw 6.667vw;
+          background-size: 6.5vw 6.1vw;
           padding: 0 10.933vw 0 0;
           border-bottom: 0;
           width: 74.400vw;
