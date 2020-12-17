@@ -399,7 +399,7 @@ header {
   width: 100%;
   min-height: 200px;
   background: linear-gradient(90deg, #ddae94 50%, #F9F9F9 50%);
-  padding: 202px 0 145px 0; }
+  padding: 176px 0 145px 0; }
   .intro .wrapper .intro__header {
     font-family: 'Open Sans' !important;
     font-weight: 600 !important;
@@ -408,7 +408,7 @@ header {
     text-transform: uppercase;
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
     padding-left: 61px;
-    margin-bottom: 120px; }
+    margin-bottom: 50px; }
   .intro .wrapper .swiper-container {
     width: 962px;
     padding: 25px 69px; }
@@ -1664,11 +1664,11 @@ footer {
           height: 1.736vw; }
   .intro {
     min-height: 13.889vw;
-    padding: 14.028vw 0 10.069vw 0; }
+    padding: 12.222vw 0 10.069vw 0; }
     .intro .wrapper .intro__header {
       font-size: 3.819vw;
       padding-left: 4.236vw;
-      margin-bottom: 8.333vw; }
+      margin-bottom: 3.472vw; }
     .intro .wrapper .swiper-container {
       width: 66.806vw;
       padding: 1.736vw 4.792vw; }
