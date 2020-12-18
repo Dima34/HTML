@@ -2009,7 +2009,7 @@ footer{
     width:80.972vw;
   }
   header{
-    margin-top: 5.903vw;
+    margin-top: 5.903vw !important;
 
     .wrapper{
       .header__logo{
@@ -2860,7 +2860,11 @@ footer{
 @media screen and (max-width: 650px){
   .main_header, header{
     z-index: 14;
-    position: absolute;
+    position: fixed;
+    margin-top: 0 !important;
+    padding-top: 5.903vw;
+    padding-bottom: 3vw;
+    transition: .3s;
 
     .wrapper{
       justify-content: space-between;
@@ -2929,11 +2933,14 @@ footer{
         .burger-close{
           display: block !important;
           position: absolute;
-          right: 5.067vw;
-          top: 8.533vw;
+          right: 5.6vw;
+          top: 7.2vw;
         }
       }
     } 
+  }
+  .header-active{
+    background: #FFFFFF;
   }
 
   .desktop{
@@ -2975,7 +2982,7 @@ footer{
         font-size: 9.333vw;
         line-height: 137.85%;
         @include Open(700);
-        padding: 18.133vw 0 8.533vw 0;
+        padding: 7.5vw 0 2.5vw 0;
         max-width: 95vw;
         margin: 0 auto;
         
@@ -2996,7 +3003,7 @@ footer{
         padding: 5.867vw 2.667vw 5.867vw 2.667vw;
         width: 84.267vw;
         height: 49.867vw;
-        z-index: 1;
+        z-index: 2;
         position: relative;
 
         p{
@@ -3012,7 +3019,8 @@ footer{
         width: 89.333vw;
         height: 72.533vw;
         margin-top: -7.200vw;
-        z-index: 0;
+        margin-bottom:  -4.533vw;;
+        z-index: 1;
         position: relative;
       }
     }

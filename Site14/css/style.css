@@ -1642,7 +1642,7 @@ footer {
   .wrapper {
     width: 80.972vw; }
   header {
-    margin-top: 5.903vw; }
+    margin-top: 5.903vw !important; }
     header .wrapper .header__logo {
       margin-right: 4.653vw;
       width: 3.472vw; }
@@ -2175,7 +2175,11 @@ footer {
 @media screen and (max-width: 650px) {
   .main_header, header {
     z-index: 14;
-    position: absolute; }
+    position: fixed;
+    margin-top: 0 !important;
+    padding-top: 5.903vw;
+    padding-bottom: 3vw;
+    transition: .3s; }
     .main_header .wrapper, header .wrapper {
       justify-content: space-between;
       width: 90.667vw; }
@@ -2222,8 +2226,10 @@ footer {
         .main_header .wrapper .header__nav .burger-close, header .wrapper .header__nav .burger-close {
           display: block !important;
           position: absolute;
-          right: 5.067vw;
-          top: 8.533vw; }
+          right: 5.6vw;
+          top: 7.2vw; }
+  .header-active {
+    background: #FFFFFF; }
   .desktop {
     display: none; }
   .mobile {
@@ -2256,7 +2262,7 @@ footer {
         line-height: 137.85%;
         font-family: 'Open Sans' !important;
         font-weight: 700 !important;
-        padding: 18.133vw 0 8.533vw 0;
+        padding: 7.5vw 0 2.5vw 0;
         max-width: 95vw;
         margin: 0 auto; }
         .mobile .intro .intro__title p {
@@ -2274,7 +2280,7 @@ footer {
         padding: 5.867vw 2.667vw 5.867vw 2.667vw;
         width: 84.267vw;
         height: 49.867vw;
-        z-index: 1;
+        z-index: 2;
         position: relative; }
         .mobile .intro .intro__subtitle p {
           font-size: 4vw;
@@ -2288,7 +2294,8 @@ footer {
         width: 89.333vw;
         height: 72.533vw;
         margin-top: -7.200vw;
-        z-index: 0;
+        margin-bottom: -4.533vw;
+        z-index: 1;
         position: relative; }
     .mobile .how {
       padding-top: 14.933vw;

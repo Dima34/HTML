@@ -26,6 +26,18 @@ burgerClose.addEventListener('click',()=>{
     burger.classList.remove("active");
 });
 
+let header = document.querySelector("header");
+
+window.onscroll = () => {
+    if(window.pageYOffset > 10){
+        header.classList.add("header-active");
+    }
+    else{
+        header.classList.remove("header-active");
+    }
+}
+
+
 //
 //  DropDown
 //
@@ -92,4 +104,5 @@ if(popupOpen){
     });
 
 }
+
 
