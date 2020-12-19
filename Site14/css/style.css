@@ -2219,8 +2219,8 @@ footer {
               display: none; }
             .main_header .wrapper .header__nav .nav_links a:first-child img:last-child, header .wrapper .header__nav .nav_links a:first-child img:last-child {
               display: block !important;
-              width: 6.933vw;
-              height: 6.933vw; }
+              width: 11.933vw;
+              height: 11.933vw; }
           .main_header .wrapper .header__nav .nav_links a:last-child, header .wrapper .header__nav .nav_links a:last-child {
             display: none; }
         .main_header .wrapper .header__nav .burger-close, header .wrapper .header__nav .burger-close {
@@ -2488,8 +2488,8 @@ footer {
         .mobile .how .how_guide .gude_split_img2 {
           margin: 0 auto;
           display: block;
-          width: 9.333vw;
-          height: 9.333vw; }
+          width: 11.333vw;
+          height: 11.333vw; }
       .mobile .how:after {
         position: absolute;
         content: "";
