@@ -295,11 +295,11 @@ main {
   display: flex;
   flex-direction: column;
   padding: 0 27px 0 13px;
-  justify-content: flex-end;
-  overflow-x: visible; }
+  justify-content: flex-end; }
   .sidebar .sidebar_wrap {
     position: sticky;
-    overflow-y: visible; }
+    overflow-y: scroll;
+    overflow-x: visible; }
     .sidebar .sidebar_wrap img {
       margin-top: 30px;
       width: 229px;

@@ -309,12 +309,13 @@ main{
   flex-direction: column;
   padding: 0 27px 0 13px;
   justify-content: flex-end;
-  overflow-x: visible;
+  
   
 
   .sidebar_wrap{
     position: sticky;
-    overflow-y: visible;
+    overflow-y: scroll;
+    overflow-x: visible;
 
     img{
       margin-top: 30px;
