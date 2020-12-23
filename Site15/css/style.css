@@ -249,7 +249,9 @@ main {
 
 .wrapper_global {
   width: 1920;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden; }
 
 .wrapper {
   width: 1651px; }
@@ -275,10 +277,12 @@ main {
 body {
   background: #242424; }
   body .wrapper {
-    display: flex; }
+    position: relative; }
 
 main {
-  height: 20000px; }
+  height: 100vh;
+  overflow-y: auto;
+  width: 100%; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -288,17 +292,20 @@ main {
 /* ------------------------------------ */
 /* ------------------------------------ */
 .sidebar {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 0 27px 0 13px;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  width: fit-content; }
   .sidebar .sidebar_wrap {
-    position: sticky;
-    overflow: auto; }
+    overflow-x: visible;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+    padding: 0 27px 0 13px; }
     .sidebar .sidebar_wrap img {
       margin-top: 30px;
       width: 229px;
@@ -328,10 +335,17 @@ main {
             max-width: 0;
             overflow: hidden;
             position: absolute;
-            right: 0;
+            display: block;
+            left: calc(100% + 0px);
             background: #242424;
             padding: 10px 0;
+            transition: .3s;
             top: 0;
-            transition: .3s; }
+            z-index: 2; }
+
+.main_inside {
+  height: 2000px;
+  background: red;
+  width: 20px; }
 
 /*# sourceMappingURL=style.css.map */
