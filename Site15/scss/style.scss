@@ -310,13 +310,10 @@ main{
   padding: 0 27px 0 13px;
   justify-content: flex-end;
   
-  
 
   .sidebar_wrap{
-    position: sticky;
-    overflow-y: scroll;
-    overflow-x: visible;
-
+    position: sticky; 
+    overflow: auto;
     img{
       margin-top: 30px;
       width: 229px;
@@ -346,7 +343,6 @@ main{
         }
   
         .has_child{
-          position: relative;
           background: url(../img/svg/has_children.svg) right center no-repeat;
           
           &:hover{
@@ -363,7 +359,8 @@ main{
             max-width: 0;
             overflow: hidden;
             position: absolute;
-            left: calc(100% + 0px);
+            // left: calc(100% + 0px);
+            right: 0;
             background: #242424;
             padding: 10px 0;
             top: 0;

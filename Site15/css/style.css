@@ -298,8 +298,7 @@ main {
   justify-content: flex-end; }
   .sidebar .sidebar_wrap {
     position: sticky;
-    overflow-y: scroll;
-    overflow-x: visible; }
+    overflow: auto; }
     .sidebar .sidebar_wrap img {
       margin-top: 30px;
       width: 229px;
@@ -321,7 +320,6 @@ main {
             .sidebar .sidebar_wrap .sidebar_nav .nav_itemlist .nav_listitem a:hover {
               color: #ffcc00; }
         .sidebar .sidebar_wrap .sidebar_nav .nav_itemlist .has_child {
-          position: relative;
           background: url(../img/svg/has_children.svg) right center no-repeat; }
           .sidebar .sidebar_wrap .sidebar_nav .nav_itemlist .has_child:hover .listitem_child {
             max-width: 500px;
@@ -330,7 +328,7 @@ main {
             max-width: 0;
             overflow: hidden;
             position: absolute;
-            left: calc(100% + 0px);
+            right: 0;
             background: #242424;
             padding: 10px 0;
             top: 0;
