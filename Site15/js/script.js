@@ -151,8 +151,8 @@ burgerClose.addEventListener('click',()=>{
 
 // Animation
 document.addEventListener("DOMContentLoaded", scrolling);
-window.addEventListener('scroll',scrolling1);
-
+document.querySelector("main").addEventListener('scroll',scrolling);
+window.addEventListener('scroll',scrolling);
 
 
 function isPartiallyVisible(el){
@@ -232,12 +232,10 @@ function query(clas){
     return tmp;
 }
 
-// Movement
-function scrolling1(){
-    console.log('working');
-}
+// Movementole.log('working');
+
 function scrolling(e){
-    console.log('Scroll');
+    console.log('scrolling');
     animPartiallyVisible(header,"animate__fadeInRight");
     animPartiallyVisibleALL(content_line1,"animate__backInLeft");
     animPartiallyVisibleALL(content_line2,"animate__backInRight");
@@ -247,4 +245,31 @@ function scrolling(e){
     animPartiallyVisible(query(".footer_col1_title"), "animate__jackInTheBox", "2s")
     animPartiallyVisible(query(".footer_col1_desc"), "animate__backInLeft", "1.5s")
     animPartiallyVisibleALL(queryA(".footer_col1_payments img"), "animate__backInLeft", "2s" )
+    animPartiallyVisible(query(".footer_col2_title"), "animate__fadeInDown", "2s")
+    animPartiallyVisibleALL(queryA(".footer_col2_navitem"), "animate__fadeInDown", "2s" )
+    animPartiallyVisibleALL(queryA(".footer_col3_galleryItem"), "animate__rotateIn", "2s" )
+    animPartiallyVisible(query(".footer_col3_subscribe"), "animate__zoomInRight", "1s")
+    animPartiallyVisible(query(".footer_col4_title"), "animate__zoomIn", "1s")
+    animPartiallyVisibleALL(queryA(".footer_col4 p"), "animate__lightSpeedInRight", "2s" )
 }
+
+function loading(){
+    let loading = document.querySelector(".loading");
+    opacity = 1;
+    setInterval(() => {
+        if (opacity >= 0){  
+            opacity-=0.1;
+            loading.style.opacity = opacity;
+        }
+    }, 30);
+    
+    if(opacity <= 0){
+        loading.style.display = "none";
+    }
+    
+
+}
+
+setTimeout(()=>{
+    loading();
+}, 2500);
