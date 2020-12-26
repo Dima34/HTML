@@ -515,18 +515,23 @@ main{
         padding: 5px 0 5px 44px;
         background: url(../img/contacts_tel.png) left center no-repeat;
         margin-right: 23px;
+        animation: backInLeft;
+        animation-duration: 2s;
       
         &:nth-child(2){
           background: url(../img/contacts_mail.png) left center no-repeat;
+          animation-delay: .1s;
         }
         &:nth-child(3){
           background: url(../img/contacts_place.png) left center no-repeat;
         }
         &:nth-child(4){
+          animation-delay: .2s;
           background: url(../img/contacts_whatsapp.png) left center no-repeat;
         }      
         &:last-child{
           margin-right: 0;
+          animation-delay: .1s;
         }
       }
     }
@@ -539,6 +544,8 @@ main{
         padding: 5px 0 5px 44px;
         background: url(../img/contacts_tel.png) left center no-repeat;
         margin-right: 70px;
+        animation: backInRight;
+        animation-duration: 2s;
       
         &:nth-child(2){
           background: url(../img/contacts_mail.png) left center no-repeat;
@@ -560,6 +567,8 @@ main{
         margin-right: 15px;
         display: block;
         padding: 5px 0 5px 35px;
+        animation: fadeInRight;
+        animation-duration: 3s;
       }
       .green-cube{
         background: url(../img/contacts_greenSquare.png) left center no-repeat;
@@ -572,6 +581,8 @@ main{
       display: flex;
       align-items: center;
       padding: 42px 0px 95px 0px;
+      animation: flipInX;
+      animation-duration: 2s;
 
       a{
         font-size: 23px;
