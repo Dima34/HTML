@@ -401,6 +401,7 @@ main{
   left:0;
   top:0;
   z-index: 2;
+  animation-duration: 1.2s;
 
   p{
     color: #242424;
@@ -515,7 +516,6 @@ main{
         padding: 5px 0 5px 44px;
         background: url(../img/contacts_tel.png) left center no-repeat;
         margin-right: 23px;
-        animation: backInLeft;
         animation-duration: 2s;
       
         &:nth-child(2){
@@ -544,7 +544,6 @@ main{
         padding: 5px 0 5px 44px;
         background: url(../img/contacts_tel.png) left center no-repeat;
         margin-right: 70px;
-        animation: backInRight;
         animation-duration: 2s;
       
         &:nth-child(2){
@@ -567,8 +566,7 @@ main{
         margin-right: 15px;
         display: block;
         padding: 5px 0 5px 35px;
-        animation: fadeInRight;
-        animation-duration: 3s;
+        animation-duration: 2s;
       }
       .green-cube{
         background: url(../img/contacts_greenSquare.png) left center no-repeat;
@@ -581,11 +579,10 @@ main{
       display: flex;
       align-items: center;
       padding: 42px 0px 95px 0px;
-      animation: flipInX;
-      animation-duration: 2s;
 
       a{
         font-size: 23px;
+        animation-duration: 2s;
 
         &:first-child{
           padding: 11px 25px 9px 70px;

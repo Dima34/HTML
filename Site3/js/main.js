@@ -187,11 +187,11 @@ window.onload = function(){
         
     }
     function animPartiallyVisibleRaChild(elem,toElem,Class){
-            if(isPartiallyVisible(elem)){
-                toElem.classList.add(Class);
-            } else{
-                toElem.classList.remove(Class);
-            }
+        if(isPartiallyVisible(elem)){
+            toElem.classList.add(Class);
+        } else{
+            toElem.classList.remove(Class);
+        }
     }
 
     let introTitle = document.querySelector(".intro__title")

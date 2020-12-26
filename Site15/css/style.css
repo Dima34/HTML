@@ -361,7 +361,8 @@ main {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 2; }
+  z-index: 2;
+  animation-duration: 1.2s; }
   .header p {
     color: #242424;
     text-transform: uppercase;
@@ -450,7 +451,6 @@ main {
         padding: 5px 0 5px 44px;
         background: url(../img/contacts_tel.png) left center no-repeat;
         margin-right: 23px;
-        animation: backInLeft;
         animation-duration: 2s; }
         .contacts_content .wrapper .content_line1 p:nth-child(2) {
           background: url(../img/contacts_mail.png) left center no-repeat;
@@ -471,7 +471,6 @@ main {
         padding: 5px 0 5px 44px;
         background: url(../img/contacts_tel.png) left center no-repeat;
         margin-right: 70px;
-        animation: backInRight;
         animation-duration: 2s; }
         .contacts_content .wrapper .content_line2 p:nth-child(2) {
           background: url(../img/contacts_mail.png) left center no-repeat; }
@@ -487,8 +486,7 @@ main {
         margin-right: 15px;
         display: block;
         padding: 5px 0 5px 35px;
-        animation: fadeInRight;
-        animation-duration: 3s; }
+        animation-duration: 2s; }
       .contacts_content .wrapper .content_line3 .green-cube {
         background: url(../img/contacts_greenSquare.png) left center no-repeat; }
       .contacts_content .wrapper .content_line3 .red-cube {
@@ -496,11 +494,10 @@ main {
     .contacts_content .wrapper .content_line4 {
       display: flex;
       align-items: center;
-      padding: 42px 0px 95px 0px;
-      animation: flipInX;
-      animation-duration: 2s; }
+      padding: 42px 0px 95px 0px; }
       .contacts_content .wrapper .content_line4 a {
-        font-size: 23px; }
+        font-size: 23px;
+        animation-duration: 2s; }
         .contacts_content .wrapper .content_line4 a:first-child {
           padding: 11px 25px 9px 70px;
           background: #ffcc00;

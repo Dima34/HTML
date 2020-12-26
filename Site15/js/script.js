@@ -143,3 +143,90 @@ burgerClose.addEventListener('click',()=>{
     burger.classList.remove("active");
 });
 
+
+
+//
+//  Animation
+//
+
+// Animation
+document.addEventListener("DOMContentLoaded", scrolling);
+window.addEventListener('scroll',scrolling);
+
+function isPartiallyVisible(el){
+    var elementBoundary = el.getBoundingClientRect();
+    var top = elementBoundary.top;
+    var bottom = elementBoundary.bottom;
+    var height = elementBoundary.height;
+
+    return((top + height >= 0) && (height + window.innerHeight >= bottom));
+}
+function isFullyVisible(el) {
+    var elementBoundary = el.getBoundingClientRect();
+    
+    var top = elementBoundary.top;
+    var bottom = elementBoundary.bottom;
+
+    return ((top >= 0) && (bottom <= window.innerHeight));
+}
+
+// Elements
+function animPartiallyVisible(elem,Class){
+    if(isPartiallyVisible(elem)){
+        elem.classList.add(Class);
+    }
+}
+function animPartiallyVisibleALL(elem,Class){
+    for(var i = 0; i < elem.length;i++){
+        if(isPartiallyVisible(elem[i])){
+            elem[i].classList.add(Class);
+        }
+    }
+    
+}
+function animPartiallyVisibleReadress(elem,toElem,Class){
+    if(isPartiallyVisible(elem)){
+        toElem.classList.add(Class);
+    }
+}
+function animPartiallyVisibleRaALL(elem,toElem,Class,arrLen){
+    for(var i = 0; i < arrLen;i++){
+        if(isPartiallyVisible(elem[i])){
+            toElem[i].classList.add(Class);
+        }
+    }
+    
+}
+function animPartiallyVisibleRaChildALL(elem,toElem,Class){
+    for(var i = 0; i < toElem.length;i++){
+        if(isPartiallyVisible(elem)){
+            toElem[i].classList.add(Class);
+        }
+    }
+    
+}
+function animPartiallyVisibleRaChild(elem,toElem,Class){
+    if(isPartiallyVisible(elem)){
+        toElem.classList.add(Class);
+    }
+}
+
+let header = document.querySelector(".header");
+let content_line1 = document.querySelectorAll(".content_line1 p");
+let content_line2 = document.querySelectorAll(".content_line2 p");
+
+function queryA(clas){
+    tmp = document.querySelectorAll(clas);
+    console.log(tmp);
+    return tmp;
+}
+
+// Movement
+function scrolling(){
+    console.log('Scroll');
+    animPartiallyVisible(header,"animate__fadeInRight");
+    animPartiallyVisibleALL(content_line1,"animate__backInLeft");
+    animPartiallyVisibleALL(content_line2,"animate__backInRight");
+    animPartiallyVisibleALL(queryA(".content_line3 p"),"animate__backInLeft")
+    animPartiallyVisibleALL(queryA(".content_line4 a"), "animate__flipInX" )
+}
