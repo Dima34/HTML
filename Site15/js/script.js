@@ -151,7 +151,9 @@ burgerClose.addEventListener('click',()=>{
 
 // Animation
 document.addEventListener("DOMContentLoaded", scrolling);
-window.addEventListener('scroll',scrolling);
+window.addEventListener('scroll',scrolling1);
+
+
 
 function isPartiallyVisible(el){
     var elementBoundary = el.getBoundingClientRect();
@@ -171,15 +173,21 @@ function isFullyVisible(el) {
 }
 
 // Elements
-function animPartiallyVisible(elem,Class){
+function animPartiallyVisible(elem,Class,duration = undefined){
     if(isPartiallyVisible(elem)){
         elem.classList.add(Class);
     }
+    if(duration != undefined){
+        elem.style.animationDuration = duration;
+    }
 }
-function animPartiallyVisibleALL(elem,Class){
+function animPartiallyVisibleALL(elem,Class,duration = undefined){
     for(var i = 0; i < elem.length;i++){
         if(isPartiallyVisible(elem[i])){
             elem[i].classList.add(Class);
+        }
+        if(duration != undefined){
+            elem[i].style.animationDuration = duration;
         }
     }
     
@@ -217,16 +225,26 @@ let content_line2 = document.querySelectorAll(".content_line2 p");
 
 function queryA(clas){
     tmp = document.querySelectorAll(clas);
-    console.log(tmp);
+    return tmp;
+}
+function query(clas){
+    tmp = document.querySelector(clas);
     return tmp;
 }
 
 // Movement
-function scrolling(){
+function scrolling1(){
+    console.log('working');
+}
+function scrolling(e){
     console.log('Scroll');
     animPartiallyVisible(header,"animate__fadeInRight");
     animPartiallyVisibleALL(content_line1,"animate__backInLeft");
     animPartiallyVisibleALL(content_line2,"animate__backInRight");
     animPartiallyVisibleALL(queryA(".content_line3 p"),"animate__backInLeft")
     animPartiallyVisibleALL(queryA(".content_line4 a"), "animate__flipInX" )
+    animPartiallyVisible(query(".footer_col1_logo"), "animate__flipInY", "1.2s")
+    animPartiallyVisible(query(".footer_col1_title"), "animate__jackInTheBox", "2s")
+    animPartiallyVisible(query(".footer_col1_desc"), "animate__backInLeft", "1.5s")
+    animPartiallyVisibleALL(queryA(".footer_col1_payments img"), "animate__backInLeft", "2s" )
 }
