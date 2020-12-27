@@ -271,9 +271,6 @@ function loading(){
             clearInterval(ID)
         }
     }, 30);
-
-    
-
 }
 
 setTimeout(()=>{
