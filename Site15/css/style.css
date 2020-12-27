@@ -920,26 +920,38 @@ footer {
     padding: 0;
     z-index: 1; }
     .index_steps .swiper-container3 .swiper-wrapper .swiper-slide {
-      width: 256px;
+      width: 326px;
       display: flex;
       justify-content: center;
       align-items: center;
       position: relative;
       flex-direction: column; }
       .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_img {
-        width: 190px;
-        height: 190px;
         margin-bottom: 16px;
-        position: relative;
         display: block; }
         .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_img::after {
-          content: " ";
+          content: "";
           position: absolute;
-          width: 10px;
+          width: 100%;
           height: 2px;
-          top: 50%;
+          top: 94px;
           left: 0;
-          background: #bababb; }
+          background: #bababb;
+          z-index: -1; }
+        .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_img:hover + .sale_hover {
+          visibility: visible;
+          opacity: 1; }
+        .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_img img {
+          width: 190px;
+          height: 190px; }
+      .index_steps .swiper-container3 .swiper-wrapper .swiper-slide:first-child .sale_img::after {
+        width: 50%;
+        right: 0;
+        left: unset; }
+      .index_steps .swiper-container3 .swiper-wrapper .swiper-slide:last-child .sale_img::after {
+        width: 50%;
+        right: unset;
+        left: 0; }
       .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_hover {
         width: 253px;
         height: 176px;
@@ -953,11 +965,28 @@ footer {
         text-align: center;
         visibility: hidden;
         opacity: 0;
-        position: absolute; }
+        position: absolute;
+        transition: .3s; }
+        .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_hover:hover {
+          visibility: visible;
+          opacity: 1; }
       .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_name {
         font-size: 32px;
         font-family: 'Beba';
         font-weight: 400 !important; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======INDEX MAP========------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.index_map {
+  width: 1552px;
+  height: 433px;
+  background: blanchedalmond;
+  margin: 0 auto; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1059,6 +1088,110 @@ footer {
             left: 0.938vw;
             width: 1.823vw;
             height: 1.250vw; }
+  .index_player {
+    height: 27.448vw; }
+    .index_player .player_btn {
+      width: 6.927vw;
+      height: 6.927vw;
+      margin-bottom: 1.667vw; }
+      .index_player .player_btn img {
+        width: 6.927vw;
+        height: 6.927vw; }
+    .index_player .player_title {
+      max-width: 52.083vw;
+      font-size: 2.865vw;
+      margin-bottom: 1.563vw; }
+    .index_player::after {
+      height: 1.667vw; }
+  .index_intro {
+    padding: 1.458vw 1.302vw 2.708vw 1.458vw; }
+    .index_intro .swiper-container {
+      margin-bottom: 2.083vw; }
+      .index_intro .swiper-container .swiper-wrapper .swiper-slide {
+        height: 17.708vw; }
+      .index_intro .swiper-container .swiper-pagination {
+        right: 0.729vw;
+        bottom: 0.417vw; }
+        .index_intro .swiper-container .swiper-pagination .swiper-pagination-bullet {
+          width: 0.729vw;
+          height: 0.729vw; }
+    .index_intro .index_text {
+      font-size: 1.250vw;
+      padding-right: 3.438vw; }
+  .index_last .index_last_header {
+    padding: 0.677vw 1.563vw; }
+    .index_last .index_last_header h2 {
+      font-size: 1.563vw; }
+  .index_last .index_last_blks {
+    padding: 1.302vw 2.500vw 1.667vw 2.188vw; }
+    .index_last .index_last_blks .index_last_blk {
+      width: 24.948vw;
+      height: 19.271vw; }
+  .index_last .index_last_all {
+    padding: 0.313vw 2.188vw;
+    font-size: 1.146vw;
+    margin-bottom: 3.229vw; }
+  .index_sale .index_sale_header {
+    padding: 0.677vw 1.563vw; }
+    .index_sale .index_sale_header h2 {
+      font-size: 1.563vw; }
+  .index_sale .swiper-container1 {
+    padding: 1.250vw 0 2.292vw 0; }
+    .index_sale .swiper-container1 .swiper-wrapper .swiper-slide {
+      width: 30.156vw;
+      margin-right: 3.646vw; }
+      .index_sale .swiper-container1 .swiper-wrapper .swiper-slide .index_sale_blk .index_sale_blk_img {
+        height: 14.427vw;
+        margin-bottom: 0.833vw; }
+      .index_sale .swiper-container1 .swiper-wrapper .swiper-slide .index_sale_blk .index_sale_blk_title {
+        font-size: 1.563vw;
+        max-width: 24.219vw;
+        margin-bottom: 0.417vw; }
+      .index_sale .swiper-container1 .swiper-wrapper .swiper-slide .index_sale_blk .index_sale_blk_subtitle {
+        max-width: 24.219vw;
+        font-size: 1.146vw;
+        margin-bottom: 1.042vw; }
+      .index_sale .swiper-container1 .swiper-wrapper .swiper-slide .index_sale_blk .index_sale_blk_more {
+        padding: 0.469vw 3.229vw;
+        font-size: 1.146vw; }
+    .index_sale .swiper-container1 .swiper-button-next, .index_sale .swiper-container1 .swiper-button-prev {
+      top: 7.604vw; }
+      .index_sale .swiper-container1 .swiper-button-next img, .index_sale .swiper-container1 .swiper-button-prev img {
+        width: 3.333vw; }
+    .index_sale .swiper-container1 .swiper-button-next {
+      right: 2.552vw; }
+    .index_sale .swiper-container1 .swiper-button-prev {
+      left: 2.552vw; }
+  .index_bages {
+    padding: 2.917vw 0 2.500vw 0; }
+    .index_bages .swiper-container2 .swiper-wrapper .swiper-slide {
+      width: 7.083vw;
+      margin: 0 5.938vw; }
+      .index_bages .swiper-container2 .swiper-wrapper .swiper-slide img {
+        width: 7.083vw;
+        height: 2.708vw; }
+  .index_steps {
+    padding: 3.906vw 0 6.823vw 0; }
+    .index_steps .swiper-container3 .swiper-wrapper .swiper-slide {
+      width: 16.979vw; }
+      .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_img {
+        margin-bottom: 0.833vw; }
+        .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_img::after {
+          height: 2px;
+          top: 4.896vw; }
+        .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_img img {
+          width: 9.896vw;
+          height: 9.896vw; }
+      .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_hover {
+        width: 13.177vw;
+        height: 9.167vw;
+        padding: 0.990vw 1.042vw 2.500vw 1.250vw;
+        font-size: 1.146vw; }
+      .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_name {
+        font-size: 1.667vw; }
+  .index_map {
+    width: 80.833vw;
+    height: 22.552vw; }
   footer {
     padding: 1.146vw 2.448vw 2.031vw 2.396vw; }
     footer .footer_col1 {
@@ -1271,6 +1404,111 @@ footer {
                 left: 1.500vw;
                 width: 2.917vw;
                 height: 2.083vw; }
+      .wrapper_global main .index_player {
+        height: 43.917vw; }
+        .wrapper_global main .index_player .player_btn {
+          width: 11.083vw;
+          height: 11.083vw;
+          margin-bottom: 2.667vw; }
+        .wrapper_global main .index_player .player_title {
+          max-width: 83.333vw;
+          font-size: 4.583vw;
+          margin-bottom: 2.500vw; }
+        .wrapper_global main .index_player::after {
+          height: 2.667vw; }
+      .wrapper_global main .index_intro {
+        padding: 2.333vw 2.083vw 4.333vw 2.333vw; }
+        .wrapper_global main .index_intro .swiper-container {
+          margin-bottom: 3.333vw; }
+          .wrapper_global main .index_intro .swiper-container .swiper-wrapper .swiper-slide {
+            height: 28.333vw; }
+          .wrapper_global main .index_intro .swiper-container .swiper-pagination {
+            right: 1.167vw;
+            bottom: 0.667vw; }
+            .wrapper_global main .index_intro .swiper-container .swiper-pagination .swiper-pagination-bullet {
+              width: 1.167vw;
+              height: 1.167vw; }
+        .wrapper_global main .index_intro .index_text {
+          font-size: 2vw;
+          padding-right: 5.500vw; }
+      .wrapper_global main .index_last .index_last_header {
+        padding: 1.083vw 2.500vw; }
+        .wrapper_global main .index_last .index_last_header h2 {
+          font-size: 2.500vw; }
+      .wrapper_global main .index_last .index_last_blks {
+        padding: 2.083vw 1.5vw 2.667vw 1.5vw; }
+        .wrapper_global main .index_last .index_last_blks .index_last_blk {
+          width: 34.917vw;
+          height: 24.833vw; }
+      .wrapper_global main .index_last .index_last_all {
+        padding: 0.500vw 3.500vw;
+        font-size: 1.833vw;
+        margin-bottom: 5.167vw; }
+      .wrapper_global main .index_sale .index_sale_header {
+        padding: 1.083vw 2.500vw; }
+        .wrapper_global main .index_sale .index_sale_header h2 {
+          font-size: 2.500vw; }
+      .wrapper_global main .index_sale .swiper-container1 {
+        padding: 2vw 0 3.667vw 0; }
+        .wrapper_global main .index_sale .swiper-container1 .swiper-wrapper .swiper-slide {
+          width: 45.25vw;
+          margin-right: 2.5vw;
+          margin-left: 2.5vw; }
+          .wrapper_global main .index_sale .swiper-container1 .swiper-wrapper .swiper-slide .index_sale_blk .index_sale_blk_img {
+            height: 21.52vw;
+            margin-bottom: 1.333vw; }
+          .wrapper_global main .index_sale .swiper-container1 .swiper-wrapper .swiper-slide .index_sale_blk .index_sale_blk_title {
+            font-size: 2.500vw;
+            max-width: 38.750vw;
+            margin-bottom: 0.667vw; }
+          .wrapper_global main .index_sale .swiper-container1 .swiper-wrapper .swiper-slide .index_sale_blk .index_sale_blk_subtitle {
+            max-width: 38.750vw;
+            font-size: 1.833vw;
+            margin-bottom: 1.667vw; }
+          .wrapper_global main .index_sale .swiper-container1 .swiper-wrapper .swiper-slide .index_sale_blk .index_sale_blk_more {
+            padding: 0.750vw 5.167vw;
+            font-size: 1.833vw; }
+        .wrapper_global main .index_sale .swiper-container1 .swiper-button-next, .wrapper_global main .index_sale .swiper-container1 .swiper-button-prev {
+          top: 146px; }
+          .wrapper_global main .index_sale .swiper-container1 .swiper-button-next::after, .wrapper_global main .index_sale .swiper-container1 .swiper-button-prev::after {
+            display: none; }
+          .wrapper_global main .index_sale .swiper-container1 .swiper-button-next img, .wrapper_global main .index_sale .swiper-container1 .swiper-button-prev img {
+            width: 64px;
+            height: auto; }
+        .wrapper_global main .index_sale .swiper-container1 .swiper-button-next {
+          right: 49px; }
+        .wrapper_global main .index_sale .swiper-container1 .swiper-button-prev {
+          left: 49px; }
+      .wrapper_global main .index_bages {
+        padding: 4.667vw 0 4vw 0; }
+        .wrapper_global main .index_bages .swiper-container2 .swiper-wrapper .swiper-slide {
+          width: 11.167vw;
+          margin: 0 9.500vw; }
+          .wrapper_global main .index_bages .swiper-container2 .swiper-wrapper .swiper-slide img {
+            width: 11.167vw;
+            height: 4.333vw; }
+      .wrapper_global main .index_steps {
+        padding: 6.250vw 0 10.917vw 0; }
+        .wrapper_global main .index_steps .swiper-container3 .swiper-wrapper .swiper-slide {
+          width: 20vw; }
+          .wrapper_global main .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_img {
+            margin-bottom: 1.333vw; }
+            .wrapper_global main .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_img::after {
+              height: 2px;
+              top: 6.38vw; }
+            .wrapper_global main .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_img img {
+              width: 12.833vw;
+              height: 12.833vw; }
+          .wrapper_global main .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_hover {
+            width: 21.083vw;
+            height: 14.667vw;
+            padding: 1.583vw 1.667vw 4vw 2vw;
+            font-size: 1.833vw; }
+          .wrapper_global main .index_steps .swiper-container3 .swiper-wrapper .swiper-slide .sale_name {
+            font-size: 2vw; }
+      .wrapper_global main .index_map {
+        width: 129.333vw;
+        height: 36.083vw; }
       .wrapper_global main footer {
         padding: 4vw 2.448vw 3.250vw 2.396vw; }
         .wrapper_global main footer .footer_col1 {
