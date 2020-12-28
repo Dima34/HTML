@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -137,25 +140,286 @@
          
     <!-- Main start -->
     <main>
+        <div class="navigation">
+            <div class="wrapper">
+                <a href="#">Главная ></a>
+                <a href="#">Продукты ></a>
+                <a href="#">Название товара</a>
+            </div>
+        </div>
 
+        <div class="product_product">
+            <div class="wrapper">
+                <div class="product_main">
+                    <div class="product_gallery">
+                        <div class="gallery_left">
+                            <a data-fancybox="gallery" href="./img/product_sertificat.png"><img src="./img/product_sertificat.png"></a>
+                            <a data-fancybox="gallery" href="./img/product_sertificat1.png"><img src="./img/product_sertificat1.png"></a>
+                            <a data-fancybox="gallery" href="./img/product_sertificat3.png"><img src="./img/product_sertificat3.png"></a>
+                        </div>
+                        <div class="gallery_right">
+                            <div class="gallery_right_main-img ibg">
+                                <img class = "main-img" src="./img/product_ico.png" alt="">
+                                <a data-fancybox="gallery1" href="./img/product_ico.png"><img src="./img/product_ico.png"></a>
+                            </div>
+                            <div class="gallery_right_undermain-imgs">
+                                <img src="./img/product_ico.png" alt="product">
+                                <img src="./img/product_ico2.png" alt="product">
+                                <img src="./img/product_ico.png" alt="product">
+                                <img src="./img/product_ico2.png" alt="product">
+                                <img src="./img/product_ico.png" alt="product">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="product_header">
+                            <h1>Длинное название товара</h1>
+                            <a href="#"><img src="./img/svg/product_favorite.svg" alt="favorite"></a>
+                        </div>
+
+                        <div class="product_subtitle">
+                            <div class="product_country">
+                                <p>Страна</p>
+                                <span>Россия</span>
+                            </div>
+
+                            <p class="seasons_header">Сезон</p>
+                            <div class="product_seasons">
+                                <p class="product_season">Декабрь</p>
+                                <p class="product_season">Январь</p>
+                                <p class="product_season product_season-active">Февраль</p>
+                                <p class="product_season product_season-active">Март</p>
+                                <p class="product_season">Апрель</p>
+                                <p class="product_season">Май</p>
+                                <p class="product_season">Июнь</p>
+                                <p class="product_season">Июль</p>
+                                <p class="product_season">Август</p>
+                                <p class="product_season">Сентябрь</p>
+                                <p class="product_season">Октябрь</p>
+                                <p class="product_season">Ноябрь</p>
+                            </div>
+
+                            <p class="product_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl id sed etiam pretium cras porttitor. Enim ut suscipit id sed tellus odio. Erat cras sodales in diam sodales et. Accumsan purus eget nulla morbi diam bibendum sit commodo. </p>
+
+                            <div class="product_variant_header">Варианты упаковки и цены</div>
+                            <div class="products_variants">
+                                <div class="product_variant">
+                                    <input type="radio" name="1" id="type" checked>
+                                    <label for="type">
+                                        <p class="variant_title">Ящик 400х400 мм 75 шт</p>
+                                        <p class="variant_sale">1390 р./шт</p>
+                                        <p class="variant_price">1050 р./шт </p>
+                                        <p class="variant_have">В наличии, коробок:  <span>150</span></p>
+                                    </label>
+                                </div>
+                                <div class="product_variant">
+                                    <input type="radio" name="1" id="type1">
+                                    <label for="type1">
+                                        <p class="variant_title">Ящик 400х400 мм 75 шт</p>
+                                        <p class="variant_sale">1390 р./шт</p>
+                                        <p class="variant_price">1050 р./шт </p>
+                                        <p class="variant_have">В наличии, коробок:  <span>150</span></p>
+                                    </label>
+                                </div>
+                                <div class="product_variant">
+                                    <input type="radio" name="1" id="type2">
+                                    <label for="type2">
+                                        <p class="variant_title">Ящик 400х400 мм 75 шт</p>
+                                        <p class="variant_sale">1390 р./шт</p>
+                                        <p class="variant_price">1050 р./шт </p>
+                                        <p class="variant_have">В наличии, коробок:  <span>150</span></p>
+                                    </label>
+                                </div>
+                                
+                            </div>
+
+                            <div class="product_summ">
+                                <div class="product_counter">
+                                    <p class="counter_minus"><img src="./img/svg/counter_minus.svg" alt="minus"></p>
+                                    <p class="counter_counter">11</p>
+                                    <p class="counter_plus"><img src="./img/svg/counter_plus.svg" alt="plus"></p>
+                                </div>
+                                <p class="product_summ">Стоимость<br> покупки: <span>11550 р</span></p>
+                            </div>
+
+                            <p class="product_min-count">Минальная закупка: 10 коробок</p>
+                            <a href="#" class="product_make-order">В корзину</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product_sidebar">
+                    <div class="sidebar_blk">
+                        <h2 class="sidebar_blk_title">Скидка 15%</h2>
+                        <p class="sidebac_blk_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl id sed etiam pretium cras porttitor. Enim ut suscipit id sed tellus odio. </p>
+                        <img src="./img/svg/sidebar_sale.svg" alt="sidebar img" class="subtitle_img">
+                    </div>
+                    <div class="sidebar_blk">
+                        <h2 class="sidebar_blk_title">Всё свежее!</h2>
+                        <p class="sidebac_blk_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl id sed etiam pretium cras porttitor. Enim ut suscipit id sed tellus odio. </p>
+                        <img src="./img/svg/sidebar_bowl.svg" alt="sidebar img" class="subtitle_img">
+                    </div>
+                    <div class="sidebar_blk">
+                        <h2 class="sidebar_blk_title">Быстрая доставка</h2>
+                        <p class="sidebac_blk_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl id sed etiam pretium cras porttitor. Enim ut suscipit id sed tellus odio. </p>
+                        <img src="./img/svg/sidebar_car.svg" alt="sidebar img" class="subtitle_img">
+                    </div>
+                    <div class="sidebar_tell-friends">
+                        <p class="tell-friens-title">Рассказать друзьям</p>
+                        <a href="#"><img src="./img/svg/sidebar_fb.svg" alt="sidebar ico"></a>
+                        <a href="#"><img src="./img/svg/sidebar_tw.svg" alt="sidebar ico"></a>
+                        <a href="#"><img src="./img/svg/sidebar_vk.svg" alt="sidebar ico"></a>
+                        <a href="#"><img src="./img/svg/sidebar_viber.svg" alt="sidebar ico"></a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="product_same_cathegory">
+            <div class="wrapper">
+                <h2 class="product_title">Товары из той же категории</h2>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product_blk">
+                                <div class="product_img ibg">
+                                    <img src="./img/apple.png" alt="img" class="">
+                                </div>
+                                <p class="product_country">Россия</p>
+                                <h2 class="product_title">Длинное название товара</h2>
+                                <p class="product_description">Краткое описание товара</p>
+                                <p class="product_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                                <p class="product_crossed-price">1690 р./10 к</p>
+                                <p class="product_price">от 1250 р. <span>за 1 коробку</span></p>
+                                <p class="product_buy-minimum">Минальная закупка: 10 коробок</p>
+                                <a href="#" class="product_button">В корзину</a>
+                                <a href="#" class="product_heart"><img src="./img/svg/product_heart.svg" alt="img"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product_blk">
+                                <div class="product_img ibg">
+                                    <img src="./img/apple.png" alt="img" class="">
+                                </div>
+                                <p class="product_country">Россия</p>
+                                <h2 class="product_title">Длинное название товара</h2>
+                                <p class="product_description">Краткое описание товара</p>
+                                <p class="product_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                                <p class="product_crossed-price">1690 р./10 к</p>
+                                <p class="product_price">от 1250 р. <span>за 1 коробку</span></p>
+                                <p class="product_buy-minimum">Минальная закупка: 10 коробок</p>
+                                <a href="#" class="product_button">В корзину</a>
+                                <a href="#" class="product_heart"><img src="./img/svg/product_heart.svg" alt="img"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product_blk">
+                                <div class="product_img ibg">
+                                    <img src="./img/apple.png" alt="img" class="">
+                                </div>
+                                <p class="product_country">Россия</p>
+                                <h2 class="product_title">Длинное название товара</h2>
+                                <p class="product_description">Краткое описание товара</p>
+                                <p class="product_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                                <p class="product_crossed-price">1690 р./10 к</p>
+                                <p class="product_price">от 1250 р. <span>за 1 коробку</span></p>
+                                <p class="product_buy-minimum">Минальная закупка: 10 коробок</p>
+                                <a href="#" class="product_button">В корзину</a>
+                                <a href="#" class="product_heart"><img src="./img/svg/product_heart.svg" alt="img"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product_blk">
+                                <div class="product_img ibg">
+                                    <img src="./img/apple.png" alt="img" class="">
+                                </div>
+                                <p class="product_country">Россия</p>
+                                <h2 class="product_title">Длинное название товара</h2>
+                                <p class="product_description">Краткое описание товара</p>
+                                <p class="product_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                                <p class="product_crossed-price">1690 р./10 к</p>
+                                <p class="product_price">от 1250 р. <span>за 1 коробку</span></p>
+                                <p class="product_buy-minimum">Минальная закупка: 10 коробок</p>
+                                <a href="#" class="product_button">В корзину</a>
+                                <a href="#" class="product_heart"><img src="./img/svg/product_heart.svg" alt="img"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product_blk">
+                                <div class="product_img ibg">
+                                    <img src="./img/apple.png" alt="img" class="">
+                                </div>
+                                <p class="product_country">Россия</p>
+                                <h2 class="product_title">Длинное название товара</h2>
+                                <p class="product_description">Краткое описание товара</p>
+                                <p class="product_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                                <p class="product_crossed-price">1690 р./10 к</p>
+                                <p class="product_price">от 1250 р. <span>за 1 коробку</span></p>
+                                <p class="product_buy-minimum">Минальная закупка: 10 коробок</p>
+                                <a href="#" class="product_button">В корзину</a>
+                                <a href="#" class="product_heart"><img src="./img/svg/product_heart.svg" alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Main end -->
 
     <!-- Footer start -->
     <footer>
+        <div class="wrapper">
+            <div class="footer_logo">
+                <img src="./img/footer_logo.png" alt="footer_logo">
+                <div class="footer_links">
+                    <a href="#"><img src="./img/svg/footer_fb.svg" alt="footer link"></a>
+                    <a href="#"><img src="./img/svg/footer_inst.svg" alt="footer link"></a>
+                    <a href="#"><img src="./img/svg/footer_twit.svg" alt="footer link"></a>
+                    <a href="#"><img src="./img/svg/footer_linkedin.svg" alt="footer link"></a>
+                </div>
+            </div>
+            <div class="footer_menu">
+                <ul class="footer_nav">
+                    <li class="navlistitem">О нас</li>
+                    <li class="navlistitem">Продукты</li>
+                    <li class="navlistitem">Сотрудничество</li>
+                    <li class="navlistitem">Доставка и оплата</li>
+                </ul>
+                <div class="footer_contacts">
+                    <a href="tel:+89099097700" class="footer_tel">8 909 909 7700</a>
+                    <a href="#" class="footer_callme">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="footer_rights">
+                <p>Редакция © 2020 all-green.ru Все права защищены </p>
+                <p>Сайт создан в компании DECENTURY</p>
+            </div>
+        </div>
 
     </footer>
     <!-- Footer end -->
 
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    
+    
     <script>
-	    var swiper = new Swiper('.swiper-container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+		var swiper = new Swiper('.swiper-container', {
+        slidesPerView: "auto",
+        freeMode: true,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            hide: false,
+            draggable: true,
+        },
+        });
+
+        swiper.destroy();
 	</script>
 </body>
 </html>

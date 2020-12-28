@@ -31,7 +31,6 @@ let hasChild = document.querySelectorAll(".has-child");
 let backBtn = document.querySelectorAll(".childmenu_back");
 
 for (let i = 0; i < hasChild.length; i++) {
-    console.log(hasChild[i].querySelector("a"));
     hasChild[i].querySelector("a").addEventListener('click',()=>{
         hasChild[i].classList.add("has-child-active");
     });
@@ -46,8 +45,7 @@ for (let i = 0; i < backBtn.length; i++) {
 
 let childHasChild = document.querySelectorAll(".child-has-child");
 
-for (let i = 0; i < childHasChild.length; i++) {
-    
+for (let i = 0; i < childHasChild.length; i++) {   
     childHasChild[i].addEventListener('click',()=>{
         for (let b = 0; b < childHasChild.length; b++) {
             if(b != i){
@@ -55,8 +53,59 @@ for (let i = 0; i < childHasChild.length; i++) {
             }
         }
         childHasChild[i].classList.add("child-has-child-active");
-
-        
-    });
-    
+    });  
 }
+
+
+//
+//  Gallery
+//
+
+let mainImage = document.querySelector(".main-img");
+let mainImageLink = document.querySelector(".gallery_right_main-img a");
+let undermainImages = document.querySelectorAll(".gallery_right_undermain-imgs img");
+
+if(mainImage){
+
+    for (let i = 0; i < undermainImages.length; i++) {
+        
+        undermainImages[i].addEventListener('click',()=>{
+            let icoWay = undermainImages[i].getAttribute("src");
+            mainImage.src = icoWay;
+            mainImageLink.href = icoWay;
+            ibg();
+        });
+    }
+}
+
+
+//
+//  Counters
+//
+
+let counter = document.querySelectorAll(".counter_counter");
+let plus = document.querySelectorAll(".counter_plus");
+let minus = document.querySelectorAll(".counter_minus");
+
+for (let b = 0; b < plus.length; b++) {
+    
+    plus[b].addEventListener('click',()=>{
+        tmp = counter[b].innerHTML;
+        if(tmp >= 0){
+            tmp ++;
+            counter[b].innerHTML = tmp;
+        }
+    });
+}
+
+for (let b = 0; b < minus.length; b++) {
+    
+    minus[b].addEventListener('click',()=>{
+        tmp = counter[b].innerHTML;
+        if(tmp > 0){
+            tmp --;
+            counter[b].innerHTML = tmp;
+        }
+    });
+}
+
