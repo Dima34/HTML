@@ -419,7 +419,23 @@
         },
         });
 
-        swiper.destroy();
+        if(window.innerWidth >768){
+            swiper.detachEvents();   
+        }
+        if(window.innerWidth <768){
+            swiper.attachEvents();   
+        }
+
+        window.addEventListener("resize", ()=>{
+            if(window.innerWidth >768){
+                swiper.detachEvents();  
+                console.log('detach'); 
+            }   
+            if(window.innerWidth <768){
+                swiper.attachEvents(); 
+                console.log('attach');  
+            }
+        })
 	</script>
 </body>
 </html>
