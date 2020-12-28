@@ -150,6 +150,10 @@
 
         <div class="product_product">
             <div class="wrapper">
+                <div class="product_header-mobile" style = "display: none;">
+                    <h1>Длинное название товара</h1>
+                    <a href="#"><img src="./img/svg/product_favorite.svg" alt="favorite"></a>
+                </div>
                 <div class="product_main">
                     <div class="product_gallery">
                         <div class="gallery_left">
@@ -235,6 +239,7 @@
                             </div>
 
                             <div class="product_summ">
+                                <p class="summ_title">Количество<br> коробок:</p>
                                 <div class="product_counter">
                                     <p class="counter_minus"><img src="./img/svg/counter_minus.svg" alt="minus"></p>
                                     <p class="counter_counter">11</p>
@@ -409,31 +414,67 @@
     
     
     <script>
+        
 		var swiper = new Swiper('.swiper-container', {
-        slidesPerView: "auto",
-        freeMode: true,
-        scrollbar: {
-            el: '.swiper-scrollbar',
-            hide: false,
-            draggable: true,
-        },
-        });
+            slidesPerView: "auto",
+            freeMode: true,
+            allowTouchMove: false,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false,
+                draggable: true,
+            },
+        });   
 
         if(window.innerWidth >768){
-            swiper.detachEvents();   
+            var swiper = new Swiper('.swiper-container', {
+            slidesPerView: "auto",
+            freeMode: true,
+            allowTouchMove: false,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false,
+                draggable: true,
+            },
+        });    
         }
         if(window.innerWidth <768){
-            swiper.attachEvents();   
+            var swiper = new Swiper('.swiper-container', {
+            slidesPerView: "auto",
+            freeMode: true,
+            allowTouchMove: true,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false,
+                draggable: true,
+            },
+            });  
         }
 
         window.addEventListener("resize", ()=>{
             if(window.innerWidth >768){
-                swiper.detachEvents();  
-                console.log('detach'); 
+            var swiper = new Swiper('.swiper-container', {
+            slidesPerView: "auto",
+            freeMode: true,
+            allowTouchMove: false,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false,
+                draggable: true,
+                },
+            });  
             }   
             if(window.innerWidth <768){
-                swiper.attachEvents(); 
-                console.log('attach');  
+                var swiper = new Swiper('.swiper-container', {
+                slidesPerView: "auto",
+                freeMode: true,
+                allowTouchMove: true,
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                    hide: false,
+                    draggable: true,
+                },
+                });  
             }
         })
 	</script>
