@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -20,14 +21,36 @@
             <div class="wrapper">
                 <input type="search" name="search" id="searc" placeholder="Начните вводить название товара, например “Банан”">
                 <a href="#">
-                    <p class="desktop">Поиск</p>
-                    <img class = "mobile" src="" alt="search">
+                    <p class="desktop"><span class="desktop-1">Искать</span><span class="desktop-2"><img src="./img/search-mobile.svg" alt="img"></span></p>
+                    <img class="mobile" src="" alt="search">
                 </a>
+            </div>
+        </div>
+
+        <div class="intro">
+            <div class="wrapper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ibg"><img src="./img/intro.png" alt="img"></div>
+                        <div class="swiper-slide ibg"><img src="./img/intro.png" alt="img"></div>
+                        <div class="swiper-slide ibg"><img src="./img/intro.png" alt="img"></div>
+                    </div>
+                    <div class="swiper-button-next"><img src="./img/arrow-right.png" alt="img"></div>
+                    <div class="swiper-button-prev"><img src="./img/arrow-left.png" alt="img"></div>
+                </div>
             </div>
         </div>
 
         <div class="categories">
             <div class="wrapper">
+
+                <div class="categories_blk_mobile">
+                    <a href="#">Овощи</a>
+                    <a href="#">Фрукты</a>
+                    <a href="#">Экзотические фрукты</a>
+                    <a href="#">Ягоды</a> 
+                </div>
+
                 <a href="#" class="categories_blk">
                     <div class="blk_img ibg"><img src="./img/categories-img.png" alt="img"></div>
                     <p class="blk_title">Овощи</p>
@@ -48,6 +71,112 @@
                     <div class="blk_img ibg"><img src="./img/categories-img.png" alt="img"></div>
                     <p class="blk_title">Овощи</p>
                 </a>
+            </div>
+        </div>
+
+        <div class="welcome">
+            <div class="wrapper">
+                <h2 class="welcome_title">Добро пожаловать на сайт All-green</h2>
+                <div class="welcome_sub-title">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl id sed etiam pretium cras porttitor. Enim ut suscipit id sed tellus odio. Erat cras sodales in diam sodales et. Accumsan purus eget nulla morbi diam bibendum sit commodo. Orci sed enim vulputate consequat, mauris volutpat feugiat consectetur. Ultrices sit purus neque placerat duis. Diam eu odio mattis quisque. Consectetur quam aenean semper etiam. Sed diam arcu eget ut. Turpis penatibus penatibus arcu habitant nibh risus integer volutpat. Augue est natoque nullam tortor senectus augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl id sed etiam pretium cras porttitor. Enim ut suscipit id sed tellus odio. Erat cras sodales in diam sodales et. Accumsan purus eget nulla morbi diam bibendum sit commodo. Orci sed enim vulputate consequat, mauris volutpat feugiat consectetur. Ultrices sit purus neque placerat duis. Diam eu odio mattis quisque. Consectetur quam aenean semper etiam. Sed diam arcu eget ut. Turpis penatibus penatibus arcu habitant nibh risus integer volutpat. Augue est natoque nullam tortor senectus.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popular">
+            <div class="wrapper">
+                <h2 class="welcome_title">Популярные товары</h2>
+                <div class="popular_blocks">
+                    <div class="popular_blk">
+                        <img src="./img/apple.png" alt="img" class="popular_img">
+                        <p class="popular_country">Россия</p>
+                        <h2 class="popular_title">Длинное название товара</h2>
+                        <p class="popular_description">Краткое описание товара</p>
+                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                        <p class="popular_crossed-price">1690 р./10 к</p>
+                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
+                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
+                        <a href="#" class="popular_button">Подробнее</a>
+                    </div>
+                    <div class="popular_blk">
+                        <img src="./img/apple.png" alt="img" class="popular_img">
+                        <p class="popular_country">Россия</p>
+                        <h2 class="popular_title">Длинное название товара</h2>
+                        <p class="popular_description">Краткое описание товара</p>
+                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                        <p class="popular_crossed-price">1690 р./10 к</p>
+                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
+                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
+                        <a href="#" class="popular_button">Подробнее</a>
+                    </div>
+                    <div class="popular_blk">
+                        <img src="./img/apple.png" alt="img" class="popular_img">
+                        <p class="popular_country">Россия</p>
+                        <h2 class="popular_title">Длинное название товара</h2>
+                        <p class="popular_description">Краткое описание товара</p>
+                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                        <p class="popular_crossed-price">1690 р./10 к</p>
+                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
+                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
+                        <a href="#" class="popular_button">Подробнее</a>
+                    </div>
+                    <div class="popular_blk">
+                        <img src="./img/apple.png" alt="img" class="popular_img">
+                        <p class="popular_country">Россия</p>
+                        <h2 class="popular_title">Длинное название товара</h2>
+                        <p class="popular_description">Краткое описание товара</p>
+                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                        <p class="popular_crossed-price">1690 р./10 к</p>
+                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
+                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
+                        <a href="#" class="popular_button">Подробнее</a>
+                    </div>
+                    <div class="popular_blk">
+                        <img src="./img/apple.png" alt="img" class="popular_img">
+                        <p class="popular_country">Россия</p>
+                        <h2 class="popular_title">Длинное название товара</h2>
+                        <p class="popular_description">Краткое описание товара</p>
+                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                        <p class="popular_crossed-price">1690 р./10 к</p>
+                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
+                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
+                        <a href="#" class="popular_button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="popular_footer">
+                    <p class="popular-footer-p">Если вы хотите, чтоб наш каталог был у вас всегда под рукой, то вы можете</p>
+                    <a href="#" class="popular-footer-button">Скачать каталог</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="advantages">
+            <div class="wrapper">
+                <div class="advantages_blk">
+                    <h2>Наши преимущества</h2>
+                </div>
+                <div class="advantages_blocks">
+                    <div class="block">
+                        <img src="./img/truck.png" alt="img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>  
+                    <div class="block">
+                        <img src="./img/truck.png" alt="img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>   
+                    <div class="block">
+                        <img src="./img/truck.png" alt="img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>   
+                    <div class="block">
+                        <img src="./img/truck.png" alt="img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>   
+                    <div class="block">
+                        <img src="./img/truck.png" alt="img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>     
+                </div>                  
             </div>
         </div>
         
@@ -60,6 +189,15 @@
     </footer>
     <!-- Footer end -->
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+	    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+	</script>
 </body>
 </html>
