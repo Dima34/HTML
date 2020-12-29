@@ -2091,6 +2091,109 @@ header {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* ------=======TRACKING=========------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.tracking .wrapper {
+  padding-top: 55px; }
+  .tracking .wrapper .tracking_header {
+    font-size: 36px;
+    line-height: 34px;
+    font-family: "Gotham" !important;
+    font-weight: 500 !important;
+    margin-bottom: 80px; }
+  .tracking .wrapper .tracking_track .track_title {
+    font-size: 24px;
+    line-height: 23px;
+    font-family: "Gotham" !important;
+    font-weight: 500 !important;
+    color: #373737;
+    margin-bottom: 15px; }
+  .tracking .wrapper .tracking_track .track_groupbox .track_input {
+    font-size: 14px;
+    line-height: 13px;
+    font-family: "Gotham" !important;
+    font-weight: 400 !important;
+    padding: 11px 20px;
+    background: 0;
+    border-radius: 7px;
+    border: 1px solid #D8DCE4;
+    width: 494px;
+    margin-right: 10px; }
+    .tracking .wrapper .tracking_track .track_groupbox .track_input::placeholder {
+      font-size: 14px;
+      line-height: 13px;
+      font-family: "Gotham" !important;
+      font-weight: 400 !important; }
+  .tracking .wrapper .tracking_track .track_groupbox .track_btn {
+    background: #61A036;
+    border-radius: 7px;
+    padding: 15px 30px;
+    color: white;
+    font-family: "Gotham" !important;
+    font-weight: 400 !important; }
+  .tracking .wrapper .tracking_track .track_description {
+    font-size: 16px;
+    line-height: 153.69%;
+    font-family: "Gotham" !important;
+    font-weight: 400 !important;
+    color: #656565;
+    margin-bottom: 80px; }
+  .tracking .wrapper .tracking_result .result_header {
+    font-family: "Gotham" !important;
+    font-weight: 500 !important;
+    font-size: 36px;
+    line-height: 34px;
+    margin-bottom: 20px; }
+  .tracking .wrapper .tracking_result .result_groupbox {
+    font-family: "Gotham" !important;
+    font-weight: 400 !important; }
+    .tracking .wrapper .tracking_result .result_groupbox .result_title {
+      font-size: 16px;
+      line-height: 153.69%;
+      color: #626262;
+      margin-bottom: 5px; }
+    .tracking .wrapper .tracking_result .result_groupbox .result_value {
+      font-size: 18px;
+      line-height: 153.69%;
+      color: #000000;
+      margin-bottom: 30px; }
+    .tracking .wrapper .tracking_result .result_groupbox:last-of-type .result_value {
+      margin-bottom: 58px; }
+  .tracking .wrapper .tracking_result .result_details {
+    margin-bottom: 30px; }
+    .tracking .wrapper .tracking_result .result_details .result_title {
+      margin-bottom: 6px; }
+    .tracking .wrapper .tracking_result .result_details .details_stage {
+      font-size: 18px;
+      line-height: 17px;
+      padding: 2px 0 2px 30px;
+      margin-top: 85px;
+      position: relative;
+      background: url(../img/svg/stage_unactive.svg) left center no-repeat;
+      background-size: 20px; }
+      .tracking .wrapper .tracking_result .result_details .details_stage::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -65px;
+        width: 2px;
+        height: 45px;
+        background: #C4C4C4; }
+      .tracking .wrapper .tracking_result .result_details .details_stage:nth-child(2) {
+        margin-top: 0; }
+        .tracking .wrapper .tracking_result .result_details .details_stage:nth-child(2)::after {
+          display: none; }
+    .tracking .wrapper .tracking_result .result_details .details_stage-active {
+      background: url(../img/svg/stage_active.svg) left center no-repeat;
+      background-size: 20px; }
+      .tracking .wrapper .tracking_result .result_details .details_stage-active::after {
+        background: black; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======FOOTER=======-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2872,6 +2975,16 @@ footer .wrapper {
         font-size: 0.833vw;
         line-height: 0.781vw;
         margin-bottom: 0.417vw; } }
+
+@media screen and (max-width: 1024px) {
+  .tracking .wrapper {
+    width: 90vw; }
+    .tracking .wrapper .track_btn {
+      display: inline-block;
+      width: fit-content;
+      margin-top: 5px; }
+    .tracking .wrapper .tracking_track .track_groupbox .track_input {
+      width: 460px; } }
 
 @media screen and (max-width: 768px) {
   .wrapper {
@@ -4800,6 +4913,30 @@ footer .wrapper {
       margin-bottom: 11.250vw; }
       .coop_qa .wrapper .qa_a:last-child {
         margin-bottom: 34.688vw; }
+  .tracking .wrapper .tracking_header {
+    font-size: 7.500vw;
+    line-height: 7.188vw;
+    margin-bottom: 50px; }
+  .tracking .wrapper .tracking_track .track_title {
+    font-size: 5.625vw;
+    line-height: 5.313vw; }
+  .tracking .wrapper .tracking_track .track_groupbox .track_input {
+    width: 100%; }
+  .tracking .wrapper .tracking_track .track_groupbox .track_btn {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 5px; }
+  .tracking .wrapper .tracking_track .track_description {
+    margin-bottom: 30px; }
+  .tracking .wrapper .tracking_track:nth-child(3) .track_description {
+    margin-bottom: 80px; }
+  .tracking .wrapper .tracking_result .result_header {
+    font-family: "Gotham" !important;
+    font-weight: 400 !important;
+    font-size: 24px;
+    line-height: 23px;
+    margin-bottom: 20px; }
   footer .wrapper {
     padding: 6.250vw 0 9.375vw 0; }
     footer .wrapper .footer_logo {

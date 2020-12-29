@@ -2736,6 +2736,158 @@ header{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* ------=======TRACKING=========------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.tracking{
+  .wrapper{
+    padding-top: 55px;
+
+    .tracking_header{
+      font-size: 36px;
+      line-height: 34px;
+      @include Gotham(500);
+      margin-bottom: 80px;
+    }
+
+    .tracking_track{
+
+
+      .track_title{
+        font-size: 24px;
+        line-height: 23px;
+        @include Gotham(500);
+        color: #373737;
+        margin-bottom: 15px;
+      }
+
+      .track_groupbox{
+
+        .track_input{
+          font-size: 14px;
+          line-height: 13px;
+          @include Gotham(400);
+          padding: 11px 20px;
+          background: 0;
+          border-radius: 7px;
+          border: 1px solid #D8DCE4;
+          width: 494px;
+          margin-right: 10px;
+  
+          &::placeholder{
+            font-size: 14px;
+            line-height: 13px;
+            @include Gotham(400);
+          }
+        }
+  
+        .track_btn{
+          background: #61A036;
+          border-radius: 7px;
+          padding: 15px 30px;
+          color: white;
+          @include Gotham(400);
+        }
+      }
+
+      
+
+      .track_description{
+        font-size: 16px;
+        line-height: 153.69%;
+        @include Gotham(400);
+        color: #656565;
+        margin-bottom: 80px;
+      }
+    }
+
+    .tracking_result{
+
+      .result_header{
+        @include Gotham(500);
+        font-size: 36px;
+        line-height: 34px;
+        margin-bottom: 20px;
+      }
+
+      .result_groupbox{
+        @include Gotham(400);
+
+        .result_title{
+          font-size: 16px;
+          line-height: 153.69%;
+          color: #626262;
+          margin-bottom: 5px;
+        }
+        
+        .result_value{
+          font-size: 18px;
+          line-height: 153.69%;
+          color: #000000; 
+          margin-bottom: 30px;
+        }
+
+        &:last-of-type{
+          .result_value{ 
+            margin-bottom: 58px;
+          }
+
+        }
+      }
+
+      .result_details{
+        margin-bottom: 30px;
+
+        .result_title{
+          margin-bottom: 6px;
+        }
+
+        .details_stage{
+          font-size: 18px;
+          line-height: 17px;
+          padding: 2px 0 2px 30px;
+          margin-top: 85px;
+          position: relative;
+          background: url(../img/svg/stage_unactive.svg) left center no-repeat;
+          background-size: 20px;
+
+          &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -65px;
+            width: 2px;
+            height: 45px;
+            background:#C4C4C4;
+          }
+          
+          &:nth-child(2){
+            margin-top: 0;
+
+            &::after{
+              display: none;
+            }
+          }
+        }
+
+        .details_stage-active{
+          background: url(../img/svg/stage_active.svg) left center no-repeat;
+          background-size: 20px;
+
+          &::after{
+            background:black;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======FOOTER=======-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -4126,6 +4278,25 @@ footer{
         }
       }
     }
+  }
+}
+
+@media screen and(max-width: 1024px){
+  .tracking{
+    .wrapper{
+      width: 90vw;
+
+      .track_btn{
+        display: inline-block;
+        width: fit-content;
+        margin-top: 5px;
+      }
+  
+      .tracking_track .track_groupbox .track_input{
+        width: 460px;
+      }
+    }
+    
   }
 }
 
@@ -5734,7 +5905,6 @@ footer{
     }
   }
 
-
   footer{
     .wrapper{
       padding:2.604vw 0;
@@ -7286,6 +7456,63 @@ footer{
       }
     }
   }
+
+  .tracking{
+    .wrapper{
+  
+      .tracking_header{
+        font-size: 7.500vw;
+        line-height: 7.188vw;
+        margin-bottom: 50px;
+      }
+  
+      .tracking_track{
+  
+        .track_title{
+          font-size: 5.625vw;
+          line-height: 5.313vw;
+        }
+  
+        .track_groupbox{
+          .track_input{
+            width: 100%;
+          }
+  
+          .track_btn{
+            width: 100%;
+            margin-top: 10px;
+            text-align: center;
+            margin-bottom: 5px;
+          }
+        }
+  
+        
+  
+        .track_description{
+          margin-bottom: 30px;
+        }
+
+        &:nth-child(3){
+          .track_description{
+            margin-bottom: 80px;
+          }
+        }
+      }
+  
+      .tracking_result{
+  
+        .result_header{
+          @include Gotham(400);
+          font-size: 24px;
+          line-height: 23px;
+          margin-bottom: 20px;
+        }
+  
+        
+      }
+    }
+  }
+  
 
   footer{
     .wrapper{
