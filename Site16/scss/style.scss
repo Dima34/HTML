@@ -4010,7 +4010,7 @@ footer{
   }
 
   .cathalog_cathalog{
-    margin-bottom: 4.167vw;
+    margin-bottom: 5.599vw;
 
     .wrapper{
 
@@ -4019,7 +4019,7 @@ footer{
       }
 
       .cathalog_main{
-        margin-left: 2.760vw;
+        margin-left: 0;
 
         .all-products{
           display: block !important;
@@ -4030,12 +4030,14 @@ footer{
           line-height: 2.214vw;
           @include Gotham(400);
           color: #FFFFFF;
+          margin-right: auto;
+          height: fit-content;
         }
 
         .all-products_popup{
           display: block;
           position: fixed;
-          z-index: 2;
+          z-index: 6;
           left: 0;
           top: 0;
           width: 100%;
@@ -4043,6 +4045,9 @@ footer{
           background: white;
           overflow-x: scroll;
           padding: 0 10px;
+          padding-top: 50px;
+          transform: translateX(100%);
+          transition: .3s;
 
           .all-products_popup_wrapper{
             position: sticky;
@@ -4152,137 +4157,156 @@ footer{
             }
           }
 
+          .all-products_popup_close{
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            width: 30px;
+            height: 30px;
+          }
           
         }
 
+        .all-products_popup-active{
+          transform: translate(0);
+        }
+
         .cathalog_main_filter{
-          margin-bottom: 2.083vw;
+          margin-bottom: 4.427vw;
+          flex-wrap: wrap;
+          justify-content: flex-end;
 
           .cathalog_main_filter_groupbox{
-            margin-right: 1.510vw;
+            margin-right: 2.604vw;
+            margin-bottom: 2.604vw;
 
             .filter_title{
-              margin-right: 0.781vw;
-              font-size: 0.938vw;
-              line-height: 0.885vw;
+              margin-right: 1.302vw;
+              font-size: 2.344vw;
+              line-height: 2.344vw;
             }
 
             .filter_selection{
-              border-radius: 0.365vw;
-              padding:0.521vw;
-              font-size: 0.938vw;
-              line-height: 0.885vw;
+              border-radius: 0.911vw;
+              padding:1.302vw 3.906vw 1.302vw 1.302vw;
+              font-size: 2.344vw;
+              line-height: 2.344vw;
             }
 
             &::after{
-              width: 0.521vw;
-              height: 0.313vw;
-              right: 0.833vw;
-            }
-
-            &:nth-of-type(1){
-
-              .filter_selection{
-                min-width: 6.042vw;
-              }
+              width: 1.302vw;
+              height: 0.781vw;
+              right: 1.302vw;
             }
 
             &:nth-of-type(2){
 
               .filter_selection{
-                min-width: 13.542vw;
+                min-width: 15.104vw;
               }
             }
 
             &:nth-of-type(3){
+              margin-right: 0;
 
               .filter_selection{
-                min-width: 13.698vw;
+                min-width: 33.073vw;
               }
             }
+
+            &:nth-of-type(4){
+
+              .filter_selection{
+                min-width: 34.245vw;
+              }
+
+              margin-right: 0;
+            }
+
           }
         }
 
         .cathalog_products{
-          column-gap: 2.344vw;
-          row-gap: 4.948vw;
+          column-gap: 3.776vw;
+          row-gap: 6.380vw;
+          grid-template-columns: repeat(3, 1fr);
 
           .product_blk{
-            width: 13.646vw;
+            width: 29.427vw;
 
             .product_img{
-              height: 12.188vw;
-              margin-bottom: 0.781vw;
+              height: 26.172vw;
+              margin-bottom: 1.953vw;
             }
 
             .product_country{
-              font-size: 0.938vw;
-              line-height: 0.885vw;
-              margin-bottom: 0.781vw;
+              font-size: 1.823vw;
+              line-height: 3.190vw;
+              margin-bottom: 0.651vw;
             }
 
             .product_title{
-              font-size: 1.250vw;
-              line-height: 1.198vw;
-              margin-bottom: 0.781vw;
+              font-size: 1.823vw;
+              line-height: 3.125vw;
+              margin-bottom: 0.651vw;
             }
 
             .product_description{
-              font-size: 0.938vw;
-              line-height: 0.885vw;
-              margin-bottom: 1.042vw;
+              font-size: 1.693vw;
+              line-height: 114%;
+              margin-bottom: 4.557vw;
             }
 
             .product_availability{
-              font-size: 0.833vw;
-              line-height: 0.781vw;
-              margin-bottom: 29px;
+              font-size: 1.693vw;
+              line-height: 1.563vw;
+              margin-bottom: 2.604vw;
 
               span{
-                font-size: 0.833vw;
-                line-height: 0.781vw;
+                font-size: 1.693vw;
+                line-height: 1.693vw;
               }
             }
 
             .product_crossed-price{
-              font-size: 0.938vw;
-              line-height: 0.885vw;
-              margin-bottom: 0.260vw;
+              font-size: 1.823vw;
+              line-height: 1.823vw;
+              margin-bottom: 1.302vw;
             }
 
             .product_price{
-              font-size: 1.250vw;
-              line-height: 1.198vw;
-              margin-bottom: 0.781vw;
+              font-size: 3.125vw;
+              line-height: 2.995vw;
+              margin-bottom: 3.906vw;
 
               span{
-                font-size: 0.938vw;
-                line-height: 0.938vw;
+                font-size: 1.823vw;
+                line-height: 1.823vw;
               }
             }
 
             .product_buy-minimum{
-              font-size: 0.833vw;
-              line-height: 0.781vw;
-              margin-bottom: 0.781vw;
+              font-size: 1.563vw;
+              line-height: 1.563vw;
+              margin-bottom:1.953vw;
             }
 
             .product_button{
-              border-radius: 0.365vw;
-              padding: 0.833vw;
-              font-size: 0.833vw;
-              line-height: 0.781vw;
+              border-radius: 7px;
+              padding: 1.823vw;
+              font-size:1.823vw;
+              line-height: 1.823vw;
             }
 
             .product_heart{
-              top: 0.177vw;
-              right: 0.625vw;
-              width: 1.042vw;
-              height: 0.938vw;
+              top: 1.823vw;
+              right: 1.823vw;
+              width: 2.604vw;
+              height: 2.604vw;
 
               img{  
-                width: 1.042vw;
-                height: 0.938vw;
+                width: 2.604vw;
+                height: 2.604vw;
               }
             }
           }
@@ -4292,15 +4316,15 @@ footer{
   }
 
   .page_navigation{
-    margin-bottom: 5.469vw;
+    margin-bottom: 7.813vw;
 
     .navigation_left,.navigation_right{
 
       a{
 
         img{
-          width: 2.344vw;
-          height: 2.344vw;
+          width: 5.208vw;
+          height: 5.208vw;
         }
       }
     }
@@ -4308,23 +4332,23 @@ footer{
     .navigation_left,.navigation_right{
 
       a:first-child{
-        margin-right: 0.781vw;
+        margin-right: 1.693vw;
       }
     }
 
     .navigation_pagination{
-      padding: 0 1.302vw;
+      padding: 0 2.604vw;
 
       .pagination_blk{
-        height: 2.604vw;
-        padding: 0.833vw 0.469vw;
-        min-width: 2.604vw;
-        border-radius: 0.365vw;
-        margin-right: 0.521vw;
+        height: 5.859vw;
+        padding: 1.953vw 1.042vw;
+        min-width: 5.859vw;
+        border-radius: 7px;
+        margin-right: 1.302vw;
 
         p{
-          font-size: 1.042vw;
-          line-height: 0.990vw;
+          font-size: 2.344vw;
+          line-height: 2.244vw;
         }
 
       }
@@ -4988,6 +5012,430 @@ footer{
         padding-left: 6.250vw;
       }
     }
+  }
+
+  .cathalog_cathalog{
+    margin-bottom: 15.313vw;
+
+    .wrapper{
+
+      .cathalog_sidebar{
+        display: none;
+      }
+
+      .cathalog_main{
+        margin-left: 0;
+        width: 100%;
+
+        .all-products{
+          padding: 3.438vw 9.688vw;
+          border-radius: 2.188vw;
+          font-size: 4.063vw;
+          line-height: 4.063vw;
+        }
+
+        .all-products_popup{
+          display: block;
+          position: fixed;
+          z-index: 6;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: white;
+          overflow-x: scroll;
+          padding: 0 10px;
+          padding-top: 50px;
+          transform: translateX(100%);
+          transition: .3s;
+
+          .all-products_popup_wrapper{
+            position: sticky;
+
+            .all-products_popup_selected-blks{
+              display: flex;
+              flex-direction: row;
+  
+              .all-products_popup-selected{
+                padding: 3.438vw 18.750vw 3.438vw 10vw;
+                font-size: 4.063vw;
+                line-height: 3.750vw;
+                @include Gotham(500);
+                color: #FFFFFF;
+                background: #61A036;
+                border-radius: 2.188vw;
+                position: relative;
+  
+                span{
+                  border: 1px solid #61A036;
+                  position: absolute;
+                  height: 100%;
+                  background: #FFFFFF;
+                  right: 0;
+                  top: 0;
+                  border-radius: 0px 2.188vw 2.188vw 0px;
+                  width: 10.313vw;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  
+                  img{
+                    width: 3.750vw;
+                    height: 3.750vw;
+                  }
+                }
+              }
+            }
+  
+            .all-products_popup_title{
+              font-size: 5.625vw;
+              line-height: 15.625vw;
+              @include Gotham(500);
+              padding-left: 1.250vw;
+              color: #61A036;
+              display: block;
+              border-bottom: 1px solid #61A036;
+            }
+
+            .all-products_popup_dd-blk{
+              border-bottom: 1px solid #61A036;
+
+              .all-products_popup_dd-blk_header{
+                font-size: 5.625vw;
+                line-height: 15.625vw;
+                @include Gotham(500);
+                color: #61A036;
+                position: relative;
+                padding-left: 1.563vw;
+
+                &::after{
+                  position: absolute;
+                  content: "";
+                  width: 10px;
+                  height: 10px;
+                  background: url(../img/svg/header_mobile_has-child.svg) center;
+                  background-size: cover;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  right: 0;
+                  transition: .3s;
+                }
+              }
+
+              .all-products_popup_dd-blk_main{
+                padding-left: 7.500vw;
+                max-height: 0;
+                overflow: hidden;
+                transition: .3s;
+
+                .all-products_popup_dd-blk_item{
+                  padding-bottom: 4.688vw;
+
+                  a{
+                    font-size: 5vw;
+                    line-height: 7.813vw;
+                    @include Gotham(400);
+                  }
+                  
+                }
+              }
+            }
+
+            .all-products_popup_dd-blk-active{
+
+              .all-products_popup_dd-blk_header{
+
+                &::after{
+
+                  transform: translateY(-50%) rotate(90deg);
+                }
+              }
+
+              .all-products_popup_dd-blk_main{
+                max-height: 500px;
+              }
+            }
+          }
+
+          .all-products_popup_close{
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            width: 30px;
+            height: 30px;
+          }
+          
+        }
+
+        .all-products_popup-active{
+          transform: translate(0);
+        }
+
+        .cathalog_main_filter{
+          margin-bottom: 2.474vw;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-top: 1.875vw;
+          margin-bottom: 5.938vw;
+
+          .cathalog_main_filter_groupbox{
+            display: none;
+          }
+
+          .cathalog_filtering{
+            display: block !important;
+
+            padding: 3.438vw 9.688vw;
+            border-radius: 2.188vw;
+            font-size: 4.063vw;
+            line-height: 4.063vw;
+            color: white;
+            background: #61A036;
+            @include Gotham(400);
+            max-width: 43.750vw;
+          }
+
+          .cathalog_filtering_pp{
+            display: block !important;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #FFFFFF;
+            z-index: 3;
+            padding: 3.125vw;
+            transform: translateX(100%);
+            transition: .3s;
+
+
+            .filtering_pp_title{
+              margin-right: 15px;
+              font-size: 18px;
+              line-height: 17px;
+              @include Gotham(400);
+              color: #171717;
+              margin-bottom: 5px;
+            }
+  
+            .filtering_pp_wrap{
+              position: relative;
+              width: fit-content;
+              margin-bottom: 20px;
+
+              .filtering_pp_selection{
+                background: 0;
+                border: 2px solid #61A036;
+                border-radius: 7px;
+                padding:10px;
+                -webkit-appearance: none;
+                font-size: 18px;
+                line-height: 17px;
+                @include Gotham(400);
+                color: #171717;
+              }
+  
+              &::after{
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 6px;
+                background: url(../img/svg/cathalog_sidebar_arrow.svg) center no-repeat;
+                background-size: cover;
+                top: 50%;
+                transform: translateY(-50%) rotate(180deg);
+                right: 16px;
+              }
+
+              &:nth-of-type(1){
+
+                .filtering_pp_selection{
+                  min-width: 116px;
+                  padding-right: 30px;
+                }
+              }
+
+              &:nth-of-type(2){
+
+                .filtering_pp_selection{
+                  min-width: 70.938vw;
+                  padding-right: 30px;
+                }
+              }
+
+              &:nth-of-type(3){
+
+                .filtering_pp_selection{
+                  min-width: 70.938vw;
+                  padding-right: 30px;
+                }
+              }
+            }
+
+            .filtering_close{
+              position: absolute;
+              right: 5vw;
+              top: 3.750vw;
+              width: 3.750vw;
+              height: 3.750vw;
+            }
+            
+          }
+
+          .cathalog_filtering_pp-active{
+            transform: translateX(0);
+          }
+
+        }
+
+        .cathalog_products{
+          column-gap: 6.250vw;
+          row-gap: 5.938vw;
+          grid-template-columns: repeat(2, 1fr);
+
+          .product_blk{
+            width: 43.438vw;
+
+            .product_img{
+              height: 40.063vw;
+              margin-bottom: 1.563vw;
+              border-radius:10px;
+            }
+
+            .product_country{
+              font-size: 4.375vw;
+              line-height: 175%;
+              margin-bottom: 1.563vw;
+            }
+
+            .product_title{
+              font-size: 4.375vw;
+              line-height: 120%;
+              margin-bottom: 3.125vw;
+            }
+
+            .product_description{
+              display: none;
+            }
+
+            .product_availability{
+              font-size: 3.125vw;
+              line-height: 3.125vw;
+              margin-bottom: 6.250vw;
+
+              span{
+                font-size: 3.125vw;
+                line-height: 3.125vw;
+              }
+            }
+
+            .product_crossed-price{
+              font-size: 3.750vw;
+              line-height: 3.750vw;
+              margin-bottom: 2.188vw;
+            }
+
+            .product_price{
+              font-size: 5.625vw;
+              line-height: 5.625vw;
+              margin-bottom: 3.906vw;
+              max-width: 31.250vw;
+
+              span{
+                font-size: 3.750vw;
+                line-height: 3.750vw;
+              }
+            }
+
+            .product_buy-minimum{
+              font-size: 2.613vw;
+              line-height: 3.125vw;
+              margin-bottom:1.563vw;
+            }
+
+            .product_button{
+              border-radius: 7px;
+              padding: 3.438vw;
+              font-size:4.063vw;
+              line-height: 4.063vw;
+            }
+
+            .product_heart{
+              top: 4.375vw;
+              right: 4.375vw;
+              width: 6.250vw;
+              height: 6.250vw;
+
+              img{  
+                width: 6.250vw;
+                height: 6.250vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .page_navigation{
+    margin-bottom: 15.313vw;
+
+    .navigation_left,.navigation_right{
+
+      a{
+
+        img{
+          width: 10.938vw;
+          height: 10.938vw;
+        }
+      }
+
+      
+    }
+
+    .navigation_left{
+      a:first-child{
+
+        img:first-child{
+          display: none;
+        }
+      }
+    }
+
+    .navigation_right{
+      a:last-child{
+
+        img:last-child{
+          display: none;
+        }
+      }
+    }
+
+    .navigation_left,.navigation_right{
+
+      a:first-child{
+        margin-right: 0;
+      }
+    }
+
+    .navigation_pagination{
+      padding: 0 2.604vw;
+
+      .pagination_blk{
+        height: 10.938vw;
+        padding: 4.063vw 1.875vw;
+        min-width: 10.938vw;
+        border-radius: 2.188vw;
+        margin-right: 1.302vw;
+
+        p{
+          font-size: 4.375vw;
+          line-height: 4.375vw;
+        }
+
+      }
+    }
+
   }
 
   footer{

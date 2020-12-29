@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -254,8 +253,10 @@
                                     </ul>
                                 </div>
                             </div>
-                            
+                            <img src="./img/burger-close.png" alt="close" class="all-products_popup_close">
                         </div>
+                        <p class="cathalog_filtering" style = "display: none;">Фильтрация</p>
+                        
                         <div class="cathalog_main_filter_groupbox">
                             <p class="filter_title">Сезон</p>
                             <select name="first" id="first" class="filter_selection">
@@ -277,7 +278,37 @@
                                 <option value="1">По убыванию цены</option>
                             </select>
                         </div>
-                        
+
+                        <div class="cathalog_filtering_pp" style="display: none;">
+                            
+                            <p class="filtering_pp_title">Сезон</p>
+                            <div class="filtering_pp_wrap">
+                                <select name="first" id="first" class="filtering_pp_selection">
+                                    <option value="1">Лето</option>
+                                    <option value="1">Зима</option>
+                                </select>  
+                            </div>
+                            
+
+                            <p class="filtering_pp_title">Страна</p>
+                            <div class="filtering_pp_wrap">
+                                <select name="first" id="first" class="filtering_pp_selection">
+                                    <option value="1">Россия</option>
+                                    <option value="1">Украина</option>
+                                </select>
+                            </div>
+                            
+
+                            <p class="filtering_pp_title">Сортировать по</p>
+                            <div class="filtering_pp_wrap">
+                                <select name="first" id="first" class="filtering_pp_selection">
+                                    <option value="1">По возрасатнию цены</option>
+                                    <option value="1">По убыванию цены</option>
+                                </select>
+                            </div>
+                            
+                            <img src="./img/svg/all_popup_close.svg" alt="close" class="filtering_close">
+                        </div>
                     </div>
                     <div class="cathalog_products">
                         <div class="product_blk">
@@ -413,15 +444,7 @@
     </footer>
     <!-- Footer end -->
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
-    <script>
-	    var swiper = new Swiper('.swiper-container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-	</script>
+    
 </body>
 </html>

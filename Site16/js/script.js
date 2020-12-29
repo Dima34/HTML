@@ -156,3 +156,25 @@ for (let i = 0; i < ddHeader1.length; i++) {
 }
 
 
+let cathalogPPOpen = document.querySelector(".all-products");
+let cathalogPP = document.querySelector(".all-products_popup");
+let cathalogPPClose = document.querySelector(".all-products_popup_close");
+
+cathalogPPOpen.addEventListener('click',()=>{
+    cathalogPP.classList.add("all-products_popup-active");
+});
+cathalogPPClose.addEventListener('click',()=>{
+    cathalogPP.classList.remove("all-products_popup-active");
+});
+
+let filteringPPOpen = document.querySelector(".cathalog_filtering");
+let filteringPP = document.querySelector(".cathalog_filtering_pp");
+let filteringPPClose = document.querySelector(".filtering_close");
+
+filteringPPOpen.addEventListener('click',()=>{
+    filteringPP.classList.add("cathalog_filtering_pp-active");
+});
+filteringPPClose.addEventListener('click',()=>{
+    filteringPP.classList.remove("cathalog_filtering_pp-active");
+});
+
