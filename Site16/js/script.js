@@ -178,3 +178,21 @@ filteringPPClose.addEventListener('click',()=>{
     filteringPP.classList.remove("cathalog_filtering_pp-active");
 });
 
+
+//
+//  Cathalog filter dropdown
+//
+
+let popupOpen = document.querySelectorAll("");
+let popup = document.querySelector(".pp__popup");
+let popupClose = document.querySelector("");
+
+for (let i = 0; i < array.popupOpen; i++) {
+    popupOpen[i].addEventListener('click',()=>{
+        popup.classList.add("pp__popup-active");
+    });
+    popupClose[i].addEventListener('click',()=>{
+        popup.classList.remove("pp__popup-active");
+    }); 
+}
+

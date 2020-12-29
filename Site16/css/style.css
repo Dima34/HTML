@@ -1495,6 +1495,49 @@ header {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* --------=======POPUP=======--------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.pp__popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.4); }
+
+.pp__popup-active {
+  display: flex; }
+
+.pp__popup_popup_blk {
+  min-width: 760px;
+  padding: 40px 77px 52px 61px;
+  background: #FFFFFF;
+  border-radius: 20px; }
+
+.pp__popup_popup_blk_title {
+  max-width: 504px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 41px;
+  text-align: center;
+  color: #000000;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+
+.pp__popup_popup_blk_main {
+  width: 100%;
+  margin-bottom: 70px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======FOOTER=======-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
