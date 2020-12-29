@@ -400,7 +400,7 @@ a:active, a:hover, a:focus {
 
 main {
   overflow-x: hidden;
-  min-height: 90vh; }
+  min-height: calc(90vh - 50px); }
 
 .wrapper {
   width: 1440px;
