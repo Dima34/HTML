@@ -250,16 +250,19 @@ let urBlk = document.querySelector(".main-ur")
 let fizBtn = document.querySelector(".choise-fiz")
 let fizBlk = document.querySelector(".main-fiz")
 
-fizBtn.addEventListener('click',()=>{
-    urBlk.style.display = "none"
-    urBtn.classList.remove("reg-choice-selected")
-    fizBlk.style.display = "block"
-    fizBtn.classList.add("reg-choice-selected")
-});
+if(urBtn){
+    fizBtn.addEventListener('click',()=>{
+        urBlk.style.display = "none"
+        urBtn.classList.remove("reg-choice-selected")
+        fizBlk.style.display = "block"
+        fizBtn.classList.add("reg-choice-selected")
+    });
+    
+    urBtn.addEventListener('click',()=>{
+        fizBlk.style.display = "none"
+        fizBtn.classList.remove("reg-choice-selected")
+        urBlk.style.display = "block"
+        urBtn.classList.add("reg-choice-selected")
+    });
+}
 
-urBtn.addEventListener('click',()=>{
-    fizBlk.style.display = "none"
-    fizBtn.classList.remove("reg-choice-selected")
-    urBlk.style.display = "block"
-    urBtn.classList.add("reg-choice-selected")
-});
