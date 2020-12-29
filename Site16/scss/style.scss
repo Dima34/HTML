@@ -5014,6 +5014,18 @@ footer{
     .intro_text{
       max-height: 29.818vw;
       overflow: hidden;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 24px;
+        background: linear-gradient(transparent, #fff);
+        pointer-events: none;
+      }
     }
 
     .about_see-all{

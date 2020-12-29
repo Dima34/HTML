@@ -3406,7 +3406,17 @@ footer .wrapper {
     padding: 3.255vw 0; }
     .about_intro .intro_text {
       max-height: 29.818vw;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative; }
+      .about_intro .intro_text:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 24px;
+        background: linear-gradient(transparent, #fff);
+        pointer-events: none; }
     .about_intro .about_see-all {
       display: block !important;
       padding-top: 1.302vw;

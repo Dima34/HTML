@@ -276,5 +276,6 @@ let seeAllBtn = document.querySelector(".about_see-all");
 
 seeAllBtn.addEventListener('click',()=>{
     seeAllBlk.style.maxHeight = "unset";
+    seeAllBlk.style.paddingBottom = "10px";
     seeAllBtn.style.opacity = "0"
 });
