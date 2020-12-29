@@ -1830,6 +1830,150 @@ header {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* -----=====COOP APPLICATION=====----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.input_title {
+  font-size: 14px;
+  line-height: 13px;
+  font-family: "Gotham" !important;
+  font-weight: 400 !important;
+  color: #373737;
+  margin-bottom: 15px; }
+  .input_title span {
+    color: #EF5F5F; }
+
+.input {
+  font-size: 14px;
+  line-height: 13px;
+  font-family: "Gotham" !important;
+  font-weight: 400 !important;
+  padding: 11px 20px;
+  background: 0;
+  border-radius: 7px;
+  border: 1px solid #D8DCE4; }
+  .input::placeholder {
+    font-size: 14px;
+    line-height: 13px;
+    font-family: "Gotham" !important;
+    font-weight: 400 !important; }
+
+.coop_app {
+  padding-top: 45px;
+  margin-bottom: 63px; }
+  .coop_app .wrapper .app_title {
+    font-family: "Gotham" !important;
+    font-weight: 500 !important;
+    font-size: 36px;
+    line-height: 34px;
+    margin-bottom: 39px; }
+  .coop_app .wrapper .app_subtitle {
+    font-size: 14px;
+    line-height: 13px;
+    font-family: "Gotham" !important;
+    font-weight: 400 !important;
+    margin-bottom: 33px; }
+  .coop_app .wrapper .app_selections {
+    display: flex;
+    margin-bottom: 63px; }
+    .coop_app .wrapper .app_selections .app_select {
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 17px;
+      font-family: "Gotham" !important;
+      font-weight: 400 !important;
+      padding: 0 0 15px 0;
+      margin-right: 47px; }
+    .coop_app .wrapper .app_selections .select_selected {
+      color: #61A036;
+      border-bottom: 2px solid #61A036; }
+  .coop_app .wrapper .app_main_sell {
+    display: none; }
+  .coop_app .wrapper .app_main .app_main_wrap {
+    display: flex;
+    justify-content: space-between; }
+    .coop_app .wrapper .app_main .app_main_wrap select {
+      font-size: 14px;
+      line-height: 13px;
+      font-family: "Gotham" !important;
+      font-weight: 400 !important;
+      padding: 11px 20px;
+      background: 0;
+      border-radius: 7px;
+      border: 1px solid #D8DCE4; }
+    .coop_app .wrapper .app_main .app_main_wrap .app_main_left {
+      display: flex;
+      flex-direction: column;
+      width: 910px; }
+      .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line1 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 42px; }
+        .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line1 .main_groupbox .main_input {
+          width: 438px; }
+      .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line2 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 42px; }
+        .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line2 select, .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line2 .main_input {
+          width: 280px; }
+      .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line3 {
+        display: flex;
+        justify-content: space-between; }
+        .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line3 select {
+          width: 438px; }
+    .coop_app .wrapper .app_main .app_main_wrap .app_main_right .main_groupbox textarea {
+      font-size: 14px;
+      line-height: 13px;
+      font-family: "Gotham" !important;
+      font-weight: 400 !important;
+      padding: 14px 20px;
+      background: 0;
+      border-radius: 7px;
+      border: 1px solid #D8DCE4;
+      resize: none;
+      width: 438px;
+      min-height: 172px;
+      margin-bottom: 44px; }
+    .coop_app .wrapper .app_main .app_main_wrap .app_main_right .app_main_send {
+      padding: 15px 30px;
+      font-size: 18px;
+      line-height: 17px;
+      font-family: "Gotham" !important;
+      font-weight: 400 !important;
+      color: #FFFFFF;
+      border-radius: 7px;
+      background: #61A036;
+      display: block;
+      width: fit-content; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------========COOP QA=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.coop_qa .wrapper .qa_q {
+  font-size: 24px;
+  line-height: 153.69%;
+  font-family: "Gotham" !important;
+  font-weight: 500 !important;
+  margin-bottom: 20px; }
+
+.coop_qa .wrapper .qa_a {
+  font-size: 16px;
+  line-height: 153.69%;
+  font-family: "Gotham" !important;
+  font-weight: 400 !important;
+  margin-bottom: 36px; }
+  .coop_qa .wrapper .qa_a:last-child {
+    margin-bottom: 46px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* ------======ABOUT INTRO=======------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2576,6 +2720,74 @@ footer .wrapper {
       .about_countries .wrapper .countries_main .countires_country img {
         height: 4.792vw;
         margin-bottom: 0.521vw; }
+  .input_title {
+    font-size: 0.729vw;
+    line-height: 0.677vw;
+    margin-bottom: 0.781vw; }
+  .input {
+    font-size: 0.729vw;
+    line-height: 0.677vw;
+    padding: 0.573vw 1.042vw;
+    border-radius: 0.365vw; }
+    .input::placeholder {
+      font-size: 0.729vw;
+      line-height: 0.677vw; }
+  .coop_app {
+    padding-top: 2.344vw;
+    margin-bottom: 3.281vw; }
+    .coop_app .wrapper .app_title {
+      font-size: 1.875vw;
+      line-height: 1.771vw;
+      margin-bottom: 2.031vw; }
+    .coop_app .wrapper .app_subtitle {
+      font-size: 0.729vw;
+      line-height: 0.677vw;
+      margin-bottom: 1.719vw; }
+    .coop_app .wrapper .app_selections {
+      margin-bottom: 3.281vw; }
+      .coop_app .wrapper .app_selections .app_select {
+        font-size: 0.938vw;
+        line-height: 0.885vw;
+        padding: 0 0 0.781vw 0;
+        margin-right: 2.448vw; }
+    .coop_app .wrapper .app_main .app_main_wrap select {
+      font-size: 0.729vw;
+      line-height: 0.677vw;
+      padding: 0.573vw 1.042vw;
+      border-radius: 0.365vw; }
+    .coop_app .wrapper .app_main .app_main_wrap .app_main_left {
+      width: 47.396vw; }
+      .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line1 {
+        margin-bottom: 2.344vw; }
+        .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line1 .main_groupbox .main_input {
+          width: 22.813vw; }
+      .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line2 {
+        margin-bottom: 2.188vw; }
+        .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line2 select, .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line2 .main_input {
+          width: 14.583vw; }
+      .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line3 select {
+        width: 22.813vw; }
+    .coop_app .wrapper .app_main .app_main_wrap .app_main_right .main_groupbox textarea {
+      font-size: 0.729vw;
+      line-height: 0.677vw;
+      padding: 0.729vw 1.042vw;
+      border-radius: 0.365vw;
+      width: 22.813vw;
+      min-height: 8.958vw;
+      margin-bottom: 2.292vw; }
+    .coop_app .wrapper .app_main .app_main_wrap .app_main_right .app_main_send {
+      padding: 0.781vw 1.563vw;
+      font-size: 0.938vw;
+      line-height: 0.885vw;
+      border-radius: 0.365vw; }
+  .coop_qa .wrapper .qa_q {
+    font-size: 1.250vw;
+    margin-bottom: 1.042vw; }
+  .coop_qa .wrapper .qa_a {
+    font-size: 0.833vw;
+    margin-bottom: 1.875vw; }
+    .coop_qa .wrapper .qa_a:last-child {
+      margin-bottom: 2.396vw; }
   footer .wrapper {
     padding: 1.667vw 0 1.823vw 0; }
     footer .wrapper .footer_logo > img {
@@ -2616,7 +2828,7 @@ footer .wrapper {
   .wrapper {
     width: 97vw; }
   main {
-    padding-top: 21.115vw; }
+    padding-top: 12.115vw; }
   header .desktop {
     display: none; }
   header .mobile {
@@ -3485,6 +3697,84 @@ footer .wrapper {
           margin-bottom: 0.521vw; }
         .about_countries .wrapper .countries_main .countires_country:nth-of-type(4) {
           margin-right: 0; }
+  .input {
+    font-size: 1.823vw;
+    line-height: 1.823vw;
+    padding: 1.432vw 1.953vw;
+    border-radius: 0.911vw; }
+    .input::placeholder {
+      font-size: 1.823vw;
+      line-height: 1.823vw; }
+  .input_title {
+    font-size: 1.823vw;
+    line-height: 1.823vw;
+    margin-bottom: 1.953vw; }
+  .coop_app {
+    padding-top: 4.557vw;
+    margin-bottom: 5.208vw; }
+    .coop_app .wrapper {
+      padding: 0 10px; }
+      .coop_app .wrapper .app_title {
+        font-size: 4.688vw;
+        line-height: 4.427vw;
+        margin-bottom: 5.078vw; }
+      .coop_app .wrapper .app_subtitle {
+        font-size: 1.823vw;
+        line-height: 1.693vw;
+        margin-bottom: 4.297vw; }
+      .coop_app .wrapper .app_selections {
+        margin-bottom: 5.208vw; }
+        .coop_app .wrapper .app_selections .app_select {
+          font-size: 2.344vw;
+          line-height: 2.144vw;
+          padding: 0 0 1.953vw 0;
+          margin-right: 6.120vw; }
+      .coop_app .wrapper .app_main .app_main_wrap {
+        flex-direction: column; }
+        .coop_app .wrapper .app_main .app_main_wrap select {
+          font-size: 1.823vw;
+          line-height: 1.823vw;
+          padding: 1.432vw 1.953vw;
+          border-radius: 0.911vw; }
+        .coop_app .wrapper .app_main .app_main_wrap .app_main_left {
+          width: 100%; }
+          .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line1 {
+            margin-bottom: 3.906vw; }
+            .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line1 .main_groupbox .main_input {
+              width: 45.443vw; }
+          .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line2 {
+            margin-bottom: 3.906vw; }
+            .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line2 select, .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line2 .main_input {
+              width: 28.906vw; }
+          .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line3 {
+            margin-bottom: 3.906vw; }
+            .coop_app .wrapper .app_main .app_main_wrap .app_main_left .main_left_line3 select {
+              width: 45.443vw; }
+        .coop_app .wrapper .app_main .app_main_wrap .app_main_right .main_groupbox textarea {
+          font-size: 1.823vw;
+          line-height: 1.823vw;
+          padding: 1.432vw 1.953vw;
+          border-radius: 0.911vw;
+          width: 100%;
+          min-height: 15.365vw;
+          margin-bottom: 5.729vw; }
+        .coop_app .wrapper .app_main .app_main_wrap .app_main_right .app_main_send {
+          padding: 1.953vw 1.953vw;
+          font-size: 2.344vw;
+          line-height: 2.214vw;
+          border-radius: 0.911vw;
+          width: 100%;
+          text-align: center; }
+  .coop_qa .wrapper {
+    padding: 0 10px; }
+    .coop_qa .wrapper .qa_q {
+      font-size: 3.125vw;
+      margin-bottom: 2.604vw; }
+    .coop_qa .wrapper .qa_a {
+      font-size: 2.083vw;
+      margin-bottom: 4.688vw; }
+      .coop_qa .wrapper .qa_a:last-child {
+        margin-bottom: 4.948vw; }
   footer .wrapper {
     padding: 2.604vw 0; }
     footer .wrapper .footer_logo {
@@ -4363,6 +4653,89 @@ footer .wrapper {
           margin-right: 0; }
         .about_countries .wrapper .countries_main .countires_country:last-of-type {
           margin: 0; }
+  .input {
+    font-size: 4.375vw;
+    line-height: 4.375vw;
+    padding: 3.438vw 1.953vw;
+    border-radius: 2.188vw; }
+    .input::placeholder {
+      font-size: 4.375vw;
+      line-height: 4.375vw; }
+  .input_title {
+    font-size: 4.375vw;
+    line-height: 4.375vw;
+    margin-bottom: 4.688vw; }
+  .coop_app {
+    padding-top: 10.938vw;
+    margin-bottom: 12.500vw; }
+    .coop_app .wrapper {
+      padding: 0 10px; }
+      .coop_app .wrapper .app_title {
+        font-size: 7.500vw;
+        line-height: 7.200vw;
+        margin-bottom: 12.188vw; }
+      .coop_app .wrapper .app_subtitle {
+        font-size: 4.375vw;
+        line-height: 10.313vw;
+        margin-bottom: 4.297vw; }
+      .coop_app .wrapper .app_selections {
+        margin-bottom: 12.500vw; }
+        .coop_app .wrapper .app_selections .app_select {
+          font-size: 4.375vw;
+          line-height: 4.375vw;
+          padding: 0 0 4.688vw 0;
+          margin-right: 14.688vw; }
+      .coop_app .wrapper .app_main {
+        flex-direction: column; }
+        .coop_app .wrapper .app_main select {
+          font-size: 4.375vw;
+          line-height: 4.375vw;
+          padding: 3.438vw 1.953vw;
+          border-radius: 2.188vw; }
+        .coop_app .wrapper .app_main .app_main_left {
+          width: 100%; }
+          .coop_app .wrapper .app_main .app_main_left .main_left_line1 {
+            flex-direction: column;
+            margin-bottom: 0; }
+            .coop_app .wrapper .app_main .app_main_left .main_left_line1 .main_groupbox {
+              margin-bottom: 9.375vw; }
+              .coop_app .wrapper .app_main .app_main_left .main_left_line1 .main_groupbox .main_input {
+                width: 100%; }
+          .coop_app .wrapper .app_main .app_main_left .main_left_line2 {
+            flex-direction: column;
+            margin-bottom: 0; }
+            .coop_app .wrapper .app_main .app_main_left .main_left_line2 select, .coop_app .wrapper .app_main .app_main_left .main_left_line2 .main_input {
+              margin-bottom: 9.375vw;
+              width: 100%; }
+          .coop_app .wrapper .app_main .app_main_left .main_left_line3 {
+            flex-direction: column;
+            margin-bottom: 0; }
+            .coop_app .wrapper .app_main .app_main_left .main_left_line3 select {
+              width: 100%;
+              margin-bottom: 9.375vw; }
+        .coop_app .wrapper .app_main .app_main_right .main_groupbox textarea {
+          font-size: 4.375vw;
+          line-height: 4.375vw;
+          padding: 3.438vw 1.953vw;
+          border-radius: 2.188vw;
+          width: 100%;
+          min-height: 45.938vw;
+          margin-bottom: 13.750vw; }
+        .coop_app .wrapper .app_main .app_main_right .app_main_send {
+          padding: 4.688vw;
+          font-size: 5.625vw;
+          line-height: 5.625vw;
+          border-radius: 2.188vw; }
+  .coop_qa .wrapper {
+    padding: 0 10px; }
+    .coop_qa .wrapper .qa_q {
+      font-size: 5.625vw;
+      margin-bottom: 6.250vw; }
+    .coop_qa .wrapper .qa_a {
+      font-size: 4.375vw;
+      margin-bottom: 11.250vw; }
+      .coop_qa .wrapper .qa_a:last-child {
+        margin-bottom: 34.688vw; }
   footer .wrapper {
     padding: 6.250vw 0 9.375vw 0; }
     footer .wrapper .footer_logo {

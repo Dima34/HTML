@@ -274,8 +274,39 @@ if(urBtn){
 let seeAllBlk = document.querySelector(".intro_text")
 let seeAllBtn = document.querySelector(".about_see-all");
 
-seeAllBtn.addEventListener('click',()=>{
-    seeAllBlk.style.maxHeight = "unset";
-    seeAllBlk.style.paddingBottom = "10px";
-    seeAllBtn.style.opacity = "0"
-});
+if(seeAllBtn){
+    seeAllBtn.addEventListener('click',()=>{
+        seeAllBlk.style.maxHeight = "unset";
+        seeAllBlk.style.paddingBottom = "10px";
+        seeAllBtn.style.opacity = "0"
+    });
+}
+
+
+
+
+//
+//  Coop switch
+//
+
+let buyBtn = document.querySelector(".select_buy")
+let buyBlk = document.querySelector(".app_main_buy")
+
+let sellBtn = document.querySelector(".select_sell")
+let sellBlk = document.querySelector(".app_main_sell")
+
+if(buyBtn){
+    sellBtn.addEventListener('click',()=>{
+        buyBlk.style.display = "none"
+        buyBtn.classList.remove("select_selected")
+        sellBlk.style.display = "block"
+        sellBtn.classList.add("select_selected")
+    });
+    
+    buyBtn.addEventListener('click',()=>{
+        sellBlk.style.display = "none"
+        sellBtn.classList.remove("select_selected")
+        buyBlk.style.display = "block"
+        buyBtn.classList.add("select_selected")
+    });
+}
