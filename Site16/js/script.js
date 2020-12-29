@@ -160,39 +160,85 @@ let cathalogPPOpen = document.querySelector(".all-products");
 let cathalogPP = document.querySelector(".all-products_popup");
 let cathalogPPClose = document.querySelector(".all-products_popup_close");
 
-cathalogPPOpen.addEventListener('click',()=>{
-    cathalogPP.classList.add("all-products_popup-active");
-});
-cathalogPPClose.addEventListener('click',()=>{
-    cathalogPP.classList.remove("all-products_popup-active");
-});
+if(cathalogPPOpen){
+    cathalogPPOpen.addEventListener('click',()=>{
+        cathalogPP.classList.add("all-products_popup-active");
+    });
+    cathalogPPClose.addEventListener('click',()=>{
+        cathalogPP.classList.remove("all-products_popup-active");
+    });
+}
 
 let filteringPPOpen = document.querySelector(".cathalog_filtering");
 let filteringPP = document.querySelector(".cathalog_filtering_pp");
 let filteringPPClose = document.querySelector(".filtering_close");
 
-filteringPPOpen.addEventListener('click',()=>{
-    filteringPP.classList.add("cathalog_filtering_pp-active");
-});
-filteringPPClose.addEventListener('click',()=>{
-    filteringPP.classList.remove("cathalog_filtering_pp-active");
-});
-
-
-//
-//  Cathalog filter dropdown
-//
-
-let popupOpen = document.querySelectorAll("");
-let popup = document.querySelector(".pp__popup");
-let popupClose = document.querySelector("");
-
-for (let i = 0; i < array.popupOpen; i++) {
-    popupOpen[i].addEventListener('click',()=>{
-        popup.classList.add("pp__popup-active");
+if(filteringPPOpen){
+    filteringPPOpen.addEventListener('click',()=>{
+        filteringPP.classList.add("cathalog_filtering_pp-active");
     });
-    popupClose[i].addEventListener('click',()=>{
-        popup.classList.remove("pp__popup-active");
+    filteringPPClose.addEventListener('click',()=>{
+        filteringPP.classList.remove("cathalog_filtering_pp-active");
+    });
+}
+
+
+
+
+//
+//  Call me pp
+//
+
+let callmeOpen1 = document.querySelectorAll(".header_mobile_callme");
+let callmeOpen2 = document.querySelectorAll(".footer_callme");
+let callmeOpen3 = document.querySelectorAll(".desktop_header_callme");
+let callme = document.querySelector(".pp__popup");
+let callmeClose = document.querySelector(".pp_close");
+
+for (let i = 0; i < callmeOpen1.length; i++) {
+    callmeOpen1[i].addEventListener('click',()=>{
+        callme.classList.add("pp__popup-active");
+    });
+    callmeClose.addEventListener('click',()=>{
+        callme.classList.remove("pp__popup-active");
     }); 
 }
+
+for (let i = 0; i < callmeOpen2.length; i++) {
+    callmeOpen2[i].addEventListener('click',()=>{
+        callme.classList.add("pp__popup-active");
+    });
+    callmeClose.addEventListener('click',()=>{
+        callme.classList.remove("pp__popup-active");
+    }); 
+}
+
+for (let i = 0; i < callmeOpen3.length; i++) {
+    callmeOpen3[i].addEventListener('click',()=>{
+        callme.classList.add("pp__popup-active");
+    });
+    callmeClose.addEventListener('click',()=>{
+        callme.classList.remove("pp__popup-active");
+    }); 
+}
+
+
+//
+//  Preorder pp
+//
+
+let preOrderOpen = document.querySelector(".none");
+let preOrder = document.querySelector(".pre-order__popup");
+let preOrderClose = document.querySelector(".pre-order_close");
+
+if(preOrderOpen){
+    preOrderOpen.addEventListener('click',()=>{
+        preOrder.classList.add("pre-order__popup-active");
+    });
+    preOrderClose.addEventListener('click',()=>{
+        preOrder.classList.remove("pre-order__popup-active");
+    });
+}
+
+
 
