@@ -142,11 +142,11 @@
                 <h2 class="reg_title">Регистрация</h2>
 
                 <div class="reg_choices">
-                    <a href="#" class ="reg_choice">Физическое лицо</a>
-                    <a href="#" class ="reg_choice reg-choice-selected">Юридическое лицо</a>
+                    <a href="#" class ="reg_choice choise-fiz">Физическое лицо</a>
+                    <a href="#" class ="reg_choice choise-ur reg-choice-selected">Юридическое лицо</a>
                 </div>
 
-                <div class="reg_main">
+                <div class="reg_main main-ur">
                     <p class="reg_input_title">Название компании <span>*</span></p>
                     <input type="text" name="name" id="name" class="reg_input">
     
@@ -176,6 +176,34 @@
     
                     <input type="checkbox" name="checkbox" id="check">
                     <label for="check">Подписаться на акции</label>
+    
+                    <a href="#" class="reg_register">Зарегистрироваться</a>
+                </div>
+
+                <div class="reg_main main-fiz" style="display: none;">
+                    <p class="reg_input_title">ФИО <span>*</span></p>
+                    <input type="text" name="name" id="name" class="reg_input">
+    
+                    <p class="reg_input_title">Номер телефона <span>*</span></p>
+                    <input type="tel" name="tel" id="tel" class="reg_input">
+    
+                    <p class="reg_input_title">E-Mail <span>*</span></p>
+                    <input type="email" name="email" id="email" class="reg_input">
+    
+                    <p class="reg_input_title">Город <span>*</span></p>
+                    <div class="reg_input_wrapper">
+                        <select name="city" id="city">
+                            <option value="" disabled selected></option>
+                            <option value="1">Москва</option>
+                            <option value="2">Киев</option>
+                        </select>
+                    </div>
+                    
+                    <p class="reg_input_title">Пароль <span>*</span></p>
+                    <input type="text" name="pass" id="pass" class="reg_input">
+    
+                    <p class="reg_input_title">Подтверждение пароля <span>*</span></p>
+                    <input type="text" name="pass1" id="pass1" class="reg_input">
     
                     <a href="#" class="reg_register">Зарегистрироваться</a>
                 </div>
