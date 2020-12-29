@@ -3112,6 +3112,10 @@ footer{
     width: 97vw;
   }
 
+  main{
+    padding-top: 70px;
+  }
+
   header{
 
     .desktop{
@@ -3125,6 +3129,11 @@ footer{
       flex-direction: row;
       align-items: center;
       overflow: hidden;
+      position: fixed;
+      left: 0;
+      top: 0;
+      background: #FFFFFF;
+      z-index: 3;
       
       .header_logo{
         width: 200px;
@@ -4425,6 +4434,26 @@ footer{
   .wrapper{
     width: 93.750vw;
   }
+
+  header{
+
+    .mobile{
+
+      .header_logo{
+        width: 43.750vw;
+        height: 12.188vw;
+      }
+
+      a{
+        margin-right: 4.688vw !important;
+
+        img{
+          width: 6.313vw !important;
+          height: 6.313vw !important;
+        }
+      }
+    }
+  }
   
   .search {
   
@@ -4557,7 +4586,7 @@ footer{
           .gallery_right{
     
             .gallery_right_main-img{
-              margin-bottom: 4.688vw;
+              margin-bottom: 2vw;
               width: 93.750vw;
               height: 93.750vw;
               border-radius: 7px;
@@ -4567,7 +4596,7 @@ footer{
               margin: 0 auto;
     
               img{
-                width: 17.05vw;
+                width: 16.8vw;
                 height: 14.915vw;
                 border-radius: 7px;
                 margin-right: 2.4vw;
