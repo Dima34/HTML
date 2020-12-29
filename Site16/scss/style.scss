@@ -2358,6 +2358,132 @@ header{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* ------======ABOUT INTRO=======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.about_header{
+  @include Gotham(500);
+  font-size: 48px;
+  line-height: 46px;
+  margin-bottom: 30px;
+}
+
+.about_text{
+  font-size: 18px;
+  line-height: 175%;
+  @include Gotham(400);
+}
+
+.about_intro{
+  padding: 40px 0;
+
+  .wrapper{
+
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----====ABOUT SERTIFICATS=====----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.about_sertificats{
+  margin-bottom: 40px;
+
+  .wrapper{
+
+    .setrificats_main{
+      display: flex;
+
+
+      .sertificats_sertificat{
+        width: 224px;
+        margin-right: 80px;
+
+        img{
+          width: 100%;
+          height: 279px;
+          margin-bottom: 30px;
+        }
+      }
+
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======ABOUT WEBS=======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.about_webs{
+  margin-bottom: 40px;
+
+  .wrapper{
+
+    .webs_main{
+      display: flex;
+
+      .webs_web{
+        width: 441px;
+        margin-right: 58px;
+        
+        img{
+          width: 100%;
+          height: 279px;
+          border: 1px solid #61A036;
+          border-radius: 7px;
+          margin-bottom: 22px;
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ----======ABOUT COUNTRIES=======---- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.about_countries{
+  margin-bottom: 70px;
+
+  .wrapper{
+
+
+    .countries_main{
+      display: flex;
+      text-align: center;
+
+      .countires_country{
+        width: 174px;
+        margin-right: 37px;
+        
+        img{
+          width: 100%;
+          height: 92px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======FOOTER=======-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3436,6 +3562,83 @@ footer{
           line-height: 0.990vw;
         }
 
+      }
+    }
+
+  }
+
+  .about_header{
+    font-size: 2.500vw;
+    line-height: 2.396vw;
+    margin-bottom: 1.563vw;
+  }
+
+  .about_text{
+    font-size: 0.938vw;
+    line-height: 175%;
+  }
+
+  .about_intro{
+    padding: 2.083vw 0;
+  }
+
+  .about_sertificats{
+    margin-bottom: 2.083vw;
+    .wrapper{
+
+      .setrificats_main{
+
+        .sertificats_sertificat{
+          width: 11.667vw;
+          margin-right: 4.167vw;
+
+          img{
+            height: 14.531vw;
+            margin-bottom: 1.563vw;
+          }
+        }
+
+      }
+    }
+  }
+
+  .about_webs{
+    margin-bottom: 2.083vw;
+
+    .wrapper{
+
+      .webs_main{
+
+        .webs_web{
+          width: 22.969vw;
+          margin-right: 3.021vw;
+          
+          img{
+            height: 14.531vw;
+            border-radius: 7px;
+            margin-bottom: 1.146vw;
+          }
+        }
+      }
+    }
+  }
+
+  .about_countries{
+    margin-bottom: 3.646vw;
+
+    .wrapper{
+
+      .countries_main{
+
+        .countires_country{
+          width: 9.063vw;
+          margin-right: 1.927vw;
+          
+          img{
+            height: 4.792vw;
+            margin-bottom: 0.521vw;
+          }
+        }
       }
     }
 
@@ -4795,6 +4998,144 @@ footer{
     }
   }
 
+  .about_header{
+    font-size: 3.125vw;
+    line-height: 2.995vw;
+    margin-bottom: 2.604vw;
+  }
+
+  .about_text{
+    font-size: 2.344vw;
+  }
+
+  .about_intro{
+    padding: 3.255vw 0;
+
+    .intro_text{
+      max-height: 29.818vw;
+      overflow: hidden;
+    }
+
+    .about_see-all{
+      display: block !important;
+      padding-top: 1.302vw;
+      margin: 0 auto;
+      width: fit-content;
+      font-size: 3.125vw;
+      line-height: 3.125vw;
+      @include Gotham(500);
+      color: #61A036;
+      cursor: pointer;
+    }
+  }
+
+  .about_sertificats{
+    margin-bottom: 5.339vw;
+
+    .wrapper{
+
+      .setrificats_main{
+        overflow-x: scroll;
+        padding-bottom: 3.906vw;
+
+        .sertificats_sertificat{
+          width: 29.167vw;
+          margin-right: 3.906vw;
+          flex-shrink: 0;
+
+          img{
+            width: 100%;
+            height: 36.328vw;
+            margin-bottom: 1.563vw;
+            border: 1px solid #61A036;
+            border-radius: 7px;
+          }
+        }
+
+      }
+      ::-webkit-scrollbar-track
+          {
+              background-color: #F5F5F5;
+              border-radius: 7px;
+              border: 1px solid #61A036;
+          }
+          
+          ::-webkit-scrollbar
+          {
+              width: 10px;
+              height: 7px;
+          }
+          
+          ::-webkit-scrollbar-thumb
+          {
+              background-color: #61A036;
+              border-radius: 7px;
+              height: 8px;
+          }
+    }
+  }
+
+  .about_webs{
+    margin-bottom: 5.208vw;
+
+    .wrapper{
+
+      .webs_main{
+        padding-left: 1.823vw;
+        padding-right: 1.823vw;
+        justify-content: space-between;
+
+        .webs_web{
+          width: 26.042vw;
+          margin-right: 6.510vw;
+          
+          img{
+            height: 16.406vw;
+            border-radius: 7px;
+            margin-bottom: 2.604vw;
+          }
+
+          &:nth-of-type(3){
+            margin-right: 0;
+
+          }
+        }
+      }
+    }
+  }
+
+  .about_countries{
+    margin-bottom: 5.208vw;
+
+    .wrapper{
+
+      .countries_header{
+        margin-bottom: 3.906vw;
+      }
+
+      .countries_main{
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .countires_country{
+          width: 22.656vw;
+          margin-right: 1.302vw;
+          margin-bottom: 2.604vw;
+          
+          img{
+            height: 11.979vw;
+            margin-bottom: 0.521vw;
+          }
+
+          &:nth-of-type(4){
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+  }
+
   footer{
     .wrapper{
       padding:2.604vw 0;
@@ -6089,6 +6430,124 @@ footer{
   
   }
   
+  .about_header{
+    font-size: 4.375vw;
+    line-height: 4.063vw;
+    margin-bottom: 4.688vw;
+  }
+
+  .about_text{
+    font-size: 4.063vw;
+  }
+
+  .about_intro{
+    padding: 6.875vw 0;
+
+    .intro_text{
+      max-height: 71.563vw;
+    }
+
+    .about_see-all{
+      padding-top: 3.125vw;
+      font-size: 4.375vw;
+      line-height: 4.375vw;
+    }
+  }
+
+  .about_sertificats{
+    margin-bottom: 9.688vw;
+
+    .wrapper{
+
+      .setrificats_main{
+        padding-bottom: 3.688vw;
+
+        .sertificats_sertificat{
+          width: 46.875vw;
+          margin-right: 9.375vw;
+          flex-shrink: 0;
+
+          img{
+            height: 58.438vw;
+            margin-bottom: 6.250vw;
+          }
+        }
+
+      }
+    }
+  }
+
+  .about_webs{
+    margin-bottom: 5.208vw;
+
+    .wrapper{
+      .webs_title{
+        margin-bottom:6.875vw;
+      }
+
+      .webs_main{
+        padding-left: 1.823vw;
+        padding-right: 1.823vw;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+
+        .webs_web{
+          width: 62.500vw;
+          margin-right: 0;
+          margin-bottom: 6.250vw;
+          
+          img{
+            height: 39.375vw;
+            border-radius: 7px;
+            margin-bottom: 3.125vw;
+          }
+        }
+      }
+    }
+  }
+
+  .about_countries{
+    margin-bottom: 15.625vw;
+
+    .wrapper{
+
+      .countries_header{
+        margin-bottom: 9.375vw;
+      }
+
+      .countries_main{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 5.313vw;
+
+        .countires_country{
+          width: 15.625vw;
+          margin-right: 6.250vw;
+          margin-bottom: 6.250vw;
+          
+          img{
+            height: 8.125vw;
+            margin-bottom: 3.125vw;
+            border-radius: 2.188vw;
+          }
+
+          p{
+            font-size: 4.063vw;
+            @include Gotham(500);
+          }
+
+          &:nth-of-type(4){
+            margin-right: 0;
+          }
+          &:last-of-type{
+            margin: 0;
+          }
+        }
+      }
+    }
+
+  }
 
   footer{
     .wrapper{

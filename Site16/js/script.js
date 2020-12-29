@@ -241,7 +241,7 @@ if(preOrderOpen){
 }
 
 //
-//  reg switch
+//  Reg switch
 //
 
 let urBtn = document.querySelector(".choise-ur")
@@ -266,3 +266,15 @@ if(urBtn){
     });
 }
 
+//
+//  See All
+//
+
+
+let seeAllBlk = document.querySelector(".intro_text")
+let seeAllBtn = document.querySelector(".about_see-all");
+
+seeAllBtn.addEventListener('click',()=>{
+    seeAllBlk.style.maxHeight = "unset";
+    seeAllBtn.style.opacity = "0"
+});
