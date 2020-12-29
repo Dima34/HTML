@@ -2688,6 +2688,54 @@ header{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* ------=========CIRCS==========------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.circs{
+  margin-top: 60px;
+
+  .wrapper{
+
+    .circ_section{
+      margin-bottom: 100px;
+
+      .section_header{
+        font-size: 36px;
+        line-height: 150%;
+        @include Gotham(500);
+        margin-bottom: 30px;
+      }
+
+      .section_item-title{
+        font-size: 24px;
+        line-height: 150%;
+        @include Gotham(500);
+        margin-bottom: 15px;
+      }
+
+      .section_item-text{
+        font-size: 16px;
+        line-height: 150%;
+        @include Gotham(400);
+        margin-bottom: 30px;
+
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+
+      &:last-child{
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======FOOTER=======-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3976,6 +4024,36 @@ footer{
 
         &:last-child{
           margin-bottom: 2.396vw;
+        }
+      }
+    }
+  }
+
+  .circs{
+    margin-top: 3.125vw;
+
+    .wrapper{
+  
+      .circ_section{
+        margin-bottom: 5.208vw;
+  
+        .section_header{
+          font-size: 1.875vw;
+          margin-bottom: 1.563vw;
+        }
+  
+        .section_item-title{
+          font-size: 1.250vw;
+          margin-bottom: 15px;
+        }
+  
+        .section_item-text{
+          font-size: 0.833vw;
+          margin-bottom: 15px;
+        }
+  
+        &:last-child{
+          margin-bottom: 1.979vw;
         }
       }
     }
@@ -5625,6 +5703,37 @@ footer{
       }
     }
   }
+
+  .circs{
+    margin-top: 4.557vw;
+
+    .wrapper{
+  
+      .circ_section{
+        margin-bottom: 6.510vw;
+  
+        .section_header{
+          font-size:24px;
+          margin-bottom: 15px;
+        }
+  
+        .section_item-title{
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+  
+        .section_item-text{
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+  
+        &:last-child{
+          margin-bottom: 38px;
+        }
+      }
+    }
+  }
+
 
   footer{
     .wrapper{

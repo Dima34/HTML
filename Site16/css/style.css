@@ -2057,6 +2057,40 @@ header {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* ------=========CIRCS==========------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.circs {
+  margin-top: 60px; }
+  .circs .wrapper .circ_section {
+    margin-bottom: 100px; }
+    .circs .wrapper .circ_section .section_header {
+      font-size: 36px;
+      line-height: 150%;
+      font-family: "Gotham" !important;
+      font-weight: 500 !important;
+      margin-bottom: 30px; }
+    .circs .wrapper .circ_section .section_item-title {
+      font-size: 24px;
+      line-height: 150%;
+      font-family: "Gotham" !important;
+      font-weight: 500 !important;
+      margin-bottom: 15px; }
+    .circs .wrapper .circ_section .section_item-text {
+      font-size: 16px;
+      line-height: 150%;
+      font-family: "Gotham" !important;
+      font-weight: 400 !important;
+      margin-bottom: 30px; }
+      .circs .wrapper .circ_section .section_item-text:last-of-type {
+        margin-bottom: 0; }
+    .circs .wrapper .circ_section:last-child {
+      margin-bottom: 60px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======FOOTER=======-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2788,6 +2822,21 @@ footer .wrapper {
     margin-bottom: 1.875vw; }
     .coop_qa .wrapper .qa_a:last-child {
       margin-bottom: 2.396vw; }
+  .circs {
+    margin-top: 3.125vw; }
+    .circs .wrapper .circ_section {
+      margin-bottom: 5.208vw; }
+      .circs .wrapper .circ_section .section_header {
+        font-size: 1.875vw;
+        margin-bottom: 1.563vw; }
+      .circs .wrapper .circ_section .section_item-title {
+        font-size: 1.250vw;
+        margin-bottom: 15px; }
+      .circs .wrapper .circ_section .section_item-text {
+        font-size: 0.833vw;
+        margin-bottom: 15px; }
+      .circs .wrapper .circ_section:last-child {
+        margin-bottom: 1.979vw; }
   footer .wrapper {
     padding: 1.667vw 0 1.823vw 0; }
     footer .wrapper .footer_logo > img {
@@ -3775,6 +3824,21 @@ footer .wrapper {
       margin-bottom: 4.688vw; }
       .coop_qa .wrapper .qa_a:last-child {
         margin-bottom: 4.948vw; }
+  .circs {
+    margin-top: 4.557vw; }
+    .circs .wrapper .circ_section {
+      margin-bottom: 6.510vw; }
+      .circs .wrapper .circ_section .section_header {
+        font-size: 24px;
+        margin-bottom: 15px; }
+      .circs .wrapper .circ_section .section_item-title {
+        font-size: 18px;
+        margin-bottom: 15px; }
+      .circs .wrapper .circ_section .section_item-text {
+        font-size: 14px;
+        margin-bottom: 15px; }
+      .circs .wrapper .circ_section:last-child {
+        margin-bottom: 38px; }
   footer .wrapper {
     padding: 2.604vw 0; }
     footer .wrapper .footer_logo {
