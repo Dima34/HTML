@@ -2160,6 +2160,126 @@ header{
   }
 }
 
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======REGISTER=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.reg{
+
+  .wrapper{
+    padding-top: 25px;
+
+    .reg_title{
+      font-size: 36px;
+      line-height: 34px;
+      @include Gotham(500);
+      margin-bottom: 40px;
+    }
+
+    .reg_choices{
+      display: flex;
+      margin-bottom: 12px;
+
+      .reg_choice{
+        padding: 0 0 15px 0;
+        font-size: 18px;
+        line-height: 17px;
+        @include Gotham(400);
+        margin-right: 21px;
+      }
+
+      .reg-choice-selected{
+        @include Gotham(500);
+        color: #61A036;
+        border-bottom:2px solid #61A036;
+      }
+    }
+
+    .reg_main{
+      width: 289px;
+      margin: 0 auto;
+
+      .reg_input_title{
+        font-size: 14px;
+        line-height: 13px;
+        @include Gotham(500);
+        margin-bottom: 15px;
+
+        span{
+          color:#EF5F5F;
+        }
+      }
+
+      .reg_input{
+        background: 0;
+        border: 1px solid #D8DCE4;
+        border-radius: 7px;
+        font-size: 14px;
+        line-height: 13px;
+        @include Gotham(400);
+        padding: 7px 10px;
+        margin-bottom: 21px;
+        display: block;
+        width: 100%;
+      }
+
+      .reg_input_wrapper{
+
+        select{
+          background: 0;
+          border: 1px solid #D8DCE4;
+          border-radius: 7px;
+          font-size: 14px;
+          line-height: 13px;
+          @include Gotham(400);
+          padding: 7px 10px;
+          margin-bottom: 21px;
+          display: block;
+          width: 100%;
+        }
+      }
+
+      input[type="checkbox"]{
+        display: none;
+      }
+
+      label{
+        font-size: 14px;
+        line-height: 13px;
+        @include Gotham(400);
+        color: #373737;
+        padding: 4px 0 4px 31px;
+        background: url(../img/svg/reg_checkbox_unactive.svg) center left no-repeat;
+        background-size: 20px;
+        margin-bottom: 20px;
+        display: block;
+      }
+
+      input[type="checkbox"]:checked + label{
+        background: url(../img/svg/cheackbox_checked.svg) center left no-repeat;
+        background-size: 20px;
+      }
+
+      .reg_register{
+        display: block;
+        background: #61A036;
+        border-radius: 7px;
+        font-size: 18px;
+        line-height: 17px;
+        @include Gotham(400);
+        color: #FFFFFF;
+        padding: 15px;
+        text-align: center;
+        margin-bottom: 29px;
+      }
+    }
+  }
+}
+
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -4569,6 +4689,38 @@ footer{
 
   }
 
+  .reg{
+
+    .wrapper{
+      padding-top: 25px;
+  
+      .reg_title{
+        font-size: 36px;
+        line-height: 34px;
+        margin-bottom: 40px;
+      }
+  
+      .reg_choices{
+        display: flex;
+        margin-bottom: 20px;
+  
+        .reg_choice{
+          padding: 0 0 15px 0;
+          font-size: 18px;
+          line-height: 17px;
+          margin-right: 21px;
+        }
+  
+      }
+  
+      .reg_main{
+        width: 94.792vw;
+        margin: 0 auto;
+
+      }
+    }
+  }
+
   footer{
     .wrapper{
       padding:2.604vw 0;
@@ -5744,6 +5896,75 @@ footer{
       top: 20px;
     }
   }
+
+  .reg{
+
+    .wrapper{
+      padding-top: 2.604vw;
+  
+      .reg_title{
+        font-size: 7.500vw;
+        line-height: 7.500vw;
+        margin-bottom: 12.500vw;
+      }
+  
+      .reg_choices{
+        margin-bottom: 6.250vw;
+  
+        .reg_choice{
+          padding: 0 0 4.688vw 0;
+          font-size: 5.625vw;
+          line-height: 5.625vw;
+          margin-right: 6.563vw;
+        }
+      }
+  
+      .reg_main{
+        width: 100%;
+        margin: 0 auto;
+  
+        .reg_input_title{
+          font-size: 4.375vw;
+          line-height: 4.375vw;
+          margin-bottom: 4.688vw;
+        }
+  
+        .reg_input{
+          border-radius: 2.188vw;
+          padding: 2.188vw 3.125vw;
+          font-size: 4.375vw;
+          line-height: 4.375vw;
+          margin-bottom: 4.688vw;
+        }
+  
+        .reg_input_wrapper{
+  
+          select{
+            border-radius: 2.188vw;
+            padding: 2.188vw 3.125vw;
+            font-size: 4.375vw;
+            line-height: 4.375vw;
+            margin-bottom: 4.688vw;
+          }
+        }
+  
+  
+        label{
+          font-size: 4.375vw;
+            line-height: 4.375vw;
+        }
+  
+        .reg_register{
+          border-radius: 7px;
+          font-size: 5.625vw;
+          line-height: 5.313vw;
+          padding: 4.688vw;
+          margin-bottom: 8.750vw;
+        }
+      }
+    }
+  }
+  
 
   footer{
     .wrapper{

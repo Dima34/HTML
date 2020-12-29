@@ -1677,6 +1677,100 @@ header {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* -------=======REGISTER=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.reg .wrapper {
+  padding-top: 25px; }
+  .reg .wrapper .reg_title {
+    font-size: 36px;
+    line-height: 34px;
+    font-family: "Gotham" !important;
+    font-weight: 500 !important;
+    margin-bottom: 40px; }
+  .reg .wrapper .reg_choices {
+    display: flex;
+    margin-bottom: 12px; }
+    .reg .wrapper .reg_choices .reg_choice {
+      padding: 0 0 15px 0;
+      font-size: 18px;
+      line-height: 17px;
+      font-family: "Gotham" !important;
+      font-weight: 400 !important;
+      margin-right: 21px; }
+    .reg .wrapper .reg_choices .reg-choice-selected {
+      font-family: "Gotham" !important;
+      font-weight: 500 !important;
+      color: #61A036;
+      border-bottom: 2px solid #61A036; }
+  .reg .wrapper .reg_main {
+    width: 289px;
+    margin: 0 auto; }
+    .reg .wrapper .reg_main .reg_input_title {
+      font-size: 14px;
+      line-height: 13px;
+      font-family: "Gotham" !important;
+      font-weight: 500 !important;
+      margin-bottom: 15px; }
+      .reg .wrapper .reg_main .reg_input_title span {
+        color: #EF5F5F; }
+    .reg .wrapper .reg_main .reg_input {
+      background: 0;
+      border: 1px solid #D8DCE4;
+      border-radius: 7px;
+      font-size: 14px;
+      line-height: 13px;
+      font-family: "Gotham" !important;
+      font-weight: 400 !important;
+      padding: 7px 10px;
+      margin-bottom: 21px;
+      display: block;
+      width: 100%; }
+    .reg .wrapper .reg_main .reg_input_wrapper select {
+      background: 0;
+      border: 1px solid #D8DCE4;
+      border-radius: 7px;
+      font-size: 14px;
+      line-height: 13px;
+      font-family: "Gotham" !important;
+      font-weight: 400 !important;
+      padding: 7px 10px;
+      margin-bottom: 21px;
+      display: block;
+      width: 100%; }
+    .reg .wrapper .reg_main input[type="checkbox"] {
+      display: none; }
+    .reg .wrapper .reg_main label {
+      font-size: 14px;
+      line-height: 13px;
+      font-family: "Gotham" !important;
+      font-weight: 400 !important;
+      color: #373737;
+      padding: 4px 0 4px 31px;
+      background: url(../img/svg/reg_checkbox_unactive.svg) center left no-repeat;
+      background-size: 20px;
+      margin-bottom: 20px;
+      display: block; }
+    .reg .wrapper .reg_main input[type="checkbox"]:checked + label {
+      background: url(../img/svg/cheackbox_checked.svg) center left no-repeat;
+      background-size: 20px; }
+    .reg .wrapper .reg_main .reg_register {
+      display: block;
+      background: #61A036;
+      border-radius: 7px;
+      font-size: 18px;
+      line-height: 17px;
+      font-family: "Gotham" !important;
+      font-weight: 400 !important;
+      color: #FFFFFF;
+      padding: 15px;
+      text-align: center;
+      margin-bottom: 29px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======FOOTER=======-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3109,6 +3203,23 @@ footer .wrapper {
         .page_navigation .navigation_pagination .pagination_blk p {
           font-size: 2.344vw;
           line-height: 2.244vw; }
+  .reg .wrapper {
+    padding-top: 25px; }
+    .reg .wrapper .reg_title {
+      font-size: 36px;
+      line-height: 34px;
+      margin-bottom: 40px; }
+    .reg .wrapper .reg_choices {
+      display: flex;
+      margin-bottom: 20px; }
+      .reg .wrapper .reg_choices .reg_choice {
+        padding: 0 0 15px 0;
+        font-size: 18px;
+        line-height: 17px;
+        margin-right: 21px; }
+    .reg .wrapper .reg_main {
+      width: 94.792vw;
+      margin: 0 auto; }
   footer .wrapper {
     padding: 2.604vw 0; }
     footer .wrapper .footer_logo {
@@ -3849,6 +3960,47 @@ footer .wrapper {
     .pre-order__popup_popup_blk .pp_close {
       right: 20px;
       top: 20px; }
+  .reg .wrapper {
+    padding-top: 2.604vw; }
+    .reg .wrapper .reg_title {
+      font-size: 7.500vw;
+      line-height: 7.500vw;
+      margin-bottom: 12.500vw; }
+    .reg .wrapper .reg_choices {
+      margin-bottom: 6.250vw; }
+      .reg .wrapper .reg_choices .reg_choice {
+        padding: 0 0 4.688vw 0;
+        font-size: 5.625vw;
+        line-height: 5.625vw;
+        margin-right: 6.563vw; }
+    .reg .wrapper .reg_main {
+      width: 100%;
+      margin: 0 auto; }
+      .reg .wrapper .reg_main .reg_input_title {
+        font-size: 4.375vw;
+        line-height: 4.375vw;
+        margin-bottom: 4.688vw; }
+      .reg .wrapper .reg_main .reg_input {
+        border-radius: 2.188vw;
+        padding: 2.188vw 3.125vw;
+        font-size: 4.375vw;
+        line-height: 4.375vw;
+        margin-bottom: 4.688vw; }
+      .reg .wrapper .reg_main .reg_input_wrapper select {
+        border-radius: 2.188vw;
+        padding: 2.188vw 3.125vw;
+        font-size: 4.375vw;
+        line-height: 4.375vw;
+        margin-bottom: 4.688vw; }
+      .reg .wrapper .reg_main label {
+        font-size: 4.375vw;
+        line-height: 4.375vw; }
+      .reg .wrapper .reg_main .reg_register {
+        border-radius: 7px;
+        font-size: 5.625vw;
+        line-height: 5.313vw;
+        padding: 4.688vw;
+        margin-bottom: 8.750vw; }
   footer .wrapper {
     padding: 6.250vw 0 9.375vw 0; }
     footer .wrapper .footer_logo {
