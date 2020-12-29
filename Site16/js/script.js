@@ -109,3 +109,50 @@ for (let b = 0; b < minus.length; b++) {
     });
 }
 
+
+//
+//  Cathalog filter dropdown
+//
+
+let ddBlock = document.querySelectorAll(".cathalog_sidebar_section");
+let ddHeader = document.querySelectorAll(".cathalog_sidebar_section_title");
+let ddList = document.querySelectorAll(".cathalog_sidebar_section_itemlist")
+
+for (let i = 0; i < ddHeader.length; i++) {
+    
+    ddHeader[i].addEventListener('click',()=>{
+        if(ddBlock[i].classList.contains("cathalog_sidebar_section-active")){
+            ddBlock[i].classList.remove("cathalog_sidebar_section-active")
+        }
+        else{
+            ddBlock[i].classList.add("cathalog_sidebar_section-active")
+        }
+    });
+    
+}
+
+
+//
+//  Cathalog filter dropdown
+//
+
+let ddBlock1 = document.querySelectorAll(".all-products_popup_dd-blk");
+let ddHeader1 = document.querySelectorAll(".all-products_popup_dd-blk_header");
+let ddList1 = document.querySelectorAll(".all-products_popup_dd-blk_main")
+
+for (let i = 0; i < ddHeader1.length; i++) {
+    
+    ddHeader1[i].addEventListener('click',()=>{
+        ddBlock1[i].classList.add("all-products_popup_dd-blk-active")
+
+        for (let b = 0; b < ddHeader1.length; b++) {
+            if(b != i){
+                ddBlock1[b].classList.remove("all-products_popup_dd-blk-active");
+            }
+        }
+        
+    });
+    
+}
+
+
