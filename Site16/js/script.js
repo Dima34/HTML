@@ -310,3 +310,32 @@ if(buyBtn){
         buyBtn.classList.add("select_selected")
     });
 }
+
+
+
+//
+// Cart desc
+//
+
+let cardDesc = document.querySelectorAll(".desc_desc");
+let cardDescOpen = document.querySelectorAll(".desc_btn");
+let cardDescClose = document.querySelectorAll(".desc_close");
+
+if(cardDescOpen){
+    for (let i = 0; i < cardDescOpen.length; i++) {
+    
+        cardDescOpen[i].addEventListener('click',()=>{
+            cardDesc[i].classList.add("desc_desc-active")
+        });
+
+    }
+
+    for (let b = 0; b < cardDescClose.length; b++) {
+        
+        cardDescClose[b].addEventListener('click',()=>{
+            cardDesc[b].classList.remove("desc_desc-active")
+        });
+        
+    }
+}
+
