@@ -2888,6 +2888,288 @@ header{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* ------=====MAKE AN ORDER======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.make-an-order{
+
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    padding-top: 25px;
+    column-gap: 80px;
+
+    .make-an-order_title{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      font-size: 36px;
+      line-height: 42px;
+      @include Roboto(500);
+      margin-bottom: 55px;
+    }
+
+    .make-an-order_status{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      display: flex;
+      margin-bottom: 60px;
+
+      p{
+        padding: 2px 94px 2px 30px;
+        background: url(../img/svg/checkbox_unchecked-green.svg) left center no-repeat;
+        background-size: 20px;
+        position: relative;
+        @include Gotham(400);
+
+        &::after{
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          transform: translateY(-50%);
+          width: 74px;
+          height: 2px;
+          background: #C4C4C4;
+        }
+
+        &:last-child{
+
+          &::after{
+            display: none;
+          }
+        }
+      }
+
+      .status_active{
+        @include Gotham(500);
+        background: url(../img/svg/cheackbox_checked.svg)left center no-repeat;
+        background-size: 25px;
+
+        &::after{
+          background: black;
+        }
+      }
+    }
+
+    .make-an-order_my-data{
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin-bottom: 49px;
+
+      .my-data_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 49px;
+
+        .my-data_title{
+          font-size: 18px;
+          line-height: 21px;
+          @include Roboto(500);
+          padding: 6px 0 6px 48px;
+          background: url(../img/svg/make-an-order_my-data.svg) left center no-repeat;
+          background-size: 32px;
+        }
+
+        .my-data_hint{
+          font-size: 12px;
+          line-height: 12px;
+          @include Gotham(400);
+          color: #77828D;
+
+          span{
+            color: #EF6060;
+          }
+        }
+      }
+
+      .my-data_inputs{
+        width: 364px;
+
+        .my-data_groupbox{
+
+          .my-data_input-title{
+            font-size: 14px;
+            line-height: 13px;
+            @include Gotham(400);
+            color: #373737;
+            margin-bottom: 15px;
+
+            span{
+              color: #EF5F5F;
+            }
+          }
+
+          .my-data_input{
+            font-size: 14px;
+            line-height: 13px;
+            background: 0;
+            border-radius: 7px;
+            padding: 11px 20px;
+            border: 1px solid #D8DCE4;
+            @include Gotham(400);
+            margin-bottom: 25px;
+            width: 100%;
+          }
+        }
+
+        .my-data_groupbox-splitted{
+          display: flex;
+          justify-content: space-between;
+
+          .my-data_groupbox{
+            width: 168px;
+            display: inline-block;
+          }
+        }
+
+        .my-data_checkbox{
+
+          input{
+            display: none;
+          }
+
+          label{
+            font-size: 14px;
+            line-height: 13px;
+            @include Gotham(400);
+            color: #373737;
+            padding: 4px 0 4px 31px;
+            background: url(../img/svg/reg_checkbox_unactive.svg) left center no-repeat;
+            background-size: 20px;
+          }
+
+          input:checked + label{
+            background: url(../img/svg/cheackbox_checked.svg) left center no-repeat;
+            background-size: 24px;
+          }
+        }
+      }
+    }
+
+    .make-an-order_delivey-method{
+      grid-column-start: 1;
+      grid-column-end: 2;
+
+      .delivey-method_header{
+        margin-bottom: 49px;
+        font-size: 18px;
+        line-height: 21px;
+        @include Roboto(500);
+        padding: 6px 0 6px 48px;
+        background: url(../img/svg/delivery_method_ico.svg) left center no-repeat;
+        background-size: 32px;
+      }
+
+      .delivey-method_methods{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        .delivey-method_method{
+          width: 347px;
+
+          input{
+            display: none;
+          }
+
+          label{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            line-height: 13px;
+            @include Gotham(500);
+            color: #373737;
+            padding: 6px 0 6px 30px;
+            background: url(../img/svg/checkbox_unchecked-green.svg) center left no-repeat;
+            background-size: 20px;
+            margin-bottom: 10px;
+
+            span{
+              color:  white;
+              background: #61A036;
+              padding: 5px;
+              border-radius: 3px;
+              margin-top: 2px;
+            }
+          }
+
+          input:checked + label{
+            background: url(../img/svg/cheackbox_checked.svg) center left no-repeat;
+            background-size: 24px;
+          }
+
+          .method_desc{
+            padding-left: 30px;
+            @include Gotham(400);
+            font-size: 12px;
+            line-height: 176.68%;
+            color: #77828D;
+            margin-bottom: 25px;
+
+            span{
+              color: black;
+            }
+          }
+        }
+      }
+
+    }
+
+    .make-an-order_adress{
+      grid-column-start: 1;
+      grid-column-end: 2;
+      width: 100%;
+
+      input,select{
+        font-size: 14px;
+        line-height: 13px;
+        background: 0;
+        border-radius: 7px;
+        padding: 11px 20px;
+        border: 1px solid #D8DCE4;
+        @include Gotham(400);
+      }
+
+      .adress_input_title{
+        font-size: 14px;
+        line-height: 13px;
+        @include Gotham(400);
+        color: #373737;
+        margin-bottom: 15px;
+
+        span{
+          color: #EF5F5F;
+        }
+      }
+
+      .adress_line1{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .make-an-order_payment-way{
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    .make-an-order_my-order{
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======FOOTER=======-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -7513,7 +7795,6 @@ footer{
     }
   }
   
-
   footer{
     .wrapper{
       padding:6.250vw 0 9.375vw 0;

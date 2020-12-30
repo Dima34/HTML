@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -14,7 +13,7 @@
             <div class="desktop_header_wrapper">
                 <img src="./img/logo.png" alt="header logo" class="header_logo">
                 <ul class="desktop_nav">
-                    <li class="desktop_nav_items"><a href="./about-us.html">О нас</a></li>
+                    <li class="desktop_nav_items"><a href="#">О нас</a></li>
                     <li class="desktop_nav_items"><a href="#">Продукты</a></li>
                     <li class="desktop_nav_items"><a href="#">Сотрудничество</a></li>
                     <li class="desktop_nav_items"><a href="#">Доставка и оплата</a></li>
@@ -137,168 +136,225 @@
 
     <!-- Main start -->
     <main>  
-        <div class="search">
+
+        <div class="navigation">
             <div class="wrapper">
-                <input type="search" name="search" id="searc" placeholder="Начните вводить название товара, например “Банан”">
-                <a href="#">
-                    <p class="desktop"><span class="desktop-1">Искать</span><span class="desktop-2"><img src="./img/search-mobile.svg" alt="img"></span></p>
-                    <img class="mobile" src="" alt="search">
-                </a>
+                <a href="#">Главная ></a>
+                <a href="#">Продукты ></a>
+                <a href="#">Название товара</a>
             </div>
         </div>
-
-        <div class="intro">
+        
+        <div class="make-an-order">
             <div class="wrapper">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide ibg"><img src="./img/intro.png" alt="img"></div>
-                        <div class="swiper-slide ibg"><img src="./img/intro.png" alt="img"></div>
-                        <div class="swiper-slide ibg"><img src="./img/intro.png" alt="img"></div>
-                    </div>
-                    <div class="swiper-button-next"><img src="./img/arrow-right.png" alt="img"></div>
-                    <div class="swiper-button-prev"><img src="./img/arrow-left.png" alt="img"></div>
+                <h2 class="make-an-order_title">Оформление заказа</h2>
+
+                <div class="make-an-order_status">
+                    <p class="status_active">Ввод данных</p>
+                    <p>Оплата</p>
+                    <p>Подверждение</p>
                 </div>
+
+                <div class="make-an-order_my-data">
+
+                    <div class="my-data_header">
+                        <p class="my-data_title">Ваши данные</p>
+                        <p class="my-data_hint"><span>*</span> - поля обязательные для заполнения  </p>
+                    </div>
+
+                    <div class="my-data_inputs">
+
+                        <div class="my-data_groupbox">
+                            <p class="my-data_input-title">ФИО <span>*</span></p>
+                            <input type="text" name="fio" id="fio" class="my-data_input" placeholder="Иванов Иван Иванович">
+                        </div>
+
+                        <div class="my-data_groupbox">
+                            <p class="my-data_input-title">Название юр. лица <span>*</span></p>
+                            <input type="text" name="name" id="name" class="my-data_input" placeholder="Название фирмы">
+                        </div>
+
+                        <div class="my-data_groupbox-splitted">
+
+                            <div class="my-data_groupbox">
+                                <p class="my-data_input-title">Номер телефона <span>*</span></p>
+                                <input type="tel" name="tel" id="tel" class="my-data_input" placeholder="+7 900 800 7000">
+                            </div>
+        
+                            <div class="my-data_groupbox">
+                                <p class="my-data_input-title">E-mail <span>*</span></p>
+                                <input type="email" name="email" id="email" class="my-data_input" placeholder="welcome@mail.com">
+                            </div>
+
+                        </div>
+
+                        <div class="my-data_checkbox">
+                            <input type="checkbox" name="as-new-user" id="as-new-user">
+                            <label for="as-new-user">Зарегистрироваться как новый пользователь</label>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="make-an-order_delivey-method">
+                    <h2 class="delivey-method_header">Способ доставки</h2>
+                    <div class="delivey-method_methods">
+
+                        <div class="delivey-method_method">
+                            <input type="radio" name="method" id="method1" checked>
+                            <label for="method1">Курьером по Новосибирску <span>199 ₽</span></label>
+                            <p class="method_desc">
+                                Курьер доставит заказ к порогу вашего дома, 
+                                в удобное для вас время
+                            </p>
+                        </div>
+
+                        <div class="delivey-method_method">
+                            <input type="radio" name="method" id="method2">
+                            <label for="method2">Курьером по Новосибирску <span>199 ₽</span></label>
+                            <p class="method_desc">
+                                Курьер доставит заказ к порогу вашего дома, 
+                                в удобное для вас время
+                            </p>
+                        </div>
+
+                        <div class="delivey-method_method">
+                            <input type="radio" name="method" id="method3">
+                            <label for="method3">Самовывоз <span>Бесплатно</span></label>
+                            <p class="method_desc">
+                                Вы можете забрать заказ по адресу<br>
+                                <span>Красный проспект, 125 ежедневно с 10:00 до 19:00</span>
+                            </p>
+                        </div>
+
+                        <div class="delivey-method_method">
+                            <input type="radio" name="method" id="method4">
+                            <label for="method4">Курьером по Новосибирску <span>199 ₽</span></label>
+                            <p class="method_desc">
+                                Курьер доставит заказ к порогу вашего дома, 
+                                в удобное для вас время
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="make-an-order_adress">
+                    <div class="adress_line1">
+
+                        <div class="adress_groupbox">
+                            <p class="adress_input_title">Город доставки (нас. пункт) <span>*</span></p>
+                            <select name="city" id="city">
+                                <option value="1">Новосибирск</option>
+                                <option value="1">Москва</option>
+                            </select>
+                        </div>
+
+                        <div class="adress_groupbox">
+                            <p class="adress_input_title">Дата доставки <span>*</span></p>
+                            <select name="date" id="date">
+                                <option value="1">25.09.2020</option>
+                                <option value="1">25.09.2021</option>
+                            </select>
+                        </div>
+
+                        <div class="adress_groupbox">
+                            <p class="adress_input_title">Время доставки <span>*</span></p>
+                            <select name="time" id="time">
+                                <option value="1">11</option>
+                                <option value="1">21</option>
+                            </select>
+                            <p> : </p>
+                            <select name="time1" id="time1">
+                                <option value="1">14</option>
+                                <option value="1">14</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="adress_line2">
+
+                        <div class="adress_groupbox">
+                            <p class="adress_input_title">Адрес доставки <span>*</span></p>
+                            <input type="text" name="address" id="address">
+                        </div>
+
+                        <div class="adress_groupbox">
+                            <p class="adress_input_title">Почтовый индекс <span>*</span></p>
+                            <input type="number" name="address" id="address" placeholder="0 0 0 0">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="make-an-order_payment-way">
+
+                    <h2 class="payment-way_title">
+                        Способ оплаты
+                    </h2>
+                    
+                    <div class="payment-way_way">
+                        <input type="checkbox" name="way1" id="way1">
+                        <label for="way1">Электронный платёж</label>
+                        <p class="way_description">
+                            Оплата любым способом 
+                            через платежный сервис PayAnyWay
+                        </p>
+                    </div>
+
+                    <div class="payment-way_way">
+                        <input type="checkbox" name="way1" id="way1">
+                        <label for="way1">Наличными курьеру</label>
+                        <p class="way_description">
+                            Оплата производится курьеру
+                            в руки, в момент получения заказа
+                        </p>
+                    </div>
+
+                    <a href="#" class="payment-way_pay-btn">Перейти к оплате</a>
+
+                </div>
+
+                <div class="make-an-order_my-order">
+                    <div class="my-order_header">
+                        <h2 class="my-order-title">Ваш заказ</h2>
+                        <a href="#" class="my-order-change"></a>
+                    </div>
+
+                    <div class="my-order_main">
+                        <div class="my-order_product">
+                            <p class="product_name">Наименованиее товара</p>
+                            <p class="product_price">450 ₽ </p>
+                        </div>
+
+                        <div class="my-order_product">
+                            <p class="product_name">Наименованиее товара</p>
+                            <p class="product_price">450 ₽ </p>
+                        </div>
+
+                        <div class="my-order_product">
+                            <p class="product_name">Наименованиее</p>
+                            <p class="product_price">450 ₽ </p>
+                        </div>
+
+                        <div class="my-order_delivery">
+                            <p class="delivery_name">Доставка</p>
+                            <p class="delivery_price">199 ₽ </p>
+                        </div>
+
+                        <div class="my-order_summ">
+                            <p class="summ_text">Стоимость покупки</p>
+                            <p class="summ_summ">1549 ₽ </p>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+            
         </div>
 
-        <div class="categories">
-            <div class="wrapper">
-
-                <div class="categories_blk_mobile">
-                    <a href="#">Овощи</a>
-                    <a href="#">Фрукты</a>
-                    <a href="#">Экзотические фрукты</a>
-                    <a href="#">Ягоды</a> 
-                </div>
-
-                <a href="#" class="categories_blk">
-                    <div class="blk_img ibg"><img src="./img/categories-img.png" alt="img"></div>
-                    <p class="blk_title">Овощи</p>
-                </a>
-                <a href="#" class="categories_blk">
-                    <div class="blk_img ibg"><img src="./img/categories-img.png" alt="img"></div>
-                    <p class="blk_title">Овощи</p>
-                </a>
-                <a href="#" class="categories_blk">
-                    <div class="blk_img ibg"><img src="./img/categories-img.png" alt="img"></div>
-                    <p class="blk_title">Овощи</p>
-                </a>
-                <a href="#" class="categories_blk">
-                    <div class="blk_img ibg"><img src="./img/categories-img.png" alt="img"></div>
-                    <p class="blk_title">Овощи</p>
-                </a>
-                <a href="#" class="categories_blk">
-                    <div class="blk_img ibg"><img src="./img/categories-img.png" alt="img"></div>
-                    <p class="blk_title">Овощи</p>
-                </a>
-            </div>
-        </div>
-
-        <div class="welcome">
-            <div class="wrapper">
-                <h2 class="welcome_title">Добро пожаловать на сайт All-green</h2>
-                <div class="welcome_sub-title">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl id sed etiam pretium cras porttitor. Enim ut suscipit id sed tellus odio. Erat cras sodales in diam sodales et. Accumsan purus eget nulla morbi diam bibendum sit commodo. Orci sed enim vulputate consequat, mauris volutpat feugiat consectetur. Ultrices sit purus neque placerat duis. Diam eu odio mattis quisque. Consectetur quam aenean semper etiam. Sed diam arcu eget ut. Turpis penatibus penatibus arcu habitant nibh risus integer volutpat. Augue est natoque nullam tortor senectus augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl id sed etiam pretium cras porttitor. Enim ut suscipit id sed tellus odio. Erat cras sodales in diam sodales et. Accumsan purus eget nulla morbi diam bibendum sit commodo. Orci sed enim vulputate consequat, mauris volutpat feugiat consectetur. Ultrices sit purus neque placerat duis. Diam eu odio mattis quisque. Consectetur quam aenean semper etiam. Sed diam arcu eget ut. Turpis penatibus penatibus arcu habitant nibh risus integer volutpat. Augue est natoque nullam tortor senectus.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="popular">
-            <div class="wrapper">
-                <h2 class="welcome_title">Популярные товары</h2>
-                <div class="popular_blocks">
-                    <div class="popular_blk">
-                        <img src="./img/apple.png" alt="img" class="popular_img">
-                        <p class="popular_country">Россия</p>
-                        <h2 class="popular_title">Длинное название товара</h2>
-                        <p class="popular_description">Краткое описание товара</p>
-                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
-                        <p class="popular_crossed-price">1690 р./10 к</p>
-                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
-                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
-                        <a href="#" class="popular_button">Подробнее</a>
-                    </div>
-                    <div class="popular_blk">
-                        <img src="./img/apple.png" alt="img" class="popular_img">
-                        <p class="popular_country">Россия</p>
-                        <h2 class="popular_title">Длинное название товара</h2>
-                        <p class="popular_description">Краткое описание товара</p>
-                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
-                        <p class="popular_crossed-price">1690 р./10 к</p>
-                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
-                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
-                        <a href="#" class="popular_button">Подробнее</a>
-                    </div>
-                    <div class="popular_blk">
-                        <img src="./img/apple.png" alt="img" class="popular_img">
-                        <p class="popular_country">Россия</p>
-                        <h2 class="popular_title">Длинное название товара</h2>
-                        <p class="popular_description">Краткое описание товара</p>
-                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
-                        <p class="popular_crossed-price">1690 р./10 к</p>
-                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
-                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
-                        <a href="#" class="popular_button">Подробнее</a>
-                    </div>
-                    <div class="popular_blk">
-                        <img src="./img/apple.png" alt="img" class="popular_img">
-                        <p class="popular_country">Россия</p>
-                        <h2 class="popular_title">Длинное название товара</h2>
-                        <p class="popular_description">Краткое описание товара</p>
-                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
-                        <p class="popular_crossed-price">1690 р./10 к</p>
-                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
-                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
-                        <a href="#" class="popular_button">Подробнее</a>
-                    </div>
-                    <div class="popular_blk">
-                        <img src="./img/apple.png" alt="img" class="popular_img">
-                        <p class="popular_country">Россия</p>
-                        <h2 class="popular_title">Длинное название товара</h2>
-                        <p class="popular_description">Краткое описание товара</p>
-                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
-                        <p class="popular_crossed-price">1690 р./10 к</p>
-                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
-                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
-                        <a href="#" class="popular_button">Подробнее</a>
-                    </div>
-                </div>
-                <div class="popular_footer">
-                    <p class="popular-footer-p">Если вы хотите, чтоб наш каталог был у вас всегда под рукой, то вы можете</p>
-                    <a href="#" class="popular-footer-button">Скачать каталог</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="advantages">
-            <div class="wrapper">
-                <div class="advantages_blk">
-                    <h2>Наши преимущества</h2>
-                </div>
-                <div class="advantages_blocks">
-                    <div class="block">
-                        <img src="./img/truck.png" alt="img">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>  
-                    <div class="block">
-                        <img src="./img/truck.png" alt="img">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>   
-                    <div class="block">
-                        <img src="./img/truck.png" alt="img">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>   
-                    <div class="block">
-                        <img src="./img/truck.png" alt="img">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>   
-                    <div class="block">
-                        <img src="./img/truck.png" alt="img">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>     
-                </div>                  
-            </div>
-        </div>
 
         <div class="pp__popup">
             <div class="pp__popup_popup_blk">
@@ -323,31 +379,6 @@
                 <img src="./img/svg/all_popup_close.svg" alt="pp_close" class = "pp_close">
             </div>
         </div>
-
-        <div class="pre-order__popup">
-            <div class="pre-order__popup_popup_blk">
-                <h2 class="pp__popup_popup_blk_title">
-                    Предварительный заказ
-                </h2>
-                <div class="pre-order__popup_popup_blk_main">
-                    <p class="pre-order_input_title">ФИО <span>*</span></p>
-                    <input type="text" name="name" id="name" class="pp_input">
-
-                    <p class="pre-order_input_title">E-Mail <span>*</span></p>
-                    <input type="email" name="name" id="name2" class="pp_input">
-
-                    <p class="pre-order_input_title">Номер телефона <span>*</span></p>
-                    <input type="tel" name="name" id="name3" class="pp_input">
-
-                    <p class="pre-order_input_title">Комментарий <span>*</span></p>
-                    <textarea name="text" id="text" class="pp_textarea"></textarea>
-
-                    <a href="#" class="pre-order_send">Заказать</a>
-                </div>
-                <img src="./img/svg/all_popup_close.svg" alt="pre-order_close" class = "pre-order_close">
-            </div>
-        </div>
-         
         
     </main>
     <!-- Main end -->
@@ -385,15 +416,7 @@
     </footer>
     <!-- Footer end -->
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
-    <script>
-	    var swiper = new Swiper('.swiper-container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-	</script>
+    
 </body>
 </html>
