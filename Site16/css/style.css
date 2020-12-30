@@ -3055,6 +3055,39 @@ footer .wrapper {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* --------======PAYMENTS======-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.lk_main-payments .wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+  .lk_main-payments .wrapper .payment, .lk_main-payments .wrapper .payment-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 381px;
+    height: 237px;
+    border: 1px solid #61A036;
+    border-radius: 7px;
+    margin-right: 40px;
+    position: relative;
+    margin-bottom: 30px; }
+    .lk_main-payments .wrapper .payment p, .lk_main-payments .wrapper .payment a, .lk_main-payments .wrapper .payment-add p, .lk_main-payments .wrapper .payment-add a {
+      font-size: 18px;
+      line-height: 33px;
+      font-family: "Gotham" !important;
+      font-weight: 500 !important; }
+    .lk_main-payments .wrapper .payment img, .lk_main-payments .wrapper .payment-add img {
+      position: absolute;
+      top: 20px;
+      right: 20px; }
+  .lk_main-payments .wrapper .payment-add {
+    border: 1px solid #828282; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* ------==========MEDIA=========------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3781,6 +3814,54 @@ footer .wrapper {
         .cart .wrapper .cart_sidebar .sidebar_blk .subtitle_img {
           width: 2.500vw;
           height: 2.500vw; }
+  .lk_main-my-orders .wrapper .orders__dropdown_block {
+    margin-bottom: 1.563vw; }
+  .lk_main-my-orders .wrapper .orders__dropdown_block_header {
+    padding: 1.042vw; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_header p {
+      font-size: 0.938vw;
+      line-height: 0.885vw;
+      margin-right: 1.302vw; }
+  .lk_main-my-orders .wrapper .orders__dropdown_block_main {
+    font-size: 1.302vw;
+    line-height: 1.510vw;
+    padding: 0 1.042vw; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line {
+      grid-template-columns: 1fr 4.688vw 4.219vw 6.563vw 4.219vw;
+      padding: 2.083vw 0.781vw; }
+      .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line p {
+        font-size: 0.833vw;
+        line-height: 0.781vw;
+        padding: 0 0.260vw; }
+      .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line:first-child {
+        padding: 0.521vw 0.781vw 0.521vw 0; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_summ {
+      padding-top: 2.917vw; }
+      .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_summ p {
+        font-size: 0.938vw;
+        line-height: 1.094vw; }
+        .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_summ p span {
+          font-size: 1.875vw;
+          line-height: 2.188vw;
+          margin-left: 1.563vw; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_qr {
+      width: 10.938vw;
+      margin-left: 2.188vw;
+      padding: 1.563vw 0.625vw; }
+      .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_qr .qr {
+        width: 9.688vw;
+        height: 9.688vw;
+        margin-bottom: 0.521vw; }
+      .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_qr .qr_btn {
+        border-radius: 0.365vw;
+        padding: 0.781vw;
+        font-size: 0.938vw;
+        line-height: 1.094vw; }
+  .lk_main-my-orders .wrapper .orders__dropdown_block_main-active {
+    padding-top: 1.042vw;
+    padding-bottom: 1.094vw; }
+  .lk_selection-blk {
+    margin-bottom: 4.167vw !important; }
   footer .wrapper {
     padding: 1.667vw 0 1.823vw 0; }
     footer .wrapper .footer_logo > a img {
@@ -5329,6 +5410,72 @@ footer .wrapper {
             margin-right: 0; }
   .lk .lk_delete-acc {
     display: none; }
+  .lk_main-my-orders .wrapper .orders__dropdown_block {
+    margin-bottom: 1.563vw; }
+  .lk_main-my-orders .wrapper .orders__dropdown_block_header {
+    padding: 2.604vw; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_header p {
+      font-size: 1.823vw;
+      line-height: 1.693vw;
+      margin-right: 3.255vw; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_header .order_adress {
+      display: none; }
+  .lk_main-my-orders .wrapper .orders__dropdown_block_main {
+    padding: 0 1.042vw; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_main .order_adress_mob {
+      display: block !important;
+      font-family: "Gotham" !important;
+      font-weight: 500 !important;
+      font-size: 1.823vw;
+      line-height: 1.693vw;
+      margin-bottom: 2.604vw; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table {
+      width: 65.104vw; }
+      .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line {
+        grid-template-columns: 1fr 8.073vw 7.161vw 12.240vw 6.250vw;
+        padding: 2.083vw 0.781vw; }
+        .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line p {
+          font-size: 1.823vw;
+          line-height: 1.693vw;
+          padding: 0 0.260vw; }
+        .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line:nth-child(4) {
+          padding: 0.521vw 0.781vw 0.521vw 0; }
+          .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line:nth-child(4) p {
+            color: #6FA036; }
+      .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_summ {
+        padding-top: 5.078vw; }
+        .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_summ p {
+          font-size: 1.823vw;
+          line-height: 2.083vw; }
+          .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_summ p span {
+            font-size: 3.125vw;
+            line-height: 3.646vw;
+            margin-left: 3.906vw;
+            margin-bottom: 1.302vw; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_qr {
+      width: 23.438vw;
+      margin-left: 2.604vw;
+      padding: 0;
+      align-items: center; }
+      .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_qr .qr {
+        width: 19.271vw;
+        height: 19.271vw;
+        margin-bottom: 0.521vw; }
+      .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_qr .qr_btn {
+        border-radius: 0.911vw;
+        padding: 1.302vw;
+        font-size: 1.823vw;
+        line-height: 1.823vw;
+        margin-bottom: 1.302vw; }
+  .lk_main-my-orders .wrapper .orders__dropdown_block_main-active {
+    padding-top: 1.042vw;
+    padding-bottom: 1.094vw; }
+  .lk_main-payments .wrapper {
+    flex-direction: column;
+    align-items: center; }
+    .lk_main-payments .wrapper .payment, .lk_main-payments .wrapper .payment-add {
+      margin-right: 0;
+      margin-bottom: 30px; }
   footer .wrapper {
     padding: 2.604vw 0; }
     footer .wrapper .footer_logo {
@@ -5385,13 +5532,6 @@ footer .wrapper {
       footer .wrapper .footer_rights p:last-child {
         width: 20.182vw; } }
 
-/* ------------------------------------ */
-/* ------------------------------------ */
-/* ------------------------------------ */
-/* --------=========320========-------- */
-/* ------------------------------------ */
-/* ------------------------------------ */
-/* ------------------------------------ */
 @media screen and (max-width: 520px) {
   .wrapper {
     width: 93.750vw; }
@@ -6738,6 +6878,129 @@ footer .wrapper {
       display: block;
       width: fit-content;
       max-width: 30%; }
+  .lk_main-my-orders .wrapper .orders__dropdown_block {
+    margin-bottom: 9.063vw; }
+  .lk_main-my-orders .wrapper .orders__dropdown_block_header {
+    padding: 6.563vw 3.125vw; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_header p {
+      font-size: 4.375vw;
+      line-height: 4.063vw;
+      margin-right: 7.813vw; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_header .order_adress, .lk_main-my-orders .wrapper .orders__dropdown_block_header .order_track_number, .lk_main-my-orders .wrapper .orders__dropdown_block_header .order_status {
+      display: none; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_header .orders__dropdown_block_header_arrow {
+      margin-left: auto;
+      margin-right: 0; }
+      .lk_main-my-orders .wrapper .orders__dropdown_block_header .orders__dropdown_block_header_arrow img {
+        width: 5vw;
+        height: 3.125vw; }
+  .lk_main-my-orders .wrapper .orders__dropdown_block_header-active {
+    padding-bottom: 3.125vw; }
+  .lk_main-my-orders .wrapper .orders__dropdown_block_main {
+    padding: 0 3.125vw;
+    flex-direction: column; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_main .order_adress_mob, .lk_main-my-orders .wrapper .orders__dropdown_block_main .order_track_number_mob, .lk_main-my-orders .wrapper .orders__dropdown_block_main .order_status_mob {
+      display: block !important;
+      font-family: "Gotham" !important;
+      font-weight: 400 !important;
+      font-size: 4.375vw;
+      line-height: 4.375vw;
+      margin-bottom: 4.375vw; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table {
+      width: 100%;
+      margin-top: 4.375vw;
+      margin-bottom: 6.250vw; }
+      .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line {
+        grid-template-columns: 23.125vw 26.875vw 21.250vw 15vw;
+        padding: 0;
+        padding-top: 4.688vw; }
+        .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line p {
+          font-size: 4.375vw;
+          line-height: 4.375vw;
+          padding: 0 0.260vw;
+          font-family: "Gotham" !important;
+          font-weight: 400 !important; }
+        .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line .row_name {
+          grid-column-start: 1;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 2;
+          margin-bottom: 3.125vw; }
+        .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line .row_country {
+          grid-column-start: 1;
+          grid-column-end: 2;
+          grid-row-start: 2;
+          grid-row-end: 3;
+          margin-bottom: 3.125vw; }
+        .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line .row_season {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+          justify-self: center;
+          margin-bottom: 3.125vw; }
+        .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line .row_price-for-one {
+          grid-column-start: 3;
+          grid-column-end: 5;
+          grid-row-start: 2;
+          grid-row-end: 3;
+          margin-bottom: 3.125vw;
+          justify-self: end; }
+        .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line .row_price {
+          margin-bottom: 3.125vw; }
+        .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_line:nth-child(4) {
+          display: none; }
+      .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_summ {
+        padding-top: 5vw;
+        width: 100%; }
+        .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_summ p {
+          font-size: 4.375vw;
+          line-height: 4.375vw; }
+          .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_table .table_summ p span {
+            font-size: 7.500vw;
+            line-height: 6.563vw;
+            margin-left: 9.375vw;
+            margin-bottom: 1.302vw;
+            white-space: nowrap; }
+    .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_qr {
+      width: 100%;
+      margin-left: 0;
+      padding: 0;
+      align-items: center; }
+      .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_qr .qr {
+        display: none; }
+      .lk_main-my-orders .wrapper .orders__dropdown_block_main .main_qr .qr_btn {
+        border-radius: 7;
+        padding: 4.688vw;
+        font-size: 5.625vw;
+        line-height: 5.625vw;
+        margin-bottom: 6.250vw; }
+  .lk_main-my-orders .wrapper .orders__dropdown_block_main-active {
+    padding-top: 1.042vw;
+    padding-bottom: 1.094vw; }
+  .lk_main-payments .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .lk_main-payments .wrapper .payment, .lk_main-payments .wrapper .payment-add {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 43.750vw;
+      height: 27.188vw;
+      border-radius: 7px;
+      margin-bottom: 6.250vw; }
+      .lk_main-payments .wrapper .payment p, .lk_main-payments .wrapper .payment a, .lk_main-payments .wrapper .payment-add p, .lk_main-payments .wrapper .payment-add a {
+        font-size: 3.438vw;
+        line-height: 6.875vw; }
+      .lk_main-payments .wrapper .payment img, .lk_main-payments .wrapper .payment-add img {
+        top: 2.188vw;
+        right: 2.188vw;
+        width: 2.188vw;
+        height: 2.188vw; }
+    .lk_main-payments .wrapper .payment-add {
+      border: 1px solid #828282; }
   footer .wrapper {
     padding: 6.250vw 0 9.375vw 0; }
     footer .wrapper .footer_logo {
