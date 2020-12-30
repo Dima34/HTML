@@ -2198,6 +2198,9 @@ header {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+.make-an-order-main {
+  overflow: unset; }
+
 .make-an-order .wrapper {
   display: grid;
   grid-template-columns: 1fr min-content;
