@@ -3088,6 +3088,36 @@ footer .wrapper {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* ------=====ORDER SUCCESS======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.order_success {
+  width: 100%;
+  padding: 55px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  .order_success .success_title {
+    font-size: 48px;
+    line-height: 46px;
+    font-family: "Gotham" !important;
+    font-weight: 600 !important;
+    margin-bottom: 65px; }
+  .order_success .success_subtitle {
+    font-size: 18px;
+    line-height: 17px;
+    margin-bottom: 25px;
+    font-family: "Gotham" !important;
+    font-weight: 400 !important; }
+    .order_success .success_subtitle a {
+      color: #6FA036; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* ------==========MEDIA=========------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -5476,6 +5506,18 @@ footer .wrapper {
     .lk_main-payments .wrapper .payment, .lk_main-payments .wrapper .payment-add {
       margin-right: 0;
       margin-bottom: 30px; }
+  .order_success-blk .wrapper .order_success {
+    padding: 7.161vw;
+    grid-column-start: 1;
+    grid-column-end: 3; }
+    .order_success-blk .wrapper .order_success .success_title {
+      font-size: 6.250vw;
+      line-height: 5.990vw;
+      margin-bottom: 4.557vw; }
+    .order_success-blk .wrapper .order_success .success_subtitle {
+      font-size: 2.344vw;
+      line-height: 2.214vw;
+      margin-bottom: 3.255vw; }
   footer .wrapper {
     padding: 2.604vw 0; }
     footer .wrapper .footer_logo {
@@ -7001,6 +7043,8 @@ footer .wrapper {
         height: 2.188vw; }
     .lk_main-payments .wrapper .payment-add {
       border: 1px solid #828282; }
+  .order_success-blk .make-an-order_title {
+    display: none; }
   footer .wrapper {
     padding: 6.250vw 0 9.375vw 0; }
     footer .wrapper .footer_logo {
