@@ -2220,7 +2220,7 @@ header {
     display: flex;
     margin-bottom: 60px; }
     .make-an-order .wrapper .make-an-order_status p {
-      padding: 2px 94px 2px 30px;
+      padding: 4px 94px 4px 30px;
       background: url(../img/svg/checkbox_unchecked-green.svg) left center no-repeat;
       background-size: 20px;
       position: relative;
