@@ -339,3 +339,88 @@ if(cardDescOpen){
     }
 }
 
+
+//
+// Lk choice
+//
+
+let infoBtn = document.querySelector(".lk_var-info");
+let infoBlk = document.querySelector(".lk_main-info");
+
+let ordersBtn = document.querySelector(".lk_var-orders");
+let ordersBlk = document.querySelector(".lk_main-my-orders");
+
+let paymentsBtn = document.querySelector(".lk_var-paymens");
+let paymentsBlk = document.querySelector(".lk_main-payments")
+
+if(infoBtn){
+
+    infoBtn.addEventListener('click',()=>{
+        infoBtn.classList.add("lk_var_selected");
+        infoBlk.style.display = "block";
+
+        ordersBtn.classList.remove("lk_var_selected");
+        ordersBlk.style.display = "none";
+
+        paymentsBtn.classList.remove("lk_var_selected");
+        paymentsBlk.style.display = "none";
+    });
+
+    ordersBtn.addEventListener('click',()=>{
+        infoBtn.classList.remove("lk_var_selected");
+        infoBlk.style.display = "none";
+
+        ordersBtn.classList.add("lk_var_selected");
+        ordersBlk.style.display = "block";
+
+        paymentsBtn.classList.remove("lk_var_selected");
+        paymentsBlk.style.display = "none";
+    });
+
+    paymentsBtn.addEventListener('click',()=>{
+        infoBtn.classList.remove("lk_var_selected");
+        infoBlk.style.display = "none";
+
+        ordersBtn.classList.remove("lk_var_selected");
+        ordersBlk.style.display = "none";
+
+        paymentsBtn.classList.add("lk_var_selected");
+        paymentsBlk.style.display = "block";
+    });
+}
+
+let popupOpen = document.querySelector(".info_change-info");
+let popup = document.querySelector(".info-change__popup");
+let popupClose = document.querySelector(".info-change_close");
+
+if(popupOpen){
+    popupOpen.addEventListener('click',()=>{
+        popup.classList.add("info-change__popup-active");
+    });
+    popupClose.addEventListener('click',()=>{
+        popup.classList.remove("info-change__popup-active");
+    });
+}
+
+
+//
+//  Payments dd
+//
+
+
+let dropdownHeader = document.querySelectorAll(".orders__dropdown_block_header");
+let dropdownMain = document.querySelectorAll(".orders__dropdown_block_main");
+
+for (let i = 0; i < dropdownHeader.length; i++) {
+    dropdownHeader[i].addEventListener('click',()=>{
+        if(dropdownHeader[i].classList.contains("orders__dropdown_block_header-active")){
+            dropdownHeader[i].classList.remove("orders__dropdown_block_header-active");
+            dropdownMain[i].classList.remove("orders__dropdown_block_main-active");
+        }else{
+            dropdownHeader[i].classList.add("orders__dropdown_block_header-active");
+            dropdownMain[i].classList.add("orders__dropdown_block_main-active");
+        }
+    });
+}
+
+    
