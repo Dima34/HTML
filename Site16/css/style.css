@@ -2313,7 +2313,8 @@ header {
         background-size: 24px; }
   .make-an-order .wrapper .make-an-order_delivey-method {
     grid-column-start: 1;
-    grid-column-end: 2; }
+    grid-column-end: 2;
+    margin-bottom: 32px; }
     .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_header {
       margin-bottom: 49px;
       font-size: 18px;
@@ -2325,7 +2326,8 @@ header {
       background-size: 32px; }
     .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); }
+      grid-template-columns: repeat(2, min-content);
+      column-gap: 41px; }
       .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method {
         width: 347px; }
         .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method input {
@@ -2389,6 +2391,23 @@ header {
     .make-an-order .wrapper .make-an-order_adress .adress_line1 {
       display: flex;
       justify-content: space-between; }
+      .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox input, .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox select {
+        width: 100%; }
+      .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(1) {
+        width: 607px; }
+      .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(2) {
+        width: 152px; }
+      .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(3) {
+        width: 183px;
+        display: grid;
+        grid-template-columns: repeat(3, min-content); }
+        .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(3) .adress_input_title {
+          grid-column-start: 1;
+          grid-column-end: 4;
+          grid-row-start: 1;
+          grid-row-end: 2; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(3) select {
+          width: 83px; }
   .make-an-order .wrapper .make-an-order_payment-way {
     grid-column-start: 1;
     grid-column-end: 2; }
@@ -4225,14 +4244,14 @@ footer .wrapper {
 @media screen and (max-width: 520px) {
   .wrapper {
     width: 93.750vw; }
-  header .mobile .header_logo {
-    width: 43.750vw;
-    height: 12.188vw; }
   header .mobile a {
     margin-right: 4.688vw !important; }
     header .mobile a img {
       width: 6.313vw !important;
       height: 6.313vw !important; }
+    header .mobile a .header_logo {
+      width: 43.750vw !important;
+      height: 12.188vw !important; }
   .search .wrapper {
     margin: 0 0 1.346vw 0;
     border-radius: 1.588vw; }
