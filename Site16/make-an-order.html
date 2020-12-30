@@ -266,7 +266,7 @@
                                 <option value="1">11</option>
                                 <option value="1">21</option>
                             </select>
-                            <p> : </p>
+                            <p class = "groupbox_splitter"> : </p>
                             <select name="time1" id="time1">
                                 <option value="1">14</option>
                                 <option value="1">14</option>
@@ -278,12 +278,12 @@
 
                         <div class="adress_groupbox">
                             <p class="adress_input_title">Адрес доставки <span>*</span></p>
-                            <input type="text" name="address" id="address">
+                            <input type="text" name="address" id="address" placeholder="Название улицы, номер дома, (корпус), номер квартиры или офиса">
                         </div>
 
                         <div class="adress_groupbox">
                             <p class="adress_input_title">Почтовый индекс <span>*</span></p>
-                            <input type="number" name="address" id="address" placeholder="0 0 0 0">
+                            <input type="text" name="post" id="post" placeholder="0 0 0 0 0 0">
                         </div>
 
                     </div>
@@ -296,7 +296,7 @@
                     </h2>
                     
                     <div class="payment-way_way">
-                        <input type="checkbox" name="way1" id="way1">
+                        <input type="radio" name="way1" id="way1" checked>
                         <label for="way1">Электронный платёж</label>
                         <p class="way_description">
                             Оплата любым способом 
@@ -305,8 +305,8 @@
                     </div>
 
                     <div class="payment-way_way">
-                        <input type="checkbox" name="way1" id="way1">
-                        <label for="way1">Наличными курьеру</label>
+                        <input type="radio" name="way1" id="way2">
+                        <label for="way2">Наличными курьеру</label>
                         <p class="way_description">
                             Оплата производится курьеру
                             в руки, в момент получения заказа
@@ -320,7 +320,6 @@
                 <div class="make-an-order_my-order">
                     <div class="my-order_header">
                         <h2 class="my-order-title">Ваш заказ</h2>
-                        <a href="#" class="my-order-change"></a>
                     </div>
 
                     <div class="my-order_main">
@@ -330,7 +329,9 @@
                         </div>
 
                         <div class="my-order_product">
-                            <p class="product_name">Наименованиее товара</p>
+                            <p class="product_name">
+                                Длинное наименование 
+                                товара</p>
                             <p class="product_price">450 ₽ </p>
                         </div>
 

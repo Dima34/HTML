@@ -2205,7 +2205,8 @@ header {
   display: grid;
   grid-template-columns: 1fr min-content;
   padding-top: 25px;
-  column-gap: 80px; }
+  column-gap: 80px;
+  width: 1440px; }
   .make-an-order .wrapper .make-an-order_title {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -2369,7 +2370,7 @@ header {
   .make-an-order .wrapper .make-an-order_adress {
     grid-column-start: 1;
     grid-column-end: 2;
-    width: 100%; }
+    width: 1022px; }
     .make-an-order .wrapper .make-an-order_adress input, .make-an-order .wrapper .make-an-order_adress select {
       font-size: 14px;
       line-height: 13px;
@@ -2383,14 +2384,15 @@ header {
       font-size: 14px;
       line-height: 13px;
       font-family: "Gotham" !important;
-      font-weight: 400 !important;
+      font-weight: 500 !important;
       color: #373737;
       margin-bottom: 15px; }
       .make-an-order .wrapper .make-an-order_adress .adress_input_title span {
         color: #EF5F5F; }
     .make-an-order .wrapper .make-an-order_adress .adress_line1 {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin-bottom: 25px; }
       .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox input, .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox select {
         width: 100%; }
       .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(1) {
@@ -2407,15 +2409,151 @@ header {
           grid-row-start: 1;
           grid-row-end: 2; }
         .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(3) select {
-          width: 83px; }
+          width: 83px;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(3) .groupbox_splitter {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important;
+          cursor: default; }
+    .make-an-order .wrapper .make-an-order_adress .adress_line2 {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 53px; }
+      .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox input, .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox select {
+        width: 100%; }
+      .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox:nth-of-type(1) {
+        width: 854px; }
+      .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox:nth-of-type(2) {
+        width: 140px; }
   .make-an-order .wrapper .make-an-order_payment-way {
     grid-column-start: 1;
     grid-column-end: 2; }
+    .make-an-order .wrapper .make-an-order_payment-way .payment-way_title {
+      margin-bottom: 41px;
+      font-size: 18px;
+      line-height: 21px;
+      font-family: "Roboto" !important;
+      font-weight: 500 !important;
+      padding: 6px 0 6px 48px;
+      background: url(../img/svg/make-an-order_payment.svg) left center no-repeat;
+      background-size: 32px; }
+    .make-an-order .wrapper .make-an-order_payment-way .payment-way_way {
+      width: 255px; }
+      .make-an-order .wrapper .make-an-order_payment-way .payment-way_way input {
+        display: none; }
+      .make-an-order .wrapper .make-an-order_payment-way .payment-way_way label {
+        font-size: 14px;
+        line-height: 13px;
+        font-family: "Gotham" !important;
+        font-weight: 500 !important;
+        color: #373737;
+        padding: 4px 0 4px 30px;
+        background: url(../img/svg//checkbox_unchecked-green.svg) left center no-repeat;
+        background-size: 20px;
+        margin-bottom: 12px;
+        display: block; }
+      .make-an-order .wrapper .make-an-order_payment-way .payment-way_way input:checked + label {
+        background: url(../img/svg/cheackbox_checked.svg) left center no-repeat;
+        background-size: 26px;
+        background-position-x: -3px; }
+      .make-an-order .wrapper .make-an-order_payment-way .payment-way_way .way_description {
+        padding-left: 30px;
+        font-size: 12px;
+        line-height: 21px;
+        font-family: "Gotham" !important;
+        font-weight: 400 !important;
+        color: #77828D;
+        margin-bottom: 25px; }
+        .make-an-order .wrapper .make-an-order_payment-way .payment-way_way .way_description:last-child {
+          margin-bottom: 59px; }
+    .make-an-order .wrapper .make-an-order_payment-way .payment-way_pay-btn {
+      display: block;
+      text-align: center;
+      padding: 15px;
+      font-family: "Gotham" !important;
+      font-weight: 400 !important;
+      color: #FFFFFF;
+      background: #6FA036;
+      border-radius: 7px;
+      width: 1022px;
+      margin-bottom: 213px; }
   .make-an-order .wrapper .make-an-order_my-order {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
-    grid-row-end: 4; }
+    grid-row-end: 4;
+    width: 348px; }
+    .make-an-order .wrapper .make-an-order_my-order .my-order_header {
+      margin-bottom: 53px;
+      font-size: 18px;
+      line-height: 21px;
+      font-family: "Roboto" !important;
+      font-weight: 500 !important;
+      padding: 6px 0 6px 48px;
+      background: url(../img/svg/make-an-order_my-order.svg) left center no-repeat;
+      background-size: 32px; }
+    .make-an-order .wrapper .make-an-order_my-order .my-order_main {
+      padding: 25px;
+      border: 1px solid #61A036;
+      border-radius: 7px; }
+      .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_product {
+        display: flex;
+        justify-content: space-between; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_product p {
+          font-size: 14px;
+          line-height: 13px;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important;
+          color: #373737;
+          margin-bottom: 25px; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_product .product_name {
+          width: 177px; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_product .product_price {
+          margin-left: 10px;
+          font-family: "Gotham" !important;
+          font-weight: 600 !important; }
+      .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_delivery {
+        display: flex;
+        justify-content: space-between; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_delivery p {
+          font-size: 14px;
+          line-height: 13px;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important;
+          color: #373737;
+          margin-bottom: 25px; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_delivery .delivery_name {
+          width: 177px; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_delivery .delivery_price {
+          margin-left: 10px;
+          font-family: "Gotham" !important;
+          font-weight: 600 !important;
+          font-size: 18px;
+          line-height: 21px; }
+      .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_summ {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 25px;
+        border-top: 1px dashed #C4C4C4; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_summ .summ_text {
+          font-size: 14px;
+          line-height: 13px;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important;
+          color: #373737; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_summ .summ_summ {
+          font-size: 24px;
+          line-height: 28px;
+          margin-left: 10px;
+          font-family: "Gotham" !important;
+          font-weight: 600 !important; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3201,6 +3339,191 @@ footer .wrapper {
         font-size: 0.833vw;
         line-height: 0.781vw;
         margin-bottom: 0.417vw; } }
+
+@media screen and (max-width: 1440px) {
+  .make-an-order .wrapper {
+    padding-top: 1.736vw;
+    column-gap: 0.556vw;
+    width: 95vw; }
+    .make-an-order .wrapper .make-an-order_title {
+      font-size: 2.500vw;
+      line-height: 2.917vw;
+      margin-bottom: 3.819vw; }
+    .make-an-order .wrapper .make-an-order_status {
+      margin-bottom: 4.167vw; }
+      .make-an-order .wrapper .make-an-order_status p {
+        padding: 0.278vw 6.528vw 0.278vw 2.361vw;
+        background-size: 1.389vw; }
+        .make-an-order .wrapper .make-an-order_status p::after {
+          right: 0.694vw;
+          width: 5.139vw;
+          height: 0.139vw; }
+      .make-an-order .wrapper .make-an-order_status .status_active {
+        background-size: 1.736vw; }
+    .make-an-order .wrapper .make-an-order_my-data {
+      margin-bottom: 3.403vw; }
+      .make-an-order .wrapper .make-an-order_my-data .my-data_header {
+        margin-bottom: 3.403vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_header .my-data_title {
+          font-size: 1.250vw;
+          line-height: 1.458vw;
+          padding: 0.417vw 0 0.417vw 3.333vw;
+          background-size: 2.222vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_header .my-data_hint {
+          font-size: 0.833vw;
+          line-height: 0.833vw; }
+      .make-an-order .wrapper .make-an-order_my-data .my-data_inputs {
+        width: 25.278vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_groupbox .my-data_input-title {
+          font-size: 0.972vw;
+          line-height: 0.903vw;
+          margin-bottom: 1.042vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_groupbox .my-data_input {
+          font-size: 0.972vw;
+          line-height: 0.903vw;
+          border-radius: 0.486vw;
+          padding: 0.764vw 1.389vw;
+          margin-bottom: 1.736vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_groupbox-splitted .my-data_groupbox {
+          width: 11.667vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_checkbox label {
+          font-size: 0.972vw;
+          line-height: 0.903vw;
+          padding: 0.278vw 0 0.278vw 2.153vw;
+          background-size: 1.389vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_checkbox input:checked + label {
+          background-size: 1.667vw; }
+    .make-an-order .wrapper .make-an-order_delivey-method {
+      margin-bottom: 2.222vw; }
+      .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_header {
+        margin-bottom: 3.403vw;
+        font-size: 1.250vw;
+        line-height: 1.458vw;
+        padding: 0.417vw 0 0.417vw 3.333vw;
+        background-size: 2.222vw; }
+      .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods {
+        column-gap: 2.847vw; }
+        .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method {
+          width: 24.097vw; }
+          .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method label {
+            font-size: 0.972vw;
+            line-height: 0.903vw;
+            padding: 0.417vw 0 0.417vw 2.083vw;
+            background-size: 1.389vw;
+            margin-bottom: 0.694vw; }
+            .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method label span {
+              padding: 0.347vw;
+              border-radius: 0.208vw;
+              margin-top: 0.139vw; }
+          .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method input:checked + label {
+            background-size: 1.667vw; }
+          .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method .method_desc {
+            padding-left: 2.083vw;
+            font-size: 0.833vw;
+            margin-bottom: 1.736vw; }
+    .make-an-order .wrapper .make-an-order_adress {
+      width: 70.972vw; }
+      .make-an-order .wrapper .make-an-order_adress input, .make-an-order .wrapper .make-an-order_adress select {
+        font-size: 0.972vw;
+        line-height: 0.903vw;
+        border-radius: 0.486vw;
+        padding: 0.764vw 1.389vw; }
+      .make-an-order .wrapper .make-an-order_adress .adress_input_title {
+        font-size: 0.972vw;
+        line-height: 0.903vw;
+        margin-bottom: 1.042vw; }
+      .make-an-order .wrapper .make-an-order_adress .adress_line1 {
+        margin-bottom: 1.736vw; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(1) {
+          width: 42.153vw; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(2) {
+          width: 10.556vw; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(3) {
+          width: 12.708vw; }
+          .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(3) select {
+            width: 5.764vw; }
+          .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(3) .groupbox_splitter {
+            padding: 0.347vw; }
+      .make-an-order .wrapper .make-an-order_adress .adress_line2 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 53px; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox input, .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox select {
+          width: 100%; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox:nth-of-type(1) {
+          width: 854px; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox:nth-of-type(2) {
+          width: 140px; }
+    .make-an-order .wrapper .make-an-order_payment-way {
+      grid-column-start: 1;
+      grid-column-end: 2; }
+      .make-an-order .wrapper .make-an-order_payment-way .payment-way_title {
+        margin-bottom: 2.847vw;
+        font-size: 1.250vw;
+        line-height: 1.458vw;
+        padding: 0.417vw 0 0.417vw 3.333vw;
+        background-size: 2.222vw; }
+      .make-an-order .wrapper .make-an-order_payment-way .payment-way_way {
+        width: 17.708vw; }
+        .make-an-order .wrapper .make-an-order_payment-way .payment-way_way label {
+          font-size: 0.972vw;
+          line-height: 0.903vw;
+          padding: 0.278vw 0 0.278vw 2.083vw;
+          background-size: 1.389vw;
+          margin-bottom: 0.833vw; }
+        .make-an-order .wrapper .make-an-order_payment-way .payment-way_way input:checked + label {
+          background-size: 1.806vw;
+          background-position-x: -0.208vw; }
+        .make-an-order .wrapper .make-an-order_payment-way .payment-way_way .way_description {
+          padding-left: 2.083vw;
+          font-size: 0.833vw;
+          line-height: 1.458vw;
+          margin-bottom: 1.736vw; }
+          .make-an-order .wrapper .make-an-order_payment-way .payment-way_way .way_description:last-child {
+            margin-bottom: 4.097vw; }
+      .make-an-order .wrapper .make-an-order_payment-way .payment-way_pay-btn {
+        padding: 1.042vw;
+        border-radius: 0.486vw;
+        width: 70.972vw;
+        margin-bottom: 14.792vw; }
+    .make-an-order .wrapper .make-an-order_my-order {
+      width: 24.167vw; }
+      .make-an-order .wrapper .make-an-order_my-order .my-order_header {
+        margin-bottom: 3.681vw;
+        font-size: 1.250vw;
+        line-height: 1.458vw;
+        padding: 0.417vw 0 0.417vw 3.333vw;
+        background-size: 2.222vw; }
+      .make-an-order .wrapper .make-an-order_my-order .my-order_main {
+        padding: 1.736vw;
+        border-radius: 0.486vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_product p {
+          font-size: 0.972vw;
+          line-height: 0.903vw;
+          margin-bottom: 1.736vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_product .product_name {
+          width: 12.292vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_product .product_price {
+          margin-left: 0.694vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_delivery p {
+          font-size: 0.972vw;
+          line-height: 0.903vw;
+          margin-bottom: 1.736vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_delivery .delivery_name {
+          width: 12.292vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_delivery .delivery_price {
+          margin-left: 0.694vw;
+          font-size: 1.250vw;
+          line-height: 1.458vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_summ {
+          padding-top: 1.736vw; }
+          .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_summ .summ_text {
+            font-size: 0.972vw;
+            line-height: 0.903vw; }
+          .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_summ .summ_summ {
+            font-size: 1.667vw;
+            line-height: 1.944vw;
+            margin-left: 0.694vw; } }
 
 @media screen and (max-width: 1024px) {
   .tracking .wrapper {
@@ -4178,6 +4501,210 @@ footer .wrapper {
         margin-bottom: 15px; }
       .circs .wrapper .circ_section:last-child {
         margin-bottom: 38px; }
+  .make-an-order .wrapper {
+    padding-top: 1.302vw;
+    column-gap: 3.906vw;
+    grid-template-columns: 45.313vw 45.313vw;
+    width: 95vw; }
+    .make-an-order .wrapper .make-an-order_title {
+      font-size: 4.688vw;
+      line-height: 5.469vw;
+      margin-bottom: 3.906vw;
+      text-align: center; }
+    .make-an-order .wrapper .make-an-order_status {
+      margin-bottom: 4.557vw;
+      display: flex;
+      justify-content: center; }
+      .make-an-order .wrapper .make-an-order_status p {
+        padding: 0.278vw 12.240vw 0.278vw 3.906vw;
+        background-size: 2.604vw; }
+        .make-an-order .wrapper .make-an-order_status p::after {
+          right: 1.302vw;
+          width: 9.635vw;
+          height: 2px; }
+        .make-an-order .wrapper .make-an-order_status p:last-child {
+          padding-right: 0; }
+      .make-an-order .wrapper .make-an-order_status .status_active {
+        background-size: 2.604vw; }
+    .make-an-order .wrapper .make-an-order_my-data {
+      margin-bottom: 3.906vw; }
+      .make-an-order .wrapper .make-an-order_my-data .my-data_header {
+        margin-bottom: 4.167vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_header .my-data_title {
+          font-size: 2.344vw;
+          line-height: 2.214vw;
+          padding: 0.781vw 0 0.781vw 6.250vw;
+          background-size: 4.167vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_header .my-data_hint {
+          display: none; }
+      .make-an-order .wrapper .make-an-order_my-data .my-data_inputs {
+        width: 45.573vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_groupbox .my-data_input-title {
+          font-size: 1.823vw;
+          line-height: 1.693vw;
+          margin-bottom: 1.953vw;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_groupbox .my-data_input {
+          font-size: 1.823vw;
+          line-height: 1.693vw;
+          border-radius: 0.911vw;
+          padding: 1.51vw 1.689vw;
+          margin-bottom: 1.953vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_groupbox-splitted {
+          flex-direction: column; }
+          .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_groupbox-splitted .my-data_groupbox {
+            width: 45.573vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_checkbox label {
+          font-size: 1.823vw;
+          line-height: 1.693vw;
+          padding: 0 0 0 4.036vw;
+          background-size: 2.604vw;
+          display: block;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_checkbox input:checked + label {
+          background-size: 3.125vw; }
+    .make-an-order .wrapper .make-an-order_delivey-method {
+      margin-bottom: 5.208vw;
+      grid-column-start: 1;
+      grid-column-end: 3; }
+      .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_header {
+        font-size: 2.344vw;
+        line-height: 2.214vw;
+        padding: 0.781vw 0 0.781vw 6.250vw;
+        background-size: 4.167vw; }
+      .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods {
+        column-gap: 3.906vw; }
+        .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method {
+          width: 40.365vw; }
+          .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method label {
+            font-size: 1.823vw;
+            line-height: 1.693vw;
+            padding: 0.781vw 0 0.781vw 3.906vw;
+            background-size: 2.604vw;
+            margin-bottom: 1.563vw; }
+            .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method label span {
+              padding: 0.651vw;
+              border-radius: 0.391vw;
+              margin-top: 0.239vw; }
+          .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method input:checked + label {
+            background-size: 3.125vw; }
+          .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method .method_desc {
+            padding-left: 3.906vw;
+            font-size: 1.563vw;
+            margin-bottom: 0; }
+    .make-an-order .wrapper .make-an-order_adress {
+      width: 100%;
+      grid-column-start: 1;
+      grid-column-end: 3; }
+      .make-an-order .wrapper .make-an-order_adress input, .make-an-order .wrapper .make-an-order_adress select {
+        font-size: 1.823vw;
+        line-height: 1.823vw;
+        border-radius: 0.911vw;
+        padding: 1.432vw 2.604vw; }
+      .make-an-order .wrapper .make-an-order_adress .adress_input_title {
+        font-size: 1.823vw;
+        line-height: 1.823vw;
+        margin-bottom: 1.953vw; }
+      .make-an-order .wrapper .make-an-order_adress .adress_line1 {
+        margin-bottom: 3.255vw; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(1) {
+          width: 28.225vw; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(2) {
+          width: 28.125vw; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(3) {
+          width: 28.125vw; }
+          .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(3) select {
+            width: 13.021vw; }
+          .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(3) .groupbox_splitter {
+            padding: 0.651vw; }
+      .make-an-order .wrapper .make-an-order_adress .adress_line2 {
+        margin-bottom: 3.906vw; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox input, .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox select {
+          width: 100%; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox:nth-of-type(1) {
+          width: 72.917vw; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox:nth-of-type(2) {
+          width: 18.3vw; }
+    .make-an-order .wrapper .make-an-order_payment-way {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      display: grid;
+      grid-template-columns: 37.109vw 1fr;
+      width: 100%; }
+      .make-an-order .wrapper .make-an-order_payment-way .payment-way_title {
+        font-size: 2.344vw;
+        line-height: 2.214vw;
+        padding: 0.781vw 0 0.781vw 6.250vw;
+        background-size: 4.167vw;
+        margin-bottom: 5.208vw;
+        grid-column-start: 1;
+        grid-column-end: 3; }
+      .make-an-order .wrapper .make-an-order_payment-way .payment-way_way {
+        width: 33.203vw; }
+        .make-an-order .wrapper .make-an-order_payment-way .payment-way_way label {
+          font-size: 1.823vw;
+          line-height: 1.693vw;
+          padding: 0.521vw 0 0.521vw 3.906vw;
+          background-size: 2.604vw;
+          margin-bottom: 1.302vw; }
+        .make-an-order .wrapper .make-an-order_payment-way .payment-way_way input:checked + label {
+          background-size: 3.125vw;
+          background-position-x: -0.208vw; }
+        .make-an-order .wrapper .make-an-order_payment-way .payment-way_way .way_description {
+          padding-left: 3.906vw;
+          font-size: 1.563vw;
+          line-height: 2.734vw;
+          margin-bottom: 1.736vw; }
+          .make-an-order .wrapper .make-an-order_payment-way .payment-way_way .way_description:last-child {
+            margin-bottom: 4.097vw; }
+      .make-an-order .wrapper .make-an-order_payment-way .payment-way_pay-btn {
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 7px;
+        width: 94.792vw;
+        margin-bottom: 3.646vw;
+        grid-column-start: 1;
+        grid-column-end: 3; }
+    .make-an-order .wrapper .make-an-order_my-order {
+      width: 45.313vw; }
+      .make-an-order .wrapper .make-an-order_my-order .my-order_header {
+        font-size: 2.344vw;
+        line-height: 2.214vw;
+        padding: 0.781vw 0 0.781vw 6.250vw;
+        background-size: 4.167vw;
+        margin-bottom: 4.297vw; }
+      .make-an-order .wrapper .make-an-order_my-order .my-order_main {
+        padding: 3.255vw;
+        border-radius: 7px; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_product p {
+          font-size: 1.823vw;
+          line-height: 1.693vw;
+          margin-bottom: 3.255vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_product .product_name {
+          width: 22.135vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_product .product_price {
+          margin-left: 0.694vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_delivery p {
+          font-size: 2.344vw;
+          line-height: 1.693vw;
+          margin-bottom: 3.255vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_delivery .delivery_name {
+          width: 22.135vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_delivery .delivery_price {
+          margin-left: 0.694vw;
+          font-size: 2.344vw;
+          line-height: 2.734vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_summ {
+          padding-top: 3.255vw; }
+          .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_summ .summ_text {
+            font-size: 2.344vw;
+            line-height: 1.693vw; }
+          .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_summ .summ_summ {
+            font-size: 3.125vw;
+            line-height: 3.646vw;
+            margin-left: 0.694vw; }
   footer .wrapper {
     padding: 2.604vw 0; }
     footer .wrapper .footer_logo {
@@ -5163,6 +5690,232 @@ footer .wrapper {
     font-size: 24px;
     line-height: 23px;
     margin-bottom: 20px; }
+  .make-an-order .wrapper {
+    padding-top: 7.813vw;
+    column-gap: 0;
+    grid-template-columns: 100%;
+    width: 87.500vw; }
+    .make-an-order .wrapper .make-an-order_title {
+      font-size: 7.500vw;
+      line-height: 8.750vw;
+      margin-bottom: 10.313vw;
+      text-align: center; }
+    .make-an-order .wrapper .make-an-order_status {
+      display: none; }
+    .make-an-order .wrapper .make-an-order_my-data {
+      margin-bottom: 11.250vw;
+      width: 100%; }
+      .make-an-order .wrapper .make-an-order_my-data .my-data_header {
+        margin-bottom: 4.167vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_header .my-data_title {
+          font-size: 5.625vw;
+          line-height: 6.563vw;
+          padding: 1.875vw 0 1.875vw 15vw;
+          background-size: 10vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_header .my-data_hint {
+          display: none; }
+      .make-an-order .wrapper .make-an-order_my-data .my-data_inputs {
+        width: 100%; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_groupbox .my-data_input-title {
+          font-size: 4.375vw;
+          line-height: 4.063vw;
+          margin-bottom: 4.688vw;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_groupbox .my-data_input {
+          font-size: 4.375vw;
+          line-height: 4.063vw;
+          border-radius: 2.188vw;
+          padding: 3.438vw 6.250vw;
+          margin-bottom: 4.688vw; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_groupbox-splitted {
+          flex-direction: column; }
+          .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_groupbox-splitted .my-data_groupbox {
+            width: 100%; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_checkbox label {
+          font-size: 4.375vw;
+          line-height: 4.063vw;
+          padding: 0 0 0 9.688vw;
+          background-size: 6.250vw;
+          display: block;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important; }
+        .make-an-order .wrapper .make-an-order_my-data .my-data_inputs .my-data_checkbox input:checked + label {
+          background-size: 6.875vw; }
+    .make-an-order .wrapper .make-an-order_delivey-method {
+      margin-bottom: 4.063vw;
+      grid-column-start: 1;
+      grid-column-end: 3; }
+      .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_header {
+        font-size: 5.625vw;
+        line-height: 6.563vw;
+        padding: 1.875vw 0 1.875vw 15vw;
+        background-size: 10vw;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 12.813vw;
+        text-align: center;
+        width: fit-content; }
+      .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods {
+        column-gap: 0;
+        grid-template-columns: 1fr; }
+        .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method {
+          width: 100%;
+          position: relative; }
+          .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method label {
+            font-size: 4.375vw;
+            line-height: 4.063vw;
+            padding: 0 0 0 9.688vw;
+            background-size: 6.250vw;
+            width: 51.563vw;
+            margin-bottom: 3.125vw;
+            min-height: 7.500vw; }
+            .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method label span {
+              position: absolute;
+              right: 0;
+              padding: 1.563vw;
+              border-radius: 0.938vw;
+              margin-top: 0.239vw; }
+          .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method input:checked + label {
+            background-size: 8.500vw;
+            margin-left: -1vw;
+            padding-left: 10.688vw; }
+          .make-an-order .wrapper .make-an-order_delivey-method .delivey-method_methods .delivey-method_method .method_desc {
+            padding-left: 9.688vw;
+            font-size: 3.750vw;
+            margin-bottom: 8.438vw; }
+    .make-an-order .wrapper .make-an-order_adress {
+      width: 100%;
+      grid-column-start: 1;
+      grid-column-end: 3; }
+      .make-an-order .wrapper .make-an-order_adress input, .make-an-order .wrapper .make-an-order_adress select {
+        font-size: 5.625vw;
+        line-height: 6.563vw;
+        border-radius: 2.188vw;
+        padding: 3.438vw 6.250vw; }
+      .make-an-order .wrapper .make-an-order_adress .adress_input_title {
+        font-size: 5.625vw;
+        line-height: 6.563vw;
+        margin-bottom: 4.688vw; }
+      .make-an-order .wrapper .make-an-order_adress .adress_line1 {
+        flex-direction: column; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox {
+          margin-bottom: 4.688vw; }
+          .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(1) {
+            width: 100%; }
+          .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(2) {
+            width: 100%; }
+          .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(3) {
+            width: 100%; }
+            .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(3) select {
+              width: 41.250vw; }
+            .make-an-order .wrapper .make-an-order_adress .adress_line1 .adress_groupbox:nth-of-type(3) .groupbox_splitter {
+              padding: 1.563vw;
+              font-size: 5.625vw; }
+      .make-an-order .wrapper .make-an-order_adress .adress_line2 {
+        margin-bottom: 3.906vw;
+        display: flex;
+        flex-direction: column; }
+        .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox {
+          margin-bottom: 4.688vw; }
+          .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox input, .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox select {
+            width: 100%;
+            font-size: 5.625vw;
+            line-height: 6.563vw;
+            border-radius: 2.188vw;
+            padding: 3.438vw 6.250vw; }
+          .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox:nth-of-type(1) {
+            width: 100%; }
+          .make-an-order .wrapper .make-an-order_adress .adress_line2 .adress_groupbox:nth-of-type(2) {
+            width: 100%; }
+    .make-an-order .wrapper .make-an-order_payment-way {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .make-an-order .wrapper .make-an-order_payment-way .payment-way_title {
+        font-size: 5.625vw;
+        line-height: 6.563vw;
+        padding: 1.875vw 0 1.875vw 15vw;
+        background-size: 10vw;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 12.813vw;
+        text-align: center;
+        width: fit-content; }
+      .make-an-order .wrapper .make-an-order_payment-way .payment-way_way {
+        width: 100%; }
+        .make-an-order .wrapper .make-an-order_payment-way .payment-way_way label {
+          font-size: 4.375vw;
+          line-height: 4.063vw;
+          padding: 1.250vw 0 1.250vw 9.688vw;
+          background-size: 6.250vw;
+          margin-bottom: 3.125vw; }
+        .make-an-order .wrapper .make-an-order_payment-way .payment-way_way input:checked + label {
+          background-size: 8.500vw;
+          margin-left: -1vw;
+          padding-left: 10.688vw; }
+        .make-an-order .wrapper .make-an-order_payment-way .payment-way_way .way_description {
+          padding-left: 9.688vw;
+          font-size: 3.750vw;
+          margin-bottom: 8.438vw;
+          line-height: 6.563vw; }
+          .make-an-order .wrapper .make-an-order_payment-way .payment-way_way .way_description:last-child {
+            margin-bottom: 12.500vw; }
+      .make-an-order .wrapper .make-an-order_payment-way .payment-way_pay-btn {
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 7px;
+        width: 100%;
+        margin-bottom: 9.375vw; }
+    .make-an-order .wrapper .make-an-order_my-order {
+      width: 100%;
+      grid-column-start: 2;
+      grid-column-end: 1;
+      grid-row-start: 6;
+      grid-row-end: 6; }
+      .make-an-order .wrapper .make-an-order_my-order .my-order_header {
+        font-size: 5.625vw;
+        line-height: 6.563vw;
+        padding: 1.875vw 0 1.875vw 15vw;
+        background-size: 10vw;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 9.375vw;
+        text-align: center;
+        width: fit-content; }
+      .make-an-order .wrapper .make-an-order_my-order .my-order_main {
+        padding: 4.688vw;
+        border-radius: 2.188vw;
+        margin-bottom: 7.813vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_product p {
+          font-size: 4.375vw;
+          line-height: 4.063vw;
+          margin-bottom: 7.813vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_product .product_name {
+          width: 54.125vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_product .product_price {
+          margin-left: 0.694vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_delivery p {
+          font-size: 4.375vw;
+          line-height: 4.063vw;
+          margin-bottom: 7.813vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_delivery .delivery_name {
+          width: 54.125vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_delivery .delivery_price {
+          margin-left: 0.694vw;
+          font-size: 5.625vw;
+          line-height: 6.563vw; }
+        .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_summ {
+          padding-top: 7.813vw; }
+          .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_summ .summ_text {
+            font-size: 4.375vw;
+            line-height: 4.063vw; }
+          .make-an-order .wrapper .make-an-order_my-order .my-order_main .my-order_summ .summ_summ {
+            font-size: 7.500vw;
+            line-height: 8.750vw;
+            margin-left: 0.694vw; }
   footer .wrapper {
     padding: 6.250vw 0 9.375vw 0; }
     footer .wrapper .footer_logo {
