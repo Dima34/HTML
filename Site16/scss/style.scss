@@ -8259,8 +8259,11 @@ footer{
     }
   }
 
-
   .order_success-blk{
+
+    .make-an-order_status{
+      display: flex;
+    }
     .wrapper{
       .order_success{
         padding: 7.161vw;
@@ -8283,8 +8286,6 @@ footer{
 
     
   }
-
-  
 
   footer{
     .wrapper{
@@ -10753,9 +10754,33 @@ footer{
   }
   
   .order_success-blk{
-    .make-an-order_title{
-      display: none;
+
+    .wrapper{
+      width: 95.5vw;
+
+      .make-an-order_status{
+        width: fit-content !important;
+        margin: 0 auto;
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between !important;
+  
+        .status_active{
+          font-size: 2.813vw;
+          padding-right: 12.625vw !important;
+
+          &:nth-of-type(3){
+            padding-right: 0 !important;
+            
+          }
+        }
+      }
+      .make-an-order_title{
+        display: none;
+      }
     }
+
+    
   }
   
   footer{

@@ -5506,6 +5506,8 @@ footer .wrapper {
     .lk_main-payments .wrapper .payment, .lk_main-payments .wrapper .payment-add {
       margin-right: 0;
       margin-bottom: 30px; }
+  .order_success-blk .make-an-order_status {
+    display: flex; }
   .order_success-blk .wrapper .order_success {
     padding: 7.161vw;
     grid-column-start: 1;
@@ -7043,8 +7045,21 @@ footer .wrapper {
         height: 2.188vw; }
     .lk_main-payments .wrapper .payment-add {
       border: 1px solid #828282; }
-  .order_success-blk .make-an-order_title {
-    display: none; }
+  .order_success-blk .wrapper {
+    width: 95.5vw; }
+    .order_success-blk .wrapper .make-an-order_status {
+      width: fit-content !important;
+      margin: 0 auto;
+      display: flex !important;
+      align-items: center;
+      justify-content: space-between !important; }
+      .order_success-blk .wrapper .make-an-order_status .status_active {
+        font-size: 2.813vw;
+        padding-right: 12.625vw !important; }
+        .order_success-blk .wrapper .make-an-order_status .status_active:nth-of-type(3) {
+          padding-right: 0 !important; }
+    .order_success-blk .wrapper .make-an-order_title {
+      display: none; }
   footer .wrapper {
     padding: 6.250vw 0 9.375vw 0; }
     footer .wrapper .footer_logo {
