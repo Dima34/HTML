@@ -2003,15 +2003,29 @@ header {
 /* ------------------------------------ */
 .about_sertificats {
   margin-bottom: 40px; }
-  .about_sertificats .wrapper .setrificats_main {
-    display: flex; }
-    .about_sertificats .wrapper .setrificats_main .sertificats_sertificat {
-      width: 224px;
-      margin-right: 80px; }
-      .about_sertificats .wrapper .setrificats_main .sertificats_sertificat img {
-        width: 100%;
-        height: 279px;
-        margin-bottom: 30px; }
+  .about_sertificats .wrapper .about_sertificats_slider {
+    position: relative; }
+    .about_sertificats .wrapper .about_sertificats_slider .swiper-container {
+      margin: 0 79px; }
+      .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-wrapper .swiper-slide {
+        width: fit-content; }
+        .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-wrapper .swiper-slide .sertificats_sertificat {
+          width: 224px;
+          margin-right: 40px; }
+          .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-wrapper .swiper-slide .sertificats_sertificat img {
+            width: 100%;
+            height: 279px;
+            margin-bottom: 30px; }
+      .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-scrollbar {
+        display: none; }
+    .about_sertificats .wrapper .about_sertificats_slider .swiper-button-next, .about_sertificats .wrapper .about_sertificats_slider .swiper-button-prev {
+      top: 116px; }
+      .about_sertificats .wrapper .about_sertificats_slider .swiper-button-next::after, .about_sertificats .wrapper .about_sertificats_slider .swiper-button-prev::after {
+        display: none; }
+    .about_sertificats .wrapper .about_sertificats_slider .swiper-button-next {
+      right: 30px; }
+    .about_sertificats .wrapper .about_sertificats_slider .swiper-button-prev {
+      left: 30px; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2023,16 +2037,40 @@ header {
 .about_webs {
   margin-bottom: 40px; }
   .about_webs .wrapper .webs_main {
-    display: flex; }
-    .about_webs .wrapper .webs_main .webs_web {
-      width: 441px;
-      margin-right: 58px; }
-      .about_webs .wrapper .webs_main .webs_web img {
-        width: 100%;
-        height: 279px;
-        border: 1px solid #61A036;
-        border-radius: 7px;
-        margin-bottom: 22px; }
+    position: relative; }
+    .about_webs .wrapper .webs_main .swiper-container1 {
+      position: relative;
+      overflow: hidden;
+      list-style: none;
+      padding: 0;
+      z-index: 1;
+      margin: 0 79px; }
+      .about_webs .wrapper .webs_main .swiper-container1 .swiper-wrapper .swiper-slide {
+        width: fit-content; }
+        .about_webs .wrapper .webs_main .swiper-container1 .swiper-wrapper .swiper-slide .webs_web {
+          width: 400px;
+          margin-right: 40px; }
+          .about_webs .wrapper .webs_main .swiper-container1 .swiper-wrapper .swiper-slide .webs_web img {
+            width: 100%;
+            height: 253px;
+            border: 1px solid #61A036;
+            border-radius: 7px;
+            margin-bottom: 25px; }
+        .about_webs .wrapper .webs_main .swiper-container1 .swiper-wrapper .swiper-slide:last-child .webs_web {
+          margin-right: 2px; }
+      .about_webs .wrapper .webs_main .swiper-container1 .swiper-scrollbar1 {
+        display: none; }
+    .about_webs .wrapper .webs_main .swiper-button-next1, .about_webs .wrapper .webs_main .swiper-button-prev1 {
+      top: 5.4vw;
+      position: absolute; }
+      .about_webs .wrapper .webs_main .swiper-button-next1::after, .about_webs .wrapper .webs_main .swiper-button-prev1::after {
+        display: none; }
+    .about_webs .wrapper .webs_main .swiper-button-disabled {
+      opacity: .35; }
+    .about_webs .wrapper .webs_main .swiper-button-next1 {
+      right: 25px; }
+    .about_webs .wrapper .webs_main .swiper-button-prev1 {
+      left: 25px; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3671,21 +3709,42 @@ footer .wrapper {
     padding: 2.083vw 0; }
   .about_sertificats {
     margin-bottom: 2.083vw; }
-    .about_sertificats .wrapper .setrificats_main .sertificats_sertificat {
-      width: 11.667vw;
-      margin-right: 4.167vw; }
-      .about_sertificats .wrapper .setrificats_main .sertificats_sertificat img {
-        height: 14.531vw;
-        margin-bottom: 1.563vw; }
+    .about_sertificats .wrapper .about_sertificats_slider .swiper-container {
+      margin: 0 4.115vw; }
+      .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-wrapper .swiper-slide .sertificats_sertificat {
+        width: 11.667vw;
+        margin-right: 2.083vw; }
+        .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-wrapper .swiper-slide .sertificats_sertificat img {
+          height: 14.531vw;
+          margin-bottom: 1.563vw; }
+    .about_sertificats .wrapper .about_sertificats_slider .swiper-button-next, .about_sertificats .wrapper .about_sertificats_slider .swiper-button-prev {
+      top: 7.142vw;
+      width: 2.083vw;
+      height: 2.083vw; }
+      .about_sertificats .wrapper .about_sertificats_slider .swiper-button-next img, .about_sertificats .wrapper .about_sertificats_slider .swiper-button-prev img {
+        width: 2.083vw;
+        height: 2.083vw; }
+    .about_sertificats .wrapper .about_sertificats_slider .swiper-button-next {
+      right: 1.563vw; }
+    .about_sertificats .wrapper .about_sertificats_slider .swiper-button-prev {
+      left: 1.563vw; }
   .about_webs {
     margin-bottom: 2.083vw; }
-    .about_webs .wrapper .webs_main .webs_web {
-      width: 22.969vw;
-      margin-right: 3.021vw; }
-      .about_webs .wrapper .webs_main .webs_web img {
-        height: 14.531vw;
-        border-radius: 7px;
-        margin-bottom: 1.146vw; }
+    .about_webs .wrapper .webs_main .swiper-container1 {
+      margin: 0 4.115vw; }
+      .about_webs .wrapper .webs_main .swiper-container1 .swiper-wrapper .swiper-slide .webs_web {
+        width: 20.833vw;
+        margin-right: 2.083vw; }
+        .about_webs .wrapper .webs_main .swiper-container1 .swiper-wrapper .swiper-slide .webs_web img {
+          height: 13.177vw;
+          margin-bottom: 1.302vw; }
+    .about_webs .wrapper .webs_main .swiper-button-next1 img, .about_webs .wrapper .webs_main .swiper-button-prev1 img {
+      width: 2.083vw;
+      height: 2.083vw; }
+    .about_webs .wrapper .webs_main .swiper-button-next1 {
+      right: 1.302vw; }
+    .about_webs .wrapper .webs_main .swiper-button-prev1 {
+      left: 1.302vw; }
   .about_countries {
     margin-bottom: 3.646vw; }
     .about_countries .wrapper .countries_main .countires_country {
@@ -4942,46 +5001,71 @@ footer .wrapper {
       color: #61A036;
       cursor: pointer; }
   .about_sertificats {
-    margin-bottom: 5.339vw; }
-    .about_sertificats .wrapper .setrificats_main {
-      overflow-x: scroll;
-      padding-bottom: 3.906vw; }
-      .about_sertificats .wrapper .setrificats_main .sertificats_sertificat {
-        width: 29.167vw;
-        margin-right: 3.906vw;
-        flex-shrink: 0; }
-        .about_sertificats .wrapper .setrificats_main .sertificats_sertificat img {
-          width: 100%;
-          height: 36.328vw;
-          margin-bottom: 1.563vw;
-          border: 1px solid #61A036;
-          border-radius: 7px; }
-    .about_sertificats .wrapper ::-webkit-scrollbar-track {
-      background-color: #F5F5F5;
-      border-radius: 7px;
-      border: 1px solid #61A036; }
-    .about_sertificats .wrapper ::-webkit-scrollbar {
-      width: 10px;
-      height: 7px; }
-    .about_sertificats .wrapper ::-webkit-scrollbar-thumb {
-      background-color: #61A036;
-      border-radius: 7px;
-      height: 8px; }
+    margin-bottom: 2.083vw; }
+    .about_sertificats .wrapper {
+      margin: 0;
+      width: 100%; }
+      .about_sertificats .wrapper .sertificats_header {
+        margin-left: 2.604vw; }
+      .about_sertificats .wrapper .about_sertificats_slider {
+        margin-bottom: 20px; }
+        .about_sertificats .wrapper .about_sertificats_slider .swiper-container {
+          margin: 0;
+          padding-left: 2.604vw;
+          padding-bottom: 5.339vw; }
+          .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-wrapper .swiper-slide .sertificats_sertificat {
+            width: 29.167vw;
+            margin-right: 3.906vw; }
+            .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-wrapper .swiper-slide .sertificats_sertificat img {
+              height: 36.328vw;
+              margin-bottom: 2.604vw; }
+          .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-scrollbar {
+            display: block;
+            border: 1px solid #61A036;
+            border-radius: 7px;
+            background: 0;
+            width: 91.346vw;
+            height: 15px;
+            margin-left: 3.255vw; }
+            .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-scrollbar .swiper-scrollbar-drag {
+              height: 13px;
+              border: 1px solid white;
+              background: #61A036; }
+        .about_sertificats .wrapper .about_sertificats_slider .swiper-button-next, .about_sertificats .wrapper .about_sertificats_slider .swiper-button-prev {
+          display: none; }
   .about_webs {
-    margin-bottom: 5.208vw; }
-    .about_webs .wrapper .webs_main {
-      padding-left: 1.823vw;
-      padding-right: 1.823vw;
-      justify-content: space-between; }
-      .about_webs .wrapper .webs_main .webs_web {
-        width: 26.042vw;
-        margin-right: 6.510vw; }
-        .about_webs .wrapper .webs_main .webs_web img {
-          height: 16.406vw;
+    margin-bottom: 2.083vw; }
+    .about_webs .webs_title {
+      padding-left: 2.604vw; }
+    .about_webs .wrapper {
+      margin: 0;
+      width: 100%; }
+      .about_webs .wrapper .webs_main .swiper-container1 {
+        margin: 0;
+        margin-bottom: 5.339vw; }
+        .about_webs .wrapper .webs_main .swiper-container1 .swiper-wrapper {
+          padding-bottom: 2.604vw;
+          padding-left: 5.078vw; }
+          .about_webs .wrapper .webs_main .swiper-container1 .swiper-wrapper .swiper-slide .webs_web {
+            width: 26.042vw;
+            margin-right: 5.859vw; }
+            .about_webs .wrapper .webs_main .swiper-container1 .swiper-wrapper .swiper-slide .webs_web img {
+              height: 16.406vw;
+              margin-bottom: 2.604vw; }
+        .about_webs .wrapper .webs_main .swiper-container1 .swiper-scrollbar1 {
+          display: block;
+          border: 1px solid #61A036;
           border-radius: 7px;
-          margin-bottom: 2.604vw; }
-        .about_webs .wrapper .webs_main .webs_web:nth-of-type(3) {
-          margin-right: 0; }
+          background: 0;
+          width: 91.346vw;
+          height: 15px;
+          margin-left: 3.255vw; }
+          .about_webs .wrapper .webs_main .swiper-container1 .swiper-scrollbar1 .swiper-scrollbar-drag {
+            height: 13px;
+            border: 1px solid white;
+            background: #61A036; }
+      .about_webs .wrapper .webs_main .swiper-button-next1, .about_webs .wrapper .webs_main .swiper-button-prev1 {
+        display: none; }
   .about_countries {
     margin-bottom: 5.208vw; }
     .about_countries .wrapper .countries_header {
@@ -6340,33 +6424,69 @@ footer .wrapper {
       line-height: 4.375vw; }
   .about_sertificats {
     margin-bottom: 9.688vw; }
-    .about_sertificats .wrapper .setrificats_main {
-      padding-bottom: 3.688vw; }
-      .about_sertificats .wrapper .setrificats_main .sertificats_sertificat {
-        width: 46.875vw;
-        margin-right: 9.375vw;
-        flex-shrink: 0; }
-        .about_sertificats .wrapper .setrificats_main .sertificats_sertificat img {
-          height: 58.438vw;
-          margin-bottom: 6.250vw; }
+    .about_sertificats .wrapper {
+      margin: 0;
+      width: 100%; }
+      .about_sertificats .wrapper .sertificats_header {
+        margin-left: 3.125vw; }
+      .about_sertificats .wrapper .about_sertificats_slider {
+        margin-bottom: 20px; }
+        .about_sertificats .wrapper .about_sertificats_slider .swiper-container {
+          margin: 0;
+          padding-left: 3.125vw;
+          padding-bottom: 5.339vw; }
+          .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-wrapper .swiper-slide .sertificats_sertificat {
+            width: 46.875vw;
+            margin-right: 9.375vw; }
+            .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-wrapper .swiper-slide .sertificats_sertificat img {
+              height: 58.438vw;
+              margin-bottom: 2.604vw;
+              border: 1px solid #61A036;
+              border-radius: 7px; }
+          .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-scrollbar {
+            display: block;
+            border: 1px solid #61A036;
+            border-radius: 7px;
+            background: 0;
+            width: 91.346vw;
+            height: 15px;
+            margin-left: 3.255vw; }
+            .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-scrollbar .swiper-scrollbar-drag {
+              height: 13px;
+              border: 1px solid white;
+              background: #61A036; }
+        .about_sertificats .wrapper .about_sertificats_slider .swiper-button-next, .about_sertificats .wrapper .about_sertificats_slider .swiper-button-prev {
+          display: none; }
   .about_webs {
-    margin-bottom: 5.208vw; }
-    .about_webs .wrapper .webs_title {
-      margin-bottom: 6.875vw; }
-    .about_webs .wrapper .webs_main {
-      padding-left: 1.823vw;
-      padding-right: 1.823vw;
-      justify-content: space-between;
-      flex-direction: column;
-      align-items: center; }
-      .about_webs .wrapper .webs_main .webs_web {
-        width: 62.500vw;
-        margin-right: 0;
-        margin-bottom: 6.250vw; }
-        .about_webs .wrapper .webs_main .webs_web img {
-          height: 39.375vw;
-          border-radius: 7px;
-          margin-bottom: 3.125vw; }
+    margin-bottom: 9.688vw; }
+    .about_webs .webs_title {
+      padding-left: 3.125vw; }
+    .about_webs .wrapper .webs_main .swiper-container1 {
+      margin-bottom: 5.339vw; }
+      .about_webs .wrapper .webs_main .swiper-container1 .swiper-wrapper {
+        padding-bottom: 3.125vw;
+        padding-left: 0; }
+        .about_webs .wrapper .webs_main .swiper-container1 .swiper-wrapper .swiper-slide .webs_web {
+          width: 62.500vw;
+          margin-right: 0;
+          margin-left: 18.750vw; }
+          .about_webs .wrapper .webs_main .swiper-container1 .swiper-wrapper .swiper-slide .webs_web img {
+            height: 39.375vw;
+            margin-bottom: 2.604vw; }
+      .about_webs .wrapper .webs_main .swiper-container1 .swiper-scrollbar1 {
+        display: block;
+        border: 1px solid #61A036;
+        border-radius: 7px;
+        background: 0;
+        width: 91.346vw;
+        height: 15px;
+        margin-left: 3.255vw; }
+        .about_webs .wrapper .webs_main .swiper-container1 .swiper-scrollbar1 .swiper-scrollbar-drag {
+          height: 13px;
+          border: 1px solid white;
+          background: #61A036; }
+    .about_webs .wrapper .webs_main .swiper-button-next1, .about_webs .wrapper .webs_main .swiper-button-prev1 {
+      display: none; }
   .about_countries {
     margin-bottom: 15.625vw; }
     .about_countries .wrapper .countries_header {

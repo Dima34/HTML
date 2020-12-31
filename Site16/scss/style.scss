@@ -2601,22 +2601,52 @@ header{
 
   .wrapper{
 
-    .setrificats_main{
-      display: flex;
+    .about_sertificats_slider{
+      position: relative;
 
-
-      .sertificats_sertificat{
-        width: 224px;
-        margin-right: 80px;
-
-        img{
-          width: 100%;
-          height: 279px;
-          margin-bottom: 30px;
+      .swiper-container{
+        margin:0 79px;
+  
+        .swiper-wrapper{
+  
+          .swiper-slide{
+            width: fit-content;
+  
+            .sertificats_sertificat{
+              width: 224px;
+              margin-right: 40px;
+      
+              img{
+                width: 100%;
+                height: 279px;
+                margin-bottom: 30px;
+              }
+            }
+          }
+        }
+        
+        .swiper-scrollbar{
+          display: none;
+        }
+  
+      }
+  
+      .swiper-button-next,.swiper-button-prev{
+        top: 116px;
+        &::after{
+          display: none;
         }
       }
+  
+      .swiper-button-next{
+        right: 30px;
+      }
 
+      .swiper-button-prev{
+        left: 30px;
+      }
     }
+    
   }
 }
 
@@ -2634,20 +2664,71 @@ header{
   .wrapper{
 
     .webs_main{
-      display: flex;
+      position: relative;
 
-      .webs_web{
-        width: 441px;
-        margin-right: 58px;
-        
-        img{
-          width: 100%;
-          height: 279px;
-          border: 1px solid #61A036;
-          border-radius: 7px;
-          margin-bottom: 22px;
+      .swiper-container1{
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        margin:0 79px;
+
+        .swiper-wrapper{
+
+          .swiper-slide{
+            width: fit-content;
+
+            .webs_web{
+              width: 400px;
+              margin-right: 40px;
+              
+              img{
+                width: 100%;
+                height: 253px;
+                border: 1px solid #61A036;
+                border-radius: 7px;
+                margin-bottom: 25px;
+              }
+
+            }
+
+            &:last-child{
+
+              .webs_web{
+                margin-right: 2px;
+              }
+            }
+          }
+        }
+
+        .swiper-scrollbar1{
+          display: none;
         }
       }
+
+      .swiper-button-next1,.swiper-button-prev1{
+        top: 5.4vw;
+        position: absolute;
+
+        &::after{
+          display: none;
+        }
+      }
+
+      .swiper-button-disabled{
+        opacity: .35;
+      }
+  
+      .swiper-button-next1{
+        right: 25px;
+      }
+
+      .swiper-button-prev1{
+        left: 25px;
+      }
+
+      
     }
   }
 }
@@ -4829,6 +4910,7 @@ footer{
           }
         }
         .swiper-scrollbar{
+
         }
       }
 
@@ -5105,45 +5187,99 @@ footer{
 
   .about_sertificats{
     margin-bottom: 2.083vw;
+  
     .wrapper{
-
-      .setrificats_main{
-
-        .sertificats_sertificat{
-          width: 11.667vw;
-          margin-right: 4.167vw;
-
-          img{
-            height: 14.531vw;
-            margin-bottom: 1.563vw;
+  
+      .about_sertificats_slider{
+  
+        .swiper-container{
+          margin:0 4.115vw;
+    
+          .swiper-wrapper{
+    
+            .swiper-slide{
+    
+              .sertificats_sertificat{
+                width: 11.667vw;
+                margin-right: 2.083vw;
+        
+                img{
+                  height: 14.531vw;
+                  margin-bottom: 1.563vw;
+                }
+              }
+            }
           }
         }
+        .swiper-button-next,.swiper-button-prev{
+          top: 7.142vw;;
+          width: 2.083vw;
+          height: 2.083vw;
 
+          img{
+            width: 2.083vw;
+            height: 2.083vw;
+          }
+        }
+    
+        .swiper-button-next{
+          right: 1.563vw;
+        }
+  
+        .swiper-button-prev{
+          left: 1.563vw;
+        }
       }
+      
     }
   }
 
   .about_webs{
     margin-bottom: 2.083vw;
-
+  
     .wrapper{
-
+  
       .webs_main{
-
-        .webs_web{
-          width: 22.969vw;
-          margin-right: 3.021vw;
-          
-          img{
-            height: 14.531vw;
-            border-radius: 7px;
-            margin-bottom: 1.146vw;
+  
+        .swiper-container1{
+          margin:0 4.115vw;
+  
+          .swiper-wrapper{
+  
+            .swiper-slide{
+  
+              .webs_web{
+                width: 20.833vw;
+                margin-right: 2.083vw;
+                
+                img{
+                  height: 13.177vw;
+                  margin-bottom: 1.302vw;
+                }
+  
+              }
+            }
           }
+        }
+
+        .swiper-button-next1,.swiper-button-prev1{
+          img{
+            width: 2.083vw;
+            height: 2.083vw;
+          }
+        }
+    
+        .swiper-button-next1{
+          right: 1.302vw;
+        }
+  
+        .swiper-button-prev1{
+          left: 1.302vw;
         }
       }
     }
   }
-
+  
   .about_countries{
     margin-bottom: 3.646vw;
 
@@ -7287,76 +7423,123 @@ footer{
   }
 
   .about_sertificats{
-    margin-bottom: 5.339vw;
-
+    margin-bottom: 2.083vw;
+  
     .wrapper{
+      margin: 0;
+      width: 100%;
 
-      .setrificats_main{
-        overflow-x: scroll;
-        padding-bottom: 3.906vw;
+      .sertificats_header{
+        margin-left: 2.604vw;
+      }
+  
+      .about_sertificats_slider{
+        margin-bottom: 20px;
+  
+        .swiper-container{
+          margin:0;
+          padding-left: 2.604vw;
+          padding-bottom: 5.339vw;
+    
+          .swiper-wrapper{
+    
+            .swiper-slide{
+    
+              .sertificats_sertificat{
+                width: 29.167vw;
+                margin-right: 3.906vw;
+        
+                img{
+                  height: 36.328vw;
+                  margin-bottom: 2.604vw;
+                }
+              }
+            }
+          }
 
-        .sertificats_sertificat{
-          width: 29.167vw;
-          margin-right: 3.906vw;
-          flex-shrink: 0;
-
-          img{
-            width: 100%;
-            height: 36.328vw;
-            margin-bottom: 1.563vw;
+          .swiper-scrollbar{
+            display: block;
             border: 1px solid #61A036;
             border-radius: 7px;
+            background: 0;
+            width: 91.346vw;
+            height: 15px;
+            margin-left: 3.255vw;
+
+            .swiper-scrollbar-drag{
+              height: 13px;
+              border: 1px solid white;
+              background: #61A036;
+            }
           }
         }
 
+        .swiper-button-next,.swiper-button-prev{
+          display: none;
+        }
+
       }
-      ::-webkit-scrollbar-track
-          {
-              background-color: #F5F5F5;
-              border-radius: 7px;
-              border: 1px solid #61A036;
-          }
-          
-          ::-webkit-scrollbar
-          {
-              width: 10px;
-              height: 7px;
-          }
-          
-          ::-webkit-scrollbar-thumb
-          {
-              background-color: #61A036;
-              border-radius: 7px;
-              height: 8px;
-          }
+      
     }
   }
 
   .about_webs{
-    margin-bottom: 5.208vw;
+    margin-bottom: 2.083vw;
 
+    .webs_title{
+      padding-left: 2.604vw;
+    }
+  
     .wrapper{
-
+      margin: 0;
+      width: 100%;
+  
       .webs_main{
-        padding-left: 1.823vw;
-        padding-right: 1.823vw;
-        justify-content: space-between;
-
-        .webs_web{
-          width: 26.042vw;
-          margin-right: 6.510vw;
-          
-          img{
-            height: 16.406vw;
-            border-radius: 7px;
-            margin-bottom: 2.604vw;
+  
+        .swiper-container1{
+          margin:0;
+          margin-bottom: 5.339vw;
+  
+          .swiper-wrapper{
+            padding-bottom: 2.604vw;
+            padding-left: 5.078vw;
+  
+            .swiper-slide{
+  
+              .webs_web{
+                width: 26.042vw;
+                margin-right: 5.859vw;
+                
+                img{
+                  height: 16.406vw;
+                  margin-bottom: 2.604vw;
+                }
+  
+              }
+            }
           }
 
-          &:nth-of-type(3){
-            margin-right: 0;
+          .swiper-scrollbar1{
+            display: block;
+            border: 1px solid #61A036;
+            border-radius: 7px;
+            background: 0;
+            width: 91.346vw;
+            height: 15px;
+            margin-left: 3.255vw;
 
+            .swiper-scrollbar-drag{
+              height: 13px;
+              border: 1px solid white;
+              background: #61A036;
+            }
           }
         }
+
+        .swiper-button-next1,.swiper-button-prev1{
+          display: none;
+        }
+  
       }
     }
   }
@@ -9600,53 +9783,122 @@ footer{
 
   .about_sertificats{
     margin-bottom: 9.688vw;
-
+  
     .wrapper{
+      margin: 0;
+      width: 100%;
 
-      .setrificats_main{
-        padding-bottom: 3.688vw;
+      .sertificats_header{
+        margin-left: 3.125vw;
+      }
+  
+      .about_sertificats_slider{
+        margin-bottom: 20px;
+  
+        .swiper-container{
+          margin:0;
+          padding-left: 3.125vw;
+          padding-bottom: 5.339vw;
+    
+          .swiper-wrapper{
+    
+            .swiper-slide{
+    
+              .sertificats_sertificat{
+                width: 46.875vw;
+                margin-right: 9.375vw;
+        
+                img{
+                  height: 58.438vw;
+                  margin-bottom: 2.604vw;
+                  border: 1px solid #61A036;
+                  border-radius: 7px;
+                }
+              }
+            }
+          }
 
-        .sertificats_sertificat{
-          width: 46.875vw;
-          margin-right: 9.375vw;
-          flex-shrink: 0;
+          .swiper-scrollbar{
+            display: block;
+            border: 1px solid #61A036;
+            border-radius: 7px;
+            background: 0;
+            width: 91.346vw;
+            height: 15px;
+            margin-left: 3.255vw;
 
-          img{
-            height: 58.438vw;
-            margin-bottom: 6.250vw;
+            .swiper-scrollbar-drag{
+              height: 13px;
+              border: 1px solid white;
+              background: #61A036;
+            }
           }
         }
 
+        .swiper-button-next,.swiper-button-prev{
+          display: none;
+        }
+
       }
+      
     }
   }
 
   .about_webs{
-    margin-bottom: 5.208vw;
+    margin-bottom: 9.688vw;
 
+    .webs_title{
+      padding-left: 3.125vw;
+    }
+  
     .wrapper{
-      .webs_title{
-        margin-bottom:6.875vw;
-      }
-
+  
       .webs_main{
-        padding-left: 1.823vw;
-        padding-right: 1.823vw;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
+  
+        .swiper-container1{
+          margin-bottom: 5.339vw;
+  
+          .swiper-wrapper{
+            padding-bottom: 3.125vw;
+            padding-left: 0;
+  
+            .swiper-slide{
+  
+              .webs_web{
+                width: 62.500vw;
+                margin-right: 0;
+                margin-left: 18.750vw;
+                
+                img{
+                  height: 39.375vw;
+                  margin-bottom: 2.604vw;
+                }
+  
+              }
+            }
+          }
 
-        .webs_web{
-          width: 62.500vw;
-          margin-right: 0;
-          margin-bottom: 6.250vw;
-          
-          img{
-            height: 39.375vw;
+          .swiper-scrollbar1{
+            display: block;
+            border: 1px solid #61A036;
             border-radius: 7px;
-            margin-bottom: 3.125vw;
+            background: 0;
+            width: 91.346vw;
+            height: 15px;
+            margin-left: 3.255vw;
+
+            .swiper-scrollbar-drag{
+              height: 13px;
+              border: 1px solid white;
+              background: #61A036;
+            }
           }
         }
+
+        .swiper-button-next1,.swiper-button-prev1{
+          display: none;
+        }
+  
       }
     }
   }
