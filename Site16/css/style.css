@@ -2016,6 +2016,8 @@ header {
             width: 100%;
             height: 279px;
             margin-bottom: 30px; }
+        .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-wrapper .swiper-slide:last-child .sertificats_sertificat {
+          margin-right: 0px; }
       .about_sertificats .wrapper .about_sertificats_slider .swiper-container .swiper-scrollbar {
         display: none; }
     .about_sertificats .wrapper .about_sertificats_slider .swiper-button-next, .about_sertificats .wrapper .about_sertificats_slider .swiper-button-prev {

@@ -2622,7 +2622,16 @@ header{
                 margin-bottom: 30px;
               }
             }
+
+            &:last-child{
+
+              .sertificats_sertificat{
+                margin-right: 0px;
+              }
+            }
           }
+
+          
         }
         
         .swiper-scrollbar{
