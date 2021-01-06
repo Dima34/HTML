@@ -241,29 +241,29 @@ function query(clas){
 // Movementole.log('working');
 
 function scrolling(e){
-    animPartiallyVisible(header,"animate__fadeInRight");
+    animPartiallyVisibleALL(header,"animate__fadeInRight");
     animPartiallyVisibleALL(content_line1,"animate__backInLeft");
     animPartiallyVisibleALL(content_line2,"animate__backInRight");
     animPartiallyVisibleALL(queryA(".content_line3 p"),"animate__backInLeft");
     animPartiallyVisibleALL(queryA(".content_line4 a"), "animate__flipInX" );
-    animPartiallyVisible(query(".footer_col1_logo"), "animate__flipInY", "1.2s");
-    animPartiallyVisible(query(".footer_col1_title"), "animate__jackInTheBox", "2s");
-    animPartiallyVisible(query(".footer_col1_desc"), "animate__backInLeft", "1.5s");
+    animPartiallyVisibleALL(queryA(".footer_col1_logo"), "animate__flipInY", "1.2s");
+    animPartiallyVisibleALL(queryA(".footer_col1_title"), "animate__jackInTheBox", "2s");
+    animPartiallyVisibleALL(queryA(".footer_col1_desc"), "animate__backInLeft", "1.5s");
     animPartiallyVisibleALL(queryA(".footer_col1_payments img"), "animate__backInLeft", "2s" );
-    animPartiallyVisible(query(".footer_col2_title"), "animate__fadeInDown", "2s");
+    animPartiallyVisibleALL(queryA(".footer_col2_title"), "animate__fadeInDown", "2s");
     animPartiallyVisibleALL(queryA(".footer_col2_navitem"), "animate__fadeInDown", "2s" );
     animPartiallyVisibleALL(queryA(".footer_col3_galleryItem"), "animate__rotateIn", "2s" );
-    animPartiallyVisible(query(".footer_col3_subscribe"), "animate__zoomInRight", "1s");
-    animPartiallyVisible(query(".footer_col4_title"), "animate__zoomIn", "1s");
+    animPartiallyVisibleALL(queryA(".footer_col3_subscribe"), "animate__zoomInRight", "1s");
+    animPartiallyVisibleALL(queryA(".footer_col4_title"), "animate__zoomIn", "1s");
     animPartiallyVisibleALL(queryA(".footer_col4 p"), "animate__lightSpeedInRight", "2s" );
-    animPartiallyVisible(query(".player_btn img"), "animate__zoomIn", "1s");
-    animPartiallyVisible(query(".player_title"), "animate__lightSpeedInLeft", "1.3s");
+    animPartiallyVisibleALL(queryA(".player_btn img"), "animate__zoomIn", "1s");
+    animPartiallyVisibleALL(queryA(".player_title"), "animate__lightSpeedInLeft", "1.3s");
     animPartiallyVisibleALL(queryA(".swiper-container .swiper-slide"), "animate__bounceIn", "2s" );
     animPartiallyVisibleALL(queryA(".swiper-container1 .swiper-slide"), "animate__bounceIn", "2s" );
-    animPartiallyVisible(query(".index_text"), "animate__backInLeft", "1.3s");
+    animPartiallyVisibleALL(queryA(".index_text"), "animate__backInLeft", "1.3s");
     animPartiallyVisibleALL(queryA(".index_last_blk"), "animate__bounceInDown", "2s" );
-    animPartiallyVisible(query(".index_last_header h2"), "animate__fadeInRight", "1.3s");
-    animPartiallyVisible(query(".index_sale_header h2"), "animate__flipInY", "1.3s");
+    animPartiallyVisibleALL(queryA(".index_last_header h2"), "animate__fadeInRight", "1.3s");
+    animPartiallyVisibleALL(queryA(".index_sale_header h2"), "animate__flipInY", "1.3s");
     animPartiallyVisibleALL(queryA(".swiper-container2 .swiper-slide"), "animate__flipInY", "2s" );
     animPartiallyVisibleALL(queryA(".sale_img"), "animate__rotateIn", "2s" );
     animPartiallyVisibleALL(queryA(".sale_name"), "animate__lightSpeedInRight", "2s" );
@@ -272,17 +272,21 @@ function scrolling(e){
 
 function loading(){
     let loading = document.querySelector(".loading");
-    opacity = 1;
-    let ID = setInterval(() => {
-        if (opacity >= 0){  
-            opacity-=0.1;
-            loading.style.opacity = opacity;
-        }
-        if(opacity < 0){
-            loading.style.display = "none";
-            clearInterval(ID)
-        }
-    }, 30);
+
+    if(loading){
+        opacity = 1;
+        let ID = setInterval(() => {
+            if (opacity >= 0){  
+                opacity-=0.1;
+                loading.style.opacity = opacity;
+            }
+            if(opacity < 0){
+                loading.style.display = "none";
+                clearInterval(ID)
+            }
+        }, 30);
+    }
+    
 }
 
 setTimeout(()=>{

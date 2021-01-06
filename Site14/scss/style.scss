@@ -267,6 +267,13 @@ a {
   text-decoration: none;
   color: black;
 }
+a:active, a:focus, a:visited{
+  outline: none;
+}
+
+*{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1994,6 +2001,72 @@ footer{
       box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.16);
     }
   }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------======PRICE MOBILE======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.price-mobile{
+  padding-top: 22.400vw;
+
+  
+
+  .wrapper{
+    width: 89.867vw;
+
+    .price-mobile_title{
+      margin-bottom: 4.800vw;
+      font-size: 6.667vw;
+      line-height: 9.067vw;
+      letter-spacing: 0.08em;
+      @include Open(600);
+      color: #DDAE94;
+      text-align: center;
+    }
+  
+    .price-mobile_text{
+      font-size: 4.267vw;
+      line-height: 5.867vw;
+      letter-spacing: 0.01em;
+      @include Open(300);
+      color: #321A0C;
+      margin-bottom: 2.933vw;
+
+      &:nth-child(4){
+        margin-bottom: 4.800vw;
+      }
+
+      .link-with-arrow{
+        background: url(../img/svg/price_arrow.svg) right center no-repeat;
+        padding-right: 5.278vw;
+        background-size: 4.222vw 3.25vw;
+        color: rgba(221, 174, 148, 0.9);
+      }
+    }
+  
+  
+    .price-mobile_galery{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 4.533vw;
+      row-gap: 4.533vw;
+      margin-bottom: 9.067vw;
+  
+      .galery_img{
+        width: 42.667vw;
+        height: 56.533vw;
+        box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+  
+  
 }
 
 /* ------------------------------------ */

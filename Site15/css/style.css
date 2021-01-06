@@ -424,6 +424,11 @@ main {
 .index .header p, .index .header a {
   color: #ffcc00; }
 
+.design .header {
+  padding-right: 24px; }
+  .design .header a, .design .header p {
+    color: #ffdc50; }
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -987,6 +992,222 @@ footer {
   height: 433px;
   background: blanchedalmond;
   margin: 0 auto; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======D-LINE1========------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.design_line1 {
+  min-height: 1649px;
+  display: flex;
+  flex-direction: column; }
+  .design_line1 .line1_img-bg {
+    position: absolute; }
+  .design_line1 .line1_textblock1 {
+    margin-top: 127px;
+    padding-left: 18px;
+    font-family: 'Beba';
+    font-weight: 400 !important;
+    width: 100%;
+    margin-bottom: 120px; }
+    .design_line1 .line1_textblock1 h1 {
+      font-size: 35px;
+      margin-bottom: 8px;
+      font-family: 'Beba';
+      font-weight: 600 !important; }
+    .design_line1 .line1_textblock1 p {
+      font-size: 22px;
+      color: #1a0a0b; }
+  .design_line1 .line1_textblock2 {
+    width: 420px;
+    position: relative;
+    align-self: flex-end;
+    margin-right: 295px;
+    font-family: 'Beba';
+    font-weight: 400 !important;
+    margin-bottom: 100px; }
+    .design_line1 .line1_textblock2 p:first-child {
+      font-size: 22px; }
+    .design_line1 .line1_textblock2 p:last-child {
+      padding-left: 28px;
+      margin-top: -5px;
+      font-size: 38px;
+      color: #e5d7d7; }
+  .design_line1 .line1_stages {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: auto;
+    margin-bottom: 58px; }
+    .design_line1 .line1_stages .line1_stage {
+      margin-right: 124px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 210px; }
+      .design_line1 .line1_stages .line1_stage .stage_title {
+        position: relative; }
+        .design_line1 .line1_stages .line1_stage .stage_title img {
+          height: 105px;
+          width: fit-content;
+          margin-bottom: 23px; }
+        .design_line1 .line1_stages .line1_stage .stage_title::after {
+          position: absolute;
+          content: "";
+          width: 107%;
+          height: 9px;
+          background: #ffcc00;
+          right: 0;
+          top: 119px; }
+      .design_line1 .line1_stages .line1_stage .stage_subtitle {
+        font-size: 44px;
+        margin-bottom: 19px;
+        font-family: 'Beba';
+        font-weight: 600 !important;
+        margin-top: -6px; }
+      .design_line1 .line1_stages .line1_stage .stage_desc {
+        font-family: 'Beba';
+        font-weight: 600 !important;
+        font-size: 16px;
+        text-align: center;
+        align-self: center; }
+      .design_line1 .line1_stages .line1_stage:last-child {
+        margin-right: 0; }
+  .design_line1 .line1_footer {
+    height: 276px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    .design_line1 .line1_footer h2 {
+      font-family: 'Beba';
+      font-weight: 400 !important;
+      color: #ffffff;
+      font-size: 327px;
+      margin-top: -26px;
+      margin-right: -189px; }
+    .design_line1 .line1_footer p {
+      padding-right: 235px;
+      font-family: 'Beba';
+      font-weight: 400 !important;
+      color: #d1d1d1;
+      font-size: 50px;
+      margin-top: -100px; }
+  .design_line1 .line1_dots1 {
+    left: 867px;
+    top: -63px;
+    width: 29px;
+    height: 227px; }
+  .design_line1 .line1_dots2 {
+    top: 178px;
+    left: 136px; }
+  .design_line1 .line1_line1 {
+    top: -26px;
+    left: 306px; }
+  .design_line1 .line1_line2 {
+    top: 868px;
+    left: 466px;
+    z-index: 1; }
+  .design_line1 .line1_ledder1 {
+    top: 157px;
+    left: 1146px; }
+  .design_line1 .line1_half-circle1 {
+    left: 863px;
+    top: 422px; }
+  .design_line1 .line1_text {
+    top: 518px;
+    left: 728px; }
+  .design_line1 .line1_ledder2 {
+    top: 593px;
+    left: 333px; }
+  .design_line1 .line1_half-circle2 {
+    margin-left: 1288px;
+    top: 593px; }
+  .design_line1 .line1_ledder3 {
+    left: 1046px;
+    top: 870px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======D-LINE2========------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.design_line2 {
+  position: relative;
+  min-height: 1943px;
+  padding-top: 67px; }
+  .design_line2 .line2_img-bg {
+    position: absolute;
+    z-index: 0; }
+  .design_line2 .line2_dot {
+    left: 681px;
+    top: 81px;
+    z-index: 1; }
+  .design_line2 .line2_waves {
+    margin-left: -207px;
+    top: 0; }
+  .design_line2 .line2_textbox1 {
+    z-index: 2;
+    margin-left: 736px;
+    position: relative; }
+    .design_line2 .line2_textbox1 h2 {
+      font-family: 'Beba';
+      font-weight: 400 !important;
+      font-size: 73px;
+      color: #dedede; }
+    .design_line2 .line2_textbox1 p {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 22px;
+      font-family: 'Beba';
+      font-weight: 700 !important; }
+  .design_line2 .line2_textbox2 {
+    margin-top: 503px;
+    display: flex;
+    justify-content: center; }
+    .design_line2 .line2_textbox2 .line2_textbox2_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .design_line2 .line2_textbox2 .line2_textbox2_item img {
+        width: 86px;
+        height: 78px;
+        margin-bottom: 12px; }
+      .design_line2 .line2_textbox2 .line2_textbox2_item p {
+        font-family: 'Beba';
+        font-weight: 700 !important;
+        font-size: 35px; }
+      .design_line2 .line2_textbox2 .line2_textbox2_item:first-child {
+        margin-right: 551px;
+        margin-left: 200px; }
+  .design_line2 .line2_textbox3 {
+    position: relative;
+    margin-left: 216px;
+    margin-top: 66px;
+    z-index: 2;
+    height: 19px;
+    color: #1a0a0b;
+    font-family: 'Beba';
+    font-weight: 400 !important; }
+  .design_line2 .line2_textbox4 {
+    position: absolute;
+    bottom: 382px;
+    left: 242px;
+    color: #1a0a0b;
+    font-family: 'Beba';
+    font-weight: 400 !important;
+    font-size: 38px; }
+  .design_line2 .line2_footer {
+    width: 100%;
+    height: 382px;
+    position: absolute;
+    bottom: 0;
+    margin-top: auto; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
