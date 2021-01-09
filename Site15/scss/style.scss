@@ -3665,6 +3665,582 @@ footer{
           }
         }
       }
+
+      .design_line1{
+        min-height: 85.885vw;
+    
+    
+        .line1_textblock1{
+          margin-top: 6.615vw;
+          padding-left: 0.938vw;
+          margin-bottom: 6.250vw;
+    
+          h1{
+            font-size: 2.0vw;
+            margin-bottom: 0.417vw;
+          }
+    
+          p{
+            font-size: 1.346vw;
+          }
+        }
+    
+        .line1_textblock2{
+          width: 24.875vw;
+          margin-right: 11.365vw;
+          margin-bottom: 5.208vw;
+    
+          p:first-child{
+            font-size: 1.546vw;
+          }
+    
+          p:last-child{
+            padding-left: 1.458vw;
+            margin-top: -0.260vw;
+            font-size: 2.279vw;
+          }
+        }
+    
+        .line1_stages{
+          margin-bottom: 3.021vw;
+    
+          .line1_stage{
+            margin-right: 4.458vw;
+            width: 17.938vw;
+    
+            .stage_title{
+    
+              img{
+                height: 8.469vw;
+                margin-bottom: 1.198vw;
+              }
+              
+    
+              &::after{
+                height: 0.469vw;
+                top: 8.598vw;
+              }
+            }
+    
+            .stage_subtitle{
+              font-size: 2.592vw;
+              margin-bottom: 1.99vw;
+              margin-top: -0.313vw;
+            }
+    
+            .stage_desc{
+              font-size: 1.433vw;
+              width: 15.25vw;;
+            }
+
+            &:last-child{
+              margin-right: 0;
+            }
+    
+          }
+        }
+    
+        .line1_footer{
+          height: 14.375vw;
+    
+          h2{
+            font-size: 17.031vw;
+            margin-top: -1.354vw;
+            margin-right: -9.844vw;
+          }
+    
+          p{
+            padding-right: 12.240vw;
+            font-size: 2.604vw;
+            margin-top: -5.208vw;
+          }
+        }
+    
+        .line1_dots1{
+          left: 45.156vw;
+          top: -3.281vw;
+          width: 1.510vw;
+          height: 11.823vw;
+        }
+    
+        .line1_dots2{
+          top: 9.271vw;
+          left:7.083vw;
+          width: 1.510vw;
+          height: 11.823vw;
+        }
+    
+        .line1_line1{
+          top: -1.354vw;
+          left: 15.938vw;
+          width: 15vw;
+          height: 46.667vw;
+        }
+    
+        .line1_line2{
+          top: 45.208vw;
+          left: 24.271vw;
+          width: 15vw;
+          height: 46.667vw;
+        }
+    
+        .line1_ledder1{
+          top: 8.177vw;
+          left: 59.688vw;
+          width: 0.990vw;
+          height: 6.875vw;
+        }
+    
+        .line1_half-circle1{
+          left: 44.948vw;
+          top: 21.979vw;
+          width: 4.375vw;
+          height: 3.490vw;
+        }
+    
+        .line1_text{
+          top: 26.979vw;
+          left: 37.917vw;
+        }
+    
+        .line1_ledder2{
+          top: 30.885vw;
+          left: 17.344vw;
+          width: 0.990vw;
+          height: 6.875vw;
+        }
+    
+        .line1_half-circle2{
+          margin-left: 67.083vw;
+          top: 30.885vw;
+          width: 3.958vw;
+          height: 3.958vw;
+        }
+    
+        .line1_ledder3{
+          left: 54.479vw;
+          top: 45.313vw;
+          width: 4.948vw;
+          width: 4.948vw;
+        }
+      }
+    
+      .design_line2{
+        min-height: 101.198vw;
+        padding-top: 3.490vw;
+    
+        .line2_dot{
+          left: 35.469vw;
+          top: 4.219vw;
+          width: 2.396vw;
+          height: 2.396vw;
+        }
+    
+        .line2_waves{
+          margin-left: -10.781vw;
+          width: 27.135vw;
+          height: 86.667vw;
+        }
+    
+        .line2_textbox1{
+          margin-left: 38.333vw;
+    
+          h2{
+            font-size: 4.5vw;
+          }
+    
+          p{
+            font-size: 1.446vw;
+          }
+        }
+    
+        .line2_textbox2{
+          margin-top: 26.198vw;
+    
+          .line2_textbox2_item{
+    
+            img{
+              width: 4.479vw;
+              height: 4.063vw;
+              margin-bottom: 0.625vw;
+            }
+    
+            p{
+              font-size: 1.823vw;
+            }
+    
+    
+            &:first-child{
+              margin-right: 28.698vw;
+              margin-left: 10.417vw;
+            }
+          }
+        }
+    
+        .line2_textbox3{
+          margin-left: 11.250vw;
+          margin-top: 3.438vw;
+          height: 0.990vw;
+
+          p{
+            font-size: 1.8vw;
+          }
+        }
+    
+        .line2_textbox4{
+          bottom: 19.896vw;
+          left: 12.604vw;        
+          font-size: 2.279vw;
+        }
+    
+        .line2_footer{
+          height: 19.896vw;
+        }
+      }
+    
+      .design_line3{
+        height: 512.521vw;
+    
+        .line3_text1{
+          padding-left: 50.208vw;
+          font-size: 2.279vw;
+        }
+    
+        .line3_text2{
+          top: 45.894vw;
+          left: 60.104vw;
+          font-size: 1.746vw;
+        }
+    
+        .line3_ledder1{
+          left: 23.958vw;
+          top: 3.958vw;
+          width: 1.563vw;
+          height: 11.302vw;
+        }
+    
+        .line3_dots1{
+          left: 52.135vw;
+          top: 3.958vw;
+          width: 1.510vw;
+          height: 14.427vw;
+        }
+    
+        .line3_line1{
+          left: 45.729vw;
+          width: 15vw;
+          height: 46.667vw;
+        }
+    
+        .line3_ledder2{
+          width: 0.990vw;
+          height: 6.875vw;
+          left: 47.656vw;
+          top:21.146vw;
+        }
+    
+        .line3_dot1{
+          width: 2.396vw;
+          height: 2.396vw;
+          left: 56.979vw;
+          top: 45.469vw;
+        }
+    
+        .line3_text3{
+          font-size: 1.746vw;
+          top: 56.198vw;
+          left: 2.188vw;
+        }
+    
+        .line3_books{
+          left: -23.802vw;
+          top: 49.948vw;
+          width: 76.042vw;
+          height: auto;
+        }
+    
+        .line3_dot2{
+          top: 72.500vw;
+          left: 40.833vw;
+          width: 1.667vw;
+          height: 1.667vw;
+        }
+    
+        .line3_arrow1{
+          top: 71.771vw;
+          left: 41.823vw;
+          width: 11.771vw;
+          height: 3.021vw;
+        }
+    
+        .line3_text4{
+          left: 54.579vw;
+          top: 71.9vw;
+          max-width: 10.417vw;
+          font-size: 1.746vw;
+        }
+    
+        .line3_dot3{
+          top: 75.052vw;
+          left: 39.115vw;
+          width: 1.667vw;
+          height: 1.667vw;
+        }
+    
+        .line3_arrow2{
+          top: 75.313vw;
+          left: 39.948vw;
+          width: 5.365vw;
+          height: 6.198vw;
+        }
+    
+        .line3_textbox1{
+          top: 81.979vw;
+          left: 42.083vw;
+    
+          p:first-child{
+            font-size: 1.746vw;
+          }
+    
+          p:last-child{
+            font-size: 1.481vw;
+            padding-left: 2.188vw;
+          }
+    
+        }
+    
+        .line3_dot4{
+          top: 83.438vw;
+          left: 14.479vw;
+          width: 1.667vw;
+          height: 1.667vw;
+        }
+    
+        .line3_arrow3{
+          left: 9.531vw;
+          top: 84.115vw;
+          width: 5.677vw;
+          height: 9.635vw;
+        }
+    
+        .line3_text5{
+          font-size: 1.746vw;
+          left: 15.156vw;
+          top: 91.510vw;
+    
+          span{
+            font-size: 3.204vw;
+          }
+        }
+    
+        .line3_attention{
+          top: 105.365vw;
+    
+          .attention_header{
+            width: 22.104vw;
+            height: auto;
+            margin-bottom: 6.569vw;
+          }
+    
+          .attention_blks{
+            margin-bottom: 6.869vw;
+    
+            .attention_blk{
+              width: 14.271vw;
+              margin: 0 1.458vw;
+    
+              img{
+                width: 14.271vw;
+                height: auto;
+                margin-bottom: 1.485vw;
+              }
+    
+              p{
+                font-size: 1.746vw;
+              }
+            }
+          }
+    
+          .attention_footer{
+            width: 23.510vw;
+            height: auto;
+          }
+        }
+    
+        .line3_square{
+          top: 165.313vw;
+          width: 63.438vw;
+          height: 33.646vw;
+          z-index: 1;
+        }
+      
+        .line3_text6{
+          width: 41.292vw;
+          font-size: 1.746vw;
+          top: 187.102vw;
+          left: 2.44vw;
+        }
+    
+        .line3_arrow4{
+          top: 200.079vw;
+          left: 42.479vw;
+          width: 7.552vw;
+        }
+    
+        .line3_text7{
+          font-size: 1.746vw;
+          top: 202.271vw;
+          left: 51vw;
+        }
+    
+        .line3_line2{
+          top: 197.958vw;
+          left: 63.271vw;
+          width: 15vw;
+        }
+    
+        .line3_ledder3{
+          top: 193.906vw;
+          left: 93.656vw;
+          width: 1.094vw;
+          height: 7.656vw;
+        }
+    
+        .line3_ledder4{
+          top: 206.281vw;
+          left: 71.813vw;
+          width: 1.094vw;
+          height: 7.656vw;
+        }
+    
+        .line3_ledder5{
+          top: 228.802vw;
+          left: 49.115vw;
+          width: 1.094vw;
+          height: 7.656vw;
+        }
+    
+        .line3_dot5{
+          width: 2.396vw;
+          height: 2.396vw;
+          top: 243.427vw;
+          left: 74.365vw;
+        }
+    
+        .line3_text8{
+          top: 243.752vw;
+          left: 77.733vw;
+          font-size: 1.746vw;
+        }
+    
+        .line3_illustrations{
+          top: 212.917vw;
+          padding: 0 2.865vw;
+    
+          .line3_illustration{
+            width: 22.75vw;
+            height: 73.073vw;
+    
+            &:nth-child(1),&:nth-child(3){
+              margin-top: 9.583vw;
+            }
+    
+            &:nth-child(2){
+              margin-top: 33.490vw;
+            }
+          }
+        }
+    
+        .line3_line3{
+          top: 347.677vw;
+          left: 11.510vw;
+          width: 15vw;
+        }
+    
+        .line3_triangles1{
+          top: 366.302vw;
+          left: 86.844vw;
+          width: 2.865vw;
+        }
+    
+        .line3_dot6{
+          top: 392.146vw;
+          left: 22.865vw;
+          width: 2.396vw;
+          height: 2.396vw;
+        }
+    
+        .line3_text9{
+          left: 25.865vw;
+          top: 392.419vw;
+          font-size: 1.746vw;
+        }
+    
+        .line3_triangles2{
+          top: 398.51vw;
+          left: 77.104vw;
+          width: 4.635vw;
+        }
+    
+        .line3_triangles3{
+          top: 405.927vw;
+          left: 13.073vw;
+          width: 2.865vw;
+          height: auto;
+        }
+    
+        .line3_outcome{
+          top: 255.208vw;
+    
+          .outcome_title{
+            font-size: 6.125vw;
+            margin-bottom: 4.583vw;
+          }
+    
+          .outcome_heart{
+            width: 3.875vw;
+            height: auto;
+            margin-bottom: 5.385vw;
+    
+            &:nth-child(7),&:nth-child(8), &:nth-child(9){
+              margin-bottom: 9.979vw;
+            }
+          }
+    
+          .outcome_text{
+            font-size: 1.746vw;
+            margin-bottom: 4.021vw;
+          }
+    
+          .outline_imagetext{
+            margin-bottom: 3.760vw;
+            width: 17vw;
+            height: auto;
+          }
+        }
+    
+        .line3_text10{
+          top: 252.604vw;
+          padding: 1.042vw;
+          font-size: 4.635vw;
+        }
+      }
+    
+      .design_btn-up{
+        padding-right: 1.823vw;
+        margin-bottom: -1.563vw;
+    
+        p{
+          font-size: 1.746vw;
+          width: 22.583vw;
+          margin-right: 0.417vw;
+        }
+    
+        img{
+          width: 8.563vw;
+          height: auto;
+        }
+      }
     }
   }
 }
