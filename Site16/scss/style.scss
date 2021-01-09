@@ -1048,6 +1048,7 @@ header{
   max-width: 1920px;
   background: #F1F1F1;
   padding: 10px 0;
+  margin: 0 auto;
 
   .wrapper{
 
@@ -10006,10 +10007,11 @@ footer{
         flex-direction: column;
 
         select{
-          font-size: 4.375vw;
-          line-height: 4.375vw;
-          padding: 3.438vw 1.953vw;
-          border-radius: 2.188vw;
+          font-size: 4.375vw !important; 
+          line-height: 4.375vw !important;
+          padding: 3.438vw 1.953vw !important;
+          border-radius: 2.188vw !important;
+          width: 100% !important;
         }
         
         .app_main_left{
@@ -10023,7 +10025,8 @@ footer{
               margin-bottom: 9.375vw;
 
               .main_input{
-                width: 100%;
+                width: 100% !important;
+                
               }
             }
           }
@@ -10034,7 +10037,7 @@ footer{
 
             select,.main_input{
               margin-bottom: 9.375vw;
-              width: 100%;
+              width: 100% !important;
             }
           }
 
@@ -10053,21 +10056,21 @@ footer{
           .main_groupbox{
 
             textarea{
-              font-size: 4.375vw;
-              line-height: 4.375vw;
-              padding: 3.438vw 1.953vw;
-              border-radius: 2.188vw;
-              width: 100%;
-              min-height: 45.938vw;
-              margin-bottom: 13.750vw;
+              font-size: 4.375vw !important;
+              line-height: 4.375vw !important;
+              padding: 3.438vw 1.953vw !important;
+              border-radius: 2.188vw !important;
+              width: 100% !important;
+              min-height: 45.938vw !important;
+              margin-bottom: 13.750vw !important;
             }
           }
 
           .app_main_send{
-            padding:4.688vw;
-            font-size: 5.625vw;
-            line-height: 5.625vw;
-            border-radius: 2.188vw;
+            padding:4.688vw !important;
+            font-size: 5.625vw !important;
+            line-height: 5.625vw !important;
+            border-radius: 2.188vw !important;
           }
 
         }
