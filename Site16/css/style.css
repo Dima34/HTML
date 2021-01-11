@@ -3133,7 +3133,10 @@ footer .wrapper {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-.order_success {
+.order_success-wrap .wrapper {
+  display: block; }
+
+.order_success-wrap .order_success {
   width: 100%;
   padding: 55px;
   display: flex;
@@ -3141,19 +3144,19 @@ footer .wrapper {
   flex-direction: column;
   align-items: center;
   text-align: center; }
-  .order_success .success_title {
+  .order_success-wrap .order_success .success_title {
     font-size: 48px;
     line-height: 46px;
     font-family: "Gotham" !important;
     font-weight: 600 !important;
     margin-bottom: 65px; }
-  .order_success .success_subtitle {
+  .order_success-wrap .order_success .success_subtitle {
     font-size: 18px;
     line-height: 17px;
     margin-bottom: 25px;
     font-family: "Gotham" !important;
     font-weight: 400 !important; }
-    .order_success .success_subtitle a {
+    .order_success-wrap .order_success .success_subtitle a {
       color: #6FA036; }
 
 /* ------------------------------------ */

@@ -4176,34 +4176,41 @@ footer{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+.order_success-wrap{
 
-.order_success{
-  width: 100%;
-  padding: 55px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  .success_title{
-    font-size: 48px;
-    line-height: 46px;
-    @include Gotham(600);
-    margin-bottom: 65px;
+  .wrapper{
+    display: block;
   }
-
-  .success_subtitle{
-    font-size: 18px;
-    line-height: 17px;
-    margin-bottom: 25px;
-    @include Gotham(400);
-
-    a{
-      color: #6FA036;
+  .order_success{
+    width: 100%;
+    padding: 55px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+    .success_title{
+      font-size: 48px;
+      line-height: 46px;
+      @include Gotham(600);
+      margin-bottom: 65px;
+    }
+  
+    .success_subtitle{
+      font-size: 18px;
+      line-height: 17px;
+      margin-bottom: 25px;
+      @include Gotham(400);
+  
+      a{
+        color: #6FA036;
+      }
     }
   }
 }
+
+
 
 /* ------------------------------------ */
 /* ------------------------------------ */
