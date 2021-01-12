@@ -87,27 +87,31 @@ let counter = document.querySelectorAll(".counter_counter");
 let plus = document.querySelectorAll(".counter_plus");
 let minus = document.querySelectorAll(".counter_minus");
 
-for (let b = 0; b < plus.length; b++) {
+if(counter){
+    for (let b = 0; b < plus.length; b++) {
     
-    plus[b].addEventListener('click',()=>{
-        tmp = counter[b].innerHTML;
-        if(tmp >= 0){
-            tmp ++;
-            counter[b].innerHTML = tmp;
-        }
-    });
+        plus[b].addEventListener('click',()=>{
+            tmp = counter[b].innerHTML;
+            if(tmp >= 0){
+                tmp ++;
+                counter[b].innerHTML = tmp;
+            }
+        });
+    }
+    
+    for (let b = 0; b < minus.length; b++) {
+        
+        minus[b].addEventListener('click',()=>{
+            tmp = counter[b].innerHTML;
+            if(tmp > 0){
+                tmp --;
+                counter[b].innerHTML = tmp;
+            }
+        });
+    }
 }
 
-for (let b = 0; b < minus.length; b++) {
-    
-    minus[b].addEventListener('click',()=>{
-        tmp = counter[b].innerHTML;
-        if(tmp > 0){
-            tmp --;
-            counter[b].innerHTML = tmp;
-        }
-    });
-}
+
 
 
 //
@@ -125,7 +129,15 @@ for (let i = 0; i < ddHeader.length; i++) {
             ddBlock[i].classList.remove("cathalog_sidebar_section-active")
         }
         else{
-            ddBlock[i].classList.add("cathalog_sidebar_section-active")
+            ddBlock[i].classList.add("cathalog_sidebar_section-active");
+
+            for (let b = 0; b < ddHeader.length; b++) {
+
+                if(i != b){
+                    ddBlock[b].classList.remove("cathalog_sidebar_section-active") 
+                }
+            }
+
         }
     });
     
