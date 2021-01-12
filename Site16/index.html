@@ -444,10 +444,10 @@
     <script src="./js/script.js"></script>
     <script>
 	    var swiper = new Swiper('.swiper-container', {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     });
     </script>
     
@@ -457,6 +457,19 @@
                 slidesPerView: "auto",
                 freeMode: true,
                 allowTouchMove: false
+            }); 
+        }
+        
+        if(window.innerWidth < 520){
+            var swiper = new Swiper('.swiper-container1', {
+                slidesPerView: "auto",
+                freeMode: false,
+                allowTouchMove: true,
+                
+                navigation: {
+                    nextEl: '.swiper-button-next1',
+                    prevEl: '.swiper-button-prev1',
+                },
             }); 
         }
 
@@ -474,18 +487,7 @@
             });   
         }
 
-        else if(window.innerWidth < 520){
-            var swiper = new Swiper('.swiper-container1', {
-                slidesPerView: "auto",
-                freeMode: true,
-                allowTouchMove: true,
-                
-                navigation: {
-                    nextEl: '.swiper-button-next1',
-                    prevEl: '.swiper-button-prev1',
-                },
-            }); 
-        }
+        
 
         window.addEventListener("resize", ()=>{
             if(window.innerWidth > 768){
@@ -509,18 +511,18 @@
                 });   
             }
 
-            else if(window.innerWidth < 520){
-                var swiper = new Swiper('.swiper-container1', {
-                    slidesPerView: "auto",
-                    freeMode: true,
-                    allowTouchMove: true,
-                    
-                    navigation: {
-                        nextEl: '.swiper-button-next1',
-                        prevEl: '.swiper-button-prev1',
-                    },
-                }); 
-            }
+            if(window.innerWidth < 520){
+            var swiper = new Swiper('.swiper-container1', {
+                slidesPerView: "auto",
+                freeMode: false,
+                allowTouchMove: true,
+                
+                navigation: {
+                    nextEl: '.swiper-button-next1',
+                    prevEl: '.swiper-button-prev1',
+                },
+            }); 
+        }
         })
     </script>
 </body>
