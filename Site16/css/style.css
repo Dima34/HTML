@@ -5863,22 +5863,36 @@ footer .wrapper {
     border-radius: 2.813vw;
     font-size: 4.063vw;
     line-height: 4.063vw; }
-  .advantages .wrapper .advantages_blk h2 {
-    font-size: 4.375vw;
-    line-height: 4.375vw; }
-  .advantages .wrapper .advantages_blocks {
-    flex-wrap: wrap;
-    justify-content: center; }
-    .advantages .wrapper .advantages_blocks .block {
-      width: 42.813vw;
-      margin-bottom: 6.250vw; }
-      .advantages .wrapper .advantages_blocks .block img {
-        width: 20.313vw;
-        height: 20.313vw;
-        margin-bottom: 2.500vw; }
-      .advantages .wrapper .advantages_blocks .block p {
-        font-size: 3.438vw;
-        line-height: 6.250vw; }
+  .advantages {
+    margin-bottom: 19.688vw; }
+    .advantages .wrapper .advantages_blk h2 {
+      font-size: 4.375vw;
+      line-height: 4.375vw; }
+    .advantages .wrapper .advantages_blocks {
+      flex-wrap: nowrap;
+      overflow-x: scroll; }
+      .advantages .wrapper .advantages_blocks::-webkit-scrollbar-track {
+        background-color: #F5F5F5;
+        border-radius: 2.188vw;
+        border: 1px solid #61A036; }
+      .advantages .wrapper .advantages_blocks::-webkit-scrollbar {
+        height: 2.813vw;
+        background-color: #F5F5F5; }
+      .advantages .wrapper .advantages_blocks::-webkit-scrollbar-thumb {
+        background: #61A036;
+        border-radius: 2.188vw; }
+      .advantages .wrapper .advantages_blocks .block {
+        width: 42.813vw;
+        margin: 0 2.813vw;
+        margin-bottom: 6.250vw;
+        flex-shrink: 0; }
+        .advantages .wrapper .advantages_blocks .block img {
+          width: 20.313vw;
+          height: 20.313vw;
+          margin-bottom: 2.500vw; }
+        .advantages .wrapper .advantages_blocks .block p {
+          font-size: 3.438vw;
+          line-height: 6.250vw; }
   .product_product {
     margin-bottom: 0;
     padding-top: 3.490vw; }

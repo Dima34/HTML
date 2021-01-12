@@ -1506,7 +1506,6 @@ header{
 /* ------------------------------------ */
 /* ------------------------------------ */
 
-
 .product_same_cathegory{
 
   .wrapper{
@@ -4221,6 +4220,7 @@ footer{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+
 .order_success-wrap{
 
   .wrapper{
@@ -4254,8 +4254,6 @@ footer{
     }
   }
 }
-
-
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -8944,10 +8942,12 @@ footer{
   }
 
   .advantages{
+    margin-bottom: 19.688vw;
 
     .wrapper{
 
       .advantages_blk{
+        
 
         h2{
           font-size: 4.375vw;
@@ -8956,12 +8956,29 @@ footer{
       }
 
       .advantages_blocks{
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar-track {
+          background-color: #F5F5F5; 
+          border-radius: 2.188vw;
+          border: 1px solid #61A036;
+        }
+        &::-webkit-scrollbar {
+          height: 2.813vw;
+          background-color: #F5F5F5; 
+        }
+        &::-webkit-scrollbar-thumb {
+
+          background: #61A036;
+          border-radius: 2.188vw;
+        }
 
         .block{
           width: 42.813vw;
+          margin: 0 2.813vw;
           margin-bottom: 6.250vw;
+          flex-shrink: 0;
 
           img{
             width: 20.313vw;
