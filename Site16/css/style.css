@@ -659,79 +659,91 @@ header {
     font-weight: 500 !important;
     text-align: center;
     margin: 60px 0 40px 0; }
-  .popular .wrapper .popular_blocks {
-    display: flex;
-    justify-content: space-between; }
-    .popular .wrapper .popular_blocks .popular_blk {
-      width: 263px;
-      position: relative; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_img {
-        width: 260px;
-        height: 230px;
-        border-radius: 7px; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_country {
-        font-size: 18px;
-        font-family: "Gotham" !important;
-        font-weight: 500 !important;
-        line-height: 17px;
-        padding: 15px 0 15px; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_title {
-        font-size: 24px;
-        font-family: "Gotham" !important;
-        font-weight: 500 !important;
-        line-height: 22px;
-        padding-bottom: 15px; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_description {
-        font-size: 18px;
-        font-family: "Gotham" !important;
-        font-weight: 400 !important;
-        line-height: 17px;
-        margin-bottom: 15px; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_availability {
-        font-size: 16px;
-        font-family: "Gotham" !important;
-        font-weight: 400 !important;
-        line-height: 15px;
-        margin-bottom: 30px; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_availability-bold {
-        font-family: "Gotham" !important;
-        font-weight: 700 !important; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_crossed-price {
-        font-size: 18px;
-        font-family: "Gotham" !important;
-        font-weight: 400 !important;
-        line-height: 17px;
-        color: #818181;
-        text-decoration-line: line-through;
-        padding-bottom: 10px; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_price {
-        font-size: 24px;
-        font-family: "Gotham" !important;
-        font-weight: 500 !important;
-        line-height: 22px;
-        padding-bottom: 15px; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_price-little {
-        font-size: 18px;
-        line-height: 17px; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_buy-minimum {
-        font-size: 16px;
-        font-family: "Gotham" !important;
-        font-weight: 400 !important;
-        line-height: 15px;
-        padding-bottom: 15px; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_button {
-        width: 100%;
-        display: block;
-        white-space: normal;
-        padding: 16px 35px;
-        background-color: #61A036;
-        border-radius: 7px;
-        color: white;
-        font-size: 16px;
-        font-family: "Gotham" !important;
-        font-weight: 400 !important;
-        line-height: 15px;
-        text-align: center; }
+  .popular .wrapper .popular_blocks .swiper-container1 {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1; }
+    .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide {
+      width: fit-content;
+      margin-right: 32px; }
+      .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk {
+        width: 263px;
+        position: relative; }
+        .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_img {
+          width: 260px;
+          height: 230px;
+          border-radius: 7px; }
+        .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_country {
+          font-size: 18px;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important;
+          line-height: 17px;
+          padding: 15px 0 15px; }
+        .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_title {
+          font-size: 24px;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important;
+          line-height: 22px;
+          padding-bottom: 15px; }
+        .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_description {
+          font-size: 18px;
+          font-family: "Gotham" !important;
+          font-weight: 400 !important;
+          line-height: 17px;
+          margin-bottom: 15px; }
+        .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_availability {
+          font-size: 16px;
+          font-family: "Gotham" !important;
+          font-weight: 400 !important;
+          line-height: 15px;
+          margin-bottom: 30px; }
+        .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_availability-bold {
+          font-family: "Gotham" !important;
+          font-weight: 700 !important; }
+        .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_crossed-price {
+          font-size: 18px;
+          font-family: "Gotham" !important;
+          font-weight: 400 !important;
+          line-height: 17px;
+          color: #818181;
+          text-decoration-line: line-through;
+          padding-bottom: 10px; }
+        .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_price {
+          font-size: 24px;
+          font-family: "Gotham" !important;
+          font-weight: 500 !important;
+          line-height: 22px;
+          padding-bottom: 15px; }
+        .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_price-little {
+          font-size: 18px;
+          line-height: 17px; }
+        .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_buy-minimum {
+          font-size: 16px;
+          font-family: "Gotham" !important;
+          font-weight: 400 !important;
+          line-height: 15px;
+          padding-bottom: 15px; }
+        .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_button {
+          width: 100%;
+          display: block;
+          white-space: normal;
+          padding: 16px 35px;
+          background-color: #61A036;
+          border-radius: 7px;
+          color: white;
+          font-size: 16px;
+          font-family: "Gotham" !important;
+          font-weight: 400 !important;
+          line-height: 15px;
+          text-align: center; }
+    .popular .wrapper .popular_blocks .swiper-container1 .swiper-button-next1, .popular .wrapper .popular_blocks .swiper-container1 .swiper-button-prev1 {
+      display: none; }
+    .popular .wrapper .popular_blocks .swiper-container1 .swiper-scrollbar {
+      display: none; }
   .popular .wrapper .popular_footer {
     display: flex;
     flex-direction: column;
@@ -3294,48 +3306,62 @@ footer .wrapper {
     font-size: 2.500vw;
     line-height: 2.344vw;
     margin: 3.125vw 0 2.083vw 0; }
-  .popular .wrapper .popular_blocks .popular_blk {
-    width: 13.698vw; }
-    .popular .wrapper .popular_blocks .popular_blk .popular_img {
-      width: 13.542vw;
-      height: 11.979vw;
-      border-radius: 0.365vw; }
-    .popular .wrapper .popular_blocks .popular_blk .popular_country {
-      font-size: 0.938vw;
-      line-height: 0.885vw;
-      padding: 0.781vw 0 0.781vw; }
-    .popular .wrapper .popular_blocks .popular_blk .popular_title {
-      font-size: 1.250vw;
-      line-height: 1.146vw;
-      padding-bottom: 0.781vw; }
-    .popular .wrapper .popular_blocks .popular_blk .popular_description {
-      font-size: 0.938vw;
-      line-height: 0.885vw;
-      margin-bottom: 0.781vw; }
-    .popular .wrapper .popular_blocks .popular_blk .popular_availability {
-      font-size: 0.833vw;
-      line-height: 0.781vw;
-      margin-bottom: 1.563vw; }
-    .popular .wrapper .popular_blocks .popular_blk .popular_crossed-price {
-      font-size: 0.938vw;
-      line-height: 0.885vw;
-      padding-bottom: 0.521vw; }
-    .popular .wrapper .popular_blocks .popular_blk .popular_price {
-      font-size: 1.250vw;
-      line-height: 1.146vw;
-      padding-bottom: 0.781vw; }
-    .popular .wrapper .popular_blocks .popular_blk .popular_price-little {
-      font-size: 0.938vw;
-      line-height: 0.885vw; }
-    .popular .wrapper .popular_blocks .popular_blk .popular_buy-minimum {
-      font-size: 0.833vw;
-      line-height: 0.781vw;
-      padding-bottom: 0.781vw; }
-    .popular .wrapper .popular_blocks .popular_blk .popular_button {
-      padding: 0.833vw 1.823vw;
-      border-radius: 0.365vw;
-      font-size: 0.833vw;
-      line-height: 0.781vw; }
+  .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide {
+    width: fit-content;
+    margin-right: 1.667vw; }
+    .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk {
+      width: 13.698vw; }
+      .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_img {
+        width: 13.542vw;
+        height: 11.979vw;
+        border-radius: 0.365vw; }
+      .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_country {
+        font-size: 0.938vw;
+        line-height: 0.885vw;
+        padding: 0.781vw 0 0.781vw; }
+      .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_title {
+        font-size: 1.250vw;
+        line-height: 1.146vw;
+        padding-bottom: 0.781vw; }
+      .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_description {
+        font-size: 0.938vw;
+        line-height: 0.885vw;
+        margin-bottom: 0.781vw; }
+      .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_availability {
+        font-size: 0.833vw;
+        line-height: 0.781vw;
+        margin-bottom: 1.563vw; }
+      .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_crossed-price {
+        font-size: 0.938vw;
+        line-height: 0.885vw;
+        padding-bottom: 0.521vw; }
+      .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_price {
+        font-size: 1.250vw;
+        line-height: 1.146vw;
+        padding-bottom: 0.781vw; }
+      .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_price-little {
+        font-size: 0.938vw;
+        line-height: 0.885vw; }
+      .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_buy-minimum {
+        font-size: 0.833vw;
+        line-height: 0.781vw;
+        padding-bottom: 0.781vw; }
+      .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_button {
+        padding: 0.833vw 1.823vw;
+        border-radius: 0.365vw;
+        font-size: 0.833vw;
+        line-height: 0.781vw; }
+  .popular .wrapper .popular_blocks .swiper-container1 .swiper-scrollbar {
+    display: block;
+    border: 1px solid #61A036;
+    border-radius: 7px;
+    background: 0;
+    width: 100%;
+    height: 10px; }
+    .popular .wrapper .popular_blocks .swiper-container1 .swiper-scrollbar .swiper-scrollbar-drag {
+      height: 8px;
+      border: 1px solid white;
+      background: #61A036; }
   .popular .wrapper .popular_footer {
     margin-top: 6.250vw; }
     .popular .wrapper .popular_footer .popular-footer-p {
@@ -4428,54 +4454,51 @@ footer .wrapper {
     font-size: 3.125vw;
     line-height: 2.865vw;
     margin: 7.813vw 0 2.5vw 0; }
-  .popular .wrapper .popular_blocks {
-    padding-right: 65px;
-    overflow-x: auto; }
-    .popular .wrapper .popular_blocks .popular_blk {
+  .popular .wrapper .popular_blocks .popular_blk {
+    width: 29.297vw;
+    margin-right: 34px;
+    position: relative;
+    padding-bottom: 3vw; }
+    .popular .wrapper .popular_blocks .popular_blk .popular_img {
       width: 29.297vw;
-      margin-right: 34px;
-      position: relative;
-      padding-bottom: 3vw; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_img {
-        width: 29.297vw;
-        height: 26.042vw;
-        border-radius: 7px; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_country {
-        font-size: 1.823vw;
-        line-height: 3.125vw;
-        padding: 1.302vw 0 1.302vw; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_title {
-        font-size: 1.823vw;
-        line-height: 3.125vw; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_description {
+      height: 26.042vw;
+      border-radius: 7px; }
+    .popular .wrapper .popular_blocks .popular_blk .popular_country {
+      font-size: 1.823vw;
+      line-height: 3.125vw;
+      padding: 1.302vw 0 1.302vw; }
+    .popular .wrapper .popular_blocks .popular_blk .popular_title {
+      font-size: 1.823vw;
+      line-height: 3.125vw; }
+    .popular .wrapper .popular_blocks .popular_blk .popular_description {
+      font-size: 1.693vw;
+      line-height: 2.214vw;
+      margin-bottom: 4.557vw; }
+    .popular .wrapper .popular_blocks .popular_blk .popular_availability {
+      font-size: 2.083vw;
+      line-height: 1.953vw;
+      margin-bottom: 2.604vw; }
+    .popular .wrapper .popular_blocks .popular_blk .popular_crossed-price {
+      font-size: 1.823vw;
+      line-height: 1.693vw;
+      padding-bottom: 2vw; }
+    .popular .wrapper .popular_blocks .popular_blk .popular_price {
+      font-size: 3.125vw;
+      line-height: 2.995vw;
+      padding-bottom: 3.906vw; }
+      .popular .wrapper .popular_blocks .popular_blk .popular_price .popular-price-little {
         font-size: 1.693vw;
-        line-height: 2.214vw;
-        margin-bottom: 4.557vw; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_availability {
-        font-size: 2.083vw;
-        line-height: 1.953vw;
-        margin-bottom: 2.604vw; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_crossed-price {
-        font-size: 1.823vw;
-        line-height: 1.693vw;
-        padding-bottom: 2vw; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_price {
-        font-size: 3.125vw;
-        line-height: 2.995vw;
-        padding-bottom: 3.906vw; }
-        .popular .wrapper .popular_blocks .popular_blk .popular_price .popular-price-little {
-          font-size: 1.693vw;
-          line-height: 1.593vw; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_buy-minimum {
-        font-size: 1.563vw;
-        line-height: 1.432vw;
-        padding-bottom: 1.953vw; }
-      .popular .wrapper .popular_blocks .popular_blk .popular_button {
-        width: 100%;
-        padding: 2.083vw 4.557vw;
-        border-radius: 7px;
-        font-size: 1.823vw;
-        line-height: 1.953vw; }
+        line-height: 1.593vw; }
+    .popular .wrapper .popular_blocks .popular_blk .popular_buy-minimum {
+      font-size: 1.563vw;
+      line-height: 1.432vw;
+      padding-bottom: 1.953vw; }
+    .popular .wrapper .popular_blocks .popular_blk .popular_button {
+      width: 100%;
+      padding: 2.083vw 4.557vw;
+      border-radius: 7px;
+      font-size: 1.823vw;
+      line-height: 1.953vw; }
   .popular .wrapper .popular_footer {
     margin-top: 3.255vw; }
     .popular .wrapper .popular_footer .popular-footer-p {
@@ -5736,12 +5759,33 @@ footer .wrapper {
       font-size: 4.063vw;
       font-family: "Gotham" !important;
       font-weight: 400 !important; }
+      .categories .wrapper .categories_blk_mobile a {
+        margin-right: 4.688vw;
+        white-space: nowrap;
+        font-size: 4.063vw;
+        padding-bottom: 10px; }
     .categories .wrapper .categories_blk {
       display: none; }
       .categories .wrapper .categories_blk .blk_img {
         display: none; }
       .categories .wrapper .categories_blk .blk_title {
         display: none; }
+  .welcome .wrapper .welcome_title {
+    font-size: 4.375vw;
+    margin-bottom: 3.125vw; }
+  .welcome .wrapper .welcome_sub-title {
+    margin-bottom: 3.125vw; }
+    .welcome .wrapper .welcome_sub-title p {
+      font-size: 4.063vw;
+      line-height: 7.109vw; }
+  .welcome .wrapper .welcome_see-all {
+    font-family: "Gotham" !important;
+    font-weight: 400 !important;
+    font-size: 4.375vw;
+    line-height: 4.063vw;
+    color: #61A036;
+    width: 100%;
+    text-align: center; }
   .product_product {
     margin-bottom: 0;
     padding-top: 3.490vw; }

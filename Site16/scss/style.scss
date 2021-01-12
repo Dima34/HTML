@@ -840,83 +840,110 @@ header{
     }
 
     .popular_blocks {
-      display: flex;
-      justify-content: space-between;
 
-      .popular_blk {
-        width: 263px;
+      .swiper-container1{
+        margin-left: auto;
+        margin-right: auto;
         position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
 
-        .popular_img {
-          width: 260px;
-          height: 230px;
-          border-radius: 7px;
+        .swiper-wrapper{
+
+          .swiper-slide{
+            width: fit-content;
+            margin-right: 32px;
+
+            .popular_blk {
+              width: 263px;
+              position: relative;
+      
+              .popular_img {
+                width: 260px;
+                height: 230px;
+                border-radius: 7px;
+              }
+              .popular_country {
+                font-size: 18px;
+                @include Gotham(500);
+                line-height: 17px;
+                padding: 15px 0 15px;
+              }
+              .popular_title {
+                font-size: 24px;
+                @include Gotham(500);
+                line-height: 22px;
+                padding-bottom: 15px;
+              }
+              .popular_description {
+                font-size: 18px;
+                @include Gotham(400);
+                line-height: 17px;
+                margin-bottom: 15px;
+              }
+              .popular_availability {
+                font-size: 16px;
+                @include Gotham(400);
+                line-height: 15px;
+                margin-bottom: 30px;
+              }
+              .popular_availability-bold {
+                @include Gotham(700);
+              }
+              .popular_crossed-price {
+                font-size: 18px;
+                @include Gotham(400);
+                line-height: 17px;
+                color: #818181;
+                text-decoration-line: line-through;
+                padding-bottom: 10px;
+              }
+              .popular_price {
+                font-size: 24px;
+                @include Gotham(500);
+                line-height: 22px;
+                padding-bottom: 15px;
+              }
+              .popular_price-little {
+                font-size: 18px;
+                line-height: 17px;
+              }
+              .popular_buy-minimum {
+                font-size: 16px;
+                @include Gotham(400);
+                line-height: 15px;
+                padding-bottom: 15px;
+              }
+              .popular_button {
+                width: 100%;
+                display: block;
+                white-space: normal;
+                padding: 16px 35px;
+                background-color: #61A036;
+                border-radius: 7px;
+                color: white;
+                font-size: 16px;
+                @include Gotham(400);
+                line-height: 15px;
+                text-align: center;
+              }
+            }
+          }
+
+          
         }
-        .popular_country {
-          font-size: 18px;
-          @include Gotham(500);
-          line-height: 17px;
-          padding: 15px 0 15px;
+        
+        .swiper-button-next1,.swiper-button-prev1{
+          display: none;
         }
-        .popular_title {
-          font-size: 24px;
-          @include Gotham(500);
-          line-height: 22px;
-          padding-bottom: 15px;
-        }
-        .popular_description {
-          font-size: 18px;
-          @include Gotham(400);
-          line-height: 17px;
-          margin-bottom: 15px;
-        }
-        .popular_availability {
-          font-size: 16px;
-          @include Gotham(400);
-          line-height: 15px;
-          margin-bottom: 30px;
-        }
-        .popular_availability-bold {
-          @include Gotham(700);
-        }
-        .popular_crossed-price {
-          font-size: 18px;
-          @include Gotham(400);
-          line-height: 17px;
-          color: #818181;
-          text-decoration-line: line-through;
-          padding-bottom: 10px;
-        }
-        .popular_price {
-          font-size: 24px;
-          @include Gotham(500);
-          line-height: 22px;
-          padding-bottom: 15px;
-        }
-        .popular_price-little {
-          font-size: 18px;
-          line-height: 17px;
-        }
-        .popular_buy-minimum {
-          font-size: 16px;
-          @include Gotham(400);
-          line-height: 15px;
-          padding-bottom: 15px;
-        }
-        .popular_button {
-          width: 100%;
-          display: block;
-          white-space: normal;
-          padding: 16px 35px;
-          background-color: #61A036;
-          border-radius: 7px;
-          color: white;
-          font-size: 16px;
-          @include Gotham(400);
-          line-height: 15px;
-          text-align: center;
+
+        .swiper-scrollbar{
+          display: none;
         }
       }
+      
     }
 
     .popular_footer {
@@ -4454,59 +4481,86 @@ footer{
 
       .popular_blocks {
 
-        .popular_blk {
-          width: 13.698vw;
+        .swiper-container1{
+  
+          .swiper-wrapper{
+  
+            .swiper-slide{
+              width: fit-content;
+              margin-right: 1.667vw;
+  
+              .popular_blk {
+                width: 13.698vw;
+      
+                .popular_img {
+                  width: 13.542vw;
+                  height: 11.979vw;
+                  border-radius: 0.365vw;
+                }
+                .popular_country {
+                  font-size: 0.938vw;
+                  line-height: 0.885vw;
+                  padding: 0.781vw 0 0.781vw;
+                }
+                .popular_title {
+                  font-size: 1.250vw;
+                  line-height: 1.146vw;
+                  padding-bottom: 0.781vw;
+                }
+                .popular_description {
+                  font-size: 0.938vw;
+                  line-height: 0.885vw;
+                  margin-bottom: 0.781vw;
+                }
+                .popular_availability {
+                  font-size: 0.833vw;
+                  line-height: 0.781vw;
+                  margin-bottom: 1.563vw;
+                }
+      
+                .popular_crossed-price {
+                  font-size: 0.938vw;
+                  line-height: 0.885vw;
+                  padding-bottom: 0.521vw;
+                }
+                .popular_price {
+                  font-size: 1.250vw;
+                  line-height: 1.146vw;
+                  padding-bottom: 0.781vw;
+                }
+                .popular_price-little {
+                  font-size: 0.938vw;
+                  line-height: 0.885vw;
+                }
+                .popular_buy-minimum {
+                  font-size: 0.833vw;
+                  line-height: 0.781vw;
+                  padding-bottom: 0.781vw;
+                }
+                .popular_button {
+                  padding: 0.833vw 1.823vw;
+                  border-radius: 0.365vw;
+                  font-size: 0.833vw;
+                  line-height: 0.781vw;
+                }
+              }
 
-          .popular_img {
-            width: 13.542vw;
-            height: 11.979vw;
-            border-radius: 0.365vw;
-          }
-          .popular_country {
-            font-size: 0.938vw;
-            line-height: 0.885vw;
-            padding: 0.781vw 0 0.781vw;
-          }
-          .popular_title {
-            font-size: 1.250vw;
-            line-height: 1.146vw;
-            padding-bottom: 0.781vw;
-          }
-          .popular_description {
-            font-size: 0.938vw;
-            line-height: 0.885vw;
-            margin-bottom: 0.781vw;
-          }
-          .popular_availability {
-            font-size: 0.833vw;
-            line-height: 0.781vw;
-            margin-bottom: 1.563vw;
+            }
           }
 
-          .popular_crossed-price {
-            font-size: 0.938vw;
-            line-height: 0.885vw;
-            padding-bottom: 0.521vw;
-          }
-          .popular_price {
-            font-size: 1.250vw;
-            line-height: 1.146vw;
-            padding-bottom: 0.781vw;
-          }
-          .popular_price-little {
-            font-size: 0.938vw;
-            line-height: 0.885vw;
-          }
-          .popular_buy-minimum {
-            font-size: 0.833vw;
-            line-height: 0.781vw;
-            padding-bottom: 0.781vw;
-          }
-          .popular_button {
-            padding: 0.833vw 1.823vw;
-            border-radius: 0.365vw;
-            font-size: 0.833vw;
-            line-height: 0.781vw;
+          .swiper-scrollbar{
+            display: block;
+            border: 1px solid #61A036;
+            border-radius: 7px;
+            background: 0;
+            width: 100%;
+            height: 10px;
+  
+            .swiper-scrollbar-drag{
+              height: 8px;
+              border: 1px solid white;
+              background: #61A036;
+            }
           }
         }
       }
@@ -4947,9 +5001,6 @@ footer{
               }
             }
           }
-        }
-        .swiper-scrollbar{
-
         }
       }
 
@@ -6497,8 +6548,6 @@ footer{
       }
   
       .popular_blocks {
-        padding-right: 65px;
-        overflow-x: auto;
   
         .popular_blk {
           width: 29.297vw;
@@ -8695,6 +8744,13 @@ footer{
         display: flex;
         font-size: 4.063vw;
         @include Gotham(400);
+
+        a{
+          margin-right: 4.688vw;
+          white-space: nowrap;
+          font-size: 4.063vw;
+          padding-bottom: 10px;
+        }
       }
   
       .categories_blk {
@@ -8708,6 +8764,37 @@ footer{
         }
       }
     }
+  }
+
+  .welcome{
+
+    .wrapper{
+
+      .welcome_title{
+        font-size: 4.375vw;
+        margin-bottom: 3.125vw;
+      }
+
+      .welcome_sub-title{
+        margin-bottom: 3.125vw;
+
+        p{
+          font-size: 4.063vw;
+          line-height: 7.109vw;
+        }
+        
+      }
+
+      .welcome_see-all{
+        @include Gotham(400);
+        font-size: 4.375vw;
+        line-height: 4.063vw;
+        color: #61A036;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    
   }
 
   .product_product{
