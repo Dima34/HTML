@@ -149,7 +149,7 @@ burgerClose.addEventListener('click',()=>{
 
 let productsBlks = document.querySelectorAll(".products_block-wrap"); 
 
-if(productsBlks){
+if(productsBlks.length != 0){
     let productsBlocksInBlockAmount = 28;
     let productsBlocksAmount = Math.ceil(productsBlks.length/productsBlocksInBlockAmount);
     let productsBlocksArray = [];
