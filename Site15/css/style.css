@@ -1554,6 +1554,10 @@ footer {
             font-size: 30px;
             line-height: 30.96px;
             color: #ffffff; }
+      .products_blocks .products_blockgroup .products_block-wrap:hover .block_text {
+        background-color: white; }
+        .products_blocks .products_blockgroup .products_block-wrap:hover .block_text p {
+          color: #242424; }
     .products_blocks .products_blockgroup .products_line1, .products_blocks .products_blockgroup .products_line2 {
       margin-right: 54px; }
     .products_blocks .products_blockgroup .product_block1 .products_block {
@@ -1640,6 +1644,88 @@ footer {
     .products_blocks .products_blockgroup .product_block28 .products_block {
       min-height: 645px;
       padding-top: 405px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======SERVICES========------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.services {
+  background: black; }
+  .services .header {
+    padding: 15px 77px; }
+    .services .header a, .services .header p {
+      color: #ffffff; }
+
+.services_blocks {
+  padding-top: 78px; }
+  .services_blocks .services_blockgroup {
+    display: flex;
+    width: 1473px;
+    margin: 0 auto; }
+    .services_blocks .services_blockgroup .services_line1, .services_blocks .services_blockgroup .services_line2, .services_blocks .services_blockgroup .services_line3 {
+      width: 455px; }
+    .services_blocks .services_blockgroup .services_block-wrap {
+      display: block;
+      width: 100%;
+      margin-bottom: 25px; }
+      .services_blocks .services_blockgroup .services_block-wrap .services_block {
+        height: 455px;
+        padding: 20px; }
+        .services_blocks .services_blockgroup .services_block-wrap .services_block .block_text {
+          background-color: #242424;
+          width: fit-content;
+          height: fit-content;
+          padding: 12px 25px;
+          transition: .3s; }
+          .services_blocks .services_blockgroup .services_block-wrap .services_block .block_text p {
+            font-family: 'Beba';
+            font-weight: 400 !important;
+            font-size: 30px;
+            line-height: 30.96px;
+            color: #ffffff;
+            transition: .3s; }
+      .services_blocks .services_blockgroup .services_block-wrap:hover .block_text {
+        background-color: white; }
+        .services_blocks .services_blockgroup .services_block-wrap:hover .block_text p {
+          color: #242424; }
+    .services_blocks .services_blockgroup .services_line1, .services_blocks .services_blockgroup .services_line2 {
+      margin-right: 54px; }
+    .services_blocks .services_blockgroup .service_block1 .services_block {
+      min-height: 832px;
+      padding-top: 607px; }
+    .services_blocks .services_blockgroup .service_block2 .services_block {
+      min-height: 460px;
+      padding-top: 262px; }
+    .services_blocks .services_blockgroup .service_block3 .services_block {
+      min-height: 563px;
+      display: flex;
+      align-items: flex-end; }
+    .services_blocks .services_blockgroup .service_block4 .services_block {
+      min-height: 721px;
+      padding-bottom: 103px;
+      display: flex;
+      align-items: flex-end; }
+    .services_blocks .services_blockgroup .service_block5 .services_block {
+      min-height: 601px;
+      padding-bottom: 38px;
+      display: flex;
+      align-items: flex-end; }
+    .services_blocks .services_blockgroup .service_block6 .services_block {
+      min-height: 600px;
+      padding-bottom: 177px;
+      display: flex;
+      align-items: flex-end; }
+    .services_blocks .services_blockgroup .service_block8 .services_block {
+      min-height: 467px;
+      padding-bottom: 37px;
+      display: flex;
+      align-items: flex-end; }
+    .services_blocks .services_blockgroup .service_block9 .services_block {
+      height: 365px;
+      padding-top: 100px; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2393,7 +2479,50 @@ footer {
         padding-top: 21.094vw; }
       .products_blocks .products_blockgroup .product_block28 .products_block {
         min-height: 33vw;
-        padding-top: 21.094vw; } }
+        padding-top: 21.094vw; }
+  .services .header {
+    padding: 0.781vw 4.010vw; }
+  .services_blocks {
+    padding-top: 4.063vw; }
+    .services_blocks .services_blockgroup {
+      width: 76.719vw; }
+      .services_blocks .services_blockgroup .services_line1, .services_blocks .services_blockgroup .services_line2, .services_blocks .services_blockgroup .services_line3 {
+        width: 23.698vw; }
+      .services_blocks .services_blockgroup .services_block-wrap {
+        margin-bottom: 1.302vw; }
+        .services_blocks .services_blockgroup .services_block-wrap .services_block {
+          height: 23.698vw;
+          padding: 1.042vw; }
+          .services_blocks .services_blockgroup .services_block-wrap .services_block .block_text {
+            padding: 0.625vw 1.302vw; }
+            .services_blocks .services_blockgroup .services_block-wrap .services_block .block_text p {
+              font-size: 1.563vw;
+              line-height: 1.613vw; }
+      .services_blocks .services_blockgroup .services_line1, .services_blocks .services_blockgroup .services_line2 {
+        margin-right: 2.813vw; }
+      .services_blocks .services_blockgroup .service_block1 .services_block {
+        min-height: 43.333vw;
+        padding-top: 31.615vw; }
+      .services_blocks .services_blockgroup .service_block2 .services_block {
+        min-height: 23.958vw;
+        padding-top: 13.646vw; }
+      .services_blocks .services_blockgroup .service_block3 .services_block {
+        min-height: 29.323vw; }
+      .services_blocks .services_blockgroup .service_block4 .services_block {
+        min-height: 37.552vw;
+        padding-bottom: 5.365vw; }
+      .services_blocks .services_blockgroup .service_block5 .services_block {
+        min-height: 31.302vw;
+        padding-bottom: 1.979vw; }
+      .services_blocks .services_blockgroup .service_block6 .services_block {
+        min-height: 31.250vw;
+        padding-bottom: 9.219vw; }
+      .services_blocks .services_blockgroup .service_block8 .services_block {
+        min-height: 24.792vw;
+        padding-bottom: 1.927vw; }
+      .services_blocks .services_blockgroup .service_block9 .services_block {
+        height: 19.010vw;
+        padding-top: 5.208vw; } }
 
 @media screen and (max-width: 1200px) {
   .wrapper_global {
@@ -3178,7 +3307,50 @@ footer {
             padding-top: 33.750vw; }
           .wrapper_global main .products_blocks .products_blockgroup .product_block28 .products_block {
             min-height: 53.750vw;
-            padding-top: 33.750vw; } }
+            padding-top: 33.750vw; }
+      .wrapper_global main .services .header {
+        padding: 1.781vw 1.6vw; }
+      .wrapper_global main .services_blocks {
+        padding-top: 6.500vw; }
+        .wrapper_global main .services_blocks .services_blockgroup {
+          width: 96.667vw; }
+          .wrapper_global main .services_blocks .services_blockgroup .services_line1, .wrapper_global main .services_blocks .services_blockgroup .services_line2, .wrapper_global main .services_blocks .services_blockgroup .services_line3 {
+            width: 31.1vw; }
+          .wrapper_global main .services_blocks .services_blockgroup .services_block-wrap {
+            margin-bottom: 1.302vw; }
+            .wrapper_global main .services_blocks .services_blockgroup .services_block-wrap .services_block {
+              height: 23.698vw;
+              padding: 1.042vw; }
+              .wrapper_global main .services_blocks .services_blockgroup .services_block-wrap .services_block .block_text {
+                padding: 0.833vw 2.917vw; }
+                .wrapper_global main .services_blocks .services_blockgroup .services_block-wrap .services_block .block_text p {
+                  font-size: 2.083vw;
+                  line-height: 2.163vw; }
+          .wrapper_global main .services_blocks .services_blockgroup .services_line1, .wrapper_global main .services_blocks .services_blockgroup .services_line2 {
+            margin-right: 2.813vw; }
+          .wrapper_global main .services_blocks .services_blockgroup .service_block1 .services_block {
+            min-height: 43.333vw;
+            padding-top: 31.615vw; }
+          .wrapper_global main .services_blocks .services_blockgroup .service_block2 .services_block {
+            min-height: 23.958vw;
+            padding-top: 13.646vw; }
+          .wrapper_global main .services_blocks .services_blockgroup .service_block3 .services_block {
+            min-height: 29.323vw; }
+          .wrapper_global main .services_blocks .services_blockgroup .service_block4 .services_block {
+            min-height: 38.1vw;
+            padding-bottom: 5.365vw; }
+          .wrapper_global main .services_blocks .services_blockgroup .service_block5 .services_block {
+            min-height: 31.302vw;
+            padding-bottom: 1.979vw; }
+          .wrapper_global main .services_blocks .services_blockgroup .service_block6 .services_block {
+            min-height: 31.250vw;
+            padding-bottom: 9.219vw; }
+          .wrapper_global main .services_blocks .services_blockgroup .service_block8 .services_block {
+            min-height: 24.792vw;
+            padding-bottom: 1.927vw; }
+          .wrapper_global main .services_blocks .services_blockgroup .service_block9 .services_block {
+            height: 19.5vw;
+            padding-top: 5.208vw; } }
 
 @media screen and (max-width: 800px) {
   .wrapper_global .sidebar {
@@ -3782,7 +3954,32 @@ footer {
       .wrapper_global main .products_blocks .products_blockgroup .product_block21 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block22 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block23 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block24 .products_block,
       .wrapper_global main .products_blocks .products_blockgroup .product_block25 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block26 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block27 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block28 .products_block {
         min-height: 61.75vw;
-        padding-top: 1.75vw; } }
+        padding-top: 1.75vw; }
+  .wrapper_global main .services_blocks {
+    padding-top: 6.500vw; }
+    .wrapper_global main .services_blocks .services_blockgroup {
+      width: 96.667vw;
+      flex-direction: column; }
+      .wrapper_global main .services_blocks .services_blockgroup .services_line1, .wrapper_global main .services_blocks .services_blockgroup .services_line2, .wrapper_global main .services_blocks .services_blockgroup .services_line3 {
+        width: 100%; }
+      .wrapper_global main .services_blocks .services_blockgroup .services_block-wrap {
+        margin-bottom: 1.302vw; }
+        .wrapper_global main .services_blocks .services_blockgroup .services_block-wrap .services_block {
+          height: 33.333vw;
+          padding: 1.667vw; }
+          .wrapper_global main .services_blocks .services_blockgroup .services_block-wrap .services_block .block_text {
+            padding: 1.5vw 2.917vw; }
+            .wrapper_global main .services_blocks .services_blockgroup .services_block-wrap .services_block .block_text p {
+              font-size: 4.083vw;
+              line-height: 4.163vw; }
+      .wrapper_global main .services_blocks .services_blockgroup .services_line1, .wrapper_global main .services_blocks .services_blockgroup .services_line2 {
+        margin-right: 0; }
+      .wrapper_global main .services_blocks .services_blockgroup .service_block1 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block2 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block3 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block4 .services_block,
+      .wrapper_global main .services_blocks .services_blockgroup .service_block5 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block6 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block8 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block9 .services_block {
+        min-height: 61.75vw;
+        padding-top: 1.75vw;
+        display: flex;
+        align-items: flex-end; } }
 
 @media screen and (max-width: 800px) {
   .nav_listitem a {

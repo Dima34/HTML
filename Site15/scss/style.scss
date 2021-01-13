@@ -2034,6 +2034,17 @@ footer{
           }
         }
       }
+
+      &:hover{
+
+        .block_text{
+          background-color: white;
+
+          p{
+            color: #242424;
+          }
+        }
+      }
       
     } 
 
@@ -2263,6 +2274,166 @@ footer{
       .products_block{
         min-height: 645px;
         padding-top: 405px;
+      }
+    }
+    
+  }
+
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======SERVICES========------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.services{
+  background: black;
+
+  .header{
+    padding: 15px 77px;
+
+    a,p{
+      color: #ffffff;
+    }
+  }
+}
+
+.services_blocks{
+  padding-top: 78px;
+
+  .services_blockgroup{
+    display: flex;
+    width: 1473px;
+    margin: 0 auto;
+
+  
+    .services_line1,.services_line2,.services_line3{
+      width: 455px;
+    }
+
+    .services_block-wrap{
+      display: block;
+      width: 100%;
+      margin-bottom: 25px;
+      
+
+      .services_block{
+        height: 455px;
+        padding: 20px;
+
+        .block_text{
+          background-color: #242424;
+          width: fit-content;
+          height: fit-content;
+          padding: 12px 25px;
+          transition: .3s;
+
+          p{
+            @include Beba(400);
+            font-size: 30px;
+            line-height: 30.96px;
+            color: #ffffff;
+            transition: .3s;
+          }
+        }
+      }
+
+      &:hover{
+
+        .block_text{
+          background-color: white;
+
+          p{
+            color: #242424;
+          }
+        }
+      }
+      
+    } 
+
+    .services_line1,.services_line2{
+      margin-right: 54px;
+    }
+
+
+    .service_block1{
+
+      .services_block{
+        min-height: 832px;
+        padding-top: 607px;
+      }
+    }
+
+    .service_block2{
+      
+      .services_block{
+        min-height: 460px;
+        padding-top: 262px;
+      }
+    }
+
+    .service_block3{
+      
+      .services_block{
+        min-height: 563px;
+
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+
+    .service_block4{
+      
+      .services_block{
+        min-height: 721px;
+        padding-bottom: 103px;
+
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+
+    .service_block5{
+      
+      .services_block{
+        min-height: 601px;
+        padding-bottom: 38px;
+
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+
+    .service_block6{
+      
+      .services_block{
+        min-height: 600px;
+        padding-bottom: 177px;
+
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+
+    .service_block8{
+      
+      .services_block{
+        min-height: 467px;
+        padding-bottom: 37px;
+
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+
+    .service_block9{
+      
+      .services_block{
+        height: 365px;
+        padding-top:100px;
       }
     }
     
@@ -3638,6 +3809,114 @@ footer{
         }
       }
       
+    }
+  
+  }
+
+  .services{
+  
+    .header{
+      padding: 0.781vw 4.010vw;
+    }
+  }
+  
+  .services_blocks{
+    padding-top: 4.063vw;
+  
+    .services_blockgroup{
+      width: 76.719vw;
+  
+    
+      .services_line1,.services_line2,.services_line3{
+        width: 23.698vw;
+      }
+  
+      .services_block-wrap{
+        margin-bottom: 1.302vw;
+        
+  
+        .services_block{
+          height: 23.698vw;
+          padding: 1.042vw;
+  
+          .block_text{
+            padding: 0.625vw 1.302vw;
+  
+            p{
+              font-size: 1.563vw;
+              line-height: 1.613vw;
+            }
+          }
+        }
+      } 
+  
+      .services_line1,.services_line2{
+        margin-right: 2.813vw;
+      }
+  
+  
+      .service_block1{
+  
+        .services_block{
+          min-height: 43.333vw;
+          padding-top: 31.615vw;
+        }
+      }
+  
+      .service_block2{
+        
+        .services_block{
+          min-height: 23.958vw;
+          padding-top: 13.646vw;
+        }
+      }
+  
+      .service_block3{
+        
+        .services_block{
+          min-height: 29.323vw;
+        }
+      }
+  
+      .service_block4{
+        
+        .services_block{
+          min-height: 37.552vw;
+          padding-bottom: 5.365vw;
+        }
+      }
+  
+      .service_block5{
+        
+        .services_block{
+          min-height: 31.302vw;
+          padding-bottom: 1.979vw;
+        }
+      }
+  
+      .service_block6{
+        
+        .services_block{
+          min-height: 31.250vw;
+          padding-bottom: 9.219vw;
+        }
+      }
+  
+      .service_block8{
+        
+        .services_block{
+          min-height: 24.792vw;
+          padding-bottom: 1.927vw;
+        }
+      }
+  
+      .service_block9{
+        
+        .services_block{
+          height: 19.010vw;
+          padding-top:5.208vw;
+        }
+      } 
     }
   
   }
@@ -5051,6 +5330,114 @@ footer{
         }
       
       }
+
+      .services{
+  
+        .header{
+          padding: 1.781vw 1.6vw;
+        }
+      }
+      
+      .services_blocks{
+        padding-top: 6.500vw;
+      
+        .services_blockgroup{
+          width: 96.667vw;
+      
+        
+          .services_line1,.services_line2,.services_line3{
+            width: 31.1vw;
+          }
+      
+          .services_block-wrap{
+            margin-bottom: 1.302vw;
+            
+      
+            .services_block{
+              height: 23.698vw;
+              padding: 1.042vw;
+      
+              .block_text{
+                padding: 0.833vw 2.917vw;
+      
+                p{
+                  font-size: 2.083vw;
+                  line-height: 2.163vw;
+                }
+              }
+            }
+          } 
+      
+          .services_line1,.services_line2{
+            margin-right: 2.813vw;
+          }
+      
+      
+          .service_block1{
+      
+            .services_block{
+              min-height: 43.333vw;
+              padding-top: 31.615vw;
+            }
+          }
+      
+          .service_block2{
+            
+            .services_block{
+              min-height: 23.958vw;
+              padding-top: 13.646vw;
+            }
+          }
+      
+          .service_block3{
+            
+            .services_block{
+              min-height: 29.323vw;
+            }
+          }
+      
+          .service_block4{
+            
+            .services_block{
+              min-height: 38.1vw;
+              padding-bottom: 5.365vw;
+            }
+          }
+      
+          .service_block5{
+            
+            .services_block{
+              min-height: 31.302vw;
+              padding-bottom: 1.979vw;
+            }
+          }
+      
+          .service_block6{
+            
+            .services_block{
+              min-height: 31.250vw;
+              padding-bottom: 9.219vw;
+            }
+          }
+      
+          .service_block8{
+            
+            .services_block{
+              min-height: 24.792vw;
+              padding-bottom: 1.927vw;
+            }
+          }
+      
+          .service_block9{
+            
+            .services_block{
+              height: 19.5vw;
+              padding-top:5.208vw;
+            }
+          } 
+        }
+      
+      }
       
     }
   }
@@ -6090,6 +6477,56 @@ footer{
             }
           }
           
+        }
+      
+      }
+
+      .services_blocks{
+        padding-top: 6.500vw;
+      
+        .services_blockgroup{
+          width: 96.667vw;
+          flex-direction: column;
+      
+        
+          .services_line1,.services_line2,.services_line3{
+            width: 100%;
+          }
+      
+          .services_block-wrap{
+            margin-bottom: 1.302vw;
+            
+      
+            .services_block{
+              height: 33.333vw;
+              padding: 1.667vw;
+      
+              .block_text{
+                padding: 1.5vw 2.917vw;
+      
+                p{
+                  font-size: 4.083vw;
+                  line-height: 4.163vw;
+                }
+              }
+            }
+          } 
+      
+          .services_line1,.services_line2{
+            margin-right: 0;
+          }
+      
+      
+          .service_block1,.service_block2,.service_block3,.service_block4,
+          .service_block5,.service_block6,.service_block8,.service_block9{
+            .services_block{
+              min-height: 61.75vw;
+              padding-top: 1.75vw;
+
+              display: flex;
+              align-items: flex-end;
+            }
+          }
         }
       
       }

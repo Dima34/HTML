@@ -290,6 +290,151 @@ if(productsBlks.length != 0){
 }
 
 
+//
+//  Services blocks
+//
+
+let servicesBlks = document.querySelectorAll(".services_block-wrap"); 
+
+if(servicesBlks.length != 0){
+    let servicesBlocksInBlockAmount = 8;
+    let servicesBlocksAmount = Math.ceil(servicesBlks.length/servicesBlocksInBlockAmount);
+    let servicesBlocksArray = [];
+
+    // Create divs
+    for (let i = 0; i < servicesBlocksAmount; i++) {
+        
+        servicesBlocksArray.push(document.createElement("div"));
+        
+    }
+
+    let servicesMainBlock = document.querySelector(".services_blocks");
+
+    // Append divs to main block
+    for (let i = 0; i < servicesBlocksAmount; i++) {
+        
+        servicesMainBlock.append(servicesBlocksArray[i])
+        
+    }
+
+    // Append classes to divs
+    let servicesMainBlockDivs = servicesMainBlock.querySelectorAll("div");
+
+    for (let i = 0; i < servicesMainBlockDivs.length; i++) {
+        
+        servicesMainBlockDivs[i].className = "services_blockgroup";
+        
+    }
+
+    // Append services block to their blockgroups
+    let servicesMainBlockGroups = servicesMainBlock.querySelectorAll(".services_blockgroup");
+    let productBlockToFillNumber = 0;
+    let servicesTempBlock = document.querySelector(".services-temp-block");
+    servicesTempBlock.remove();
+    
+    for (let i = 0; i < servicesBlks.length; i++) {
+
+        if(i % servicesBlocksInBlockAmount == 0 && i!=0){
+            productBlockToFillNumber++;
+        }
+        
+        servicesMainBlockGroups[productBlockToFillNumber].append(servicesBlks[i].cloneNode(true));
+
+    }
+
+    // Separate blocks to lines
+    servicesBlks = document.querySelectorAll(".services_block-wrap");
+
+    for (let i = 0; i < servicesMainBlockGroups.length; i++) {
+        
+        firstLine = document.createElement("div");
+        firstLine.className = "services_line1";
+        secondLine = document.createElement("div");
+        secondLine.className = "services_line2";
+        thirdLine = document.createElement("div");
+        thirdLine.className = "services_line3";
+
+        inGroupBlocks = servicesMainBlockGroups[i].querySelectorAll(".services_block-wrap");
+
+        for (let b = 0; b < inGroupBlocks.length; b+=3) {
+            
+            firstLine.append(inGroupBlocks[b].cloneNode(true));
+            
+        }
+
+        for (let b = 1; b < inGroupBlocks.length; b+=3) {
+            
+            secondLine.append(inGroupBlocks[b].cloneNode(true));
+            
+        }
+
+        for (let b = 2; b < inGroupBlocks.length; b+=3) {
+            
+            thirdLine.append(inGroupBlocks[b].cloneNode(true));
+            
+        }
+
+        servicesMainBlockGroups[i].innerHTML = "";
+        servicesMainBlockGroups[i].append(firstLine);
+        servicesMainBlockGroups[i].append(secondLine);
+        servicesMainBlockGroups[i].append(thirdLine);
+
+        // If block group is full add last element of first line to the end of third column
+        if(inGroupBlocks.length == servicesBlocksInBlockAmount){
+
+            firstLineLastElement = servicesMainBlockGroups[i].querySelector(".services_line1").querySelector(".services_block-wrap:last-child");
+            servicesMainBlockGroups[i].querySelector(".services_line3").append(firstLineLastElement);
+            
+        }
+    }
+
+    // Add classes to blocks
+    for (let i = 0; i < servicesMainBlockGroups.length; i++) {
+        
+        firstLine = servicesMainBlockGroups[i].querySelector(".services_line1");
+        secondLine = servicesMainBlockGroups[i].querySelector(".services_line2");
+        thirdLine = servicesMainBlockGroups[i].querySelector(".services_line3");
+
+        firstLineBlocks = firstLine.querySelectorAll(".services_block-wrap");
+        tmp = 1
+
+        for (let b = 0; b < firstLineBlocks.length; b++) {
+            
+            firstLineBlocks[b].classList.add("service_block" + tmp)
+            tmp+=3;
+            
+        }
+
+        secondLineBlocks = secondLine.querySelectorAll(".services_block-wrap");
+        tmp = 2
+
+        for (let b = 0; b < secondLineBlocks.length; b++) {
+            
+            secondLineBlocks[b].classList.add("service_block" + tmp)
+            tmp+=3;
+            
+        }
+
+        thirdLineBlocks = thirdLine.querySelectorAll(".services_block-wrap");
+        tmp = 3
+
+        for (let b = 0; b < thirdLineBlocks.length; b++) {
+            
+            thirdLineBlocks[b].classList.add("service_block" + tmp)
+            tmp+=3;
+            
+        }
+
+        // If line3 have 10 elems change block30 to 28
+        if(thirdLineBlocks.length == 10){
+            thirdLineBlocks[9].classList.add("product_block28");
+            thirdLineBlocks[9].classList.remove("product_block30");
+        }
+
+    }
+
+
+}
 
 
 //
@@ -471,6 +616,7 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".design_btn"),"animate__tada", "2s" );
     animPartiallyVisibleALL(queryA(".design_btn-up p"),"animate__flip", "2s" );
     animPartiallyVisibleALL(queryA(".products_block-wrap"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".services_block-wrap"),"animate__fadeIn", "2s" );
 }
 
 
