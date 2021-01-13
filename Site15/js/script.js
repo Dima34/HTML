@@ -143,6 +143,154 @@ burgerClose.addEventListener('click',()=>{
 });
 
 
+//
+//  Contacts blocks
+//
+
+let productsBlks = document.querySelectorAll(".products_block-wrap"); 
+
+if(productsBlks){
+    let productsBlocksInBlockAmount = 28;
+    let productsBlocksAmount = Math.ceil(productsBlks.length/productsBlocksInBlockAmount);
+    let productsBlocksArray = [];
+
+    // Create divs
+    for (let i = 0; i < productsBlocksAmount; i++) {
+        
+        productsBlocksArray.push(document.createElement("div"));
+        
+    }
+
+    let productsMainBlock = document.querySelector(".products_blocks");
+
+    // Append divs to main block
+    for (let i = 0; i < productsBlocksAmount; i++) {
+        
+        productsMainBlock.append(productsBlocksArray[i])
+        
+    }
+
+    // Append classes to divs
+    let productsMainBlockDivs = productsMainBlock.querySelectorAll("div");
+
+    for (let i = 0; i < productsMainBlockDivs.length; i++) {
+        
+        productsMainBlockDivs[i].className = "products_blockgroup";
+        
+    }
+
+    // Append products block to their blockgroups
+    let productsMainBlockGroups = productsMainBlock.querySelectorAll(".products_blockgroup");
+    let productBlockToFillNumber = 0;
+    let productsTempBlock = document.querySelector(".products-temp-block");
+    productsTempBlock.remove();
+    
+    for (let i = 0; i < productsBlks.length; i++) {
+
+        if(i % productsBlocksInBlockAmount == 0 && i!=0){
+            productBlockToFillNumber++;
+        }
+        
+        productsMainBlockGroups[productBlockToFillNumber].append(productsBlks[i].cloneNode(true));
+
+    }
+
+    // Separate blocks to lines
+    productsBlks = document.querySelectorAll(".products_block-wrap");
+
+    for (let i = 0; i < productsMainBlockGroups.length; i++) {
+        
+        firstLine = document.createElement("div");
+        firstLine.className = "products_line1";
+        secondLine = document.createElement("div");
+        secondLine.className = "products_line2";
+        thirdLine = document.createElement("div");
+        thirdLine.className = "products_line3";
+
+        inGroupBlocks = productsMainBlockGroups[i].querySelectorAll(".products_block-wrap");
+
+        for (let b = 0; b < inGroupBlocks.length; b+=3) {
+            
+            firstLine.append(inGroupBlocks[b].cloneNode(true));
+            
+        }
+
+        for (let b = 1; b < inGroupBlocks.length; b+=3) {
+            
+            secondLine.append(inGroupBlocks[b].cloneNode(true));
+            
+        }
+
+        for (let b = 2; b < inGroupBlocks.length; b+=3) {
+            
+            thirdLine.append(inGroupBlocks[b].cloneNode(true));
+            
+        }
+
+        productsMainBlockGroups[i].innerHTML = "";
+        productsMainBlockGroups[i].append(firstLine);
+        productsMainBlockGroups[i].append(secondLine);
+        productsMainBlockGroups[i].append(thirdLine);
+
+        // If block group is full add last element of first line to the end of third column
+        if(inGroupBlocks.length == productsBlocksInBlockAmount){
+
+            firstLineLastElement = productsMainBlockGroups[i].querySelector(".products_line1").querySelector(".products_block-wrap:last-child");
+            productsMainBlockGroups[i].querySelector(".products_line3").append(firstLineLastElement);
+            
+        }
+    }
+
+    // Add classes to blocks
+    for (let i = 0; i < productsMainBlockGroups.length; i++) {
+        
+        firstLine = productsMainBlockGroups[i].querySelector(".products_line1");
+        secondLine = productsMainBlockGroups[i].querySelector(".products_line2");
+        thirdLine = productsMainBlockGroups[i].querySelector(".products_line3");
+
+        firstLineBlocks = firstLine.querySelectorAll(".products_block-wrap");
+        tmp = 1
+
+        for (let b = 0; b < firstLineBlocks.length; b++) {
+            
+            firstLineBlocks[b].classList.add("product_block" + tmp)
+            tmp+=3;
+            
+        }
+
+        secondLineBlocks = secondLine.querySelectorAll(".products_block-wrap");
+        tmp = 2
+
+        for (let b = 0; b < secondLineBlocks.length; b++) {
+            
+            secondLineBlocks[b].classList.add("product_block" + tmp)
+            tmp+=3;
+            
+        }
+
+        thirdLineBlocks = thirdLine.querySelectorAll(".products_block-wrap");
+        tmp = 3
+
+        for (let b = 0; b < thirdLineBlocks.length; b++) {
+            
+            thirdLineBlocks[b].classList.add("product_block" + tmp)
+            tmp+=3;
+            
+        }
+
+        // If line3 have 10 elems change block30 to 28
+        if(thirdLineBlocks.length == 10){
+            thirdLineBlocks[9].classList.add("product_block28");
+            thirdLineBlocks[9].classList.remove("product_block30");
+        }
+
+    }
+
+
+}
+
+
+
 
 //
 //  Animation

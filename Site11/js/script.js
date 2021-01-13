@@ -59,8 +59,6 @@ if(blog_blk != null){
 
     }
 
-
-
     new_blog_blks.append(new_blog_blks_b)
     new_blog_blks.append(new_blog_blks_s)
 

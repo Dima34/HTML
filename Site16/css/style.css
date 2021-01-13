@@ -5756,22 +5756,25 @@ footer .wrapper {
         margin-left: 0px; }
   .categories {
     width: 100%; }
-    .categories .wrapper .categories_blk_mobile {
-      display: flex;
-      font-size: 4.063vw;
-      font-family: "Gotham" !important;
-      font-weight: 400 !important; }
-      .categories .wrapper .categories_blk_mobile a {
-        margin-right: 4.688vw;
-        white-space: nowrap;
+    .categories .wrapper {
+      justify-content: unset;
+      overflow-x: scroll;
+      padding: 10px; }
+      .categories .wrapper .categories_blk_mobile {
+        display: flex;
         font-size: 4.063vw;
-        padding-bottom: 10px; }
-    .categories .wrapper .categories_blk {
-      display: none; }
-      .categories .wrapper .categories_blk .blk_img {
+        font-family: "Gotham" !important;
+        font-weight: 400 !important; }
+        .categories .wrapper .categories_blk_mobile a {
+          margin-right: 4.688vw;
+          white-space: nowrap;
+          font-size: 4.063vw; }
+      .categories .wrapper .categories_blk {
         display: none; }
-      .categories .wrapper .categories_blk .blk_title {
-        display: none; }
+        .categories .wrapper .categories_blk .blk_img {
+          display: none; }
+        .categories .wrapper .categories_blk .blk_title {
+          display: none; }
   .welcome .wrapper .welcome_title {
     font-size: 4.375vw;
     margin-bottom: 3.125vw; }
