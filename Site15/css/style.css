@@ -3754,7 +3754,35 @@ footer {
       width: 42.583vw;
       margin-right: 0.417vw; }
     .wrapper_global main .design_btn-up img {
-      width: 16.563vw; } }
+      width: 16.563vw; }
+  .wrapper_global main .products_blocks {
+    padding-top: 4.500vw; }
+    .wrapper_global main .products_blocks .products_blockgroup {
+      width: 95vw;
+      flex-direction: column; }
+      .wrapper_global main .products_blocks .products_blockgroup .products_line1, .wrapper_global main .products_blocks .products_blockgroup .products_line2, .wrapper_global main .products_blocks .products_blockgroup .products_line3 {
+        width: 100%; }
+      .wrapper_global main .products_blocks .products_blockgroup .products_block-wrap {
+        margin-bottom: 2.083vw; }
+        .wrapper_global main .products_blocks .products_blockgroup .products_block-wrap .products_block {
+          height: 33.333vw;
+          padding: 1.667vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .products_block-wrap .products_block .block_text {
+            padding: 1vw 2.917vw 1vw 2.917vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .products_block-wrap .products_block .block_text p {
+              font-size: 3.083vw;
+              line-height: 2.163vw; }
+      .wrapper_global main .products_blocks .products_blockgroup .products_line1, .wrapper_global main .products_blocks .products_blockgroup .products_line2 {
+        margin-right: 2.567vw; }
+      .wrapper_global main .products_blocks .products_blockgroup .product_block1 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block2 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block3 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block4 .products_block,
+      .wrapper_global main .products_blocks .products_blockgroup .product_block5 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block6 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block7 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block8 .products_block,
+      .wrapper_global main .products_blocks .products_blockgroup .product_block9 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block10 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block11 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block12 .products_block,
+      .wrapper_global main .products_blocks .products_blockgroup .product_block13 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block14 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block15 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block16 .products_block,
+      .wrapper_global main .products_blocks .products_blockgroup .product_block17 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block18 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block19 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block20 .products_block,
+      .wrapper_global main .products_blocks .products_blockgroup .product_block21 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block22 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block23 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block24 .products_block,
+      .wrapper_global main .products_blocks .products_blockgroup .product_block25 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block26 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block27 .products_block, .wrapper_global main .products_blocks .products_blockgroup .product_block28 .products_block {
+        min-height: 23.750vw;
+        padding-top: 1.75vw; } }
 
 @media screen and (max-width: 800px) {
   .nav_listitem a {

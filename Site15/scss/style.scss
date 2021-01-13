@@ -6039,6 +6039,60 @@ footer{
           width: 16.563vw;
         }
       }
+
+      .products_blocks{
+        padding-top: 4.500vw;
+      
+        .products_blockgroup{
+          width: 95vw;
+          flex-direction: column;
+      
+        
+          .products_line1,.products_line2,.products_line3{
+            width: 100%;
+          }
+      
+          .products_block-wrap{
+            margin-bottom: 2.083vw;
+      
+            .products_block{
+              height: 33.333vw;
+              padding: 1.667vw;
+      
+              .block_text{
+                padding: 1vw 2.917vw 1vw 2.917vw;
+      
+                p{
+                  font-size: 3.083vw;
+                  line-height: 2.163vw;
+                }
+              }
+            }
+            
+          } 
+      
+          .products_line1,.products_line2{
+            margin-right: 2.567vw;
+          }
+      
+      
+          .product_block1, .product_block2,.product_block3,.product_block4,
+          .product_block5,.product_block6,.product_block7,.product_block8,
+          .product_block9,.product_block10,.product_block11,.product_block12,
+          .product_block13,.product_block14,.product_block15,.product_block16,
+          .product_block17,.product_block18,.product_block19,.product_block20,
+          .product_block21,.product_block22,.product_block23,.product_block24,
+          .product_block25,.product_block26,.product_block27,.product_block28{
+            
+            .products_block{
+              min-height: 23.750vw;
+              padding-top: 1.75vw;
+            }
+          }
+          
+        }
+      
+      }
     }
   }
 }
