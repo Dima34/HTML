@@ -613,6 +613,9 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".design_btn-up p"),"animate__flip", "2s" );
     animPartiallyVisibleALL(queryA(".products_block-wrap"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".services_block-wrap"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".fr_block"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".fr_welcome"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".fr_stages"),"animate__fadeIn", "2s" );
 }
 
 
