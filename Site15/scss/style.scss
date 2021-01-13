@@ -1177,77 +1177,89 @@ footer{
         position: relative;
         flex-direction: column;
 
-        .sale_img{
+        .sale_img_wrapper{   
+          width: 253px;
+          height: 190px;
           margin-bottom: 16px;
-          display: block;
-          
-          &::after{
-            content: "";
+          position: relative;
+
+          .sale_img{
+            display: block;
             position: absolute;
-            width: 100%;
-            height: 2px;
-            top: 94px;
-            left: 0;
-            background: #bababb;
-            z-index: -1;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            transition: .6s;
+            
+            img{
+              width: 190px;
+              height: 190px;
+            }
           }
 
-          &:hover + .sale_hover{
-            visibility: visible;
+          .sale_hover{
+            position: absolute;
+            left: 50%;
+            top: 59%;
+            transform: translate(-50%,-50%) rotateY(-180deg);
+            width: 253px;
+            height: 176px;
+            background: url(../img/index_steps_cloud.png) center no-repeat;
+            background-size: cover;
+            padding: 19px 20px 48px 24px;
+            font-size: 22px;
+            @include Beba(400);
+            color: #ffcc00;
+            text-align: center;
             opacity: 1;
+            position: absolute;
+            transition: .6s;
+            backface-visibility: hidden;
           }
+  
+        }
+
+        &:hover{
           
-          img{
-            width: 190px;
-            height: 190px;
+          .sale_img{
+            transform: translate(-50%,-50%) rotateY(180deg);
           }
+
+          .sale_hover{
+            transform: translate(-50%,-50%) rotateY(0deg);
+          }
+        }
+          
+        &::after{
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          top: 94px;
+          left: 0;
+          background: #bababb;
+          z-index: -1;
         }
 
         &:first-child{
 
-          .sale_img{
-
-            &::after{
-              width: 50%;
-              right: 0;
-              left: unset;
-            }
+          &::after{
+            width: 50%;
+            right: 0;
+            left: unset;
           }
+          
         }
 
         &:last-child{
 
-          .sale_img{
-
-            &::after{
-              width: 50%;
-              right: unset;
-              left: 0;
-            }
+          &::after{
+            width: 50%;
+            right: unset;
+            left: 0;
           }
         }
-
-        .sale_hover{
-          width: 253px;
-          height: 176px;
-          background: url(../img/index_steps_cloud.png) center no-repeat;
-          background-size: cover;
-          padding: 19px 20px 48px 24px;
-          font-size: 22px;
-          @include Beba(400);
-          color: #ffcc00;
-          text-align: center;
-          visibility: hidden;
-          opacity: 0;
-          position: absolute;
-          transition: .3s;
-
-          &:hover{
-            visibility: visible;
-            opacity: 1;
-          }
-        }
-
+        
         .sale_name{
           font-size: 32px;
           @include Beba(400);
@@ -2444,6 +2456,280 @@ footer{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* -----=====FOR RESTOURANTS======----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.for-restourants{
+
+  .header{
+
+    a,p{
+      color: white;
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======FR INTRO========------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.fr-intro{
+  width: 100%;
+  height: 600px;
+  padding: 53px 28px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+
+  .fr-intro_text{
+    width: 437px;
+    padding: 27px 101px 20px 15px;
+    background: rgba(#000000, 0.42);
+    @include Beba(400);
+    color: #ededed;
+    font-size: 27px;
+    line-height: 32px;
+  }
+
+  &::after{
+    content: "";
+    width: 100%;
+    height: 10px;
+    background: #ffcc00;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======FR BLOCKS=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.fr-blocks{
+  width: 1510px;
+  margin-left: 35px;
+
+  .fr_block{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 23px;
+    position: relative;
+    padding-top: 32px;
+
+    .block_image{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      width: 684px;
+      height: 427px;
+      margin-right: 40px;
+
+      a{
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px 48px;
+        color: #1a0a0b;
+        @include Beba(600);
+        font-size: 23px;
+        background-color: #ffcc00;
+      }
+    }
+
+    .block_textblock{
+      display: flex;
+      flex-direction: column;
+
+      .textblock_title{
+        @include Beba(600);
+        color: #000000;
+        font-size: 35px;
+        line-height: 37px;
+        margin-bottom: 13px;
+        transition: .3s;
+
+        &:hover{
+          color: #ffcc00;
+        }
+      }
+
+      .textblock_subtitle{
+        color: #ffcc00;
+        @include Beba(600);
+        font-size: 26px;
+        line-height: 27px;
+        padding-left: 1px;
+        margin-bottom: 39px;
+      }
+
+      .textblock_about{
+        padding-left: 78px;
+        color: #1a0a0b;
+        @include Beba(400);
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 78px;
+      }
+
+      .textblock_advantages{
+        padding-left: 78px;
+        display: flex;
+        margin-top: auto;
+
+        .textblock_advantage{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 87px;
+
+          img{
+            width: 55px;
+            height: 55px;
+            margin-bottom: 20px;
+          }
+
+          p{
+            color: #afadad;
+            @include Beba(400);
+            font-size: 17px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      right: 0;
+      width: calc(100% - 4px);
+      bottom: 0;
+      height: 4px;
+      background: #d8dbe1;
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======FR WELCOME=======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.fr_welcome{
+  display: block;
+  width: 1510px;
+  margin-left: 35px;
+  color: #1a0a0b;
+  @include Beba(400);
+  font-size: 24px;
+  line-height: 27px;
+  margin-top: 27px;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======FR STAGES=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.fr_stages{
+  display: flex;
+  margin-top: 45px;
+  margin-left: 47px;
+  margin-bottom: 46px;
+
+  .fr_stage{
+    width: 291px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+    .stage_img{
+      width: 190px;
+      height: 190px;
+      margin-bottom: 15px;
+      z-index: 1;
+    }
+
+    .stage_title{
+      color: #000000;
+      @include Beba(400);
+      font-size: 32px;
+      line-height: 33px;
+      margin-bottom: 3px;
+    }
+
+    .stage_subtitle{
+      color: #ffcc00;
+      @include Beba(400);
+      font-size: 18px;
+    }
+
+    &::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      top: 34.2%;
+      left: 0;
+
+      background: #cdcdce;
+    }
+
+    &:first-child{
+
+      &::after{
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 4px;
+        top: 34.2%;
+        left: unset;
+        right: 0;
+  
+        background: #cdcdce;
+      }
+    }
+
+    &:last-child{
+
+      &::after{
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 4px;
+        top: 34.2%;
+        left: 0;
+        right: unset;
+  
+        background: #cdcdce;
+      }
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======MEDIA========-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2795,31 +3081,37 @@ footer{
     padding: 3.906vw 0 6.823vw 0;
 
     .swiper-container3{
-
+  
       .swiper-wrapper{
-
+  
         .swiper-slide{
           width: 16.979vw;
-
-          .sale_img{
+  
+          .sale_img_wrapper{   
+            width: 13.177vw;
+            height: 9.896vw;
             margin-bottom: 0.833vw;
-            
-            &::after{
-              height: 2px;
-              top: 4.896vw;
+  
+            .sale_img{
+              
+              img{
+                width: 9.896vw;
+                height: 9.896vw;
+              }
             }
-            img{
-              width: 9.896vw;
-              height: 9.896vw;
+  
+            .sale_hover{
+              width: 13.177vw;
+              height: 9.167vw;
+              padding: 0.990vw 1.042vw 2.500vw 1.250vw;
+              font-size: 1.146vw;
             }
+    
           }
 
-          .sale_hover{
-            width: 13.177vw;
-            height: 9.167vw;
-            padding: 0.990vw 1.042vw 2.500vw 1.250vw;
-            font-size: 1.146vw;
-
+          &::after{
+            height: 2px;
+            top: 4.896vw;
           }
 
           .sale_name{
@@ -3920,6 +4212,136 @@ footer{
     }
   
   }
+  
+  .fr-intro{
+    height: 31.250vw;
+    padding: 2.760vw 1.458vw;
+  
+    .fr-intro_text{
+      width: 22.760vw;
+      padding: 1.406vw 5.260vw 1.042vw 0.781vw;
+      font-size: 1.406vw;
+      line-height: 1.667vw;
+    }
+  }
+  
+  .fr-blocks{
+    width: 78.646vw;
+    margin-left: 1.823vw;
+  
+    .fr_block{
+      padding-bottom: 1.198vw;
+      padding-top: 1.667vw;
+  
+      .block_image{
+        width: 35.625vw;
+        height: 22.240vw;
+        margin-right: 2.083vw;
+  
+        a{
+          padding: 0.521vw 2.500vw;
+          font-size: 1.198vw;
+        }
+      }
+  
+      .block_textblock{
+  
+        .textblock_title{
+          font-size: 1.823vw;
+          line-height: 1.927vw;
+          margin-bottom: 0.677vw;
+        }
+  
+        .textblock_subtitle{
+          font-size: 1.354vw;
+          line-height: 1.406vw;
+          margin-bottom: 2.031vw;
+        }
+  
+        .textblock_about{
+          padding-left: 4.063vw;
+          font-size: 1.146vw;
+          line-height: 1.302vw;
+          margin-bottom: 4.063vw;
+        }
+  
+        .textblock_advantages{
+          padding-left: 4.063vw;
+  
+          .textblock_advantage{
+            width: 4.531vw;
+  
+            img{
+              width: 2.865vw;
+              height: 2.865vw;
+              margin-bottom: 1.042vw;
+            }
+  
+            p{
+              font-size: 0.885vw;
+              line-height: 0.990vw;
+            }
+          }
+        }
+      }
+  
+      &::after{
+        width: calc(100% - 0.208vw);
+      }
+    }
+  }
+
+  .fr_welcome{
+    width: 78.646vw;
+    margin-left: 1.823vw;
+    font-size: 1.250vw;
+    line-height: 1.406vw;
+    margin-top: 1.406vw;
+  }
+
+  .fr_stages{
+    margin-top: 2.344vw;
+    margin-left: 2.448vw;
+    margin-bottom: 2.396vw;
+  
+    .fr_stage{
+      width: 15.156vw;
+      
+      .stage_img{
+        width: 9.896vw;
+        height: 9.896vw;
+        margin-bottom: 0.781vw;
+      }
+  
+      .stage_title{
+        font-size: 1.667vw;
+        line-height: 1.719vw;
+        margin-bottom: 1.719vw;
+      }
+  
+      .stage_subtitle{
+        font-size: 0.938vw;
+      }
+  
+      &::after{
+        height: 0.208vw;
+      }
+  
+      &:first-child{
+  
+        &::after{
+          height: 0.208vw;
+        }
+      }
+  
+      &:last-child{
+  
+        &::after{
+          height: 0.208vw;
+        }
+      }
+    }
+  }
 
 }
 
@@ -4306,35 +4728,41 @@ footer{
       
       .index_steps{
         padding: 6.250vw 0 10.917vw 0;
-      
+
         .swiper-container3{
-      
+  
           .swiper-wrapper{
       
             .swiper-slide{
               width: 20vw;
       
-              .sale_img{
-                margin-bottom: 1.333vw;
-                
-                &::after{
-                  height: 2px;
-                  top:6.38vw;
-                }
-                
-                img{
-                  width: 12.833vw;
-                  height: 12.833vw;
-                }
-              }
-      
-              .sale_hover{
+              .sale_img_wrapper{   
                 width: 21.083vw;
-                height: 14.667vw;
-                padding: 1.583vw 1.667vw 4vw 2vw;
-                font-size: 1.833vw;
-              }
+                height: 12.833vw;
+                margin-bottom: 0.833vw;
       
+                .sale_img{
+                  
+                  img{
+                    width: 12.833vw;
+                    height: 12.833vw;
+                  }
+                }
+      
+                .sale_hover{
+                  width: 21.083vw;
+                  height: 14.667vw;
+                  padding: 1.583vw 1.667vw 4vw 2vw;
+                  font-size: 1.833vw;
+                }
+        
+              }
+    
+              &::after{
+                height: 2px;
+                top:6.38vw;
+              }
+    
               .sale_name{
                 font-size: 2vw;
               }
@@ -5438,6 +5866,146 @@ footer{
         }
       
       }
+
+      .fr-intro{
+        width: 100%;
+        height: 50vw;
+        padding: 4.417vw 2.333vw;
+      
+        .fr-intro_text{
+          width: 36.417vw;
+          padding: 2.250vw 8.417vw 1.667vw 1.250vw;
+          font-size: 2.250vw;
+          line-height: 2.667vw;
+        }
+      
+        &::after{
+          height: 0.83vw;
+        }
+      }
+
+      .fr-blocks{
+        width: 95.833vw;
+        margin: 0 auto;
+      
+        .fr_block{
+          padding-bottom: 1.917vw;
+          padding-top: 2.667vw;
+      
+          .block_image{
+            width: 49.083vw;
+            height: 30.583vw;
+            margin-right: 2.083vw;
+      
+            a{
+              padding: 0.833vw 4vw;
+              font-size: 1.917vw;
+            }
+          }
+      
+          .block_textblock{
+      
+            .textblock_title{
+              font-size: 2.667vw;
+              line-height: 2.750vw;
+              margin-bottom: 0.750vw;
+            }
+      
+            .textblock_subtitle{
+              font-size: 2.083vw;
+              line-height: 2.167vw;
+              margin-bottom: 2.500vw;
+            }
+      
+            .textblock_about{
+              padding-left: 6.500vw;
+              font-size: 1.667vw;
+              line-height: 2vw;
+              margin-bottom: 2.917vw;
+            }
+      
+            .textblock_advantages{
+              padding-left: 6.500vw;
+      
+              .textblock_advantage{
+                width: 7.250vw;
+      
+                img{
+                  width: 3.333vw;
+                  height: 3.333vw;
+                  margin-bottom: 0.833vw;
+                }
+      
+                p{
+                  font-size: 1.417vw;
+                  line-height: 1.583vw;
+                }
+              }
+            }
+          }
+      
+          &::after{
+            width: calc(100% - 0.333vw);
+            height: 0.333vw;
+          }
+        }
+      }
+
+      .fr_welcome{
+        width: 95.833vw;
+        margin-left: 2.917vw;
+        font-size: 2vw;
+        line-height: 2.250vw;
+        margin-top: 2.250vw;
+      }
+    
+      .fr_stages{
+        margin-top: 3.750vw;
+        margin-left: 3.917vw;
+        margin-bottom: 3.833vw;
+      
+        .fr_stage{
+          width: 18.75vw;;
+          
+          .stage_img{
+            width: 14.167vw;
+            height: 14.167vw;
+            margin-bottom: 1.250vw;
+          }
+      
+          .stage_title{
+            font-size: 2.267vw;
+            line-height: 2.450vw;
+            margin-bottom: 0.250vw;
+          }
+      
+          .stage_subtitle{
+            font-size: 1.500vw;
+            padding: 0 0.817vw;
+          }
+      
+          &::after{
+            height: 0.333vw;
+            top: 31.2%;
+          }
+      
+          &:first-child{
+      
+            &::after{
+              height: 0.333vw;
+              top: 31.2%;
+            }
+          }
+      
+          &:last-child{
+      
+            &::after{
+              height: 0.333vw;
+              top: 31.2%;
+            }
+          }
+        }
+      }
       
     }
   }
@@ -5832,34 +6400,40 @@ footer{
         padding: 9.500vw 0 11.625vw 0;
       
         .swiper-container3{
-      
+  
           .swiper-wrapper{
       
             .swiper-slide{
               width: 50.500vw;
       
-              .sale_img{
-                margin-bottom: 3.375vw;
-                
-                &::after{
-                  height: 2px;    
-                  top: 18.813vw;
-                }
-                
-                img{
-                  width: 37.875vw;
-                  height: 37.875vw;
-                }
-              }
-      
-              .sale_hover{
+              .sale_img_wrapper{   
                 width: 50.625vw;
-                height: 35.250vw;
-                padding: 3.875vw 4vw 9.500vw 4.875vw;
-                font-size: 4.375vw;
-                top: 4.45vw;
-              }
+                height: 37.875vw;
+                margin-bottom: 3.375vw;
       
+                .sale_img{
+                  
+                  img{
+                    width: 37.875vw;
+                    height: 37.875vw;
+                  }
+                }
+      
+                .sale_hover{
+                  width: 50.625vw;
+                  height: 35.250vw;
+                  padding: 3.875vw 4vw 9.500vw 4.875vw;
+                  font-size: 4.375vw;
+                  top: 22.45vw;
+                }
+        
+              }
+    
+              &::after{
+                height: 2px;    
+                top: 18.813vw;
+              }
+    
               .sale_name{
                 font-size: 6.375vw;
               }
@@ -6529,6 +7103,152 @@ footer{
           }
         }
       
+      }
+
+      .fr-intro{
+        width: 100%;
+        height: 50vw;
+        padding: 4.417vw 2.333vw;
+      
+        .fr-intro_text{
+          width: 63.417vw;
+          padding: 2.250vw 8.417vw 1.667vw 1.250vw;
+          font-size: 3.25vw;
+          line-height: 3.667vw;
+        }
+      
+        &::after{
+          height: 1.63vw;
+        }
+      }
+      
+      .fr-blocks{
+        width: 95.833vw;
+        margin: 0 auto;
+      
+        .fr_block{
+          padding-bottom: 7.917vw;
+          padding-top: 5.667vw;
+          flex-direction: column;
+      
+          .block_image{
+            width: 100%;
+            height: 59.583vw;
+            margin-right: 0;
+            margin-bottom: 2.500vw;
+      
+            a{
+              padding: 1.433vw 5vw;
+              font-size: 3.917vw;   
+              border-radius: 2.250vw;       
+            }
+          }
+      
+          .block_textblock{
+      
+            .textblock_title{
+              font-size: 5vw;
+              line-height: 5.2vw;
+              margin-bottom: 0vw;
+            }
+      
+            .textblock_subtitle{
+              font-size: 4.083vw;
+              line-height: 4.283vw;
+              margin-bottom: 2.500vw;
+            }
+      
+            .textblock_about{
+              padding-left: 6.5vw;
+              font-size: 3.667vw;
+              line-height: 4vw;
+              margin-bottom: 2.917vw;
+            }
+      
+            .textblock_advantages{
+              padding-left: 6.500vw;
+      
+              .textblock_advantage{
+                width: 13.25vw;
+      
+                img{
+                  width: 6.333vw;
+                  height: 6.333vw;
+                  margin-bottom: 1.833vw;
+                }
+      
+                p{
+                  font-size: 2.417vw;
+                  line-height: 2.583vw;
+                }
+              }
+            }
+          }
+      
+          &::after{
+            width: calc(100% - 0.333vw);
+            height: 0.333vw;
+          }
+        }
+      }
+
+      .fr_welcome{
+        width: 95.833vw;
+        margin: 0 auto;
+        font-size: 4vw;
+        line-height: 4.25vw;
+        margin-top: 17.25vw;
+      }
+    
+      .fr_stages{
+        margin-top: 11.75vw;
+        margin-left: 1.917vw;
+        margin-bottom: 13.833vw;
+        padding-bottom: 20px;
+        overflow-x: scroll;
+      
+        .fr_stage{
+          width: 40.75vw;
+          flex-shrink: 0;
+          
+          .stage_img{
+            width: 31.167vw;
+            height: auto;
+            margin-bottom: 5.25vw;
+          }
+      
+          .stage_title{
+            font-size: 4.867vw;
+            line-height: 5vw;
+            margin-bottom: 1.50vw;
+          }
+      
+          .stage_subtitle{
+            font-size: 3.5vw;
+            padding: 0 1.817vw;
+          }
+      
+          &::after{
+            height: 0.633vw;
+            top: 26.9%;
+          }
+      
+          &:first-child{
+      
+            &::after{
+              height: 0.633vw;
+              top: 26.9%;
+            }
+          }
+      
+          &:last-child{
+      
+            &::after{
+              height: 0.633vw;
+              top: 26.9%;
+            }
+          }
+        }
       }
     }
   }

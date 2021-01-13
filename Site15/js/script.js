@@ -552,14 +552,10 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".player_btn img"), "animate__zoomIn", "1s");
     animPartiallyVisibleALL(queryA(".player_title"), "animate__lightSpeedInLeft", "1.3s");
     animPartiallyVisibleALL(queryA(".swiper-container .swiper-slide"), "animate__bounceIn", "2s" );
-    animPartiallyVisibleALL(queryA(".swiper-container1 .swiper-slide"), "animate__bounceIn", "2s" );
     animPartiallyVisibleALL(queryA(".index_text"), "animate__backInLeft", "1.3s");
     animPartiallyVisibleALL(queryA(".index_last_blk"), "animate__bounceInDown", "2s" );
     animPartiallyVisibleALL(queryA(".index_last_header h2"), "animate__fadeInRight", "1.3s");
-    animPartiallyVisibleALL(queryA(".index_sale_header h2"), "animate__flipInY", "1.3s");
-    animPartiallyVisibleALL(queryA(".swiper-container2 .swiper-slide"), "animate__flipInY", "2s" );
-    animPartiallyVisibleALL(queryA(".sale_img"), "animate__rotateIn", "2s" );
-    animPartiallyVisibleALL(queryA(".sale_name"), "animate__lightSpeedInRight", "2s" );
+    // here must be sale
     animPartiallyVisibleALL(queryA(".index_map"), "animate__bounceIn", "2s" );
     animPartiallyVisibleALL(queryA(".line1_textblock1"),"animate__backInDown", "2s" );
     animPartiallyVisibleALL(queryA(".line1_dots2"),"animate__bounceIn", "2s" );
