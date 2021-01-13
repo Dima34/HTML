@@ -470,6 +470,7 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".line3_text10"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".design_btn"),"animate__tada", "2s" );
     animPartiallyVisibleALL(queryA(".design_btn-up p"),"animate__flip", "2s" );
+    animPartiallyVisibleALL(queryA(".products_block-wrap"),"animate__fadeIn", "2s" );
 }
 
 
