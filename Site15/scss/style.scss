@@ -7918,6 +7918,139 @@ footer{
           }
         }
       }
+
+      .requires{
+        padding-top: 7.552vw;
+      
+        .requires_title{
+          padding-left: 1.979vw;
+          font-size: 5.823vw;
+          line-height: 5.875vw;
+          margin-bottom: 0.156vw;
+        }
+      
+        .requires_subtitle{
+          padding-left: 3.135vw;
+          font-size: 4.198vw;
+          line-height: 4.398vw;
+          margin-bottom: 7.031vw;
+        }
+      
+        .requires_format-blk{
+          width: 94vw;
+          flex-direction: column;
+          align-items: center;
+      
+          .blk_left{
+            width: 40.021vw;
+            margin: 0;
+            margin-bottom: 5vw;
+            margin-top: 5vw;
+      
+            img{
+              width: 40.021vw;
+              height: 27.219vw;
+              margin-bottom: 4vw;
+            }
+      
+            .left_text{
+              font-size: 5.323vw;
+              line-height: 5.5vw;
+            }
+          }
+      
+          .blk_right{
+      
+            .must-be_title{
+              font-size: 5.302vw;
+              line-height: 5.406vw;
+              margin-bottom: 1.771vw;
+              width: 100%;
+              text-align: center;
+            }
+      
+            .must-be_images{
+              margin-left: 0;
+              margin-bottom: 3.125vw;
+              justify-content: center;
+      
+              img{
+                width: 16.771vw;
+                height: 15.771vw;
+                margin-right: 4.083vw;
+                margin-bottom: 1.042vw;
+              }
+            }
+      
+            .right_stages{
+              margin-top: 2.083vw;
+              margin-bottom: 12.542vw;
+              justify-content: center;
+      
+              .right_stage{
+                width: 22.052vw;
+                margin: 0 4vw;
+                margin-bottom: 2.083vw;
+      
+                .stage_img{
+                  padding-bottom: 1.442vw;
+                  margin-bottom: 1.302vw;
+      
+                  img{
+                    width: 21.235vw;
+                    height: 10.896vw;
+                  }
+      
+                  &::after{
+                    height: 0.9vw;
+                  }
+                }
+      
+                .stage_text{
+                  line-height: 2.8vw;
+                  font-size: 3vw;
+             
+                }
+              }
+            }
+          }
+        }
+      }
+    
+      .req_guide{
+    
+        .guide_header{
+          font-size: 4.363vw;
+          line-height: 4.415vw;
+          margin-left: 3.281vw;
+          margin-bottom: 3.042vw;
+          padding-right: 2.083vw;
+      
+          span{
+            font-size: 6.083vw;
+            line-height: 6.135vw;
+          }
+        }
+      
+        .guide_main{
+          width: 94.75vw;
+          height: 65.083vw;
+
+          margin-bottom: 3.042vw;
+        }
+      
+        .guide_footer{
+          padding: 0 4.75vw 0 1.563vw;
+          font-size: 4.363vw;
+          line-height: 4.415vw;
+          margin-bottom: 5.417vw;
+      
+          span{
+            font-size: 6.083vw;
+            line-height: 6.135vw;
+          }
+        }
+      }
     }
   }
 }
