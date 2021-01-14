@@ -617,6 +617,15 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".fr_welcome"),"animate__fadeInLeft", "2s" );
     animPartiallyVisibleALL(queryA(".fr_stages"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".block_main"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".blk_left"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".must-be_title"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".must-be_images"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".right_stages"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".guide_header"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".guide_main"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".guide_footer"),"animate__fadeInLeft", "2s" );
+
+
 }
 
 
