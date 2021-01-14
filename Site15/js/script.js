@@ -659,6 +659,8 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".paper_block_item"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".paper_block_header"),"animate__fadeInLeft", "2s" );
     animPartiallyVisibleALL(queryA(".paper_block_main-text p"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".sales_title"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".sales_sale"),"animate__fadeInLeft", "2s" );
 }
 
 
