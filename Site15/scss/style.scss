@@ -2808,15 +2808,195 @@ footer{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* -------=======REQUIRES=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.requires{
+  padding-top: 145px;
+
+  .requires_title{
+    padding-left: 38px;
+    color: #000000;
+    @include Beba(600);
+    font-size: 35px;
+    line-height: 36px;
+    margin-bottom: 3px;
+  }
+
+  .requires_subtitle{
+    padding-left: 41px;
+    color: #000000;
+    @include Beba(400);
+    font-size: 23px;
+    margin-bottom: 39px;
+  }
+
+  .requires_format-blk{
+    width: 1442px;
+    margin-left: 76px;
+    display: flex;
+    align-items: flex-start;
+
+    .blk_left{
+      width: 250px;
+      right: 107px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 107px;
+      margin-top: 77px;
+
+      img{
+        width: 246px;
+        height: 177px;
+        margin-bottom: 45px;
+      }
+
+      .left_text{
+        color: #ffcc00;
+        @include Beba(600);
+        font-size: 35px;
+        line-height: 36px;
+      }
+    }
+
+    .blk_right{
+
+      .must-be_title{
+        margin-left: 34px;
+        @include Beba(600);
+        font-size: 25px;
+        line-height: 27px;
+        margin-bottom: 34px;
+      }
+
+      .must-be_images{
+        margin-left: 21px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+
+        img{
+          width: 130px;
+          height: 130px;
+          margin-right: 40px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .right_stages{
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 68px;
+
+        .right_stage{
+          width: 193px;
+          margin-right: 78px;
+          margin-bottom: 40px;
+
+          .stage_img{
+            padding-bottom: 20px;
+            position: relative;
+            margin-bottom: 25px;
+
+            img{
+              width: 185px;
+              height: 94px;
+            }
+
+            &::after{
+              position: absolute;
+              content: "";
+              width: 100%;
+              height: 8px;
+              bottom: 0;
+              left: 0;
+              background: #ffcc00;
+
+            }
+          }
+
+          .stage_text{
+            text-align: center;
+            @include Beba(600);
+            color: #1a0a0b;
+            line-height: 21px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======REQ GUIDE=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.req_guide{
+
+  width: 100%;
+
+  .guide_header{
+    color: #1a0a0b;
+    @include Beba(600);
+    font-size: 30px;
+    line-height: 31px;
+    margin-left: 63px;
+    margin-bottom: 20px;
+    padding-right: 40px;
+
+    span{
+      font-size: 40px;
+      line-height: 41px;
+    }
+  }
+
+  .guide_main{
+    width: 1032px;
+    height: 712px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .guide_footer{
+    float: right;
+    padding: 0 264px 0 30px;
+    color: #1a0a0b;
+    @include Beba(600);
+    font-size: 30px;
+    line-height: 31px;
+    margin-bottom: 104px;
+
+    span{
+      font-size: 40px;
+      line-height: 41px;
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======MEDIA========-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
 
 @media screen and (max-width: 1920px){
+
   .wrapper_global {
     width: 100vw;
   }
+
   .sidebar{
 
     .sidebar_wrap{
@@ -4469,6 +4649,132 @@ footer{
         font-size: 1.250vw;
         line-height: 1.302vw;
         margin-bottom: 4.271vw;
+      }
+    }
+  }
+
+  .requires{
+    padding-top: 7.552vw;
+  
+    .requires_title{
+      padding-left: 1.979vw;
+      font-size: 1.823vw;
+      line-height: 1.875vw;
+      margin-bottom: 0.156vw;
+    }
+  
+    .requires_subtitle{
+      padding-left: 2.135vw;
+      font-size: 1.198vw;
+      margin-bottom: 2.031vw;
+    }
+  
+    .requires_format-blk{
+      width: 75.104vw;
+      margin-left: 3.958vw;
+  
+      .blk_left{
+        width: 13.021vw;
+        right: 5.573vw;
+        margin-right: 5.573vw;
+        margin-top: 4.010vw;
+  
+        img{
+          width: 12.813vw;
+          height: 9.219vw;
+          margin-bottom: 2.344vw;
+        }
+  
+        .left_text{
+          font-size: 1.823vw;
+          line-height: 1.875vw;
+        }
+      }
+  
+      .blk_right{
+  
+        .must-be_title{
+          margin-left: 1.771vw;
+          font-size: 1.302vw;
+          line-height: 1.406vw;
+          margin-bottom: 1.771vw;
+        }
+  
+        .must-be_images{
+          margin-left: 1.094vw;
+          margin-bottom: 3.125vw;
+  
+          img{
+            width: 6.771vw;
+            height: 6.771vw;
+            margin-right: 2.083vw;
+            margin-bottom: 1.042vw;
+          }
+        }
+  
+        .right_stages{
+          margin-top: 2.083vw;
+          margin-bottom: 3.542vw;
+  
+          .right_stage{
+            width: 10.052vw;
+            margin-right: 4.063vw;
+            margin-bottom: 2.083vw;
+  
+            .stage_img{
+              padding-bottom: 1.042vw;
+              margin-bottom: 1.302vw;
+  
+              img{
+                width: 9.635vw;
+                height: 4.896vw;
+              }
+  
+              &::after{
+                height: 0.417vw;
+              }
+            }
+  
+            .stage_text{
+              line-height: 1.094vw;
+              font-size: 1.042vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .req_guide{
+
+    .guide_header{
+      font-size: 1.563vw;
+      line-height: 1.615vw;
+      margin-left: 3.281vw;
+      margin-bottom: 1.042vw;
+      padding-right: 2.083vw;
+  
+      span{
+        font-size: 2.083vw;
+        line-height: 2.135vw;
+      }
+    }
+  
+    .guide_main{
+      width: 53.750vw;
+      height: 37.083vw;
+      margin-bottom: 0.781vw;
+    }
+  
+    .guide_footer{
+      padding: 0 13.750vw 0 1.563vw;
+      font-size: 1.563vw;
+      line-height: 1.615vw;
+      margin-bottom: 5.417vw;
+  
+      span{
+        font-size: 2.083vw;
+        line-height: 2.135vw;
       }
     }
   }
@@ -6190,6 +6496,132 @@ footer{
           }
         }
       }
+
+      .requires{
+        padding-top: 7.552vw;
+      
+        .requires_title{
+          padding-left: 1.979vw;
+          font-size: 3.823vw;
+          line-height: 3.875vw;
+          margin-bottom: 0.156vw;
+        }
+      
+        .requires_subtitle{
+          padding-left: 2.135vw;
+          font-size: 2.198vw;
+          margin-bottom: 5.031vw
+        }
+      
+        .requires_format-blk{
+          width: 92vw;
+          margin: 0 auto;
+      
+          .blk_left{
+            width: 20.021vw;
+            right: 5.573vw;
+            margin-right: 5.573vw;
+            margin-top: 4.010vw;
+      
+            img{
+              width: 20.813vw;
+              height: 15.219vw;
+              margin-bottom: 2vw;
+            }
+      
+            .left_text{
+              font-size: 2.323vw;
+              line-height: 2.5vw;
+            }
+          }
+      
+          .blk_right{
+      
+            .must-be_title{
+              margin-left: 1.771vw;
+              font-size: 2.302vw;
+              line-height: 2.406vw;
+              margin-bottom: 3.771vw;
+            }
+      
+            .must-be_images{
+              margin-left: 1.094vw;
+              margin-bottom: 3.125vw;
+      
+              img{
+                width: 7.771vw;
+                height: 7.771vw;
+                margin-right: 2.083vw;
+                margin-bottom: 1.042vw;
+              }
+            }
+      
+            .right_stages{
+              margin-top: 2.083vw;
+              margin-bottom: 3.542vw;
+      
+              .right_stage{
+                width: 12.052vw;
+                margin-right: 4.063vw;
+                margin-bottom: 2.083vw;
+      
+                .stage_img{
+                  padding-bottom: 1.042vw;
+                  margin-bottom: 1.302vw;
+      
+                  img{
+                    width: 12.235vw;
+                    height: 5.896vw;
+                  }
+      
+                  &::after{
+                    height: 0.417vw;
+                  }
+                }
+      
+                .stage_text{
+                  line-height: 1.694vw;
+                  font-size: 1.542vw;              
+                }
+              }
+            }
+          }
+        }
+      }
+    
+      .req_guide{
+    
+        .guide_header{
+          font-size: 2.563vw;
+          line-height: 2.615vw;
+          margin-left: 3.281vw;
+          margin-bottom: 2.042vw;
+          padding-right: 2.083vw;
+      
+          span{
+            font-size: 3.083vw;
+            line-height: 3.135vw;
+          }
+        }
+      
+        .guide_main{
+          width: 70.75vw;
+          height: 49.083vw;
+          margin-bottom: 2.042vw;
+        }
+      
+        .guide_footer{
+          padding: 0 4.75vw 0 1.563vw;
+          font-size: 2.563vw;
+          line-height: 2.615vw;
+          margin-bottom: 5.417vw;
+      
+          span{
+            font-size: 3.083vw;
+            line-height: 3.135vw;
+          }
+        }
+      }
       
     }
   }
@@ -7476,7 +7908,6 @@ footer{
                 line-height: 3.833vw;
 
               }
-      
             }
           }
       
