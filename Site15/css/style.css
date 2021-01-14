@@ -2153,6 +2153,151 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* ------=======PAPER BLK=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.paper {
+  padding-top: 151px;
+  padding-left: 38px; }
+  .paper .paper_block .paper_block_header {
+    color: #000000;
+    font-family: 'Beba';
+    font-weight: 600 !important;
+    font-size: 35px;
+    margin-bottom: 67px; }
+  .paper .paper_block .paper_block_main-img {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 120px; }
+    .paper .paper_block .paper_block_main-img .paper_block_item {
+      width: 246px;
+      margin: 30px 25px; }
+      .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk {
+        width: 100%;
+        position: relative;
+        margin-bottom: 33px; }
+        .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk img {
+          width: 246px;
+          height: 245px; }
+        .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk a {
+          position: absolute;
+          right: 20px;
+          bottom: 14px;
+          transition: .3s; }
+          .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk a img {
+            width: 47px;
+            height: 47px; }
+          .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk a:hover {
+            transform: translateY(-10%); }
+      .paper .paper_block .paper_block_main-img .paper_block_item .item_desc {
+        color: #1a0a0b;
+        font-family: 'Beba';
+        font-weight: 400 !important;
+        text-align: center;
+        font-size: 22px; }
+  .paper .paper_block .paper_block_main-text {
+    display: grid;
+    grid-template-columns: repeat(5, 290px);
+    column-gap: 32px;
+    row-gap: 30px;
+    margin-bottom: 120px; }
+    .paper .paper_block .paper_block_main-text p {
+      color: #1a0a0b;
+      font-family: 'Beba';
+      font-weight: 400 !important;
+      font-size: 22px;
+      line-height: 23px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=========MAP=========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.map {
+  width: 1552px;
+  height: 433px;
+  background: coral;
+  margin: 0 auto; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======BTN UP========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.btn-up {
+  position: fixed;
+  right: 26px;
+  bottom: 20px;
+  opacity: 0;
+  transition: .7s; }
+  .btn-up a img {
+    width: 126px;
+    height: 126px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------=======SALES========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.sales {
+  margin-top: 100px;
+  margin-bottom: 90px; }
+  .sales .sales_title {
+    color: #000000;
+    font-family: 'Beba';
+    font-weight: 600 !important;
+    font-size: 35px;
+    line-height: 36px;
+    margin-bottom: 22px;
+    padding-left: 38px; }
+  .sales .sales_sale {
+    margin-left: 38px;
+    width: 1300px;
+    display: flex;
+    margin-bottom: 55px; }
+    .sales .sales_sale .sale_image {
+      width: 804px;
+      height: 381px;
+      margin-right: 26px;
+      border: 5px solid #e1e1e1; }
+    .sales .sales_sale .sale_text {
+      display: flex;
+      flex-direction: column; }
+      .sales .sales_sale .sale_text .sale_title {
+        color: #fea711;
+        font-family: 'Beba';
+        font-weight: 600 !important;
+        font-size: 30px;
+        line-height: 31px;
+        margin-bottom: 20px; }
+      .sales .sales_sale .sale_text .sale_desc {
+        color: #1a0a0b;
+        font-family: 'Beba';
+        font-weight: 400 !important;
+        font-size: 22px;
+        line-height: 23px;
+        margin-bottom: 20px; }
+      .sales .sales_sale .sale_text .sale_date {
+        color: #fea711;
+        font-family: 'Beba';
+        font-weight: 600 !important;
+        font-size: 30px;
+        line-height: 31px;
+        margin-top: auto; }
+
+.past-discounts .sale_image {
+  filter: grayscale(100%) opacity(65%); }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======MEDIA========-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3130,7 +3275,75 @@ footer {
     margin-bottom: 5.417vw; }
     .req_guide .guide_footer span {
       font-size: 2.083vw;
-      line-height: 2.135vw; } }
+      line-height: 2.135vw; }
+  .paper {
+    padding-top: 7.865vw;
+    padding-left: 1.979vw; }
+    .paper .paper_block .paper_block_header {
+      font-size: 1.823vw;
+      margin-bottom: 3.490vw; }
+    .paper .paper_block .paper_block_main-img {
+      margin-bottom: 6.250vw; }
+      .paper .paper_block .paper_block_main-img .paper_block_item {
+        width: 12.813vw;
+        margin: 1.563vw 1.302vw; }
+        .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk {
+          margin-bottom: 1.719vw; }
+          .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk img {
+            width: 12.813vw;
+            height: 12.760vw; }
+          .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk a {
+            right: 1.042vw;
+            bottom: 0.729vw; }
+            .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk a img {
+              width: 2.448vw;
+              height: 2.448vw; }
+        .paper .paper_block .paper_block_main-img .paper_block_item .item_desc {
+          font-size: 1.146vw; }
+    .paper .paper_block .paper_block_main-text {
+      grid-template-columns: repeat(5, 15.104vw);
+      column-gap: 1.667vw;
+      row-gap: 1.563vw;
+      margin-bottom: 6.250vw; }
+      .paper .paper_block .paper_block_main-text p {
+        font-size: 1.146vw;
+        line-height: 1.198vw; }
+  .map {
+    width: 80.833vw;
+    height: 22.552vw; }
+  .btn-up {
+    right: 1.354vw; }
+    .btn-up a img {
+      width: 6.563vw;
+      height: 6.563vw; }
+  .sales {
+    margin-top: 5.208vw;
+    margin-bottom: 4.688vw; }
+    .sales .sales_title {
+      font-size: 1.823vw;
+      line-height: 1.875vw;
+      margin-bottom: 1.146vw;
+      padding-left: 1.979vw; }
+    .sales .sales_sale {
+      margin-left: 1.979vw;
+      width: 67.708vw;
+      margin-bottom: 2.865vw; }
+      .sales .sales_sale .sale_image {
+        width: 41.875vw;
+        height: 19.844vw;
+        margin-right: 1.354vw;
+        border: 0.260vw solid #e1e1e1; }
+      .sales .sales_sale .sale_text .sale_title {
+        font-size: 1.563vw;
+        line-height: 1.615vw;
+        margin-bottom: 1.042vw; }
+      .sales .sales_sale .sale_text .sale_desc {
+        font-size: 1.146vw;
+        line-height: 1.198vw;
+        margin-bottom: 1.042vw; }
+      .sales .sales_sale .sale_text .sale_date {
+        font-size: 1.563vw;
+        line-height: 1.615vw; } }
 
 @media screen and (max-width: 1200px) {
   .wrapper_global {
@@ -4153,7 +4366,80 @@ footer {
         margin-bottom: 5.417vw; }
         .wrapper_global main .req_guide .guide_footer span {
           font-size: 3.083vw;
-          line-height: 3.135vw; } }
+          line-height: 3.135vw; }
+      .wrapper_global main .paper {
+        padding-top: 12.583vw;
+        width: 95vw;
+        margin: 0 auto; }
+        .wrapper_global main .paper .paper_block .paper_block_header {
+          font-size: 2.917vw;
+          margin-bottom: 5.583vw; }
+        .wrapper_global main .paper .paper_block .paper_block_main-img {
+          grid-template-columns: repeat(3, 1fr);
+          margin-bottom: 10vw; }
+          .wrapper_global main .paper .paper_block .paper_block_main-img .paper_block_item {
+            width: 25vw;
+            margin: 2.500vw 2.083vw; }
+            .wrapper_global main .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk {
+              margin-bottom: 2.750vw; }
+              .wrapper_global main .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk img {
+                width: 25vw;
+                height: 25vw; }
+              .wrapper_global main .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk a {
+                right: 1.667vw;
+                bottom: 1.167vw; }
+                .wrapper_global main .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk a img {
+                  width: 3.917vw;
+                  height: 3.917vw; }
+            .wrapper_global main .paper .paper_block .paper_block_main-img .paper_block_item .item_desc {
+              font-size: 2.167vw;
+              line-height: 2.250vw; }
+        .wrapper_global main .paper .paper_block .paper_block_main-text {
+          grid-template-columns: repeat(3, 28.333vw);
+          column-gap: 2.667vw;
+          row-gap: 2.500vw;
+          margin-bottom: 10vw; }
+          .wrapper_global main .paper .paper_block .paper_block_main-text p {
+            font-size: 2.167vw;
+            line-height: 2.250vw; }
+      .wrapper_global main .map {
+        width: 100%;
+        height: 36.083vw; }
+      .wrapper_global main .btn-up {
+        right: 2.167vw;
+        bottom: 1.667vw; }
+        .wrapper_global main .btn-up a img {
+          width: 10.500vw;
+          height: 10.500vw; }
+      .wrapper_global main .sales {
+        margin-top: 8.208vw;
+        margin-bottom: 9.688vw; }
+        .wrapper_global main .sales .sales_title {
+          font-size: 3.823vw;
+          line-height: 3.875vw;
+          margin-bottom: 4.146vw;
+          padding-left: 1.979vw; }
+        .wrapper_global main .sales .sales_sale {
+          margin-left: 1.979vw;
+          width: 94.708vw;
+          margin-bottom: 3.865vw; }
+          .wrapper_global main .sales .sales_sale .sale_image {
+            width: 48.875vw;
+            height: 26.844vw;
+            margin-right: 2.354vw;
+            border: 0.417vw solid #e1e1e1; }
+          .wrapper_global main .sales .sales_sale .sale_text .sale_title {
+            font-size: 3.563vw;
+            line-height: 3.515vw;
+            margin-bottom: 1.042vw; }
+          .wrapper_global main .sales .sales_sale .sale_text .sale_desc {
+            width: 48vw;
+            font-size: 3.146vw;
+            line-height: 3.198vw;
+            margin-bottom: 1.3vw; }
+          .wrapper_global main .sales .sales_sale .sale_text .sale_date {
+            font-size: 3.563vw;
+            line-height: 3.515vw; } }
 
 @media screen and (max-width: 800px) {
   .wrapper_global .sidebar {
@@ -4986,7 +5272,51 @@ footer {
     margin-bottom: 5.417vw; }
     .wrapper_global main .req_guide .guide_footer span {
       font-size: 6.083vw;
-      line-height: 6.135vw; } }
+      line-height: 6.135vw; }
+  .wrapper_global main .paper {
+    padding-top: 9.583vw; }
+    .wrapper_global main .paper .paper_block .paper_block_header {
+      font-size: 7.917vw;
+      line-height: 8vw;
+      margin-bottom: 9.583vw; }
+    .wrapper_global main .paper .paper_block .paper_block_main-img {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 10vw;
+      margin-bottom: 30vw; }
+      .wrapper_global main .paper .paper_block .paper_block_main-img .paper_block_item {
+        width: 40vw;
+        margin: 2.500vw 2.083vw; }
+        .wrapper_global main .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk {
+          margin-bottom: 5.75vw; }
+          .wrapper_global main .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk img {
+            width: 40vw;
+            height: 40vw; }
+          .wrapper_global main .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk a {
+            right: 1.667vw;
+            bottom: 1.167vw; }
+            .wrapper_global main .paper .paper_block .paper_block_main-img .paper_block_item .item_image-blk a img {
+              width: 6.917vw;
+              height: 6.917vw; }
+        .wrapper_global main .paper .paper_block .paper_block_main-img .paper_block_item .item_desc {
+          font-size: 5.167vw;
+          line-height: 5.25vw; }
+    .wrapper_global main .paper .paper_block .paper_block_main-text {
+      grid-template-columns: repeat(1, 95vw);
+      column-gap: 2.667vw;
+      row-gap: 2.500vw;
+      margin-bottom: 10vw; }
+      .wrapper_global main .paper .paper_block .paper_block_main-text p {
+        font-size: 5.167vw;
+        line-height: 5.25vw; }
+  .wrapper_global main .map {
+    width: 100%;
+    height: 36.083vw; }
+  .wrapper_global main .btn-up {
+    right: 2.167vw;
+    bottom: 3.667vw; }
+    .wrapper_global main .btn-up a img {
+      width: 12.5vw;
+      height: 12.5vw; } }
 
 @media screen and (max-width: 800px) {
   .nav_listitem a {

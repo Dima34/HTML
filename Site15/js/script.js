@@ -438,6 +438,38 @@ if(servicesBlks.length != 0){
 
 
 //
+//  Btn up
+//
+
+let btnUp = document.querySelector(".btn-up");
+
+if(btnUp){
+
+    document.addEventListener("DOMContentLoaded", () =>{
+
+        window.addEventListener("scroll", () => {
+            
+            if(window.pageYOffset > window.innerHeight){
+
+                btnUp.style.opacity = 1;
+
+            }
+            else{
+
+                btnUp.style.opacity = 0;
+
+            }
+        })
+
+    })
+
+}
+
+
+
+
+
+//
 //  Animation
 //
 
@@ -624,8 +656,9 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".guide_header"),"animate__fadeInRight", "2s" );
     animPartiallyVisibleALL(queryA(".guide_main"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".guide_footer"),"animate__fadeInLeft", "2s" );
-
-
+    animPartiallyVisibleALL(queryA(".paper_block_item"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".paper_block_header"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".paper_block_main-text p"),"animate__fadeIn", "2s" );
 }
 
 
