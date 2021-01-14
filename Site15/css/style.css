@@ -2298,6 +2298,122 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* -----=====VIDOMAKER STAGE======----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.videomaker_stages {
+  margin-top: 145px; }
+  .videomaker_stages .videomaker_title {
+    padding-left: 39px;
+    font-family: 'Beba';
+    font-weight: 600 !important;
+    font-size: 35px;
+    line-height: 36px;
+    margin-bottom: 12px; }
+  .videomaker_stages .videomaker_subtitle {
+    color: #1a0a0b;
+    font-family: 'Beba';
+    font-weight: 400 !important;
+    font-size: 22px;
+    line-height: 23px;
+    padding-left: 39px;
+    width: 1000px;
+    margin-bottom: 100px; }
+  .videomaker_stages .videomaker_stages-blk {
+    display: flex;
+    margin-bottom: 127px;
+    flex-wrap: wrap; }
+    .videomaker_stages .videomaker_stages-blk .videomaker_stage {
+      margin-left: 67px;
+      width: 384px; }
+      .videomaker_stages .videomaker_stages-blk .videomaker_stage .stage_image {
+        width: 201px;
+        height: 105px;
+        padding-bottom: 23px;
+        position: relative; }
+        .videomaker_stages .videomaker_stages-blk .videomaker_stage .stage_image::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 9px;
+          background: #ffcc00;
+          left: 0;
+          bottom: 0; }
+      .videomaker_stages .videomaker_stages-blk .videomaker_stage .stage_title {
+        font-family: 'Beba';
+        font-weight: 600 !important;
+        font-size: 44px;
+        line-height: 45px;
+        margin-top: -6px;
+        padding: 0 23px 0 34px; }
+      .videomaker_stages .videomaker_stages-blk .videomaker_stage .stage_description {
+        padding-left: 7px;
+        color: #1a0a0b;
+        font-family: 'Beba';
+        font-weight: 400 !important;
+        font-size: 22px;
+        line-height: 24px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=====VIDOMAKER SLOGAN=====----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.videomaker_slogan {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 65px;
+  width: 700px; }
+  .videomaker_slogan .slogan_title {
+    font-family: 'Beba';
+    font-weight: 600 !important;
+    font-size: 44px;
+    margin-bottom: 12px;
+    line-height: 45px; }
+  .videomaker_slogan .slogan_subtitle {
+    color: #1a0a0b;
+    font-family: 'Beba';
+    font-weight: 400 !important;
+    font-size: 22px;
+    margin-bottom: 20px; }
+  .videomaker_slogan img {
+    width: 55px;
+    height: 99px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ----=====VIDOMAKER EXAMPLE=====----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.videomaker_examples .examples_title {
+  color: #1a0a0b;
+  font-family: 'Beba';
+  font-weight: 400 !important;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  padding: 13px;
+  background: #ffcc00; }
+
+.videomaker_examples .examples_examples {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .videomaker_examples .examples_examples .examples_example {
+    width: 100%;
+    height: 471px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: coral; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======MEDIA========-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
