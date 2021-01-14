@@ -2730,6 +2730,84 @@ footer{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* ------=======TREATMENT=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.treatment{
+  padding-top: 151px;
+
+  .treatment_title{
+    @include Beba(600);
+    font-size: 35px;
+    margin-bottom: 56px;
+    margin-left: 39px;
+  }
+
+  .treatment_block{
+    width: 100%;
+
+    .block_header{
+      width: 100%;
+      padding: 12px;
+      text-align: center;
+      color: #1a0a0b;
+      @include Beba(400);
+      font-size: 30px;
+      background-color: #ffcc00;
+    }
+
+    .block_main{
+      padding-top: 16px;
+      padding: 16px 35px 12px 35px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .treatment_item{
+        width: 270px;
+        margin: 0 20px;
+        text-align: center;
+        margin-bottom: 40px;
+
+        img{
+          width: 100%;
+          height: 270px;
+          border-radius: 50%;
+          margin-bottom: 20px;
+        }
+
+        .item_title{
+          @include Beba(400);
+          font-size: 24px;
+          line-height: 25px;
+          margin-bottom: 4px;
+        }
+
+        .item_subtitle{
+          @include Beba(400);
+          font-size: 21px;
+          line-height: 22px;
+          color: #ffcc00;
+        }
+
+      }
+    }
+
+    .block_footer{
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      line-height: 25px;
+      @include Beba(600);
+      margin-bottom: 82px;
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======MEDIA========-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -4339,6 +4417,58 @@ footer{
         &::after{
           height: 0.208vw;
         }
+      }
+    }
+  }
+
+  .treatment{
+    padding-top: 7.865vw;
+  
+    .treatment_title{
+      font-size: 1.823vw;
+      margin-bottom: 2.917vw;
+      margin-left: 2.031vw;
+    }
+  
+    .treatment_block{
+  
+      .block_header{
+        padding: 0.625vw;
+        font-size: 1.563vw;
+      }
+  
+      .block_main{
+        padding-top: 0.833vw;
+        padding: 0.833vw 1.823vw 0.625vw 1.823vw;
+  
+        .treatment_item{
+          width: 14.063vw;
+          margin: 0 1.042vw;
+          margin-bottom: 2.083vw;
+  
+          img{
+            height: 14.063vw;
+            margin-bottom: 1.042vw;
+          }
+  
+          .item_title{
+            font-size: 1.250vw;
+            line-height: 1.302vw;
+            margin-bottom: 0.208vw;
+          }
+  
+          .item_subtitle{
+            font-size: 1.094vw;
+            line-height: 1.146vw;
+          }
+  
+        }
+      }
+  
+      .block_footer{
+        font-size: 1.250vw;
+        line-height: 1.302vw;
+        margin-bottom: 4.271vw;
       }
     }
   }
@@ -6006,6 +6136,60 @@ footer{
           }
         }
       }
+
+      .treatment{
+        padding-top: 12.583vw;
+      
+        .treatment_title{
+          font-size: 2.917vw;
+          margin-bottom: 4.667vw;
+          margin-left: 3.250vw;
+        }
+      
+        .treatment_block{
+      
+          .block_header{
+            padding: 1vw;
+            font-size: 2.500vw;
+          }
+      
+          .block_main{
+            padding: 6vw 2.917vw 1vw 2.917vw;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-items: center;
+      
+            .treatment_item{
+              width: 22.500vw;
+              margin: 0 1.667vw;
+              margin-bottom: 3.333vw;
+      
+              img{
+                height: 22.500vw;
+                margin-bottom: 1.667vw;
+              }
+      
+              .item_title{
+                font-size: 2vw;
+                line-height: 2.083vw;
+                margin-bottom: 0.333vw;
+              }
+      
+              .item_subtitle{
+                font-size: 1.750vw;
+                line-height: 1.833vw;
+              }
+      
+            }
+          }
+      
+          .block_footer{
+            font-size: 2vw;
+            line-height: 2.083vw;
+            margin-bottom: 6.833vw;
+          }
+        }
+      }
       
     }
   }
@@ -7247,6 +7431,59 @@ footer{
               height: 0.633vw;
               top: 26.9%;
             }
+          }
+        }
+      }
+
+      .treatment{
+        padding-top: 7.583vw;
+      
+        .treatment_title{
+          font-size: 4.917vw;
+          margin-bottom: 10.667vw;
+          margin-left: 3.250vw;
+        }
+      
+        .treatment_block{
+      
+          .block_header{
+            padding: 2vw;
+            font-size: 5.5vw;
+          }
+      
+          .block_main{
+            padding: 9vw 2.917vw 1vw 2.917vw;
+            grid-template-columns: repeat(2,1fr);
+      
+            .treatment_item{
+              width: 40.5vw;
+              margin: 0 1.667vw;
+              margin-bottom: 12.333vw;
+      
+              img{
+                height: 40.5vw;
+                margin-bottom: 5.667vw;
+              }
+      
+              .item_title{
+                font-size: 4vw;
+                line-height: 4.083vw;
+                margin-bottom: 1.333vw;
+              }
+      
+              .item_subtitle{
+                font-size: 3.75vw;
+                line-height: 3.833vw;
+
+              }
+      
+            }
+          }
+      
+          .block_footer{
+            font-size: 4vw;
+            line-height: 4.083vw;
+            margin-bottom: 6.833vw;
           }
         }
       }

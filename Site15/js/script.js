@@ -616,6 +616,7 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".fr_block"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".fr_welcome"),"animate__fadeInLeft", "2s" );
     animPartiallyVisibleALL(queryA(".fr_stages"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".block_main"),"animate__fadeInLeft", "2s" );
 }
 
 

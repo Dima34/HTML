@@ -1955,6 +1955,68 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* ------=======TREATMENT=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.treatment {
+  padding-top: 151px; }
+  .treatment .treatment_title {
+    font-family: 'Beba';
+    font-weight: 600 !important;
+    font-size: 35px;
+    margin-bottom: 56px;
+    margin-left: 39px; }
+  .treatment .treatment_block {
+    width: 100%; }
+    .treatment .treatment_block .block_header {
+      width: 100%;
+      padding: 12px;
+      text-align: center;
+      color: #1a0a0b;
+      font-family: 'Beba';
+      font-weight: 400 !important;
+      font-size: 30px;
+      background-color: #ffcc00; }
+    .treatment .treatment_block .block_main {
+      padding-top: 16px;
+      padding: 16px 35px 12px 35px;
+      display: flex;
+      flex-wrap: wrap; }
+      .treatment .treatment_block .block_main .treatment_item {
+        width: 270px;
+        margin: 0 20px;
+        text-align: center;
+        margin-bottom: 40px; }
+        .treatment .treatment_block .block_main .treatment_item img {
+          width: 100%;
+          height: 270px;
+          border-radius: 50%;
+          margin-bottom: 20px; }
+        .treatment .treatment_block .block_main .treatment_item .item_title {
+          font-family: 'Beba';
+          font-weight: 400 !important;
+          font-size: 24px;
+          line-height: 25px;
+          margin-bottom: 4px; }
+        .treatment .treatment_block .block_main .treatment_item .item_subtitle {
+          font-family: 'Beba';
+          font-weight: 400 !important;
+          font-size: 21px;
+          line-height: 22px;
+          color: #ffcc00; }
+    .treatment .treatment_block .block_footer {
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      line-height: 25px;
+      font-family: 'Beba';
+      font-weight: 600 !important;
+      margin-bottom: 82px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======MEDIA========-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2824,7 +2886,37 @@ footer {
       .fr_stages .fr_stage:first-child::after {
         height: 0.208vw; }
       .fr_stages .fr_stage:last-child::after {
-        height: 0.208vw; } }
+        height: 0.208vw; }
+  .treatment {
+    padding-top: 7.865vw; }
+    .treatment .treatment_title {
+      font-size: 1.823vw;
+      margin-bottom: 2.917vw;
+      margin-left: 2.031vw; }
+    .treatment .treatment_block .block_header {
+      padding: 0.625vw;
+      font-size: 1.563vw; }
+    .treatment .treatment_block .block_main {
+      padding-top: 0.833vw;
+      padding: 0.833vw 1.823vw 0.625vw 1.823vw; }
+      .treatment .treatment_block .block_main .treatment_item {
+        width: 14.063vw;
+        margin: 0 1.042vw;
+        margin-bottom: 2.083vw; }
+        .treatment .treatment_block .block_main .treatment_item img {
+          height: 14.063vw;
+          margin-bottom: 1.042vw; }
+        .treatment .treatment_block .block_main .treatment_item .item_title {
+          font-size: 1.250vw;
+          line-height: 1.302vw;
+          margin-bottom: 0.208vw; }
+        .treatment .treatment_block .block_main .treatment_item .item_subtitle {
+          font-size: 1.094vw;
+          line-height: 1.146vw; }
+    .treatment .treatment_block .block_footer {
+      font-size: 1.250vw;
+      line-height: 1.302vw;
+      margin-bottom: 4.271vw; } }
 
 @media screen and (max-width: 1200px) {
   .wrapper_global {
@@ -3737,7 +3829,39 @@ footer {
             top: 31.2%; }
           .wrapper_global main .fr_stages .fr_stage:last-child::after {
             height: 0.333vw;
-            top: 31.2%; } }
+            top: 31.2%; }
+      .wrapper_global main .treatment {
+        padding-top: 12.583vw; }
+        .wrapper_global main .treatment .treatment_title {
+          font-size: 2.917vw;
+          margin-bottom: 4.667vw;
+          margin-left: 3.250vw; }
+        .wrapper_global main .treatment .treatment_block .block_header {
+          padding: 1vw;
+          font-size: 2.500vw; }
+        .wrapper_global main .treatment .treatment_block .block_main {
+          padding: 6vw 2.917vw 1vw 2.917vw;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          justify-items: center; }
+          .wrapper_global main .treatment .treatment_block .block_main .treatment_item {
+            width: 22.500vw;
+            margin: 0 1.667vw;
+            margin-bottom: 3.333vw; }
+            .wrapper_global main .treatment .treatment_block .block_main .treatment_item img {
+              height: 22.500vw;
+              margin-bottom: 1.667vw; }
+            .wrapper_global main .treatment .treatment_block .block_main .treatment_item .item_title {
+              font-size: 2vw;
+              line-height: 2.083vw;
+              margin-bottom: 0.333vw; }
+            .wrapper_global main .treatment .treatment_block .block_main .treatment_item .item_subtitle {
+              font-size: 1.750vw;
+              line-height: 1.833vw; }
+        .wrapper_global main .treatment .treatment_block .block_footer {
+          font-size: 2vw;
+          line-height: 2.083vw;
+          margin-bottom: 6.833vw; } }
 
 @media screen and (max-width: 800px) {
   .wrapper_global .sidebar {
@@ -4457,7 +4581,37 @@ footer {
         top: 26.9%; }
       .wrapper_global main .fr_stages .fr_stage:last-child::after {
         height: 0.633vw;
-        top: 26.9%; } }
+        top: 26.9%; }
+  .wrapper_global main .treatment {
+    padding-top: 7.583vw; }
+    .wrapper_global main .treatment .treatment_title {
+      font-size: 4.917vw;
+      margin-bottom: 10.667vw;
+      margin-left: 3.250vw; }
+    .wrapper_global main .treatment .treatment_block .block_header {
+      padding: 2vw;
+      font-size: 5.5vw; }
+    .wrapper_global main .treatment .treatment_block .block_main {
+      padding: 9vw 2.917vw 1vw 2.917vw;
+      grid-template-columns: repeat(2, 1fr); }
+      .wrapper_global main .treatment .treatment_block .block_main .treatment_item {
+        width: 40.5vw;
+        margin: 0 1.667vw;
+        margin-bottom: 12.333vw; }
+        .wrapper_global main .treatment .treatment_block .block_main .treatment_item img {
+          height: 40.5vw;
+          margin-bottom: 5.667vw; }
+        .wrapper_global main .treatment .treatment_block .block_main .treatment_item .item_title {
+          font-size: 4vw;
+          line-height: 4.083vw;
+          margin-bottom: 1.333vw; }
+        .wrapper_global main .treatment .treatment_block .block_main .treatment_item .item_subtitle {
+          font-size: 3.75vw;
+          line-height: 3.833vw; }
+    .wrapper_global main .treatment .treatment_block .block_footer {
+      font-size: 4vw;
+      line-height: 4.083vw;
+      margin-bottom: 6.833vw; } }
 
 @media screen and (max-width: 800px) {
   .nav_listitem a {
