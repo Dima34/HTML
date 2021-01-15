@@ -563,8 +563,6 @@ function query(clas){
     return tmp;
 }
 
-// Movementole.log('working');
-
 function scrolling(e){
     animPartiallyVisibleALL(header,"animate__fadeInRight");
     animPartiallyVisibleALL(content_line1,"animate__backInLeft");
@@ -688,6 +686,9 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".line3_text"),"animate__fadeInLeft", "2s" );
     animPartiallyVisibleALL(queryA(".line4_text-with-img_image"),"animate__fadeInRight", "2s" );
     animPartiallyVisibleALL(queryA(".about-us_attention"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".cart"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".shop_categories"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".main_item"),"animate__fadeIn", "2s" );
 }
 
 
