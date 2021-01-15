@@ -3328,6 +3328,123 @@ footer{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* ----=====VIDOMAKER DISCOUNT=====---- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.videomaker_discount{
+  width: 1220px;
+  margin: 0 auto;
+  margin-top: 40px;
+  position: relative;
+
+  .discount_title{
+    color: #ff1f00;
+    @include Beba(600);
+    font-size: 136px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 9px;
+    width: 725px;
+  }
+
+  .discount_subtitle{
+    font-size: 13px;
+    @include Beba(400);
+    width: 725px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+
+  .discount_price{
+    display: flex;
+    flex-direction: row;
+    width: 1170px;
+    background: #ffcc00;
+    padding: 10px 150px;
+    margin-left: auto;
+    align-items: center;
+    margin-bottom: 70px;
+
+    .price_price{
+      color: #ff1f00;
+      @include Beba(600);
+      font-size: 136px;
+      margin-right: 36px;
+      white-space: nowrap;
+    }
+
+    .price_hint{
+      font-size: 42px;
+      line-height: 44px;
+      @include Beba(600);
+      max-width: 487px;
+      margin-top: 10px;
+    }
+  }
+
+  .discount_text{
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    @include Beba(600);
+    margin-bottom: 31px;
+  }
+
+  .discount_order{
+    padding: 12px 95px;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    font-size: 45px;
+    @include Beba(600);
+    background: #ffcc00;
+    margin-bottom: 42px;
+  }
+
+  .discount_image{
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=====VIDOMAKER HINT======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.videomaker_hint{
+  width: 1233px;
+  margin: 0 auto;
+  margin-bottom: 92px;
+
+  .hint_text{
+    font-size: 35px;
+    line-height: 43px;
+    @include Beba(400);
+    text-align: center;
+
+    a{
+      color: #ffcc00;
+      text-decoration: underline;
+      font-size: 55px;
+    }
+  }
+
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======MEDIA========-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -5239,6 +5356,172 @@ footer{
       }
     }
   }
+
+  .videomaker_stages{
+    margin-top: 7.552vw;
+  
+    .videomaker_title{
+      padding-left: 2.031vw;
+      font-size: 1.823vw;
+      line-height: 1.875vw;
+      margin-bottom: 0.625vw;
+    }
+  
+    .videomaker_subtitle{
+      font-size: 1.146vw;
+      line-height: 1.198vw;
+      padding-left: 2.031vw;
+      width: 52.083vw;
+      margin-bottom: 5.208vw;
+    }
+  
+    .videomaker_stages-blk{
+      margin-bottom: 6.615vw;
+  
+      .videomaker_stage{
+        margin-left: 3.490vw;
+        width: 20vw;
+  
+        .stage_image{
+          width: 10.469vw;
+          height: 5.469vw;
+          padding-bottom: 1.198vw;
+
+          img{
+            width: 10.469vw;
+            height: 5.469vw;
+          }
+  
+          &::after{
+            height: 0.469vw;
+          }
+        }
+    
+        .stage_title{
+          font-size: 2.292vw;
+          line-height: 2.344vw;
+          margin-top: -0.313vw;
+          padding: 0 1.198vw 0 1.771vw;
+        }
+  
+        .stage_description{
+          padding-left: 0.365vw;
+          font-size: 1.146vw;
+          line-height: 1.250vw;
+        }
+        
+      }
+    }
+  }
+
+  .videomaker_slogan{
+    margin-bottom: 3.385vw;
+    width: 36.458vw;
+  
+    .slogan_title{
+      font-size: 2.292vw;
+      margin-bottom: 0.625vw;
+      line-height: 2.344vw;
+    }
+  
+    .slogan_subtitle{
+      font-size: 1.146vw;
+      margin-bottom: 1.042vw;
+    }
+  
+    img{
+      width: 2.865vw;
+      height: 5.156vw;
+    }
+  }
+ 
+  .videomaker_examples{
+  
+    .examples_title{
+      font-size: 1.563vw;
+      padding: 0.677vw;
+    }
+  
+    .examples_examples{
+  
+      .examples_example{
+        height: 24.531vw;
+
+        img{
+          width: 6.875vw;
+          height: 6.875vw;
+        }
+      }
+    }
+  
+  }
+  
+  .videomaker_discount{
+    width: 63.542vw;
+    margin-top: 2.083vw;
+  
+    .discount_title{
+      font-size: 7.083vw;
+      margin-bottom: 0.469vw;
+      width: 37.760vw;
+    }
+  
+    .discount_subtitle{
+      font-size: 0.677vw;
+      width: 37.760vw;
+      margin-bottom: 1.563vw;
+    }
+  
+  
+    .discount_price{
+      width: 60.938vw;
+      padding: 0.521vw 7.813vw;
+      margin-bottom: 3.646vw;
+  
+      .price_price{
+        font-size: 7.083vw;
+        margin-right: 1.875vw;
+      }
+  
+      .price_hint{
+        font-size: 2.188vw;
+        line-height: 2.292vw;
+        max-width: 25.365vw;
+        margin-top: 0.521vw;
+      }
+    }
+  
+    .discount_image{
+      width: 12.760vw;
+      height: 21.615vw;
+    }
+
+    .discount_text{
+      font-size: 2.188vw;
+      margin-bottom: 1.615vw;
+    }
+  
+    .discount_order{
+      padding: 0.625vw 4.948vw;
+      font-size: 2.344vw;
+      margin-bottom: 2.188vw;
+    }
+  }
+ 
+  .videomaker_hint{
+    width: 64.219vw;
+    margin-bottom: 4.792vw;
+  
+    .hint_text{
+      font-size: 1.823vw;
+      line-height: 2.240vw;
+  
+      a{
+        font-size: 2.865vw;
+      }
+    }
+  
+  }  
 
 }
 
@@ -7211,6 +7494,174 @@ footer{
           }
         }
       }
+
+      .videomaker_stages{
+        margin-top: 7.552vw;
+      
+        .videomaker_title{
+          padding-left: 2.031vw;
+          font-size: 4.223vw;
+          line-height: 4.475vw;
+          margin-bottom: 0.625vw;
+        }
+      
+        .videomaker_subtitle{
+          font-size: 3.146vw;
+          line-height: 3.198vw;
+          padding-left: 2.031vw;
+          width: 79.083vw;
+          margin-bottom: 7.208vw;
+        }
+      
+        .videomaker_stages-blk{
+          margin-bottom: 11.615vw;
+      
+          .videomaker_stage{
+            margin-left: 3.490vw;
+            width: 29vw;
+      
+            .stage_image{
+              width: 20.469vw;
+              height: 11.5vw;
+              padding-bottom: 2.298vw;
+    
+              img{
+                width: 20.469vw;
+                height: 11.0vw;
+              }
+      
+              &::after{
+                height: 0.7vw;
+              }
+            }
+        
+            .stage_title{
+              font-size: 3.292vw;
+              line-height: 3.344vw;
+              margin-top: -0.413vw;
+              padding: 0 1.198vw 0 1.771vw;
+              margin-bottom: 0.4vw;
+            }
+      
+            .stage_description{
+              padding-left: 0.365vw;
+              font-size: 2.146vw;
+              line-height: 2.25vw;
+            }
+            
+          }
+        }
+      }
+    
+      .videomaker_slogan{
+        margin-bottom: 5.385vw;
+        width: 63.458vw;
+      
+        .slogan_title{
+          font-size: 4.292vw;
+          margin-bottom: 0.625vw;
+          line-height: 4.344vw;
+        }
+      
+        .slogan_subtitle{
+          font-size: 3.146vw;
+          margin-bottom: 3.042vw;
+        }
+      
+        img{
+          width: 5.865vw;
+          height: 10.156vw;
+        }
+      }
+     
+      .videomaker_examples{
+      
+        .examples_title{
+          font-size: 2.563vw;
+          padding: 1.083vw;
+        }
+      
+        .examples_examples{
+      
+          .examples_example{
+            height: 27.531vw;
+    
+            img{
+              width: 8.875vw;
+              height: 8.875vw;
+            }
+          }
+        }
+      
+      }
+      
+      .videomaker_discount{
+        width: 87.542vw;
+        margin-top: 5.083vw;    
+      
+        .discount_title{
+          font-size: 10.083vw;
+          margin-bottom: 0.469vw;
+          width: 49.76vw;
+        }
+      
+        .discount_subtitle{
+          font-size: 1.677vw;
+          width: 49.76vw;
+          margin-bottom: 1.563vw;
+        }
+      
+      
+        .discount_price{
+          width: 77.938vw;
+          padding: 1vw 4.813vw;
+          margin-bottom: 6.646vw;
+      
+          .price_price{
+            font-size: 10.083vw;
+            margin-right: 1.875vw;
+          }
+      
+          .price_hint{
+            font-size: 4.188vw;
+            line-height: 4.292vw;
+            max-width: 49.365vw;
+            margin-top: 0.521vw;
+
+          }
+        }
+      
+        .discount_image{
+          width: 21.76vw;
+          height: 33.615vw;
+        }
+    
+        .discount_text{
+          font-size: 4.188vw;
+          margin-bottom: 3.615vw;
+        }
+      
+        .discount_order{
+          padding: 1.625vw 5.948vw;
+          font-size: 4.344vw;
+          margin-bottom: 7.188vw;
+        }
+      }
+     
+      .videomaker_hint{
+        width: 87.219vw;
+        margin-bottom: 9.792vw;
+      
+        .hint_text{
+          font-size: 3.623vw;
+          line-height: 4vw;
+      
+          a{
+            font-size: 4.5vw;
+          }
+        }
+      
+      }  
 
     }
   }
