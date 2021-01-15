@@ -2234,7 +2234,8 @@ footer {
   right: 26px;
   bottom: 20px;
   opacity: 0;
-  transition: .7s; }
+  transition: .7s;
+  z-index: 1; }
   .btn-up a img {
     width: 126px;
     height: 126px; }
@@ -2298,7 +2299,7 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* -----=====VIDOMAKER STAGE======----- */
+/* -----=====VIDEOMAKER STAGE=====----- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2358,7 +2359,7 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* -----=====VIDOMAKER SLOGAN=====----- */
+/* -----=====VIDEOMAKER SLOGAN=====---- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2386,7 +2387,7 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* ----=====VIDOMAKER EXAMPLE=====----- */
+/* ----=====VIDEOMAKER EXAMPLE=====---- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2414,7 +2415,7 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* ----=====VIDOMAKER DISCOUNT=====---- */
+/* ----=====VIDEOMAKER DISCOUNT====---- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2489,7 +2490,7 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* -----=====VIDOMAKER HINT======------ */
+/* -----=====VIDEOMAKER HINT=====------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2507,6 +2508,65 @@ footer {
       color: #ffcc00;
       text-decoration: underline;
       font-size: 55px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------=======SIZES========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.sizes {
+  margin-top: 151px; }
+  .sizes .sizes_title {
+    padding-left: 39px;
+    font-size: 35px;
+    font-family: 'Beba';
+    font-weight: 600 !important;
+    margin-bottom: 62px; }
+  .sizes .sizes_line-title {
+    width: 100%;
+    color: #1a0a0b;
+    font-family: 'Beba';
+    font-weight: 400 !important;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffcc00; }
+  .sizes .sizes_line {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 105px;
+    margin-top: 43px; }
+    .sizes .sizes_line .sizes_line-item .line_item_desc {
+      margin-top: 30px;
+      font-size: 25px;
+      font-family: 'Beba';
+      font-weight: 400 !important;
+      text-align: center;
+      padding: 0 10px; }
+  .sizes .sizes_line1 .sizes_line-item {
+    margin-left: 40px; }
+    .sizes .sizes_line1 .sizes_line-item img {
+      width: 316px;
+      height: 316px; }
+  .sizes .sizes_line2 .sizes_line-item {
+    margin-left: 40px; }
+    .sizes .sizes_line2 .sizes_line-item img {
+      width: 334px;
+      height: 334px; }
+  .sizes .sizes_line3 .sizes_line-item {
+    margin-left: 35px; }
+    .sizes .sizes_line3 .sizes_line-item img {
+      width: 369px;
+      height: 369px; }
+  .sizes .sizes_line_one-big {
+    justify-content: center;
+    align-items: center;
+    background: #1c1b17;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 86px 20px 59px 20px; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3654,7 +3714,45 @@ footer {
       font-size: 1.823vw;
       line-height: 2.240vw; }
       .videomaker_hint .hint_text a {
-        font-size: 2.865vw; } }
+        font-size: 2.865vw; }
+  .sizes {
+    margin-top: 7.865vw; }
+    .sizes .sizes_title {
+      padding-left: 2.031vw;
+      font-size: 1.823vw;
+      margin-bottom: 3.229vw; }
+    .sizes .sizes_line-title {
+      font-size: 1.563vw;
+      padding: 0.521vw; }
+    .sizes .sizes_line {
+      margin-bottom: 5.469vw;
+      margin-top: 2.240vw; }
+      .sizes .sizes_line .sizes_line-item .line_item_desc {
+        margin-top: 1.563vw;
+        font-size: 1.302vw;
+        padding: 0 0.521vw; }
+    .sizes .sizes_line1 .sizes_line-item {
+      margin-left: 2.083vw; }
+      .sizes .sizes_line1 .sizes_line-item img {
+        width: 16.458vw;
+        height: 16.458vw; }
+    .sizes .sizes_line2 .sizes_line-item {
+      margin-left: 2.083vw; }
+      .sizes .sizes_line2 .sizes_line-item img {
+        width: 17.396vw;
+        height: 17.396vw; }
+    .sizes .sizes_line3 .sizes_line-item {
+      margin-left: 1.823vw; }
+      .sizes .sizes_line3 .sizes_line-item img {
+        width: 19.219vw;
+        height: 19.219vw; }
+    .sizes .sizes_line_one-big {
+      padding: 4.479vw 1.042vw 3.073vw 1.042vw;
+      margin-top: 0;
+      margin-bottom: 0; }
+      .sizes .sizes_line_one-big .sizes_line-item img {
+        width: 47.135vw;
+        height: 65.521vw; } }
 
 @media screen and (max-width: 1200px) {
   .wrapper_global {
@@ -4849,7 +4947,45 @@ footer {
           font-size: 3.623vw;
           line-height: 4vw; }
           .wrapper_global main .videomaker_hint .hint_text a {
-            font-size: 4.5vw; } }
+            font-size: 4.5vw; }
+      .wrapper_global main .sizes {
+        margin-top: 7.865vw; }
+        .wrapper_global main .sizes .sizes_title {
+          padding-left: 2.031vw;
+          font-size: 3.823vw;
+          margin-bottom: 3.229vw; }
+        .wrapper_global main .sizes .sizes_line-title {
+          font-size: 2.563vw;
+          padding: 0.521vw; }
+        .wrapper_global main .sizes .sizes_line {
+          margin-bottom: 7.469vw;
+          margin-top: 5.24vw; }
+          .wrapper_global main .sizes .sizes_line .sizes_line-item .line_item_desc {
+            margin-top: 1.563vw;
+            font-size: 2.502vw;
+            padding: 0 0.521vw; }
+        .wrapper_global main .sizes .sizes_line1 .sizes_line-item {
+          margin-left: 2.083vw; }
+          .wrapper_global main .sizes .sizes_line1 .sizes_line-item img {
+            width: 19.458vw;
+            height: 19.458vw; }
+        .wrapper_global main .sizes .sizes_line2 .sizes_line-item {
+          margin-left: 2.083vw; }
+          .wrapper_global main .sizes .sizes_line2 .sizes_line-item img {
+            width: 20.396vw;
+            height: 20.396vw; }
+        .wrapper_global main .sizes .sizes_line3 .sizes_line-item {
+          margin-left: 1.823vw; }
+          .wrapper_global main .sizes .sizes_line3 .sizes_line-item img {
+            width: 22.219vw;
+            height: 22.219vw; }
+        .wrapper_global main .sizes .sizes_line_one-big {
+          padding: 4.479vw 1.042vw 3.073vw 1.042vw;
+          margin-top: 0;
+          margin-bottom: 0; }
+          .wrapper_global main .sizes .sizes_line_one-big .sizes_line-item img {
+            width: 47.135vw;
+            height: 65.521vw; } }
 
 @media screen and (max-width: 800px) {
   .wrapper_global .sidebar {
@@ -5726,7 +5862,54 @@ footer {
     bottom: 3.667vw; }
     .wrapper_global main .btn-up a img {
       width: 12.5vw;
-      height: 12.5vw; } }
+      height: 12.5vw; }
+  .wrapper_global main .sizes {
+    margin-top: 7.865vw; }
+    .wrapper_global main .sizes .sizes_title {
+      padding-left: 2.031vw;
+      font-size: 5vw;
+      margin-bottom: 6.529vw; }
+    .wrapper_global main .sizes .sizes_line-title {
+      font-size: 3.763vw;
+      padding: 1vw; }
+    .wrapper_global main .sizes .sizes_line {
+      margin-bottom: 7.469vw;
+      margin-top: 5.24vw;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 2.917vw; }
+      .wrapper_global main .sizes .sizes_line .sizes_line-item {
+        text-align: center; }
+        .wrapper_global main .sizes .sizes_line .sizes_line-item .line_item_desc {
+          margin-top: 2.563vw;
+          font-size: 3.502vw;
+          padding: 0 0.521vw; }
+    .wrapper_global main .sizes .sizes_line1 .sizes_line-item {
+      margin-left: 2.083vw;
+      margin-right: 2.083vw; }
+      .wrapper_global main .sizes .sizes_line1 .sizes_line-item img {
+        width: 40.458vw;
+        height: 40.458vw; }
+    .wrapper_global main .sizes .sizes_line2 .sizes_line-item {
+      margin-left: 2.083vw;
+      margin-right: 2.083vw; }
+      .wrapper_global main .sizes .sizes_line2 .sizes_line-item img {
+        width: 40.458vw;
+        height: 40.458vw; }
+    .wrapper_global main .sizes .sizes_line3 .sizes_line-item {
+      margin-left: 1.823vw;
+      margin-right: 1.823vw; }
+      .wrapper_global main .sizes .sizes_line3 .sizes_line-item img {
+        width: 40.458vw;
+        height: 40.458vw; }
+    .wrapper_global main .sizes .sizes_line_one-big {
+      padding: 7.479vw 1.042vw 8.073vw 1.042vw;
+      margin-top: 0;
+      margin-bottom: 0;
+      display: flex; }
+      .wrapper_global main .sizes .sizes_line_one-big .sizes_line-item img {
+        width: 67.135vw;
+        height: 85.521vw; } }
 
 @media screen and (max-width: 800px) {
   .nav_listitem a {

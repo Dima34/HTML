@@ -674,7 +674,10 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".discount_subtitle"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".discount_text"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".discount_order"),"animate__fadeIn", "2s" );
-    animPartiallyVisibleALL(queryA(".discount_price"),"hint_text", "2s" );
+    animPartiallyVisibleALL(queryA(".discount_price"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".sizes_title"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".sizes_line-title"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".sizes_line-item"),"animate__fadeInRight", "2s" );
 }
 
 

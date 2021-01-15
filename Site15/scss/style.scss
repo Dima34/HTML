@@ -3097,6 +3097,7 @@ footer{
   bottom: 20px;
   opacity: 0;
   transition: .7s;
+  z-index: 1;
 
   a{
 
@@ -3183,7 +3184,7 @@ footer{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* -----=====VIDOMAKER STAGE======----- */
+/* -----=====VIDEOMAKER STAGE=====----- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3258,7 +3259,7 @@ footer{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* -----=====VIDOMAKER SLOGAN=====----- */
+/* -----=====VIDEOMAKER SLOGAN=====---- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3292,7 +3293,7 @@ footer{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* ----=====VIDOMAKER EXAMPLE=====----- */
+/* ----=====VIDEOMAKER EXAMPLE=====---- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3328,7 +3329,7 @@ footer{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* ----=====VIDOMAKER DISCOUNT=====---- */
+/* ----=====VIDEOMAKER DISCOUNT====---- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3417,7 +3418,7 @@ footer{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* -----=====VIDOMAKER HINT======------ */
+/* -----=====VIDEOMAKER HINT=====------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3440,6 +3441,98 @@ footer{
     }
   }
 
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------=======SIZES========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.sizes{
+  margin-top: 151px;
+
+  .sizes_title{
+    padding-left: 39px;
+    font-size: 35px;
+    @include Beba(600);
+    margin-bottom: 62px;
+  }
+
+  .sizes_line-title{
+    width: 100%;
+    color: #1a0a0b;
+    @include Beba(400);
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffcc00;
+  }
+
+  .sizes_line{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 105px;
+    margin-top: 43px;
+
+    .sizes_line-item{
+      
+      .line_item_desc{
+        margin-top: 30px;
+        font-size: 25px;
+        @include Beba(400);
+        text-align: center;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .sizes_line1{
+
+    .sizes_line-item{
+      margin-left: 40px;
+
+      img{
+        width: 316px;
+        height: 316px;
+      }
+    }
+  }
+
+  .sizes_line2{
+
+    .sizes_line-item{
+      margin-left: 40px;
+
+      img{
+        width: 334px;
+        height: 334px;
+      }
+    }
+  }
+
+  .sizes_line3{
+
+    .sizes_line-item{
+      margin-left: 35px;
+
+      img{
+        width: 369px;
+        height: 369px;
+      }
+    }
+  }
+
+  .sizes_line_one-big{
+    justify-content: center;
+    align-items: center;
+    background: #1c1b17;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 86px 20px 59px 20px;
+  }
 }
 
 /* ------------------------------------ */
@@ -5523,6 +5616,84 @@ footer{
   
   }  
 
+  .sizes{
+    margin-top: 7.865vw;
+  
+    .sizes_title{
+      padding-left: 2.031vw;
+      font-size: 1.823vw;
+      margin-bottom: 3.229vw;
+    }
+  
+    .sizes_line-title{
+      font-size: 1.563vw;
+      padding: 0.521vw;
+    }
+  
+    .sizes_line{
+      margin-bottom: 5.469vw;
+      margin-top: 2.240vw;
+  
+      .sizes_line-item{
+        
+        .line_item_desc{
+          margin-top: 1.563vw;
+          font-size: 1.302vw;
+          padding: 0 0.521vw;
+        }
+      }
+    }
+  
+    .sizes_line1{
+  
+      .sizes_line-item{
+        margin-left: 2.083vw;
+  
+        img{
+          width: 16.458vw;
+          height: 16.458vw;
+        }
+      }
+    }
+  
+    .sizes_line2{
+  
+      .sizes_line-item{
+        margin-left: 2.083vw;
+  
+        img{
+          width: 17.396vw;
+          height: 17.396vw;
+        }
+      }
+    }
+  
+    .sizes_line3{
+  
+      .sizes_line-item{
+        margin-left: 1.823vw;
+  
+        img{
+          width: 19.219vw;
+          height: 19.219vw;
+        }
+      }
+    }
+  
+    .sizes_line_one-big{
+      padding: 4.479vw 1.042vw 3.073vw 1.042vw;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      .sizes_line-item{
+
+        img{
+          width: 47.135vw;
+          height: 65.521vw;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1200px){
@@ -7663,6 +7834,84 @@ footer{
       
       }  
 
+      .sizes{
+        margin-top: 7.865vw;
+      
+        .sizes_title{
+          padding-left: 2.031vw;
+          font-size: 3.823vw;
+          margin-bottom: 3.229vw;
+        }
+      
+        .sizes_line-title{
+          font-size: 2.563vw;
+          padding: 0.521vw;
+        }
+      
+        .sizes_line{
+          margin-bottom: 7.469vw;
+          margin-top: 5.24vw;
+      
+          .sizes_line-item{
+            
+            .line_item_desc{
+              margin-top: 1.563vw;
+              font-size: 2.502vw;
+              padding: 0 0.521vw;
+            }
+          }
+        }
+      
+        .sizes_line1{
+      
+          .sizes_line-item{
+            margin-left: 2.083vw;
+      
+            img{
+              width: 19.458vw;
+              height: 19.458vw;          
+            }
+          }
+        }
+      
+        .sizes_line2{
+      
+          .sizes_line-item{
+            margin-left: 2.083vw;
+      
+            img{
+              width: 20.396vw;
+              height: 20.396vw;
+            }
+          }
+        }
+      
+        .sizes_line3{
+      
+          .sizes_line-item{
+            margin-left: 1.823vw;
+      
+            img{
+              width: 22.219vw;
+              height: 22.219vw;
+            }
+          }
+        }
+      
+        .sizes_line_one-big{
+          padding: 4.479vw 1.042vw 3.073vw 1.042vw;
+          margin-top: 0;
+          margin-bottom: 0;
+    
+          .sizes_line-item{
+    
+            img{
+              width: 47.135vw;
+              height: 65.521vw;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -9170,6 +9419,93 @@ footer{
           img{
             width: 12.5vw;
             height: 12.5vw;
+          }
+        }
+      }
+
+      .sizes{
+        margin-top: 7.865vw;
+      
+        .sizes_title{
+          padding-left: 2.031vw;
+          font-size: 5vw;
+          margin-bottom: 6.529vw;
+        }
+      
+        .sizes_line-title{
+          font-size: 3.763vw;
+          padding: 1vw;
+        }
+      
+        .sizes_line{
+          margin-bottom: 7.469vw;
+          margin-top: 5.24vw;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          row-gap: 2.917vw;
+      
+          .sizes_line-item{
+            text-align: center;
+            
+            .line_item_desc{
+              margin-top: 2.563vw;
+              font-size: 3.502vw;
+              padding: 0 0.521vw;
+            }
+          }
+        }
+      
+        .sizes_line1{
+      
+          .sizes_line-item{
+            margin-left: 2.083vw;
+            margin-right: 2.083vw;
+      
+            img{
+              width: 40.458vw;
+              height: 40.458vw;         
+            }
+          }
+        }
+      
+        .sizes_line2{
+      
+          .sizes_line-item{
+            margin-left: 2.083vw;
+            margin-right: 2.083vw;
+      
+            img{
+              width: 40.458vw;
+              height: 40.458vw;         
+            }
+          }
+        }
+      
+        .sizes_line3{
+      
+          .sizes_line-item{
+            margin-left: 1.823vw;
+            margin-right: 1.823vw;
+      
+            img{
+              width: 40.458vw;
+              height: 40.458vw;         
+            }
+          }
+        }
+      
+        .sizes_line_one-big{
+          padding: 7.479vw 1.042vw 8.073vw 1.042vw;
+          margin-top: 0;
+          margin-bottom: 0;
+          display: flex;
+    
+          .sizes_line-item{
+    
+            img{
+              width: 67.135vw;
+              height: 85.521vw;
+            }
           }
         }
       }
