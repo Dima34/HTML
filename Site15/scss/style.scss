@@ -6346,6 +6346,7 @@ footer{
 
     .sidebar{
       height: fit-content;
+      height: -moz-fit-content;
       width: 100%;
 
       .sidebar_wrap{
@@ -10618,7 +10619,7 @@ footer{
       
         .shop_cart{
           padding-right: 5.365vw;
-          margin-bottom: 4vw;
+          margin-bottom: 5vw;
     
           .cart{
       
@@ -10626,20 +10627,20 @@ footer{
               margin-right: 1.823vw;
       
               img{
-                width: 4.125vw;
-                height: 4.125vw;
+                width: 6.525vw;
+                height: 6.525vw;
               }
       
               .cart_amount{
-                font-size: 1.854vw;
+                font-size: 2.854vw;
                 right: -0.521vw;
                 bottom: -0.260vw;
-                padding: 0.208vw 0.521vw;
+                padding: 0.208vw 0.921vw;
               }
             }
       
             .cart_text{
-              font-size: 2.623vw;
+              font-size: 3.63vw;
             }
           }
         }
@@ -10647,7 +10648,7 @@ footer{
         .shop_categories{
       
           .categories_title{
-            font-size: 2.619vw;
+            font-size: 3.19vw;
             padding-left: 0.208vw;
             margin-bottom: 0.677vw;
           }
@@ -10655,7 +10656,7 @@ footer{
           .category{
             padding: 0.729vw 1.458vw;
             margin-bottom: 0.781vw;
-            font-size:  2.619vw;
+            font-size:  3.3vw;
           }
         }
       
@@ -10674,6 +10675,7 @@ footer{
               }
       
               .swiper-pagination{
+                bottom: 0;
       
                 .swiper-pagination-bullet{
                   width: 1.625vw;

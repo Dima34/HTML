@@ -4190,6 +4190,7 @@ footer {
     width: 100%; }
     .wrapper_global .sidebar {
       height: fit-content;
+      height: -moz-fit-content;
       width: 100%; }
       .wrapper_global .sidebar .sidebar_wrap {
         display: flex;
@@ -6626,27 +6627,27 @@ footer {
     grid-template-columns: 19.938vw 1fr; }
     .wrapper_global main .shop .shop_cart {
       padding-right: 5.365vw;
-      margin-bottom: 4vw; }
+      margin-bottom: 5vw; }
       .wrapper_global main .shop .shop_cart .cart .cart_image-blk {
         margin-right: 1.823vw; }
         .wrapper_global main .shop .shop_cart .cart .cart_image-blk img {
-          width: 4.125vw;
-          height: 4.125vw; }
+          width: 6.525vw;
+          height: 6.525vw; }
         .wrapper_global main .shop .shop_cart .cart .cart_image-blk .cart_amount {
-          font-size: 1.854vw;
+          font-size: 2.854vw;
           right: -0.521vw;
           bottom: -0.260vw;
-          padding: 0.208vw 0.521vw; }
+          padding: 0.208vw 0.921vw; }
       .wrapper_global main .shop .shop_cart .cart .cart_text {
-        font-size: 2.623vw; }
+        font-size: 3.63vw; }
     .wrapper_global main .shop .shop_categories .categories_title {
-      font-size: 2.619vw;
+      font-size: 3.19vw;
       padding-left: 0.208vw;
       margin-bottom: 0.677vw; }
     .wrapper_global main .shop .shop_categories .category {
       padding: 0.729vw 1.458vw;
       margin-bottom: 0.781vw;
-      font-size: 2.619vw; }
+      font-size: 3.3vw; }
     .wrapper_global main .shop .shop_main {
       grid-template-columns: repeat(2, 35.813vw);
       column-gap: 1.563vw;
@@ -6655,9 +6656,11 @@ footer {
         height: 31.458vw; }
         .wrapper_global main .shop .shop_main .main_item .swiper-container .swiper-wrapper {
           height: 26.854vw; }
-        .wrapper_global main .shop .shop_main .main_item .swiper-container .swiper-pagination .swiper-pagination-bullet {
-          width: 1.625vw;
-          height: 1.625vw; }
+        .wrapper_global main .shop .shop_main .main_item .swiper-container .swiper-pagination {
+          bottom: 0; }
+          .wrapper_global main .shop .shop_main .main_item .swiper-container .swiper-pagination .swiper-pagination-bullet {
+            width: 1.625vw;
+            height: 1.625vw; }
       .wrapper_global main .shop .shop_main .main_item .item_name {
         margin-top: 2vw;
         font-size: 3.19vw;
