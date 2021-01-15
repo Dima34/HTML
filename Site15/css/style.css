@@ -286,6 +286,10 @@ main {
   background: #ffffff;
   position: relative; }
 
+* {
+  font-family: 'Beba';
+  font-weight: 400 !important; }
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2571,6 +2575,172 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* -------======ABOUT US=======-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.about-us {
+  margin-top: 145px;
+  padding-bottom: 221px; }
+  .about-us .about-us_title {
+    font-size: 35px;
+    font-family: 'Beba';
+    font-weight: 600 !important;
+    margin-left: 101px;
+    margin-bottom: 25px; }
+  .about-us .about-us_line1 {
+    width: 1543px; }
+    .about-us .about-us_line1 .line1_text-with-img-big {
+      display: flex; }
+      .about-us .about-us_line1 .line1_text-with-img-big .text-with-img-big_image {
+        width: 539px;
+        height: 539px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        margin-right: 26px;
+        margin-left: -63px; }
+      .about-us .about-us_line1 .line1_text-with-img-big .text-with-img-big_text {
+        padding-top: 107px;
+        width: 951px;
+        font-size: 25px;
+        line-height: 26px;
+        font-family: 'Beba';
+        font-weight: 400 !important;
+        padding-bottom: 258px; }
+    .about-us .about-us_line1 .line1_text-with-img-small {
+      padding-left: 281px;
+      display: flex;
+      position: relative;
+      padding-top: 53px;
+      margin-top: -257px; }
+      .about-us .about-us_line1 .line1_text-with-img-small .text-with-img-big_image {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        padding-top: 63px;
+        flex-shrink: 0;
+        margin-right: 60px;
+        margin-top: 28px; }
+      .about-us .about-us_line1 .line1_text-with-img-small .text-with-img-big_text {
+        font-size: 25px;
+        line-height: 28px;
+        font-family: 'Beba';
+        font-weight: 400 !important;
+        width: 949px; }
+      .about-us .about-us_line1 .line1_text-with-img-small::after {
+        position: absolute;
+        content: "";
+        width: 643px;
+        height: 6px;
+        background-color: #ffcc00;
+        top: 0;
+        right: 74px; }
+  .about-us .about-us_line2 {
+    margin-top: 35px;
+    margin-left: 67px;
+    position: relative;
+    padding-top: 12px; }
+    .about-us .about-us_line2 .line2_text-with-img {
+      display: flex;
+      margin-right: 16px; }
+      .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk {
+        width: 931px;
+        padding-bottom: 230px; }
+        .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_title, .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_text-title,
+        .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_text {
+          font-size: 25px; }
+        .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_title, .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_text-title {
+          font-family: 'Beba';
+          font-weight: 600 !important; }
+        .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_title {
+          margin-bottom: 28px; }
+    .about-us .about-us_line2 .line2_text-with-img_image {
+      width: 496px;
+      height: 496px;
+      border-radius: 50%;
+      flex-shrink: 0; }
+    .about-us .about-us_line2::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1116px;
+      height: 6px;
+      content: "";
+      background-color: #ffcc00; }
+  .about-us .about-us_line3 {
+    position: relative;
+    margin-top: -135px; }
+    .about-us .about-us_line3 .line3_text-with-img {
+      display: flex; }
+      .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_image {
+        flex-shrink: 0;
+        width: 496px;
+        height: 496px;
+        border-radius: 50%;
+        margin-right: 38px;
+        margin-left: -7px; }
+      .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_text-blk {
+        padding-top: 63px; }
+        .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_text-blk .text-blk_title {
+          font-size: 25px;
+          font-family: 'Beba';
+          font-weight: 600 !important;
+          margin-bottom: 79px; }
+        .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_text-blk .text-blk_text {
+          font-size: 25px;
+          line-height: 28px;
+          margin-bottom: 41px;
+          width: 968px; }
+    .about-us .about-us_line3 .line3_text {
+      width: 1410px;
+      line-height: 28px;
+      font-size: 25px;
+      margin-left: 66px; }
+    .about-us .about-us_line3:after {
+      position: absolute;
+      content: "";
+      top: 35px;
+      left: 357px;
+      height: 60px;
+      width: 785px;
+      height: 6px;
+      background-color: #ffcc00; }
+  .about-us .about-us_line4 {
+    padding-left: 58px; }
+    .about-us .about-us_line4 .line4_text-with-img {
+      display: flex; }
+      .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_text-blk {
+        padding-top: 79px;
+        margin-right: 27px; }
+        .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_text-blk .text-blk_title {
+          padding-left: 358px;
+          font-family: 'Beba';
+          font-weight: 600 !important;
+          font-size: 25px;
+          margin-bottom: 25px; }
+        .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_text-blk .text-blk_text {
+          font-size: 25px;
+          line-height: 28px;
+          width: 883px; }
+      .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_image {
+        width: 688px;
+        height: 687px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        margin-right: -5px; }
+  .about-us .about-us_attention {
+    margin-top: 21px;
+    width: 991px;
+    margin-left: 207px;
+    font-size: 25px;
+    line-height: 28px; }
+    .about-us .about-us_attention p {
+      font-family: 'Beba';
+      font-weight: 600 !important; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======MEDIA========-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3752,7 +3922,116 @@ footer {
       margin-bottom: 0; }
       .sizes .sizes_line_one-big .sizes_line-item img {
         width: 47.135vw;
-        height: 65.521vw; } }
+        height: 65.521vw; }
+  .about-us {
+    margin-top: 7.552vw;
+    padding-bottom: 11.510vw; }
+    .about-us .about-us_title {
+      font-size: 1.823vw;
+      margin-left: 5.260vw;
+      margin-bottom: 1.302vw; }
+    .about-us .about-us_line1 {
+      width: 80.365vw; }
+      .about-us .about-us_line1 .line1_text-with-img-big .text-with-img-big_image {
+        width: 28.073vw;
+        height: 28.073vw;
+        margin-right: 1.354vw;
+        margin-left: -3.281vw; }
+      .about-us .about-us_line1 .line1_text-with-img-big .text-with-img-big_text {
+        padding-top: 5.573vw;
+        width: 49.531vw;
+        font-size: 1.302vw;
+        line-height: 1.354vw;
+        padding-bottom: 13.438vw; }
+      .about-us .about-us_line1 .line1_text-with-img-small {
+        padding-left: 14.635vw;
+        padding-top: 2.760vw;
+        margin-top: -13.385vw; }
+        .about-us .about-us_line1 .line1_text-with-img-small .text-with-img-big_image {
+          width: 11.979vw;
+          height: 11.979vw;
+          padding-top: 3.281vw;
+          margin-right: 3.125vw;
+          margin-top: 1.458vw; }
+        .about-us .about-us_line1 .line1_text-with-img-small .text-with-img-big_text {
+          font-size: 1.302vw;
+          line-height: 1.458vw;
+          width: 49.427vw; }
+        .about-us .about-us_line1 .line1_text-with-img-small::after {
+          width: 33.490vw;
+          height: 0.313vw;
+          right: 3.854vw; }
+    .about-us .about-us_line2 {
+      margin-top: 1.823vw;
+      margin-left: 3.490vw;
+      padding-top: 0.625vw; }
+      .about-us .about-us_line2 .line2_text-with-img {
+        margin-right: 0.833vw; }
+        .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk {
+          width: 48.490vw;
+          padding-bottom: 11.979vw; }
+          .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_title, .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_text-title,
+          .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_text {
+            font-size: 1.302vw; }
+          .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_title {
+            margin-bottom: 1.458vw; }
+      .about-us .about-us_line2 .line2_text-with-img_image {
+        width: 25.833vw;
+        height: 25.833vw; }
+      .about-us .about-us_line2::after {
+        width: 58.125vw;
+        height: 0.313vw; }
+    .about-us .about-us_line3 {
+      margin-top: -7.031vw; }
+      .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_image {
+        width: 25.833vw;
+        height: 25.833vw;
+        margin-right: 1.979vw;
+        margin-left: -0.365vw; }
+      .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_text-blk {
+        padding-top: 3.281vw; }
+        .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_text-blk .text-blk_title {
+          font-size: 1.302vw;
+          margin-bottom: 4.115vw; }
+        .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_text-blk .text-blk_text {
+          font-size: 1.302vw;
+          line-height: 1.458vw;
+          margin-bottom: 2.135vw;
+          width: 50.417vw; }
+      .about-us .about-us_line3 .line3_text {
+        width: 73.438vw;
+        line-height: 1.458vw;
+        font-size: 1.302vw;
+        margin-left: 3.438vw; }
+      .about-us .about-us_line3:after {
+        top: 1.823vw;
+        left: 18.594vw;
+        height: 3.125vw;
+        width: 40.885vw;
+        height: 0.313vw; }
+    .about-us .about-us_line4 {
+      padding-left: 3.021vw; }
+      .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_text-blk {
+        padding-top: 4.115vw;
+        margin-right: 1.406vw; }
+        .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_text-blk .text-blk_title {
+          padding-left: 18.646vw;
+          font-size: 1.302vw;
+          margin-bottom: 1.302vw; }
+        .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_text-blk .text-blk_text {
+          font-size: 1.302vw;
+          line-height: 1.458vw;
+          width: 45.990vw; }
+      .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_image {
+        width: 35.833vw;
+        height: 35.833vw;
+        margin-right: -0.260vw; }
+    .about-us .about-us_attention {
+      margin-top: 1.094vw;
+      width: 51.615vw;
+      margin-left: 10.781vw;
+      font-size: 1.302vw;
+      line-height: 1.458vw; } }
 
 @media screen and (max-width: 1200px) {
   .wrapper_global {
@@ -4985,7 +5264,118 @@ footer {
           margin-bottom: 0; }
           .wrapper_global main .sizes .sizes_line_one-big .sizes_line-item img {
             width: 47.135vw;
-            height: 65.521vw; } }
+            height: 65.521vw; }
+      .wrapper_global main .about-us {
+        margin-top: 7.552vw;
+        padding-bottom: 11.510vw; }
+        .wrapper_global main .about-us .about-us_title {
+          font-size: 3.823vw;
+          margin-left: 5.260vw;
+          margin-bottom: 3.302vw; }
+        .wrapper_global main .about-us .about-us_line1 {
+          width: 97.365vw; }
+          .wrapper_global main .about-us .about-us_line1 .line1_text-with-img-big .text-with-img-big_image {
+            width: 36.073vw;
+            height: 36.073vw;
+            margin-right: 2.354vw;
+            margin-left: -3.281vw; }
+          .wrapper_global main .about-us .about-us_line1 .line1_text-with-img-big .text-with-img-big_text {
+            padding-top: 5.573vw;
+            width: 60.531vw;
+            font-size: 2.302vw;
+            line-height: 2.354vw;
+            padding-bottom: 14.438vw; }
+          .wrapper_global main .about-us .about-us_line1 .line1_text-with-img-small {
+            padding-left: 14.635vw;
+            padding-top: 3.76vw;
+            margin-top: -13.385vw; }
+            .wrapper_global main .about-us .about-us_line1 .line1_text-with-img-small .text-with-img-big_image {
+              width: 14.979vw;
+              height: 14.979vw;
+              padding-top: 0.281vw;
+              margin-right: 3.125vw;
+              margin-top: -4.842vw; }
+            .wrapper_global main .about-us .about-us_line1 .line1_text-with-img-small .text-with-img-big_text {
+              font-size: 2.302vw;
+              line-height: 2.354vw;
+              width: 64.427vw; }
+            .wrapper_global main .about-us .about-us_line1 .line1_text-with-img-small::after {
+              width: 33.490vw;
+              height: 0.613vw;
+              right: 3.854vw; }
+        .wrapper_global main .about-us .about-us_line2 {
+          margin-top: 4.823vw;
+          margin-left: 3.490vw;
+          padding-top: 1.625vw; }
+          .wrapper_global main .about-us .about-us_line2 .line2_text-with-img {
+            margin-right: 0.833vw; }
+            .wrapper_global main .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk {
+              width: 61.49vw;
+              padding-bottom: 11.979vw;
+              margin-right: 2vw; }
+              .wrapper_global main .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_title, .wrapper_global main .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_text-title,
+              .wrapper_global main .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_text {
+                font-size: 2.302vw;
+                line-height: 2.354vw; }
+              .wrapper_global main .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_title {
+                margin-bottom: 2.858vw; }
+          .wrapper_global main .about-us .about-us_line2 .line2_text-with-img_image {
+            width: 30.833vw;
+            height: 30.833vw; }
+          .wrapper_global main .about-us .about-us_line2::after {
+            width: 58.125vw;
+            height: 0.613vw; }
+        .wrapper_global main .about-us .about-us_line3 {
+          margin-top: -5.031vw; }
+          .wrapper_global main .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_image {
+            width: 32.833vw;
+            height: 32.833vw;
+            margin-right: 2.979vw;
+            margin-left: -0.365vw; }
+          .wrapper_global main .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_text-blk {
+            padding-top: 6.281vw; }
+            .wrapper_global main .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_text-blk .text-blk_title {
+              font-size: 2.302vw;
+              margin-bottom: 4.115vw; }
+            .wrapper_global main .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_text-blk .text-blk_text {
+              font-size: 2.302vw;
+              line-height: 2.354vw;
+              margin-bottom: 2.135vw;
+              width: 60.417vw; }
+          .wrapper_global main .about-us .about-us_line3 .line3_text {
+            width: 91.438vw;
+            font-size: 2.302vw;
+            line-height: 2.354vw;
+            margin-left: 3.438vw; }
+          .wrapper_global main .about-us .about-us_line3:after {
+            top: 1.823vw;
+            left: 18.594vw;
+            height: 3.125vw;
+            width: 40.885vw;
+            height: 0.613vw; }
+        .wrapper_global main .about-us .about-us_line4 {
+          padding-left: 3.021vw; }
+          .wrapper_global main .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_text-blk {
+            padding-top: 4.115vw;
+            margin-right: 1.406vw; }
+            .wrapper_global main .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_text-blk .text-blk_title {
+              padding-left: 18.646vw;
+              font-size: 2.302vw;
+              margin-bottom: 1.302vw; }
+            .wrapper_global main .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_text-blk .text-blk_text {
+              font-size: 2.302vw;
+              line-height: 2.354vw;
+              width: 50.99vw; }
+          .wrapper_global main .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_image {
+            width: 40.833vw;
+            height: 40.833vw;
+            margin-right: -0.260vw; }
+        .wrapper_global main .about-us .about-us_attention {
+          margin-top: 6.094vw;
+          width: 77.615vw;
+          margin-left: 10.781vw;
+          font-size: 2.302vw;
+          line-height: 2.354vw; } }
 
 @media screen and (max-width: 800px) {
   .wrapper_global .sidebar {
@@ -5909,7 +6299,138 @@ footer {
       display: flex; }
       .wrapper_global main .sizes .sizes_line_one-big .sizes_line-item img {
         width: 67.135vw;
-        height: 85.521vw; } }
+        height: 85.521vw; }
+  .wrapper_global main .about-us {
+    margin-top: 7.552vw;
+    padding-bottom: 11.510vw; }
+    .wrapper_global main .about-us .about-us_title {
+      font-size: 4.823vw;
+      margin-left: 5.260vw;
+      margin-bottom: 5.302vw; }
+    .wrapper_global main .about-us .about-us_line1 {
+      width: 97.365vw; }
+      .wrapper_global main .about-us .about-us_line1 .line1_text-with-img-big {
+        flex-direction: column;
+        align-items: center; }
+        .wrapper_global main .about-us .about-us_line1 .line1_text-with-img-big .text-with-img-big_image {
+          width: 55.073vw;
+          height: 55.073vw;
+          margin-right: 2vw;
+          margin-left: 2vw;
+          margin-bottom: 5vw; }
+        .wrapper_global main .about-us .about-us_line1 .line1_text-with-img-big .text-with-img-big_text {
+          padding-top: 0;
+          width: 92.531vw;
+          font-size: 3.302vw;
+          line-height: 3.354vw;
+          padding-bottom: 0;
+          margin: 0 auto; }
+      .wrapper_global main .about-us .about-us_line1 .line1_text-with-img-small {
+        padding-left: 0;
+        padding-top: 0;
+        margin-top: 10vw;
+        flex-direction: column;
+        align-items: center; }
+        .wrapper_global main .about-us .about-us_line1 .line1_text-with-img-small .text-with-img-big_image {
+          width: 55.073vw;
+          height: 55.073vw;
+          margin-right: 2vw;
+          margin-left: 2vw;
+          margin-bottom: 5vw;
+          margin-top: 0; }
+        .wrapper_global main .about-us .about-us_line1 .line1_text-with-img-small .text-with-img-big_text {
+          padding-top: 0;
+          width: 92.531vw;
+          font-size: 3.302vw;
+          line-height: 3.354vw;
+          padding-bottom: 0;
+          margin: 0 auto; }
+        .wrapper_global main .about-us .about-us_line1 .line1_text-with-img-small::after {
+          display: none; }
+    .wrapper_global main .about-us .about-us_line2 {
+      margin-top: 10vw;
+      margin-left: 0vw;
+      padding-top: 0vw; }
+      .wrapper_global main .about-us .about-us_line2 .line2_text-with-img {
+        margin-right: 0;
+        flex-direction: column-reverse;
+        align-items: center; }
+        .wrapper_global main .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk {
+          width: 92.531vw;
+          padding-bottom: 0;
+          margin-right: 0vw; }
+          .wrapper_global main .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_title, .wrapper_global main .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_text-title,
+          .wrapper_global main .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_text {
+            font-size: 3.302vw;
+            line-height: 3.354vw; }
+          .wrapper_global main .about-us .about-us_line2 .line2_text-with-img .line2_text-with-img_text-blk .text-blk_title {
+            margin-bottom: 2.858vw;
+            text-align: center; }
+      .wrapper_global main .about-us .about-us_line2 .line2_text-with-img_image {
+        width: 55.833vw;
+        height: 55.833vw;
+        margin-bottom: 5vw; }
+      .wrapper_global main .about-us .about-us_line2::after {
+        display: none; }
+    .wrapper_global main .about-us .about-us_line3 {
+      margin-top: 10vw; }
+      .wrapper_global main .about-us .about-us_line3 .line3_text-with-img {
+        flex-direction: column;
+        align-items: center; }
+        .wrapper_global main .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_image {
+          width: 55.073vw;
+          height: 55.073vw;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 5vw; }
+        .wrapper_global main .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_text-blk {
+          padding-top: 0; }
+          .wrapper_global main .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_text-blk .text-blk_title {
+            font-size: 3.302vw;
+            margin-bottom: 4.115vw;
+            text-align: center; }
+          .wrapper_global main .about-us .about-us_line3 .line3_text-with-img .line3_text-with-img_text-blk .text-blk_text {
+            font-size: 3.302vw;
+            line-height: 3.354vw;
+            margin-bottom: 2.135vw;
+            width: 92.531vw; }
+      .wrapper_global main .about-us .about-us_line3 .line3_text {
+        width: 92.531vw;
+        font-size: 3.302vw;
+        line-height: 3.354vw;
+        margin-left: 3.438vw; }
+      .wrapper_global main .about-us .about-us_line3:after {
+        display: none; }
+    .wrapper_global main .about-us .about-us_line4 {
+      padding-left: 0; }
+      .wrapper_global main .about-us .about-us_line4 .line4_text-with-img {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 10vw; }
+        .wrapper_global main .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_text-blk {
+          padding-top: 0;
+          margin-right: 0; }
+          .wrapper_global main .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_text-blk .text-blk_title {
+            padding-left: 0;
+            font-size: 3.302vw;
+            margin-bottom: 5vw;
+            text-align: center; }
+          .wrapper_global main .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_text-blk .text-blk_text {
+            font-size: 3.302vw;
+            line-height: 3.354vw;
+            width: 92.531vw; }
+        .wrapper_global main .about-us .about-us_line4 .line4_text-with-img .line4_text-with-img_image {
+          width: 55.73vw;
+          height: 55.73vw;
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: 5vw; }
+    .wrapper_global main .about-us .about-us_attention {
+      margin: 0 auto;
+      margin-top: 12.094vw;
+      width: 92.531vw;
+      font-size: 3.302vw;
+      line-height: 3.354vw; } }
 
 @media screen and (max-width: 800px) {
   .nav_listitem a {
