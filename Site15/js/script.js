@@ -583,7 +583,7 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".footer_col4 p"), "animate__lightSpeedInRight", "2s" );
     animPartiallyVisibleALL(queryA(".player_btn img"), "animate__zoomIn", "1s");
     animPartiallyVisibleALL(queryA(".player_title"), "animate__lightSpeedInLeft", "1.3s");
-    animPartiallyVisibleALL(queryA(".swiper-container .swiper-slide"), "animate__bounceIn", "2s" );
+    animPartiallyVisibleALL(queryA(".swiper-container .swiper-slide"), "animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".index_text"), "animate__backInLeft", "1.3s");
     animPartiallyVisibleALL(queryA(".index_last_blk"), "animate__bounceInDown", "2s" );
     animPartiallyVisibleALL(queryA(".index_last_header h2"), "animate__fadeInRight", "1.3s");
@@ -678,6 +678,17 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".sizes_title"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".sizes_line-title"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".sizes_line-item"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".about-us_title"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".text-with-img-big_image"),"animate__fadeInLeft", "3s" );
+    animPartiallyVisibleALL(queryA(".text-with-img-big_text"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".text-blk_title"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".line2_text-with-img_text-blk"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".line2_text-with-img_image"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".line3_text-with-img_image"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".text-blk_text"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".line3_text"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".line4_text-with-img_image"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".about-us_attention"),"animate__fadeInLeft", "2s" );
 }
 
 
@@ -703,3 +714,17 @@ function loading(){
 setTimeout(()=>{
     loading();
 }, loadingTime);
+
+
+// 
+// Console print
+// 
+
+console.log('%cDeveloped by Djigit & yur4ik96', 'color: #c434c4; font-size: 50px ');
+
+    console.log(
+      '%cTG: @Djigit34 / @yura_k18',
+      'color: #c434c4; background: #eee; font-size: 30px '
+    );
+
+    
