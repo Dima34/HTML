@@ -583,7 +583,6 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".footer_col4 p"), "animate__lightSpeedInRight", "2s" );
     animPartiallyVisibleALL(queryA(".player_btn img"), "animate__zoomIn", "1s");
     animPartiallyVisibleALL(queryA(".player_title"), "animate__lightSpeedInLeft", "1.3s");
-    animPartiallyVisibleALL(queryA(".swiper-container .swiper-slide"), "animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".index_text"), "animate__backInLeft", "1.3s");
     animPartiallyVisibleALL(queryA(".index_last_blk"), "animate__bounceInDown", "2s" );
     animPartiallyVisibleALL(queryA(".index_last_header h2"), "animate__fadeInRight", "1.3s");

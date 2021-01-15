@@ -6649,13 +6649,13 @@ footer {
       margin-bottom: 0.781vw;
       font-size: 3.3vw; }
     .wrapper_global main .shop .shop_main {
-      grid-template-columns: repeat(2, 35.813vw);
+      grid-template-columns: repeat(2, 36.813vw);
       column-gap: 1.563vw;
       row-gap: 1.563vw; }
       .wrapper_global main .shop .shop_main .main_item .swiper-container {
-        height: 31.458vw; }
+        height: 32.458vw; }
         .wrapper_global main .shop .shop_main .main_item .swiper-container .swiper-wrapper {
-          height: 26.854vw; }
+          height: 28.854vw; }
         .wrapper_global main .shop .shop_main .main_item .swiper-container .swiper-pagination {
           bottom: 0; }
           .wrapper_global main .shop .shop_main .main_item .swiper-container .swiper-pagination .swiper-pagination-bullet {
@@ -6663,11 +6663,11 @@ footer {
             height: 1.625vw; }
       .wrapper_global main .shop .shop_main .main_item .item_name {
         margin-top: 2vw;
-        font-size: 3.19vw;
-        line-height: 3.5vw; }
+        font-size: 3.4vw;
+        line-height: 3.55vw; }
       .wrapper_global main .shop .shop_main .main_item .item_price {
-        font-size: 3.89vw;
-        line-height: 4vw; } }
+        font-size: 4.3vw;
+        line-height: 4.4vw; } }
 
 @media screen and (max-width: 800px) {
   .nav_listitem a {
