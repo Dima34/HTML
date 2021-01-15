@@ -661,6 +661,20 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".paper_block_main-text p"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".sales_title"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".sales_sale"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".videomaker_title"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".videomaker_subtitle"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".videomaker_title"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".videomaker_subtitle"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".videomaker_stage"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".videomaker_slogan"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".videomaker_subtitle"),"examples_example", "2s" );
+    animPartiallyVisibleALL(queryA(".discount_image"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".discount_price"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".discount_title"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".discount_subtitle"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".discount_text"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".discount_order"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".discount_price"),"hint_text", "2s" );
 }
 
 
