@@ -3791,38 +3791,6 @@ footer{
     padding-right: 103px;
     margin-bottom: 40px;
 
-    .cart{
-      display: flex;
-      align-items: center;
-
-      .cart_image-blk{
-        position: relative;
-        margin-right: 35px;
-
-        img{
-          width: 60px;
-          height: 60px;
-        }
-
-        .cart_amount{
-          position: absolute;
-          @include Beba(600);
-          font-size: 26px;
-          right: -10px;
-          bottom: -5px;
-          padding: 4px 10px;
-          background-color: #ffcc00;
-          border-radius: 50%;
-        }
-      }
-
-      .cart_text{
-        font-size: 35px;
-        @include Beba(600); 
-      }
-
-    }
-
   }
 
   .shop_categories{
@@ -3902,8 +3870,20 @@ footer{
         font-size: 51px;
         @include Beba(600);
         padding: 0 20px;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         text-align: center;
+      }
+
+      .item_buy{
+        display: block;
+        padding: 10px 20px;
+        font-size: 33px;
+        line-height: 38px;
+        width: fit-content;
+        height: fit-content;
+        margin: 0 auto;
+        background: #ffcc00;
+        margin-bottom: 20px;
       }
 
       &:hover{
@@ -6259,29 +6239,6 @@ footer{
     .shop_cart{
       padding-right: 5.365vw;
       margin-bottom: 2.083vw;
-  
-      .cart{
-  
-        .cart_image-blk{
-          margin-right: 1.823vw;
-  
-          img{
-            width: 3.125vw;
-            height: 3.125vw;
-          }
-  
-          .cart_amount{
-            font-size: 1.354vw;
-            right: -0.521vw;
-            bottom: -0.260vw;
-            padding: 0.208vw 0.521vw;
-          }
-        }
-  
-        .cart_text{
-          font-size: 1.823vw;
-        }
-      }
     }
   
     .shop_categories{
@@ -6322,17 +6279,17 @@ footer{
           }
         }
   
-        .item_name{
-          padding: 0 1.042vw;
-          font-size: 1.719vw;
-          line-height: 1.979vw;
-          margin-bottom: 1.146vw;
-        }
-  
         .item_price{
           font-size: 2.656vw;
           padding: 0 1.042vw;
-          margin-bottom: 1.302vw;
+          margin-bottom: 0.781vw;
+        }
+  
+        .item_buy{
+          padding: 0.521vw 1.042vw;
+          font-size: 1.719vw;
+          line-height: 1.979vw;
+          margin-bottom: 1.042vw;
         }
       }
     }
@@ -8743,29 +8700,7 @@ footer{
         .shop_cart{
           padding-right: 5.365vw;
           margin-bottom: 4vw;
-    
-          .cart{
-      
-            .cart_image-blk{
-              margin-right: 1.823vw;
-      
-              img{
-                width: 4.125vw;
-                height: 4.125vw;
-              }
-      
-              .cart_amount{
-                font-size: 1.854vw;
-                right: -0.521vw;
-                bottom: -0.260vw;
-                padding: 0.208vw 0.521vw;
-              }
-            }
-      
-            .cart_text{
-              font-size: 2.623vw;
-            }
-          }
+  
         }
       
         .shop_categories{
@@ -8808,11 +8743,19 @@ footer{
       
             .item_name{
               font-size: 2.19vw;
+              line-height: 1.979vw;
             }
       
             .item_price{
               font-size: 3vw;
               
+            }
+            .item_price{
+              font-size: 3vw;
+            }
+      
+            .item_buy{
+              font-size: 2.19vw;
             }
           }
         }
@@ -10615,63 +10558,70 @@ footer{
       }
 
       .shop{
-        grid-template-columns: 19.938vw 1fr;
+        grid-template-columns: 1fr;
       
         .shop_cart{
           padding-right: 5.365vw;
           margin-bottom: 5vw;
-    
-          .cart{
-      
-            .cart_image-blk{
-              margin-right: 1.823vw;
-      
-              img{
-                width: 6.525vw;
-                height: 6.525vw;
-              }
-      
-              .cart_amount{
-                font-size: 2.854vw;
-                right: -0.521vw;
-                bottom: -0.260vw;
-                padding: 0.208vw 0.921vw;
-              }
-            }
-      
-            .cart_text{
-              font-size: 3.63vw;
-            }
+          grid-column-start: 1;
+          grid-column-end: 2;
+          justify-content: flex-start;
+
+          .open_cathegories{
+            display: block !important;
+            font-size: 5.19vw;
+            margin-bottom: 0;
+            padding-left: 10px;
+            text-align: left;
+            cursor: pointer;
+            padding: 1.5vw 5vw;
+            background: #242424;
+            color: white;
           }
         }
       
         .shop_categories{
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 50%;
+          height: 100%;
+          z-index: 2;
+          background: white;
+          padding-top: 20px;
+          transform: translateX(-100%);
+          transition: .3s;
       
           .categories_title{
-            font-size: 3.19vw;
+            font-size: 5.19vw;
             padding-left: 0.208vw;
-            margin-bottom: 0.677vw;
+            margin-bottom: 2.677vw;
+            padding-left: 10px;
           }
       
           .category{
-            padding: 0.729vw 1.458vw;
+            padding: 1.29vw 1.458vw;
             margin-bottom: 0.781vw;
-            font-size:  3.3vw;
+            font-size: 5.3vw;
           }
+        }
+
+        .shop_categories-active{
+          transform: translateX(0);
         }
       
         .shop_main{
-          grid-template-columns: repeat(2, 36.813vw);
+          grid-template-columns: repeat(2, 47.313vw);
           column-gap: 1.563vw;
           row-gap: 1.563vw;
       
           .main_item{
       
             .swiper-container{
-              height: 32.458vw;
+              height: 37.458vw;
       
               .swiper-wrapper{
-                height: 28.854vw;
+                height: 32.854vw;
               }
       
               .swiper-pagination{
@@ -10686,14 +10636,21 @@ footer{
       
             .item_name{
               margin-top: 2vw;
-              font-size: 3.4vw;
-              line-height: 3.55vw;
+              font-size: 3.6vw;
+              line-height: 3.85vw;
             }
       
             .item_price{
               font-size: 4.3vw;
               line-height: 4.4vw;
-              
+              margin-bottom: 2vw;
+            }
+
+            .item_buy{
+              padding: 0.521vw 1.042vw;
+              font-size: 3.6vw;
+              line-height: 3.85vw;
+              margin-bottom: 3.42vw;
             }
           }
         }

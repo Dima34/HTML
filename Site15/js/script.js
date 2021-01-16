@@ -466,7 +466,28 @@ if(btnUp){
 }
 
 
+// 
+// Categories
+// 
 
+let categoryOpen = document.querySelector(".open_cathegories");
+let categoriesBlk = document.querySelector(".shop_categories");
+let categories = document.querySelectorAll(".category");
+
+if(categoryOpen){
+
+    categoryOpen.addEventListener("click", () =>{
+        categoriesBlk.classList.add("shop_categories-active");
+    })
+
+    for (let i = 0; i < categories.length; i++) {
+        
+        categories[i].addEventListener("click", ()=>{
+            categoriesBlk.classList.remove("shop_categories-active");
+        })
+        
+    }
+}
 
 
 //
@@ -687,8 +708,12 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".line4_text-with-img_image"),"animate__fadeInRight", "2s" );
     animPartiallyVisibleALL(queryA(".about-us_attention"),"animate__fadeInLeft", "2s" );
     animPartiallyVisibleALL(queryA(".cart"),"animate__fadeInRight", "2s" );
-    animPartiallyVisibleALL(queryA(".shop_categories"),"animate__fadeInLeft", "2s" );
     animPartiallyVisibleALL(queryA(".main_item"),"animate__fadeIn", "2s" );
+
+
+    if(document.innerWidth >800){
+        animPartiallyVisibleALL(queryA(".shop_categories"),"animate__fadeInLeft", "2s" );
+    }
 }
 
 

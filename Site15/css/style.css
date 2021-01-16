@@ -2760,29 +2760,6 @@ footer {
     justify-content: flex-end;
     padding-right: 103px;
     margin-bottom: 40px; }
-    .shop .shop_cart .cart {
-      display: flex;
-      align-items: center; }
-      .shop .shop_cart .cart .cart_image-blk {
-        position: relative;
-        margin-right: 35px; }
-        .shop .shop_cart .cart .cart_image-blk img {
-          width: 60px;
-          height: 60px; }
-        .shop .shop_cart .cart .cart_image-blk .cart_amount {
-          position: absolute;
-          font-family: 'Beba';
-          font-weight: 600 !important;
-          font-size: 26px;
-          right: -10px;
-          bottom: -5px;
-          padding: 4px 10px;
-          background-color: #ffcc00;
-          border-radius: 50%; }
-      .shop .shop_cart .cart .cart_text {
-        font-size: 35px;
-        font-family: 'Beba';
-        font-weight: 600 !important; }
   .shop .shop_categories {
     display: flex;
     flex-direction: column; }
@@ -2835,8 +2812,18 @@ footer {
         font-family: 'Beba';
         font-weight: 600 !important;
         padding: 0 20px;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         text-align: center; }
+      .shop .shop_main .main_item .item_buy {
+        display: block;
+        padding: 10px 20px;
+        font-size: 33px;
+        line-height: 38px;
+        width: fit-content;
+        height: fit-content;
+        margin: 0 auto;
+        background: #ffcc00;
+        margin-bottom: 20px; }
       .shop .shop_main .main_item:hover {
         border: 3px solid #ffcc00; }
 
@@ -4143,18 +4130,6 @@ footer {
     .shop .shop_cart {
       padding-right: 5.365vw;
       margin-bottom: 2.083vw; }
-      .shop .shop_cart .cart .cart_image-blk {
-        margin-right: 1.823vw; }
-        .shop .shop_cart .cart .cart_image-blk img {
-          width: 3.125vw;
-          height: 3.125vw; }
-        .shop .shop_cart .cart .cart_image-blk .cart_amount {
-          font-size: 1.354vw;
-          right: -0.521vw;
-          bottom: -0.260vw;
-          padding: 0.208vw 0.521vw; }
-      .shop .shop_cart .cart .cart_text {
-        font-size: 1.823vw; }
     .shop .shop_categories .categories_title {
       font-size: 1.719vw;
       padding-left: 0.208vw;
@@ -4174,15 +4149,15 @@ footer {
         .shop .shop_main .main_item .swiper-container .swiper-pagination .swiper-pagination-bullet {
           width: 0.625vw;
           height: 0.625vw; }
-      .shop .shop_main .main_item .item_name {
-        padding: 0 1.042vw;
-        font-size: 1.719vw;
-        line-height: 1.979vw;
-        margin-bottom: 1.146vw; }
       .shop .shop_main .main_item .item_price {
         font-size: 2.656vw;
         padding: 0 1.042vw;
-        margin-bottom: 1.302vw; } }
+        margin-bottom: 0.781vw; }
+      .shop .shop_main .main_item .item_buy {
+        padding: 0.521vw 1.042vw;
+        font-size: 1.719vw;
+        line-height: 1.979vw;
+        margin-bottom: 1.042vw; } }
 
 @media screen and (max-width: 1200px) {
   .wrapper_global {
@@ -5533,18 +5508,6 @@ footer {
         .wrapper_global main .shop .shop_cart {
           padding-right: 5.365vw;
           margin-bottom: 4vw; }
-          .wrapper_global main .shop .shop_cart .cart .cart_image-blk {
-            margin-right: 1.823vw; }
-            .wrapper_global main .shop .shop_cart .cart .cart_image-blk img {
-              width: 4.125vw;
-              height: 4.125vw; }
-            .wrapper_global main .shop .shop_cart .cart .cart_image-blk .cart_amount {
-              font-size: 1.854vw;
-              right: -0.521vw;
-              bottom: -0.260vw;
-              padding: 0.208vw 0.521vw; }
-          .wrapper_global main .shop .shop_cart .cart .cart_text {
-            font-size: 2.623vw; }
         .wrapper_global main .shop .shop_categories .categories_title {
           font-size: 2.619vw;
           padding-left: 0.208vw;
@@ -5565,9 +5528,14 @@ footer {
               width: 0.625vw;
               height: 0.625vw; }
           .wrapper_global main .shop .shop_main .main_item .item_name {
-            font-size: 2.19vw; }
+            font-size: 2.19vw;
+            line-height: 1.979vw; }
           .wrapper_global main .shop .shop_main .main_item .item_price {
-            font-size: 3vw; } }
+            font-size: 3vw; }
+          .wrapper_global main .shop .shop_main .main_item .item_price {
+            font-size: 3vw; }
+          .wrapper_global main .shop .shop_main .main_item .item_buy {
+            font-size: 2.19vw; } }
 
 @media screen and (max-width: 800px) {
   .wrapper_global .sidebar {
@@ -6624,38 +6592,53 @@ footer {
       font-size: 3.302vw;
       line-height: 3.354vw; }
   .wrapper_global main .shop {
-    grid-template-columns: 19.938vw 1fr; }
+    grid-template-columns: 1fr; }
     .wrapper_global main .shop .shop_cart {
       padding-right: 5.365vw;
-      margin-bottom: 5vw; }
-      .wrapper_global main .shop .shop_cart .cart .cart_image-blk {
-        margin-right: 1.823vw; }
-        .wrapper_global main .shop .shop_cart .cart .cart_image-blk img {
-          width: 6.525vw;
-          height: 6.525vw; }
-        .wrapper_global main .shop .shop_cart .cart .cart_image-blk .cart_amount {
-          font-size: 2.854vw;
-          right: -0.521vw;
-          bottom: -0.260vw;
-          padding: 0.208vw 0.921vw; }
-      .wrapper_global main .shop .shop_cart .cart .cart_text {
-        font-size: 3.63vw; }
-    .wrapper_global main .shop .shop_categories .categories_title {
-      font-size: 3.19vw;
-      padding-left: 0.208vw;
-      margin-bottom: 0.677vw; }
-    .wrapper_global main .shop .shop_categories .category {
-      padding: 0.729vw 1.458vw;
-      margin-bottom: 0.781vw;
-      font-size: 3.3vw; }
+      margin-bottom: 5vw;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      justify-content: flex-start; }
+      .wrapper_global main .shop .shop_cart .open_cathegories {
+        display: block !important;
+        font-size: 5.19vw;
+        margin-bottom: 0;
+        padding-left: 10px;
+        text-align: left;
+        cursor: pointer;
+        padding: 1.5vw 5vw;
+        background: #242424;
+        color: white; }
+    .wrapper_global main .shop .shop_categories {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      z-index: 2;
+      background: white;
+      padding-top: 20px;
+      transform: translateX(-100%);
+      transition: .3s; }
+      .wrapper_global main .shop .shop_categories .categories_title {
+        font-size: 5.19vw;
+        padding-left: 0.208vw;
+        margin-bottom: 2.677vw;
+        padding-left: 10px; }
+      .wrapper_global main .shop .shop_categories .category {
+        padding: 1.29vw 1.458vw;
+        margin-bottom: 0.781vw;
+        font-size: 5.3vw; }
+    .wrapper_global main .shop .shop_categories-active {
+      transform: translateX(0); }
     .wrapper_global main .shop .shop_main {
-      grid-template-columns: repeat(2, 36.813vw);
+      grid-template-columns: repeat(2, 47.313vw);
       column-gap: 1.563vw;
       row-gap: 1.563vw; }
       .wrapper_global main .shop .shop_main .main_item .swiper-container {
-        height: 32.458vw; }
+        height: 37.458vw; }
         .wrapper_global main .shop .shop_main .main_item .swiper-container .swiper-wrapper {
-          height: 28.854vw; }
+          height: 32.854vw; }
         .wrapper_global main .shop .shop_main .main_item .swiper-container .swiper-pagination {
           bottom: 0; }
           .wrapper_global main .shop .shop_main .main_item .swiper-container .swiper-pagination .swiper-pagination-bullet {
@@ -6663,11 +6646,17 @@ footer {
             height: 1.625vw; }
       .wrapper_global main .shop .shop_main .main_item .item_name {
         margin-top: 2vw;
-        font-size: 3.4vw;
-        line-height: 3.55vw; }
+        font-size: 3.6vw;
+        line-height: 3.85vw; }
       .wrapper_global main .shop .shop_main .main_item .item_price {
         font-size: 4.3vw;
-        line-height: 4.4vw; } }
+        line-height: 4.4vw;
+        margin-bottom: 2vw; }
+      .wrapper_global main .shop .shop_main .main_item .item_buy {
+        padding: 0.521vw 1.042vw;
+        font-size: 3.6vw;
+        line-height: 3.85vw;
+        margin-bottom: 3.42vw; } }
 
 @media screen and (max-width: 800px) {
   .nav_listitem a {
