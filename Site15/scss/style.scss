@@ -3896,6 +3896,446 @@ footer{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* -----=======G LINE TITLE=======----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.g-line-title{
+  width: 100%;
+  padding: 13px;
+  background-color: #ffcc00;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=======G-ADVANTAGES=======----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.g-advantages{
+  display: grid;
+  grid-template-columns: 741px 1fr;
+  margin-bottom: 93px;
+
+  .g-advantages_left{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 674px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .g-advantages_left_text{
+      p:nth-child(1){
+        font-size: 36px;
+        margin-bottom: -20px;
+        padding-left: 5px;
+      }
+      p:nth-child(2){
+        font-size: 133px;
+        color: #ffcc00;
+        @include Beba(600);
+        margin-bottom: -10px;
+      }
+      p:nth-child(3){
+        font-size: 29px;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .g-advantages_right{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: 50px;
+    padding-top: 24px;
+    width: 789px;
+
+    .right_blk{
+      padding-top: 18px;
+      padding-bottom: 20px;
+      display: flex;
+      width: 100%;
+      position: relative;
+
+      img{
+        width: 90px;
+        height: 90px;
+        margin-right: 40px;
+      }
+
+      .text_title{
+        font-size: 30px;
+        color: #ffcc00;
+      }
+
+      p{
+        font-size: 22px;
+      }
+
+      &:after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        background: #d5d9df;
+      }
+
+      &:last-child{
+
+        &::after{
+          display: none ;
+        }
+      }
+    }
+  }
+
+  .g-advantages_bottom{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    margin-top: 50px;
+    width: 1485px;
+    margin-left: 30px;
+    font-size: 18px;
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======G-GALLERY=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+        
+.g-gallery{
+
+  .g-gallery_title{
+    margin-bottom: 40px;
+  }
+
+  .g-gallery_main-blk{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 50px;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-bottom: 58px;
+
+    .g-gallery_item{
+      text-align: center;
+      width: 270px;
+
+      .item_img{
+        width: 270px;
+        height: 270px;
+        margin-bottom: 20px;
+      }
+
+      .img-circle{
+        border-radius: 50%;
+      }
+
+      .item_title{
+        font-size: 22px;
+        margin-bottom: 5px;
+      }
+
+      .item_subtitle{
+        font-size: 19px;
+        color: #ffcc00;
+      }
+    }
+  }
+
+  .small-imgs{
+    grid-template-columns: repeat(6, 1fr);
+
+    .g-gallery_item{
+      width: 204px;
+
+      .item_img{
+        width: 204px;
+        height: 188px;
+      }
+    }
+  }
+
+  .big-imgs{
+    column-gap: 0px;
+    padding: 0 31px;
+
+    .g-gallery_item{
+      width: 314px;
+
+      .item_img{
+        width: 314px;
+        height: 233px;
+      }
+
+      .item_title{
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .g-gallery_attention{
+    margin-bottom: 45px;
+    padding: 0 20px;
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======G-TABLE=======-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.g-table{
+  padding-bottom: 21px;
+
+  .g-table_title{
+    margin-bottom: 20px;
+  }
+
+  .g-table_table{
+    margin-left: 25px;
+    display: grid;
+
+    .table_line{
+      flex-shrink: 0;
+      display: grid;
+      grid-template-columns: 256px 313px 313px 313px 313px;
+      min-height: 96px;
+
+      .table_col{
+        border-bottom: 4px solid #d5d9df;
+        border-right: 4px solid #d5d9df;
+        padding: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p{
+          color: #ffcc00;
+          font-size: 45px;
+        }
+
+        &:last-child{
+          border-right: 0;
+        }
+      }
+
+      .table_col1{
+        padding: 32px;
+
+        p{
+          @include Beba(400);
+          font-size: 22px;
+        }
+
+        .col1_title{
+          color: #000000;
+        }
+
+        .col1_sublititle{
+          color: #ffcc00;
+        }
+      }
+    }
+
+    .table_line1{
+      min-height: 50px;
+
+      .table_col{
+        padding: 18px;
+
+        p{
+          color: #000000;
+          font-size: 22px;
+        }
+        
+      }
+    }
+  }
+
+  .g-table_attention{
+    padding: 0 41px;
+    font-size: 22px;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======G-CALL-US=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.g-call-us{
+  margin-top: 21px;
+  margin-bottom: 93px;
+  display: flex;
+  margin-left: 41px;
+  align-items: center;
+
+  .call-us_left{
+    font-size: 35px;
+    line-height: 40px;
+    width: 839px;
+    margin-right: 145px;
+
+    a{
+      color: #ffcc00;
+      @include Beba(600);
+      font-size: 55px;
+      text-decoration: underline ;
+    }
+  }
+
+  .call-us_right{
+    font-size: 45px;
+    @include Beba(600);
+    padding: 12px 100px;
+    background-color: #ffcc00;
+    transition: .3s;
+
+    &:hover{
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======G-DEMANDS=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.g-demands{
+  padding-bottom: 91px;
+
+  .demands_title{
+    margin-bottom: 37px;
+  }
+  
+
+  .g-deamands_main{
+    display: grid;
+    grid-template-columns: 493px 1fr;
+    padding-left: 35px;
+  
+    .g-demands_left{
+      grid-column-start: 1;
+      grid-column-end: 2;
+      width: 493px;
+      height: 364px;
+      align-self: center;
+    }
+  
+    .g-demands_right{
+      grid-column-start: 2;
+      grid-column-end: 3;
+      padding-left: 32px;
+
+      .right_blk{
+        padding: 18px 0;
+        display: flex;
+        align-items: center;
+        border-bottom: 4px solid #d5d9df;
+
+        img{
+          margin-right: 37px;
+        }
+
+        .blk_text{
+          font-size: 25px;
+          line-height: 28px;
+
+          span, a{
+            color: #ffcc00;
+            font-size: 37px;
+            line-height: 40px;
+            @include Beba(600);
+          }
+
+          .text_images{
+            display: flex;
+            margin-top: 5px;
+
+            img{
+              width: 62px;
+              height: 62px;
+              display: block;
+              margin-right: 27px;
+            }
+          }
+        }
+
+        &:last-child{
+          border-bottom: 0;
+        }
+      }
+    }
+  
+    .g-demands_bottom{
+      grid-column-start: 1;
+      grid-column-end: 3;
+      width: fit-content;
+      
+      .bottom-blk{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        img{
+          width: 235px;
+          height: 3px;
+          margin-right: 16px;
+        }
+
+        p{
+          font-size: 20px;
+        }
+      }
+
+      .bottom_text{
+        font-size: 25px;
+        line-height: 48.01px;
+        @include Beba(600);
+        text-align: center;
+      }
+    }
+  }
+
+  
+}
+
+
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======MEDIA========-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */

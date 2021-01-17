@@ -2830,6 +2830,311 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* -----=======G LINE TITLE=======----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.g-line-title {
+  width: 100%;
+  padding: 13px;
+  background-color: #ffcc00;
+  text-align: center;
+  font-size: 30px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=======G-ADVANTAGES=======----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.g-advantages {
+  display: grid;
+  grid-template-columns: 741px 1fr;
+  margin-bottom: 93px; }
+  .g-advantages .g-advantages_left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 674px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    .g-advantages .g-advantages_left .g-advantages_left_text p:nth-child(1) {
+      font-size: 36px;
+      margin-bottom: -20px;
+      padding-left: 5px; }
+    .g-advantages .g-advantages_left .g-advantages_left_text p:nth-child(2) {
+      font-size: 133px;
+      color: #ffcc00;
+      font-family: 'Beba';
+      font-weight: 600 !important;
+      margin-bottom: -10px; }
+    .g-advantages .g-advantages_left .g-advantages_left_text p:nth-child(3) {
+      font-size: 29px;
+      padding-left: 5px; }
+  .g-advantages .g-advantages_right {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-left: 50px;
+    padding-top: 24px;
+    width: 789px; }
+    .g-advantages .g-advantages_right .right_blk {
+      padding-top: 18px;
+      padding-bottom: 20px;
+      display: flex;
+      width: 100%;
+      position: relative; }
+      .g-advantages .g-advantages_right .right_blk img {
+        width: 90px;
+        height: 90px;
+        margin-right: 40px; }
+      .g-advantages .g-advantages_right .right_blk .text_title {
+        font-size: 30px;
+        color: #ffcc00; }
+      .g-advantages .g-advantages_right .right_blk p {
+        font-size: 22px; }
+      .g-advantages .g-advantages_right .right_blk:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        background: #d5d9df; }
+      .g-advantages .g-advantages_right .right_blk:last-child::after {
+        display: none; }
+  .g-advantages .g-advantages_bottom {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    margin-top: 50px;
+    width: 1485px;
+    margin-left: 30px;
+    font-size: 18px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======G-GALLERY=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.g-gallery .g-gallery_title {
+  margin-bottom: 40px; }
+
+.g-gallery .g-gallery_main-blk {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0 50px;
+  column-gap: 40px;
+  row-gap: 40px;
+  margin-bottom: 58px; }
+  .g-gallery .g-gallery_main-blk .g-gallery_item {
+    text-align: center;
+    width: 270px; }
+    .g-gallery .g-gallery_main-blk .g-gallery_item .item_img {
+      width: 270px;
+      height: 270px;
+      margin-bottom: 20px; }
+    .g-gallery .g-gallery_main-blk .g-gallery_item .img-circle {
+      border-radius: 50%; }
+    .g-gallery .g-gallery_main-blk .g-gallery_item .item_title {
+      font-size: 22px;
+      margin-bottom: 5px; }
+    .g-gallery .g-gallery_main-blk .g-gallery_item .item_subtitle {
+      font-size: 19px;
+      color: #ffcc00; }
+
+.g-gallery .small-imgs {
+  grid-template-columns: repeat(6, 1fr); }
+  .g-gallery .small-imgs .g-gallery_item {
+    width: 204px; }
+    .g-gallery .small-imgs .g-gallery_item .item_img {
+      width: 204px;
+      height: 188px; }
+
+.g-gallery .big-imgs {
+  column-gap: 0px;
+  padding: 0 31px; }
+  .g-gallery .big-imgs .g-gallery_item {
+    width: 314px; }
+    .g-gallery .big-imgs .g-gallery_item .item_img {
+      width: 314px;
+      height: 233px; }
+    .g-gallery .big-imgs .g-gallery_item .item_title {
+      padding: 0 20px; }
+
+.g-gallery .g-gallery_attention {
+  margin-bottom: 45px;
+  padding: 0 20px;
+  font-size: 22px;
+  text-align: center; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======G-TABLE=======-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.g-table {
+  padding-bottom: 21px; }
+  .g-table .g-table_title {
+    margin-bottom: 20px; }
+  .g-table .g-table_table {
+    margin-left: 25px;
+    display: grid; }
+    .g-table .g-table_table .table_line {
+      flex-shrink: 0;
+      display: grid;
+      grid-template-columns: 256px 313px 313px 313px 313px;
+      min-height: 96px; }
+      .g-table .g-table_table .table_line .table_col {
+        border-bottom: 4px solid #d5d9df;
+        border-right: 4px solid #d5d9df;
+        padding: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .g-table .g-table_table .table_line .table_col p {
+          color: #ffcc00;
+          font-size: 45px; }
+        .g-table .g-table_table .table_line .table_col:last-child {
+          border-right: 0; }
+      .g-table .g-table_table .table_line .table_col1 {
+        padding: 32px; }
+        .g-table .g-table_table .table_line .table_col1 p {
+          font-family: 'Beba';
+          font-weight: 400 !important;
+          font-size: 22px; }
+        .g-table .g-table_table .table_line .table_col1 .col1_title {
+          color: #000000; }
+        .g-table .g-table_table .table_line .table_col1 .col1_sublititle {
+          color: #ffcc00; }
+    .g-table .g-table_table .table_line1 {
+      min-height: 50px; }
+      .g-table .g-table_table .table_line1 .table_col {
+        padding: 18px; }
+        .g-table .g-table_table .table_line1 .table_col p {
+          color: #000000;
+          font-size: 22px; }
+  .g-table .g-table_attention {
+    padding: 0 41px;
+    font-size: 22px;
+    line-height: 25px;
+    margin-top: 10px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======G-CALL-US=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.g-call-us {
+  margin-top: 21px;
+  margin-bottom: 93px;
+  display: flex;
+  margin-left: 41px;
+  align-items: center; }
+  .g-call-us .call-us_left {
+    font-size: 35px;
+    line-height: 40px;
+    width: 839px;
+    margin-right: 145px; }
+    .g-call-us .call-us_left a {
+      color: #ffcc00;
+      font-family: 'Beba';
+      font-weight: 600 !important;
+      font-size: 55px;
+      text-decoration: underline; }
+  .g-call-us .call-us_right {
+    font-size: 45px;
+    font-family: 'Beba';
+    font-weight: 600 !important;
+    padding: 12px 100px;
+    background-color: #ffcc00;
+    transition: .3s; }
+    .g-call-us .call-us_right:hover {
+      margin-bottom: 10px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======G-DEMANDS=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.g-demands {
+  padding-bottom: 91px; }
+  .g-demands .demands_title {
+    margin-bottom: 37px; }
+  .g-demands .g-deamands_main {
+    display: grid;
+    grid-template-columns: 493px 1fr;
+    padding-left: 35px; }
+    .g-demands .g-deamands_main .g-demands_left {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      width: 493px;
+      height: 364px;
+      align-self: center; }
+    .g-demands .g-deamands_main .g-demands_right {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      padding-left: 32px; }
+      .g-demands .g-deamands_main .g-demands_right .right_blk {
+        padding: 18px 0;
+        display: flex;
+        align-items: center;
+        border-bottom: 4px solid #d5d9df; }
+        .g-demands .g-deamands_main .g-demands_right .right_blk img {
+          margin-right: 37px; }
+        .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text {
+          font-size: 25px;
+          line-height: 28px; }
+          .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text span, .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text a {
+            color: #ffcc00;
+            font-size: 37px;
+            line-height: 40px;
+            font-family: 'Beba';
+            font-weight: 600 !important; }
+          .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text .text_images {
+            display: flex;
+            margin-top: 5px; }
+            .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text .text_images img {
+              width: 62px;
+              height: 62px;
+              display: block;
+              margin-right: 27px; }
+        .g-demands .g-deamands_main .g-demands_right .right_blk:last-child {
+          border-bottom: 0; }
+    .g-demands .g-deamands_main .g-demands_bottom {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      width: fit-content; }
+      .g-demands .g-deamands_main .g-demands_bottom .bottom-blk {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; }
+        .g-demands .g-deamands_main .g-demands_bottom .bottom-blk img {
+          width: 235px;
+          height: 3px;
+          margin-right: 16px; }
+        .g-demands .g-deamands_main .g-demands_bottom .bottom-blk p {
+          font-size: 20px; }
+      .g-demands .g-deamands_main .g-demands_bottom .bottom_text {
+        font-size: 25px;
+        line-height: 48.01px;
+        font-family: 'Beba';
+        font-weight: 600 !important;
+        text-align: center; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======MEDIA========-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
