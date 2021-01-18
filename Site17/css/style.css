@@ -288,6 +288,63 @@ a:hover, a:active, a:focus {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* -------=======GLOBAL========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+main {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #DDEAF9 0%, #FFFFFF 100%);
+  position: relative; }
+
+.planes {
+  position: absolute;
+  top: -80px;
+  left: 0; }
+
+.btn-w-arrow {
+  padding: 18px 71px 18px 31px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+  font-weight: 500 !important;
+  background: #1763F8;
+  box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35);
+  border-radius: 10px;
+  position: relative; }
+  .btn-w-arrow:after {
+    content: url(../img/svg/btn-arrow.svg);
+    position: absolute;
+    top: 50%;
+    right: 37px;
+    transform: translateY(-50%);
+    transition: .3s; }
+  .btn-w-arrow:hover::after {
+    right: 35px; }
+
+.big-title {
+  font-size: 44px;
+  line-height: 127%;
+  color: #213243;
+  font-family: "Aeroport" !important;
+  font-weight: 700 !important; }
+
+.small-title {
+  font-size: 32px;
+  line-height: 40px;
+  color: #213243;
+  font-weight: 500 !important;
+  margin-bottom: 26px; }
+
+.subtitle {
+  font-size: 14px;
+  line-height: 19px;
+  color: #213243;
+  padding-left: 1px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* -------=======HEADER========-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -396,9 +453,165 @@ header .wrapper-b {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* -------=======HEADER========-------- */
+/* --------=======INTRO========-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+.intro {
+  padding-top: 41px;
+  position: relative;
+  z-index: 1; }
+  .intro .intro_top {
+    margin-bottom: 54px; }
+    .intro .intro_top .wrapper {
+      padding: 0 179px 0 34px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .intro .intro_top .wrapper .intro_top-left {
+        margin-right: 134px; }
+        .intro .intro_top .wrapper .intro_top-left img {
+          width: 568px;
+          height: 671px; }
+      .intro .intro_top .wrapper .intro_top-right {
+        width: 527px; }
+        .intro .intro_top .wrapper .intro_top-right .top-right_on-title {
+          font-size: 14px;
+          line-height: 19px;
+          color: #B3BACC;
+          padding-left: 2px; }
+        .intro .intro_top .wrapper .intro_top-right .top-right_title {
+          margin-top: -7px;
+          margin-bottom: 27px; }
+        .intro .intro_top .wrapper .intro_top-right .top-right_subtitle {
+          margin-bottom: 72px; }
+  .intro .intro_ways {
+    margin-bottom: 159px; }
+    .intro .intro_ways .wrapper .ways_subtitle {
+      margin-bottom: 90px; }
+    .intro .intro_ways .wrapper .ways_ways {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 23px;
+      row-gap: 28px; }
+      .intro .intro_ways .wrapper .ways_ways .ways_way {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+        border-radius: 10px;
+        padding: 34px 10px 34px 19px;
+        display: flex;
+        align-items: center; }
+        .intro .intro_ways .wrapper .ways_ways .ways_way .way_thumb {
+          width: 60px;
+          height: 60px;
+          margin-right: 42px; }
+        .intro .intro_ways .wrapper .ways_ways .ways_way .way_text {
+          font-size: 16px;
+          line-height: 24px;
+          color: #213243;
+          font-weight: 500 !important; }
+  .intro .intro_how .wrapper {
+    width: 1520px;
+    margin-bottom: 73px; }
+    .intro .intro_how .wrapper .how_title, .intro .intro_how .wrapper .how_subtitle {
+      padding: 0 40px; }
+    .intro .intro_how .wrapper .how_subtitle {
+      margin-bottom: 100px; }
+    .intro .intro_how .wrapper .how_how-blocks {
+      display: grid;
+      grid-template-columns: repeat(4, 360px); }
+      .intro .intro_how .wrapper .how_how-blocks .how_block {
+        padding: 60px 54px 100px 38px;
+        position: relative; }
+        .intro .intro_how .wrapper .how_how-blocks .how_block .block_title {
+          font-size: 32px;
+          line-height: 40px;
+          color: #213243;
+          font-weight: 700 !important;
+          margin-bottom: 40px;
+          position: relative;
+          transition: .3s; }
+          .intro .intro_how .wrapper .how_how-blocks .how_block .block_title:after {
+            position: absolute;
+            content: "";
+            width: 30px;
+            height: 30px;
+            background: #FFFFFF;
+            border: 7px solid #F3F3F3;
+            box-sizing: border-box;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -59px;
+            transition: .3s;
+            z-index: 1; }
+          .intro .intro_how .wrapper .how_how-blocks .how_block .block_title::before {
+            content: "";
+            position: absolute;
+            left: -12px;
+            width: 12px;
+            height: 0;
+            background: -moz-linear-gradient(top, #3a7bfa 0%, rgba(32, 124, 202, 0.7) 30%, rgba(56, 122, 250, 0.5) 48%, rgba(32, 124, 202, 0.33) 67%, rgba(30, 87, 153, 0) 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #3a7bfa 0%, rgba(32, 124, 202, 0.7) 30%, rgba(56, 122, 250, 0.5) 48%, rgba(32, 124, 202, 0.33) 67%, rgba(30, 87, 153, 0) 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #3a7bfa 0%, rgba(32, 124, 202, 0.7) 30%, rgba(56, 122, 250, 0.5) 48%, rgba(32, 124, 202, 0.33) 67%, rgba(30, 87, 153, 0) 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a7bfa', endColorstr='#001e5799',GradientType=0 );
+            /* IE6-9 */
+            left: -50px;
+            top: 45%;
+            transition: .3s;
+            z-index: 1; }
+        .intro .intro_how .wrapper .how_how-blocks .how_block .block_text {
+          font-size: 14px;
+          line-height: 19px;
+          color: #213243; }
+        .intro .intro_how .wrapper .how_how-blocks .how_block:nth-child(1) {
+          margin-left: 12px; }
+          .intro .intro_how .wrapper .how_how-blocks .how_block:nth-child(1)::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 12px;
+            top: 65px;
+            left: -12px;
+            background: #F1F1F1; }
+        .intro .intro_how .wrapper .how_how-blocks .how_block:nth-child(5) {
+          border-left: 12px solid #F1F1F1;
+          border-bottom: 12px solid #F1F1F1;
+          border-right: 12px solid #F1F1F1;
+          border-radius: 0 0 24px 24px; }
+        .intro .intro_how .wrapper .how_how-blocks .how_block:nth-child(2) {
+          border-left: 12px solid #F1F1F1;
+          border-top: 12px solid #F1F1F1;
+          border-right: 12px solid #F1F1F1;
+          border-radius: 24px 24px 0 0;
+          margin-left: -12px; }
+        .intro .intro_how .wrapper .how_how-blocks .how_block:nth-child(7) {
+          border-left: 12px solid #F1F1F1;
+          border-bottom: 12px solid #F1F1F1;
+          border-right: 12px solid #F1F1F1;
+          border-radius: 0 0 24px 24px;
+          margin-left: -12px; }
+        .intro .intro_how .wrapper .how_how-blocks .how_block:nth-child(4) {
+          border-left: 12px solid #F1F1F1;
+          border-top: 12px solid #F1F1F1;
+          border-radius: 24px 0 0 0;
+          margin-left: -12px;
+          position: relative; }
+          .intro .intro_how .wrapper .how_how-blocks .how_block:nth-child(4)::before {
+            content: "";
+            width: 200%;
+            position: absolute;
+            top: -12px;
+            left: 100%;
+            border-top: 12px solid #F1F1F1; }
+        .intro .intro_how .wrapper .how_how-blocks .how_block:hover .block_title {
+          color: #387AFA; }
+          .intro .intro_how .wrapper .how_how-blocks .how_block:hover .block_title:after {
+            border: 7px solid #387AFA; }
+          .intro .intro_how .wrapper .how_how-blocks .how_block:hover .block_title::before {
+            height: 114px; }
 
 /*# sourceMappingURL=style.css.map */
