@@ -540,6 +540,31 @@ if(prices){
     }
 }
 
+// 
+// Shop popup
+// 
+
+let popupOpen = document.querySelectorAll(".item_buy");
+let popup = document.querySelector(".shop__popup");
+let popupClose = document.querySelector(".pp_close");
+
+if(popup){
+
+    for (let i = 0; i < popupOpen.length; i++) {
+        
+        popupOpen[i].addEventListener('click',()=>{
+            popup.classList.add("shop__popup-active");
+        });
+
+    }
+    
+    popupClose.addEventListener('click',()=>{
+        popup.classList.remove("shop__popup-active");
+    });
+}
+
+
+
 //
 //  Animation
 //
