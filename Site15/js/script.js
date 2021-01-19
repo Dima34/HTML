@@ -118,14 +118,21 @@ window.addEventListener("resize", ()=>{
 
 let textCopyBlk = document.querySelector(".header_mail");
 //let textToCopy = textCopyBlk.querySelector("a").innerHTML;
-let textCopyBtn = textCopyBlk.querySelector("span");
 
-textCopyBtn.addEventListener('click',()=>{
-    let textToCopy = textCopyBlk.querySelector("a");
-    textToCopy.select
-    document.execCommand("copy");
-    alert("Copied the text: " + textToCopy.value);
-});
+if(textCopyBlk){
+
+    let textCopyBtn = textCopyBlk.querySelector("span");
+
+    textCopyBtn.addEventListener('click',()=>{
+        let textToCopy = textCopyBlk.querySelector("a");
+        textToCopy.select
+        document.execCommand("copy");
+        alert("Copied the text: " + textToCopy.value);
+    });
+
+}
+
+
 
 //
 //  Burger
@@ -489,6 +496,49 @@ if(categoryOpen){
     }
 }
 
+//
+//  G-PRICES
+//
+
+let prices = document.querySelector(".g-prices");
+
+if(prices){
+    
+    let tabs = document.querySelectorAll(".prices_tab");
+    let mainBlks = document.querySelectorAll(".main-blk");
+
+
+    for (let i = 0; i < tabs.length; i++) {
+
+        tabs[i].addEventListener("click", ()=>{
+
+            tabs[i].classList.add("prices_tab-active");
+            mainBlks[i].classList.add("main-blk-active");
+
+            for (let b = 0; b < tabs.length; b++) {
+            
+                if(i != b){
+
+                    tabs[b].classList.remove("prices_tab-active");
+                    mainBlks[b].classList.remove("main-blk-active");
+
+                }
+
+            }
+
+        })
+        
+    }
+
+    for (let i = 0; i < tabs.length; i++) {
+        
+        for (let b = 0; b < tabs.length; b++) {
+            
+            
+        }
+        
+    }
+}
 
 //
 //  Animation
@@ -534,14 +584,20 @@ function animPartiallyVisible(elem,Class,duration = undefined){
     }
 }
 function animPartiallyVisibleALL(elem,Class,duration = undefined){
-    for(var i = 0; i < elem.length;i++){
-        if(isPartiallyVisible(elem[i])){
-            elem[i].classList.add(Class);
+    
+    if(elem){
+
+        for(var i = 0; i < elem.length;i++){
+            if(isPartiallyVisible(elem[i])){
+                elem[i].classList.add(Class);
+            }
+            if(duration != undefined){
+                elem[i].style.animationDuration = duration;
+            }
         }
-        if(duration != undefined){
-            elem[i].style.animationDuration = duration;
-        }
+
     }
+    
     
 }
 function animPartiallyVisibleReadress(elem,toElem,Class){
