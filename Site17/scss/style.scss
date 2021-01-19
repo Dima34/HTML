@@ -239,6 +239,22 @@ a:hover,a:active,a:focus{
   outline: 0;
 }
 
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; 
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden; 
+}
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -333,6 +349,9 @@ main{
   box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35);
   border-radius: 10px;
   position: relative;
+  display: block;
+  width: fit-content;
+  height: fit-content;
 
   &:after{
     content: url(../img/svg/btn-arrow.svg);
@@ -373,6 +392,61 @@ main{
   padding-left: 1px;
 }
 
+.on-title{
+  font-size: 14px;
+  line-height: 19px;
+  color: #B3BACC;
+}
+
+.link{
+  font-size: 16px;
+  line-height: 16px;
+  color: #1763F8;
+  position: relative;
+  padding-bottom: 2px;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  white-space: nowrap;
+
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background: #1763F8;
+  }
+}
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+  width: 10px; /* ширина для вертикального скролла */
+  background-color: #ffffff;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #1763F8;
+  border-radius: 9em;
+  transition: .3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #253861;
+}
+
+/* Стрелки */
+::-webkit-scrollbar-button:vertical:start:decrement {
+  display: none;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+  display: none;
+}
+
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -382,6 +456,8 @@ main{
 /* ------------------------------------ */
 
 header{
+  position: relative;
+  z-index: 1;
 
   .wrapper-b{
     display: flex;
@@ -574,9 +650,6 @@ header{
         width: 527px;
   
         .top-right_on-title{
-          font-size: 14px;
-          line-height: 19px;
-          color: #B3BACC;
           padding-left: 2px;
         }
   
@@ -790,3 +863,381 @@ header{
   
 }
 
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======PROGRAMS========------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.programs{
+  background: #DDEAF9;
+  padding-bottom: 475px;
+  padding-top: 80px;
+  position: relative;
+
+  .planes{
+    top: 0;
+  }
+
+  .wrapper{
+    display: flex;
+
+    .programs_left{
+      width: 466px;
+      margin-right: 22px;
+
+      .programs_on-title{
+        margin-bottom: 10px;
+      }
+
+      .programs_title{
+        margin-bottom: 24px;
+      }
+
+      .programs_subtitle{
+        width: 424px;
+        margin-bottom: 80px;
+      }
+
+      .programs_see-all{
+      }
+    }
+
+    .programs_right{
+      position: relative;
+
+      .swiper-container{
+
+        .swiper-wrapper{
+          padding-bottom: 20px;
+
+          .swiper-slide{
+            display: grid;
+            grid-template-columns: min-content min-content;
+            column-gap: 23px;
+            width: fit-content;
+            opacity: 0 !important;
+
+            .right_program{
+              width: 465px;
+              background: white;
+              border-radius: 10px;
+              height: fit-content;
+      
+              .program_image{
+                width: 100%;
+                height: 345px;
+                border-radius: 10px;
+              }
+      
+              .program_info{
+                width: 100%;
+                padding: 19px 24px 25px 24px;
+      
+                .program_title{
+                  font-weight: 500 !important;
+                  font-size: 24px;
+                  line-height: 32px;
+                  color: #213243;
+                  margin-bottom: 19px;
+                }
+      
+                .program_subtitle{
+                  font-size: 14px;
+                  line-height: 19px;
+                  color: #213243;
+                  margin-bottom: 34px;
+                  width: 386px;
+                }
+      
+                .program_see-more{
+                  margin-left: auto;
+                }
+              }
+            }
+          }
+
+          .swiper-slide-active{
+            opacity: 1 !important;
+          }
+        }
+
+
+      }
+
+      .navigation-block{
+        position: absolute;
+        bottom: 20px;
+        left: -92px;
+        display: flex;
+
+        .swiper-button-next,.swiper-button-prev{
+          position: relative;
+          left: unset;
+          right: unset;
+          top: unset;
+          height: fit-content;
+          width: fit-content;
+          border-radius: 50%;
+          transition: .3s;
+
+
+          &::after{
+            display: none;
+          }
+
+          &:hover{
+            -webkit-box-shadow: 0px 0px 3px 4px rgba(221, 224, 230, 0.55);
+            -moz-box-shadow: 0px 0px 3px 4px rgba(221, 224, 230, 0.55);
+            box-shadow: 0px 0px 3px 4px rgba(221, 224, 230, 0.55);
+          }
+
+          img{
+            width: 32px;
+            height: 32px;
+          }
+        }
+  
+        .swiper-button-prev{
+          margin-right: 5px;
+        }
+
+      }
+    }
+
+  }
+
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=======SPECIALIST========------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.specialists{
+  margin-top: -349px;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 146px;
+
+  .wrapper{
+
+    .specialists_header{
+      display: grid;
+      grid-template-columns: 1fr min-content;
+      margin-bottom  : 37px;
+
+      .specialists_title{
+        margin-bottom: 20px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      .specialists_all{
+        justify-self:end;
+        white-space: nowrap;
+        margin-left: 30px;
+      }
+    }
+
+    .specialists_main{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 30px;
+      column-gap: 23px;
+      
+
+      .specialist_card{
+        display: flex;
+        width: 343px;
+        padding: 19px 16px 31px 16px;
+        flex-direction: column;
+        background: #FFFFFF;
+        box-shadow: 0px 22px 44px -12px rgba(221, 224, 230, 0.35);
+        border-radius: 10px;
+
+        .card_image{
+          width: 310px;
+          height: 310px;
+          margin-bottom: 15px;
+          border-radius: 10px;
+        }
+
+        .card_name{
+          font-weight: 500 !important;
+          font-size: 18px;
+          line-height: 20px;
+          color: #242729;
+          margin-bottom: 15px;
+        }
+
+        .card_professions{
+          display: flex;
+          margin-bottom: 22px;
+
+          .profession{
+            font-size: 12px;
+            line-height: 16px;
+            padding: 10px 13px;
+            background: #00987F;
+            border-radius: 10px;
+            color: #FFFFFF;
+            font-weight: 700 !important;
+            margin-right: 6px;
+            min-width: 94px;
+            text-align: center;
+
+            &:nth-child(2n){
+              background: #1763F8;
+            }
+          }
+        }
+
+        .card_statistics{
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+
+          .card_statistic{
+
+            .statistic-name{
+              font-size: 12px;
+              line-height: 13px;
+              color: #B3BACC;
+              margin-bottom: 10px;
+            }
+
+            .statistic_text,.raiting-text{
+              font-weight: 500 !important;
+              font-size: 16px;
+              line-height: 24px;
+              color: #242729;
+            }
+
+
+            .raiting{
+              display: flex;
+              align-items: center;
+
+              .raiting-text{
+                margin-right: 8px;
+              }
+
+              .raiting_stars{
+                display: flex;
+                width: fit-content;
+                height: 8px;
+
+                .raiting_star{
+                  margin-right: 2px;
+                  position: relative;
+                  width: 8px;
+                  height: 8px;
+
+                  img{
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                  }
+
+                  img:last-child{
+                    display: none;
+                  }
+                }
+
+                .star-active{
+
+                  img:last-child{
+                    display: inline;
+                  }
+                  
+                  img:first-child{
+                    display: none;
+                  }
+                }
+              }
+            }
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------========BLOG=========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.blog{
+  margin-bottom: 240px;
+
+  .wrapper{
+
+    .blog_header{
+      display: grid;
+      grid-template-columns: 1fr min-content;
+      margin-bottom: 40px;
+
+      .blog_title{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-bottom: 20px;
+      }
+
+      .blog_see-all{
+        margin-left: 10px;
+      }
+    }
+
+    .blog_main{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 65px;
+      row-gap: 80px;
+
+      .blog_item{
+        display: flex;
+
+        .item_img{
+          width: 100px;
+          height: 82px;
+          border-radius: 10px;
+          margin-right: 22px;
+          flex-shrink: 0;
+        }
+
+        .item_info{
+
+          .info_title{
+            font-weight: 500 !important;
+            font-size: 16px;
+            line-height: 24px;
+            color: #242729;
+            margin-bottom: 8px;
+          }
+
+          .info_date{
+            font-size: 12px;
+            line-height: 13px;
+            margin-bottom: 15px;
+            color: #B3BACC;
+          }
+
+          .info_text{
+            font-size: 14px;
+            line-height: 19px;
+          }
+        }
+      }
+    }
+  }
+}
