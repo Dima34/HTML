@@ -16,7 +16,6 @@ ibg();
 
 let programsBlk = document.querySelector(".programs");
 let blocksInSlide = 2;
-
 if(programsBlk){
 
     AddSlidesToPrograms(blocksInSlide);
@@ -37,7 +36,6 @@ function AddSlidesToPrograms(blocksInSlide){
         wrapperBlock.className = "swiper-slide";
 
         sliderWrapper.append(wrapperBlock);
-
     }
 
     let slides = sliderWrapper.querySelectorAll(".swiper-slide");
@@ -45,12 +43,21 @@ function AddSlidesToPrograms(blocksInSlide){
     let slideNumber = 0;
     for (let i = 0; i < block.length; i++) {
 
-        console.log("i = ", i,"; i%slidesMustBe = ", i%slidesMustBe)
-        if(i != 0 && i%slidesMustBe == 0){
-            slideNumber ++;
+        if(blocksInSlide > 1){
+
+            if(i != 0 && i%slidesMustBe == 0){
+                slideNumber ++;
+            }
+
+            slides[slideNumber].append(block[i]);
         }
-        
-        slides[slideNumber].append(block[i]);
+
+        else{
+            slideNumber ++; 
+            
+            slides[slideNumber-1].append(block[i]);
+            
+        }
         
     }
 
