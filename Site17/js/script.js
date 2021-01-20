@@ -22,8 +22,6 @@ if(programsBlk){
         blocksInSlide = 2;
         AddSlidesToPrograms(blocksInSlide);
     }
-    
-    console.log(window.outerWidth);
 
     if(window.outerWidth <= 900){
         blocksInSlide = 1;
@@ -39,7 +37,6 @@ if(programsBlk){
     
         if(window.outerWidth <= 900){
             blocksInSlide = 1;
-            console.log('cha');
             AddSlidesToPrograms(blocksInSlide);
         }
 
@@ -106,3 +103,128 @@ burgerOpen.addEventListener('click',()=>{
 burgerClose.addEventListener('click',()=>{
     burger.classList.remove("header_nav-active");
 });
+
+// 
+// Pop ups
+// 
+
+// Authorization
+
+let AuthorizePopupOpen = document.querySelector(".login_log-in");
+let AuthorizePopupOpen1 = document.querySelectorAll(".enter-acc");
+let AutorizePopup = document.querySelector(".authorize__popup");
+
+
+let RegPopupOpen = document.querySelector(".login_register");
+let RegPopupOpen1 = document.querySelectorAll(".create-acc");
+let RegPopup = document.querySelector(".reg__popup");
+
+let RemindPopupOpen = document.querySelectorAll(".remind-link");
+let RemindPopup = document.querySelector(".remind__popup");
+
+let RecoveryPopupOpen = document.querySelectorAll(".link_forgot-pass");
+let RecoveryPopup = document.querySelector(".remind__popup");
+
+
+let AllPopups = document.querySelectorAll(".popup")
+let popupClose = document.querySelectorAll(".pp_close");
+
+if(popupClose){
+
+    AuthorizePopupOpen.addEventListener('click',()=>{
+        closeAllPopups();
+        AutorizePopup.classList.add("popup-active");
+        checkHeight(AutorizePopup);
+    });
+
+    for (let i = 0; i < AuthorizePopupOpen1.length; i++) {
+        
+        AuthorizePopupOpen1[i].addEventListener('click',()=>{
+            closeAllPopups();
+            AutorizePopup.classList.add("popup-active");
+            checkHeight(AutorizePopup);
+        });
+        
+    }
+
+    for (let i = 0; i < RegPopupOpen1.length; i++) {
+        
+        RegPopupOpen1[i].addEventListener('click',()=>{
+            closeAllPopups();
+            RegPopup.classList.add("popup-active");
+            checkHeight(RegPopup);
+        });
+        
+    }
+
+    for (let i = 0; i < RecoveryPopupOpen.length; i++) {
+        
+        RecoveryPopupOpen[i].addEventListener('click',()=>{
+            closeAllPopups();
+            RecoveryPopup.classList.add("popup-active");
+            checkHeight(RecoveryPopup);
+        });
+        
+    }
+
+    for (let i = 0; i < RemindPopupOpen.length; i++) {
+        
+        RemindPopupOpen[i].addEventListener('click',()=>{
+            closeAllPopups();
+            RemindPopup.classList.add("popup-active");
+            checkHeight(RemindPopup);
+        });
+        
+    }
+    
+
+    RegPopupOpen.addEventListener('click',()=>{
+        closeAllPopups();
+        RegPopup.classList.add("popup-active");
+        checkHeight(RegPopup);
+    });
+
+
+
+    function closeAllPopups(){
+        popupClose = document.querySelectorAll(".pp_close");
+        
+        for (let i = 0; i < popupClose.length; i++) {
+            
+            AllPopups[i].classList.remove("popup-active");
+            
+        }
+    }
+
+    function checkHeight(el){
+
+        insideBlock = el.querySelector(".popup_popup_blk");
+
+        if(insideBlock){
+            elHeight = Number(window.getComputedStyle(insideBlock).height.slice(0,-2));
+
+            if(elHeight >window.innerHeight){
+                
+                el.style.alignItems = "flex-start";
+                el.style.overflowY = "scroll";
+
+            }
+            
+
+        }
+    }
+
+    for (let i = 0; i < popupClose.length; i++) {
+            
+        popupClose[i].addEventListener('click',()=>{
+            AllPopups[i].classList.remove("popup-active");
+        });
+        
+    }
+
+}
+
+
+// Block height fix
+
+

@@ -713,6 +713,7 @@ header{
   }
 
   .intro_how{
+    overflow: hidden;
 
     .wrapper{
       width: 1520px;
@@ -877,6 +878,7 @@ header{
   padding-bottom: 475px;
   padding-top: 80px;
   position: relative;
+  overflow: hidden;
 
   .planes{
     top: 0;
@@ -916,6 +918,7 @@ header{
       position: relative;
 
       .swiper-container{
+        width: 100%;
 
         .swiper-wrapper{
           padding-bottom: 20px;
@@ -924,7 +927,7 @@ header{
             display: grid;
             grid-template-columns: min-content min-content;
             column-gap: 23px;
-            width: fit-content;
+            width: 100%!important;
             opacity: 0 !important;
 
             .right_program{
@@ -1557,6 +1560,191 @@ footer{
     box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35);
   }
 }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======POP-UPS=======-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.popup{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left:0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  display: none;
+}
+
+.popup-active{
+  display: flex;
+}
+
+.popup_popup_blk{
+  max-width: 465px;
+  width: 100%;
+  padding: 25px 0px 0 0px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+  border-radius: 10px;
+  position: relative;
+  position: relative;
+
+  .popup_popup_blk_title {
+    font-weight: 500 !important;
+    padding: 0 30px;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: #1F1E1B;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 9px;
+  }
+
+  .popup_popup_blk_subtitle{
+    padding: 0 30px;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    span{
+      color: #1763F8;
+    }
+  }
+
+  .popup_popup_blk_main{
+    padding: 0 30px;
+    width: 100%;
+    padding-bottom: 33px;
+
+    .popup_inputgroup{
+      width: 100%;
+      margin-bottom: 33px;
+
+      .group_header{
+        color: #213243;
+        font-size: 14px;
+        line-height: 19px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+
+        .group_title{
+          padding-left: 33px;
+        }
+
+        .group_link{
+          text-decoration-line: underline;
+          color: #1763F8;
+          cursor: pointer;
+        }
+
+      }
+
+      input, textarea{
+        background: #F2F7FD;
+        border-radius: 10px;
+        border: 0;
+        padding: 15px 25px;
+        width: 100%;
+      }
+
+      textarea{
+        resize: none;
+        min-height: 102px;
+      }
+    }
+  }
+
+  .popup_btn{
+    display: block;
+    width: fit-content;
+    padding:14px 45px;
+    background: #1763F8;
+    box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 500 !important;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 auto;
+  }
+
+  .popup_popup_blk_footer{
+    padding: 18px 30px 30px 30px;
+    background: #ECF3FC;
+    box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+    border-radius: 10px;
+    text-align: center;
+
+    p{
+      font-size: 14px;
+      line-height: 19px;
+      color: #B3BACC;
+      margin-bottom: 5px;
+    }
+
+    .pp_link{
+      font-size: 16px;
+      line-height: 16px;
+      color: #1763F8;
+      text-decoration: underline;
+    }
+
+    span{
+      color: #1763F8;
+      text-decoration: underline;
+    }
+
+
+
+  }
+
+  .popup_centered{ 
+    font-size: 14px;
+    line-height: 19px;
+    color: #B3BACC;
+    text-align: center;
+    margin-top: 34px;
+
+    p{
+      margin-bottom: 8px;
+    }
+
+    p:last-child{
+      font-size: 16px;
+      line-height: 16px;
+      color: #1763F8;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .pp_close{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 14px;
+    top: 14px;
+  }
+}
+
+.remind__popup{
+  .popup_popup_blk_subtitle{
+    margin-bottom: 23px;
+  }
+}
+
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2418,8 +2606,8 @@ footer{
     padding-bottom: 0.104vw;
   }
   
-  header{
-    
+  header{ 
+
     .wrapper-b{
       padding: 8.125vw 3.125vw;
       justify-content: space-between;
