@@ -18,7 +18,34 @@ let programsBlk = document.querySelector(".programs");
 let blocksInSlide = 2;
 if(programsBlk){
 
-    AddSlidesToPrograms(blocksInSlide);
+    if(window.innerWidth > 900){
+        blocksInSlide = 2;
+        AddSlidesToPrograms(blocksInSlide);
+    }
+    
+    console.log(window.outerWidth);
+
+    if(window.outerWidth <= 900){
+        blocksInSlide = 1;
+        AddSlidesToPrograms(blocksInSlide);
+    }
+
+    window.addEventListener("resize", ()=>{
+
+        if(window.innerWidth > 900){
+            blocksInSlide = 2;
+            AddSlidesToPrograms(blocksInSlide);
+        }
+    
+        if(window.outerWidth <= 900){
+            blocksInSlide = 1;
+            console.log('cha');
+            AddSlidesToPrograms(blocksInSlide);
+        }
+
+    })
+
+    
 
 }
 
@@ -62,3 +89,20 @@ function AddSlidesToPrograms(blocksInSlide){
     }
 
 }
+
+// 
+// Burger
+// 
+
+let burgerOpen = document.querySelector(".burger");
+let burger = document.querySelector(".header_nav");
+let burgerClose = document.querySelector(".burger-close");
+
+burgerOpen.addEventListener('click',()=>{
+    
+    burger.classList.add("header_nav-active");
+});
+
+burgerClose.addEventListener('click',()=>{
+    burger.classList.remove("header_nav-active");
+});
