@@ -680,6 +680,10 @@ header {
             .intro .intro_how .wrapper .how_how-blocks .how_block:hover .block_title::before {
               height: 114px; }
 
+.e-intro {
+  background: white;
+  margin-top: -50px; }
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -776,6 +780,10 @@ header {
             height: 32px; }
         .programs .wrapper .programs_right .navigation-block .swiper-button-prev {
           margin-right: 5px; }
+
+.e-programs {
+  padding-bottom: 80px;
+  margin-bottom: 94px; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -969,6 +977,19 @@ header {
         color: #545454; }
       .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk:first-child {
         margin-top: 64px; }
+
+.for-employee {
+  padding-top: 65px;
+  padding-bottom: 381px;
+  background: #DDEAF9;
+  position: relative; }
+  .for-employee .planes {
+    top: 0; }
+  .for-employee .planes_mobile {
+    display: none; }
+  .for-employee .wrapper .adv_right .right_image {
+    width: 400px;
+    height: 480px; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1459,6 +1480,8 @@ footer {
             border: 0.365vw solid #387AFA; }
           .intro .intro_how .wrapper .how_how-blocks .how_block:hover .block_title::before {
             height: 5.938vw; }
+  .e-intro {
+    margin-top: -2.604vw; }
   .programs {
     padding-bottom: 24.740vw;
     padding-top: 4.167vw; }
@@ -1506,6 +1529,9 @@ footer {
         height: 1.667vw; }
       .programs .wrapper .programs_right .navigation-block .swiper-button-prev {
         margin-right: 0.260vw; }
+  .e-programs {
+    padding-bottom: 4.167vw;
+    margin-bottom: 4.896vw; }
   .specialists {
     margin-top: -18.177vw;
     margin-bottom: 7.604vw; }
@@ -1612,6 +1638,12 @@ footer {
       font-size: 0.938vw; }
     .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk:first-child {
       margin-top: 3.333vw; }
+  .for-employee {
+    padding-top: 3.385vw;
+    padding-bottom: 19.844vw; }
+    .for-employee .wrapper .adv_right .right_image {
+      width: 20.833vw;
+      height: 25vw; }
   .clients {
     padding-bottom: 5.208vw; }
     .clients .wrapper .clients_left {
@@ -1999,6 +2031,8 @@ footer {
                   padding: 5.625vw 20vw 5.625vw 13vw; }
       .programs .wrapper .programs_right .navigation-block {
         display: none; }
+  .e-programs {
+    padding-bottom: 19.063vw; }
   .specialists {
     margin-top: 0;
     margin-bottom: 15vw;

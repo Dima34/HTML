@@ -865,6 +865,11 @@ header{
   
 }
 
+.e-intro{
+  background: white;
+  margin-top: -50px;
+}
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1019,6 +1024,11 @@ header{
 
   }
 
+}
+
+.e-programs{
+  padding-bottom: 80px;
+  margin-bottom: 94px;
 }
 
 /* ------------------------------------ */
@@ -1318,6 +1328,31 @@ header{
           }
 
         }
+      }
+    }
+  }
+}
+
+.for-employee{
+  padding-top: 65px;
+  padding-bottom: 381px;
+  background: #DDEAF9;
+  position: relative;
+
+  .planes{
+    top: 0;
+  }
+
+  .planes_mobile{
+    display: none;
+  }
+
+  .wrapper{
+
+    .adv_right{
+      .right_image{
+        width: 400px;
+        height: 480px;
       }
     }
   }
@@ -2089,6 +2124,10 @@ footer{
       }
     } 
   }
+
+  .e-intro{
+    margin-top: -2.604vw;
+  }
   
   .programs{
     padding-bottom: 24.740vw;
@@ -2178,6 +2217,11 @@ footer{
         }
       }
     }
+  }
+
+  .e-programs{
+    padding-bottom:  4.167vw;
+    margin-bottom: 4.896vw;
   }
 
   .specialists{
@@ -2382,6 +2426,21 @@ footer{
               margin-top: 3.333vw;
             }
           }
+        }
+      }
+    }
+  }
+
+  .for-employee{
+    padding-top: 3.385vw;
+    padding-bottom: 19.844vw;
+  
+    .wrapper{
+  
+      .adv_right{
+        .right_image{
+          width: 20.833vw;
+          height: 25vw;
         }
       }
     }
@@ -3052,6 +3111,10 @@ footer{
         }
       }
     }
+  }
+
+  .e-programs{
+    padding-bottom: 19.063vw;
   }
 
   .specialists{
