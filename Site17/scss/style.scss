@@ -590,7 +590,6 @@ header{
           
         }
 
-
         .login_register,.login_log-in{
           @include Aero(400);
           font-size: 16px;
@@ -1959,14 +1958,42 @@ footer{
 
           }
            
-          .login_selection{
+          .login_selection{ 
             margin-right: 1.042vw;
   
             .selection_text{
-              font-size: 0.833vw;
-              line-height: 1.146vw;
+              display: flex;
+  
+              a{
+                font-size: 0.833vw;
+                line-height: 1.146vw;
+              }
+              
             }
-     
+  
+            .selection_slider{
+              border-radius: 1.198vw;
+              width: 1.510vw;
+              height: 0.833vw;
+              margin: 0 0.990vw;
+              align-self: center;
+              justify-self: center;
+  
+              &::before{
+                left: 0.104vw;
+                width: 0.417vw;
+                height: 0.417vw;
+                border: 0.104vw solid #1763F8;
+              }
+            }
+  
+            .slider-active{
+  
+              &::before{
+                left: calc(100% - 0.729vw);
+              }
+            }
+  
           }
   
           .login_register,.login_log-in{
@@ -2802,16 +2829,31 @@ footer{
             margin-bottom: 4vw;
           }
            
-          .login_selection{
+          .login_selection{ 
             margin-right: 0;
+            display: flex;
             flex-direction: column;
   
             .selection_text{
-              font-size: 5vw;
-              line-height: 12.875vw;
-              padding: 0;
+  
+              a{
+                font-size: 5vw;
+                line-height: 6.875vw;
+              }
+              
             }
-
+  
+            .selection_slider{
+              display: none;
+            }
+  
+            .slider-active{
+  
+              &::before{
+                left: calc(100% - 0.729vw);
+              }
+            }
+  
           }
   
           .login_register,.login_log-in{

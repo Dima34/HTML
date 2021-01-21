@@ -1385,8 +1385,24 @@ footer {
     header .wrapper-b .header_nav .header_login .login_selection {
       margin-right: 1.042vw; }
       header .wrapper-b .header_nav .header_login .login_selection .selection_text {
-        font-size: 0.833vw;
-        line-height: 1.146vw; }
+        display: flex; }
+        header .wrapper-b .header_nav .header_login .login_selection .selection_text a {
+          font-size: 0.833vw;
+          line-height: 1.146vw; }
+      header .wrapper-b .header_nav .header_login .login_selection .selection_slider {
+        border-radius: 1.198vw;
+        width: 1.510vw;
+        height: 0.833vw;
+        margin: 0 0.990vw;
+        align-self: center;
+        justify-self: center; }
+        header .wrapper-b .header_nav .header_login .login_selection .selection_slider::before {
+          left: 0.104vw;
+          width: 0.417vw;
+          height: 0.417vw;
+          border: 0.104vw solid #1763F8; }
+      header .wrapper-b .header_nav .header_login .login_selection .slider-active::before {
+        left: calc(100% - 0.729vw); }
     header .wrapper-b .header_nav .header_login .login_register, header .wrapper-b .header_nav .header_login .login_log-in {
       font-size: 0.833vw;
       line-height: 1.146vw; }
@@ -1845,11 +1861,15 @@ footer {
           margin-bottom: 4vw; }
         header .wrapper-b .header_nav .header_login .login_selection {
           margin-right: 0;
+          display: flex;
           flex-direction: column; }
-          header .wrapper-b .header_nav .header_login .login_selection .selection_text {
+          header .wrapper-b .header_nav .header_login .login_selection .selection_text a {
             font-size: 5vw;
-            line-height: 12.875vw;
-            padding: 0; }
+            line-height: 6.875vw; }
+          header .wrapper-b .header_nav .header_login .login_selection .selection_slider {
+            display: none; }
+          header .wrapper-b .header_nav .header_login .login_selection .slider-active::before {
+            left: calc(100% - 0.729vw); }
         header .wrapper-b .header_nav .header_login .login_register, header .wrapper-b .header_nav .header_login .login_log-in {
           font-size: 5vw;
           line-height: 12.875vw;
