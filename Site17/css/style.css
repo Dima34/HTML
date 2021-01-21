@@ -404,7 +404,9 @@ header {
     header .wrapper-b .header_nav {
       display: flex;
       align-items: center;
-      width: 100%; }
+      width: 100%;
+      height: fit-content;
+      border: 1px solid red; }
       header .wrapper-b .header_nav .nav_itemlist {
         padding: 30px;
         display: flex;

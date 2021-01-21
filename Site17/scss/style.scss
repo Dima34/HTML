@@ -448,6 +448,8 @@ header{
       display: flex;
       align-items: center;
       width: 100%;
+      height: fit-content;
+      border: 1px solid red;
 
       .nav_itemlist{
         padding: 30px;
