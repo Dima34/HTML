@@ -509,23 +509,17 @@ header{
         align-items: center;
         margin-left: auto;
 
-        input{
+        .nav_consult{
           font-size: 16px;
           line-height: 22px;
           color: #B3BACC;
           background: #EDEDED;
           border-radius: 10px;
           border: 0;
-          padding: 13px 27px;
+          padding: 13px 26px;
           width: 249px;
           margin-left: auto;
           margin-right: 49px; 
-
-          &::placeholder{
-            font-size: 16px;
-            line-height: 22px;
-            color: #B3BACC;
-          }
         }
          
         .login_selection{ 
@@ -633,36 +627,48 @@ header{
 
     .wrapper{
       padding: 0 179px 0 34px;
+      position: relative;
       
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      .top-container{
 
-      .intro_top-left{
-        margin-right: 134px;
-  
-        img{
-          width: 568px;
-          height: 671px;
+        .swiper-slide{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          opacity: 0 !important;
+
+          .intro_top-left{
+            margin-right: 134px;
+      
+            img{
+              width: 568px;
+              height: 671px;
+            }
+          }
+      
+          .intro_top-right{
+            width: 527px;
+      
+            .top-right_on-title{
+              padding-left: 2px;
+            }
+      
+            .top-right_title{
+              margin-top: -7px;
+              margin-bottom: 27px;
+            }
+      
+            .top-right_subtitle{
+              margin-bottom: 72px;
+            }
+          }
+        }
+
+        .swiper-slide-active{
+          opacity: 1 !important;
         }
       }
-  
-      .intro_top-right{
-        width: 527px;
-  
-        .top-right_on-title{
-          padding-left: 2px;
-        }
-  
-        .top-right_title{
-          margin-top: -7px;
-          margin-bottom: 27px;
-        }
-  
-        .top-right_subtitle{
-          margin-bottom: 72px;
-        }
-      }
+      
     }
 
     
@@ -965,6 +971,8 @@ header{
                   color: #213243;
                   margin-bottom: 34px;
                   width: 386px;
+                  height: 53px;
+                  overflow: hidden;
                 }
       
                 .program_see-more{
@@ -1080,6 +1088,7 @@ header{
         background: #FFFFFF;
         box-shadow: 0px 22px 44px -12px rgba(221, 224, 230, 0.35);
         border-radius: 10px;
+        transition: .3s;
 
         .card_image{
           width: 310px;
@@ -1184,6 +1193,10 @@ header{
             
           }
         }
+
+        &:hover{
+          transform: scale(1.05);
+        }
       }
     }
   }
@@ -1243,6 +1256,7 @@ header{
             line-height: 24px;
             color: #242729;
             margin-bottom: 8px;
+            transition: .3s;
           }
 
           .info_date{
@@ -1255,6 +1269,14 @@ header{
           .info_text{
             font-size: 14px;
             line-height: 19px;
+          }
+        }
+
+        &:hover{
+          .item_info{
+            .info_title{
+              color: #1763F8;
+            }
           }
         }
       }
@@ -1884,18 +1906,14 @@ footer{
   
         .header_login{
   
-          input{
+          .nav_consult{
             font-size: 0.833vw;
             line-height: 1.146vw;
             border-radius: 0.521vw;
-            padding: 0.677vw 1.406vw;
+            padding: 0.677vw 1.206vw;
             width: 12.969vw;
             margin-right: 2.552vw; 
-  
-            &::placeholder{
-              font-size: 0.833vw;
-              line-height: 1.146vw;
-            }
+
           }
            
           .login_selection{
@@ -2193,6 +2211,7 @@ footer{
                     line-height: 0.990vw;
                     margin-bottom: 1.771vw;
                     width: 20.104vw;
+                    height: 3.9vw;
                   }
                 }
               }
@@ -2732,7 +2751,7 @@ footer{
           display: grid;
           grid-template-rows: min-content;
   
-          input{
+          .nav_consult{
             font-size: 5vw;
             line-height: 6.875vw;
             border-radius: 3.125vw;
@@ -2742,13 +2761,8 @@ footer{
             grid-row-start: 4;
             grid-row-end: 5;
             margin-top: 8.125vw;
-
-  
-            &::placeholder{
-              text-align: center;
-              font-size: 5vw;
-              line-height: 6.875vw;
-            }
+            text-align: center;
+            color: #B3BACC !important;
           }
            
           .login_selection{
@@ -3000,9 +3014,7 @@ footer{
                 }
   
                 &::before{
-                  width: 3.750vw;
-                  height: 20.938vw;
-                  left: -11.504vw;
+                  display: none;
                 }
               }
             }
@@ -3094,6 +3106,7 @@ footer{
                     line-height: 5.938vw;
                     width: 100%;
                     margin-bottom: 5vw;
+                    height: 24.9vw;
                   }
 
                   .program_see-more{

@@ -27,7 +27,7 @@
                 </ul>
 
                 <div class="header_login">
-                    <input type="text" name="wanna_consult" id="wanna_consult" class="nav_input" placeholder="Хочешь консультировать?">
+                    <a href="#" class="nav_consult">Хочешь консультировать?</a>
 
                     <div class="login_selection">
                         <p class="selection_text">Частному клиенту</p>
@@ -57,17 +57,65 @@
             <div class="intro_top">
 
                 <div class="wrapper">
+                    <div class="swiper-container top-container">
 
-                    <div class="intro_top-left">
-                        <img src="./img/main_intro.png" alt="intro image">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+
+                                <div class="intro_top-left">
+                                    <img src="./img/main_intro.png" alt="intro image">
+                                </div>
+            
+                                <div class="intro_top-right">
+                                    <p class="top-right_on-title on-title">Портал онлайн консультаций</p>
+                                    <h1 class="top-right_title big-title">Пробная консультация</h1>
+                                    <p class="top-right_subtitle subtitle">Мы тщательно проверяем и собеседуем всех наших специалистов. Они имеют дипломы о высшем образовании, сертификаты  и регулярно проходят атестации.</p>
+                                    <a href="#" class="btn-w-arrow top-right_btn">Получить консультацию</a>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide">
+
+                                <div class="intro_top-left">
+                                    <img src="./img/main_intro.png" alt="intro image">
+                                </div>
+            
+                                <div class="intro_top-right">
+                                    <p class="top-right_on-title on-title">Порта`1212л онлайн консультаций</p>
+                                    <h1 class="top-right_title big-title">Пробная консультация</h1>
+                                    <p class="top-right_subtitle subtitle">Мы тщательно проверяем и собеседуем всех наших специалистов. Они имеют дипломы о высшем образовании, сертификаты  и регулярно проходят атестации.</p>
+                                    <a href="#" class="btn-w-arrow top-right_btn">Получить консультацию</a>
+                                </div>
+                                
+                            </div>
+
+                            <div class="swiper-slide">
+
+                                <div class="intro_top-left">
+                                    <img src="./img/main_intro.png" alt="intro image">
+                                </div>
+            
+                                <div class="intro_top-right">
+                                    <p class="top-right_on-title on-title">Портал онлайн консультаций</p>
+                                    <h1 class="top-right_title big-title">Пробная консультация</h1>
+                                    <p class="top-right_subtitle subtitle">Мы тщательно проверяем и собеседуем всех наших специалистов. Они имеют дипломы о высшем образовании, сертификаты  и регулярно проходят атестации.</p>
+                                    <a href="#" class="btn-w-arrow top-right_btn">Получить консультацию</a>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    
                     </div>
 
-                    <div class="intro_top-right">
-                        <p class="top-right_on-title on-title">Портал онлайн консультаций</p>
-                        <h1 class="top-right_title big-title">Пробная консультация</h1>
-                        <p class="top-right_subtitle subtitle">Мы тщательно проверяем и собеседуем всех наших специалистов. Они имеют дипломы о высшем образовании, сертификаты  и регулярно проходят атестации.</p>
-                        <a href="#" class="btn-w-arrow top-right_btn">Получить консультацию</a>
-                    </div>
+                    <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                   
+
+
 
                 </div>
 
@@ -262,7 +310,7 @@
 
                 <div class="programs_right">
 
-                    <div class="swiper-container">
+                    <div class="swiper-container programs-container">
 
                         <div class="swiper-wrapper">
 
@@ -1198,7 +1246,7 @@
     <script src="./js/script.js"></script>
 
     <script>
-		var swiper = new Swiper('.swiper-container', {
+		var swiper = new Swiper('.programs-container', {
             spaceBetween: 0,
             slidesPerView: "auto",
             effect: 'fade',
@@ -1208,6 +1256,16 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+    </script>
+    
+    <script>
+		var swiper = new Swiper('.top-container', {
+            effect: 'fade',
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+    });
 	</script>
 
 </body>

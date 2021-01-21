@@ -444,21 +444,17 @@ header {
         display: flex;
         align-items: center;
         margin-left: auto; }
-        header .wrapper-b .header_nav .header_login input {
+        header .wrapper-b .header_nav .header_login .nav_consult {
           font-size: 16px;
           line-height: 22px;
           color: #B3BACC;
           background: #EDEDED;
           border-radius: 10px;
           border: 0;
-          padding: 13px 27px;
+          padding: 13px 26px;
           width: 249px;
           margin-left: auto;
           margin-right: 49px; }
-          header .wrapper-b .header_nav .header_login input::placeholder {
-            font-size: 16px;
-            line-height: 22px;
-            color: #B3BACC; }
         header .wrapper-b .header_nav .header_login .login_selection {
           display: flex;
           align-items: center;
@@ -532,23 +528,28 @@ header {
     margin-bottom: 54px; }
     .intro .intro_top .wrapper {
       padding: 0 179px 0 34px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between; }
-      .intro .intro_top .wrapper .intro_top-left {
-        margin-right: 134px; }
-        .intro .intro_top .wrapper .intro_top-left img {
-          width: 568px;
-          height: 671px; }
-      .intro .intro_top .wrapper .intro_top-right {
-        width: 527px; }
-        .intro .intro_top .wrapper .intro_top-right .top-right_on-title {
-          padding-left: 2px; }
-        .intro .intro_top .wrapper .intro_top-right .top-right_title {
-          margin-top: -7px;
-          margin-bottom: 27px; }
-        .intro .intro_top .wrapper .intro_top-right .top-right_subtitle {
-          margin-bottom: 72px; }
+      position: relative; }
+      .intro .intro_top .wrapper .top-container .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        opacity: 0 !important; }
+        .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-left {
+          margin-right: 134px; }
+          .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-left img {
+            width: 568px;
+            height: 671px; }
+        .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right {
+          width: 527px; }
+          .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right .top-right_on-title {
+            padding-left: 2px; }
+          .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right .top-right_title {
+            margin-top: -7px;
+            margin-bottom: 27px; }
+          .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right .top-right_subtitle {
+            margin-bottom: 72px; }
+      .intro .intro_top .wrapper .top-container .swiper-slide-active {
+        opacity: 1 !important; }
   .intro .intro_ways {
     margin-bottom: 159px; }
     .intro .intro_ways .wrapper .ways_subtitle {
@@ -750,7 +751,9 @@ header {
                   line-height: 19px;
                   color: #213243;
                   margin-bottom: 34px;
-                  width: 386px; }
+                  width: 386px;
+                  height: 53px;
+                  overflow: hidden; }
                 .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_info .program_see-more {
                   margin-left: auto; }
           .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide-active {
@@ -821,7 +824,8 @@ header {
       flex-direction: column;
       background: #FFFFFF;
       box-shadow: 0px 22px 44px -12px rgba(221, 224, 230, 0.35);
-      border-radius: 10px; }
+      border-radius: 10px;
+      transition: .3s; }
       .specialists .wrapper .specialists_main .specialist_card .card_image {
         width: 310px;
         height: 310px;
@@ -886,6 +890,8 @@ header {
               display: inline; }
             .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .star-active img:first-child {
               display: none; }
+      .specialists .wrapper .specialists_main .specialist_card:hover {
+        transform: scale(1.05); }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -924,7 +930,8 @@ header {
         font-size: 16px;
         line-height: 24px;
         color: #242729;
-        margin-bottom: 8px; }
+        margin-bottom: 8px;
+        transition: .3s; }
       .blog .wrapper .blog_main .blog_item .item_info .info_date {
         font-size: 12px;
         line-height: 13px;
@@ -933,6 +940,8 @@ header {
       .blog .wrapper .blog_main .blog_item .item_info .info_text {
         font-size: 14px;
         line-height: 19px; }
+      .blog .wrapper .blog_main .blog_item:hover .item_info .info_title {
+        color: #1763F8; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1347,16 +1356,13 @@ footer {
         font-size: 0.833vw;
         line-height: 1.146vw;
         padding: 1.563vw 0.885vw; }
-    header .wrapper-b .header_nav .header_login input {
+    header .wrapper-b .header_nav .header_login .nav_consult {
       font-size: 0.833vw;
       line-height: 1.146vw;
       border-radius: 0.521vw;
-      padding: 0.677vw 1.406vw;
+      padding: 0.677vw 1.206vw;
       width: 12.969vw;
       margin-right: 2.552vw; }
-      header .wrapper-b .header_nav .header_login input::placeholder {
-        font-size: 0.833vw;
-        line-height: 1.146vw; }
     header .wrapper-b .header_nav .header_login .login_selection {
       margin-right: 1.042vw; }
       header .wrapper-b .header_nav .header_login .login_selection .selection_text {
@@ -1520,7 +1526,8 @@ footer {
               font-size: 0.729vw;
               line-height: 0.990vw;
               margin-bottom: 1.771vw;
-              width: 20.104vw; }
+              width: 20.104vw;
+              height: 3.9vw; }
     .programs .wrapper .programs_right .navigation-block {
       bottom: 1.042vw;
       left: -4.792vw; }
@@ -1814,7 +1821,7 @@ footer {
         width: 100%;
         display: grid;
         grid-template-rows: min-content; }
-        header .wrapper-b .header_nav .header_login input {
+        header .wrapper-b .header_nav .header_login .nav_consult {
           font-size: 5vw;
           line-height: 6.875vw;
           border-radius: 3.125vw;
@@ -1823,11 +1830,9 @@ footer {
           margin-right: 0;
           grid-row-start: 4;
           grid-row-end: 5;
-          margin-top: 8.125vw; }
-          header .wrapper-b .header_nav .header_login input::placeholder {
-            text-align: center;
-            font-size: 5vw;
-            line-height: 6.875vw; }
+          margin-top: 8.125vw;
+          text-align: center;
+          color: #B3BACC !important; }
         header .wrapper-b .header_nav .header_login .login_selection {
           margin-right: 0;
           flex-direction: column; }
@@ -1970,9 +1975,7 @@ footer {
           .intro .intro_how .wrapper .how_how-blocks .how_block:hover .block_title:after {
             border: 2.188vw solid #387AFA; }
           .intro .intro_how .wrapper .how_how-blocks .how_block:hover .block_title::before {
-            width: 3.750vw;
-            height: 20.938vw;
-            left: -11.504vw; }
+            display: none; }
   .programs {
     padding-bottom: 34.688vw;
     padding-top: 19.063vw;
@@ -2025,7 +2028,8 @@ footer {
                   font-size: 4.375vw;
                   line-height: 5.938vw;
                   width: 100%;
-                  margin-bottom: 5vw; }
+                  margin-bottom: 5vw;
+                  height: 24.9vw; }
                 .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_info .program_see-more {
                   text-align: left;
                   padding: 5.625vw 20vw 5.625vw 13vw; }
