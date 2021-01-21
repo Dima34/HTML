@@ -2748,6 +2748,7 @@ footer{
           flex-direction: column;
           height: 500px;
           border: 1px solid black;
+          flex-shrink: 0;
   
           .nav_item{
             text-align: center;

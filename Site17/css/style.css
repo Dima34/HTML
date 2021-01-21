@@ -1805,7 +1805,8 @@ footer {
         padding: 0;
         flex-direction: column;
         height: 500px;
-        border: 1px solid black; }
+        border: 1px solid black;
+        flex-shrink: 0; }
         header .wrapper-b .header_nav .nav_itemlist .nav_item {
           text-align: center; }
           header .wrapper-b .header_nav .nav_itemlist .nav_item a {
