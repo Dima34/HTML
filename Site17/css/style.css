@@ -1788,7 +1788,7 @@ footer {
       width: 52.500vw;
       height: auto; }
     header .wrapper-b .header_nav {
-      padding: 29.875vw 3.125vw 0 3.125vw;
+      padding: 29.875vw 3.125vw;
       position: fixed;
       top: 0;
       left: 0;
@@ -1804,8 +1804,6 @@ footer {
       header .wrapper-b .header_nav .nav_itemlist {
         padding: 0;
         flex-direction: column;
-        height: 500px;
-        border: 1px solid purple;
         flex-shrink: 0; }
         header .wrapper-b .header_nav .nav_itemlist .nav_item {
           text-align: center; }
