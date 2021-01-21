@@ -1865,7 +1865,8 @@ footer {
           flex-direction: column; }
           header .wrapper-b .header_nav .header_login .login_selection .selection_text a {
             font-size: 5vw;
-            line-height: 6.875vw; }
+            line-height: 12.875vw;
+            padding: 1.563vw 0.885vw; }
           header .wrapper-b .header_nav .header_login .login_selection .selection_slider {
             display: none; }
           header .wrapper-b .header_nav .header_login .login_selection .slider-active::before {
