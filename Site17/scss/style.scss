@@ -347,6 +347,7 @@ main{
   display: block;
   width: fit-content;
   height: fit-content;
+  transition: .3s;
 
   &:after{
     content: "";
@@ -360,9 +361,10 @@ main{
   }
 
   &:hover{
+    background: #1042a5;
 
     &::after{
-      right: 35px;
+      right: 30px;
     }
   }
 }
@@ -453,8 +455,6 @@ header{
         padding: 30px;
         display: flex;
         align-items: center;
-        height: fit-content;
-        border: 1px solid red;
 
         .nav_item{
 
@@ -502,6 +502,12 @@ header{
           margin-left: auto;
           margin-right: 49px; 
           border: 0;
+          transition: .3s;
+
+          &:hover{
+            color: #ffffff;
+            background: #1763F8;
+          }
         }
          
         .login_selection{ 
@@ -1853,7 +1859,7 @@ footer{
     &:hover{
   
       &::after{
-        right: 1.823vw;
+        right: 1.523vw;
       }
     }
   }
@@ -1883,7 +1889,6 @@ footer{
     line-height: 0.833vw;
     padding-bottom: 0.104vw;
   }
-
   
   header{
   
@@ -2741,6 +2746,8 @@ footer{
         .nav_itemlist{
           padding: 0;
           flex-direction: column;
+          height: 500px;
+          border: 1px solid green;
   
           .nav_item{
             text-align: center;
