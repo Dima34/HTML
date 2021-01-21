@@ -511,33 +511,49 @@ header{
         }
          
         .login_selection{ 
-          display: flex;
+          display: grid;
           align-items: center;
+          grid-template-columns: min-content min-content min-content;
           margin-right: 20px;
+          position: relative;
+          justify-content: space-between;
 
           .selection_text{
-            font-size: 16px;
-            line-height: 22px;
-            color: #B3BACC;
-            @include Aero(400);
+            white-space: nowrap;
+
+            a{
+              font-size: 16px;
+              line-height: 22px;
+              color: #B3BACC;
+              @include Aero(400);
+              transition: .3s;
+            }
+
+            &:hover{
+
+              a{
+                color: #213243;
+              }
+            }
+            
           }
 
-          input{
-            display: none;
-          }
-
-          label{
+          .selection_slider{
+            position: relative;
             display: block;
             background: #E1ECFA;
             border-radius: 23px;
             width: 29px;
             height: 16px;
-            position: relative;
             transition: .3s;
-            margin: 20px;
-            cursor: pointer;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            margin: 0 19px;
+            transition: .3s;
 
-            &::after{
+            &::before{
               position: absolute;
               content: "";
               left: 2px;
@@ -549,20 +565,31 @@ header{
               border: 2px solid #1763F8;
               border-radius: 50%;
               transition: .3s;
+              z-index: 2;
             }
           }
 
-          input:checked + label{
+          .slider-active{
 
-            &::after{
-              left: calc(100% - 2px - 12px);
+            &::before{
+              left: calc(100% - 14px);
             }
           }
 
-          .selection_text-active{
-            color: #213243;
+          .for-b{
+            grid-column-start: 3;
+            grid-column-end: 4;
           }
+          
+          .text_selected{
+            a{
+              color: #213243;
+            }
+          }
+
+          
         }
+
 
         .login_register,.login_log-in{
           @include Aero(400);
@@ -663,21 +690,23 @@ header{
         right: 0;
         bottom: 20px;
 
-        .top-button-prev,.top-button-prev{
+        .top-button-prev,.top-button-next{
+          border-radius: 50%;
+          transition: .3s;
 
           img{
             width: 33px;
             height: 32px;
+          }
+
+          &:hover{
+            box-shadow: 0px 0px 8px 0px rgba(46, 117, 255, 0.35);
           }
         }
 
         .top-button-prev{
           transform: rotate(180deg) translateY(-1px);
           margin-right: 5px;
-        }
-
-        .swiper-button-disabled{
-          opacity: 0.4;
         }
       }
       
@@ -1023,15 +1052,13 @@ header{
             display: none;
           }
 
-          &:hover{
-            -webkit-box-shadow: 0px 0px 3px 4px rgba(221, 224, 230, 0.55);
-            -moz-box-shadow: 0px 0px 3px 4px rgba(221, 224, 230, 0.55);
-            box-shadow: 0px 0px 3px 4px rgba(221, 224, 230, 0.55);
+          img{
+            width: 33px;
+            height: 32px;
           }
 
-          img{
-            width: 32px;
-            height: 32px;
+          &:hover{
+            box-shadow: 0px 0px 8px 0px rgba(46, 117, 255, 0.35);
           }
         }
 
@@ -1041,6 +1068,10 @@ header{
   
         .swiper-button-prev{
           margin-right: 5px;
+        }
+
+        .swiper-button-disabled{
+          opacity: 1;
         }
 
       }
@@ -1935,26 +1966,7 @@ footer{
               font-size: 0.833vw;
               line-height: 1.146vw;
             }
-  
-            label{
-              border-radius: 1.198vw;
-              width: 1.510vw;
-              height: 0.833vw;
-              margin: 1.042vw;
-  
-              &::after{
-                left: 0.104vw;
-                width: 0.417vw;
-                height: 0.417vw;
-              }
-            }
-  
-            input:checked + label{
-  
-              &::after{
-                left: calc(100% - 0.104vw - 0.625vw);
-              }
-            }
+     
           }
   
           .login_register,.login_log-in{
@@ -2798,10 +2810,6 @@ footer{
               font-size: 5vw;
               line-height: 12.875vw;
               padding: 0;
-            }
-  
-            label{
-              display: none;
             }
 
           }

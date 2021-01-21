@@ -225,6 +225,29 @@ if(popupClose){
 }
 
 
-// Block height fix
+// Header page selection
+
+let forBText = document.querySelector(".for-b");
+let forEText = document.querySelector(".for-e");
+
+let SelectionSlider = document.querySelector(".selection_slider");
+
+let loginE = document.querySelector(".login-e");
+let loginB = document.querySelector(".login-b");
+
+if (loginE){
+
+    forEText.classList.add("text_selected");
+
+    forBText.onmouseover = ()=>{
+        forEText.classList.remove("text_selected");
+        SelectionSlider.classList.add("slider-active");
+    }
+    forBText.onmouseout = ()=>{
+        forEText.classList.add("text_selected");
+        SelectionSlider.classList.remove("slider-active");
+    }
+
+}
 
 

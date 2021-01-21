@@ -445,28 +445,38 @@ header {
             color: #ffffff;
             background: #1763F8; }
         header .wrapper-b .header_nav .header_login .login_selection {
-          display: flex;
+          display: grid;
           align-items: center;
-          margin-right: 20px; }
+          grid-template-columns: min-content min-content min-content;
+          margin-right: 20px;
+          position: relative;
+          justify-content: space-between; }
           header .wrapper-b .header_nav .header_login .login_selection .selection_text {
-            font-size: 16px;
-            line-height: 22px;
-            color: #B3BACC;
-            font-family: "Aeroport" !important;
-            font-weight: 400 !important; }
-          header .wrapper-b .header_nav .header_login .login_selection input {
-            display: none; }
-          header .wrapper-b .header_nav .header_login .login_selection label {
+            white-space: nowrap; }
+            header .wrapper-b .header_nav .header_login .login_selection .selection_text a {
+              font-size: 16px;
+              line-height: 22px;
+              color: #B3BACC;
+              font-family: "Aeroport" !important;
+              font-weight: 400 !important;
+              transition: .3s; }
+            header .wrapper-b .header_nav .header_login .login_selection .selection_text:hover a {
+              color: #213243; }
+          header .wrapper-b .header_nav .header_login .login_selection .selection_slider {
+            position: relative;
             display: block;
             background: #E1ECFA;
             border-radius: 23px;
             width: 29px;
             height: 16px;
-            position: relative;
             transition: .3s;
-            margin: 20px;
-            cursor: pointer; }
-            header .wrapper-b .header_nav .header_login .login_selection label::after {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            margin: 0 19px;
+            transition: .3s; }
+            header .wrapper-b .header_nav .header_login .login_selection .selection_slider::before {
               position: absolute;
               content: "";
               left: 2px;
@@ -477,10 +487,14 @@ header {
               background: white;
               border: 2px solid #1763F8;
               border-radius: 50%;
-              transition: .3s; }
-          header .wrapper-b .header_nav .header_login .login_selection input:checked + label::after {
-            left: calc(100% - 2px - 12px); }
-          header .wrapper-b .header_nav .header_login .login_selection .selection_text-active {
+              transition: .3s;
+              z-index: 2; }
+          header .wrapper-b .header_nav .header_login .login_selection .slider-active::before {
+            left: calc(100% - 14px); }
+          header .wrapper-b .header_nav .header_login .login_selection .for-b {
+            grid-column-start: 3;
+            grid-column-end: 4; }
+          header .wrapper-b .header_nav .header_login .login_selection .text_selected a {
             color: #213243; }
         header .wrapper-b .header_nav .header_login .login_register, header .wrapper-b .header_nav .header_login .login_log-in {
           font-family: "Aeroport" !important;
@@ -544,14 +558,17 @@ header {
         position: absolute;
         right: 0;
         bottom: 20px; }
-        .intro .intro_top .wrapper .top_nav-block .top-button-prev img, .intro .intro_top .wrapper .top_nav-block .top-button-prev img {
-          width: 33px;
-          height: 32px; }
+        .intro .intro_top .wrapper .top_nav-block .top-button-prev, .intro .intro_top .wrapper .top_nav-block .top-button-next {
+          border-radius: 50%;
+          transition: .3s; }
+          .intro .intro_top .wrapper .top_nav-block .top-button-prev img, .intro .intro_top .wrapper .top_nav-block .top-button-next img {
+            width: 33px;
+            height: 32px; }
+          .intro .intro_top .wrapper .top_nav-block .top-button-prev:hover, .intro .intro_top .wrapper .top_nav-block .top-button-next:hover {
+            box-shadow: 0px 0px 8px 0px rgba(46, 117, 255, 0.35); }
         .intro .intro_top .wrapper .top_nav-block .top-button-prev {
           transform: rotate(180deg) translateY(-1px);
           margin-right: 5px; }
-        .intro .intro_top .wrapper .top_nav-block .swiper-button-disabled {
-          opacity: 0.4; }
   .intro .intro_ways {
     margin-bottom: 159px; }
     .intro .intro_ways .wrapper .ways_subtitle {
@@ -776,17 +793,17 @@ header {
           transition: .3s; }
           .programs .wrapper .programs_right .navigation-block .swiper-button-next::after, .programs .wrapper .programs_right .navigation-block .swiper-button-prev::after {
             display: none; }
-          .programs .wrapper .programs_right .navigation-block .swiper-button-next:hover, .programs .wrapper .programs_right .navigation-block .swiper-button-prev:hover {
-            -webkit-box-shadow: 0px 0px 3px 4px rgba(221, 224, 230, 0.55);
-            -moz-box-shadow: 0px 0px 3px 4px rgba(221, 224, 230, 0.55);
-            box-shadow: 0px 0px 3px 4px rgba(221, 224, 230, 0.55); }
           .programs .wrapper .programs_right .navigation-block .swiper-button-next img, .programs .wrapper .programs_right .navigation-block .swiper-button-prev img {
-            width: 32px;
+            width: 33px;
             height: 32px; }
+          .programs .wrapper .programs_right .navigation-block .swiper-button-next:hover, .programs .wrapper .programs_right .navigation-block .swiper-button-prev:hover {
+            box-shadow: 0px 0px 8px 0px rgba(46, 117, 255, 0.35); }
         .programs .wrapper .programs_right .navigation-block .swiper-button-prev {
           transform: rotate(180deg) translateY(-1px); }
         .programs .wrapper .programs_right .navigation-block .swiper-button-prev {
           margin-right: 5px; }
+        .programs .wrapper .programs_right .navigation-block .swiper-button-disabled {
+          opacity: 1; }
 
 .e-programs {
   padding-bottom: 80px;
@@ -1370,17 +1387,6 @@ footer {
       header .wrapper-b .header_nav .header_login .login_selection .selection_text {
         font-size: 0.833vw;
         line-height: 1.146vw; }
-      header .wrapper-b .header_nav .header_login .login_selection label {
-        border-radius: 1.198vw;
-        width: 1.510vw;
-        height: 0.833vw;
-        margin: 1.042vw; }
-        header .wrapper-b .header_nav .header_login .login_selection label::after {
-          left: 0.104vw;
-          width: 0.417vw;
-          height: 0.417vw; }
-      header .wrapper-b .header_nav .header_login .login_selection input:checked + label::after {
-        left: calc(100% - 0.104vw - 0.625vw); }
     header .wrapper-b .header_nav .header_login .login_register, header .wrapper-b .header_nav .header_login .login_log-in {
       font-size: 0.833vw;
       line-height: 1.146vw; }
@@ -1844,8 +1850,6 @@ footer {
             font-size: 5vw;
             line-height: 12.875vw;
             padding: 0; }
-          header .wrapper-b .header_nav .header_login .login_selection label {
-            display: none; }
         header .wrapper-b .header_nav .header_login .login_register, header .wrapper-b .header_nav .header_login .login_log-in {
           font-size: 5vw;
           line-height: 12.875vw;
