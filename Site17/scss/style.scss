@@ -417,27 +417,6 @@ main{
   }
 }
 
-::-webkit-scrollbar {
-  width: 10px; /* ширина для вертикального скролла */
-  background-color: #ffffff;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #1763F8;
-  transition: .3s;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #253861;
-}
-
-::-webkit-scrollbar-button:vertical:start:decrement {
-  display: none;
-}
-
-::-webkit-scrollbar-button:vertical:end:increment {
-  display: none;
-}
 
 body{
   overflow-x: hidden;
@@ -520,6 +499,7 @@ header{
           width: 249px;
           margin-left: auto;
           margin-right: 49px; 
+          border: 0;
         }
          
         .login_selection{ 
@@ -666,6 +646,30 @@ header{
 
         .swiper-slide-active{
           opacity: 1 !important;
+        }
+      }
+
+      .top_nav-block{
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+
+        .top-button-prev,.top-button-prev{
+
+          img{
+            width: 33px;
+            height: 32px;
+          }
+        }
+
+        .top-button-prev{
+          transform: rotate(180deg) translateY(-1px);
+          margin-right: 5px;
+        }
+
+        .swiper-button-disabled{
+          opacity: 0.4;
         }
       }
       
@@ -1021,6 +1025,10 @@ header{
             width: 32px;
             height: 32px;
           }
+        }
+
+        .swiper-button-prev{
+          transform: rotate(180deg) translateY(-1px);
         }
   
         .swiper-button-prev{
@@ -1873,10 +1881,7 @@ footer{
     line-height: 0.833vw;
     padding-bottom: 0.104vw;
   }
-  
-  ::-webkit-scrollbar {
-    width: 0.521vw;
-  }
+
   
   header{
   
@@ -1970,32 +1975,43 @@ footer{
   
       .wrapper{
         padding: 0 9.323vw 0 1.771vw;
+
+        .top-container{
+
+          .swiper-slide{
+
+            .intro_top-left{
+              margin-right: 6.979vw;
+        
+              img{
+                width: 29.583vw;
+                height: 34.948vw;
+              }
+            }
+        
+            .intro_top-right{
+              width: 27.448vw;
+        
+              .top-right_on-title{
+                padding-left: 0.104vw;
+              }
+        
+              .top-right_title{
+                margin-top: -0.365vw;
+                margin-bottom: 1.406vw;
+              }
+        
+              .top-right_subtitle{
+                margin-bottom: 3.750vw;
+              }
+            }
+
+          }
+
+
+        }
   
-        .intro_top-left{
-          margin-right: 6.979vw;
-    
-          img{
-            width: 29.583vw;
-            height: 34.948vw;
-          }
-        }
-    
-        .intro_top-right{
-          width: 27.448vw;
-    
-          .top-right_on-title{
-            padding-left: 0.104vw;
-          }
-    
-          .top-right_title{
-            margin-top: -0.365vw;
-            margin-bottom: 1.406vw;
-          }
-    
-          .top-right_subtitle{
-            margin-bottom: 3.750vw;
-          }
-        }
+        
       }
     }
   
@@ -2829,33 +2845,42 @@ footer{
       .wrapper{
         padding: 0;
         flex-direction: column;
-  
-        .intro_top-left{
-          display: none;
-        }
-    
-        .intro_top-right{
-          width: 100%;
-    
-          .top-right_on-title{
-            padding-left: 0;
-            margin-bottom: 5vw;
-          }
-    
-          .top-right_title{
-            margin-top: 0;
-            margin-bottom: 7.813vw;
-          }
-    
-          .top-right_subtitle{
-            margin-bottom: 14.063vw;
-          }
 
-          .top-right_btn{
-            width: 100%;
-            margin-bottom: 20vw;
+        .top-container{
+
+          .swiper-slide{
+
+            .intro_top-left{
+              display: none;
+            }
+        
+            .intro_top-right{
+              width: 100%;
+        
+              .top-right_on-title{
+                padding-left: 0;
+                margin-bottom: 5vw;
+              }
+        
+              .top-right_title{
+                margin-top: 0;
+                margin-bottom: 7.813vw;
+              }
+        
+              .top-right_subtitle{
+                margin-bottom: 14.063vw;
+              }
+    
+              .top-right_btn{
+                width: 100%;
+                margin-bottom: 20vw;
+              }
+            }
+
           }
         }
+  
+        
       }
     }
   
@@ -3008,9 +3033,10 @@ footer{
             &:hover{
   
               .block_title{
+                color: #213243;
   
                 &:after{
-                  border: 2.188vw solid #387AFA;
+                  border: 2.188vw solid #F3F3F3;
                 }
   
                 &::before{

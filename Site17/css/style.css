@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -382,24 +381,6 @@ main {
     bottom: 0;
     background: #1763F8; }
 
-::-webkit-scrollbar {
-  width: 10px;
-  /* ширина для вертикального скролла */
-  background-color: #ffffff; }
-
-::-webkit-scrollbar-thumb {
-  background-color: #1763F8;
-  transition: .3s; }
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #253861; }
-
-::-webkit-scrollbar-button:vertical:start:decrement {
-  display: none; }
-
-::-webkit-scrollbar-button:vertical:end:increment {
-  display: none; }
-
 body {
   overflow-x: hidden; }
 
@@ -454,7 +435,8 @@ header {
           padding: 13px 26px;
           width: 249px;
           margin-left: auto;
-          margin-right: 49px; }
+          margin-right: 49px;
+          border: 0; }
         header .wrapper-b .header_nav .header_login .login_selection {
           display: flex;
           align-items: center;
@@ -550,6 +532,19 @@ header {
             margin-bottom: 72px; }
       .intro .intro_top .wrapper .top-container .swiper-slide-active {
         opacity: 1 !important; }
+      .intro .intro_top .wrapper .top_nav-block {
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 20px; }
+        .intro .intro_top .wrapper .top_nav-block .top-button-prev img, .intro .intro_top .wrapper .top_nav-block .top-button-prev img {
+          width: 33px;
+          height: 32px; }
+        .intro .intro_top .wrapper .top_nav-block .top-button-prev {
+          transform: rotate(180deg) translateY(-1px);
+          margin-right: 5px; }
+        .intro .intro_top .wrapper .top_nav-block .swiper-button-disabled {
+          opacity: 0.4; }
   .intro .intro_ways {
     margin-bottom: 159px; }
     .intro .intro_ways .wrapper .ways_subtitle {
@@ -781,6 +776,8 @@ header {
           .programs .wrapper .programs_right .navigation-block .swiper-button-next img, .programs .wrapper .programs_right .navigation-block .swiper-button-prev img {
             width: 32px;
             height: 32px; }
+        .programs .wrapper .programs_right .navigation-block .swiper-button-prev {
+          transform: rotate(180deg) translateY(-1px); }
         .programs .wrapper .programs_right .navigation-block .swiper-button-prev {
           margin-right: 5px; }
 
@@ -1342,8 +1339,6 @@ footer {
     font-size: 0.833vw;
     line-height: 0.833vw;
     padding-bottom: 0.104vw; }
-  ::-webkit-scrollbar {
-    width: 0.521vw; }
   header .wrapper-b {
     padding-left: 2.344vw; }
     header .wrapper-b .header_logo {
@@ -1392,19 +1387,19 @@ footer {
       margin-bottom: 2.813vw; }
       .intro .intro_top .wrapper {
         padding: 0 9.323vw 0 1.771vw; }
-        .intro .intro_top .wrapper .intro_top-left {
+        .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-left {
           margin-right: 6.979vw; }
-          .intro .intro_top .wrapper .intro_top-left img {
+          .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-left img {
             width: 29.583vw;
             height: 34.948vw; }
-        .intro .intro_top .wrapper .intro_top-right {
+        .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right {
           width: 27.448vw; }
-          .intro .intro_top .wrapper .intro_top-right .top-right_on-title {
+          .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right .top-right_on-title {
             padding-left: 0.104vw; }
-          .intro .intro_top .wrapper .intro_top-right .top-right_title {
+          .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right .top-right_title {
             margin-top: -0.365vw;
             margin-bottom: 1.406vw; }
-          .intro .intro_top .wrapper .intro_top-right .top-right_subtitle {
+          .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right .top-right_subtitle {
             margin-bottom: 3.750vw; }
     .intro .intro_ways {
       margin-bottom: 8.281vw; }
@@ -1871,19 +1866,19 @@ footer {
       .intro .intro_top .wrapper {
         padding: 0;
         flex-direction: column; }
-        .intro .intro_top .wrapper .intro_top-left {
+        .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-left {
           display: none; }
-        .intro .intro_top .wrapper .intro_top-right {
+        .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right {
           width: 100%; }
-          .intro .intro_top .wrapper .intro_top-right .top-right_on-title {
+          .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right .top-right_on-title {
             padding-left: 0;
             margin-bottom: 5vw; }
-          .intro .intro_top .wrapper .intro_top-right .top-right_title {
+          .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right .top-right_title {
             margin-top: 0;
             margin-bottom: 7.813vw; }
-          .intro .intro_top .wrapper .intro_top-right .top-right_subtitle {
+          .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right .top-right_subtitle {
             margin-bottom: 14.063vw; }
-          .intro .intro_top .wrapper .intro_top-right .top-right_btn {
+          .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right .top-right_btn {
             width: 100%;
             margin-bottom: 20vw; }
     .intro .intro_ways {
@@ -1972,10 +1967,12 @@ footer {
             margin-left: -3.750vw; }
             .intro .intro_how .wrapper .how_how-blocks .how_block:nth-child(4)::before {
               display: none; }
-          .intro .intro_how .wrapper .how_how-blocks .how_block:hover .block_title:after {
-            border: 2.188vw solid #387AFA; }
-          .intro .intro_how .wrapper .how_how-blocks .how_block:hover .block_title::before {
-            display: none; }
+          .intro .intro_how .wrapper .how_how-blocks .how_block:hover .block_title {
+            color: #213243; }
+            .intro .intro_how .wrapper .how_how-blocks .how_block:hover .block_title:after {
+              border: 2.188vw solid #F3F3F3; }
+            .intro .intro_how .wrapper .how_how-blocks .how_block:hover .block_title::before {
+              display: none; }
   .programs {
     padding-bottom: 34.688vw;
     padding-top: 19.063vw;
