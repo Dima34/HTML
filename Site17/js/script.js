@@ -250,4 +250,20 @@ if (loginE){
 
 }
 
+if (loginB){
+
+    forBText.classList.add("text_selected");
+    SelectionSlider.classList.add("slider-active");
+
+    forEText.onmouseover = ()=>{
+        forBText.classList.remove("text_selected");
+        SelectionSlider.classList.remove("slider-active");
+    }
+    forEText.onmouseout = ()=>{
+        forBText.classList.add("text_selected");
+        SelectionSlider.classList.add("slider-active");
+    }
+
+}
+
 
