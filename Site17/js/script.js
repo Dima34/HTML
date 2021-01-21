@@ -129,7 +129,7 @@ let RecoveryPopup = document.querySelector(".remind__popup");
 let AllPopups = document.querySelectorAll(".popup")
 let popupClose = document.querySelectorAll(".pp_close");
 
-if(popupClose){
+if(popupClose && RegPopupOpen){
 
     AuthorizePopupOpen.addEventListener('click',()=>{
         closeAllPopups();
@@ -263,6 +263,39 @@ if (loginB){
         forBText.classList.add("text_selected");
         SelectionSlider.classList.add("slider-active");
     }
+
+}
+
+
+// 
+//  User personal cabinet
+// 
+
+let pcHeaderBlk = document.querySelectorAll(".pc_item");
+let pcMainBlk = document.querySelectorAll(".pc_main");
+
+if(pcHeaderBlk && pcMainBlk){
+
+    for (let i = 0; i < pcHeaderBlk.length; i++) {
+        
+        pcHeaderBlk[i].addEventListener('click',()=>{
+
+            pcMainBlk[i].classList.add("block");
+            pcHeaderBlk[i].classList.add("item-active");
+
+            for (let b = 0; b < pcHeaderBlk.length; b++) {
+                
+                if(i != b){
+                    pcMainBlk[b].classList.remove("block"); 
+                    pcHeaderBlk[b].classList.remove("item-active");
+                }
+                
+            }
+
+        });
+        
+    }
+    
 
 }
 

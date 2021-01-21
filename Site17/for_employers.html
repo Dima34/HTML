@@ -1341,7 +1341,7 @@
     <script src="./js/script.js"></script>
 
     <script>
-		var swiper = new Swiper('.swiper-container', {
+		var swiper = new Swiper('.programs-container', {
             spaceBetween: 0,
             slidesPerView: "auto",
             effect: 'fade',
@@ -1351,6 +1351,16 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+    </script>
+    
+    <script>
+		var swiper = new Swiper('.top-container', {
+            effect: 'fade',
+            navigation: {
+                nextEl: '.top-button-next',
+                prevEl: '.top-button-prev',
+            },
+    });
 	</script>
 
 </body>
