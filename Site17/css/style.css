@@ -1836,7 +1836,8 @@ footer {
           grid-row-end: 5;
           margin-top: 8.125vw;
           text-align: center;
-          color: #B3BACC !important; }
+          color: #B3BACC !important;
+          margin-bottom: 4vw; }
         header .wrapper-b .header_nav .header_login .login_selection {
           margin-right: 0;
           flex-direction: column; }
