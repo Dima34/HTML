@@ -404,13 +404,13 @@ header {
     header .wrapper-b .header_nav {
       display: flex;
       align-items: center;
-      width: 100%;
-      height: fit-content;
-      border: 1px solid red; }
+      width: 100%; }
       header .wrapper-b .header_nav .nav_itemlist {
         padding: 30px;
         display: flex;
-        align-items: center; }
+        align-items: center;
+        height: fit-content;
+        border: 1px solid red; }
         header .wrapper-b .header_nav .nav_itemlist .nav_item a {
           font-size: 16px;
           line-height: 22px;
@@ -1883,6 +1883,8 @@ footer {
           .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right .top-right_btn {
             width: 100%;
             margin-bottom: 20vw; }
+        .intro .intro_top .wrapper .top_nav-block {
+          display: none; }
     .intro .intro_ways {
       margin-bottom: 24.688vw; }
       .intro .intro_ways .wrapper .ways_subtitle {
