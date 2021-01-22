@@ -304,6 +304,15 @@ main {
   min-height: 100vh;
   position: relative; }
 
+.input {
+  background: #F2F7FD;
+  border-radius: 10px;
+  border: 0;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 15px 20px;
+  color: #B3BACC; }
+
 .planes {
   position: absolute;
   top: -80px;
@@ -892,43 +901,6 @@ header {
       text-align: center; }
       .specialist_card .card_professions .profession:nth-child(2n) {
         background: #1763F8; }
-  .specialist_card .card_statistics {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); }
-    .specialist_card .card_statistics .card_statistic .statistic-name {
-      font-size: 12px;
-      line-height: 13px;
-      color: #B3BACC;
-      margin-bottom: 10px; }
-    .specialist_card .card_statistics .card_statistic .statistic_text, .specialist_card .card_statistics .card_statistic .raiting-text {
-      font-weight: 500 !important;
-      font-size: 16px;
-      line-height: 24px;
-      color: #242729; }
-    .specialist_card .card_statistics .card_statistic .raiting {
-      display: flex;
-      align-items: center; }
-      .specialist_card .card_statistics .card_statistic .raiting .raiting-text {
-        margin-right: 8px; }
-      .specialist_card .card_statistics .card_statistic .raiting .raiting_stars {
-        display: flex;
-        width: fit-content;
-        height: 8px; }
-        .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star {
-          margin-right: 2px;
-          position: relative;
-          width: 8px;
-          height: 8px; }
-          .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star img {
-            width: 8px;
-            height: 8px;
-            position: absolute; }
-          .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star img:last-child {
-            display: none; }
-        .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .star-active img:last-child {
-          display: inline; }
-        .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .star-active img:first-child {
-          display: none; }
   .specialist_card .card_appointment {
     margin-top: 15px; }
     .specialist_card .card_appointment .appointment_date {
@@ -959,6 +931,47 @@ header {
         background: #0056ff; }
   .specialist_card:hover {
     transform: scale(1.05); }
+
+.raiting {
+  display: flex;
+  align-items: center; }
+  .raiting .raiting-text {
+    margin-right: 8px; }
+  .raiting .raiting_stars {
+    display: flex;
+    width: fit-content;
+    height: 8px; }
+    .raiting .raiting_stars .raiting_star {
+      margin-right: 2px;
+      position: relative;
+      width: 8px;
+      height: 8px; }
+      .raiting .raiting_stars .raiting_star img {
+        width: 8px;
+        height: 8px;
+        position: absolute; }
+      .raiting .raiting_stars .raiting_star img:last-child {
+        display: none; }
+    .raiting .raiting_stars .star-active img:last-child {
+      display: inline; }
+    .raiting .raiting_stars .star-active img:first-child {
+      display: none; }
+
+.card_statistics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+.card_statistic .statistic-name {
+  font-size: 12px;
+  line-height: 13px;
+  color: #B3BACC;
+  margin-bottom: 10px; }
+
+.card_statistic .statistic_text, .card_statistic .raiting-text {
+  font-weight: 500 !important;
+  font-size: 16px;
+  line-height: 24px;
+  color: #242729; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1247,7 +1260,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 8;
+  z-index: 9;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(3px);
   display: none; }
@@ -1361,7 +1374,8 @@ footer {
     width: 12px;
     height: 12px;
     right: 14px;
-    top: 14px; }
+    top: 14px;
+    cursor: pointer; }
 
 .remind__popup .popup_popup_blk_subtitle {
   margin-bottom: 23px; }
@@ -1480,6 +1494,15 @@ footer {
           background: #FE001E;
           border-radius: 10px;
           margin-right: 27px; }
+    .profile-blk .left_info .horizontal_star-raiting {
+      display: flex;
+      align-items: flex-end;
+      margin-top: -12 px !important; }
+      .profile-blk .left_info .horizontal_star-raiting .horizontal_key {
+        margin-right: 20px; }
+      .profile-blk .left_info .horizontal_star-raiting .card_statistic {
+        margin-left: auto;
+        margin-right: -30px; }
     .profile-blk .left_info .info_inputbox:nth-child(4) {
       margin-top: 15px; }
     .profile-blk .left_info .info_inputbox .input_title {
@@ -1668,7 +1691,7 @@ footer {
 
 .secondary-page_main {
   position: relative;
-  z-index: 5;
+  z-index: 7;
   padding-top: 53px;
   position: relative;
   background: linear-gradient(180deg, #DDEAF9 0%, #FFFFFF 100%); }
@@ -1823,6 +1846,13 @@ footer {
     column-gap: 23px;
     row-gap: 40px; }
 
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---====HELP HORIZONTAL BLOCK====---- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 .help-blk-horizontal {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1856,6 +1886,367 @@ footer {
       background: #DDEAF9; }
       .help-blk-horizontal .right-blk:nth-child(3n) .blk_btn {
         background: #94AAD7; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=====VERTICAL REVIEWS=====----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.vertical-reviews {
+  max-width: 711px; }
+  .vertical-reviews .vertical-rewiews_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px; }
+    .vertical-reviews .vertical-rewiews_header .header_text {
+      font-weight: 500 !important;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1F1E1B;
+      padding-left: 7px; }
+      .vertical-reviews .vertical-rewiews_header .header_text span {
+        font-weight: 500 !important; }
+    .vertical-reviews .vertical-rewiews_header .header_navigation {
+      display: flex; }
+      .vertical-reviews .vertical-rewiews_header .header_navigation .vertical-reviews-next img, .vertical-reviews .vertical-rewiews_header .header_navigation .vertical-reviews-prev img {
+        width: 31px;
+        height: 31px; }
+      .vertical-reviews .vertical-rewiews_header .header_navigation .vertical-reviews-prev {
+        margin-top: 1px;
+        margin-right: 6px;
+        transform: rotate(180deg); }
+  .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide {
+    opacity: 0 !important; }
+    .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew {
+      padding: 30px 0 50px 0;
+      background: #DDF9EC;
+      border-radius: 20px;
+      margin-bottom: 17px; }
+      .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 0px 24px 0px 35px; }
+        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_title {
+          font-weight: 500 !important;
+          font-size: 16px;
+          line-height: 24px;
+          color: #1F1E1B; }
+        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting {
+          display: flex; }
+          .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star {
+            margin-right: 5px;
+            display: flex; }
+            .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star img {
+              width: 14px;
+              height: 14px; }
+              .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star img:last-child {
+                display: none; }
+          .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star-active img:first-child {
+            display: none; }
+          .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star-active img:last-child {
+            display: block; }
+      .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_main .review_date {
+        font-size: 12px;
+        line-height: 20px;
+        color: #B3BACC;
+        margin-bottom: 15px;
+        padding: 0px 24px 0px 35px; }
+      .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_main .rewiew_text {
+        font-size: 14px;
+        line-height: 19px;
+        color: #545454;
+        padding-right: 32px;
+        position: relative;
+        padding: 0px 24px 0px 35px; }
+        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_main .rewiew_text .full_text {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          top: 0;
+          background-color: #DDF9EC;
+          padding: 0px 24px 50px 35px;
+          border-radius: 20px;
+          display: none; }
+      .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew:nth-child(2) {
+        background: #F6DCDB; }
+        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew:nth-child(2) .rewiew_main .rewiew_text .full_text {
+          background-color: #F6DCDB; }
+      .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew:nth-child(3) {
+        background: #F8F9DD; }
+        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew:nth-child(3) .rewiew_main .rewiew_text .full_text {
+          background-color: #F8F9DD; }
+  .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide-active {
+    opacity: 1 !important; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======CALENDAR=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.calendar {
+  margin-top: 71px; }
+  .calendar .wrapper {
+    display: flex;
+    flex-direction: column; }
+    .calendar .wrapper .calendar_header {
+      font-size: 28px;
+      line-height: 35px;
+      font-weight: 700 !important;
+      color: #1F1E1B;
+      width: 100%;
+      margin-bottom: 50px; }
+    .calendar .wrapper .calendar_nav {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 43px; }
+      .calendar .wrapper .calendar_nav .itemlist {
+        display: flex;
+        width: 100%;
+        margin-right: 54px;
+        position: relative; }
+        .calendar .wrapper .calendar_nav .itemlist .item {
+          min-width: 221px;
+          padding: 0 0 15px 0;
+          text-align: center;
+          position: relative;
+          z-index: 1;
+          margin-right: 24px;
+          cursor: pointer;
+          transition: .3s; }
+          .calendar .wrapper .calendar_nav .itemlist .item p {
+            font-weight: 500 !important;
+            font-size: 16px;
+            line-height: 24px;
+            color: #B3BACC;
+            width: 100%; }
+          .calendar .wrapper .calendar_nav .itemlist .item:hover {
+            border-bottom: 5px solid #1763F8; }
+            .calendar .wrapper .calendar_nav .itemlist .item:hover p {
+              color: #1763F8; }
+        .calendar .wrapper .calendar_nav .itemlist .itemlist-item-active {
+          border-bottom: 5px solid #1763F8; }
+          .calendar .wrapper .calendar_nav .itemlist .itemlist-item-active p {
+            color: #1763F8; }
+        .calendar .wrapper .calendar_nav .itemlist:after {
+          width: 100%;
+          height: 5px;
+          position: absolute;
+          content: "";
+          left: 0;
+          bottom: 0;
+          background: #E8F0F9;
+          box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18); }
+      .calendar .wrapper .calendar_nav .calendar_add {
+        background: #1763F8;
+        box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35);
+        border-radius: 10px;
+        padding: 18px 61px 18px 31px;
+        color: #FFFFFF;
+        position: relative;
+        font-weight: 500 !important;
+        cursor: pointer;
+        transition: .3s; }
+        .calendar .wrapper .calendar_nav .calendar_add:after {
+          position: absolute;
+          content: "";
+          width: 12px;
+          height: 12px;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 25px;
+          background: url(../img/svg/plus-ico.svg) center no-repeat;
+          background-size: cover; }
+        .calendar .wrapper .calendar_nav .calendar_add:hover {
+          background: #1042a5; }
+    .calendar .wrapper .calendar_main {
+      display: none; }
+      .calendar .wrapper .calendar_main .main-blk {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+        border-radius: 10px;
+        padding: 28px 34px 24px 30px;
+        margin-bottom: 16px; }
+        .calendar .wrapper .calendar_main .main-blk .left {
+          width: 100%; }
+          .calendar .wrapper .calendar_main .main-blk .left .title {
+            font-weight: 500 !important;
+            font-size: 16px;
+            line-height: 24px;
+            color: #213243;
+            margin-bottom: 12px; }
+          .calendar .wrapper .calendar_main .main-blk .left .date-block {
+            display: flex;
+            flex-direction: row; }
+            .calendar .wrapper .calendar_main .main-blk .left .date-block p {
+              font-weight: 500 !important;
+              font-size: 16px;
+              line-height: 35px;
+              color: #B3BACC;
+              margin-right: 17px;
+              white-space: nowrap; }
+            .calendar .wrapper .calendar_main .main-blk .left .date-block .dates {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap; }
+              .calendar .wrapper .calendar_main .main-blk .left .date-block .dates .date {
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 500 !important;
+                color: #FFFFFF;
+                background: #1763F8;
+                border-radius: 10px;
+                padding: 10px 25px;
+                margin-right: 9px;
+                margin-bottom: 6px; }
+        .calendar .wrapper .calendar_main .main-blk .right p {
+          font-size: 14px;
+          line-height: 19px;
+          margin-bottom: 18px;
+          text-align: right; }
+        .calendar .wrapper .calendar_main .main-blk .right .calendar-deactivate {
+          color: #FE001E; }
+        .calendar .wrapper .calendar_main .main-blk:last-child {
+          margin-bottom: 0; }
+    .calendar .wrapper .calendar-active {
+      display: block; }
+
+.create-shedule__popup .create-shedule__popup_popup_blk {
+  max-width: 1245px;
+  flex-shrink: 0;
+  padding-top: 30px; }
+  .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_title {
+    text-align: left; }
+  .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_main input {
+    width: 100%;
+    padding: 12px 25px;
+    margin-bottom: 25px; }
+  .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_main .popup_dates {
+    display: grid;
+    grid-template-columns: 131px 1fr; }
+    .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_main .popup_dates .date_title {
+      font-weight: 500 !important;
+      font-size: 16px;
+      line-height: 35px;
+      color: #B3BACC;
+      flex-shrink: 0; }
+    .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_main .popup_dates .date_dates {
+      display: flex;
+      flex-wrap: wrap; }
+      .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_main .popup_dates .date_dates .date {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 700 !important;
+        color: #FFFFFF;
+        background: #1763F8;
+        border-radius: 10px;
+        padding: 9px 15px;
+        max-width: 144px;
+        width: 100%;
+        text-align: center;
+        margin-right: 7px;
+        flex-shrink: 0;
+        margin-bottom: 13px; }
+        .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_main .popup_dates .date_dates .date:last-child {
+          margin-right: 0; }
+      .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_main .popup_dates .date_dates .uncative {
+        background: #B3BACC;
+        color: #FFFFFF; }
+  .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_main .date-time .date_dates .date {
+    max-width: unset;
+    width: fit-content; }
+  .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_main .popup_groupbox {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_main .popup_groupbox .select_date {
+      display: flex;
+      align-items: center; }
+      .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_main .popup_groupbox .select_date p {
+        font-weight: 500 !important;
+        font-size: 16px;
+        line-height: 24px;
+        color: #242729;
+        margin-right: 30px; }
+      .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_main .popup_groupbox .select_date .date-selection {
+        font-size: 16px;
+        line-height: 16px;
+        color: #1763F8;
+        background: url(../img/svg/calendat_thumb.svg) left center no-repeat;
+        background-size: 20px;
+        padding: 2px 0;
+        padding-left: 30px; }
+
+.calendar__popup .popup_popup_blk_main {
+  padding: 0 19px 38px 19px; }
+
+.calendar-widged {
+  margin-bottom: 40px; }
+  .calendar-widged .calendar_month {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 46px;
+    margin-bottom: 26px; }
+    .calendar-widged .calendar_month .month_text {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin: 0 20px;
+      width: 100%; }
+      .calendar-widged .calendar_month .month_text p {
+        font-size: 12px;
+        line-height: 20px;
+        color: #B3BACC; }
+      .calendar-widged .calendar_month .month_text .month-active {
+        font-weight: 500 !important;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000; }
+  .calendar-widged .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 49px);
+    grid-template-rows: repeat(6, 32px);
+    column-gap: 14px;
+    row-gap: 0px;
+    align-content: center;
+    justify-items: center; }
+    .calendar-widged .calendar-grid p {
+      font-size: 14px;
+      line-height: 15px;
+      color: #213243;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .1s;
+      border-radius: 10px;
+      cursor: default; }
+    .calendar-widged .calendar-grid .calendar_date {
+      cursor: pointer; }
+      .calendar-widged .calendar-grid .calendar_date:hover {
+        font-weight: 500 !important;
+        font-size: 16px;
+        line-height: 16px;
+        color: #FFFFFF;
+        background: #1763F8;
+        box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35); }
+    .calendar-widged .calendar-grid .calendar_day {
+      color: #1763F8; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */

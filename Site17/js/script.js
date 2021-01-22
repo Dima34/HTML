@@ -304,4 +304,92 @@ if(pcHeaderBlk && pcMainBlk && (pcHeaderBlk.length == pcMainBlk.length)){
 
 }
 
+// 
+//  Vertical reviews
+// 
 
+let verticalBlock = document.querySelector(".vertical-reviews")
+
+if(verticalBlock){
+
+    let SwiperWrapper = verticalBlock.querySelector(".swiper-wrapper");
+    let rewiewBlocks = SwiperWrapper.querySelectorAll(".vertical-reviews_rewiew");
+
+    let blocksInSlideMustBe = 3;
+    let slidesAmount = Math.ceil(rewiewBlocks.length / blocksInSlideMustBe);
+
+    // Append swiper-slides 
+    for (let i = 0; i < slidesAmount; i++) {
+        
+        tmp = document.createElement("div");
+        tmp.className = "swiper-slide";
+        SwiperWrapper.append(tmp);
+        
+    }
+
+    // Append blocks to swiper-slide
+    let slide = document.querySelectorAll(".swiper-slide");
+    currentSlide = 0;
+
+    for (let i = 0; i < rewiewBlocks.length; i++) {
+
+        if(i!=0 && ((i) % blocksInSlideMustBe == 0)){
+            currentSlide++;
+        }
+
+        
+        slide[currentSlide].append(rewiewBlocks[i]);
+        
+    }
+
+    // Set reviews amount
+    let reviewsAmount = document.getElementById("rev-amount");
+    
+    reviewsAmount.innerHTML = rewiewBlocks.length;
+
+    // Crop text
+    let symbolsAmount = 256;
+    let correction = 49;
+
+    rewiewBlocks = SwiperWrapper.querySelectorAll(".vertical-reviews_rewiew");
+
+    let fullText = SwiperWrapper.querySelectorAll(".full_text");
+    let croppedText = SwiperWrapper.querySelectorAll(".cropped_text");
+
+    if(fullText.length == croppedText.length){
+
+        for (let i = 0; i < fullText.length; i++) {
+        
+            if(fullText[i].innerHTML.length - correction > symbolsAmount){
+                croppedText[i].innerHTML = fullText[i].innerHTML.substr(0 + correction, symbolsAmount + correction) + "...";
+            }
+            else{
+                croppedText[i].innerHTML = fullText[i].innerHTML
+            }
+           
+            
+        }
+    
+        // Cropped text functional
+        for (let i = 0; i < fullText.length; i++) {
+            
+            
+
+            croppedText[i].onmouseover = ()=>{
+                fullText[i].classList.add("block");
+                console.log('good');
+            }
+            fullText[i].onmouseout = ()=>{
+                fullText[i].classList.remove("block");
+            }
+
+        }
+
+    }
+    else{
+        console.log("Full text block amount != Cropped text block amout in vertical-reviews_rewiew")
+    }
+
+    
+        
+}
