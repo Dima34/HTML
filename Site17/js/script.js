@@ -108,7 +108,6 @@ burgerClose.addEventListener('click',()=>{
 // Pop ups
 // 
 
-// Authorization
 
 let AuthorizePopupOpen = document.querySelector(".login_log-in");
 let AuthorizePopupOpen1 = document.querySelectorAll(".enter-acc");
@@ -189,36 +188,6 @@ if(popupClose){
     }
     
 
-
-
-    function closeAllPopups(){
-        popupClose = document.querySelectorAll(".pp_close");
-        
-        for (let i = 0; i < popupClose.length; i++) {
-            
-            AllPopups[i].classList.remove("popup-active");
-            
-        }
-    }
-
-    function checkHeight(el){
-
-        insideBlock = el.querySelector(".popup_popup_blk");
-
-        if(insideBlock){
-            elHeight = Number(window.getComputedStyle(insideBlock).height.slice(0,-2));
-
-            if(elHeight >window.innerHeight){
-                
-                el.style.alignItems = "flex-start";
-                el.style.overflowY = "scroll";
-
-            }
-            
-
-        }
-    }
-
     for (let i = 0; i < popupClose.length; i++) {
             
         popupClose[i].addEventListener('click',()=>{
@@ -227,6 +196,34 @@ if(popupClose){
         
     }
 
+}
+
+function closeAllPopups(){
+    popupClose = document.querySelectorAll(".pp_close");
+    
+    for (let i = 0; i < popupClose.length; i++) {
+        
+        AllPopups[i].classList.remove("popup-active");
+        
+    }
+}
+
+function checkHeight(el){
+
+    insideBlock = el.querySelector(".popup_popup_blk");
+
+    if(insideBlock){
+        elHeight = Number(window.getComputedStyle(insideBlock).height.slice(0,-2));
+
+        if(elHeight >window.innerHeight){
+            
+            el.style.alignItems = "flex-start";
+            el.style.overflowY = "scroll";
+
+        }
+        
+
+    }
 }
 
 
@@ -293,17 +290,75 @@ if(pcHeaderBlk && pcMainBlk && (pcHeaderBlk.length == pcMainBlk.length)){
                 if(i != b){
                     pcMainBlk[b].classList.remove("block"); 
                     pcHeaderBlk[b].classList.remove("item-active");
-                }
-                
+                } 
             }
-
-        });
-        
+        }); 
     }
-    
-
 }
 
+// 
+// Calendar
+// 
+
+
+let calendarHeaderBlk = document.querySelectorAll(".calendar-header-item");
+let calendarMainBlk = document.querySelectorAll(".calendar_main");
+
+if(calendarHeaderBlk && calendarMainBlk && (calendarHeaderBlk.length == calendarMainBlk.length)){
+
+    for (let i = 0; i < calendarHeaderBlk.length; i++) {
+        
+        calendarHeaderBlk[i].addEventListener('click',()=>{
+
+            calendarMainBlk[i].classList.add("block");
+            calendarHeaderBlk[i].classList.add("itemlist-item-active");
+
+            for (let b = 0; b < calendarHeaderBlk.length; b++) {
+                
+                if(i != b){
+                    calendarMainBlk[b].classList.remove("block"); 
+                    calendarHeaderBlk[b].classList.remove("itemlist-item-active");
+                } 
+            }
+        }); 
+    }
+}
+
+let createShedulePopupOpen = document.querySelector(".calendar_add");
+let createShedulePopupOpen1 = document.querySelector(".calendar_select");
+let createShedulePopup = document.querySelector(".create-shedule__popup");
+let closeShedulePopup= document.querySelector(".save")
+
+let calendarPopupOpen = document.querySelector(".date-selection");
+let calendarPopupOpen1 = document.querySelectorAll(".create-shedule__popup");
+let calendarPopup = document.querySelector(".calendar__popup");
+
+
+if(popupClose){
+
+    createShedulePopupOpen.addEventListener('click',()=>{
+        closeAllPopups();
+        createShedulePopup.classList.add("popup-active");
+        checkHeight(createShedulePopup);
+    });
+
+    closeShedulePopup.addEventListener('click',()=>{
+        closeAllPopups();
+    });
+
+    createShedulePopupOpen1.addEventListener('click',()=>{
+        closeAllPopups();
+        createShedulePopup.classList.add("popup-active");
+        checkHeight(createShedulePopup);
+    });
+
+    calendarPopupOpen.addEventListener('click',()=>{
+        closeAllPopups();
+        calendarPopup.classList.add("popup-active");
+        checkHeight(calendarPopup);
+    });
+
+}
 // 
 //  Vertical reviews
 // 

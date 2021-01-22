@@ -320,6 +320,7 @@ a:hover,a:active,a:focus{
 main{
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .input{
@@ -356,6 +357,7 @@ main{
   width: fit-content;
   height: fit-content;
   transition: .3s;
+  cursor: pointer;
 
   &:after{
     content: "";
@@ -1857,6 +1859,12 @@ footer{
     font-size: 16px;
     line-height: 23px;
     margin: 0 auto;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover{
+      background: #1042a5;
+    }
   }
 
   .popup_popup_blk_footer{
@@ -2403,6 +2411,18 @@ footer{
   background: linear-gradient(180deg, #DDEAF9 0%, #FFFFFF 100%);
 }
 
+.pc-white_bg{
+
+  .wrapper{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+    border-radius: 10px;
+    padding: 61px 40px 50px 46px;
+    margin-bottom: 50px;
+  }
+  
+}
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2627,6 +2647,162 @@ footer{
     }
   }
 }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----======PC DESRIPTION=======----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.pc_description{
+
+  .wrapper{
+
+    .description_header{
+      color: #213243;
+      font-weight: 500 !important;
+      font-size: 24px;
+      line-height: 25px;
+      margin-bottom: 40px;
+    }
+
+    .desription_price{
+      margin-bottom: 38px;
+
+      .set_price{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+
+        input{
+          margin-right: 16px;
+          font-weight: 500 !important;
+          font-size: 18px;
+          line-height: 23px;
+          width: 100px;
+          color: #213243;
+
+          &::placeholder{
+            opacity: 1;
+            color: #213243;
+          }
+        }
+
+        .price_hint{
+          font-size: 14px;
+          line-height: 19px;
+          color: #B3BACC;
+        }
+      }
+    }
+
+    .description_ways{
+      margin-bottom: 20px;
+
+      .ways_header{
+        
+      }
+
+      .ways_grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+
+        input{
+          display: none;
+        }
+
+        label{
+          box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+          border-radius: 10px;
+          padding:  31px 10px 31px 22px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          position: relative;
+          transition: .2s;
+          cursor: pointer;
+
+          img{
+            width: 56px;
+            height: 56px;
+            flex-shrink: 0;
+            margin-right: 40px;
+          }
+
+          .ways_text{
+            font-weight: 500 !important;
+            font-size: 16px;
+            line-height: 24px;
+            color: #213243;
+          }
+
+          &::after{
+            position: absolute;
+            content: "";
+            width: 15px;
+            height: 12px;
+            background: url(../img/svg/checked.svg) center;
+            background-size: cover;
+            right: 15px;
+            top: 15px;
+            opacity: 0;
+            transition: .2s;
+          }
+        }
+
+        input:checked + label{
+          background: #EDF2FB;
+
+          &::after{
+            opacity: 1;
+          }
+
+        }
+      }
+    }
+
+    .description_save{
+      margin-left: auto;
+    }
+  }
+  
+}
+
+.pc-text-blk{
+  margin-bottom: 60px;
+
+  .blk_header{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700 !important;
+    color: #213243;
+    margin-bottom: 19px;
+  }
+
+  .blk_text{
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #545454
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=======PC EDUCATION=======----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
 
 
 /* ------------------------------------ */
@@ -2899,7 +3075,7 @@ footer{
         margin-right: 54px;
         position: relative;
 
-        .item{
+        .calendar-header-item{
           min-width: 221px;
           padding: 0 0 15px 0;
           text-align: center;
@@ -3042,6 +3218,8 @@ footer{
             line-height: 19px;
             margin-bottom: 18px;
             text-align: right;
+            color: #B3BACC;
+            cursor: pointer;
           }
           .calendar-deactivate{
             color: #FE001E;
@@ -3110,6 +3288,7 @@ footer{
             margin-right: 7px;
             flex-shrink: 0;
             margin-bottom: 13px;
+            cursor: pointer;
 
             &:last-child{
               margin-right: 0;
@@ -3161,11 +3340,11 @@ footer{
             background-size: 20px;
             padding: 2px 0;
             padding-left: 30px;
+            cursor: pointer;
           }
         }
       }
     }
-
     
   }
 

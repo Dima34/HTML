@@ -302,7 +302,8 @@ a:hover, a:active, a:focus {
 
 main {
   min-height: 100vh;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .input {
   background: #F2F7FD;
@@ -334,7 +335,8 @@ main {
   display: block;
   width: fit-content;
   height: fit-content;
-  transition: .3s; }
+  transition: .3s;
+  cursor: pointer; }
   .btn-w-arrow:after {
     content: "";
     background: url(../img/svg/btn-arrow.svg) center no-repeat;
@@ -1335,7 +1337,11 @@ footer {
     font-weight: 500 !important;
     font-size: 16px;
     line-height: 23px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    cursor: pointer;
+    transition: .3s; }
+    .popup_popup_blk .popup_btn:hover {
+      background: #1042a5; }
   .popup_popup_blk .popup_popup_blk_footer {
     padding: 18px 30px 30px 30px;
     background: #ECF3FC;
@@ -1696,6 +1702,13 @@ footer {
   position: relative;
   background: linear-gradient(180deg, #DDEAF9 0%, #FFFFFF 100%); }
 
+.pc-white_bg .wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+  border-radius: 10px;
+  padding: 61px 40px 50px 46px;
+  margin-bottom: 50px; }
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1846,6 +1859,111 @@ footer {
     column-gap: 23px;
     row-gap: 40px; }
 
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----======PC DESRIPTION=======----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.pc_description .wrapper .description_header {
+  color: #213243;
+  font-weight: 500 !important;
+  font-size: 24px;
+  line-height: 25px;
+  margin-bottom: 40px; }
+
+.pc_description .wrapper .desription_price {
+  margin-bottom: 38px; }
+  .pc_description .wrapper .desription_price .set_price {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .pc_description .wrapper .desription_price .set_price input::-webkit-outer-spin-button,
+    .pc_description .wrapper .desription_price .set_price input::-webkit-inner-spin-button {
+      -webkit-appearance: none; }
+    .pc_description .wrapper .desription_price .set_price input {
+      margin-right: 16px;
+      font-weight: 500 !important;
+      font-size: 18px;
+      line-height: 23px;
+      width: 100px;
+      color: #213243; }
+      .pc_description .wrapper .desription_price .set_price input::placeholder {
+        opacity: 1;
+        color: #213243; }
+    .pc_description .wrapper .desription_price .set_price .price_hint {
+      font-size: 14px;
+      line-height: 19px;
+      color: #B3BACC; }
+
+.pc_description .wrapper .description_ways {
+  margin-bottom: 20px; }
+  .pc_description .wrapper .description_ways .ways_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px; }
+    .pc_description .wrapper .description_ways .ways_grid input {
+      display: none; }
+    .pc_description .wrapper .description_ways .ways_grid label {
+      box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+      border-radius: 10px;
+      padding: 31px 10px 31px 22px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      transition: .2s;
+      cursor: pointer; }
+      .pc_description .wrapper .description_ways .ways_grid label img {
+        width: 56px;
+        height: 56px;
+        flex-shrink: 0;
+        margin-right: 40px; }
+      .pc_description .wrapper .description_ways .ways_grid label .ways_text {
+        font-weight: 500 !important;
+        font-size: 16px;
+        line-height: 24px;
+        color: #213243; }
+      .pc_description .wrapper .description_ways .ways_grid label::after {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 12px;
+        background: url(../img/svg/checked.svg) center;
+        background-size: cover;
+        right: 15px;
+        top: 15px;
+        opacity: 0;
+        transition: .2s; }
+    .pc_description .wrapper .description_ways .ways_grid input:checked + label {
+      background: #EDF2FB; }
+      .pc_description .wrapper .description_ways .ways_grid input:checked + label::after {
+        opacity: 1; }
+
+.pc_description .wrapper .description_save {
+  margin-left: auto; }
+
+.pc-text-blk {
+  margin-bottom: 60px; }
+  .pc-text-blk .blk_header {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700 !important;
+    color: #213243;
+    margin-bottom: 19px; }
+  .pc-text-blk .blk_text {
+    font-size: 14px;
+    line-height: 19px;
+    color: #545454; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=======PC EDUCATION=======----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2011,7 +2129,7 @@ footer {
         width: 100%;
         margin-right: 54px;
         position: relative; }
-        .calendar .wrapper .calendar_nav .itemlist .item {
+        .calendar .wrapper .calendar_nav .itemlist .calendar-header-item {
           min-width: 221px;
           padding: 0 0 15px 0;
           text-align: center;
@@ -2020,15 +2138,15 @@ footer {
           margin-right: 24px;
           cursor: pointer;
           transition: .3s; }
-          .calendar .wrapper .calendar_nav .itemlist .item p {
+          .calendar .wrapper .calendar_nav .itemlist .calendar-header-item p {
             font-weight: 500 !important;
             font-size: 16px;
             line-height: 24px;
             color: #B3BACC;
             width: 100%; }
-          .calendar .wrapper .calendar_nav .itemlist .item:hover {
+          .calendar .wrapper .calendar_nav .itemlist .calendar-header-item:hover {
             border-bottom: 5px solid #1763F8; }
-            .calendar .wrapper .calendar_nav .itemlist .item:hover p {
+            .calendar .wrapper .calendar_nav .itemlist .calendar-header-item:hover p {
               color: #1763F8; }
         .calendar .wrapper .calendar_nav .itemlist .itemlist-item-active {
           border-bottom: 5px solid #1763F8; }
@@ -2112,7 +2230,9 @@ footer {
           font-size: 14px;
           line-height: 19px;
           margin-bottom: 18px;
-          text-align: right; }
+          text-align: right;
+          color: #B3BACC;
+          cursor: pointer; }
         .calendar .wrapper .calendar_main .main-blk .right .calendar-deactivate {
           color: #FE001E; }
         .calendar .wrapper .calendar_main .main-blk:last-child {
@@ -2155,7 +2275,8 @@ footer {
         text-align: center;
         margin-right: 7px;
         flex-shrink: 0;
-        margin-bottom: 13px; }
+        margin-bottom: 13px;
+        cursor: pointer; }
         .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_main .popup_dates .date_dates .date:last-child {
           margin-right: 0; }
       .create-shedule__popup .create-shedule__popup_popup_blk .create-shedule__popup_popup_blk_main .popup_dates .date_dates .uncative {
@@ -2185,7 +2306,8 @@ footer {
         background: url(../img/svg/calendat_thumb.svg) left center no-repeat;
         background-size: 20px;
         padding: 2px 0;
-        padding-left: 30px; }
+        padding-left: 30px;
+        cursor: pointer; }
 
 .calendar__popup .popup_popup_blk_main {
   padding: 0 19px 38px 19px; }
