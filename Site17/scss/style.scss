@@ -244,7 +244,7 @@ a:hover,a:active,a:focus{
   position: relative; 
 }
 
-.ibg img {
+.ibg > img {
   width: 0;
   height: 0;
   position: absolute;
@@ -1163,7 +1163,6 @@ header{
   }
 }
 
-
 .specialist_card{
   display: flex;
   width: 343px;
@@ -1222,7 +1221,8 @@ header{
       margin-bottom: 20px;
     }
 
-    .appointment_make-again,.appointment-start{
+    .appointment_make-again,.appointment-start
+    ,.enter_cabinet{
       border-radius: 10px;     
       background: #94AAD7;
       font-weight: 500 !important;
@@ -1241,6 +1241,14 @@ header{
 
       &:hover{
         background: #1763F8;
+      }
+    }
+
+    .enter_cabinet{
+      background: #1763F8;
+
+      &:hover{
+        background: #1042a5;
       }
     }
 
@@ -2114,6 +2122,7 @@ footer{
 
       .horizontal_key{
         margin-right: 20px;
+        padding-bottom: 1px;
       }
 
       .card_statistic{
@@ -2660,14 +2669,6 @@ footer{
 
   .wrapper{
 
-    .description_header{
-      color: #213243;
-      font-weight: 500 !important;
-      font-size: 24px;
-      line-height: 25px;
-      margin-bottom: 40px;
-    }
-
     .desription_price{
       margin-bottom: 38px;
 
@@ -2776,6 +2777,14 @@ footer{
   
 }
 
+.description_header{
+  color: #213243;
+  font-weight: 500 !important;
+  font-size: 24px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
 .pc-text-blk{
   margin-bottom: 60px;
 
@@ -2803,7 +2812,187 @@ footer{
 /* ------------------------------------ */
 /* ------------------------------------ */
 
+.pc_education{
+  margin-bottom: 15px;
 
+  .education_specialization{
+
+    .education_main{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      input{
+        display: none;
+      }
+
+      label{
+        font-size: 14px;
+        line-height: 15px;
+        padding: 12px 40px 12px 40px;
+        margin-right: 10px;
+        border-radius: 10px;
+        color: #1763F8;
+        margin-bottom: 15px;
+        position: relative;
+        min-width: 146px;
+        width: fit-content;
+        font-weight: 500 !important;
+        transition: .2s;
+        cursor: pointer;
+
+        &::after{
+          position: absolute;
+          content: "";
+          top: 50%;
+          transform: translateY(-50%);
+          left: 17px;
+          width: 11px;
+          height: 9px;
+          background: url(../img/svg/checked.svg) center;
+          background-size: cover;
+          opacity: 0;
+          transition: .2s;
+        }
+      }
+
+      input:checked + label{
+        background: #EDF2FB;
+
+        &::after{
+          opacity: 1;
+        }
+      }
+    }
+
+  }
+
+  .description_save{
+    margin-left: auto;
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=======PC TRAINING=======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.pc_training{
+
+  .training_save{
+    margin-left: auto;
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----======PC SERTIFICAT======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.pc_sertificat{
+
+  .wrapper{
+    padding: 50px 43px 36px 43px;
+
+    .sertificat_drag-zone{
+      margin-bottom: 28px;
+
+      input{
+        display: none;
+      }
+
+      label{
+        width: 100%;
+        height: 166px;
+        background: #F2F7FD;
+        border: 1px dashed #E8F0F9;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+
+        .drag-zone-text{
+          text-align: center;
+          font-size: 14px;
+          line-height: 19px;
+          color: #213243;
+          margin-bottom: 11px;
+        }
+
+        .drag-zone-thumb{
+          width: 34px;
+          height: 37px;
+        }
+
+        &:hover{
+          border: 1px dashed #F2F7FD;
+          background: #DDEAF9;
+        }
+      }
+    }
+
+    .sertificat_image-zone{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .sertificat{
+        width: 221px;
+        height: 160px;
+        position: relative;
+        margin: 0 11.5px;
+        margin-bottom: 23px;
+
+        .sertificat_close{
+          width: 26px;
+          height: 26px;
+          cursor: pointer;
+
+          img{
+            position: absolute;
+            right: 5px;
+            top: 4px;
+            width: 26px;
+            height: 26px;
+          }
+        }
+        
+      }
+    }
+
+    .sertificat_save{
+      margin-top: 48px;
+      margin-left: auto;
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======PC DATING=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.pc_dating{
+  margin-bottom: 176px;
+
+  .wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: 32px;
+  }
+}
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3434,6 +3623,236 @@ footer{
 
 
   }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------======SPECIALISTS=======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.specialists-nav{
+
+  .specialist_search{
+    padding: 21px 31px;
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+    border-radius: 10px;
+    margin-bottom: 29px;
+
+    .search_input-group{
+      display: flex;
+      flex-direction: row;
+      margin-right: 23px;
+
+      .search-btn{
+        flex-shrink: 0;
+        width: 68px;
+        height: 58px;
+        background: #1763F8;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+
+        img{
+          height: 20px;
+          width: auto;
+        }
+
+        &:hover{
+          background: #1042a5;
+        }
+      }
+
+      input{
+        width: 100%;
+      }
+
+      &:nth-child(1){
+        max-width: 559px;
+        width: 100%;
+      }
+
+      &:nth-child(2){
+        max-width: 343px;
+        width: 100%;
+      }
+
+      &:nth-child(3){
+        max-width: 430px;
+        width: 100%;
+      }
+
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+
+  .specialist_filter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+
+    input{
+      display: none;
+    }
+
+    label{
+      font-size: 14px;
+      line-height: 15px;
+      padding: 12px 40px 12px 40px;
+      margin-right: 10px;
+      border-radius: 10px;
+      color: #1763F8;
+      margin-bottom: 15px;
+      position: relative;
+      min-width: 146px;
+      width: fit-content;
+      font-weight: 500 !important;
+      transition: .2s;
+      cursor: pointer;
+
+      &::after{
+        position: absolute;
+        content: "";
+        top: 50%;
+        transform: translateY(-50%);
+        left: 17px;
+        width: 11px;
+        height: 9px;
+        background: url(../img/svg/checked-red.svg) center;
+        background-size: cover;
+        opacity: 0;
+        transition: .2s;
+      }
+    }
+
+    input:checked + label{
+      background: #ffffff;
+
+      &::after{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.specialist_main{
+  margin-bottom: 63px;
+
+  .wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 21px;
+  }
+  
+
+  .specialist_card{
+    position: relative;
+
+    .card_footer{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: 0;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      transform: translateY(70%);
+      background: #FFFFFF;
+      box-shadow: 0px 22px 44px -12px rgba(221, 224, 230, 0.71);
+      border-radius: 10px;
+      padding: 0px 16px 0px 16px;
+      max-height: 0px;
+      overflow: hidden;
+      transition: .3s;
+
+      a{
+        padding:18px 18px;
+        margin-right: 12px;
+        width: 100%;
+        text-align: center;
+        transform: rotateX(90deg);
+        transition: .5s;
+
+        &::after{
+          display: none;
+        }
+
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+
+      .footer_make-appointment{
+        max-width: 170px;
+      }
+
+      .footer_details{
+        max-width: 128px;
+      }
+
+    }
+
+    &:hover{
+      z-index: 2;
+      .card_footer{
+        max-height: 200px;
+        padding: 0px 16px 25px 16px;
+        transform: translateY(80%);
+
+        a{
+          transform: rotateX(0deg);
+        }
+      }
+    }
+  }
+}
+
+.specialist_pages{
+  margin: 0 auto;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .page_prev,.page_next{
+    img{
+      width: 31px;
+      height: 31px;
+    }
+  }
+
+  .pages_pagination{
+    margin: 0 50px;
+    cursor: default;
+
+    .page_bullet{
+      font-size: 14px;
+      line-height: 19px;
+      color: #C4C4C4;
+      transition: .3s;
+      padding: 0 2px;
+  
+      &:hover{
+        color: #1763F8;
+      }
+    }
+  
+    .bullet-active{
+      color: #1763F8;
+    }
+  }
+  
 }
 
 /* ------------------------------------ */

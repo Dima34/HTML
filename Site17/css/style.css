@@ -241,7 +241,7 @@ a:hover, a:active, a:focus {
   background-repeat: no-repeat;
   position: relative; }
 
-.ibg img {
+.ibg > img {
   width: 0;
   height: 0;
   position: absolute;
@@ -911,7 +911,8 @@ header {
       line-height: 17px;
       color: #1763F8;
       margin-bottom: 20px; }
-    .specialist_card .card_appointment .appointment_make-again, .specialist_card .card_appointment .appointment-start {
+    .specialist_card .card_appointment .appointment_make-again, .specialist_card .card_appointment .appointment-start
+, .specialist_card .card_appointment .enter_cabinet {
       border-radius: 10px;
       background: #94AAD7;
       font-weight: 500 !important;
@@ -927,6 +928,10 @@ header {
       margin-bottom: 8px; }
       .specialist_card .card_appointment .appointment_make-again:hover {
         background: #1763F8; }
+    .specialist_card .card_appointment .enter_cabinet {
+      background: #1763F8; }
+      .specialist_card .card_appointment .enter_cabinet:hover {
+        background: #1042a5; }
     .specialist_card .card_appointment .appointment-start {
       background: #1763F8; }
       .specialist_card .card_appointment .appointment-start:hover {
@@ -1505,7 +1510,8 @@ footer {
       align-items: flex-end;
       margin-top: -12 px !important; }
       .profile-blk .left_info .horizontal_star-raiting .horizontal_key {
-        margin-right: 20px; }
+        margin-right: 20px;
+        padding-bottom: 1px; }
       .profile-blk .left_info .horizontal_star-raiting .card_statistic {
         margin-left: auto;
         margin-right: -30px; }
@@ -1866,13 +1872,6 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-.pc_description .wrapper .description_header {
-  color: #213243;
-  font-weight: 500 !important;
-  font-size: 24px;
-  line-height: 25px;
-  margin-bottom: 40px; }
-
 .pc_description .wrapper .desription_price {
   margin-bottom: 38px; }
   .pc_description .wrapper .desription_price .set_price {
@@ -1944,6 +1943,13 @@ footer {
 .pc_description .wrapper .description_save {
   margin-left: auto; }
 
+.description_header {
+  color: #213243;
+  font-weight: 500 !important;
+  font-size: 24px;
+  line-height: 25px;
+  margin-bottom: 40px; }
+
 .pc-text-blk {
   margin-bottom: 60px; }
   .pc-text-blk .blk_header {
@@ -1964,6 +1970,132 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+.pc_education {
+  margin-bottom: 15px; }
+  .pc_education .education_specialization .education_main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .pc_education .education_specialization .education_main input {
+      display: none; }
+    .pc_education .education_specialization .education_main label {
+      font-size: 14px;
+      line-height: 15px;
+      padding: 12px 40px 12px 40px;
+      margin-right: 10px;
+      border-radius: 10px;
+      color: #1763F8;
+      margin-bottom: 15px;
+      position: relative;
+      min-width: 146px;
+      width: fit-content;
+      font-weight: 500 !important;
+      transition: .2s;
+      cursor: pointer; }
+      .pc_education .education_specialization .education_main label::after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        transform: translateY(-50%);
+        left: 17px;
+        width: 11px;
+        height: 9px;
+        background: url(../img/svg/checked.svg) center;
+        background-size: cover;
+        opacity: 0;
+        transition: .2s; }
+    .pc_education .education_specialization .education_main input:checked + label {
+      background: #EDF2FB; }
+      .pc_education .education_specialization .education_main input:checked + label::after {
+        opacity: 1; }
+  .pc_education .description_save {
+    margin-left: auto; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=======PC TRAINING=======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.pc_training .training_save {
+  margin-left: auto; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----======PC SERTIFICAT======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.pc_sertificat .wrapper {
+  padding: 50px 43px 36px 43px; }
+  .pc_sertificat .wrapper .sertificat_drag-zone {
+    margin-bottom: 28px; }
+    .pc_sertificat .wrapper .sertificat_drag-zone input {
+      display: none; }
+    .pc_sertificat .wrapper .sertificat_drag-zone label {
+      width: 100%;
+      height: 166px;
+      background: #F2F7FD;
+      border: 1px dashed #E8F0F9;
+      box-sizing: border-box;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: .3s; }
+      .pc_sertificat .wrapper .sertificat_drag-zone label .drag-zone-text {
+        text-align: center;
+        font-size: 14px;
+        line-height: 19px;
+        color: #213243;
+        margin-bottom: 11px; }
+      .pc_sertificat .wrapper .sertificat_drag-zone label .drag-zone-thumb {
+        width: 34px;
+        height: 37px; }
+      .pc_sertificat .wrapper .sertificat_drag-zone label:hover {
+        border: 1px dashed #F2F7FD;
+        background: #DDEAF9; }
+  .pc_sertificat .wrapper .sertificat_image-zone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .pc_sertificat .wrapper .sertificat_image-zone .sertificat {
+      width: 221px;
+      height: 160px;
+      position: relative;
+      margin: 0 11.5px;
+      margin-bottom: 23px; }
+      .pc_sertificat .wrapper .sertificat_image-zone .sertificat .sertificat_close {
+        width: 26px;
+        height: 26px;
+        cursor: pointer; }
+        .pc_sertificat .wrapper .sertificat_image-zone .sertificat .sertificat_close img {
+          position: absolute;
+          right: 5px;
+          top: 4px;
+          width: 26px;
+          height: 26px; }
+  .pc_sertificat .wrapper .sertificat_save {
+    margin-top: 48px;
+    margin-left: auto; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======PC DATING=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.pc_dating {
+  margin-bottom: 176px; }
+  .pc_dating .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: 32px; }
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2368,6 +2500,164 @@ footer {
         background: #1763F8;
         box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35); }
     .calendar-widged .calendar-grid .calendar_day {
+      color: #1763F8; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------======SPECIALISTS=======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.specialists-nav .specialist_search {
+  padding: 21px 31px;
+  display: flex;
+  flex-direction: row;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+  border-radius: 10px;
+  margin-bottom: 29px; }
+  .specialists-nav .specialist_search .search_input-group {
+    display: flex;
+    flex-direction: row;
+    margin-right: 23px; }
+    .specialists-nav .specialist_search .search_input-group .search-btn {
+      flex-shrink: 0;
+      width: 68px;
+      height: 58px;
+      background: #1763F8;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: .3s; }
+      .specialists-nav .specialist_search .search_input-group .search-btn img {
+        height: 20px;
+        width: auto; }
+      .specialists-nav .specialist_search .search_input-group .search-btn:hover {
+        background: #1042a5; }
+    .specialists-nav .specialist_search .search_input-group input {
+      width: 100%; }
+    .specialists-nav .specialist_search .search_input-group:nth-child(1) {
+      max-width: 559px;
+      width: 100%; }
+    .specialists-nav .specialist_search .search_input-group:nth-child(2) {
+      max-width: 343px;
+      width: 100%; }
+    .specialists-nav .specialist_search .search_input-group:nth-child(3) {
+      max-width: 430px;
+      width: 100%; }
+    .specialists-nav .specialist_search .search_input-group:last-child {
+      margin-right: 0; }
+
+.specialists-nav .specialist_filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 24px; }
+  .specialists-nav .specialist_filter input {
+    display: none; }
+  .specialists-nav .specialist_filter label {
+    font-size: 14px;
+    line-height: 15px;
+    padding: 12px 40px 12px 40px;
+    margin-right: 10px;
+    border-radius: 10px;
+    color: #1763F8;
+    margin-bottom: 15px;
+    position: relative;
+    min-width: 146px;
+    width: fit-content;
+    font-weight: 500 !important;
+    transition: .2s;
+    cursor: pointer; }
+    .specialists-nav .specialist_filter label::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      left: 17px;
+      width: 11px;
+      height: 9px;
+      background: url(../img/svg/checked-red.svg) center;
+      background-size: cover;
+      opacity: 0;
+      transition: .2s; }
+  .specialists-nav .specialist_filter input:checked + label {
+    background: #ffffff; }
+    .specialists-nav .specialist_filter input:checked + label::after {
+      opacity: 1; }
+
+.specialist_main {
+  margin-bottom: 63px; }
+  .specialist_main .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 21px; }
+  .specialist_main .specialist_card {
+    position: relative; }
+    .specialist_main .specialist_card .card_footer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: 0;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      transform: translateY(70%);
+      background: #FFFFFF;
+      box-shadow: 0px 22px 44px -12px rgba(221, 224, 230, 0.71);
+      border-radius: 10px;
+      padding: 0px 16px 0px 16px;
+      max-height: 0px;
+      overflow: hidden;
+      transition: .3s; }
+      .specialist_main .specialist_card .card_footer a {
+        padding: 18px 18px;
+        margin-right: 12px;
+        width: 100%;
+        text-align: center;
+        transform: rotateX(90deg);
+        transition: .5s; }
+        .specialist_main .specialist_card .card_footer a::after {
+          display: none; }
+        .specialist_main .specialist_card .card_footer a:last-child {
+          margin-right: 0; }
+      .specialist_main .specialist_card .card_footer .footer_make-appointment {
+        max-width: 170px; }
+      .specialist_main .specialist_card .card_footer .footer_details {
+        max-width: 128px; }
+    .specialist_main .specialist_card:hover {
+      z-index: 2; }
+      .specialist_main .specialist_card:hover .card_footer {
+        max-height: 200px;
+        padding: 0px 16px 25px 16px;
+        transform: translateY(80%); }
+        .specialist_main .specialist_card:hover .card_footer a {
+          transform: rotateX(0deg); }
+
+.specialist_pages {
+  margin: 0 auto;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .specialist_pages .page_prev img, .specialist_pages .page_next img {
+    width: 31px;
+    height: 31px; }
+  .specialist_pages .pages_pagination {
+    margin: 0 50px;
+    cursor: default; }
+    .specialist_pages .pages_pagination .page_bullet {
+      font-size: 14px;
+      line-height: 19px;
+      color: #C4C4C4;
+      transition: .3s;
+      padding: 0 2px; }
+      .specialist_pages .pages_pagination .page_bullet:hover {
+        color: #1763F8; }
+    .specialist_pages .pages_pagination .bullet-active {
       color: #1763F8; }
 
 /* ------------------------------------ */
