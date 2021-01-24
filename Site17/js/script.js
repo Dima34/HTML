@@ -128,7 +128,7 @@ let RecoveryPopup = document.querySelector(".remind__popup");
 let AllPopups = document.querySelectorAll(".popup")
 let popupClose = document.querySelectorAll(".pp_close");
 
-if(popupClose){
+if(popupClose && AuthorizePopupOpen){
 
     AuthorizePopupOpen.addEventListener('click',()=>{
         closeAllPopups();
@@ -334,7 +334,7 @@ let calendarPopupOpen1 = document.querySelectorAll(".create-shedule__popup");
 let calendarPopup = document.querySelector(".calendar__popup");
 
 
-if(popupClose){
+if(popupClose && createShedulePopupOpen){
 
     createShedulePopupOpen.addEventListener('click',()=>{
         closeAllPopups();
@@ -359,6 +359,92 @@ if(popupClose){
     });
 
 }
+
+// 
+// Profile
+// 
+
+let appointmentPopupOpen = document.querySelector(".make-appointment");
+let appointmentPopup = document.querySelector(".appointment__popup");
+
+let payPopupOpen = document.querySelector(".popup_btn");
+let payPopup = document.querySelector(".pay__popup");
+
+let paymentSuccessPopupOpen = document.querySelector(".pay__popup .popup_btn");
+let paymentSuccessPopup = document.querySelector(".payment-success__popup");
+
+
+if(popupClose && appointmentPopup){
+
+    appointmentPopupOpen.addEventListener('click',()=>{
+        closeAllPopups();
+        appointmentPopup.classList.add("popup-active");
+        checkHeight(appointmentPopup);
+    });
+
+    payPopupOpen.addEventListener('click',()=>{
+        closeAllPopups();
+        payPopup.classList.add("popup-active");
+        checkHeight(payPopup);
+    });
+
+    paymentSuccessPopupOpen.addEventListener('click',()=>{
+        closeAllPopups();
+        paymentSuccessPopup.classList.add("popup-active");
+        checkHeight(paymentSuccessPopup);
+    });
+
+}
+
+// 
+// Un-bought program
+// 
+
+payPopupOpen = document.querySelector(".program_status");
+payPopup = document.querySelector(".pay__popup");
+
+paymentSuccessPopupOpen = document.querySelector(".pay__popup .popup_btn");
+paymentSuccessPopup = document.querySelector(".payment-success__popup");
+
+
+if(popupClose && payPopupOpen){
+
+
+    payPopupOpen.addEventListener('click',()=>{
+        closeAllPopups();
+        payPopup.classList.add("popup-active");
+        checkHeight(payPopup);
+    });
+
+    paymentSuccessPopupOpen.addEventListener('click',()=>{
+        closeAllPopups();
+        paymentSuccessPopup.classList.add("popup-active");
+        checkHeight(paymentSuccessPopup);
+    });
+
+}
+
+// 
+// Rates
+// 
+
+makeAnOrderPopupOpen = document.querySelectorAll(".application-submit");
+makeAnOrderPopup = document.querySelector(".make-an-order__popup");
+
+
+if(popupClose && makeAnOrderPopupOpen){
+
+    for (let i = 0; i < makeAnOrderPopupOpen.length; i++) {
+        
+        makeAnOrderPopupOpen[i].addEventListener('click',()=>{
+            closeAllPopups();
+            makeAnOrderPopup.classList.add("popup-active");
+            checkHeight(makeAnOrderPopup);
+        });
+
+    }
+}
+
 // 
 //  Vertical reviews
 // 
@@ -370,7 +456,16 @@ if(verticalBlock){
     let SwiperWrapper = verticalBlock.querySelector(".swiper-wrapper");
     let rewiewBlocks = SwiperWrapper.querySelectorAll(".vertical-reviews_rewiew");
 
-    let blocksInSlideMustBe = 3;
+    let blocksInSlideMustBe;
+
+    if(SwiperWrapper.hasAttribute("data-blocks-in-slide")){
+        blocksInSlideMustBe = SwiperWrapper.getAttribute("data-blocks-in-slide") ;
+        console.log(blocksInSlideMustBe);
+    }
+    else{
+        blocksInSlideMustBe = 3 ;
+    }
+    
     let slidesAmount = Math.ceil(rewiewBlocks.length / blocksInSlideMustBe);
 
     // Append swiper-slides 
