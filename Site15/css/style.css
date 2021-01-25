@@ -5100,7 +5100,471 @@ footer {
         padding: 0.521vw 1.042vw;
         font-size: 1.719vw;
         line-height: 1.979vw;
-        margin-bottom: 1.042vw; } }
+        margin-bottom: 1.042vw; }
+  .g-line-title {
+    padding: 0.677vw;
+    font-size: 1.563vw; }
+  .g-advantages {
+    grid-template-columns: 38.594vw 1fr;
+    margin-bottom: 4.844vw; }
+    .g-advantages .g-advantages_left {
+      height: 35.104vw;
+      padding: 1.563vw; }
+      .g-advantages .g-advantages_left .g-advantages_left_text p:nth-child(1) {
+        font-size: 1.875vw;
+        margin-bottom: -1.042vw;
+        padding-left: 0.260vw; }
+      .g-advantages .g-advantages_left .g-advantages_left_text p:nth-child(2) {
+        font-size: 6.927vw;
+        margin-bottom: -0.521vw; }
+      .g-advantages .g-advantages_left .g-advantages_left_text p:nth-child(3) {
+        font-size: 1.510vw;
+        padding-left: 0.260vw; }
+    .g-advantages .g-advantages_right {
+      margin-left: 2.604vw;
+      padding-top: 1.250vw;
+      width: 41.094vw; }
+      .g-advantages .g-advantages_right .right_blk {
+        padding-top: 0.938vw;
+        padding-bottom: 1.042vw; }
+        .g-advantages .g-advantages_right .right_blk img {
+          width: 4.688vw;
+          height: 4.688vw;
+          margin-right: 2.083vw; }
+        .g-advantages .g-advantages_right .right_blk .text_title {
+          font-size: 1.563vw; }
+        .g-advantages .g-advantages_right .right_blk p {
+          font-size: 1.146vw; }
+        .g-advantages .g-advantages_right .right_blk:after {
+          height: 0.208vw; }
+    .g-advantages .g-advantages_bottom {
+      margin-top: 2.604vw;
+      width: 77.344vw;
+      margin-left: 1.563vw;
+      font-size: 0.938vw; }
+  .g-gallery .g-gallery_title {
+    margin-bottom: 2.083vw; }
+  .g-gallery .g-gallery_main-blk {
+    padding: 0 2.604vw;
+    column-gap: 2.083vw;
+    row-gap: 2.083vw;
+    margin-bottom: 3.021vw; }
+    .g-gallery .g-gallery_main-blk .g-gallery_item {
+      width: 14.063vw; }
+      .g-gallery .g-gallery_main-blk .g-gallery_item .item_img {
+        width: 14.063vw;
+        height: 14.063vw;
+        margin-bottom: 1.042vw; }
+      .g-gallery .g-gallery_main-blk .g-gallery_item .item_title {
+        font-size: 1.146vw;
+        margin-bottom: 0.260vw; }
+      .g-gallery .g-gallery_main-blk .g-gallery_item .item_subtitle {
+        font-size: 0.990vw; }
+  .g-gallery .small-imgs .g-gallery_item {
+    width: 10.625vw; }
+    .g-gallery .small-imgs .g-gallery_item .item_img {
+      width: 10.625vw;
+      height: 9.792vw; }
+  .g-gallery .big-imgs {
+    padding: 0 1.615vw; }
+    .g-gallery .big-imgs .g-gallery_item {
+      width: 16.354vw; }
+      .g-gallery .big-imgs .g-gallery_item .item_img {
+        width: 16.354vw;
+        height: 12.135vw; }
+      .g-gallery .big-imgs .g-gallery_item .item_title {
+        padding: 0 1.042vw; }
+  .g-gallery .g-gallery_attention {
+    margin-bottom: 2.344vw;
+    padding: 0 1.042vw;
+    font-size: 1.146vw; }
+  .g-table {
+    padding-bottom: 1.094vw; }
+    .g-table .g-table_title {
+      margin-bottom: 1.042vw; }
+    .g-table .g-table_table {
+      margin-left: 1.302vw; }
+      .g-table .g-table_table .table_line {
+        grid-template-columns: 13.333vw 16.302vw 16.302vw 16.302vw 16.302vw;
+        min-height: 5vw; }
+        .g-table .g-table_table .table_line .table_col {
+          border-bottom: 0.208vw solid #d5d9df;
+          border-right: 0.208vw solid #d5d9df;
+          padding: 1.823vw; }
+          .g-table .g-table_table .table_line .table_col p {
+            font-size: 2.344vw; }
+        .g-table .g-table_table .table_line .table_col1 {
+          padding: 1.667vw; }
+          .g-table .g-table_table .table_line .table_col1 p {
+            font-size: 1.146vw; }
+      .g-table .g-table_table .table_line1 {
+        min-height: 2.604vw; }
+        .g-table .g-table_table .table_line1 .table_col {
+          padding: 0.938vw; }
+          .g-table .g-table_table .table_line1 .table_col p {
+            font-size: 1.146vw; }
+    .g-table .g-table_attention {
+      padding: 0 2.135vw;
+      font-size: 1.146vw;
+      line-height: 1.302vw;
+      margin-top: 0.521vw; }
+  .g-call-us {
+    margin-top: 1.094vw;
+    margin-bottom: 4.844vw;
+    margin-left: 2.135vw; }
+    .g-call-us .call-us_left {
+      font-size: 1.823vw;
+      line-height: 2.083vw;
+      width: 43.698vw;
+      margin-right: 7.552vw; }
+      .g-call-us .call-us_left a {
+        font-size: 2.865vw; }
+    .g-call-us .call-us_right {
+      font-size: 2.344vw;
+      padding: 0.625vw 5.208vw; }
+      .g-call-us .call-us_right:hover {
+        margin-bottom: 0.521vw; }
+  .g-demands {
+    padding-bottom: 4.740vw; }
+    .g-demands .demands_title {
+      margin-bottom: 1.927vw; }
+    .g-demands .g-deamands_main {
+      grid-template-columns: 25.677vw 1fr;
+      padding-left: 1.823vw; }
+      .g-demands .g-deamands_main .g-demands_left {
+        width: 25.677vw;
+        height: 18.958vw; }
+      .g-demands .g-deamands_main .g-demands_right {
+        padding-left: 1.667vw; }
+        .g-demands .g-deamands_main .g-demands_right .right_blk {
+          padding: 0.938vw 0;
+          border-bottom: 0.208vw solid #d5d9df; }
+          .g-demands .g-deamands_main .g-demands_right .right_blk img {
+            margin-right: 1.927vw; }
+          .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text {
+            font-size: 1.302vw;
+            line-height: 1.458vw; }
+            .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text span, .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text a {
+              font-size: 1.927vw;
+              line-height: 2.083vw; }
+            .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text .text_images {
+              margin-top: 0.260vw; }
+              .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text .text_images img {
+                width: 3.229vw;
+                height: 3.229vw;
+                margin-right: 1.406vw; }
+      .g-demands .g-deamands_main .g-demands_bottom .bottom-blk {
+        margin-bottom: 0.521vw; }
+        .g-demands .g-deamands_main .g-demands_bottom .bottom-blk img {
+          width: 12.240vw;
+          height: 0.156vw;
+          margin-right: 0.833vw; }
+        .g-demands .g-deamands_main .g-demands_bottom .bottom-blk p {
+          font-size: 1.042vw; }
+      .g-demands .g-deamands_main .g-demands_bottom .bottom_text {
+        font-size: 1.302vw;
+        line-height: 2.500vw; }
+  .g-prices {
+    margin-bottom: 2.240vw; }
+    .g-prices .prices_tabs {
+      padding-left: 1.667vw; }
+      .g-prices .prices_tabs .prices_tab {
+        box-shadow: inset 2.552vw 0.104vw 0.885vw -2.813vw rgba(0, 0, 0, 0.39), 0.156vw 0 5px rgba(0, 0, 0, 0.39);
+        padding: 5px 50px; }
+        .g-prices .prices_tabs .prices_tab p {
+          font-size: 1.563vw; }
+        .g-prices .prices_tabs .prices_tab:first-child {
+          box-shadow: 0.156vw 0 0.26vw rgba(0, 0, 0, 0.39); }
+      .g-prices .prices_tabs .prices_tab-active p {
+        font-size: 1.563vw; }
+    .g-prices .prices_main-blks .main-blk {
+      padding: 1.823vw 3.177vw 1.510vw 2.240vw; }
+      .g-prices .prices_main-blks .main-blk .main_left {
+        width: 36.458vw;
+        column-gap: 0.938vw;
+        row-gap: 1.406vw;
+        margin-right: 3.698vw; }
+        .g-prices .prices_main-blks .main-blk .main_left .left_item {
+          border: 0.104vw solid  #ebeae9;
+          border-radius: 1.302vw;
+          padding: 0.208vw 0.208vw 0.990vw 0.208vw; }
+          .g-prices .prices_main-blks .main-blk .main_left .left_item .item_img {
+            width: 10.938vw;
+            height: 9.896vw;
+            margin-bottom: 0.781vw; }
+            .g-prices .prices_main-blks .main-blk .main_left .left_item .item_img a img {
+              width: 2.448vw;
+              height: 2.448vw; }
+          .g-prices .prices_main-blks .main-blk .main_left .left_item .item_name {
+            font-size: 1.146vw;
+            padding: 0 0.521vw; }
+          .g-prices .prices_main-blks .main-blk .main_left .left_item:hover {
+            border: 0.104vw solid #fea711;
+            box-shadow: 0.208vw 0.313vw 0.313vw rgba(0, 0, 0, 0.56); }
+            .g-prices .prices_main-blks .main-blk .main_left .left_item:hover a {
+              margin-bottom: 0.521vw; }
+      .g-prices .prices_main-blks .main-blk .main_right {
+        width: 41.094vw; }
+        .g-prices .prices_main-blks .main-blk .main_right .right_line {
+          padding: 1.042vw 0 1.563vw 0; }
+          .g-prices .prices_main-blks .main-blk .main_right .right_line .line_img {
+            width: 4.010vw;
+            height: 4.010vw;
+            margin-right: 1.823vw; }
+          .g-prices .prices_main-blks .main-blk .main_right .right_line .line_title {
+            font-size: 1.563vw;
+            margin-bottom: 0.521vw; }
+          .g-prices .prices_main-blks .main-blk .main_right .right_line .line_text {
+            font-size: 1.146vw;
+            line-height: 1.302vw; }
+          .g-prices .prices_main-blks .main-blk .main_right .right_line .big-text {
+            font-size: 6.927vw;
+            margin-right: 5vw; }
+          .g-prices .prices_main-blks .main-blk .main_right .right_line .small-text {
+            font-size: 4.167vw; }
+          .g-prices .prices_main-blks .main-blk .main_right .right_line::after {
+            height: 0.208vw; }
+  .g-slider {
+    margin-bottom: 3.229vw; }
+    .g-slider .g-slider_title {
+      margin-bottom: 2.604vw; }
+    .g-slider .g-slider-container {
+      width: 67.708vw;
+      padding: 0 7.813vw; }
+      .g-slider .g-slider-container .swiper-slide {
+        width: 52.083vw;
+        min-height: 31.250vw; }
+        .g-slider .g-slider-container .swiper-slide .g-slider-image {
+          width: 52.083vw;
+          height: 20.833vw;
+          margin-bottom: 7.292vw; }
+        .g-slider .g-slider-container .swiper-slide .g-slider-title {
+          font-size: 1.823vw;
+          max-width: 36.250vw; }
+        .g-slider .g-slider-container .swiper-slide .g-slider_text {
+          font-size: 1.302vw;
+          max-width: 36.250vw; }
+      .g-slider .g-slider-container .swiper-button-next img, .g-slider .g-slider-container .swiper-button-prev img {
+        width: 3.333vw;
+        height: 3.333vw; }
+      .g-slider .g-slider-container .swiper-button-next {
+        right: 0.885vw; }
+      .g-slider .g-slider-container .swiper-button-prev {
+        left: 0.885vw; }
+  .g-for {
+    padding-bottom: 5.990vw; }
+    .g-for .g-for_main {
+      padding-top: 2.656vw;
+      margin-bottom: 2.031vw; }
+      .g-for .g-for_main .main_image {
+        width: 36.719vw;
+        height: 18.854vw; }
+      .g-for .g-for_main .for_textblock .textblock_title {
+        font-size: 1.146vw; }
+      .g-for .g-for_main .for_textblock .textblock_text {
+        font-size: 0.990vw; }
+      .g-for .g-for_main .for_textblock:nth-child(2) {
+        width: 8.177vw;
+        top: 7.240vw;
+        left: 18.333vw; }
+      .g-for .g-for_main .for_textblock:nth-child(3) {
+        width: 14.063vw;
+        top: 16.094vw;
+        left: 9.167vw; }
+      .g-for .g-for_main .for_textblock:nth-child(4) {
+        width: 9.479vw;
+        top: 3.750vw;
+        left: 66.146vw; }
+      .g-for .g-for_main .for_textblock:nth-child(5) {
+        width: 11.667vw;
+        top: 14.115vw;
+        left: 65.313vw; }
+    .g-for .g-for_attention {
+      padding: 0.677vw 0 10.729vw 35vw;
+      min-height: 18.542vw; }
+      .g-for .g-for_attention .attention_text {
+        width: 25.521vw; }
+        .g-for .g-for_attention .attention_text .attention_title {
+          font-size: 1.563vw;
+          padding-left: 4.583vw;
+          margin-bottom: 0.521vw; }
+        .g-for .g-for_attention .attention_text .attention_subtitle {
+          font-size: 1.146vw; }
+      .g-for .g-for_attention .attention_left {
+        left: 3.906vw;
+        bottom: -1.563vw;
+        width: 42.813vw;
+        height: 21.458vw; }
+      .g-for .g-for_attention .attention_right {
+        right: 4.479vw;
+        width: 28.854vw;
+        height: 20.885vw; }
+      .g-for .g-for_attention .attention_hint {
+        left: 46.979vw;
+        bottom: 0.313vw;
+        font-size: 1.146vw; }
+  .g-examples .g-examples_title {
+    margin-bottom: 0.208vw; }
+  .g-examples .examples-container {
+    margin-bottom: 2.240vw; }
+    .g-examples .examples-container .swiper-slide {
+      width: 14.948vw;
+      height: 12.708vw; }
+  .g-examples .example_video {
+    width: 69.271vw;
+    height: 24.531vw;
+    margin-bottom: 1.458vw; }
+    .g-examples .example_video img {
+      width: 6.927vw;
+      height: 6.927vw; }
+  .g-examples .example_more {
+    padding: 0.521vw 5.208vw;
+    font-size: 1.563vw;
+    margin-bottom: 2.240vw; }
+  .g-see-also {
+    padding-bottom: 4.635vw; }
+    .g-see-also .see-also_title {
+      margin-bottom: 0.521vw; }
+    .g-see-also .see-also_links {
+      padding-left: 4.167vw; }
+      .g-see-also .see-also_links a {
+        margin-bottom: 1.250vw;
+        margin-right: 2.604vw;
+        font-size: 1.563vw; }
+        .g-see-also .see-also_links a img {
+          width: 5.208vw;
+          height: 5.208vw;
+          margin-right: 0.677vw; }
+    .g-see-also .see-also_map {
+      width: 80.833vw;
+      height: 22.552vw; }
+  .g-infoblock .g-infoblock_main {
+    padding-right: 4.792vw; }
+    .g-infoblock .g-infoblock_main .main_left {
+      margin-right: 2.396vw; }
+      .g-infoblock .g-infoblock_main .main_left .left_open-photo {
+        padding: 0.521vw 2.500vw;
+        font-size: 1.198vw; }
+    .g-infoblock .g-infoblock_main .main_right {
+      padding-top: 2.865vw; }
+      .g-infoblock .g-infoblock_main .main_right .right_title {
+        font-size: 1.823vw;
+        padding-bottom: 0.573vw; }
+        .g-infoblock .g-infoblock_main .main_right .right_title::after {
+          height: 0.208vw; }
+      .g-infoblock .g-infoblock_main .main_right .right_line {
+        padding: 0.781vw 0; }
+        .g-infoblock .g-infoblock_main .main_right .right_line p {
+          font-size: 1.302vw;
+          line-height: 1.458vw; }
+          .g-infoblock .g-infoblock_main .main_right .right_line p span {
+            font-size: 1.563vw;
+            line-height: 1.615vw; }
+        .g-infoblock .g-infoblock_main .main_right .right_line .line_palette {
+          margin: 0.521vw 0; }
+          .g-infoblock .g-infoblock_main .main_right .right_line .line_palette img {
+            width: 2.865vw;
+            height: 2.865vw;
+            margin-right: 0.417vw; }
+        .g-infoblock .g-infoblock_main .main_right .right_line .line_sizes {
+          width: 34.531vw;
+          height: 9.219vw;
+          margin-bottom: 0.729vw; }
+          .g-infoblock .g-infoblock_main .main_right .right_line .line_sizes img {
+            width: 34.531vw;
+            height: 9.219vw; }
+        .g-infoblock .g-infoblock_main .main_right .right_line .line_table {
+          margin: 0.521vw 0; }
+          .g-infoblock .g-infoblock_main .main_right .right_line .line_table .table_line {
+            border-top: 0.208vw solid #c7c9ce; }
+            .g-infoblock .g-infoblock_main .main_right .right_line .line_table .table_line p {
+              font-size: 2.344vw;
+              line-height: 2.396vw;
+              padding: 0.781vw;
+              min-width: 12.031vw;
+              border-right: 0.208vw solid #c7c9ce; }
+            .g-infoblock .g-infoblock_main .main_right .right_line .line_table .table_line:last-child {
+              border-bottom: 0.208vw solid #c7c9ce; }
+            .g-infoblock .g-infoblock_main .main_right .right_line .line_table .table_line:first-child p {
+              font-size: 1.146vw;
+              line-height: 1.198vw;
+              padding: 0.313vw; }
+        .g-infoblock .g-infoblock_main .main_right .right_line .line_imgs {
+          margin-top: 0.521vw; }
+          .g-infoblock .g-infoblock_main .main_right .right_line .line_imgs .line_img {
+            margin-right: 0.521vw; }
+            .g-infoblock .g-infoblock_main .main_right .right_line .line_imgs .line_img img {
+              width: 9.896vw;
+              height: 13.021vw;
+              margin-bottom: 0.521vw; }
+            .g-infoblock .g-infoblock_main .main_right .right_line .line_imgs .line_img p {
+              font-size: 1.042vw;
+              line-height: 1.146vw; }
+        .g-infoblock .g-infoblock_main .main_right .right_line::after {
+          height: 0.208vw; }
+  .g-what-we-do {
+    padding-bottom: 1.510vw; }
+    .g-what-we-do .what-we-do_main .main_left {
+      width: 43.438vw;
+      height: 47.552vw; }
+  .g-infoblock-m {
+    padding-bottom: 1.771vw; }
+    .g-infoblock-m .g-infoblock-m_main .main_left {
+      margin-top: 1.042vw;
+      width: 29.427vw;
+      height: 42.865vw; }
+  .g-versus .versus_title {
+    margin-bottom: 1.510vw; }
+  .g-versus .versus_main {
+    margin-bottom: 1.771vw; }
+    .g-versus .versus_main .versus_left .versus_image, .g-versus .versus_main .versus_right .versus_image {
+      width: 15.625vw;
+      height: 9.896vw;
+      margin-bottom: 0.781vw; }
+    .g-versus .versus_main .versus_left .versus_item-title, .g-versus .versus_main .versus_right .versus_item-title {
+      font-size: 1.563vw;
+      margin-bottom: 0.885vw; }
+    .g-versus .versus_main .versus_left .versus_item, .g-versus .versus_main .versus_right .versus_item {
+      width: 13.646vw;
+      font-size: 1.302vw;
+      line-height: 1.458vw; }
+    .g-versus .versus_main .versus_left .versus-plus, .g-versus .versus_main .versus_right .versus-plus {
+      padding-left: 1.094vw; }
+      .g-versus .versus_main .versus_left .versus-plus::after, .g-versus .versus_main .versus_right .versus-plus::after {
+        background-size: 0.677vw;
+        width: 0.677vw;
+        height: 0.677vw; }
+    .g-versus .versus_main .versus_left .versus-minus, .g-versus .versus_main .versus_right .versus-minus {
+      padding-left: 1.094vw; }
+      .g-versus .versus_main .versus_left .versus-minus::after, .g-versus .versus_main .versus_right .versus-minus::after {
+        background-size: 0.417vw 0.208vw;
+        width: 0.417vw;
+        height: 0.208vw;
+        left: 0.104vw; }
+    .g-versus .versus_main .versus_thumb {
+      margin: 0 9.219vw; }
+      .g-versus .versus_main .versus_thumb img {
+        width: 8.438vw;
+        height: 11.354vw; }
+  .g-versus .versus_bottom {
+    margin-left: 4.375vw;
+    padding-bottom: 2.240vw; }
+    .g-versus .versus_bottom .bottom_item {
+      width: 23.281vw;
+      height: 12.135vw;
+      margin-right: 1.667vw; }
+      .g-versus .versus_bottom .bottom_item a {
+        right: 0.625vw;
+        bottom: 0.625vw; }
+        .g-versus .versus_bottom .bottom_item a img {
+          width: 2.604vw;
+          height: 2.604vw; }
+  .g-infoblock-s {
+    padding-bottom: 1.771vw; }
+    .g-infoblock-s .g-infoblock-s_main .main_left {
+      margin-top: 1.042vw;
+      width: 29.427vw;
+      height: 30.365vw; } }
 
 @media screen and (max-width: 1200px) {
   .wrapper_global {
@@ -6480,7 +6944,476 @@ footer {
           .wrapper_global main .shop .shop_main .main_item .item_price {
             font-size: 3vw; }
           .wrapper_global main .shop .shop_main .main_item .item_buy {
-            font-size: 2.19vw; } }
+            font-size: 2.19vw; }
+      .wrapper_global main .g-line-title {
+        padding: 1.63vw;
+        font-size: 2.563vw; }
+      .wrapper_global main .g-advantages {
+        grid-template-columns: 43.594vw 1fr;
+        margin-bottom: 4.844vw; }
+        .wrapper_global main .g-advantages .g-advantages_left {
+          height: 35.104vw;
+          padding: 1.563vw; }
+          .wrapper_global main .g-advantages .g-advantages_left .g-advantages_left_text p:nth-child(1) {
+            font-size: 1.875vw;
+            margin-bottom: -1.042vw;
+            padding-left: 0.260vw; }
+          .wrapper_global main .g-advantages .g-advantages_left .g-advantages_left_text p:nth-child(2) {
+            font-size: 6.927vw;
+            margin-bottom: -0.521vw; }
+          .wrapper_global main .g-advantages .g-advantages_left .g-advantages_left_text p:nth-child(3) {
+            font-size: 1.510vw;
+            padding-left: 0.260vw; }
+        .wrapper_global main .g-advantages .g-advantages_right {
+          margin-left: 2.604vw;
+          padding-top: 1.250vw;
+          width: 52.094vw; }
+          .wrapper_global main .g-advantages .g-advantages_right .right_blk {
+            padding-top: 0.938vw;
+            padding-bottom: 1.042vw; }
+            .wrapper_global main .g-advantages .g-advantages_right .right_blk img {
+              width: 4.688vw;
+              height: 4.688vw;
+              margin-right: 2.083vw; }
+            .wrapper_global main .g-advantages .g-advantages_right .right_blk .text_title {
+              font-size: 2.563vw; }
+            .wrapper_global main .g-advantages .g-advantages_right .right_blk p {
+              font-size: 2.146vw; }
+            .wrapper_global main .g-advantages .g-advantages_right .right_blk:after {
+              height: 0.208vw; }
+        .wrapper_global main .g-advantages .g-advantages_bottom {
+          margin-top: 2.604vw;
+          width: 95.344vw;
+          margin-left: 1.563vw;
+          font-size: 1.938vw; }
+      .wrapper_global main .g-gallery .g-gallery_title {
+        margin-bottom: 2.083vw; }
+      .wrapper_global main .g-gallery .g-gallery_main-blk {
+        padding: 0 2.604vw;
+        column-gap: 3.083vw;
+        row-gap: 3.083vw;
+        margin-bottom: 4.021vw;
+        grid-template-columns: repeat(3, 1fr); }
+        .wrapper_global main .g-gallery .g-gallery_main-blk .g-gallery_item {
+          width: 29.063vw; }
+          .wrapper_global main .g-gallery .g-gallery_main-blk .g-gallery_item .item_img {
+            width: 29.063vw;
+            height: 29.063vw;
+            margin-bottom: 2.042vw; }
+          .wrapper_global main .g-gallery .g-gallery_main-blk .g-gallery_item .item_title {
+            font-size: 2.146vw;
+            margin-bottom: 0.660vw; }
+          .wrapper_global main .g-gallery .g-gallery_main-blk .g-gallery_item .item_subtitle {
+            font-size: 1.990vw; }
+      .wrapper_global main .g-gallery .small-imgs .g-gallery_item {
+        width: 27.625vw; }
+        .wrapper_global main .g-gallery .small-imgs .g-gallery_item .item_img {
+          width: 27.625vw;
+          height: 24.792vw; }
+      .wrapper_global main .g-gallery .big-imgs {
+        padding: 0 1.615vw; }
+        .wrapper_global main .g-gallery .big-imgs .g-gallery_item {
+          width: 28.354vw; }
+          .wrapper_global main .g-gallery .big-imgs .g-gallery_item .item_img {
+            width: 28.354vw;
+            height: 20.135vw; }
+          .wrapper_global main .g-gallery .big-imgs .g-gallery_item .item_title {
+            padding: 0 1.042vw; }
+      .wrapper_global main .g-gallery .g-gallery_attention {
+        margin-bottom: 2.344vw;
+        padding: 0 1.042vw;
+        font-size: 2.146vw; }
+      .wrapper_global main .g-table {
+        padding-bottom: 1.094vw; }
+        .wrapper_global main .g-table .g-table_title {
+          margin-bottom: 1.042vw; }
+        .wrapper_global main .g-table .g-table_table {
+          margin-left: 1.302vw;
+          margin-right: 1.302vw; }
+          .wrapper_global main .g-table .g-table_table .table_line {
+            grid-template-columns: repeat(5, 1fr);
+            min-height: 5vw; }
+            .wrapper_global main .g-table .g-table_table .table_line .table_col {
+              border-bottom: 0.208vw solid #d5d9df;
+              border-right: 0.208vw solid #d5d9df;
+              padding: 1.823vw; }
+              .wrapper_global main .g-table .g-table_table .table_line .table_col p {
+                font-size: 3.344vw; }
+            .wrapper_global main .g-table .g-table_table .table_line .table_col1 {
+              padding: 1.267vw; }
+              .wrapper_global main .g-table .g-table_table .table_line .table_col1 p {
+                font-size: 2.146vw; }
+          .wrapper_global main .g-table .g-table_table .table_line1 {
+            min-height: 2.604vw; }
+            .wrapper_global main .g-table .g-table_table .table_line1 .table_col {
+              padding: 0.938vw; }
+              .wrapper_global main .g-table .g-table_table .table_line1 .table_col p {
+                font-size: 2.146vw; }
+        .wrapper_global main .g-table .g-table_attention {
+          padding: 0 2.135vw;
+          font-size: 2.146vw;
+          line-height: 2.302vw;
+          margin-top: 1.21vw; }
+      .wrapper_global main .g-call-us {
+        margin-top: 4.594vw;
+        margin-bottom: 4.844vw;
+        margin-left: 2.135vw; }
+        .wrapper_global main .g-call-us .call-us_left {
+          font-size: 2.823vw;
+          line-height: 3.083vw;
+          width: 65.698vw;
+          margin-right: 7.552vw; }
+          .wrapper_global main .g-call-us .call-us_left a {
+            font-size: 3.865vw; }
+        .wrapper_global main .g-call-us .call-us_right {
+          font-size: 2.344vw;
+          padding: 0.625vw 5.208vw; }
+          .wrapper_global main .g-call-us .call-us_right:hover {
+            margin-bottom: 0.521vw; }
+      .wrapper_global main .g-demands {
+        padding-bottom: 4.740vw; }
+        .wrapper_global main .g-demands .demands_title {
+          margin-bottom: 1.927vw; }
+        .wrapper_global main .g-demands .g-deamands_main {
+          grid-template-columns: 33.677vw 1fr;
+          padding-left: 1.823vw; }
+          .wrapper_global main .g-demands .g-deamands_main .g-demands_left {
+            width: 33.677vw;
+            height: 24.958vw; }
+          .wrapper_global main .g-demands .g-deamands_main .g-demands_right {
+            padding-left: 1.667vw; }
+            .wrapper_global main .g-demands .g-deamands_main .g-demands_right .right_blk {
+              padding: 0.938vw 0;
+              border-bottom: 0.208vw solid #d5d9df; }
+              .wrapper_global main .g-demands .g-deamands_main .g-demands_right .right_blk img {
+                margin-right: 1.927vw; }
+              .wrapper_global main .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text {
+                font-size: 2.302vw;
+                line-height: 2.458vw; }
+                .wrapper_global main .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text span, .wrapper_global main .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text a {
+                  font-size: 2.927vw;
+                  line-height: 3.083vw; }
+                .wrapper_global main .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text .text_images {
+                  margin-top: 0.260vw; }
+                  .wrapper_global main .g-demands .g-deamands_main .g-demands_right .right_blk .blk_text .text_images img {
+                    width: 6.229vw;
+                    height: 6.229vw;
+                    margin-right: 1.406vw; }
+          .wrapper_global main .g-demands .g-deamands_main .g-demands_bottom {
+            margin-top: 4vw; }
+            .wrapper_global main .g-demands .g-deamands_main .g-demands_bottom .bottom-blk {
+              margin-bottom: 0.521vw; }
+              .wrapper_global main .g-demands .g-deamands_main .g-demands_bottom .bottom-blk img {
+                width: 27.24vw;
+                height: 0.256vw;
+                margin-right: 1.833vw; }
+              .wrapper_global main .g-demands .g-deamands_main .g-demands_bottom .bottom-blk p {
+                font-size: 2.042vw; }
+            .wrapper_global main .g-demands .g-deamands_main .g-demands_bottom .bottom_text {
+              font-size: 2.302vw;
+              line-height: 3.500vw; }
+      .wrapper_global main .g-prices {
+        margin-bottom: 2.240vw; }
+        .wrapper_global main .g-prices .prices_tabs {
+          padding-left: 0; }
+          .wrapper_global main .g-prices .prices_tabs .prices_tab {
+            box-shadow: inset 2.552vw 0.104vw 0.885vw -2.813vw rgba(0, 0, 0, 0.39), 0.156vw 0 5px rgba(0, 0, 0, 0.39);
+            padding: 5px 25px; }
+            .wrapper_global main .g-prices .prices_tabs .prices_tab p {
+              font-size: 2.163vw; }
+            .wrapper_global main .g-prices .prices_tabs .prices_tab:first-child {
+              box-shadow: 0.156vw 0 0.26vw rgba(0, 0, 0, 0.39); }
+          .wrapper_global main .g-prices .prices_tabs .prices_tab-active p {
+            font-size: 2.163vw; }
+        .wrapper_global main .g-prices .prices_main-blks .main-blk {
+          padding: 1.823vw 3.177vw 1.510vw 2.240vw; }
+          .wrapper_global main .g-prices .prices_main-blks .main-blk .main_left {
+            width: 43.458vw;
+            column-gap: 0.938vw;
+            row-gap: 1.406vw;
+            margin-right: 3.698vw; }
+            .wrapper_global main .g-prices .prices_main-blks .main-blk .main_left .left_item {
+              border: 0.104vw solid  #ebeae9;
+              border-radius: 1.302vw;
+              padding: 0.208vw 0.208vw 0.990vw 0.208vw; }
+              .wrapper_global main .g-prices .prices_main-blks .main-blk .main_left .left_item .item_img {
+                width: 12.938vw;
+                height: 11.896vw;
+                margin-bottom: 1.781vw; }
+                .wrapper_global main .g-prices .prices_main-blks .main-blk .main_left .left_item .item_img a img {
+                  width: 2.448vw;
+                  height: 2.448vw; }
+              .wrapper_global main .g-prices .prices_main-blks .main-blk .main_left .left_item .item_name {
+                font-size: 1.846vw;
+                padding: 0 0.521vw; }
+              .wrapper_global main .g-prices .prices_main-blks .main-blk .main_left .left_item:hover {
+                border: 0.104vw solid #fea711;
+                box-shadow: 0.208vw 0.313vw 0.313vw rgba(0, 0, 0, 0.56); }
+                .wrapper_global main .g-prices .prices_main-blks .main-blk .main_left .left_item:hover a {
+                  margin-bottom: 0.521vw; }
+          .wrapper_global main .g-prices .prices_main-blks .main-blk .main_right {
+            width: 41.094vw; }
+            .wrapper_global main .g-prices .prices_main-blks .main-blk .main_right .right_line {
+              padding: 1.042vw 0 1.563vw 0; }
+              .wrapper_global main .g-prices .prices_main-blks .main-blk .main_right .right_line .line_img {
+                width: 4.010vw;
+                height: 4.010vw;
+                margin-right: 1.823vw; }
+              .wrapper_global main .g-prices .prices_main-blks .main-blk .main_right .right_line .line_title {
+                font-size: 2.563vw;
+                margin-bottom: 0.521vw; }
+              .wrapper_global main .g-prices .prices_main-blks .main-blk .main_right .right_line .line_text {
+                font-size: 2.146vw;
+                line-height: 2.302vw; }
+              .wrapper_global main .g-prices .prices_main-blks .main-blk .main_right .right_line .big-text {
+                font-size: 6.927vw;
+                margin-right: 5vw; }
+              .wrapper_global main .g-prices .prices_main-blks .main-blk .main_right .right_line .small-text {
+                font-size: 4.167vw; }
+              .wrapper_global main .g-prices .prices_main-blks .main-blk .main_right .right_line::after {
+                height: 0.208vw; }
+      .wrapper_global main .g-slider {
+        margin-bottom: 4.229vw; }
+        .wrapper_global main .g-slider .g-slider_title {
+          margin-bottom: 2.604vw; }
+        .wrapper_global main .g-slider .g-slider-container {
+          width: 92.708vw;
+          padding: 0 7.813vw; }
+          .wrapper_global main .g-slider .g-slider-container .swiper-slide {
+            width: 52.083vw;
+            min-height: 31.250vw; }
+            .wrapper_global main .g-slider .g-slider-container .swiper-slide .g-slider-image {
+              width: 71.083vw;
+              height: 29.833vw;
+              margin-bottom: 7.292vw; }
+            .wrapper_global main .g-slider .g-slider-container .swiper-slide .g-slider-title {
+              font-size: 2.823vw;
+              max-width: 56.250vw; }
+            .wrapper_global main .g-slider .g-slider-container .swiper-slide .g-slider_text {
+              font-size: 2.302vw;
+              max-width: 56.250vw; }
+          .wrapper_global main .g-slider .g-slider-container .swiper-button-next img, .wrapper_global main .g-slider .g-slider-container .swiper-button-prev img {
+            width: 3.333vw;
+            height: 3.333vw; }
+          .wrapper_global main .g-slider .g-slider-container .swiper-button-next {
+            right: 0.885vw; }
+          .wrapper_global main .g-slider .g-slider-container .swiper-button-prev {
+            left: 0.885vw; }
+      .wrapper_global main .g-for {
+        padding-bottom: 5.990vw; }
+        .wrapper_global main .g-for .g-for_main {
+          padding-top: 1.656vw;
+          margin-bottom: 8.031vw; }
+          .wrapper_global main .g-for .g-for_main .main_image {
+            width: 36.719vw;
+            height: 18.854vw; }
+          .wrapper_global main .g-for .g-for_main .for_textblock .textblock_title {
+            font-size: 2.146vw; }
+          .wrapper_global main .g-for .g-for_main .for_textblock .textblock_text {
+            font-size: 1.990vw; }
+          .wrapper_global main .g-for .g-for_main .for_textblock:nth-child(2) {
+            width: 20.177vw;
+            top: 3.24vw;
+            left: 12.333vw; }
+          .wrapper_global main .g-for .g-for_main .for_textblock:nth-child(3) {
+            width: 38.063vw;
+            top: 11.094vw;
+            left: -8.833vw; }
+          .wrapper_global main .g-for .g-for_main .for_textblock:nth-child(4) {
+            width: 20.479vw;
+            top: 2.75vw;
+            left: 70.146vw; }
+          .wrapper_global main .g-for .g-for_main .for_textblock:nth-child(5) {
+            width: 29.667vw;
+            top: 14.115vw;
+            left: 69.313vw; }
+        .wrapper_global main .g-for .g-for_attention {
+          padding: 0.677vw 0 10.729vw 35vw;
+          min-height: 18.542vw; }
+          .wrapper_global main .g-for .g-for_attention .attention_text {
+            width: 31.521vw; }
+            .wrapper_global main .g-for .g-for_attention .attention_text .attention_title {
+              font-size: 2.563vw;
+              padding-left: 4.583vw;
+              margin-bottom: 0.921vw; }
+            .wrapper_global main .g-for .g-for_attention .attention_text .attention_subtitle {
+              font-size: 2.146vw; }
+          .wrapper_global main .g-for .g-for_attention .attention_left {
+            left: 3.906vw;
+            bottom: -1.563vw;
+            width: 42.813vw;
+            height: 21.458vw; }
+          .wrapper_global main .g-for .g-for_attention .attention_right {
+            right: 4.479vw;
+            width: 28.854vw;
+            height: 20.885vw; }
+          .wrapper_global main .g-for .g-for_attention .attention_hint {
+            left: 46.979vw;
+            bottom: 0.313vw;
+            font-size: 1.846vw; }
+      .wrapper_global main .g-examples .g-examples_title {
+        margin-bottom: 1.8vw; }
+      .wrapper_global main .g-examples .examples-container {
+        margin-bottom: 2.240vw; }
+        .wrapper_global main .g-examples .examples-container .swiper-slide {
+          width: 22.948vw;
+          height: 18.708vw; }
+      .wrapper_global main .g-examples .example_video {
+        width: 100vw;
+        height: 41.531vw;
+        margin-bottom: 3.458vw; }
+        .wrapper_global main .g-examples .example_video img {
+          width: 10.927vw;
+          height: 10.927vw; }
+      .wrapper_global main .g-examples .example_more {
+        padding: 0.521vw 5.208vw;
+        font-size: 2.563vw;
+        margin-bottom: 3.458vw; }
+      .wrapper_global main .g-see-also {
+        padding-bottom: 4.635vw; }
+        .wrapper_global main .g-see-also .see-also_title {
+          margin-bottom: 2.521vw; }
+        .wrapper_global main .g-see-also .see-also_links {
+          padding-left: 3.167vw;
+          margin-bottom: 2.521vw; }
+          .wrapper_global main .g-see-also .see-also_links a {
+            margin-bottom: 1.250vw;
+            margin-right: 2.604vw;
+            font-size: 2.163vw; }
+            .wrapper_global main .g-see-also .see-also_links a img {
+              width: 5.208vw;
+              height: 5.208vw;
+              margin-right: 0.677vw; }
+        .wrapper_global main .g-see-also .see-also_map {
+          width: 100vw;
+          height: 41.531vw; }
+      .wrapper_global main .g-infoblock .g-infoblock_main {
+        padding-right: 4.792vw; }
+        .wrapper_global main .g-infoblock .g-infoblock_main .main_left {
+          margin-right: 2.396vw; }
+          .wrapper_global main .g-infoblock .g-infoblock_main .main_left .left_open-photo {
+            padding: 0.521vw 2.500vw;
+            font-size: 2.198vw; }
+        .wrapper_global main .g-infoblock .g-infoblock_main .main_right {
+          padding-top: 2.865vw; }
+          .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_title {
+            font-size: 2.823vw;
+            padding-bottom: 0.573vw; }
+            .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_title::after {
+              height: 0.208vw; }
+          .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line {
+            padding: 0.781vw 0; }
+            .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line p {
+              font-size: 2.302vw;
+              line-height: 2.458vw; }
+              .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line p span {
+                font-size: 2.563vw;
+                line-height: 2.615vw; }
+            .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line .line_palette {
+              margin: 0.521vw 0; }
+              .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line .line_palette img {
+                width: 4.865vw;
+                height: 4.865vw;
+                margin-right: 0.417vw; }
+            .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line .line_sizes {
+              width: 49.531vw;
+              height: 15.219vw;
+              margin-bottom: 0.729vw; }
+              .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line .line_sizes img {
+                width: 49.531vw;
+                height: 15.219vw; }
+            .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line .line_table {
+              margin: 0.521vw 0; }
+              .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line .line_table .table_line {
+                border-top: 0.208vw solid #c7c9ce; }
+                .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line .line_table .table_line p {
+                  font-size: 2.344vw;
+                  line-height: 2.396vw;
+                  padding: 0.781vw;
+                  min-width: 12.031vw;
+                  border-right: 0.208vw solid #c7c9ce; }
+                .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line .line_table .table_line:last-child {
+                  border-bottom: 0.208vw solid #c7c9ce; }
+                .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line .line_table .table_line:first-child p {
+                  font-size: 2.146vw;
+                  line-height: 2.198vw;
+                  padding: 0.313vw; }
+            .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line .line_imgs {
+              margin-top: 0.521vw; }
+              .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line .line_imgs .line_img {
+                margin-right: 0.521vw; }
+                .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line .line_imgs .line_img img {
+                  width: 9.896vw;
+                  height: 13.021vw;
+                  margin-bottom: 0.521vw; }
+                .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line .line_imgs .line_img p {
+                  font-size: 1.042vw;
+                  line-height: 1.146vw; }
+            .wrapper_global main .g-infoblock .g-infoblock_main .main_right .right_line::after {
+              height: 0.208vw; }
+      .wrapper_global main .g-what-we-do {
+        padding-bottom: 1.510vw; }
+        .wrapper_global main .g-what-we-do .what-we-do_main .main_left {
+          width: 43.438vw;
+          height: 47.552vw; }
+      .wrapper_global main .g-infoblock-m {
+        padding-bottom: 1.771vw; }
+        .wrapper_global main .g-infoblock-m .g-infoblock-m_main .main_left {
+          margin-top: 1.042vw;
+          width: 29.427vw;
+          height: 42.865vw; }
+      .wrapper_global main .g-versus .versus_title {
+        margin-bottom: 1.510vw; }
+      .wrapper_global main .g-versus .versus_main {
+        margin-bottom: 1.771vw; }
+        .wrapper_global main .g-versus .versus_main .versus_left .versus_image, .wrapper_global main .g-versus .versus_main .versus_right .versus_image {
+          width: 30.625vw;
+          height: 19.896vw;
+          margin-bottom: 0.781vw; }
+        .wrapper_global main .g-versus .versus_main .versus_left .versus_item-title, .wrapper_global main .g-versus .versus_main .versus_right .versus_item-title {
+          font-size: 2.563vw;
+          margin-bottom: 0.885vw; }
+        .wrapper_global main .g-versus .versus_main .versus_left .versus_item, .wrapper_global main .g-versus .versus_main .versus_right .versus_item {
+          width: 28.646vw;
+          font-size: 2.302vw;
+          line-height: 2.458vw; }
+        .wrapper_global main .g-versus .versus_main .versus_left .versus-plus, .wrapper_global main .g-versus .versus_main .versus_right .versus-plus {
+          padding-left: 3.094vw; }
+          .wrapper_global main .g-versus .versus_main .versus_left .versus-plus::after, .wrapper_global main .g-versus .versus_main .versus_right .versus-plus::after {
+            background-size: 2vw;
+            width: 2vw;
+            height: 2vw; }
+        .wrapper_global main .g-versus .versus_main .versus_left .versus-minus, .wrapper_global main .g-versus .versus_main .versus_right .versus-minus {
+          padding-left: 3.094vw; }
+          .wrapper_global main .g-versus .versus_main .versus_left .versus-minus::after, .wrapper_global main .g-versus .versus_main .versus_right .versus-minus::after {
+            background-size: 2vw 0.40vw;
+            width: 2vw;
+            height: 0.408vw;
+            left: 0.104vw; }
+        .wrapper_global main .g-versus .versus_main .versus_thumb {
+          margin: 0 9.219vw; }
+          .wrapper_global main .g-versus .versus_main .versus_thumb img {
+            width: 8.438vw;
+            height: 11.354vw; }
+      .wrapper_global main .g-versus .versus_bottom {
+        margin-left: 4.375vw;
+        padding-bottom: 2.240vw; }
+        .wrapper_global main .g-versus .versus_bottom .bottom_item {
+          width: 23.281vw;
+          height: 12.135vw;
+          margin-right: 1.667vw; }
+          .wrapper_global main .g-versus .versus_bottom .bottom_item a {
+            right: 0.625vw;
+            bottom: 0.625vw; }
+            .wrapper_global main .g-versus .versus_bottom .bottom_item a img {
+              width: 2.604vw;
+              height: 2.604vw; }
+      .wrapper_global main .g-infoblock-s {
+        padding-bottom: 1.771vw; }
+        .wrapper_global main .g-infoblock-s .g-infoblock-s_main .main_left {
+          margin-top: 1.042vw;
+          width: 29.427vw;
+          height: 30.365vw; } }
 
 @media screen and (max-width: 800px) {
   .wrapper_global .sidebar {
