@@ -71,8 +71,6 @@ if(hasChild){
     }
 }
 
-
-
 //
 // Sidebar class change
 //
@@ -296,7 +294,6 @@ if(productsBlks.length != 0){
 
 }
 
-
 //
 //  Services blocks
 //
@@ -442,7 +439,6 @@ if(servicesBlks.length != 0){
 
 
 }
-
 
 //
 //  Btn up
