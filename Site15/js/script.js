@@ -786,6 +786,27 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".about-us_attention"),"animate__fadeInLeft", "2s" );
     animPartiallyVisibleALL(queryA(".cart"),"animate__fadeInRight", "2s" );
     animPartiallyVisibleALL(queryA(".main_item"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".g-advantages_left"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".g-advantages_right"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".g-advantages_bottom"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".g-line-title"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".g-gallery_item"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".call-us_right"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".call-us_left"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".g-demands_right"),"animate__fadeInRight", "2s" );
+    animPartiallyVisibleALL(queryA(".g-demands_left"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".left_item"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".right_line"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".g-slider-container"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".g-for"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".main_left"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".versus_left"),"animate__fadeInLeft", "2s" );
+    animPartiallyVisibleALL(queryA(".versus_thumb"),"animate__fadeIn", "2s" );
+    animPartiallyVisibleALL(queryA(".versus_right"),"animate__fadeInRight", "2s" );
+    
+    
+    
+    
 
 
     if(document.innerWidth >800){
