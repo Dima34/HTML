@@ -3258,7 +3258,8 @@ footer {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center; }
+            align-items: center;
+            cursor: pointer; }
             .call_main .wrapper .call_left .left_call-blk .call-window .call-btn-box img {
               width: 139px;
               height: 139px; }
@@ -3266,6 +3267,8 @@ footer {
               font-size: 14px;
               line-height: 19px;
               color: #FFFFFF; }
+        .call_main .wrapper .call_left .left_call-blk .call-ended {
+          align-items: flex-end; }
         .call_main .wrapper .call_left .left_call-blk .call_nav {
           display: flex;
           flex-direction: column;

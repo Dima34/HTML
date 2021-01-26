@@ -4732,6 +4732,7 @@ footer{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
 
             img{
               width: 139px;
@@ -4744,6 +4745,10 @@ footer{
               color: #FFFFFF;
             }
           }
+        }
+
+        .call-ended{
+          align-items: flex-end;
         }
 
         .call_nav{
