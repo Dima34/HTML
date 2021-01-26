@@ -804,9 +804,7 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".versus_thumb"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".versus_right"),"animate__fadeInRight", "2s" );
     
-    
-    
-    
+
 
 
     if(document.innerWidth >800){
