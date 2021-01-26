@@ -1039,21 +1039,21 @@ header {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-.intro_advantages .wrapper {
+.intro_adntages .wrapper {
   display: flex;
   justify-content: space-between; }
-  .intro_advantages .wrapper .adv_left {
+  .intro_adntages .wrapper .adv_left {
     width: 527px; }
-    .intro_advantages .wrapper .adv_left .adv_title {
+    .intro_adntages .wrapper .adv_left .adv_title {
       margin-bottom: 26px; }
-    .intro_advantages .wrapper .adv_left .adv_subtitle {
+    .intro_adntages .wrapper .adv_left .adv_subtitle {
       margin-bottom: 80px; }
-  .intro_advantages .wrapper .adv_right {
+  .intro_adntages .wrapper .adv_right {
     display: flex; }
-    .intro_advantages .wrapper .adv_right .right_image {
+    .intro_adntages .wrapper .adv_right .right_image {
       width: 465px;
       height: 560px; }
-    .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk {
+    .intro_adntages .wrapper .adv_right .right_advantages .advantage_blk {
       width: 410px;
       padding: 25px 32px;
       display: flex;
@@ -1064,16 +1064,16 @@ header {
       margin-bottom: 22px;
       margin-left: -95px;
       margin-right: -61px; }
-      .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk .adv_thumb {
+      .intro_adntages .wrapper .adv_right .right_advantages .advantage_blk .adv_thumb {
         width: 64px;
         height: 64px;
         margin-right: 33px; }
-      .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk .adv_text {
+      .intro_adntages .wrapper .adv_right .right_advantages .advantage_blk .adv_text {
         font-size: 18px;
         line-height: 135.94%;
         font-weight: 500 !important;
         color: #545454; }
-      .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk:first-child {
+      .intro_adntages .wrapper .adv_right .right_advantages .advantage_blk:first-child {
         margin-top: 64px; }
 
 .for-employee {
@@ -3766,16 +3766,16 @@ footer {
       .blog .wrapper .blog_main .blog_item .item_info .info_text {
         font-size: 0.729vw;
         line-height: 0.990vw; }
-  .intro_advantages .wrapper .adv_left {
+  .intro_adntages .wrapper .adv_left {
     width: 27.448vw; }
-    .intro_advantages .wrapper .adv_left .adv_title {
+    .intro_adntages .wrapper .adv_left .adv_title {
       margin-bottom: 1.354vw; }
-    .intro_advantages .wrapper .adv_left .adv_subtitle {
+    .intro_adntages .wrapper .adv_left .adv_subtitle {
       margin-bottom: 4.167vw; }
-  .intro_advantages .wrapper .adv_right .right_image {
+  .intro_adntages .wrapper .adv_right .right_image {
     width: 24.219vw;
     height: 29.167vw; }
-  .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk {
+  .intro_adntages .wrapper .adv_right .right_advantages .advantage_blk {
     width: 29.167vw;
     padding: 1.302vw 1.667vw;
     box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
@@ -3783,13 +3783,13 @@ footer {
     margin-bottom: 1.146vw;
     margin-left: -4.948vw;
     margin-right: -4.948vw; }
-    .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk .adv_thumb {
+    .intro_adntages .wrapper .adv_right .right_advantages .advantage_blk .adv_thumb {
       width: 3.333vw;
       height: 3.333vw;
       margin-right: 1.719vw; }
-    .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk .adv_text {
+    .intro_adntages .wrapper .adv_right .right_advantages .advantage_blk .adv_text {
       font-size: 0.938vw; }
-    .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk:first-child {
+    .intro_adntages .wrapper .adv_right .right_advantages .advantage_blk:first-child {
       margin-top: 3.333vw; }
   .for-employee {
     padding-top: 3.385vw;
@@ -4340,25 +4340,25 @@ footer {
             grid-column-end: 3;
             grid-row-start: 3;
             grid-row-end: 4; }
-  .intro_advantages .wrapper {
+  .intro_adntages .wrapper {
     flex-direction: column; }
-    .intro_advantages .wrapper .adv_left {
+    .intro_adntages .wrapper .adv_left {
       width: 100%; }
-      .intro_advantages .wrapper .adv_left .adv_on-titile {
+      .intro_adntages .wrapper .adv_left .adv_on-titile {
         margin-bottom: 3.125vw; }
-      .intro_advantages .wrapper .adv_left .adv_title {
+      .intro_adntages .wrapper .adv_left .adv_title {
         margin-bottom: 9.063vw; }
-      .intro_advantages .wrapper .adv_left .adv_subtitle {
+      .intro_adntages .wrapper .adv_left .adv_subtitle {
         margin-bottom: 9.063vw; }
-      .intro_advantages .wrapper .adv_left .adv_register {
+      .intro_adntages .wrapper .adv_left .adv_register {
         padding: 5.625vw 20vw 5.625vw 13vw; }
-    .intro_advantages .wrapper .adv_right {
+    .intro_adntages .wrapper .adv_right {
       width: 100%; }
-      .intro_advantages .wrapper .adv_right .right_image {
+      .intro_adntages .wrapper .adv_right .right_image {
         display: none; }
-      .intro_advantages .wrapper .adv_right .right_advantages {
+      .intro_adntages .wrapper .adv_right .right_advantages {
         width: 100%; }
-        .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk {
+        .intro_adntages .wrapper .adv_right .right_advantages .advantage_blk {
           width: 100%;
           padding: 7.813vw 4.375vw;
           box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
@@ -4366,15 +4366,15 @@ footer {
           margin-bottom: 3.750vw;
           margin-left: 0;
           margin-right: 0; }
-          .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk .adv_thumb {
+          .intro_adntages .wrapper .adv_right .right_advantages .advantage_blk .adv_thumb {
             width: 14.063vw;
             height: 14.063vw;
             margin-right: 8.750vw; }
-          .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk .adv_text {
+          .intro_adntages .wrapper .adv_right .right_advantages .advantage_blk .adv_text {
             font-size: 4.375vw; }
-          .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk:first-child {
+          .intro_adntages .wrapper .adv_right .right_advantages .advantage_blk:first-child {
             margin-top: 12.813vw; }
-          .intro_advantages .wrapper .adv_right .right_advantages .advantage_blk:last-child {
+          .intro_adntages .wrapper .adv_right .right_advantages .advantage_blk:last-child {
             margin-bottom: 0; }
   .clients {
     margin-top: 18.438vw;
