@@ -3250,7 +3250,22 @@ footer {
           height: 512px;
           background: #242729;
           box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
-          border-radius: 10px; }
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .call_main .wrapper .call_left .left_call-blk .call-window .call-btn-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+            .call_main .wrapper .call_left .left_call-blk .call-window .call-btn-box img {
+              width: 139px;
+              height: 139px; }
+            .call_main .wrapper .call_left .left_call-blk .call-window .call-btn-box .call_text {
+              font-size: 14px;
+              line-height: 19px;
+              color: #FFFFFF; }
         .call_main .wrapper .call_left .left_call-blk .call_nav {
           display: flex;
           flex-direction: column;

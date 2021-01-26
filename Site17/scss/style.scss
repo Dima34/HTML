@@ -4723,6 +4723,27 @@ footer{
           background: #242729;
           box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
           border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .call-btn-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img{
+              width: 139px;
+              height: 139px;
+            }
+
+            .call_text{
+              font-size: 14px;
+              line-height: 19px;
+              color: #FFFFFF;
+            }
+          }
         }
 
         .call_nav{
