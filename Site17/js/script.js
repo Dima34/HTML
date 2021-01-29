@@ -18,8 +18,13 @@ let programsBlk = document.querySelector(".programs");
 let blocksInSlide = 2;
 if(programsBlk){
 
-    if(window.innerWidth > 900){
+    if(window.innerWidth > 1440){
         blocksInSlide = 2;
+        AddSlidesToPrograms(blocksInSlide);
+    }
+
+    if(window.innerWidth > 900){
+        blocksInSlide = 3;
         AddSlidesToPrograms(blocksInSlide);
     }
 
@@ -30,8 +35,13 @@ if(programsBlk){
 
     window.addEventListener("resize", ()=>{
 
-        if(window.innerWidth > 900){
+        if(window.innerWidth > 1440){
             blocksInSlide = 2;
+            AddSlidesToPrograms(blocksInSlide);
+        }
+
+        if(window.innerWidth > 900){
+            blocksInSlide = 3;
             AddSlidesToPrograms(blocksInSlide);
         }
     
@@ -65,14 +75,15 @@ function AddSlidesToPrograms(blocksInSlide){
     let slides = sliderWrapper.querySelectorAll(".swiper-slide");
 
     let slideNumber = 0;
+
     for (let i = 0; i < block.length; i++) {
 
         if(blocksInSlide > 1){
 
-            if(i != 0 && i%slidesMustBe == 0){
+            if(i != 0 && i%blocksInSlide == 0){
                 slideNumber ++;
             }
-
+            
             slides[slideNumber].append(block[i]);
         }
 

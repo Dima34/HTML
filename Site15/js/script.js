@@ -114,21 +114,7 @@ window.addEventListener("resize", ()=>{
 //  Text copy
 //
 
-let textCopyBlk = document.querySelector(".header_mail");
-//let textToCopy = textCopyBlk.querySelector("a").innerHTML;
-
-if(textCopyBlk){
-
-    let textCopyBtn = textCopyBlk.querySelector("span");
-
-    textCopyBtn.addEventListener('click',()=>{
-        let textToCopy = textCopyBlk.querySelector("a");
-        textToCopy.select
-        document.execCommand("copy");
-        alert("Copied the text: " + textToCopy.value);
-    });
-
-}
+var clipboard = new ClipboardJS(".contacts_mail-copy");
 
 
 
@@ -671,12 +657,6 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".footer_col1_title"), "animate__jackInTheBox", "2s");
     animPartiallyVisibleALL(queryA(".footer_col1_desc"), "animate__backInLeft", "1.5s");
     animPartiallyVisibleALL(queryA(".footer_col1_payments img"), "animate__backInLeft", "2s" );
-    animPartiallyVisibleALL(queryA(".footer_col2_title"), "animate__fadeInDown", "2s");
-    animPartiallyVisibleALL(queryA(".footer_col2_navitem"), "animate__fadeInDown", "2s" );
-    animPartiallyVisibleALL(queryA(".footer_col3_galleryItem"), "animate__rotateIn", "2s" );
-    animPartiallyVisibleALL(queryA(".footer_col3_subscribe"), "animate__zoomInRight", "1s");
-    animPartiallyVisibleALL(queryA(".footer_col4_title"), "animate__zoomIn", "1s");
-    animPartiallyVisibleALL(queryA(".footer_col4 p"), "animate__lightSpeedInRight", "2s" );
     animPartiallyVisibleALL(queryA(".player_btn img"), "animate__zoomIn", "1s");
     animPartiallyVisibleALL(queryA(".player_title"), "animate__lightSpeedInLeft", "1.3s");
     animPartiallyVisibleALL(queryA(".index_text"), "animate__backInLeft", "1.3s");
