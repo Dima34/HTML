@@ -487,9 +487,23 @@ let prices = document.querySelector(".g-prices");
 if(prices){
     
     let tabs = document.querySelectorAll(".prices_tab");
-    let mainBlks = document.querySelectorAll(".main-blk");
+    let mainBlks = document.querySelectorAll(".main_left");
+    let mainItems = document.querySelectorAll(".left_item");
 
 
+    // set deafault tabs and items
+    let activeTab = 0;
+    let activeItem = 0;
+
+    mainBlks[activeTab].classList.add("main-blk-active");
+
+    if(mainItems.length > activeItem){
+        mainItems[activeItem].classList.add("item-active");
+        SetData(mainItems[activeItem]);
+    }
+
+    
+    // tab selection
     for (let i = 0; i < tabs.length; i++) {
 
         tabs[i].addEventListener("click", ()=>{
@@ -512,14 +526,128 @@ if(prices){
         
     }
 
-    for (let i = 0; i < tabs.length; i++) {
+    // item activisation
+    for (let i = 0; i < mainItems.length; i++) {
         
-        for (let b = 0; b < tabs.length; b++) {
+        mainItems[i].addEventListener("click",()=>{
+
+            mainItems[i].classList.add("item-active");
+            ClearActivated(".price")
+            ClearActivated(".amount")
+            SetData(mainItems[i]);
             
-            
-        }
+
+            for (let b = 0; b < mainItems.length; b++) {
+                
+                if(i != b){
+                    mainItems[b].classList.remove("item-active");
+                }
+                
+            }
+        })
         
     }
+
+    function SetData(fromBlock){
+        let rightSide = document.querySelector(".main_right");
+
+        let adv = rightSide.querySelector(".advantages");
+        let disadv = rightSide.querySelector(".disadvantages");
+        let price = rightSide.querySelector(".price");
+        let amount = rightSide.querySelector(".amount");
+        let description = rightSide.querySelector(".description");
+
+        let fromAdv = fromBlock.querySelector(".data-advantages");
+        let fromDisadv = fromBlock.querySelector(".data-disadvantages");
+        let fromPrice = fromBlock.querySelector(".data-price");
+        let fromAmount = fromBlock.querySelector(".data-amount");
+        let fromDescription = fromBlock.querySelector(".data-description");
+
+        adv.innerHTML = fromAdv.innerHTML;
+        disadv.innerHTML = fromDisadv.innerHTML;
+
+        price.innerHTML = fromPrice.innerHTML;
+        price.setAttribute("data-to",fromPrice.innerHTML);
+        Counter(price);
+
+        amount.innerHTML = fromAmount.innerHTML;
+        amount.setAttribute("data-to",fromAmount.innerHTML);
+        Counter(amount);
+        description.innerHTML = fromDescription.innerHTML;
+    }
+
+  
+    function Counter(elem) {
+        let start = Number(elem.getAttribute("data-from"));
+        let end = Number(elem.getAttribute("data-to"));
+
+        if(end >= 0){
+
+            let duration = 1000;
+
+            if(elem.getAttribute("activated") == null){
+
+                if(elem.getAttribute("working") == null){
+                    let obj = elem;
+                    let current = start;
+                    let range = end - start;
+                    let increment = end > start ? 1 : -1
+                    let step = Math.abs(Math.floor(duration / range));
+
+                    const timer = setInterval(() => {
+                        elem.setAttribute("working","");
+                        current += increment;
+                        obj.innerHTML = current;
+
+                        if (current >= end) {
+                            clearInterval(timer);
+                            elem.setAttribute("activated","");
+                            elem.removeAttribute("working");
+                        }
+                    }, step);  
+                }
+                  
+            }  
+
+        }
+         
+    }
+
+    function ClearActivated(elemClass){
+        let elemArr = document.querySelectorAll(elemClass)
+
+        for (let i = 0; i < elemArr.length; i++) {
+            
+            elemArr[i].removeAttribute("activated")
+            
+        }
+
+    }
+
+}
+
+// 
+// G-TABLE
+// 
+
+let gTable = document.querySelector(".g-table_table");
+
+if(gTable){
+
+    let gTableCols = document.querySelectorAll(".table_col .amount");
+
+    for (let i = 0; i < gTableCols.length; i++) {
+        
+        gTableCols[i].onmouseover = function() {
+
+            ClearActivated(".amount");
+            gTableCols.innerHTML = "0";
+            Counter(gTableCols[i]);
+
+        };
+        
+    }
+
 }
 
 // 
@@ -545,6 +673,65 @@ if(popup){
     });
 }
 
+
+// 
+// Online order popup
+// 
+
+let onlinePopup = document.querySelector(".online-order-popup-wrapper");
+
+if(onlinePopup){
+
+    let onlinePopupOpen = document.querySelectorAll(".call-us_right");
+    let onlinePopupClose = onlinePopup.querySelector(".popup-close")
+
+    for (let i = 0; i < onlinePopupOpen.length; i++) {
+        
+        onlinePopupOpen[i].addEventListener("click", ()=>{
+
+            onlinePopup.classList.add("popup-active");
+            checkHeight(onlinePopup);
+
+        })
+
+        onlinePopupClose.addEventListener('click',()=>{
+            onlinePopup.classList.remove("popup-active");
+        });
+        
+    }
+
+    // filedrop filling
+    let fileDropFilling = document.querySelector(".online-popup-filedrop-filling");
+    let blockToFill = document.querySelector(".left_filedrop");
+
+    if(blockToFill && blockToFill){
+
+        blockToFill.innerHTML = "";
+        blockToFill.append(fileDropFilling);
+
+    }
+
+}
+
+
+
+function checkHeight(el){
+
+    insideBlock = el.querySelector(".popup");
+
+    if(insideBlock){
+        elHeight = Number(window.getComputedStyle(insideBlock).height.slice(0,-2));
+
+        if(elHeight >window.innerHeight){
+            
+            el.style.alignItems = "flex-start";
+            el.style.overflowY = "scroll";
+
+        }
+        
+
+    }
+}
 
 
 //
@@ -646,6 +833,8 @@ function query(clas){
     tmp = document.querySelector(clas);
     return tmp;
 }
+
+let first = true;
 
 function scrolling(e){
     animPartiallyVisibleALL(header,"animate__fadeInRight");
@@ -783,9 +972,24 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".versus_left"),"animate__fadeInLeft", "2s" );
     animPartiallyVisibleALL(queryA(".versus_thumb"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".versus_right"),"animate__fadeInRight", "2s" );
+
+    if(isPartiallyVisible(query(".right_line .price"))){
+        if(first){
+            ClearActivated(".price");
+            ClearActivated(".amount");
+            first = false;
+            Counter(query(".right_line .price")); 
+            Counter(query(".right_line .amount")); 
+        }
+    }
     
+    // if(isPartiallyVisible(query(".right_line .price"))){
+    //     Counter(query(".right_line .price")); 
+    // }
 
-
+    // if(isPartiallyVisible(query(".right_line .amount"))){
+    //     Counter(query(".right_line .amount")); 
+    // }
 
     if(document.innerWidth >800){
         animPartiallyVisibleALL(queryA(".shop_categories"),"animate__fadeInLeft", "2s" );

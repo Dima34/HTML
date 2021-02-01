@@ -287,24 +287,79 @@ if (loginB){
 let pcHeaderBlk = document.querySelectorAll(".pc_item");
 let pcMainBlk = document.querySelectorAll(".pc_main");
 
-if(pcHeaderBlk && pcMainBlk && (pcHeaderBlk.length == pcMainBlk.length)){
+if(pcHeaderBlk && pcMainBlk){
 
     for (let i = 0; i < pcHeaderBlk.length; i++) {
         
         pcHeaderBlk[i].addEventListener('click',()=>{
-
-            pcMainBlk[i].classList.add("block");
-            pcHeaderBlk[i].classList.add("item-active");
+            
+            for (let b = 0; b < pcMainBlk.length; b++) {
+                
+                pcMainBlk[b].classList.remove("block"); 
+                
+            }
 
             for (let b = 0; b < pcHeaderBlk.length; b++) {
                 
-                if(i != b){
-                    pcMainBlk[b].classList.remove("block"); 
-                    pcHeaderBlk[b].classList.remove("item-active");
-                } 
+                pcHeaderBlk[b].classList.remove("item-active");
+                
             }
+
+            openBlock = pcHeaderBlk[i].getAttribute("data-for");
+            activeHeader = pcHeaderBlk[i].getAttribute("data-for");
+            
+            headerActive = document.querySelectorAll('.pc_item[data-for="'+activeHeader+'"]');
+
+            for (let b = 0; b < headerActive.length; b++) {
+                
+                headerActive[b].classList.add("item-active");
+                
+            }
+
+            document.querySelector(openBlock).classList.add("block"); 
+            pcHeaderBlk[i].classList.add("item-active");
+
         }); 
     }
+}
+
+
+let personalCabinetChoicePopupOpen = document.querySelector(".nav_items");
+let personalCabinetChoicePopup = document.querySelector(".pc-choice__popup");
+
+if(personalCabinetChoicePopupOpen){
+    
+    if(window.innerWidth < 920){
+
+        personalCabinetChoicePopupOpen.addEventListener('click',()=>{
+            closeAllPopups();
+            personalCabinetChoicePopup.classList.add("popup-active");
+            checkHeight(personalCabinetChoicePopup);
+        });
+    }
+    else{
+        closeAllPopups();
+    }
+    
+    window.addEventListener("resize", ()=>{
+        closeAllPopups();
+        personalCabinetChoicePopupOpen.addEventListener('click',()=>{
+            closeAllPopups();
+            personalCabinetChoicePopup.classList.add("popup-active");
+            checkHeight(personalCabinetChoicePopup);
+        });
+    })
+
+    personalCabinetChoicePopupClose = document.querySelectorAll(".pc-choice__popup .pc_item");
+
+    for (let b = 0; b < personalCabinetChoicePopupClose.length; b++) {
+        
+        personalCabinetChoicePopupClose[b].addEventListener("click", ()=>{
+            closeAllPopups();
+        })
+        
+    }
+
 }
 
 // 

@@ -410,7 +410,7 @@ body {
 /* ------------------------------------ */
 header {
   position: relative;
-  z-index: 7; }
+  z-index: 8; }
   header .wrapper-b {
     display: flex;
     justify-content: flex-start;
@@ -444,19 +444,6 @@ header {
       display: flex;
       align-items: center;
       margin-left: auto; }
-      header .wrapper-b .header_login .login_pc {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        margin-right: 60px; }
-        header .wrapper-b .header_login .login_pc img {
-          width: 55px;
-          height: 55px;
-          margin-right: 22px; }
-        header .wrapper-b .header_login .login_pc p {
-          font-size: 16px;
-          line-height: 22px;
-          font-weight: 500 !important; }
       header .wrapper-b .header_login .nav_consult {
         font-size: 16px;
         line-height: 22px;
@@ -541,6 +528,19 @@ header {
         background: #1763F8;
         color: white;
         padding: 32px 50px; }
+    header .wrapper-b .login_pc {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-right: 60px; }
+      header .wrapper-b .login_pc img {
+        width: 55px;
+        height: 55px;
+        margin-right: 22px; }
+      header .wrapper-b .login_pc p {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 500 !important; }
     header .wrapper-b .header_mobile-logo {
       display: none; }
 
@@ -1272,7 +1272,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9;
+  z-index: 10;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(3px);
   display: none; }
@@ -1684,7 +1684,8 @@ footer {
             padding: 15px 40px;
             color: #B3BACC;
             font-weight: 500 !important;
-            transition: .3s; }
+            transition: .3s;
+            border-bottom: 5px solid #E8F0F9; }
             .block-nav .wrapper .pc_navigation .nav_items li p:hover {
               color: #1763F8;
               border-bottom: 5px solid #1763F8; }
@@ -3659,24 +3660,6 @@ footer {
       padding-bottom: 1.042vw; }
       .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide {
         column-gap: 1.198vw; }
-        .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program {
-          width: 24.219vw;
-          border-radius: 0.521vw; }
-          .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_image {
-            height: 17.969vw;
-            border-radius: 0.521vw; }
-          .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_info {
-            padding: 0.990vw 1.250vw 1.302vw 1.250vw; }
-            .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_info .program_title {
-              font-size: 1.250vw;
-              line-height: 1.667vw;
-              margin-bottom: 0.990vw; }
-            .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_info .program_subtitle {
-              font-size: 0.729vw;
-              line-height: 0.990vw;
-              margin-bottom: 1.771vw;
-              width: 20.104vw;
-              height: 3.9vw; }
     .programs .wrapper .programs_right .navigation-block {
       bottom: 1.042vw;
       left: -4.792vw; }
@@ -3685,6 +3668,24 @@ footer {
         height: 1.667vw; }
       .programs .wrapper .programs_right .navigation-block .swiper-button-prev {
         margin-right: 0.260vw; }
+  .right_program {
+    width: 24.219vw;
+    border-radius: 0.521vw; }
+    .right_program .program_image {
+      height: 17.969vw;
+      border-radius: 0.521vw; }
+    .right_program .program_info {
+      padding: 0.990vw 1.250vw 1.302vw 1.250vw; }
+      .right_program .program_info .program_title {
+        font-size: 1.250vw;
+        line-height: 1.667vw;
+        margin-bottom: 0.990vw; }
+      .right_program .program_info .program_subtitle {
+        font-size: 0.729vw;
+        line-height: 0.990vw;
+        margin-bottom: 1.771vw;
+        width: 20.104vw;
+        height: 3.9vw; }
   .e-programs {
     padding-bottom: 4.167vw;
     margin-bottom: 4.896vw; }
@@ -3700,48 +3701,48 @@ footer {
     .specialists .wrapper .specialists_main {
       row-gap: 1.563vw;
       column-gap: 1.198vw; }
-      .specialists .wrapper .specialists_main .specialist_card {
-        width: 17.865vw;
-        padding: 0.990vw 0.833vw 31px 0.833vw;
-        box-shadow: 0px 1.146vw 2.292vw -0.625vw rgba(221, 224, 230, 0.35);
-        border-radius: 0.521vw; }
-        .specialists .wrapper .specialists_main .specialist_card .card_image {
-          width: 16.146vw;
-          height: 16.146vw;
-          margin-bottom: 0.781vw;
-          border-radius: 0.521vw; }
-        .specialists .wrapper .specialists_main .specialist_card .card_name {
-          font-size: 0.938vw;
-          line-height: 1.042vw;
-          margin-bottom: 0.781vw; }
-        .specialists .wrapper .specialists_main .specialist_card .card_professions {
-          margin-bottom: 1.146vw; }
-          .specialists .wrapper .specialists_main .specialist_card .card_professions .profession {
-            font-size: 0.625vw;
-            line-height: 0.833vw;
-            padding: 0.521vw 0.677vw;
-            border-radius: 0.521vw;
-            margin-right: 0.313vw;
-            min-width: 4.896vw; }
-        .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .statistic-name {
-          font-size: 0.625vw;
-          line-height: 0.677vw;
-          margin-bottom: 0.521vw; }
-        .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .statistic_text, .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting-text {
-          font-size: 0.833vw;
-          line-height: 1.250vw; }
-        .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting .raiting-text {
-          margin-right: 0.417vw; }
-        .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting .raiting_stars {
+  .specialist_card {
+    width: 17.865vw;
+    padding: 0.990vw 0.833vw 31px 0.833vw;
+    box-shadow: 0px 1.146vw 2.292vw -0.625vw rgba(221, 224, 230, 0.35);
+    border-radius: 0.521vw; }
+    .specialist_card .card_image {
+      width: 16.146vw;
+      height: 16.146vw;
+      margin-bottom: 0.781vw;
+      border-radius: 0.521vw; }
+    .specialist_card .card_name {
+      font-size: 0.938vw;
+      line-height: 1.042vw;
+      margin-bottom: 0.781vw; }
+    .specialist_card .card_professions {
+      margin-bottom: 1.146vw; }
+      .specialist_card .card_professions .profession {
+        font-size: 0.625vw;
+        line-height: 0.833vw;
+        padding: 0.521vw 0.677vw;
+        border-radius: 0.521vw;
+        margin-right: 0.313vw;
+        min-width: 4.896vw; }
+    .specialist_card .card_statistics .card_statistic .statistic-name {
+      font-size: 0.625vw;
+      line-height: 0.677vw;
+      margin-bottom: 0.521vw; }
+    .specialist_card .card_statistics .card_statistic .statistic_text, .specialist_card .card_statistics .card_statistic .raiting-text {
+      font-size: 0.833vw;
+      line-height: 1.250vw; }
+    .specialist_card .card_statistics .card_statistic .raiting .raiting-text {
+      margin-right: 0.417vw; }
+    .specialist_card .card_statistics .card_statistic .raiting .raiting_stars {
+      height: 0.417vw; }
+      .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star {
+        margin-right: 0.104vw;
+        position: relative;
+        width: 0.417vw;
+        height: 0.417vw; }
+        .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star img {
+          width: 0.417vw;
           height: 0.417vw; }
-          .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star {
-            margin-right: 0.104vw;
-            position: relative;
-            width: 0.417vw;
-            height: 0.417vw; }
-            .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star img {
-              width: 0.417vw;
-              height: 0.417vw; }
   .blog {
     margin-bottom: 12.500vw; }
     .blog .wrapper .blog_header {
@@ -3877,7 +3878,152 @@ footer {
           line-height: 0.990vw; }
   footer:after {
     height: 0.573vw;
-    box-shadow: 0px 1.146vw 2.292vw -0.625vw rgba(46, 117, 255, 0.35); } }
+    box-shadow: 0px 1.146vw 2.292vw -0.625vw rgba(46, 117, 255, 0.35); }
+  .pc-main .main_expected .expected_cards {
+    padding-bottom: 2.083vw; }
+    .pc-main .main_expected .expected_cards .wrapper {
+      gap: 2.083vw; }
+  .pc-main .main_ended .ended_cards {
+    padding-bottom: 2.083vw; }
+    .pc-main .main_ended .ended_cards .wrapper {
+      gap: 2.083vw; }
+  .pc-main .main_bought .bought_cards .wrapper {
+    gap: 1.094vw; }
+  .profile-blk {
+    padding: 0.833vw 2.760vw 2.917vw 0.833vw;
+    width: 36.927vw;
+    box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
+    border-radius: 0.521vw;
+    margin-right: 1.198vw; }
+    .profile-blk .left_photo {
+      width: 10.677vw;
+      margin-right: 1.198vw; }
+      .profile-blk .left_photo img {
+        width: 10.677vw;
+        height: 10.677vw;
+        margin-bottom: 1.042vw; }
+      .profile-blk .left_photo .photo_change {
+        font-size: 0.729vw;
+        line-height: 0.781vw; }
+    .profile-blk .left_info {
+      width: 21.250vw; }
+      .profile-blk .left_info .info_horizontal {
+        padding: 0.781vw 0;
+        padding-left: 1.823vw; }
+        .profile-blk .left_info .info_horizontal .horizontal_key {
+          font-size: 0.833vw;
+          line-height: 0.885vw; }
+        .profile-blk .left_info .info_horizontal .horizontal_value {
+          font-size: 0.729vw;
+          line-height: 0.885vw; }
+        .profile-blk .left_info .info_horizontal:nth-child(1) {
+          margin-top: 0.938vw; }
+      .profile-blk .left_info .horizontal_raiting .horizontal_value span {
+        font-size: 0.625vw;
+        line-height: 0.833vw;
+        padding: 0.417vw 0.625vw;
+        border-radius: 0.521vw;
+        margin-right: 1.406vw; }
+      .profile-blk .left_info .horizontal_star-raiting {
+        margin-top: -0.625vw !important; }
+        .profile-blk .left_info .horizontal_star-raiting .horizontal_key {
+          margin-right: 1.042vw; }
+        .profile-blk .left_info .horizontal_star-raiting .card_statistic {
+          margin-right: -1.563vw; }
+      .profile-blk .left_info .info_inputbox:nth-child(4) {
+        margin-top: 0.781vw; }
+      .profile-blk .left_info .info_inputbox .input_title {
+        padding: 1.042vw 0;
+        padding-left: 1.823vw;
+        font-size: 0.729vw;
+        line-height: 0.990vw; }
+      .profile-blk .left_info .info_inputbox input {
+        border-radius: 0.521vw;
+        padding: 0.781vw; }
+      .profile-blk .left_info .save_btn {
+        margin-top: 3.490vw; }
+  .help-blk {
+    column-gap: 1.198vw;
+    row-gap: 1.042vw; }
+    .help-blk .right-blk {
+      padding: 3.333vw 1.771vw 1.771vw 1.771vw;
+      border-radius: 0.521vw; }
+      .help-blk .right-blk .blk_title {
+        font-size: 1.250vw;
+        line-height: 1.667vw;
+        margin-bottom: 0.781vw; }
+      .help-blk .right-blk .blk_subtitle {
+        font-size: 0.729vw;
+        line-height: 0.990vw;
+        margin-bottom: 2.708vw; }
+      .help-blk .right-blk:nth-child(3) {
+        padding-bottom: 2.917vw; }
+  .check {
+    margin-top: 3.958vw;
+    margin-bottom: 2.344vw; }
+    .check .wrapper {
+      padding-left: 0.990vw; }
+      .check .wrapper .check_blk {
+        margin-right: 2.292vw; }
+        .check .wrapper .check_blk .blk_thumb {
+          width: 2.969vw;
+          height: 2.969vw;
+          margin-right: 2.396vw; }
+        .check .wrapper .check_blk .blk_info {
+          width: 17.396vw; }
+          .check .wrapper .check_blk .blk_info .info_title {
+            font-size: 1.250vw;
+            line-height: 1.667vw;
+            margin-top: 0.260vw;
+            margin-bottom: 1.771vw; }
+          .check .wrapper .check_blk .blk_info .info_desc {
+            font-size: 0.729vw;
+            line-height: 0.990vw;
+            margin-bottom: 1.667vw; }
+          .check .wrapper .check_blk .blk_info .info_btn {
+            font-size: 0.833vw;
+            line-height: 0.833vw;
+            margin-bottom: 1.510vw; }
+          .check .wrapper .check_blk .blk_info .info_faq {
+            font-size: 0.833vw;
+            line-height: 0.833vw; }
+          .check .wrapper .check_blk .blk_info .info_soundcheck {
+            margin-top: 1.979vw;
+            margin-bottom: 1.927vw; }
+  .block-nav .wrapper .pc_header {
+    font-size: 1.667vw;
+    line-height: 2.083vw;
+    margin-bottom: 0.990vw; }
+  .block-nav .wrapper .pc_way {
+    margin-bottom: 2.604vw; }
+    .block-nav .wrapper .pc_way a {
+      font-size: 0.833vw;
+      line-height: 1.250vw;
+      margin-right: 2.083vw; }
+      .block-nav .wrapper .pc_way a::after {
+        left: calc( 100% + 0.938vw); }
+  .block-nav .wrapper .pc_navigation {
+    margin-bottom: 1.823vw; }
+    .block-nav .wrapper .pc_navigation .nav_items li p {
+      padding: 0.781vw 2.083vw;
+      border-bottom: 0.260vw solid #E8F0F9; }
+      .block-nav .wrapper .pc_navigation .nav_items li p:hover {
+        border-bottom: 0.260vw solid #1763F8; }
+    .block-nav .wrapper .pc_navigation .nav_items li .item-active {
+      border-bottom: 0.260vw solid #1763F8; }
+    .block-nav .wrapper .pc_navigation .pc_all {
+      font-size: 0.833vw;
+      line-height: 0.833vw; }
+    .block-nav .wrapper .pc_navigation::after {
+      height: 0.260vw;
+      box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18); }
+  .secondary-page_main {
+    padding-top: 2.760vw; }
+  .pc-white_bg .wrapper {
+    box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
+    border-radius: 0.521vw;
+    padding: 3.177vw 2.083vw 2.604vw 2.396vw;
+    margin-bottom: 2.604vw; } }
 
 @media screen and (max-width: 1440px) {
   header .wrapper-b {
@@ -3978,7 +4124,9 @@ footer {
         height: 2.500vw;
         display: block; }
     header .wrapper-b .tablet-header_nav {
-      display: block; }
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
       header .wrapper-b .tablet-header_nav .header_login .login_log-in {
         color: #ffffff !important; }
     header .wrapper-b .header_nav-active {
@@ -4166,29 +4314,29 @@ footer {
           .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide {
             width: 100vw !important;
             grid-template-columns: 23.438vw 23.438vw 23.438vw; }
-            .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program {
-              width: 23.438vw;
-              border-radius: 0.781vw; }
-              .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_image {
-                height: 19.531vw;
-                border-radius: 0.781vw; }
-              .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_info {
-                padding: 3.203vw 1.250vw 1.250vw 1.250vw; }
-                .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_info .program_title {
-                  font-size: 1.250vw;
-                  line-height: 1.875vw;
-                  margin-bottom: 1.094vw; }
-                .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_info .program_subtitle {
-                  font-size: 1.328vw;
-                  line-height: 1.797vw;
-                  width: 100%;
-                  margin-bottom: 1vw;
-                  height: 14.5vw; }
-                .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_info .program_see-more {
-                  text-align: left;
-                  padding: 1.250vw 5.203vw 1.250vw 2.656vw; }
       .programs .wrapper .programs_right .navigation-block {
         display: none; }
+  .right_program {
+    width: 23.438vw;
+    border-radius: 0.781vw; }
+    .right_program .program_image {
+      height: 19.531vw;
+      border-radius: 0.781vw; }
+    .right_program .program_info {
+      padding: 3.203vw 1.250vw 1.250vw 1.250vw; }
+      .right_program .program_info .program_title {
+        font-size: 1.250vw;
+        line-height: 1.875vw;
+        margin-bottom: 1.094vw; }
+      .right_program .program_info .program_subtitle {
+        font-size: 1.328vw;
+        line-height: 1.797vw;
+        width: 100%;
+        margin-bottom: 1vw;
+        height: 14.5vw; }
+      .right_program .program_info .program_see-more {
+        text-align: left;
+        padding: 1.250vw 5.203vw 1.250vw 2.656vw; }
   .e-programs {
     padding-bottom: 19.063vw; }
   .specialists {
@@ -4215,57 +4363,8 @@ footer {
       grid-template-columns: repeat(3, 23.438vw);
       position: relative;
       z-index: 1; }
-      .specialists .wrapper .specialists_main .specialist_card {
-        width: 23.438vw;
-        padding: 1.250vw 1.094vw 2.031vw 1.094vw;
-        box-shadow: 0px 22px 44px -12px rgba(221, 224, 230, 0.35);
-        border-radius: 0.781vw;
-        display: flex;
-        flex-direction: column; }
-        .specialists .wrapper .specialists_main .specialist_card .card_image {
-          width: 21.172vw;
-          height: 21.172vw;
-          margin-bottom: 5vw;
-          border-radius: 0.781vw;
-          margin-right: 3.438vw;
-          flex-shrink: 0;
-          margin-bottom: 1.094vw; }
-        .specialists .wrapper .specialists_main .specialist_card .card_name {
-          font-size: 1.406vw;
-          line-height: 1.406vw;
-          margin-bottom: 1.094vw;
-          height: fit-content; }
-        .specialists .wrapper .specialists_main .specialist_card .card_professions {
-          margin-bottom: 0.781vw; }
-          .specialists .wrapper .specialists_main .specialist_card .card_professions .profession {
-            font-size: 0.938vw;
-            line-height: 1.172vw;
-            padding: 0.781vw;
-            border-radius: 0.781vw;
-            margin-right: 0.391vw;
-            min-width: 6.406vw;
-            height: fit-content;
-            width: fit-content; }
-        .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .statistic-name {
-          font-size: 0.938vw;
-          line-height: 1.563vw;
-          margin-bottom: 1.563vw; }
-        .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .statistic_text, .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting-text {
-          font-size: 1.250vw;
-          line-height: 1.875vw; }
-        .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting .raiting-text {
-          margin-right: 0.1vw; }
-        .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting .raiting_stars {
-          height: 0.547vw; }
-          .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star {
-            margin-right: 0.156vw;
-            width: 0.547vw;
-            height: 0.547vw; }
-            .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star img {
-              width: 0.547vw;
-              height: 0.547vw; }
-        .specialists .wrapper .specialists_main .specialist_card:last-child {
-          display: none; }
+      .specialists .wrapper .specialists_main .specialist_card:last-child {
+        display: none; }
     .specialists::after {
       content: "";
       position: absolute;
@@ -4274,6 +4373,55 @@ footer {
       left: 0;
       bottom: 0;
       background: white; }
+  .specialist_card {
+    width: 23.438vw;
+    padding: 1.250vw 1.094vw 2.031vw 1.094vw;
+    box-shadow: 0px 22px 44px -12px rgba(221, 224, 230, 0.35);
+    border-radius: 0.781vw;
+    display: flex;
+    flex-direction: column; }
+    .specialist_card .card_image {
+      width: 21.172vw;
+      height: 21.172vw;
+      margin-bottom: 5vw;
+      border-radius: 0.781vw;
+      margin-right: 3.438vw;
+      flex-shrink: 0;
+      margin-bottom: 1.094vw; }
+    .specialist_card .card_name {
+      font-size: 1.406vw;
+      line-height: 1.406vw;
+      margin-bottom: 1.094vw;
+      height: fit-content; }
+    .specialist_card .card_professions {
+      margin-bottom: 0.781vw; }
+      .specialist_card .card_professions .profession {
+        font-size: 0.938vw;
+        line-height: 1.172vw;
+        padding: 0.781vw;
+        border-radius: 0.781vw;
+        margin-right: 0.391vw;
+        min-width: 6.406vw;
+        height: fit-content;
+        width: fit-content; }
+    .specialist_card .card_statistics .card_statistic .statistic-name {
+      font-size: 0.938vw;
+      line-height: 1.563vw;
+      margin-bottom: 1.563vw; }
+    .specialist_card .card_statistics .card_statistic .statistic_text, .specialist_card .card_statistics .card_statistic .raiting-text {
+      font-size: 1.250vw;
+      line-height: 1.875vw; }
+    .specialist_card .card_statistics .card_statistic .raiting .raiting-text {
+      margin-right: 0.1vw; }
+    .specialist_card .card_statistics .card_statistic .raiting .raiting_stars {
+      height: 0.547vw; }
+      .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star {
+        margin-right: 0.156vw;
+        width: 0.547vw;
+        height: 0.547vw; }
+        .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star img {
+          width: 0.547vw;
+          height: 0.547vw; }
   .blog {
     margin-bottom: 8.750vw; }
     .blog .wrapper .blog_header {
@@ -4421,7 +4569,181 @@ footer {
           line-height: 1.875vw; }
   footer:after {
     height: 0.859vw;
-    box-shadow: 0px 1.146vw 2.292vw -0.625vw rgba(46, 117, 255, 0.35); } }
+    box-shadow: 0px 1.146vw 2.292vw -0.625vw rgba(46, 117, 255, 0.35); }
+  .main-pc .wrapper {
+    flex-direction: column; }
+  .pc-main .main_expected .expected_cards {
+    padding-bottom: 2.083vw; }
+    .pc-main .main_expected .expected_cards .wrapper {
+      gap: 2.083vw;
+      grid-template-columns: 1fr 1fr 1fr; }
+  .pc-main .main_ended .ended_cards {
+    padding-bottom: 2.083vw; }
+    .pc-main .main_ended .ended_cards .wrapper {
+      gap: 2.083vw; }
+  .pc-main .main_bought .bought_cards .wrapper {
+    gap: 1.094vw; }
+  .profile-blk {
+    padding: 1.641vw 2.500vw 5vw 1.250vw;
+    width: 100%;
+    box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+    border-radius: 0.781vw;
+    margin-right: 0;
+    margin-bottom: 3.750vw; }
+    .profile-blk .left_photo {
+      width: 21.797vw;
+      margin-right: 1.875vw; }
+      .profile-blk .left_photo img {
+        width: 21.797vw;
+        height: 21.797vw;
+        margin-bottom: 1.641vw; }
+      .profile-blk .left_photo .photo_change {
+        font-size: 1.250vw;
+        line-height: 1.719vw; }
+    .profile-blk .left_info {
+      width: 45.547vw; }
+      .profile-blk .left_info .info_horizontal {
+        padding: 0.781vw 0;
+        padding-left: 1.823vw;
+        display: grid;
+        grid-template-columns: 145px 1fr; }
+        .profile-blk .left_info .info_horizontal .horizontal_key {
+          font-size: 1.250vw;
+          line-height: 1.875vw; }
+        .profile-blk .left_info .info_horizontal .horizontal_value {
+          font-size: 1.250vw;
+          line-height: 1.875vw;
+          padding-left: 2.813vw; }
+        .profile-blk .left_info .info_horizontal:nth-child(1) {
+          margin-top: 0.438vw; }
+      .profile-blk .left_info .horizontal_raiting .horizontal_key {
+        margin-right: 0; }
+      .profile-blk .left_info .horizontal_raiting .horizontal_value {
+        padding-left: 0; }
+        .profile-blk .left_info .horizontal_raiting .horizontal_value span {
+          font-size: 0.938vw;
+          line-height: 1.250vw;
+          padding: 0.717vw 1.25vw;
+          border-radius: 0.781vw;
+          margin-right: 1.406vw; }
+      .profile-blk .left_info .horizontal_star-raiting {
+        margin-top: -0.625vw !important; }
+        .profile-blk .left_info .horizontal_star-raiting .horizontal_key {
+          margin-right: 1.042vw; }
+        .profile-blk .left_info .horizontal_star-raiting .card_statistic {
+          margin-right: -1.563vw; }
+      .profile-blk .left_info .info_inputbox:nth-child(4) {
+        margin-top: 0.781vw; }
+      .profile-blk .left_info .info_inputbox .input_title {
+        padding: 1.042vw 0;
+        padding-left: 1.823vw;
+        font-size: 1.250vw;
+        line-height: 1.719vw; }
+      .profile-blk .left_info .info_inputbox input {
+        border-radius: 0.521vw;
+        padding: 1.2vw 1.719vw;
+        font-size: 1.250vw;
+        line-height: 1.719vw; }
+      .profile-blk .left_info .save_btn {
+        margin-top: 3.490vw; }
+  .help-blk {
+    column-gap: 1.172vw;
+    grid-template-columns: repeat(3, 1fr); }
+    .help-blk .right-blk {
+      padding: 2.578vw 1.875vw 2.188vw 1.875vw;
+      border-radius: 0.521vw; }
+      .help-blk .right-blk .blk_title {
+        font-size: 1.250vw;
+        line-height: 1.875vw;
+        margin-bottom: 0.938vw;
+        max-width: 14.45vw;
+        min-height: 3.906vw; }
+      .help-blk .right-blk .blk_subtitle {
+        font-size: 1.250vw;
+        line-height: 1.719vw;
+        margin-bottom: 2.708vw; }
+      .help-blk .right-blk:nth-child(3) {
+        padding-bottom: 2.917vw;
+        grid-column: 3/4; }
+  .check {
+    margin-top: 3.958vw;
+    margin-bottom: 0; }
+    .check .wrapper {
+      padding-left: 0;
+      display: flex;
+      flex-direction: row; }
+      .check .wrapper .check_blk {
+        margin-right: 2.292vw;
+        width: 23.438vw;
+        position: relative; }
+        .check .wrapper .check_blk .blk_thumb {
+          width: 3.594vw;
+          height: 3.594vw;
+          margin-right: 1.250vw;
+          position: absolute;
+          left: 0;
+          top: 0; }
+        .check .wrapper .check_blk .blk_info {
+          width: 100%; }
+          .check .wrapper .check_blk .blk_info .info_title {
+            font-size: 1.250vw;
+            line-height: 1.667vw;
+            margin-top: 0.260vw;
+            margin-bottom: 2.771vw;
+            padding-left: 5.25vw;
+            padding-top: 0.638vw; }
+          .check .wrapper .check_blk .blk_info .info_desc {
+            font-size: 1.250vw;
+            line-height: 1.719vw;
+            margin-bottom: 1.667vw; }
+          .check .wrapper .check_blk .blk_info .info_btn {
+            font-size: 1.250vw;
+            line-height: 1.250vw;
+            margin-bottom: 1.210vw; }
+          .check .wrapper .check_blk .blk_info .info_faq {
+            font-size: 1.250vw;
+            line-height: 1.250vw; }
+          .check .wrapper .check_blk .blk_info .info_soundcheck {
+            margin-top: 1.979vw;
+            margin-bottom: 1.927vw; }
+  .block-nav {
+    z-index: 6; }
+    .block-nav .wrapper .pc_header {
+      font-size: 1.875vw;
+      line-height: 2.500vw;
+      margin-bottom: 2.109vw; }
+    .block-nav .wrapper .pc_way {
+      margin-bottom: 1.953vw; }
+      .block-nav .wrapper .pc_way a {
+        font-size: 1.250vw;
+        line-height: 1.719vw;
+        margin-right: 2.083vw; }
+        .block-nav .wrapper .pc_way a::after {
+          left: calc( 100% + 0.938vw); }
+    .block-nav .wrapper .pc_navigation {
+      margin-bottom: 3.359vw; }
+      .block-nav .wrapper .pc_navigation .nav_items li p {
+        font-size: 1.250vw;
+        line-height: 1.719vw;
+        padding: 1.719vw 1.0vw;
+        border-bottom: 0.391vw solid #E8F0F9; }
+        .block-nav .wrapper .pc_navigation .nav_items li p:hover {
+          border-bottom: 0.391vw solid #1763F8; }
+      .block-nav .wrapper .pc_navigation .nav_items li .item-active {
+        border-bottom: 0.391vw solid #1763F8; }
+      .block-nav .wrapper .pc_navigation .pc_all {
+        font-size: 1.250vw;
+        line-height: 1.250vw; }
+      .block-nav .wrapper .pc_navigation::after {
+        height: 0.391vw;
+        box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18); }
+  .secondary-page_main {
+    padding-top: 2.760vw; }
+  .pc-white_bg .wrapper {
+    box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
+    border-radius: 0.521vw;
+    padding: 3.177vw 2.083vw 2.604vw 2.396vw;
+    margin-bottom: 2.604vw; } }
 
 @media screen and (max-width: 920px) {
   .wrapper-b {
@@ -5031,6 +5353,209 @@ footer {
       display: none; }
   footer:after {
     height: 3.438vw;
-    box-shadow: 0px 1.146vw 2.292vw -0.625vw rgba(46, 117, 255, 0.35); } }
+    box-shadow: 0px 1.146vw 2.292vw -0.625vw rgba(46, 117, 255, 0.35); }
+  .pc-main .main_expected .expected_cards {
+    padding-bottom: 2.083vw; }
+    .pc-main .main_expected .expected_cards .wrapper {
+      gap: 2.083vw; }
+  .pc-main .main_ended .ended_cards {
+    padding-bottom: 2.083vw; }
+    .pc-main .main_ended .ended_cards .wrapper {
+      gap: 2.083vw; }
+  .pc-main .main_bought .bought_cards .wrapper {
+    gap: 1.094vw; }
+  .profile-blk {
+    padding: 0.833vw 2.760vw 2.917vw 0.833vw;
+    width: 36.927vw;
+    box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
+    border-radius: 0.521vw;
+    margin-right: 1.198vw; }
+    .profile-blk .left_photo {
+      width: 10.677vw;
+      margin-right: 1.198vw; }
+      .profile-blk .left_photo img {
+        width: 10.677vw;
+        height: 10.677vw;
+        margin-bottom: 1.042vw; }
+      .profile-blk .left_photo .photo_change {
+        font-size: 0.729vw;
+        line-height: 0.781vw; }
+    .profile-blk .left_info {
+      width: 21.250vw; }
+      .profile-blk .left_info .info_horizontal {
+        padding: 0.781vw 0;
+        padding-left: 1.823vw; }
+        .profile-blk .left_info .info_horizontal .horizontal_key {
+          font-size: 0.833vw;
+          line-height: 0.885vw; }
+        .profile-blk .left_info .info_horizontal .horizontal_value {
+          font-size: 0.729vw;
+          line-height: 0.885vw; }
+        .profile-blk .left_info .info_horizontal:nth-child(1) {
+          margin-top: 0.938vw; }
+      .profile-blk .left_info .horizontal_raiting .horizontal_value span {
+        font-size: 0.625vw;
+        line-height: 0.833vw;
+        padding: 0.417vw 0.625vw;
+        border-radius: 0.521vw;
+        margin-right: 1.406vw; }
+      .profile-blk .left_info .horizontal_star-raiting {
+        margin-top: -0.625vw !important; }
+        .profile-blk .left_info .horizontal_star-raiting .horizontal_key {
+          margin-right: 1.042vw; }
+        .profile-blk .left_info .horizontal_star-raiting .card_statistic {
+          margin-right: -1.563vw; }
+      .profile-blk .left_info .info_inputbox:nth-child(4) {
+        margin-top: 0.781vw; }
+      .profile-blk .left_info .info_inputbox .input_title {
+        padding: 1.042vw 0;
+        padding-left: 1.823vw;
+        font-size: 0.729vw;
+        line-height: 0.990vw; }
+      .profile-blk .left_info .info_inputbox input {
+        border-radius: 0.521vw;
+        padding: 0.781vw; }
+      .profile-blk .left_info .save_btn {
+        margin-top: 3.490vw; }
+  .help-blk {
+    column-gap: 1.198vw;
+    row-gap: 1.042vw; }
+    .help-blk .right-blk {
+      padding: 3.333vw 1.771vw 1.771vw 1.771vw;
+      border-radius: 0.521vw; }
+      .help-blk .right-blk .blk_title {
+        font-size: 1.250vw;
+        line-height: 1.667vw;
+        margin-bottom: 0.781vw; }
+      .help-blk .right-blk .blk_subtitle {
+        font-size: 0.729vw;
+        line-height: 0.990vw;
+        margin-bottom: 2.708vw; }
+      .help-blk .right-blk:nth-child(3) {
+        padding-bottom: 2.917vw; }
+  .check {
+    margin-top: 3.958vw;
+    margin-bottom: 2.344vw; }
+    .check .wrapper {
+      padding-left: 0.990vw; }
+      .check .wrapper .check_blk {
+        margin-right: 2.292vw; }
+        .check .wrapper .check_blk .blk_thumb {
+          width: 2.969vw;
+          height: 2.969vw;
+          margin-right: 2.396vw; }
+        .check .wrapper .check_blk .blk_info {
+          width: 17.396vw; }
+          .check .wrapper .check_blk .blk_info .info_title {
+            font-size: 1.250vw;
+            line-height: 1.667vw;
+            margin-top: 0.260vw;
+            margin-bottom: 1.771vw; }
+          .check .wrapper .check_blk .blk_info .info_desc {
+            font-size: 0.729vw;
+            line-height: 0.990vw;
+            margin-bottom: 1.667vw; }
+          .check .wrapper .check_blk .blk_info .info_btn {
+            font-size: 0.833vw;
+            line-height: 0.833vw;
+            margin-bottom: 1.510vw; }
+          .check .wrapper .check_blk .blk_info .info_faq {
+            font-size: 0.833vw;
+            line-height: 0.833vw; }
+          .check .wrapper .check_blk .blk_info .info_soundcheck {
+            margin-top: 1.979vw;
+            margin-bottom: 1.927vw; }
+  .block-nav .wrapper .pc_header {
+    font-size: 7.500vw;
+    line-height: 10vw;
+    margin-bottom: 8.125vw; }
+  .block-nav .wrapper .pc_way {
+    margin-bottom: 7.188vw; }
+    .block-nav .wrapper .pc_way a {
+      font-size: 4.375vw;
+      line-height: 7.500vw;
+      margin-right: 5.083vw; }
+      .block-nav .wrapper .pc_way a::after {
+        left: calc( 100% + 1.938vw); }
+  .block-nav .wrapper .pc_navigation {
+    margin-bottom: 10.938vw; }
+    .block-nav .wrapper .pc_navigation .nav_items {
+      flex-direction: column;
+      width: 100%; }
+      .block-nav .wrapper .pc_navigation .nav_items li {
+        width: 100%; }
+        .block-nav .wrapper .pc_navigation .nav_items li p {
+          font-size: 5vw;
+          line-height: 5.313vw;
+          padding: 3.125vw 6.250vw;
+          border-bottom: 1.563vw solid #E8F0F9;
+          display: none; }
+          .block-nav .wrapper .pc_navigation .nav_items li p:hover {
+            border-bottom: 1.563vw solid #1763F8; }
+        .block-nav .wrapper .pc_navigation .nav_items li .item-active {
+          display: block;
+          border-bottom: 1.563vw solid #1763F8; }
+    .block-nav .wrapper .pc_navigation .pc_all {
+      display: none; }
+    .block-nav .wrapper .pc_navigation::after {
+      display: none; }
+    .block-nav .wrapper .pc_navigation:before {
+      content: "";
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateX(-50%);
+      background: url(../img/svg/arrow-down.svg) center no-repeat;
+      background-size: cover;
+      width: 2.500vw;
+      height: 1.563vw; }
+  .pc-choice__popup .popup_popup_blk {
+    max-width: 93.750vw;
+    border-radius: 3.125vw;
+    padding-top: 0; }
+    .pc-choice__popup .popup_popup_blk .popup_popup_blk_main {
+      padding: 0;
+      padding-top: 19.375vw;
+      padding-bottom: 4.063vw;
+      position: relative; }
+      .pc-choice__popup .popup_popup_blk .popup_popup_blk_main .pc_item {
+        font-size: 5vw;
+        line-height: 7.500vw;
+        color: #B3BACC;
+        padding: 3.125vw 6.875vw; }
+      .pc-choice__popup .popup_popup_blk .popup_popup_blk_main .item-active {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #1763F8;
+        font-weight: 500 !important;
+        width: 100%;
+        padding-bottom: 5vw;
+        padding-top: 6vw; }
+        .pc-choice__popup .popup_popup_blk .popup_popup_blk_main .item-active::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1.563vw;
+          bottom: 0;
+          left: 0;
+          background: #1763F8; }
+        .pc-choice__popup .popup_popup_blk .popup_popup_blk_main .item-active:before {
+          content: "";
+          position: absolute;
+          right: 14px;
+          top: 50%;
+          transform: translateX(-50%) rotate(180deg);
+          background: url(../img/svg/arrow-down.svg) center no-repeat;
+          background-size: cover;
+          width: 2.500vw;
+          height: 1.563vw; }
+  .secondary-page_main {
+    padding-top: 2.760vw; }
+  .pc-white_bg .wrapper {
+    box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
+    border-radius: 0.521vw;
+    padding: 3.177vw 2.083vw 2.604vw 2.396vw;
+    margin-bottom: 2.604vw; } }
 
 /*# sourceMappingURL=style.css.map */
