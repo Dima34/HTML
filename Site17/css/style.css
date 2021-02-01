@@ -3686,6 +3686,62 @@ footer {
         margin-bottom: 1.771vw;
         width: 20.104vw;
         height: 3.9vw; }
+  .program_main {
+    box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
+    border-radius: 0.521vw;
+    padding: 0.833vw 0.833vw 9.375vw 0.833vw;
+    margin-bottom: 2.500vw; }
+    .program_main .program_img {
+      width: 29.427vw;
+      height: 24.010vw;
+      margin-right: 1.198vw;
+      border-radius: 0.521vw; }
+    .program_main .program_content .program_header {
+      margin-bottom: 1.615vw; }
+      .program_main .program_content .program_header .program_price {
+        font-size: 0.833vw;
+        line-height: 1.250vw; }
+        .program_main .program_content .program_header .program_price span {
+          font-size: 1.250vw;
+          line-height: 1.667vw;
+          padding-left: 0.938vw; }
+      .program_main .program_content .program_header .program_status {
+        border-radius: 0.521vw;
+        padding: 0.938vw 5.208vw 0.938vw 43px;
+        font-size: 0.833vw;
+        line-height: 1.198vw; }
+        .program_main .program_content .program_header .program_status::after {
+          right: 1.875vw;
+          width: 1.042vw;
+          height: 1.042vw; }
+    .program_main .program_content .program_consults {
+      grid-template-columns: repeat(3, 11.563vw);
+      gap: 1.094vw;
+      margin-bottom: 2.344vw; }
+      .program_main .program_content .program_consults .consult_blk {
+        width: 11.563vw; }
+        .program_main .program_content .program_consults .consult_blk .consult_ticket {
+          grid-template-columns: 7.344vw 4.219vw;
+          font-size: 0.729vw;
+          line-height: 0.833vw; }
+          .program_main .program_content .program_consults .consult_blk .consult_ticket .ticket_left {
+            padding: 0.938vw 1.563vw;
+            border-radius: 0.260vw; }
+          .program_main .program_content .program_consults .consult_blk .consult_ticket .ticket_right {
+            padding: 0.938vw 1.146vw;
+            border-radius: 0.260vw; }
+        .program_main .program_content .program_consults .consult_blk .consult_consult, .program_main .program_content .program_consults .consult_blk .consult_consult-activated {
+          font-size: 0.833vw;
+          line-height: 0.833vw;
+          margin-top: 0.521vw; }
+    .program_main .program_content .program_title {
+      font-size: 0.833vw;
+      line-height: 1.250vw;
+      margin-bottom: 0.938vw; }
+    .program_main .program_content .program_text {
+      padding-right: 1.927vw;
+      font-size: 0.729vw;
+      line-height: 0.990vw; }
   .e-programs {
     padding-bottom: 4.167vw;
     margin-bottom: 4.896vw; }
@@ -4339,6 +4395,64 @@ footer {
         padding: 1.250vw 5.203vw 1.250vw 2.656vw; }
   .e-programs {
     padding-bottom: 19.063vw; }
+  .program_main {
+    box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
+    border-radius: 0.781vw;
+    padding: 1.250vw 1.250vw 5.078vw 1.250vw;
+    margin-bottom: 2.500vw;
+    flex-direction: column; }
+    .program_main .program_img {
+      width: 100%;
+      height: 44.141vw;
+      margin-right: 0;
+      margin-bottom: 2.188vw;
+      border-radius: 0.781vw; }
+    .program_main .program_content .program_header {
+      margin-bottom: 2.188vw; }
+      .program_main .program_content .program_header .program_price {
+        font-size: 1.250vw;
+        line-height: 1.875vw; }
+        .program_main .program_content .program_header .program_price span {
+          font-size: 1.875vw;
+          line-height: 2.500vw;
+          padding-left: 0.938vw; }
+      .program_main .program_content .program_header .program_status {
+        border-radius: 0.781vw;
+        padding: 1.250vw 5.203vw 1.250vw 2.656vw;
+        font-size: 1.250vw;
+        line-height: 1.350vw; }
+        .program_main .program_content .program_header .program_status::after {
+          right: 2.275vw;
+          width: 1.342vw;
+          height: 1.342vw; }
+    .program_main .program_content .program_consults {
+      grid-template-columns: repeat(4, 16.563vw);
+      gap: 1.094vw;
+      margin-bottom: 2.344vw; }
+      .program_main .program_content .program_consults .consult_blk {
+        width: 16.563vw; }
+        .program_main .program_content .program_consults .consult_blk .consult_ticket {
+          grid-template-columns: 10.547vw 6.094vw;
+          font-size: 0.938vw;
+          line-height: 1.250vw; }
+          .program_main .program_content .program_consults .consult_blk .consult_ticket .ticket_left {
+            padding: 1.250vw 1.963vw;
+            border-radius: 0.391vw; }
+          .program_main .program_content .program_consults .consult_blk .consult_ticket .ticket_right {
+            padding: 1.250vw 1.146vw;
+            border-radius: 0.391vw; }
+        .program_main .program_content .program_consults .consult_blk .consult_consult, .program_main .program_content .program_consults .consult_blk .consult_consult-activated {
+          font-size: 0.833vw;
+          line-height: 0.833vw;
+          margin-top: 0.521vw; }
+    .program_main .program_content .program_title {
+      font-size: 1.250vw;
+      line-height: 1.250vw;
+      margin-bottom: 1.875vw; }
+    .program_main .program_content .program_text {
+      padding-right: 0;
+      font-size: 1.250vw;
+      line-height: 1.250vw; }
   .specialists {
     margin-top: 0;
     margin-bottom: 5vw;
@@ -5066,6 +5180,72 @@ footer {
         padding: 5.625vw 20vw 5.625vw 13vw; }
   .e-programs {
     padding-bottom: 19.063vw; }
+  .program_main {
+    box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
+    border-radius: 3.125vw;
+    padding: 4.688vw 3.125vw 4.688vw 3.125vw;
+    margin-bottom: 9.375vw; }
+    .program_main .program_img {
+      width: 100%;
+      height: 67.500vw;
+      margin-bottom: 10.938vw;
+      border-radius: 3.125vw; }
+    .program_main .program_content .program_header {
+      margin-bottom: 10vw;
+      flex-direction: column; }
+      .program_main .program_content .program_header .program_price {
+        font-size: 5vw;
+        line-height: 7.500vw;
+        margin-bottom: 6.563vw; }
+        .program_main .program_content .program_header .program_price span {
+          font-size: 7.500vw;
+          line-height: 10vw;
+          padding-left: 1.938vw; }
+      .program_main .program_content .program_header .program_status {
+        border-radius: 3.125vw;
+        padding: 5.625vw 16vw 5.625vw 14.375vw;
+        font-size: 5vw;
+        line-height: 7.188vw;
+        width: 100%; }
+        .program_main .program_content .program_header .program_status::after {
+          right: 6.275vw;
+          width: 4.342vw;
+          height: 4.342vw; }
+    .program_main .program_content .program_consults {
+      grid-template-columns: 1fr;
+      gap: 1.875vw;
+      margin-bottom: 10vw; }
+      .program_main .program_content .program_consults .consult_blk {
+        width: 100%; }
+        .program_main .program_content .program_consults .consult_blk .consult_ticket {
+          grid-template-columns: 53.438vw 34.063vw;
+          font-size: 3.750vw;
+          line-height: 5vw; }
+          .program_main .program_content .program_consults .consult_blk .consult_ticket .ticket_left {
+            padding: 5vw 1.963vw;
+            border-radius: 1.563vw; }
+          .program_main .program_content .program_consults .consult_blk .consult_ticket .ticket_right {
+            padding: 5vw 1.146vw;
+            border-radius: 1.563vw; }
+        .program_main .program_content .program_consults .consult_blk .consult_consult, .program_main .program_content .program_consults .consult_blk .consult_consult-activated {
+          font-size: 0.833vw;
+          line-height: 0.833vw;
+          margin-top: 0.521vw; }
+    .program_main .program_content .program_title {
+      font-size: 4.375vw;
+      line-height: 7.500vw;
+      margin-bottom: 7.500vw; }
+    .program_main .program_content .program_text {
+      font-size: 5vw;
+      line-height: 6.875vw; }
+  .same-programs .wrapper .same-programs_header .same-programs_title {
+    font-size: 7.500vw;
+    line-height: 10.313vw; }
+  .same-programs .wrapper .same-programs_header .same-programs_all {
+    display: none; }
+  .same-programs .wrapper .same-programs_main {
+    display: flex;
+    flex-direction: column; }
   .specialists {
     margin-top: 0;
     margin-bottom: 15vw;
@@ -5524,6 +5704,8 @@ footer {
         margin-bottom: 2.708vw; }
       .help-blk .right-blk:nth-child(3) {
         padding-bottom: 2.917vw; }
+  .help-blk-horizontal {
+    display: none; }
   .check {
     margin-top: 10vw;
     margin-bottom: 15.625vw; }
@@ -5562,6 +5744,8 @@ footer {
     font-size: 7.500vw;
     line-height: 10vw;
     margin-bottom: 8.125vw; }
+  .block-nav .wrapper .header-back {
+    display: none; }
   .block-nav .wrapper .pc_way {
     margin-bottom: 7.188vw; }
     .block-nav .wrapper .pc_way a {
