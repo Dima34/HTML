@@ -4959,6 +4959,15 @@ footer {
             font-size: 5vw;
             line-height: 12.875vw;
             padding: 1.563vw 0.885vw; }
+      header .wrapper-b .header_nav .header_login .login_pc {
+        margin-right: 0;
+        justify-content: center; }
+        header .wrapper-b .header_nav .header_login .login_pc img {
+          display: none; }
+        header .wrapper-b .header_nav .header_login .login_pc p {
+          font-size: 5vw;
+          line-height: 12.875vw;
+          padding: 1.563vw 0.885vw; }
       header .wrapper-b .header_nav .burger-close {
         display: block !important;
         position: absolute;

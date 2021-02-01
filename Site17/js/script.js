@@ -108,7 +108,7 @@ burgerClose.addEventListener('click',()=>{
 // 
 
 
-let AuthorizePopupOpen = document.querySelector(".login_log-in");
+let AuthorizePopupOpen = document.querySelectorAll(".login_log-in");
 let AuthorizePopupOpen1 = document.querySelectorAll(".enter-acc");
 let AutorizePopup = document.querySelector(".authorize__popup");
 
@@ -128,12 +128,20 @@ let AllPopups = document.querySelectorAll(".popup")
 let popupClose = document.querySelectorAll(".pp_close");
 
 if(popupClose && AuthorizePopupOpen){
+    
+    console.log(AuthorizePopupOpen);
 
-    AuthorizePopupOpen.addEventListener('click',()=>{
-        closeAllPopups();
-        AutorizePopup.classList.add("popup-active");
-        checkHeight(AutorizePopup);
-    });
+    for (let i = 0; i < AuthorizePopupOpen.length; i++) {
+        console.log('123');
+        AuthorizePopupOpen[i].addEventListener('click',()=>{
+            closeAllPopups();
+            AutorizePopup.classList.add("popup-active");
+            console.log('123');
+            checkHeight(AutorizePopup);
+        });  
+        
+    }
+    
 
     for (let i = 0; i < AuthorizePopupOpen1.length; i++) {
         
@@ -190,7 +198,7 @@ if(popupClose && AuthorizePopupOpen){
     for (let i = 0; i < popupClose.length; i++) {
             
         popupClose[i].addEventListener('click',()=>{
-            AllPopups[i].classList.remove("popup-active");
+            closeAllPopups();
         });
         
     }

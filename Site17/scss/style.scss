@@ -7755,6 +7755,26 @@ footer{
           }
         }
 
+        .header_login{
+
+          .login_pc{
+            margin-right: 0;
+            justify-content: center;
+
+            img{
+              display: none;
+            }
+  
+            p{
+              font-size: 5vw;
+              line-height: 12.875vw;
+              padding: 1.563vw 0.885vw;
+            }
+          }
+          
+          
+        }
+
         .burger-close{
           display: block !important;
           position: absolute;
