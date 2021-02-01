@@ -5041,7 +5041,8 @@ footer {
             margin-top: 0;
             margin-bottom: 7.813vw; }
           .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right .top-right_subtitle {
-            margin-bottom: 14.063vw; }
+            margin-bottom: 14.063vw;
+            max-width: unset; }
           .intro .intro_top .wrapper .top-container .swiper-slide .intro_top-right .top-right_btn {
             width: 100%;
             margin-bottom: 20vw; }

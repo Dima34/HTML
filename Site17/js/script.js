@@ -53,8 +53,6 @@ function AddSlidesToPrograms(blocksInSlide){
 
     let slidesMustBe = Math.ceil(block.length / blocksInSlide);
 
-    console.log('block in slide', blocksInSlide);
-
     // Create slides
     for (let i = 0; i < slidesMustBe; i++) {
         
