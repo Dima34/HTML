@@ -5695,7 +5695,9 @@ footer {
         .profile-blk .left_info .horizontal_star-raiting .horizontal_key {
           margin-right: 1.042vw; }
         .profile-blk .left_info .horizontal_star-raiting .card_statistic {
-          margin-right: -1.563vw; }
+          margin-left: 5vw; }
+      .profile-blk .left_info .horizontal_raiting .horizontal_value {
+        font-size: 3vw !important; }
       .profile-blk .left_info .info_inputbox:nth-child(4) {
         margin-top: 0.781vw; }
       .profile-blk .left_info .info_inputbox .input_title {
