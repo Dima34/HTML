@@ -2105,14 +2105,13 @@ footer{
       display: block;
       width: 100%;
       margin-bottom: 25px;
+      height: 455px;
+      overflow: hidden;
 
       .products_block{
-        height: 455px;
         padding: 35px;
-
-        .block_text{
-          
-        }
+        height: 100%;
+        transition: .3s;
 
         .block_text{
           background-color: #242424;
@@ -2124,7 +2123,12 @@ footer{
             font-size: 30px;
             line-height: 30.96px;
             color: #ffffff;
+            transition: .3s;
           }
+        }
+
+        &:hover{
+          transform: scale(1.05);
         }
       }
 
@@ -2147,225 +2151,225 @@ footer{
 
 
     .product_block1{
+      min-height: 832px;
 
       .products_block{
-        min-height: 832px;
         padding-top: 363px;
       }
     }
 
     .product_block2{
+      min-height: 460px;
       
       .products_block{
-        min-height: 460px;
         padding-top: 206px;
       }
     }
 
     .product_block3{
+      min-height: 673px;
       
       .products_block{
-        min-height: 673px;
         padding-top: 515px;
       }
     }
 
     .product_block4{
+      min-height: 460px;
       
       .products_block{
-        min-height: 460px;
         padding-top: 322px;
       }
     }
 
     .product_block5{
+      min-height: 460px;
       
       .products_block{
-        min-height: 460px;
         padding-top: 206px;
       }
     }
 
     .product_block6{
+      min-height: 673px;
       
       .products_block{
-        min-height: 673px;
         padding-top: 515px;
       }
     }
 
     .product_block7{
+      min-height: 690px;
       
       .products_block{
-        min-height: 690px;
         padding-top: 518px;
       }
     }
 
     .product_block8{
+      min-height: 673px;
       
       .products_block{
-        min-height: 673px;
         padding-top: 515px;
       }
     }
 
     .product_block9{
+      min-height: 460px;
       
       .products_block{
-        min-height: 460px;
         padding-top: 206px;
       }
     }
 
     .product_block10{
+      min-height: 460px;
       
       .products_block{
-        min-height: 460px;
         padding-top: 322px;
       }
     }
 
     .product_block11{
+      min-height: 460px;
      
       .products_block{
-        min-height: 460px;
         padding-top: 206px;
       }
     }
 
     .product_block12{
+      min-height: 691px;
       
       .products_block{
-        min-height: 691px;
         padding-top: 574px;
       }
     }
 
     .product_block13{
+      min-height: 460px;
       
       .products_block{
-        min-height: 460px;
         padding-top: 322px;
       }
     }
 
     .product_block14{
+      min-height: 691px;
      
       .products_block{
-        min-height: 691px;
         padding-top: 574px;
       }
     }
 
     .product_block15{
+      min-height: 460px;
       
       .products_block{
-        min-height: 460px;
         padding-top: 206px;
       }
     }
 
     .product_block16{
+      min-height: 533px;
       
       .products_block{
-        min-height: 533px;
         padding-top: 206px;
       }
     }
 
     .product_block17{
+      min-height: 529px;
       
       .products_block{
-        min-height: 529px;
         padding-top: 447px;
       }
     }
 
     .product_block18{
+      min-height: 460px;
       
       .products_block{
-        min-height: 460px;
         padding-top: 288px;
       }
     }
 
     .product_block19{
+      min-height: 721px;
       
       .products_block{
-        min-height: 721px;
         padding-top: 206px;
       }
     }
 
     .product_block20{
+      min-height: 821px;
       
       .products_block{
-        min-height: 821px;
         padding-top: 405px;
       }
     }
 
     .product_block21{
+      min-height: 602px;
       
       .products_block{
-        min-height: 602px;
         padding-top: 288px;
       }
     }
 
     .product_block22{
+      min-height: 594px;
       
       .products_block{
-        min-height: 594px;
         padding-top: 206px;
       }
     }
 
     .product_block23{
+      min-height: 876px;
       
       .products_block{
-        min-height: 876px;
         padding-top: 386px;
       }
     }
 
     .product_block24{
+      min-height: 427px;
       
       .products_block{
-        min-height: 427px;
         padding-top: 288px;
       }
     }
 
     .product_block25{
+      min-height: 1048px;
       
       .products_block{
-        min-height: 1048px;
         padding-top: 206px;
       }
     }
 
     .product_block26{
+      min-height: 829px;
       
       .products_block{
-        min-height: 829px;
         padding-top: 441px;
       }
     }
 
     .product_block27{
-      
+      min-height: 655px;
+
       .products_block{
-        min-height: 655px;
         padding-top: 405px;
       }
     }
 
     .product_block28{
+      min-height: 645px;
       
       .products_block{
-        min-height: 645px;
         padding-top: 405px;
       }
     }
@@ -2410,12 +2414,15 @@ footer{
     .services_block-wrap{
       display: block;
       width: 100%;
+      height: 455px;
       margin-bottom: 25px;
+      overflow: hidden;
       
 
       .services_block{
-        height: 455px;
+        height: 100%;
         padding: 20px;
+        transition: .3s;
 
         .block_text{
           background-color: #242424;
@@ -2431,6 +2438,10 @@ footer{
             color: #ffffff;
             transition: .3s;
           }
+        }
+
+        &:hover{
+          transform: scale(1.05);
         }
       }
 
@@ -2453,25 +2464,25 @@ footer{
 
 
     .service_block1{
+      min-height: 832px;
 
       .services_block{
-        min-height: 832px;
         padding-top: 607px;
       }
     }
 
     .service_block2{
+      min-height: 460px;
       
       .services_block{
-        min-height: 460px;
         padding-top: 262px;
       }
     }
 
     .service_block3{
+      min-height: 563px;
       
       .services_block{
-        min-height: 563px;
 
         display: flex;
         align-items: flex-end;
@@ -2479,9 +2490,9 @@ footer{
     }
 
     .service_block4{
+      min-height: 721px;
       
       .services_block{
-        min-height: 721px;
         padding-bottom: 103px;
 
         display: flex;
@@ -2490,9 +2501,9 @@ footer{
     }
 
     .service_block5{
+      min-height: 601px;
       
       .services_block{
-        min-height: 601px;
         padding-bottom: 38px;
 
         display: flex;
@@ -2501,9 +2512,9 @@ footer{
     }
 
     .service_block6{
+      min-height: 600px;
       
       .services_block{
-        min-height: 600px;
         padding-bottom: 177px;
 
         display: flex;
@@ -2512,9 +2523,9 @@ footer{
     }
 
     .service_block8{
+      min-height: 467px;
       
       .services_block{
-        min-height: 467px;
         padding-bottom: 37px;
 
         display: flex;
@@ -2523,9 +2534,9 @@ footer{
     }
 
     .service_block9{
+      height: 365px;
       
       .services_block{
-        height: 365px;
         padding-top:100px;
       }
     }
@@ -5583,6 +5594,84 @@ footer{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* ------======BANNER POPUP======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.banner-popup-wrapper{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  display: none;
+
+  .popup{
+    width: 706px;
+    height: 706px;
+    position: relative;
+    padding: 104px 50px 168px 293px;
+
+    .banner-bg{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .banner_man{
+      position: absolute;
+      left: -46px;
+      top: 25px;
+      width: 411px;
+      height: 634px;
+    }
+
+    .banner_header{
+      position: relative;
+      z-index: 1;
+      @include Beba(400);
+      padding-right: 90px;
+      font-size: 59px;
+      color: #ffc600;
+      margin-bottom: 115px;
+    }
+
+    .banner_alert{
+      position: relative;
+      z-index: 2;
+      @include Beba(400);
+      font-size: 35px;
+      line-height: 46.96px;
+      color: #FFFFFF;
+      padding-left: 20px;
+      margin-bottom: 65px;
+    }
+
+    .banner_close{
+      position: relative;
+      z-index: 2;
+      @include Beba(400);
+      font-size: 23px;
+      padding: 5px 29px;
+      background-color: #ffcc00;
+      width: fit-content;
+      margin-left: 20px;
+    }
+  }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======MEDIA========-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -6720,9 +6809,9 @@ footer{
   
       .products_block-wrap{
         margin-bottom: 1.302vw;
+        height: 23.698vw;
   
         .products_block{
-          height: 23.698vw;
           padding: 1.823vw;
   
   
@@ -6744,225 +6833,225 @@ footer{
   
   
       .product_block1{
+        min-height: 43.333vw;
   
         .products_block{
-          min-height: 43.333vw;
           padding-top: 18.906vw;
         }
       }
   
       .product_block2{
+        min-height: 18.906vw;
         
         .products_block{
-          min-height: 18.906vw;
           padding-top: 10.729vw;
         }
       }
   
       .product_block3{
+        min-height: 35.052vw;
         
         .products_block{
-          min-height: 35.052vw;
           padding-top: 26.823vw;
         }
       }
   
       .product_block4{
+        min-height: 18.906vw;
         
         .products_block{
-          min-height: 18.906vw;
           padding-top: 16.771vw;
         }
       }
   
       .product_block5{
+        min-height: 18.906vw;
         
         .products_block{
-          min-height: 18.906vw;
           padding-top: 10.729vw;
         }
       }
   
       .product_block6{
+        min-height: 35.052vw;
         
         .products_block{
-          min-height: 35.052vw;
           padding-top: 26.823vw;
         }
       }
   
       .product_block7{
+        min-height: 35.938vw;
         
         .products_block{
-          min-height: 35.938vw;
           padding-top: 26.979vw;
         }
       }
   
       .product_block8{
+        min-height: 35.052vw;
         
         .products_block{
-          min-height: 35.052vw;
           padding-top: 26.823vw;
         }
       }
   
       .product_block9{
+        min-height: 23.958vw;
         
         .products_block{
-          min-height: 23.958vw;
           padding-top: 10.729vw;
         }
       }
   
       .product_block10{
+        min-height: 23.958vw;
         
         .products_block{
-          min-height: 23.958vw;
           padding-top: 16.771vw;
         }
       }
   
       .product_block11{
+        min-height: 23.958vw;
        
         .products_block{
-          min-height: 23.958vw;
           padding-top: 10.729vw;
         }
       }
   
       .product_block12{
+        min-height: 35.990vw;
         
         .products_block{
-          min-height: 35.990vw;
           padding-top: 29.896vw;
         }
       }
   
       .product_block13{
+        min-height: 23.958vw;
         
         .products_block{
-          min-height: 23.958vw;
           padding-top: 16.771vw;
         }
       }
   
       .product_block14{
+        min-height: 35.990vw;
        
         .products_block{
-          min-height: 35.990vw;
           padding-top: 29.896vw;
         }
       }
   
       .product_block15{
+        min-height: 23.958vw;
         
         .products_block{
-          min-height: 23.958vw;
           padding-top: 10.729vw;
         }
       }
   
       .product_block16{
+        min-height: 27.760vw;
         
         .products_block{
-          min-height: 27.760vw;
           padding-top: 10.729vw;
         }
       }
   
       .product_block17{
+        min-height: 27.552vw;
         
         .products_block{
-          min-height: 27.552vw;
           padding-top: 23.281vw;
         }
       }
   
       .product_block18{
+        min-height: 23.958vw;
         
         .products_block{
-          min-height: 23.958vw;
           padding-top: 15vw;
         }
       }
   
       .product_block19{
+        min-height: 37.552vw;
         
         .products_block{
-          min-height: 37.552vw;
           padding-top: 10.729vw;
         }
       }
   
       .product_block20{
+        min-height: 42.760vw;
         
         .products_block{
-          min-height: 42.760vw;
           padding-top: 21.094vw;
         }
       }
   
       .product_block21{
+        min-height: 31.354vw;
         
         .products_block{
-          min-height: 31.354vw;
           padding-top: 15vw;
         }
       }
   
       .product_block22{
+        min-height: 30.938vw;
         
         .products_block{
-          min-height: 30.938vw;
           padding-top: 10.729vw;
         }
       }
   
       .product_block23{
+        min-height: 45.625vw;
         
         .products_block{
-          min-height: 45.625vw;
           padding-top: 20.104vw;
         }
       }
   
       .product_block24{
+        min-height: 22.240vw;
         
         .products_block{
-          min-height: 22.240vw;
           padding-top: 15vw;
         }
       }
   
       .product_block25{
+        min-height: 54.583vw;
         
         .products_block{
-          min-height: 54.583vw;
           padding-top: 10.729vw;
         }
       }
   
       .product_block26{
+        min-height: 43.177vw;
         
         .products_block{
-          min-height: 43.177vw;
           padding-top: 22.969vw;
         }
       }
   
       .product_block27{
+        min-height: 34.115vw;
         
         .products_block{
-          min-height: 34.115vw;
           padding-top: 21.094vw;
         }
       }
   
       .product_block28{
+        min-height: 33vw;
         
         .products_block{
-          min-height: 33vw;
           padding-top: 21.094vw;
         }
       }
@@ -6991,10 +7080,10 @@ footer{
   
       .services_block-wrap{
         margin-bottom: 1.302vw;
+        height: 23.698vw;
         
   
         .services_block{
-          height: 23.698vw;
           padding: 1.042vw;
   
           .block_text{
@@ -7014,64 +7103,64 @@ footer{
   
   
       .service_block1{
+        min-height: 43.333vw;
   
         .services_block{
-          min-height: 43.333vw;
           padding-top: 31.615vw;
         }
       }
   
       .service_block2{
+        min-height: 23.958vw;
         
         .services_block{
-          min-height: 23.958vw;
           padding-top: 13.646vw;
         }
       }
   
       .service_block3{
+        min-height: 29.323vw;
         
         .services_block{
-          min-height: 29.323vw;
         }
       }
   
       .service_block4{
+        min-height: 37.552vw;
         
         .services_block{
-          min-height: 37.552vw;
           padding-bottom: 5.365vw;
         }
       }
   
       .service_block5{
+        min-height: 31.302vw;
         
         .services_block{
-          min-height: 31.302vw;
           padding-bottom: 1.979vw;
         }
       }
   
       .service_block6{
+        min-height: 31.250vw;
         
         .services_block{
-          min-height: 31.250vw;
           padding-bottom: 9.219vw;
         }
       }
   
       .service_block8{
+        min-height: 24.792vw;
         
         .services_block{
-          min-height: 24.792vw;
           padding-bottom: 1.927vw;
         }
       }
   
       .service_block9{
+        height: 19.010vw;
         
         .services_block{
-          height: 19.010vw;
           padding-top:5.208vw;
         }
       } 
@@ -10015,9 +10104,9 @@ footer{
       
           .products_block-wrap{
             margin-bottom: 2.083vw;
+            height: 33.333vw;
       
             .products_block{
-              height: 33.333vw;
               padding: 1.667vw;
       
               .block_text{
@@ -10038,225 +10127,225 @@ footer{
       
       
           .product_block1{
+            min-height: 69.333vw;
       
             .products_block{
-              min-height: 69.333vw;
               padding-top: 30.250vw;
             }
           }
       
           .product_block2{
+            min-height: 38.333vw;
             
             .products_block{
-              min-height: 38.333vw;
               padding-top: 17.167vw;
             }
           }
       
           .product_block3{
+            min-height: 56.083vw;
             
             .products_block{
-              min-height: 56.083vw;
               padding-top: 42.917vw;
             }
           }
       
           .product_block4{
-            
+            min-height: 38.333vw;
+
             .products_block{
-              min-height: 38.333vw;
               padding-top: 26.833vw;
             }
           }
       
           .product_block5{
+            min-height: 38.333vw;
             
             .products_block{
-              min-height: 38.333vw;
               padding-top: 17.167vw;
             }
           }
       
           .product_block6{
+            min-height: 56.083vw;
             
             .products_block{
-              min-height: 56.083vw;
               padding-top: 42.917vw;
             }
           }
       
           .product_block7{
+            min-height: 57.500vw;
             
             .products_block{
-              min-height: 57.500vw;
               padding-top: 43.167vw;
             }
           }
       
           .product_block8{
+            min-height: 56.083vw;
             
             .products_block{
-              min-height: 56.083vw;
               padding-top: 42.917vw;
             }
           }
       
           .product_block9{
+            min-height: 38.333vw;
             
             .products_block{
-              min-height: 38.333vw;
               padding-top: 17.167vw;
             }
           }
       
           .product_block10{
+            min-height: 38.333vw;
             
             .products_block{
-              min-height: 38.333vw;
               padding-top: 26.833vw;
             }
           }
       
           .product_block11{
+            min-height: 38.333vw;
            
             .products_block{
-              min-height: 38.333vw;
               padding-top: 17.167vw;
             }
           }
       
           .product_block12{
+            min-height: 57.583vw;
             
             .products_block{
-              min-height: 57.583vw;
               padding-top: 47.833vw;
             }
           }
       
           .product_block13{
+            min-height: 38.333vw;
             
             .products_block{
-              min-height: 38.333vw;
               padding-top: 26.833vw;
             }
           }
       
           .product_block14{
+            min-height: 57.583vw;
            
             .products_block{
-              min-height: 57.583vw;
               padding-top: 47.833vw;
             }
           }
       
           .product_block15{
+            min-height: 38.333vw;
             
             .products_block{
-              min-height: 38.333vw;
               padding-top: 17.167vw;
             }
           }
       
           .product_block16{
+            min-height: 44.417vw;
             
             .products_block{
-              min-height: 44.417vw;
               padding-top: 17.167vw;
             }
           }
       
           .product_block17{
+            min-height: 44.083vw;
             
             .products_block{
-              min-height: 44.083vw;
               padding-top: 37.250vw;
             }
           }
       
           .product_block18{
+            min-height: 38.333vw;
             
             .products_block{
-              min-height: 38.333vw;
               padding-top: 24vw;
             }
           }
       
           .product_block19{
+            min-height: 60.083vw;
             
             .products_block{
-              min-height: 60.083vw;
               padding-top: 17.167vw;
             }
           }
       
           .product_block20{
+            min-height: 68.417vw;
             
             .products_block{
-              min-height: 68.417vw;
               padding-top: 33.750vw;
             }
           }
       
           .product_block21{
+            min-height: 50.167vw;
             
             .products_block{
-              min-height: 50.167vw;
               padding-top: 24vw;
             }
           }
       
           .product_block22{
+            min-height: 49.500vw;
             
             .products_block{
-              min-height: 49.500vw;
               padding-top: 17.167vw;
             }
           }
       
           .product_block23{
+            min-height: 73vw;
             
             .products_block{
-              min-height: 73vw;
               padding-top: 32.167vw;
             }
           }
       
           .product_block24{
+            min-height: 35.583vw;
             
             .products_block{
-              min-height: 35.583vw;
               padding-top: 24vw;
             }
           }
       
           .product_block25{
+            min-height: 85.1vw;
             
             .products_block{
-              min-height: 85.1vw;
               padding-top: 17.167vw;
             }
           }
       
           .product_block26{
+            min-height: 66.75vw;
             
             .products_block{
-              min-height: 66.75vw;;
               padding-top: 36.750vw;
             }
           }
       
           .product_block27{
+            min-height: 54.583vw;
             
             .products_block{
-              min-height: 54.583vw;
               padding-top: 33.750vw;
             }
           }
       
           .product_block28{
+            min-height: 53.750vw;
             
             .products_block{
-              min-height: 53.750vw;
               padding-top: 33.750vw;
             }
           }
@@ -13174,11 +13263,14 @@ footer{
       
           .products_block-wrap{
             margin-bottom: 2.083vw;
+            min-height: 33.333vw;
+            height: 33.333vw;
       
             .products_block{
-              height: 33.333vw;
               padding: 1.667vw;
-      
+              height: 100%;
+              min-height: unset !important;
+              
               .block_text{
                 padding: 1.5vw 2.917vw;
       
@@ -13252,8 +13344,10 @@ footer{
       
           .service_block1,.service_block2,.service_block3,.service_block4,
           .service_block5,.service_block6,.service_block8,.service_block9{
+            min-height: 61.75vw;
+
             .services_block{
-              min-height: 61.75vw;
+              height: 100%;
               padding-top: 1.75vw;
 
               display: flex;
@@ -15042,7 +15136,41 @@ footer{
         }
       }
     }
+
+    .banner-popup-wrapper{
     
+      .popup{
+        width: 88.250vw;
+        height: 88.250vw;
+        padding: 13vw 6.250vw 21vw 36.625vw;
+    
+        .banner_man{
+          left: -5.750vw;
+          top: 3.125vw;
+          width: 51.375vw;
+          height: 79.250vw;
+        }
+    
+        .banner_header{
+          padding-right: 11.250vw;
+          font-size: 7.375vw;
+          margin-bottom: 14.375vw;
+        }
+    
+        .banner_alert{
+          font-size: 4.375vw;
+          line-height: 5.875vw;
+          padding-left: 2.500vw;
+          margin-bottom: 8.125vw;
+        }
+    
+        .banner_close{
+          font-size: 2.875vw;
+          padding: 0.625vw 3.625vw;
+          margin-left: 2.500vw;
+        }
+      }
+    }
   }
 }
 

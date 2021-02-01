@@ -713,7 +713,33 @@ if(onlinePopup){
 
 }
 
+// 
+// Banner popup
+// 
 
+let bannerPopup = document.querySelector("banner-popup-wrapper");
+
+if(bannerPopup){
+
+    let bannerPopupOpen = document.querySelectorAll(".");
+    let bannerPopupClose = bannerPopup.querySelector(".banner_close")
+
+    for (let i = 0; i < bannerPopupOpen.length; i++) {
+        
+        bannerPopupOpen[i].addEventListener("click", ()=>{
+
+            bannerPopup.classList.add("popup-active");
+            checkHeight(bannerPopup);
+
+        })
+
+        bannerPopupClose.addEventListener('click',()=>{
+            bannerPopup.classList.remove("popup-active");
+        });
+        
+    }
+
+}
 
 function checkHeight(el){
 
@@ -973,15 +999,18 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".versus_thumb"),"animate__fadeIn", "2s" );
     animPartiallyVisibleALL(queryA(".versus_right"),"animate__fadeInRight", "2s" );
 
-    if(isPartiallyVisible(query(".right_line .price"))){
-        if(first){
-            ClearActivated(".price");
-            ClearActivated(".amount");
-            first = false;
-            Counter(query(".right_line .price")); 
-            Counter(query(".right_line .amount")); 
+    if(query(".right_line .price")){
+        if(isPartiallyVisible(query(".right_line .price"))){
+            if(first){
+                ClearActivated(".price");
+                ClearActivated(".amount");
+                first = false;
+                Counter(query(".right_line .price")); 
+                Counter(query(".right_line .amount")); 
+            }
         }
     }
+    
     
     // if(isPartiallyVisible(query(".right_line .price"))){
     //     Counter(query(".right_line .price")); 

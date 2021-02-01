@@ -1607,10 +1607,13 @@ footer {
     .products_blocks .products_blockgroup .products_block-wrap {
       display: block;
       width: 100%;
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      height: 455px;
+      overflow: hidden; }
       .products_blocks .products_blockgroup .products_block-wrap .products_block {
-        height: 455px;
-        padding: 35px; }
+        padding: 35px;
+        height: 100%;
+        transition: .3s; }
         .products_blocks .products_blockgroup .products_block-wrap .products_block .block_text {
           background-color: #242424;
           width: fit-content;
@@ -1620,97 +1623,128 @@ footer {
             font-weight: 400 !important;
             font-size: 30px;
             line-height: 30.96px;
-            color: #ffffff; }
+            color: #ffffff;
+            transition: .3s; }
+        .products_blocks .products_blockgroup .products_block-wrap .products_block:hover {
+          transform: scale(1.05); }
       .products_blocks .products_blockgroup .products_block-wrap:hover .block_text {
         background-color: white; }
         .products_blocks .products_blockgroup .products_block-wrap:hover .block_text p {
           color: #242424; }
     .products_blocks .products_blockgroup .products_line1, .products_blocks .products_blockgroup .products_line2 {
       margin-right: 54px; }
-    .products_blocks .products_blockgroup .product_block1 .products_block {
-      min-height: 832px;
-      padding-top: 363px; }
-    .products_blocks .products_blockgroup .product_block2 .products_block {
-      min-height: 460px;
-      padding-top: 206px; }
-    .products_blocks .products_blockgroup .product_block3 .products_block {
-      min-height: 673px;
-      padding-top: 515px; }
-    .products_blocks .products_blockgroup .product_block4 .products_block {
-      min-height: 460px;
-      padding-top: 322px; }
-    .products_blocks .products_blockgroup .product_block5 .products_block {
-      min-height: 460px;
-      padding-top: 206px; }
-    .products_blocks .products_blockgroup .product_block6 .products_block {
-      min-height: 673px;
-      padding-top: 515px; }
-    .products_blocks .products_blockgroup .product_block7 .products_block {
-      min-height: 690px;
-      padding-top: 518px; }
-    .products_blocks .products_blockgroup .product_block8 .products_block {
-      min-height: 673px;
-      padding-top: 515px; }
-    .products_blocks .products_blockgroup .product_block9 .products_block {
-      min-height: 460px;
-      padding-top: 206px; }
-    .products_blocks .products_blockgroup .product_block10 .products_block {
-      min-height: 460px;
-      padding-top: 322px; }
-    .products_blocks .products_blockgroup .product_block11 .products_block {
-      min-height: 460px;
-      padding-top: 206px; }
-    .products_blocks .products_blockgroup .product_block12 .products_block {
-      min-height: 691px;
-      padding-top: 574px; }
-    .products_blocks .products_blockgroup .product_block13 .products_block {
-      min-height: 460px;
-      padding-top: 322px; }
-    .products_blocks .products_blockgroup .product_block14 .products_block {
-      min-height: 691px;
-      padding-top: 574px; }
-    .products_blocks .products_blockgroup .product_block15 .products_block {
-      min-height: 460px;
-      padding-top: 206px; }
-    .products_blocks .products_blockgroup .product_block16 .products_block {
-      min-height: 533px;
-      padding-top: 206px; }
-    .products_blocks .products_blockgroup .product_block17 .products_block {
-      min-height: 529px;
-      padding-top: 447px; }
-    .products_blocks .products_blockgroup .product_block18 .products_block {
-      min-height: 460px;
-      padding-top: 288px; }
-    .products_blocks .products_blockgroup .product_block19 .products_block {
-      min-height: 721px;
-      padding-top: 206px; }
-    .products_blocks .products_blockgroup .product_block20 .products_block {
-      min-height: 821px;
-      padding-top: 405px; }
-    .products_blocks .products_blockgroup .product_block21 .products_block {
-      min-height: 602px;
-      padding-top: 288px; }
-    .products_blocks .products_blockgroup .product_block22 .products_block {
-      min-height: 594px;
-      padding-top: 206px; }
-    .products_blocks .products_blockgroup .product_block23 .products_block {
-      min-height: 876px;
-      padding-top: 386px; }
-    .products_blocks .products_blockgroup .product_block24 .products_block {
-      min-height: 427px;
-      padding-top: 288px; }
-    .products_blocks .products_blockgroup .product_block25 .products_block {
-      min-height: 1048px;
-      padding-top: 206px; }
-    .products_blocks .products_blockgroup .product_block26 .products_block {
-      min-height: 829px;
-      padding-top: 441px; }
-    .products_blocks .products_blockgroup .product_block27 .products_block {
-      min-height: 655px;
-      padding-top: 405px; }
-    .products_blocks .products_blockgroup .product_block28 .products_block {
-      min-height: 645px;
-      padding-top: 405px; }
+    .products_blocks .products_blockgroup .product_block1 {
+      min-height: 832px; }
+      .products_blocks .products_blockgroup .product_block1 .products_block {
+        padding-top: 363px; }
+    .products_blocks .products_blockgroup .product_block2 {
+      min-height: 460px; }
+      .products_blocks .products_blockgroup .product_block2 .products_block {
+        padding-top: 206px; }
+    .products_blocks .products_blockgroup .product_block3 {
+      min-height: 673px; }
+      .products_blocks .products_blockgroup .product_block3 .products_block {
+        padding-top: 515px; }
+    .products_blocks .products_blockgroup .product_block4 {
+      min-height: 460px; }
+      .products_blocks .products_blockgroup .product_block4 .products_block {
+        padding-top: 322px; }
+    .products_blocks .products_blockgroup .product_block5 {
+      min-height: 460px; }
+      .products_blocks .products_blockgroup .product_block5 .products_block {
+        padding-top: 206px; }
+    .products_blocks .products_blockgroup .product_block6 {
+      min-height: 673px; }
+      .products_blocks .products_blockgroup .product_block6 .products_block {
+        padding-top: 515px; }
+    .products_blocks .products_blockgroup .product_block7 {
+      min-height: 690px; }
+      .products_blocks .products_blockgroup .product_block7 .products_block {
+        padding-top: 518px; }
+    .products_blocks .products_blockgroup .product_block8 {
+      min-height: 673px; }
+      .products_blocks .products_blockgroup .product_block8 .products_block {
+        padding-top: 515px; }
+    .products_blocks .products_blockgroup .product_block9 {
+      min-height: 460px; }
+      .products_blocks .products_blockgroup .product_block9 .products_block {
+        padding-top: 206px; }
+    .products_blocks .products_blockgroup .product_block10 {
+      min-height: 460px; }
+      .products_blocks .products_blockgroup .product_block10 .products_block {
+        padding-top: 322px; }
+    .products_blocks .products_blockgroup .product_block11 {
+      min-height: 460px; }
+      .products_blocks .products_blockgroup .product_block11 .products_block {
+        padding-top: 206px; }
+    .products_blocks .products_blockgroup .product_block12 {
+      min-height: 691px; }
+      .products_blocks .products_blockgroup .product_block12 .products_block {
+        padding-top: 574px; }
+    .products_blocks .products_blockgroup .product_block13 {
+      min-height: 460px; }
+      .products_blocks .products_blockgroup .product_block13 .products_block {
+        padding-top: 322px; }
+    .products_blocks .products_blockgroup .product_block14 {
+      min-height: 691px; }
+      .products_blocks .products_blockgroup .product_block14 .products_block {
+        padding-top: 574px; }
+    .products_blocks .products_blockgroup .product_block15 {
+      min-height: 460px; }
+      .products_blocks .products_blockgroup .product_block15 .products_block {
+        padding-top: 206px; }
+    .products_blocks .products_blockgroup .product_block16 {
+      min-height: 533px; }
+      .products_blocks .products_blockgroup .product_block16 .products_block {
+        padding-top: 206px; }
+    .products_blocks .products_blockgroup .product_block17 {
+      min-height: 529px; }
+      .products_blocks .products_blockgroup .product_block17 .products_block {
+        padding-top: 447px; }
+    .products_blocks .products_blockgroup .product_block18 {
+      min-height: 460px; }
+      .products_blocks .products_blockgroup .product_block18 .products_block {
+        padding-top: 288px; }
+    .products_blocks .products_blockgroup .product_block19 {
+      min-height: 721px; }
+      .products_blocks .products_blockgroup .product_block19 .products_block {
+        padding-top: 206px; }
+    .products_blocks .products_blockgroup .product_block20 {
+      min-height: 821px; }
+      .products_blocks .products_blockgroup .product_block20 .products_block {
+        padding-top: 405px; }
+    .products_blocks .products_blockgroup .product_block21 {
+      min-height: 602px; }
+      .products_blocks .products_blockgroup .product_block21 .products_block {
+        padding-top: 288px; }
+    .products_blocks .products_blockgroup .product_block22 {
+      min-height: 594px; }
+      .products_blocks .products_blockgroup .product_block22 .products_block {
+        padding-top: 206px; }
+    .products_blocks .products_blockgroup .product_block23 {
+      min-height: 876px; }
+      .products_blocks .products_blockgroup .product_block23 .products_block {
+        padding-top: 386px; }
+    .products_blocks .products_blockgroup .product_block24 {
+      min-height: 427px; }
+      .products_blocks .products_blockgroup .product_block24 .products_block {
+        padding-top: 288px; }
+    .products_blocks .products_blockgroup .product_block25 {
+      min-height: 1048px; }
+      .products_blocks .products_blockgroup .product_block25 .products_block {
+        padding-top: 206px; }
+    .products_blocks .products_blockgroup .product_block26 {
+      min-height: 829px; }
+      .products_blocks .products_blockgroup .product_block26 .products_block {
+        padding-top: 441px; }
+    .products_blocks .products_blockgroup .product_block27 {
+      min-height: 655px; }
+      .products_blocks .products_blockgroup .product_block27 .products_block {
+        padding-top: 405px; }
+    .products_blocks .products_blockgroup .product_block28 {
+      min-height: 645px; }
+      .products_blocks .products_blockgroup .product_block28 .products_block {
+        padding-top: 405px; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1737,10 +1771,13 @@ footer {
     .services_blocks .services_blockgroup .services_block-wrap {
       display: block;
       width: 100%;
-      margin-bottom: 25px; }
+      height: 455px;
+      margin-bottom: 25px;
+      overflow: hidden; }
       .services_blocks .services_blockgroup .services_block-wrap .services_block {
-        height: 455px;
-        padding: 20px; }
+        height: 100%;
+        padding: 20px;
+        transition: .3s; }
         .services_blocks .services_blockgroup .services_block-wrap .services_block .block_text {
           background-color: #242424;
           width: fit-content;
@@ -1754,45 +1791,55 @@ footer {
             line-height: 30.96px;
             color: #ffffff;
             transition: .3s; }
+        .services_blocks .services_blockgroup .services_block-wrap .services_block:hover {
+          transform: scale(1.05); }
       .services_blocks .services_blockgroup .services_block-wrap:hover .block_text {
         background-color: white; }
         .services_blocks .services_blockgroup .services_block-wrap:hover .block_text p {
           color: #242424; }
     .services_blocks .services_blockgroup .services_line1, .services_blocks .services_blockgroup .services_line2 {
       margin-right: 54px; }
-    .services_blocks .services_blockgroup .service_block1 .services_block {
-      min-height: 832px;
-      padding-top: 607px; }
-    .services_blocks .services_blockgroup .service_block2 .services_block {
-      min-height: 460px;
-      padding-top: 262px; }
-    .services_blocks .services_blockgroup .service_block3 .services_block {
-      min-height: 563px;
-      display: flex;
-      align-items: flex-end; }
-    .services_blocks .services_blockgroup .service_block4 .services_block {
-      min-height: 721px;
-      padding-bottom: 103px;
-      display: flex;
-      align-items: flex-end; }
-    .services_blocks .services_blockgroup .service_block5 .services_block {
-      min-height: 601px;
-      padding-bottom: 38px;
-      display: flex;
-      align-items: flex-end; }
-    .services_blocks .services_blockgroup .service_block6 .services_block {
-      min-height: 600px;
-      padding-bottom: 177px;
-      display: flex;
-      align-items: flex-end; }
-    .services_blocks .services_blockgroup .service_block8 .services_block {
-      min-height: 467px;
-      padding-bottom: 37px;
-      display: flex;
-      align-items: flex-end; }
-    .services_blocks .services_blockgroup .service_block9 .services_block {
-      height: 365px;
-      padding-top: 100px; }
+    .services_blocks .services_blockgroup .service_block1 {
+      min-height: 832px; }
+      .services_blocks .services_blockgroup .service_block1 .services_block {
+        padding-top: 607px; }
+    .services_blocks .services_blockgroup .service_block2 {
+      min-height: 460px; }
+      .services_blocks .services_blockgroup .service_block2 .services_block {
+        padding-top: 262px; }
+    .services_blocks .services_blockgroup .service_block3 {
+      min-height: 563px; }
+      .services_blocks .services_blockgroup .service_block3 .services_block {
+        display: flex;
+        align-items: flex-end; }
+    .services_blocks .services_blockgroup .service_block4 {
+      min-height: 721px; }
+      .services_blocks .services_blockgroup .service_block4 .services_block {
+        padding-bottom: 103px;
+        display: flex;
+        align-items: flex-end; }
+    .services_blocks .services_blockgroup .service_block5 {
+      min-height: 601px; }
+      .services_blocks .services_blockgroup .service_block5 .services_block {
+        padding-bottom: 38px;
+        display: flex;
+        align-items: flex-end; }
+    .services_blocks .services_blockgroup .service_block6 {
+      min-height: 600px; }
+      .services_blocks .services_blockgroup .service_block6 .services_block {
+        padding-bottom: 177px;
+        display: flex;
+        align-items: flex-end; }
+    .services_blocks .services_blockgroup .service_block8 {
+      min-height: 467px; }
+      .services_blocks .services_blockgroup .service_block8 .services_block {
+        padding-bottom: 37px;
+        display: flex;
+        align-items: flex-end; }
+    .services_blocks .services_blockgroup .service_block9 {
+      height: 365px; }
+      .services_blocks .services_blockgroup .service_block9 .services_block {
+        padding-top: 100px; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -4004,6 +4051,73 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* ------======BANNER POPUP======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.banner-popup-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  display: none; }
+  .banner-popup-wrapper .popup {
+    width: 706px;
+    height: 706px;
+    position: relative;
+    padding: 104px 50px 168px 293px; }
+    .banner-popup-wrapper .popup .banner-bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .banner-popup-wrapper .popup .banner_man {
+      position: absolute;
+      left: -46px;
+      top: 25px;
+      width: 411px;
+      height: 634px; }
+    .banner-popup-wrapper .popup .banner_header {
+      position: relative;
+      z-index: 1;
+      font-family: 'Beba';
+      font-weight: 400 !important;
+      padding-right: 90px;
+      font-size: 59px;
+      color: #ffc600;
+      margin-bottom: 115px; }
+    .banner-popup-wrapper .popup .banner_alert {
+      position: relative;
+      z-index: 2;
+      font-family: 'Beba';
+      font-weight: 400 !important;
+      font-size: 35px;
+      line-height: 46.96px;
+      color: #FFFFFF;
+      padding-left: 20px;
+      margin-bottom: 65px; }
+    .banner-popup-wrapper .popup .banner_close {
+      position: relative;
+      z-index: 2;
+      font-family: 'Beba';
+      font-weight: 400 !important;
+      font-size: 23px;
+      padding: 5px 29px;
+      background-color: #ffcc00;
+      width: fit-content;
+      margin-left: 20px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* --------=======MEDIA========-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -4667,9 +4781,9 @@ footer {
       .products_blocks .products_blockgroup .products_line1, .products_blocks .products_blockgroup .products_line2, .products_blocks .products_blockgroup .products_line3 {
         width: 23.698vw; }
       .products_blocks .products_blockgroup .products_block-wrap {
-        margin-bottom: 1.302vw; }
+        margin-bottom: 1.302vw;
+        height: 23.698vw; }
         .products_blocks .products_blockgroup .products_block-wrap .products_block {
-          height: 23.698vw;
           padding: 1.823vw; }
           .products_blocks .products_blockgroup .products_block-wrap .products_block .block_text {
             padding: 0.677vw 3.125vw; }
@@ -4678,90 +4792,118 @@ footer {
               line-height: 1.613vw; }
       .products_blocks .products_blockgroup .products_line1, .products_blocks .products_blockgroup .products_line2 {
         margin-right: 2.813vw; }
-      .products_blocks .products_blockgroup .product_block1 .products_block {
-        min-height: 43.333vw;
-        padding-top: 18.906vw; }
-      .products_blocks .products_blockgroup .product_block2 .products_block {
-        min-height: 18.906vw;
-        padding-top: 10.729vw; }
-      .products_blocks .products_blockgroup .product_block3 .products_block {
-        min-height: 35.052vw;
-        padding-top: 26.823vw; }
-      .products_blocks .products_blockgroup .product_block4 .products_block {
-        min-height: 18.906vw;
-        padding-top: 16.771vw; }
-      .products_blocks .products_blockgroup .product_block5 .products_block {
-        min-height: 18.906vw;
-        padding-top: 10.729vw; }
-      .products_blocks .products_blockgroup .product_block6 .products_block {
-        min-height: 35.052vw;
-        padding-top: 26.823vw; }
-      .products_blocks .products_blockgroup .product_block7 .products_block {
-        min-height: 35.938vw;
-        padding-top: 26.979vw; }
-      .products_blocks .products_blockgroup .product_block8 .products_block {
-        min-height: 35.052vw;
-        padding-top: 26.823vw; }
-      .products_blocks .products_blockgroup .product_block9 .products_block {
-        min-height: 23.958vw;
-        padding-top: 10.729vw; }
-      .products_blocks .products_blockgroup .product_block10 .products_block {
-        min-height: 23.958vw;
-        padding-top: 16.771vw; }
-      .products_blocks .products_blockgroup .product_block11 .products_block {
-        min-height: 23.958vw;
-        padding-top: 10.729vw; }
-      .products_blocks .products_blockgroup .product_block12 .products_block {
-        min-height: 35.990vw;
-        padding-top: 29.896vw; }
-      .products_blocks .products_blockgroup .product_block13 .products_block {
-        min-height: 23.958vw;
-        padding-top: 16.771vw; }
-      .products_blocks .products_blockgroup .product_block14 .products_block {
-        min-height: 35.990vw;
-        padding-top: 29.896vw; }
-      .products_blocks .products_blockgroup .product_block15 .products_block {
-        min-height: 23.958vw;
-        padding-top: 10.729vw; }
-      .products_blocks .products_blockgroup .product_block16 .products_block {
-        min-height: 27.760vw;
-        padding-top: 10.729vw; }
-      .products_blocks .products_blockgroup .product_block17 .products_block {
-        min-height: 27.552vw;
-        padding-top: 23.281vw; }
-      .products_blocks .products_blockgroup .product_block18 .products_block {
-        min-height: 23.958vw;
-        padding-top: 15vw; }
-      .products_blocks .products_blockgroup .product_block19 .products_block {
-        min-height: 37.552vw;
-        padding-top: 10.729vw; }
-      .products_blocks .products_blockgroup .product_block20 .products_block {
-        min-height: 42.760vw;
-        padding-top: 21.094vw; }
-      .products_blocks .products_blockgroup .product_block21 .products_block {
-        min-height: 31.354vw;
-        padding-top: 15vw; }
-      .products_blocks .products_blockgroup .product_block22 .products_block {
-        min-height: 30.938vw;
-        padding-top: 10.729vw; }
-      .products_blocks .products_blockgroup .product_block23 .products_block {
-        min-height: 45.625vw;
-        padding-top: 20.104vw; }
-      .products_blocks .products_blockgroup .product_block24 .products_block {
-        min-height: 22.240vw;
-        padding-top: 15vw; }
-      .products_blocks .products_blockgroup .product_block25 .products_block {
-        min-height: 54.583vw;
-        padding-top: 10.729vw; }
-      .products_blocks .products_blockgroup .product_block26 .products_block {
-        min-height: 43.177vw;
-        padding-top: 22.969vw; }
-      .products_blocks .products_blockgroup .product_block27 .products_block {
-        min-height: 34.115vw;
-        padding-top: 21.094vw; }
-      .products_blocks .products_blockgroup .product_block28 .products_block {
-        min-height: 33vw;
-        padding-top: 21.094vw; }
+      .products_blocks .products_blockgroup .product_block1 {
+        min-height: 43.333vw; }
+        .products_blocks .products_blockgroup .product_block1 .products_block {
+          padding-top: 18.906vw; }
+      .products_blocks .products_blockgroup .product_block2 {
+        min-height: 18.906vw; }
+        .products_blocks .products_blockgroup .product_block2 .products_block {
+          padding-top: 10.729vw; }
+      .products_blocks .products_blockgroup .product_block3 {
+        min-height: 35.052vw; }
+        .products_blocks .products_blockgroup .product_block3 .products_block {
+          padding-top: 26.823vw; }
+      .products_blocks .products_blockgroup .product_block4 {
+        min-height: 18.906vw; }
+        .products_blocks .products_blockgroup .product_block4 .products_block {
+          padding-top: 16.771vw; }
+      .products_blocks .products_blockgroup .product_block5 {
+        min-height: 18.906vw; }
+        .products_blocks .products_blockgroup .product_block5 .products_block {
+          padding-top: 10.729vw; }
+      .products_blocks .products_blockgroup .product_block6 {
+        min-height: 35.052vw; }
+        .products_blocks .products_blockgroup .product_block6 .products_block {
+          padding-top: 26.823vw; }
+      .products_blocks .products_blockgroup .product_block7 {
+        min-height: 35.938vw; }
+        .products_blocks .products_blockgroup .product_block7 .products_block {
+          padding-top: 26.979vw; }
+      .products_blocks .products_blockgroup .product_block8 {
+        min-height: 35.052vw; }
+        .products_blocks .products_blockgroup .product_block8 .products_block {
+          padding-top: 26.823vw; }
+      .products_blocks .products_blockgroup .product_block9 {
+        min-height: 23.958vw; }
+        .products_blocks .products_blockgroup .product_block9 .products_block {
+          padding-top: 10.729vw; }
+      .products_blocks .products_blockgroup .product_block10 {
+        min-height: 23.958vw; }
+        .products_blocks .products_blockgroup .product_block10 .products_block {
+          padding-top: 16.771vw; }
+      .products_blocks .products_blockgroup .product_block11 {
+        min-height: 23.958vw; }
+        .products_blocks .products_blockgroup .product_block11 .products_block {
+          padding-top: 10.729vw; }
+      .products_blocks .products_blockgroup .product_block12 {
+        min-height: 35.990vw; }
+        .products_blocks .products_blockgroup .product_block12 .products_block {
+          padding-top: 29.896vw; }
+      .products_blocks .products_blockgroup .product_block13 {
+        min-height: 23.958vw; }
+        .products_blocks .products_blockgroup .product_block13 .products_block {
+          padding-top: 16.771vw; }
+      .products_blocks .products_blockgroup .product_block14 {
+        min-height: 35.990vw; }
+        .products_blocks .products_blockgroup .product_block14 .products_block {
+          padding-top: 29.896vw; }
+      .products_blocks .products_blockgroup .product_block15 {
+        min-height: 23.958vw; }
+        .products_blocks .products_blockgroup .product_block15 .products_block {
+          padding-top: 10.729vw; }
+      .products_blocks .products_blockgroup .product_block16 {
+        min-height: 27.760vw; }
+        .products_blocks .products_blockgroup .product_block16 .products_block {
+          padding-top: 10.729vw; }
+      .products_blocks .products_blockgroup .product_block17 {
+        min-height: 27.552vw; }
+        .products_blocks .products_blockgroup .product_block17 .products_block {
+          padding-top: 23.281vw; }
+      .products_blocks .products_blockgroup .product_block18 {
+        min-height: 23.958vw; }
+        .products_blocks .products_blockgroup .product_block18 .products_block {
+          padding-top: 15vw; }
+      .products_blocks .products_blockgroup .product_block19 {
+        min-height: 37.552vw; }
+        .products_blocks .products_blockgroup .product_block19 .products_block {
+          padding-top: 10.729vw; }
+      .products_blocks .products_blockgroup .product_block20 {
+        min-height: 42.760vw; }
+        .products_blocks .products_blockgroup .product_block20 .products_block {
+          padding-top: 21.094vw; }
+      .products_blocks .products_blockgroup .product_block21 {
+        min-height: 31.354vw; }
+        .products_blocks .products_blockgroup .product_block21 .products_block {
+          padding-top: 15vw; }
+      .products_blocks .products_blockgroup .product_block22 {
+        min-height: 30.938vw; }
+        .products_blocks .products_blockgroup .product_block22 .products_block {
+          padding-top: 10.729vw; }
+      .products_blocks .products_blockgroup .product_block23 {
+        min-height: 45.625vw; }
+        .products_blocks .products_blockgroup .product_block23 .products_block {
+          padding-top: 20.104vw; }
+      .products_blocks .products_blockgroup .product_block24 {
+        min-height: 22.240vw; }
+        .products_blocks .products_blockgroup .product_block24 .products_block {
+          padding-top: 15vw; }
+      .products_blocks .products_blockgroup .product_block25 {
+        min-height: 54.583vw; }
+        .products_blocks .products_blockgroup .product_block25 .products_block {
+          padding-top: 10.729vw; }
+      .products_blocks .products_blockgroup .product_block26 {
+        min-height: 43.177vw; }
+        .products_blocks .products_blockgroup .product_block26 .products_block {
+          padding-top: 22.969vw; }
+      .products_blocks .products_blockgroup .product_block27 {
+        min-height: 34.115vw; }
+        .products_blocks .products_blockgroup .product_block27 .products_block {
+          padding-top: 21.094vw; }
+      .products_blocks .products_blockgroup .product_block28 {
+        min-height: 33vw; }
+        .products_blocks .products_blockgroup .product_block28 .products_block {
+          padding-top: 21.094vw; }
   .services .header {
     padding: 0.781vw 4.010vw; }
   .services_blocks {
@@ -4771,9 +4913,9 @@ footer {
       .services_blocks .services_blockgroup .services_line1, .services_blocks .services_blockgroup .services_line2, .services_blocks .services_blockgroup .services_line3 {
         width: 23.698vw; }
       .services_blocks .services_blockgroup .services_block-wrap {
-        margin-bottom: 1.302vw; }
+        margin-bottom: 1.302vw;
+        height: 23.698vw; }
         .services_blocks .services_blockgroup .services_block-wrap .services_block {
-          height: 23.698vw;
           padding: 1.042vw; }
           .services_blocks .services_blockgroup .services_block-wrap .services_block .block_text {
             padding: 0.625vw 1.302vw; }
@@ -4782,29 +4924,36 @@ footer {
               line-height: 1.613vw; }
       .services_blocks .services_blockgroup .services_line1, .services_blocks .services_blockgroup .services_line2 {
         margin-right: 2.813vw; }
-      .services_blocks .services_blockgroup .service_block1 .services_block {
-        min-height: 43.333vw;
-        padding-top: 31.615vw; }
-      .services_blocks .services_blockgroup .service_block2 .services_block {
-        min-height: 23.958vw;
-        padding-top: 13.646vw; }
-      .services_blocks .services_blockgroup .service_block3 .services_block {
+      .services_blocks .services_blockgroup .service_block1 {
+        min-height: 43.333vw; }
+        .services_blocks .services_blockgroup .service_block1 .services_block {
+          padding-top: 31.615vw; }
+      .services_blocks .services_blockgroup .service_block2 {
+        min-height: 23.958vw; }
+        .services_blocks .services_blockgroup .service_block2 .services_block {
+          padding-top: 13.646vw; }
+      .services_blocks .services_blockgroup .service_block3 {
         min-height: 29.323vw; }
-      .services_blocks .services_blockgroup .service_block4 .services_block {
-        min-height: 37.552vw;
-        padding-bottom: 5.365vw; }
-      .services_blocks .services_blockgroup .service_block5 .services_block {
-        min-height: 31.302vw;
-        padding-bottom: 1.979vw; }
-      .services_blocks .services_blockgroup .service_block6 .services_block {
-        min-height: 31.250vw;
-        padding-bottom: 9.219vw; }
-      .services_blocks .services_blockgroup .service_block8 .services_block {
-        min-height: 24.792vw;
-        padding-bottom: 1.927vw; }
-      .services_blocks .services_blockgroup .service_block9 .services_block {
-        height: 19.010vw;
-        padding-top: 5.208vw; }
+      .services_blocks .services_blockgroup .service_block4 {
+        min-height: 37.552vw; }
+        .services_blocks .services_blockgroup .service_block4 .services_block {
+          padding-bottom: 5.365vw; }
+      .services_blocks .services_blockgroup .service_block5 {
+        min-height: 31.302vw; }
+        .services_blocks .services_blockgroup .service_block5 .services_block {
+          padding-bottom: 1.979vw; }
+      .services_blocks .services_blockgroup .service_block6 {
+        min-height: 31.250vw; }
+        .services_blocks .services_blockgroup .service_block6 .services_block {
+          padding-bottom: 9.219vw; }
+      .services_blocks .services_blockgroup .service_block8 {
+        min-height: 24.792vw; }
+        .services_blocks .services_blockgroup .service_block8 .services_block {
+          padding-bottom: 1.927vw; }
+      .services_blocks .services_blockgroup .service_block9 {
+        height: 19.010vw; }
+        .services_blocks .services_blockgroup .service_block9 .services_block {
+          padding-top: 5.208vw; }
   .fr-intro {
     height: 31.250vw;
     padding: 2.760vw 1.458vw; }
@@ -6499,9 +6648,9 @@ footer {
           .wrapper_global main .products_blocks .products_blockgroup .products_line1, .wrapper_global main .products_blocks .products_blockgroup .products_line2, .wrapper_global main .products_blocks .products_blockgroup .products_line3 {
             width: 31.1vw; }
           .wrapper_global main .products_blocks .products_blockgroup .products_block-wrap {
-            margin-bottom: 2.083vw; }
+            margin-bottom: 2.083vw;
+            height: 33.333vw; }
             .wrapper_global main .products_blocks .products_blockgroup .products_block-wrap .products_block {
-              height: 33.333vw;
               padding: 1.667vw; }
               .wrapper_global main .products_blocks .products_blockgroup .products_block-wrap .products_block .block_text {
                 padding: 0.833vw 2.917vw; }
@@ -6510,90 +6659,118 @@ footer {
                   line-height: 2.163vw; }
           .wrapper_global main .products_blocks .products_blockgroup .products_line1, .wrapper_global main .products_blocks .products_blockgroup .products_line2 {
             margin-right: 1.667vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block1 .products_block {
-            min-height: 69.333vw;
-            padding-top: 30.250vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block2 .products_block {
-            min-height: 38.333vw;
-            padding-top: 17.167vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block3 .products_block {
-            min-height: 56.083vw;
-            padding-top: 42.917vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block4 .products_block {
-            min-height: 38.333vw;
-            padding-top: 26.833vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block5 .products_block {
-            min-height: 38.333vw;
-            padding-top: 17.167vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block6 .products_block {
-            min-height: 56.083vw;
-            padding-top: 42.917vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block7 .products_block {
-            min-height: 57.500vw;
-            padding-top: 43.167vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block8 .products_block {
-            min-height: 56.083vw;
-            padding-top: 42.917vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block9 .products_block {
-            min-height: 38.333vw;
-            padding-top: 17.167vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block10 .products_block {
-            min-height: 38.333vw;
-            padding-top: 26.833vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block11 .products_block {
-            min-height: 38.333vw;
-            padding-top: 17.167vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block12 .products_block {
-            min-height: 57.583vw;
-            padding-top: 47.833vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block13 .products_block {
-            min-height: 38.333vw;
-            padding-top: 26.833vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block14 .products_block {
-            min-height: 57.583vw;
-            padding-top: 47.833vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block15 .products_block {
-            min-height: 38.333vw;
-            padding-top: 17.167vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block16 .products_block {
-            min-height: 44.417vw;
-            padding-top: 17.167vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block17 .products_block {
-            min-height: 44.083vw;
-            padding-top: 37.250vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block18 .products_block {
-            min-height: 38.333vw;
-            padding-top: 24vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block19 .products_block {
-            min-height: 60.083vw;
-            padding-top: 17.167vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block20 .products_block {
-            min-height: 68.417vw;
-            padding-top: 33.750vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block21 .products_block {
-            min-height: 50.167vw;
-            padding-top: 24vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block22 .products_block {
-            min-height: 49.500vw;
-            padding-top: 17.167vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block23 .products_block {
-            min-height: 73vw;
-            padding-top: 32.167vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block24 .products_block {
-            min-height: 35.583vw;
-            padding-top: 24vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block25 .products_block {
-            min-height: 85.1vw;
-            padding-top: 17.167vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block26 .products_block {
-            min-height: 66.75vw;
-            padding-top: 36.750vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block27 .products_block {
-            min-height: 54.583vw;
-            padding-top: 33.750vw; }
-          .wrapper_global main .products_blocks .products_blockgroup .product_block28 .products_block {
-            min-height: 53.750vw;
-            padding-top: 33.750vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block1 {
+            min-height: 69.333vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block1 .products_block {
+              padding-top: 30.250vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block2 {
+            min-height: 38.333vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block2 .products_block {
+              padding-top: 17.167vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block3 {
+            min-height: 56.083vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block3 .products_block {
+              padding-top: 42.917vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block4 {
+            min-height: 38.333vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block4 .products_block {
+              padding-top: 26.833vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block5 {
+            min-height: 38.333vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block5 .products_block {
+              padding-top: 17.167vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block6 {
+            min-height: 56.083vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block6 .products_block {
+              padding-top: 42.917vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block7 {
+            min-height: 57.500vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block7 .products_block {
+              padding-top: 43.167vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block8 {
+            min-height: 56.083vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block8 .products_block {
+              padding-top: 42.917vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block9 {
+            min-height: 38.333vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block9 .products_block {
+              padding-top: 17.167vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block10 {
+            min-height: 38.333vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block10 .products_block {
+              padding-top: 26.833vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block11 {
+            min-height: 38.333vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block11 .products_block {
+              padding-top: 17.167vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block12 {
+            min-height: 57.583vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block12 .products_block {
+              padding-top: 47.833vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block13 {
+            min-height: 38.333vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block13 .products_block {
+              padding-top: 26.833vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block14 {
+            min-height: 57.583vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block14 .products_block {
+              padding-top: 47.833vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block15 {
+            min-height: 38.333vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block15 .products_block {
+              padding-top: 17.167vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block16 {
+            min-height: 44.417vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block16 .products_block {
+              padding-top: 17.167vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block17 {
+            min-height: 44.083vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block17 .products_block {
+              padding-top: 37.250vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block18 {
+            min-height: 38.333vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block18 .products_block {
+              padding-top: 24vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block19 {
+            min-height: 60.083vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block19 .products_block {
+              padding-top: 17.167vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block20 {
+            min-height: 68.417vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block20 .products_block {
+              padding-top: 33.750vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block21 {
+            min-height: 50.167vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block21 .products_block {
+              padding-top: 24vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block22 {
+            min-height: 49.500vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block22 .products_block {
+              padding-top: 17.167vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block23 {
+            min-height: 73vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block23 .products_block {
+              padding-top: 32.167vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block24 {
+            min-height: 35.583vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block24 .products_block {
+              padding-top: 24vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block25 {
+            min-height: 85.1vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block25 .products_block {
+              padding-top: 17.167vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block26 {
+            min-height: 66.75vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block26 .products_block {
+              padding-top: 36.750vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block27 {
+            min-height: 54.583vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block27 .products_block {
+              padding-top: 33.750vw; }
+          .wrapper_global main .products_blocks .products_blockgroup .product_block28 {
+            min-height: 53.750vw; }
+            .wrapper_global main .products_blocks .products_blockgroup .product_block28 .products_block {
+              padding-top: 33.750vw; }
       .wrapper_global main .services .header {
         padding: 1.781vw 1.6vw; }
       .wrapper_global main .services_blocks {
@@ -8239,10 +8416,13 @@ footer {
       .wrapper_global main .products_blocks .products_blockgroup .products_line1, .wrapper_global main .products_blocks .products_blockgroup .products_line2, .wrapper_global main .products_blocks .products_blockgroup .products_line3 {
         width: 100%; }
       .wrapper_global main .products_blocks .products_blockgroup .products_block-wrap {
-        margin-bottom: 2.083vw; }
+        margin-bottom: 2.083vw;
+        min-height: 33.333vw;
+        height: 33.333vw; }
         .wrapper_global main .products_blocks .products_blockgroup .products_block-wrap .products_block {
-          height: 33.333vw;
-          padding: 1.667vw; }
+          padding: 1.667vw;
+          height: 100%;
+          min-height: unset !important; }
           .wrapper_global main .products_blocks .products_blockgroup .products_block-wrap .products_block .block_text {
             padding: 1.5vw 2.917vw; }
             .wrapper_global main .products_blocks .products_blockgroup .products_block-wrap .products_block .block_text p {
@@ -8278,12 +8458,15 @@ footer {
               line-height: 4.163vw; }
       .wrapper_global main .services_blocks .services_blockgroup .services_line1, .wrapper_global main .services_blocks .services_blockgroup .services_line2 {
         margin-right: 0; }
-      .wrapper_global main .services_blocks .services_blockgroup .service_block1 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block2 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block3 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block4 .services_block,
-      .wrapper_global main .services_blocks .services_blockgroup .service_block5 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block6 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block8 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block9 .services_block {
-        min-height: 61.75vw;
-        padding-top: 1.75vw;
-        display: flex;
-        align-items: flex-end; }
+      .wrapper_global main .services_blocks .services_blockgroup .service_block1, .wrapper_global main .services_blocks .services_blockgroup .service_block2, .wrapper_global main .services_blocks .services_blockgroup .service_block3, .wrapper_global main .services_blocks .services_blockgroup .service_block4,
+      .wrapper_global main .services_blocks .services_blockgroup .service_block5, .wrapper_global main .services_blocks .services_blockgroup .service_block6, .wrapper_global main .services_blocks .services_blockgroup .service_block8, .wrapper_global main .services_blocks .services_blockgroup .service_block9 {
+        min-height: 61.75vw; }
+        .wrapper_global main .services_blocks .services_blockgroup .service_block1 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block2 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block3 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block4 .services_block,
+        .wrapper_global main .services_blocks .services_blockgroup .service_block5 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block6 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block8 .services_block, .wrapper_global main .services_blocks .services_blockgroup .service_block9 .services_block {
+          height: 100%;
+          padding-top: 1.75vw;
+          display: flex;
+          align-items: flex-end; }
   .wrapper_global main .fr-intro {
     width: 100%;
     height: 50vw;
@@ -9321,7 +9504,29 @@ footer {
       top: 2.125vw;
       right: 2.125vw; }
     .wrapper_global .online-order-popup-wrapper .popup::after {
-      height: 3vw; } }
+      height: 3vw; }
+  .wrapper_global .banner-popup-wrapper .popup {
+    width: 88.250vw;
+    height: 88.250vw;
+    padding: 13vw 6.250vw 21vw 36.625vw; }
+    .wrapper_global .banner-popup-wrapper .popup .banner_man {
+      left: -5.750vw;
+      top: 3.125vw;
+      width: 51.375vw;
+      height: 79.250vw; }
+    .wrapper_global .banner-popup-wrapper .popup .banner_header {
+      padding-right: 11.250vw;
+      font-size: 7.375vw;
+      margin-bottom: 14.375vw; }
+    .wrapper_global .banner-popup-wrapper .popup .banner_alert {
+      font-size: 4.375vw;
+      line-height: 5.875vw;
+      padding-left: 2.500vw;
+      margin-bottom: 8.125vw; }
+    .wrapper_global .banner-popup-wrapper .popup .banner_close {
+      font-size: 2.875vw;
+      padding: 0.625vw 3.625vw;
+      margin-left: 2.500vw; } }
 
 @media screen and (max-width: 800px) {
   .nav_listitem a {
