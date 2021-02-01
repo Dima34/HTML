@@ -9367,6 +9367,44 @@ footer{
     }
   }
 
+  .create-shedule__popup{
+
+    .create-shedule__popup_popup_blk_main{
+      padding: 0 4.688vw;
+      padding-bottom: 6.250vw;
+
+      .popup_dates{
+        grid-template-columns: 1fr !important;
+
+        p{
+          margin-bottom: 3.125vw;
+        }
+
+        .date_dates{
+          display: grid !important;
+          grid-template-columns: 1fr 1fr;
+          margin-bottom: 6.250vw;
+          column-gap: 3.125vw;
+          row-gap: 2vw;
+        
+          .date{
+            margin: 0 !important;
+            width: 100% !important;
+          }
+        }
+      }
+
+      .popup_groupbox{
+        display: flex;
+        flex-direction: column;
+
+        .select_date{
+          margin-bottom: 6.250vw;
+        }
+      }
+    }
+  }
+
   .pc_sertificat{
 
     .wrapper{
