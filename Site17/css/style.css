@@ -4061,6 +4061,7 @@ footer {
   .block-nav .wrapper .pc_navigation {
     margin-bottom: 1.823vw; }
     .block-nav .wrapper .pc_navigation .nav_items li p {
+      font-size: 0.833vw;
       padding: 0.781vw 2.083vw;
       border-bottom: 0.260vw solid #E8F0F9; }
       .block-nav .wrapper .pc_navigation .nav_items li p:hover {
@@ -4079,7 +4080,21 @@ footer {
     box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
     border-radius: 0.521vw;
     padding: 3.177vw 2.083vw 2.604vw 2.396vw;
-    margin-bottom: 2.604vw; } }
+    margin-bottom: 2.604vw; }
+  .pc_sertificat .wrapper .sertificat_image-zone .sertificat {
+    width: 11.510vw;
+    height: 8.333vw;
+    margin: 0 0.573vw;
+    margin-bottom: 1.198vw; }
+    .pc_sertificat .wrapper .sertificat_image-zone .sertificat .sertificat_close {
+      width: 1.354vw;
+      height: 1.354vw; }
+      .pc_sertificat .wrapper .sertificat_image-zone .sertificat .sertificat_close img {
+        position: absolute;
+        right: 0.260vw;
+        top: 0.208vw;
+        width: 1.354vw;
+        height: 1.354vw; } }
 
 @media screen and (max-width: 1440px) {
   header .wrapper-b {
@@ -4686,6 +4701,8 @@ footer {
     box-shadow: 0px 1.146vw 2.292vw -0.625vw rgba(46, 117, 255, 0.35); }
   .main-pc .wrapper {
     flex-direction: column; }
+    .main-pc .wrapper .main-pc_right .vertical-reviews {
+      max-width: 100%; }
   .pc-main .main_expected .expected_cards {
     padding-bottom: 2.083vw; }
     .pc-main .main_expected .expected_cards .wrapper {
@@ -4729,7 +4746,8 @@ footer {
           line-height: 1.875vw;
           padding-left: 2.813vw; }
         .profile-blk .left_info .info_horizontal:nth-child(1) {
-          margin-top: 0.438vw; }
+          margin-top: 0.438vw;
+          display: flex; }
       .profile-blk .left_info .horizontal_raiting .horizontal_key {
         margin-right: 0; }
       .profile-blk .left_info .horizontal_raiting .horizontal_value {
@@ -4779,6 +4797,8 @@ footer {
       .help-blk .right-blk:nth-child(3) {
         padding-bottom: 2.917vw;
         grid-column: 3/4; }
+  .pc_dating .wrapper {
+    grid-template-columns: repeat(3, 1fr); }
   .check {
     margin-top: 3.958vw;
     margin-bottom: 0; }
@@ -4837,9 +4857,9 @@ footer {
     .block-nav .wrapper .pc_navigation {
       margin-bottom: 3.359vw; }
       .block-nav .wrapper .pc_navigation .nav_items li p {
-        font-size: 1.250vw;
-        line-height: 1.719vw;
-        padding: 1.719vw 1.0vw;
+        font-size: 1.0vw;
+        line-height: 0.78vw;
+        padding: 1.519vw 1.1vw;
         border-bottom: 0.391vw solid #E8F0F9; }
         .block-nav .wrapper .pc_navigation .nav_items li p:hover {
           border-bottom: 0.391vw solid #1763F8; }
@@ -5831,8 +5851,60 @@ footer {
     padding-top: 2.760vw; }
   .pc-white_bg .wrapper {
     box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
-    border-radius: 0.521vw;
-    padding: 3.177vw 2.083vw 2.604vw 2.396vw;
-    margin-bottom: 2.604vw; } }
+    padding: 3.177vw 4.083vw 2.604vw 4.396vw;
+    margin-bottom: 2.604vw;
+    border-radius: 3.125vw; }
+  .calendar .wrapper .calendar_nav {
+    display: flex;
+    flex-direction: column; }
+    .calendar .wrapper .calendar_nav .itemlist {
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      .calendar .wrapper .calendar_nav .itemlist .calendar-header-item {
+        min-width: unset;
+        width: 100%;
+        border-bottom: 5px solid #E8F0F9;
+        margin-bottom: 20px; }
+      .calendar .wrapper .calendar_nav .itemlist .calendar_add {
+        text-align: center; }
+  .calendar .wrapper .calendar_main .main-blk {
+    padding: 4.688vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3.125vw; }
+    .calendar .wrapper .calendar_main .main-blk .date-block {
+      display: flex;
+      flex-direction: column !important; }
+      .calendar .wrapper .calendar_main .main-blk .date-block p {
+        margin-bottom: 3.125vw; }
+      .calendar .wrapper .calendar_main .main-blk .date-block .dates {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 6.250vw;
+        column-gap: 3.125vw;
+        row-gap: 2vw; }
+        .calendar .wrapper .calendar_main .main-blk .date-block .dates .date {
+          margin: 0 !important; }
+  .pc_sertificat .wrapper {
+    border-radius: 3.125vw; }
+    .pc_sertificat .wrapper .sertificat_image-zone {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 3.125vw;
+      row-gap: 2vw; }
+      .pc_sertificat .wrapper .sertificat_image-zone .sertificat {
+        margin: 0;
+        width: 100%;
+        height: 32.333vw;
+        border-radius: 3.125vw; }
+        .pc_sertificat .wrapper .sertificat_image-zone .sertificat .sertificat_close {
+          width: 5.354vw;
+          height: 5.354vw; }
+          .pc_sertificat .wrapper .sertificat_image-zone .sertificat .sertificat_close img {
+            width: 5.354vw;
+            height: 5.354vw; }
+  .pc_dating .wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 3.125vw; } }
 
 /*# sourceMappingURL=style.css.map */

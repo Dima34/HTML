@@ -6168,6 +6168,7 @@ footer{
           li{
   
             p{
+              font-size: 0.833vw;
               padding: 0.781vw 2.083vw;
               border-bottom: 0.260vw solid #E8F0F9;
   
@@ -6208,6 +6209,30 @@ footer{
       margin-bottom: 2.604vw;
     }
     
+  }
+
+  .pc_sertificat .wrapper .sertificat_image-zone{
+
+    .sertificat{
+      width: 11.510vw;
+      height: 8.333vw;
+      margin: 0 0.573vw;
+      margin-bottom: 1.198vw;
+
+      .sertificat_close{
+        width: 1.354vw;
+        height: 1.354vw;
+
+        img{
+          position: absolute;
+          right: 0.260vw;
+          top: 0.208vw;
+          width: 1.354vw;
+          height: 1.354vw;
+        }
+      }
+      
+    }
   }
 
 }
@@ -7272,7 +7297,11 @@ footer{
     .wrapper{
       flex-direction: column;
 
-
+      .main-pc_right{
+        .vertical-reviews{
+          max-width: 100%;
+        }
+      }
     }
   }
 
@@ -7358,6 +7387,7 @@ footer{
   
         &:nth-child(1){
           margin-top: 0.438vw;
+          display: flex;
         }
       }
   
@@ -7445,6 +7475,13 @@ footer{
         padding-bottom: 2.917vw;
         grid-column: 3/4;
       }
+    }
+  }
+
+  .pc_dating{
+    .wrapper{
+
+      grid-template-columns: repeat(3, 1fr);
     }
   }
   
@@ -7545,9 +7582,9 @@ footer{
             
   
             p{
-              font-size: 1.250vw;
-              line-height: 1.719vw;
-              padding:1.719vw 1.0vw;
+              font-size: 1.0vw;
+              line-height: 0.78vw;
+              padding: 1.519vw 1.1vw;
               border-bottom: 0.391vw solid #E8F0F9;
   
               &:hover{
@@ -9264,11 +9301,110 @@ footer{
   
     .wrapper{
       box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
-      border-radius: 0.521vw;
-      padding: 3.177vw 2.083vw 2.604vw 2.396vw;
+      padding: 3.177vw 4.083vw 2.604vw 4.396vw;
       margin-bottom: 2.604vw;
+      border-radius: 3.125vw;
     }
     
+  }
+
+  .calendar{
+
+    .wrapper{
+
+      .calendar_nav{
+        display: flex;
+        flex-direction: column;
+
+        .itemlist{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          .calendar-header-item{
+            min-width: unset;
+            width: 100%;
+            border-bottom: 5px solid #E8F0F9;
+            margin-bottom: 20px;
+          }
+
+          .calendar_add{
+            text-align: center;
+          }
+        }
+        
+      }
+
+      .calendar_main{
+
+        .main-blk{
+          padding: 4.688vw;
+          display: flex;
+          flex-direction: column;
+          border-radius: 3.125vw;
+
+          .date-block{
+            display: flex;
+            flex-direction: column !important;
+
+            p{
+              margin-bottom: 3.125vw;
+            }
+
+            .dates{
+              display: grid !important;
+              grid-template-columns: 1fr 1fr;
+              margin-bottom: 6.250vw;
+              column-gap: 3.125vw;
+              row-gap: 2vw;
+            
+              .date{
+                margin: 0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pc_sertificat{
+
+    .wrapper{
+      border-radius: 3.125vw;
+
+      .sertificat_image-zone{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3.125vw;
+        row-gap: 2vw;
+
+
+        .sertificat{
+          margin: 0;
+          width: 100%;
+          height: 32.333vw;
+          border-radius: 3.125vw;
+
+          .sertificat_close{
+            width: 5.354vw;
+            height: 5.354vw;
+
+            img{
+              width: 5.354vw;
+              height: 5.354vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pc_dating{
+
+    .wrapper{
+      grid-template-columns: 1fr;
+      row-gap: 3.125vw;
+    }
   }
 
 }
