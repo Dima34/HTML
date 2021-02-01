@@ -15,20 +15,16 @@ ibg();
 // 
 
 let programsBlk = document.querySelector(".programs");
-let blocksInSlide = 2;
+let blocksInSlide;
 if(programsBlk){
 
     if(window.innerWidth > 1440){
         blocksInSlide = 2;
         AddSlidesToPrograms(blocksInSlide);
-    }
-
-    if(window.innerWidth > 900){
+    } else if(window.innerWidth > 900){
         blocksInSlide = 3;
         AddSlidesToPrograms(blocksInSlide);
-    }
-
-    if(window.outerWidth <= 900){
+    } else if(window.outerWidth <= 900){
         blocksInSlide = 1;
         AddSlidesToPrograms(blocksInSlide);
     }
@@ -38,14 +34,10 @@ if(programsBlk){
         if(window.innerWidth > 1440){
             blocksInSlide = 2;
             AddSlidesToPrograms(blocksInSlide);
-        }
-
-        if(window.innerWidth > 900){
+        } else if(window.innerWidth > 900){
             blocksInSlide = 3;
             AddSlidesToPrograms(blocksInSlide);
-        }
-    
-        if(window.outerWidth <= 900){
+        } else if(window.outerWidth <= 900){
             blocksInSlide = 1;
             AddSlidesToPrograms(blocksInSlide);
         }
@@ -62,6 +54,8 @@ function AddSlidesToPrograms(blocksInSlide){
     let block = programsBlk.querySelectorAll(".right_program");
 
     let slidesMustBe = Math.ceil(block.length / blocksInSlide);
+
+    console.log('block in slide', blocksInSlide);
 
     // Create slides
     for (let i = 0; i < slidesMustBe; i++) {
@@ -93,7 +87,7 @@ function AddSlidesToPrograms(blocksInSlide){
             slides[slideNumber-1].append(block[i]);
             
         }
-        
+
     }
 
 }
@@ -322,7 +316,6 @@ if(pcHeaderBlk && pcMainBlk){
         }); 
     }
 }
-
 
 let personalCabinetChoicePopupOpen = document.querySelector(".nav_items");
 let personalCabinetChoicePopup = document.querySelector(".pc-choice__popup");
