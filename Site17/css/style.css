@@ -4759,7 +4759,7 @@ footer {
   .planes_desktop {
     display: none; }
   .btn-w-arrow {
-    padding: 5.625vw 15.313vw 5.625vw 8.750vw;
+    padding: 3.625vw 18.313vw 3.625vw 8.750vw;
     font-size: 4.375vw;
     line-height: 6.250vw;
     box-shadow: 0px 6.875vw 13.75vw -3.75vw rgba(46, 117, 255, 0.35);
@@ -5041,29 +5041,29 @@ footer {
           .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide {
             width: 93.750vw !important;
             grid-template-columns: 1fr; }
-            .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program {
-              width: 100%;
-              border-radius: 3.125vw; }
-              .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_image {
-                height: 70.313vw;
-                border-radius: 3.125vw; }
-              .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_info {
-                padding: 5.938vw 5.313vw 7.813vw 5.313vw; }
-                .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_info .program_title {
-                  font-size: 5.625vw;
-                  line-height: 7.813vw;
-                  margin-bottom: 3.438vw; }
-                .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_info .program_subtitle {
-                  font-size: 4.375vw;
-                  line-height: 5.938vw;
-                  width: 100%;
-                  margin-bottom: 5vw;
-                  height: 24.9vw; }
-                .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide .right_program .program_info .program_see-more {
-                  text-align: left;
-                  padding: 5.625vw 20vw 5.625vw 13vw; }
       .programs .wrapper .programs_right .navigation-block {
         display: none; }
+  .right_program {
+    width: 100%;
+    border-radius: 3.125vw; }
+    .right_program .program_image {
+      height: 70.313vw;
+      border-radius: 3.125vw; }
+    .right_program .program_info {
+      padding: 5.938vw 5.313vw 7.813vw 5.313vw; }
+      .right_program .program_info .program_title {
+        font-size: 5.625vw;
+        line-height: 7.813vw;
+        margin-bottom: 3.438vw; }
+      .right_program .program_info .program_subtitle {
+        font-size: 4.375vw;
+        line-height: 5.938vw;
+        width: 100%;
+        margin-bottom: 5vw;
+        height: 24.9vw; }
+      .right_program .program_info .program_see-more {
+        text-align: left;
+        padding: 5.625vw 20vw 5.625vw 13vw; }
   .e-programs {
     padding-bottom: 19.063vw; }
   .specialists {
@@ -5087,63 +5087,6 @@ footer {
       grid-template-columns: 1fr;
       position: relative;
       z-index: 1; }
-      .specialists .wrapper .specialists_main .specialist_card {
-        width: 100%;
-        padding: 3.750vw 2.500vw;
-        box-shadow: 0px 22px 44px -12px rgba(221, 224, 230, 0.35);
-        border-radius: 3.125vw;
-        display: grid;
-        grid-template-columns: min-content 1fr;
-        grid-template-rows: min-content 1fr min-content; }
-        .specialists .wrapper .specialists_main .specialist_card .card_image {
-          width: 23.438vw;
-          height: 23.438vw;
-          margin-bottom: 5vw;
-          border-radius: 3.125vw;
-          margin-right: 3.438vw;
-          grid-row-start: 1;
-          grid-row-end: 3; }
-        .specialists .wrapper .specialists_main .specialist_card .card_name {
-          font-size: 4.375vw;
-          line-height: 5.5vw;
-          margin-bottom: 1.25vw;
-          grid-row-start: 1;
-          grid-row-end: 2;
-          height: fit-content; }
-        .specialists .wrapper .specialists_main .specialist_card .card_professions {
-          margin-bottom: 2.146vw;
-          grid-row-start: 2;
-          grid-row-end: 3; }
-          .specialists .wrapper .specialists_main .specialist_card .card_professions .profession {
-            font-size: 3.750vw;
-            line-height: 4vw;
-            padding: 1.88vw 2.188vw;
-            border-radius: 3.125vw;
-            margin-right: 1.563vw;
-            min-width: 25.625vw;
-            height: fit-content;
-            width: fit-content; }
-        .specialists .wrapper .specialists_main .specialist_card .card_statistics {
-          grid-column-start: 1;
-          grid-column-end: 3; }
-          .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .statistic-name {
-            font-size: 3.750vw;
-            line-height: 6.250vw;
-            margin-bottom: 1.563vw; }
-          .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .statistic_text, .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting-text {
-            font-size: 5vw;
-            line-height: 7.500vw; }
-          .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting .raiting-text {
-            margin-right: 0.825vw; }
-          .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting .raiting_stars {
-            height: 2.500vw; }
-            .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star {
-              margin-right: 0.625vw;
-              width: 2.500vw;
-              height: 2.500vw; }
-              .specialists .wrapper .specialists_main .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star img {
-                width: 2.500vw;
-                height: 2.500vw; }
     .specialists::after {
       content: "";
       position: absolute;
@@ -5152,6 +5095,63 @@ footer {
       left: 0;
       bottom: 0;
       background: white; }
+  .specialist_card {
+    width: 100%;
+    padding: 3.750vw 2.500vw;
+    box-shadow: 0px 22px 44px -12px rgba(221, 224, 230, 0.35);
+    border-radius: 3.125vw;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr min-content; }
+    .specialist_card .card_image {
+      width: 23.438vw;
+      height: 23.438vw;
+      margin-bottom: 5vw;
+      border-radius: 3.125vw;
+      margin-right: 3.438vw;
+      grid-row-start: 1;
+      grid-row-end: 3; }
+    .specialist_card .card_name {
+      font-size: 4.375vw;
+      line-height: 5.5vw;
+      margin-bottom: 1.25vw;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      height: fit-content; }
+    .specialist_card .card_professions {
+      margin-bottom: 2.146vw;
+      grid-row-start: 2;
+      grid-row-end: 3; }
+      .specialist_card .card_professions .profession {
+        font-size: 3.750vw;
+        line-height: 4vw;
+        padding: 1.88vw 2.188vw;
+        border-radius: 3.125vw;
+        margin-right: 1.563vw;
+        min-width: 25.625vw;
+        height: fit-content;
+        width: fit-content; }
+    .specialist_card .card_statistics {
+      grid-column-start: 1;
+      grid-column-end: 3; }
+      .specialist_card .card_statistics .card_statistic .statistic-name {
+        font-size: 3.750vw;
+        line-height: 6.250vw;
+        margin-bottom: 1.563vw; }
+      .specialist_card .card_statistics .card_statistic .statistic_text, .specialist_card .card_statistics .card_statistic .raiting-text {
+        font-size: 5vw;
+        line-height: 7.500vw; }
+      .specialist_card .card_statistics .card_statistic .raiting .raiting-text {
+        margin-right: 0.825vw; }
+      .specialist_card .card_statistics .card_statistic .raiting .raiting_stars {
+        height: 2.500vw; }
+        .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star {
+          margin-right: 0.625vw;
+          width: 2.500vw;
+          height: 2.500vw; }
+          .specialist_card .card_statistics .card_statistic .raiting .raiting_stars .raiting_star img {
+            width: 2.500vw;
+            height: 2.500vw; }
   .blog {
     margin-bottom: 12.500vw; }
     .blog .wrapper .blog_header {
@@ -5283,7 +5283,9 @@ footer {
       .trial .wrapper .trial_img {
         top: -33.208vw;
         width: 93.406vw;
-        height: 51.979vw; }
+        height: 51.979vw;
+        left: 50%;
+        transform: translateX(-50%); }
       .trial .wrapper .trial_title {
         text-align: center; }
       .trial .wrapper .trial_subtitle {
@@ -5354,16 +5356,105 @@ footer {
   footer:after {
     height: 3.438vw;
     box-shadow: 0px 1.146vw 2.292vw -0.625vw rgba(46, 117, 255, 0.35); }
+  .pc-main .main-pc .wrapper .main-pc_left {
+    width: 100%; }
+    .pc-main .main-pc .wrapper .main-pc_left .profile-blk {
+      width: 100%;
+      padding: 5vw 3.125vw 13.750vw 3.125vw;
+      flex-direction: column; }
+      .pc-main .main-pc .wrapper .main-pc_left .profile-blk .left_photo {
+        margin-right: 0;
+        width: 100%; }
+        .pc-main .main-pc .wrapper .main-pc_left .profile-blk .left_photo img {
+          width: 100%;
+          height: 93.750vw; }
+        .pc-main .main-pc .wrapper .main-pc_left .profile-blk .left_photo .photo_change {
+          font-size: 5vw;
+          line-height: 6.875vw;
+          margin-bottom: 6.875vw; }
+      .pc-main .main-pc .wrapper .main-pc_left .profile-blk .left_info {
+        width: 100%; }
+        .pc-main .main-pc .wrapper .main-pc_left .profile-blk .left_info .info_horizontal {
+          padding: 0;
+          margin-top: 6.875vw;
+          grid-template-columns: max-content 1fr; }
+          .pc-main .main-pc .wrapper .main-pc_left .profile-blk .left_info .info_horizontal .horizontal_key {
+            font-size: 4.375vw;
+            line-height: 7.500vw; }
+          .pc-main .main-pc .wrapper .main-pc_left .profile-blk .left_info .info_horizontal .horizontal_value {
+            font-size: 5vw;
+            line-height: 6.875vw; }
+        .pc-main .main-pc .wrapper .main-pc_left .profile-blk .left_info .horizontal_raiting span {
+          font-size: 3.750vw;
+          line-height: 4.063vw;
+          padding: 2vw;
+          border-radius: 3.125vw;
+          margin-left: 10px; }
+        .pc-main .main-pc .wrapper .main-pc_left .profile-blk .left_info .info_inputbox .input_title, .pc-main .main-pc .wrapper .main-pc_left .profile-blk .left_info .info_inputbox input {
+          font-size: 5vw;
+          line-height: 6.875vw;
+          padding: 4vw 7.500vw;
+          border-radius: 3.125vw; }
+        .pc-main .main-pc .wrapper .main-pc_left .profile-blk .left_info .save_btn {
+          margin-top: 12.813vw;
+          padding-right: 22.188vw; }
+  .pc-main .main-pc .wrapper .main-pc_right .help-blk {
+    display: flex;
+    flex-direction: column; }
+    .pc-main .main-pc .wrapper .main-pc_right .help-blk .right-blk {
+      border-radius: 3.125vw;
+      padding: 17.500vw 5vw 9.063vw 8.438vw; }
+      .pc-main .main-pc .wrapper .main-pc_right .help-blk .right-blk .blk_title {
+        font-size: 5.625vw;
+        line-height: 7.813vw;
+        margin-bottom: 4.063vw; }
+      .pc-main .main-pc .wrapper .main-pc_right .help-blk .right-blk .blk_subtitle {
+        font-size: 4.375vw;
+        line-height: 5.938vw;
+        margin-bottom: 8vw; }
   .pc-main .main_expected .expected_cards {
     padding-bottom: 2.083vw; }
     .pc-main .main_expected .expected_cards .wrapper {
-      gap: 2.083vw; }
+      display: flex;
+      flex-direction: column; }
+      .pc-main .main_expected .expected_cards .wrapper .specialist_card {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6.250vw; }
+        .pc-main .main_expected .expected_cards .wrapper .specialist_card .card_image {
+          width: 100%;
+          height: 84.688vw; }
+        .pc-main .main_expected .expected_cards .wrapper .specialist_card .card_name {
+          margin-bottom: 4.688vw; }
+        .pc-main .main_expected .expected_cards .wrapper .specialist_card .card_appointment .appointment_date, .pc-main .main_expected .expected_cards .wrapper .specialist_card .card_appointment p {
+          font-size: 5vw;
+          line-height: 7.500vw;
+          border-radius: 3.125vw;
+          margin-bottom: 2.188vw; }
   .pc-main .main_ended .ended_cards {
     padding-bottom: 2.083vw; }
     .pc-main .main_ended .ended_cards .wrapper {
-      gap: 2.083vw; }
+      display: flex;
+      flex-direction: column; }
+      .pc-main .main_ended .ended_cards .wrapper .specialist_card {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6.250vw; }
+        .pc-main .main_ended .ended_cards .wrapper .specialist_card .card_image {
+          width: 100%;
+          height: 84.688vw; }
+        .pc-main .main_ended .ended_cards .wrapper .specialist_card .card_name {
+          margin-bottom: 4.688vw; }
+        .pc-main .main_ended .ended_cards .wrapper .specialist_card .card_appointment .appointment_date, .pc-main .main_ended .ended_cards .wrapper .specialist_card .card_appointment p {
+          font-size: 5vw;
+          line-height: 7.500vw;
+          border-radius: 3.125vw;
+          margin-bottom: 2.188vw; }
   .pc-main .main_bought .bought_cards .wrapper {
-    gap: 1.094vw; }
+    display: flex;
+    flex-direction: column; }
+    .pc-main .main_bought .bought_cards .wrapper .right_program {
+      margin-bottom: 32px; }
   .profile-blk {
     padding: 0.833vw 2.760vw 2.917vw 0.833vw;
     width: 36.927vw;
@@ -5434,37 +5525,39 @@ footer {
       .help-blk .right-blk:nth-child(3) {
         padding-bottom: 2.917vw; }
   .check {
-    margin-top: 3.958vw;
-    margin-bottom: 2.344vw; }
+    margin-top: 10vw;
+    margin-bottom: 15.625vw; }
     .check .wrapper {
-      padding-left: 0.990vw; }
+      padding-left: 0;
+      flex-direction: column; }
       .check .wrapper .check_blk {
-        margin-right: 2.292vw; }
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 12.500vw; }
         .check .wrapper .check_blk .blk_thumb {
-          width: 2.969vw;
-          height: 2.969vw;
-          margin-right: 2.396vw; }
+          width: 18.438vw;
+          height: 18.438vw; }
         .check .wrapper .check_blk .blk_info {
-          width: 17.396vw; }
+          width: 100%; }
           .check .wrapper .check_blk .blk_info .info_title {
-            font-size: 1.250vw;
-            line-height: 1.667vw;
-            margin-top: 0.260vw;
-            margin-bottom: 1.771vw; }
+            font-size: 5.625vw;
+            line-height: 7.813vw;
+            margin-top: 3.125vw;
+            margin-bottom: 12.813vw;
+            padding-left: 21.250vw; }
           .check .wrapper .check_blk .blk_info .info_desc {
-            font-size: 0.729vw;
-            line-height: 0.990vw;
-            margin-bottom: 1.667vw; }
+            font-size: 4.375vw;
+            line-height: 5.938vw;
+            margin-bottom: 7.500vw; }
           .check .wrapper .check_blk .blk_info .info_btn {
-            font-size: 0.833vw;
-            line-height: 0.833vw;
-            margin-bottom: 1.510vw; }
+            font-size: 5vw;
+            line-height: 5vw;
+            margin-bottom: 12.188vw; }
           .check .wrapper .check_blk .blk_info .info_faq {
-            font-size: 0.833vw;
-            line-height: 0.833vw; }
+            font-size: 5vw;
+            line-height: 5vw; }
           .check .wrapper .check_blk .blk_info .info_soundcheck {
-            margin-top: 1.979vw;
-            margin-bottom: 1.927vw; }
+            display: none; }
   .block-nav .wrapper .pc_header {
     font-size: 7.500vw;
     line-height: 10vw;
