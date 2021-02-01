@@ -16,6 +16,7 @@ ibg();
 
 let programsBlk = document.querySelector(".programs");
 let blocksInSlide;
+
 if(programsBlk){
 
     if(window.innerWidth > 1440){
@@ -43,9 +44,6 @@ if(programsBlk){
         }
 
     })
-
-    
-
 }
 
 function AddSlidesToPrograms(blocksInSlide){
@@ -87,9 +85,7 @@ function AddSlidesToPrograms(blocksInSlide){
             slides[slideNumber-1].append(block[i]);
             
         }
-
     }
-
 }
 
 // 
