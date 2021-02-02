@@ -6683,6 +6683,13 @@ footer{
     }
   } 
 
+  .rates_main .wrapper .rate_blk .rate_btn-groupbox .application-submit{
+    padding: 0.938vw 1.615vw 0.938vw 1.615vw;
+    font-size: 0.833vw;
+    line-height: 0.833vw;
+    border-radius: 0.521vw;
+  }
+
 }
 
 @media screen and (max-width: 1440px){
@@ -8556,6 +8563,92 @@ footer{
     }
   }
 
+  .contacts_main{
+
+    .wrapper{
+
+      flex-direction: column;
+
+      .contacts_left{
+        margin-right: 0;
+        min-height: unset;
+        margin-bottom: 20px;
+        
+      }
+    }
+  }
+
+  .rates_main .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .rate_blk{
+      max-width: 32.292vw;
+      padding: 2.847vw 2.431vw 1.667vw 2.431vw;
+      border-radius: 0.694vw;
+  
+      .rate_header{
+        font-size: 1.667vw;
+        line-height: 1.736vw;
+        margin-bottom: 1.806vw;
+        padding-left: 0.208vw;
+      }
+  
+      .rate_text{
+        font-size: 0.972vw;
+        line-height: 1.319vw;
+        margin-bottom: 2.778vw;
+      }
+  
+      .rate_advantages{
+        margin-bottom: 2.778vw;
+  
+        .rate_advantage{
+          font-size: 0.972vw;
+          line-height: 1.042vw;
+          padding-left: 2.361vw;
+          margin-bottom: 1.319vw;
+  
+          &::after{
+            width: 1.181vw;
+            height: 1.181vw;
+            border: 0.278vw solid #1763F8;
+          }
+        }
+      }
+  
+      .rate_price{
+        font-size: 1.111vw;
+        line-height: 1.667vw;
+        margin-bottom: 2.153vw;
+  
+        span{
+          font-size: 1.667vw;
+          line-height: 2.222vw;
+        }
+      }
+  
+      &::after{
+        height: 1.250vw;
+        border-radius: 0.694vw;
+      }
+    }
+
+    .rate_blk .rate_btn-groupbox{
+
+      .application-submit{
+        padding: 1.406vw 2.422vw 1.406vw 2.422vw;
+        font-size: 1.250vw;
+        line-height: 1.350vw;
+        border-radius: 0.781vw;
+      }
+
+      .application-more{
+        padding: 1.406vw 4.547vw 1.406vw 2.422vw;
+      }
+    } 
+  } 
 }
 
 @media screen and (max-width: 920px) {
@@ -11031,6 +11124,163 @@ footer{
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  .article_main{
+    
+    .article-text{
+      padding: 0 !important;
+    }
+
+    .atricle-img{
+      height: 80vw !important;
+    }
+  }
+
+  .contacts_main{
+
+    .wrapper{
+      flex-direction: column;
+
+      .contacts_left{
+        padding: 6.250vw;
+
+        .contacts_text {
+          font-size: 4.375vw;
+          line-height: 4.688vw;
+          margin-bottom: 18.750vw;
+        }
+
+        .contacts_title {
+          font-size: 5vw !important;
+          line-height: 7.500vw !important;
+          margin-bottom: 10px !important;
+        }
+
+        .contacts_mail {
+          font-size: 3.125vw !important;
+        }
+
+        .contacts_point {
+          font-size: 3.125vw !important;
+        }
+
+        .contacts_point {
+          font-size: 4.375vw !important;
+          line-height: 5.938vw !important;
+        }
+      }
+
+
+      .contacts_right{
+
+        .help-blk{
+          display: flex;
+          flex-direction: column;
+          gap: 4.688vw;
+
+          .right-blk{
+            padding: 7.500vw 4.375vw 4.375vw 4.375vw;
+            border-radius: 3.125vw;
+          }
+
+          .blk_title{
+            font-size: 7.500vw;
+            line-height: 10vw;
+            margin-bottom: 4.688vw;
+            max-width: unset;
+          }
+
+          .blk_subtitle{
+            font-size: 4.375vw;
+            line-height: 5.938vw;
+            margin-bottom: 16.250vw;
+          }
+        }
+        
+      }
+    }
+  }
+
+  .rates_main{
+  
+    .wrapper{
+  
+      .rate_blk{
+        max-width: 93vw;
+        padding: 8.200vw 7vw 4.800vw 7vw;
+        box-shadow: 0px 0px 10vw rgba(208, 206, 187, 0.18);
+        border-radius: 2vw;
+  
+        .rate_header{
+          font-size: 4.800vw;
+          line-height: 5vw;
+          margin-bottom: 7.200vw;
+          padding-left: 0.600vw;
+        }
+  
+        .rate_text{
+          font-size: 2.800vw;
+          line-height: 3.800vw;
+          margin-bottom: 8vw;
+        }
+  
+        .rate_advantages{
+          margin-bottom: 8vw;
+  
+          .rate_advantage{
+            font-size: 2.800vw;
+            line-height: 3vw;
+            padding-left: 6.800vw;
+            margin-bottom: 3.800vw;
+  
+            &::after{
+              width: 3.400vw;
+              height: 3.400vw;
+              border: 0.800vw solid #1763F8;
+            }
+          }
+        }
+  
+        .rate_price{
+          font-size: 3.200vw;
+          line-height: 4.800vw;
+          margin-bottom: 6.200vw;
+  
+          span{
+            font-size: 4.800vw;
+            line-height: 6.400vw;
+          }
+        }
+  
+        .rate_btn-groupbox{
+  
+          .application-submit,.application-more{
+            padding: 3.600vw 6.200vw 3.600vw 6.200vw;
+            font-size: 3.200vw;
+            line-height: 3.200vw;
+            box-shadow: 0px 4.400vw 8.800vw -2.400vw rgba(46, 117, 255, 0.35);
+            border-radius: 2vw;
+            margin-right: 2.400vw;
+          }
+
+          .application-more{
+            padding: 3.600vw 10.200vw 3.600vw 6.200vw;
+
+            &:after {
+              right: 6.063vw;
+              width: 4.25vw;
+              height: 1.863vw;
+            }
+          }
+        }
+  
+        &::after{
+          height: 3.600vw;
+          border-radius: 2vw;
         }
       }
     }
