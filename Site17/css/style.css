@@ -4134,7 +4134,28 @@ footer {
         right: 0.260vw;
         top: 0.208vw;
         width: 1.354vw;
-        height: 1.354vw; } }
+        height: 1.354vw; }
+  .pc_description .wrapper .description_ways {
+    margin-bottom: 1.042vw; }
+    .pc_description .wrapper .description_ways .ways_grid {
+      gap: 1.250vw; }
+      .pc_description .wrapper .description_ways .ways_grid label {
+        box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
+        border-radius: 0.521vw;
+        padding: 1.615vw 0.521vw 1.615vw 1.146vw; }
+        .pc_description .wrapper .description_ways .ways_grid label img {
+          width: 2.917vw;
+          height: 2.917vw;
+          flex-shrink: 0;
+          margin-right: 2.083vw; }
+        .pc_description .wrapper .description_ways .ways_grid label .ways_text {
+          font-size: 0.833vw;
+          line-height: 1.250vw; }
+        .pc_description .wrapper .description_ways .ways_grid label::after {
+          width: 0.781vw;
+          height: 0.625vw;
+          right: 0.781vw;
+          top: 0.781vw; } }
 
 @media screen and (max-width: 1440px) {
   header .wrapper-b {
@@ -4917,7 +4938,28 @@ footer {
     box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
     border-radius: 0.521vw;
     padding: 3.177vw 2.083vw 2.604vw 2.396vw;
-    margin-bottom: 2.604vw; } }
+    margin-bottom: 2.604vw; }
+  .pc_description .wrapper .description_ways {
+    margin-bottom: 4.167vw; }
+    .pc_description .wrapper .description_ways .ways_grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.667vw; }
+      .pc_description .wrapper .description_ways .ways_grid label {
+        box-shadow: 0px 0px 3.472vw rgba(208, 206, 187, 0.18);
+        border-radius: 0.694vw;
+        padding: 2.153vw 0.694vw 2.153vw 1.528vw; }
+        .pc_description .wrapper .description_ways .ways_grid label img {
+          width: 3.889vw;
+          height: 3.889vw;
+          margin-right: 2.778vw; }
+        .pc_description .wrapper .description_ways .ways_grid label .ways_text {
+          font-size: 1.111vw;
+          line-height: 1.667vw; }
+        .pc_description .wrapper .description_ways .ways_grid label::after {
+          width: 1.042vw;
+          height: 0.833vw;
+          right: 1.042vw;
+          top: 1.042vw; } }
 
 @media screen and (max-width: 920px) {
   .popup-active {
@@ -5983,7 +6025,49 @@ footer {
             height: 5.354vw; }
   .pc_dating .wrapper {
     grid-template-columns: 1fr;
-    row-gap: 3.125vw; } }
+    row-gap: 3.125vw; }
+  .pc_description .wrapper .description_ways {
+    margin-bottom: 20px; }
+    .pc_description .wrapper .description_ways .ways_grid {
+      grid-template-columns: 1fr;
+      gap: 24px; }
+      .pc_description .wrapper .description_ways .ways_grid input {
+        display: none; }
+      .pc_description .wrapper .description_ways .ways_grid label {
+        box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+        border-radius: 10px;
+        padding: 31px 10px 31px 22px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        transition: .2s;
+        cursor: pointer; }
+        .pc_description .wrapper .description_ways .ways_grid label img {
+          width: 56px;
+          height: 56px;
+          flex-shrink: 0;
+          margin-right: 40px; }
+        .pc_description .wrapper .description_ways .ways_grid label .ways_text {
+          font-weight: 500 !important;
+          font-size: 16px;
+          line-height: 24px;
+          color: #213243; }
+        .pc_description .wrapper .description_ways .ways_grid label::after {
+          position: absolute;
+          content: "";
+          width: 15px;
+          height: 12px;
+          background: url(../img/svg/checked.svg) center;
+          background-size: cover;
+          right: 15px;
+          top: 15px;
+          opacity: 0;
+          transition: .2s; }
+      .pc_description .wrapper .description_ways .ways_grid input:checked + label {
+        background: #EDF2FB; }
+        .pc_description .wrapper .description_ways .ways_grid input:checked + label::after {
+          opacity: 1; } }
 
 @media screen and (max-width: 500px) {
   .popup_popup_blk_title {
