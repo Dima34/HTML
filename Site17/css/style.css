@@ -2448,8 +2448,10 @@ footer {
         padding-left: 30px;
         cursor: pointer; }
 
-.calendar__popup .popup_popup_blk_main {
-  padding: 0 19px 38px 19px; }
+.calendar__popup {
+  display: flex; }
+  .calendar__popup .popup_popup_blk_main {
+    padding: 0 19px 38px 19px; }
 
 .calendar-widged {
   margin-bottom: 40px; }
@@ -2477,12 +2479,14 @@ footer {
         font-size: 16px;
         line-height: 24px;
         color: #000000; }
+    .calendar-widged .calendar_month .arrow_left:first-child {
+      transform: rotate(180deg) translateY(-3px); }
   .calendar-widged .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 49px);
     grid-template-rows: repeat(6, 32px);
     column-gap: 14px;
-    row-gap: 0px;
+    row-gap: 2px;
     align-content: center;
     justify-items: center; }
     .calendar-widged .calendar-grid p {
@@ -2497,15 +2501,32 @@ footer {
       transition: .1s;
       border-radius: 10px;
       cursor: default; }
-    .calendar-widged .calendar-grid .calendar_date {
+    .calendar-widged .calendar-grid .calendar_date input {
+      display: none; }
+    .calendar-widged .calendar-grid .calendar_date label {
+      font-size: 14px;
+      line-height: 15px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
       cursor: pointer; }
-      .calendar-widged .calendar-grid .calendar_date:hover {
+      .calendar-widged .calendar-grid .calendar_date label:hover {
         font-weight: 500 !important;
         font-size: 16px;
         line-height: 16px;
         color: #FFFFFF;
         background: #1763F8;
         box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35); }
+    .calendar-widged .calendar-grid .calendar_date input:checked + label {
+      font-weight: 500 !important;
+      font-size: 16px;
+      line-height: 16px;
+      color: #FFFFFF;
+      background: #1763F8;
+      box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35); }
     .calendar-widged .calendar-grid .calendar_day {
       color: #1763F8; }
 
@@ -5939,5 +5960,46 @@ footer {
   .pc_dating .wrapper {
     grid-template-columns: 1fr;
     row-gap: 3.125vw; } }
+
+@media screen and (max-width: 500px) {
+  .popup_popup_blk_title {
+    padding: 0 6vw !important;
+    font-size: 4.800vw !important;
+    line-height: 5.200vw !important;
+    margin-bottom: 1.800vw !important; }
+  .calendar-widged {
+    margin-bottom: 8vw; }
+    .calendar-widged .calendar_month {
+      margin-top: 9.200vw;
+      margin-bottom: 5.200vw; }
+      .calendar-widged .calendar_month .month_text {
+        margin: 0 4vw; }
+        .calendar-widged .calendar_month .month_text p {
+          font-size: 2.400vw;
+          line-height: 4vw; }
+        .calendar-widged .calendar_month .month_text .month-active {
+          font-size: 3.200vw;
+          line-height: 4.800vw; }
+    .calendar-widged .calendar-grid {
+      grid-template-columns: repeat(7, 9.8vw);
+      grid-template-rows: repeat(6, 6.4vw);
+      column-gap: 2.800vw;
+      row-gap: 0.400vw; }
+      .calendar-widged .calendar-grid p {
+        font-size: 2.800vw;
+        line-height: 3vw;
+        border-radius: 2vw; }
+      .calendar-widged .calendar-grid .calendar_date label {
+        font-size: 2.800vw;
+        line-height: 3vw;
+        border-radius: 2vw; }
+        .calendar-widged .calendar-grid .calendar_date label:hover {
+          font-size: 3.200vw;
+          line-height: 3.200vw;
+          box-shadow: 0px 4.4vw 8.8vw -2.4vw rgba(46, 117, 255, 0.35); }
+      .calendar-widged .calendar-grid .calendar_date input:checked + label {
+        font-size: 3.200vw;
+        line-height: 3.200vw;
+        box-shadow: 0px 4.4vw 8.8vw -2.4vw rgba(46, 117, 255, 0.35); } }
 
 /*# sourceMappingURL=style.css.map */

@@ -3545,6 +3545,7 @@ footer{
 }
 
 .calendar__popup{
+  display: flex;
 
   .popup_popup_blk_main{
     padding: 0 19px 38px 19px;
@@ -3583,6 +3584,13 @@ footer{
         line-height: 24px;
         color: #000000;
       }
+
+      
+    }
+
+    .arrow_left:first-child{
+      transform: rotate(180deg) translateY(-3px);
+
     }
   }
 
@@ -3591,7 +3599,7 @@ footer{
     grid-template-columns: repeat(7, 49px);
     grid-template-rows: repeat(6, 32px);
     column-gap: 14px;
-    row-gap: 0px;
+    row-gap: 2px;
     align-content: center;
     justify-items: center;
 
@@ -3610,9 +3618,33 @@ footer{
     }
 
     .calendar_date{
-      cursor: pointer;
 
-      &:hover{
+      input{
+        display: none;
+      }
+
+      label{
+        font-size: 14px;
+        line-height: 15px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover{
+          font-weight: 500 !important;
+          font-size: 16px;
+          line-height: 16px;
+          color: #FFFFFF;
+          background: #1763F8;
+          box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35);
+        }
+      }
+
+      input:checked + label{
         font-weight: 500 !important;
         font-size: 16px;
         line-height: 16px;
@@ -3620,6 +3652,8 @@ footer{
         background: #1763F8;
         box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35);
       }
+
+
     }
 
     .calendar_day{
@@ -9475,4 +9509,75 @@ footer{
   }
 
 }
+
+@media screen and (max-width: 500px){
+
+  .popup_popup_blk_title{
+    padding: 0 6vw !important;
+    font-size: 4.800vw !important;
+    line-height: 5.200vw !important;
+    margin-bottom: 1.800vw !important;
+  }
+
+  .calendar-widged{
+    margin-bottom: 8vw;
+  
+    .calendar_month{
+      margin-top: 9.200vw;
+      margin-bottom: 5.200vw;
+  
+      .month_text{
+        margin: 0 4vw;
+  
+        p{
+          font-size: 2.400vw;
+          line-height: 4vw;
+        }
+  
+        .month-active{
+          font-size: 3.200vw;
+          line-height: 4.800vw;
+        }
+      }
+    }
+  
+    .calendar-grid{
+      grid-template-columns: repeat(7, 9.800vw);
+      grid-template-rows: repeat(6, 6.400vw);
+      column-gap: 2.800vw;
+      row-gap: 0.400vw;
+  
+      p{
+        font-size: 2.800vw;
+        line-height: 3vw;
+        border-radius: 2vw;
+      }
+  
+      .calendar_date{
+  
+        label{
+          font-size: 2.800vw;
+          line-height: 3vw;
+          border-radius: 2vw;
+  
+          &:hover{
+            font-size: 3.200vw;
+            line-height: 3.200vw;
+            box-shadow: 0px 4.400vw 8.800vw -2.400vw rgba(46, 117, 255, 0.35);
+          }
+        }
+  
+        input:checked + label{
+          font-size: 3.200vw;
+          line-height: 3.200vw;
+          box-shadow: 0px 4.400vw 8.800vw -2.400vw rgba(46, 117, 255, 0.35);
+        }
+  
+  
+      }
+  
+    }
+  }
+}
+
 
