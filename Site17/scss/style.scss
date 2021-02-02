@@ -1782,6 +1782,10 @@ footer{
   display: flex;
 }
 
+.pc-choice__popup{
+  display: none !important;
+}
+
 .popup_popup_blk{
   max-width: 465px;
   width: 100%;
@@ -7697,6 +7701,9 @@ footer{
 }
 
 @media screen and (max-width: 920px) {
+  .popup-active{
+    display: flex !important;
+  }
 
   .wrapper-b{
     width: 100vw;
@@ -9486,6 +9493,11 @@ footer{
           .date{
             margin: 0 !important;
             width: 100% !important;
+
+            label{
+              max-width: unset !important;
+              width: 100% !important;
+            }
           }
         }
       }
