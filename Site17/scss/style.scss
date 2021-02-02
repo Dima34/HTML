@@ -3012,7 +3012,6 @@ footer{
 /* ------------------------------------ */
 
 .help-blk-horizontal{
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 23px;
@@ -6152,7 +6151,7 @@ footer{
       }
   
       &:nth-child(3){
-        padding-bottom: 2.917vw;
+        padding-bottom: 2.817vw;
       }
     }
   }
@@ -7861,6 +7860,7 @@ footer{
             padding: 0.717vw 1.25vw;
             border-radius: 0.781vw;
             margin-right: 1.406vw;
+            margin-left: 1vw;
           }
         }
       }
@@ -7942,7 +7942,6 @@ footer{
   
   .check{
     margin-top: 3.958vw;
-    margin-bottom: 0;
   
     .wrapper{
       padding-left: 0;
@@ -8209,7 +8208,6 @@ footer{
   }
 
   .profile-main{
-
   
     .profile-main-wrapper{
       flex-direction: column;
@@ -8228,8 +8226,8 @@ footer{
               margin-right: 1.146vw;
     
               img{
-                width: 10.677vw;
-                height: 10.677vw;
+                width: 198px;
+                height: 198px;
               }
               
             }
@@ -8241,13 +8239,11 @@ footer{
     
             .info_groupbox{
               margin-bottom: 0.573vw;
-              flex-direction: column;
               align-items: flex-start;
   
               .constults{
                 p{
                   margin-right:2vw;
-                  margin-bottom: 5vw;
                 }
   
                 .consults-amount{
@@ -8258,9 +8254,7 @@ footer{
               }
   
               .make-appointment{
-                width: 100%;
                 text-align: center;
-                margin-bottom: 5vw;
               }
             }
   
@@ -8284,7 +8278,7 @@ footer{
             }
     
             .main_diplomas{
-              grid-template-columns: 1fr;
+              grid-template-columns: 1fr 1fr 1fr;
 
 
               margin-bottom: 4.604vw !important;
@@ -8292,7 +8286,7 @@ footer{
     
               .diploma{
                 width: 100% !important;
-                height: 60.865vw !important;
+                height: 15.865vw !important;
               }
             }
           }
@@ -9181,7 +9175,7 @@ footer{
             .swiper-slide{
               width: 93.750vw !important;
               grid-template-columns: 1fr;
-  
+              row-gap: 5vw;
               
             }
           }
@@ -10127,7 +10121,7 @@ footer{
   
   .help-blk{
     column-gap: 1.198vw;
-    row-gap: 1.042vw;
+    row-gap: 4.042vw;
   
     .right-blk{
       padding: 3.333vw 1.771vw 1.771vw 1.771vw;
@@ -10648,7 +10642,6 @@ footer{
       gap: 2.361vw;
       grid-template-columns: 1fr;
     }
-    
   
     .specialist_card{
   
@@ -10663,11 +10656,11 @@ footer{
         }
   
         .footer_make-appointment{
-          max-width: 11.806vw;
+          max-width: 48.889vw;
         }
   
         .footer_details{
-          max-width: 8.889vw;
+          max-width: 48.889vw;
         }
   
       }
@@ -10683,7 +10676,6 @@ footer{
 
   .profile-main{
 
-  
     .profile-main-wrapper{
       flex-direction: column;
 
@@ -10760,12 +10752,13 @@ footer{
             }
     
             .main_diplomas{
+              grid-template-columns: 1fr;
               margin-bottom: 2.604vw;
               gap: 1.146vw;
     
               .diploma{
                 width: 22.885vw;
-                height: 16.865vw;
+                height: 60.865vw !important;
               }
             }
           }

@@ -4055,7 +4055,7 @@ footer {
         line-height: 0.990vw;
         margin-bottom: 2.708vw; }
       .help-blk .right-blk:nth-child(3) {
-        padding-bottom: 2.917vw; }
+        padding-bottom: 2.817vw; }
   .check {
     margin-top: 3.958vw;
     margin-bottom: 2.344vw; }
@@ -4972,7 +4972,8 @@ footer {
           line-height: 1.250vw;
           padding: 0.717vw 1.25vw;
           border-radius: 0.781vw;
-          margin-right: 1.406vw; }
+          margin-right: 1.406vw;
+          margin-left: 1vw; }
       .profile-blk .left_info .horizontal_star-raiting {
         margin-top: -0.625vw !important; }
         .profile-blk .left_info .horizontal_star-raiting .horizontal_key {
@@ -5015,8 +5016,7 @@ footer {
   .pc_dating .wrapper {
     grid-template-columns: repeat(3, 1fr); }
   .check {
-    margin-top: 3.958vw;
-    margin-bottom: 0; }
+    margin-top: 3.958vw; }
     .check .wrapper {
       padding-left: 0;
       display: flex;
@@ -5170,21 +5170,17 @@ footer {
           .profile-main .profile-main-wrapper .profile_left .profile-blk .block_header .block_photo {
             margin-right: 1.146vw; }
             .profile-main .profile-main-wrapper .profile_left .profile-blk .block_header .block_photo img {
-              width: 10.677vw;
-              height: 10.677vw; }
+              width: 198px;
+              height: 198px; }
         .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox {
           margin-bottom: 0.573vw;
-          flex-direction: column;
           align-items: flex-start; }
           .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .constults p {
-            margin-right: 2vw;
-            margin-bottom: 5vw; }
+            margin-right: 2vw; }
           .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .constults .consults-amount {
             margin-left: 2vw; }
           .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .make-appointment {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 5vw; }
+            text-align: center; }
         .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .card_statistics {
           max-width: 10.729vw; }
         .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_header {
@@ -5192,12 +5188,12 @@ footer {
         .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_text {
           margin-bottom: 4.604vw !important; }
         .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_diplomas {
-          grid-template-columns: 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
           margin-bottom: 4.604vw !important;
           gap: 4.146vw !important; }
           .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_diplomas .diploma {
             width: 100% !important;
-            height: 60.865vw !important; }
+            height: 15.865vw !important; }
     .profile-main .profile-main-wrapper .profile_right .vertical-reviews {
       max-width: unset !important;
       width: 100% !important; }
@@ -5721,7 +5717,8 @@ footer {
           padding-bottom: 1.042vw; }
           .programs .wrapper .programs_right .swiper-container .swiper-wrapper .swiper-slide {
             width: 93.750vw !important;
-            grid-template-columns: 1fr; }
+            grid-template-columns: 1fr;
+            row-gap: 5vw; }
       .programs .wrapper .programs_right .navigation-block {
         display: none; }
   .right_program {
@@ -6259,7 +6256,7 @@ footer {
         margin-top: 3.490vw; }
   .help-blk {
     column-gap: 1.198vw;
-    row-gap: 1.042vw; }
+    row-gap: 4.042vw; }
     .help-blk .right-blk {
       padding: 3.333vw 1.771vw 1.771vw 1.771vw;
       border-radius: 0.521vw; }
@@ -6575,9 +6572,9 @@ footer {
         padding: 1.250vw 1.250vw;
         margin-right: 0.833vw; }
       .specialist_main .specialist_card .card_footer .footer_make-appointment {
-        max-width: 11.806vw; }
+        max-width: 48.889vw; }
       .specialist_main .specialist_card .card_footer .footer_details {
-        max-width: 8.889vw; }
+        max-width: 48.889vw; }
     .specialist_main .specialist_card:hover .card_footer {
       max-height: 13.889vw;
       padding: 0px 1.111vw 1.736vw 1.111vw; }
@@ -6611,11 +6608,12 @@ footer {
       .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_text {
         margin-bottom: 2.604vw; }
       .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_diplomas {
+        grid-template-columns: 1fr;
         margin-bottom: 2.604vw;
         gap: 1.146vw; }
         .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_diplomas .diploma {
           width: 22.885vw;
-          height: 16.865vw; }
+          height: 60.865vw !important; }
     .profile-main .profile-main-wrapper .profile_right .vertical-reviews {
       max-width: unset !important;
       width: 100% !important; }
