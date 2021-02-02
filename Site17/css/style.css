@@ -4157,7 +4157,154 @@ footer {
           width: 0.781vw;
           height: 0.625vw;
           right: 0.781vw;
-          top: 0.781vw; } }
+          top: 0.781vw; }
+  .profile-main .profile-main-wrapper .profile_left .profile-blk {
+    padding: 0.833vw 0.833vw 4.688vw 0.833vw;
+    width: 36.927vw; }
+    .profile-main .profile-main-wrapper .profile_left .profile-blk .block_header {
+      margin-bottom: 2.656vw; }
+      .profile-main .profile-main-wrapper .profile_left .profile-blk .block_header .block_photo {
+        margin-right: 1.146vw; }
+        .profile-main .profile-main-wrapper .profile_left .profile-blk .block_header .block_photo img {
+          width: 10.677vw;
+          height: 10.677vw; }
+    .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox {
+      margin-bottom: 0.573vw; }
+      .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .constults p {
+        margin-right: 1.042vw; }
+      .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .constults .consults-amount {
+        margin-right: 0.521vw; }
+      .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .make-appointment:hover:after {
+        right: 1.927vw; }
+    .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .card_statistics {
+      max-width: 10.729vw; }
+    .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_header {
+      margin-bottom: 0.781vw; }
+    .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_text {
+      margin-bottom: 2.604vw; }
+    .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_diplomas {
+      margin-bottom: 2.604vw;
+      gap: 1.146vw; }
+      .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_diplomas .diploma {
+        width: 10.885vw;
+        height: 7.865vw; }
+  .profile-main .profile-main-wrapper .profile_right .vertical-reviews {
+    width: 37.031vw; }
+  .call_main .wrapper .call_left {
+    box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
+    border-radius: 0.521vw;
+    padding: 0.729vw;
+    margin-right: 1.198vw; }
+    .call_main .wrapper .call_left .left_header {
+      margin-bottom: 2.188vw; }
+      .call_main .wrapper .call_left .left_header .header_thumb {
+        width: 8.229vw;
+        height: 8.229vw;
+        margin-right: 1.667vw; }
+      .call_main .wrapper .call_left .left_header .header_info-blk .header_info {
+        margin-top: 1.042vw; }
+        .call_main .wrapper .call_left .left_header .header_info-blk .header_info .card_statistics {
+          column-gap: 1.823vw; }
+      .call_main .wrapper .call_left .left_header .header_time {
+        margin-left: 1.042vw; }
+        .call_main .wrapper .call_left .left_header .header_time .time_header {
+          margin-bottom: 1.250vw; }
+        .call_main .wrapper .call_left .left_header .header_time .time_time {
+          padding: 0.729vw 4.688vw 0.729vw 2.344vw;
+          box-shadow: 0px 1.146vw 2.292vw -0.625vw rgba(46, 117, 255, 0.35);
+          border-radius: 0.521vw; }
+          .call_main .wrapper .call_left .left_header .header_time .time_time::after {
+            width: 1.042vw;
+            height: 1.042vw;
+            right: 1.823vw; }
+    .call_main .wrapper .call_left .left_title {
+      margin-bottom: 1.042vw; }
+    .call_main .wrapper .call_left .left_text {
+      margin-bottom: 2.083vw; }
+    .call_main .wrapper .call_left .left_call-blk .call-window {
+      height: 26.667vw;
+      box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
+      border-radius: 0.521vw; }
+      .call_main .wrapper .call_left .left_call-blk .call-window .call-btn-box img {
+        width: 7.240vw;
+        height: 7.240vw; }
+    .call_main .wrapper .call_left .left_call-blk .call_nav {
+      margin-left: 1.771vw;
+      margin-right: 0.260vw; }
+      .call_main .wrapper .call_left .left_call-blk .call_nav .call_time {
+        font-size: 1.042vw;
+        line-height: 1.406vw;
+        margin-bottom: 4.688vw; }
+  .call_main .wrapper .call_right {
+    width: 17.865vw; }
+    .call_main .wrapper .call_right .right_block {
+      padding: 2.500vw 1.615vw 1.771vw 1.615vw;
+      border-radius: 0.521vw;
+      margin-bottom: 1.667vw; }
+      .call_main .wrapper .call_right .right_block .right_title {
+        margin-bottom: 0.781vw; }
+      .call_main .wrapper .call_right .right_block .right_text {
+        margin-bottom: 2.865vw; }
+  .call_main .wrapper .left_call-after-blk {
+    margin-top: 4.167vw; }
+    .call_main .wrapper .left_call-after-blk .call-after-window {
+      width: 10.156vw;
+      min-height: 5.469vw;
+      box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
+      border-radius: 0.521vw;
+      margin-right: 1.771vw;
+      padding: 1.302vw; }
+      .call_main .wrapper .left_call-after-blk .call-after-window .window-text {
+        margin-bottom: 0.208vw; }
+    .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main-text {
+      margin-bottom: 1.042vw; }
+    .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main_stars {
+      margin-bottom: 29px; }
+      .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main_stars .star img {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px; }
+    .call_main .wrapper .left_call-after-blk .call-after-main .mark-specialist {
+      display: block;
+      width: fit-content;
+      padding: 14px 45px;
+      background: #1763F8;
+      box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35);
+      border-radius: 10px;
+      color: #FFFFFF;
+      font-weight: 500 !important;
+      font-size: 16px;
+      line-height: 23px;
+      cursor: pointer;
+      transition: .3s;
+      margin-bottom: 30px; }
+      .call_main .wrapper .left_call-after-blk .call-after-main .mark-specialist:hover {
+        background: #1042a5; }
+    .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main-title {
+      font-weight: 500 !important;
+      font-size: 16px;
+      line-height: 17px;
+      color: #474747;
+      margin-bottom: 27px; }
+    .call_main .wrapper .left_call-after-blk .call-after-main textarea {
+      width: 100%;
+      background: #F2F7FD;
+      border-radius: 10px;
+      border: 0;
+      padding: 15px 25px;
+      width: 100%;
+      resize: none;
+      margin-bottom: 27px; }
+    .call_main .wrapper .left_call-after-blk .call-after-main .call-after-rate {
+      margin-bottom: 52px; }
+      .call_main .wrapper .left_call-after-blk .call-after-main .call-after-rate::after {
+        background: url(../img/svg/reviews-ico.svg);
+        background-size: cover;
+        height: 24px;
+        width: 24px;
+        right: 24px; }
+        .call_main .wrapper .left_call-after-blk .call-after-main .call-after-rate::after:hover {
+          right: 24px; } }
 
 @media screen and (max-width: 1440px) {
   header .wrapper-b {
@@ -5005,7 +5152,211 @@ footer {
         max-width: 8.889vw; }
     .specialist_main .specialist_card:hover .card_footer {
       max-height: 13.889vw;
-      padding: 0px 1.111vw 1.736vw 1.111vw; } }
+      padding: 0px 1.111vw 1.736vw 1.111vw; }
+  .profile-main .profile-main-wrapper {
+    flex-direction: column; }
+    .profile-main .profile-main-wrapper .profile_left {
+      margin-bottom: 5vw; }
+      .profile-main .profile-main-wrapper .profile_left .profile-blk {
+        padding: 0.833vw 0.833vw 4.688vw 0.833vw;
+        width: 100%; }
+        .profile-main .profile-main-wrapper .profile_left .profile-blk .block_header {
+          margin-bottom: 2.656vw; }
+          .profile-main .profile-main-wrapper .profile_left .profile-blk .block_header .block_photo {
+            margin-right: 1.146vw; }
+            .profile-main .profile-main-wrapper .profile_left .profile-blk .block_header .block_photo img {
+              width: 10.677vw;
+              height: 10.677vw; }
+        .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox {
+          margin-bottom: 0.573vw;
+          flex-direction: column;
+          align-items: flex-start; }
+          .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .constults p {
+            margin-right: 2vw;
+            margin-bottom: 5vw; }
+          .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .constults .consults-amount {
+            margin-left: 2vw; }
+          .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .make-appointment {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 5vw; }
+        .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .card_statistics {
+          max-width: 10.729vw; }
+        .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_header {
+          margin-bottom: 3.781vw !important; }
+        .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_text {
+          margin-bottom: 4.604vw !important; }
+        .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_diplomas {
+          grid-template-columns: 1fr;
+          margin-bottom: 4.604vw !important;
+          gap: 4.146vw !important; }
+          .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_diplomas .diploma {
+            width: 100% !important;
+            height: 60.865vw !important; }
+    .profile-main .profile-main-wrapper .profile_right .vertical-reviews {
+      max-width: unset !important;
+      width: 100% !important; }
+  .call_main .wrapper {
+    flex-direction: column; }
+    .call_main .wrapper .call_left {
+      background: #FFFFFF;
+      box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+      border-radius: 10px;
+      padding: 14px;
+      margin-right: 23px;
+      width: 100%;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column; }
+      .call_main .wrapper .call_left .left_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 42px; }
+        .call_main .wrapper .call_left .left_header .header_thumb {
+          width: 158px;
+          height: 158px;
+          margin-right: 32px; }
+        .call_main .wrapper .call_left .left_header .header_info-blk {
+          display: flex;
+          flex-direction: row; }
+          .call_main .wrapper .call_left .left_header .header_info-blk .header_info {
+            margin-top: 20px; }
+            .call_main .wrapper .call_left .left_header .header_info-blk .header_info .card_statistics {
+              column-gap: 35px; }
+        .call_main .wrapper .call_left .left_header .header_time .time_time {
+          padding: 14px 5.556vw 14px 2.431vw;
+          box-shadow: 0px 1.528vw 44px -0.833vw rgba(46, 117, 255, 0.35);
+          border-radius: 10px;
+          font-size: 16px;
+          line-height: 23px; }
+          .call_main .wrapper .call_left .left_header .header_time .time_time::after {
+            width: 20px;
+            height: 20px;
+            right: 1.736vw; }
+      .call_main .wrapper .call_left .left_call-blk {
+        display: flex;
+        flex-direction: row; }
+    .call_main .wrapper .call_right {
+      width: 100%;
+      flex-direction: row;
+      gap: 20px; }
+      .call_main .wrapper .call_right .right_block {
+        padding: 48px 31px 34px 31px;
+        background: #DDF9EC;
+        border-radius: 10px;
+        margin-bottom: 32px; }
+        .call_main .wrapper .call_right .right_block .right_title {
+          font-weight: 500 !important;
+          font-size: 24px;
+          line-height: 32px;
+          color: #1F1E1B;
+          margin-bottom: 15px; }
+        .call_main .wrapper .call_right .right_block .right_text {
+          font-size: 14px;
+          line-height: 19px;
+          margin-bottom: 55px;
+          color: #545454; }
+        .call_main .wrapper .call_right .right_block .right-btn {
+          background: #C0E7D5;
+          box-shadow: unset; }
+        .call_main .wrapper .call_right .right_block:nth-child(2) {
+          background: #DDEAF9; }
+          .call_main .wrapper .call_right .right_block:nth-child(2) .right-btn {
+            background: #94AAD7; }
+    .call_main .wrapper .left_call-after-blk {
+      display: flex;
+      flex-direction: row;
+      margin-top: 80px; }
+      .call_main .wrapper .left_call-after-blk .call-after-window {
+        width: 195px;
+        min-height: 105px;
+        background: #242729;
+        box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+        border-radius: 10px;
+        margin-right: 34px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        padding: 25px; }
+        .call_main .wrapper .left_call-after-blk .call-after-window .window-text {
+          font-size: 14px;
+          line-height: 15px;
+          color: #FFFFFF;
+          margin-bottom: 4px; }
+        .call_main .wrapper .left_call-after-blk .call-after-window .window-time {
+          font-weight: 500 !important;
+          font-size: 24px;
+          line-height: 32px;
+          color: #FFFFFF; }
+      .call_main .wrapper .left_call-after-blk .call-after-main {
+        width: 100%; }
+        .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main-text {
+          font-size: 14px;
+          line-height: 15px;
+          color: #213243;
+          margin-bottom: 20px; }
+        .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main_stars {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 29px; }
+          .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main_stars .star {
+            display: flex; }
+            .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main_stars .star img {
+              width: 25px;
+              height: 25px;
+              margin-right: 10px; }
+              .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main_stars .star img:first-child {
+                display: none; }
+              .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main_stars .star img:last-child {
+                display: inline; }
+          .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main_stars .star-active img:first-child {
+            display: inline; }
+          .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main_stars .star-active img:last-child {
+            display: none; }
+        .call_main .wrapper .left_call-after-blk .call-after-main .mark-specialist {
+          display: block;
+          width: fit-content;
+          padding: 14px 45px;
+          background: #1763F8;
+          box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35);
+          border-radius: 10px;
+          color: #FFFFFF;
+          font-weight: 500 !important;
+          font-size: 16px;
+          line-height: 23px;
+          cursor: pointer;
+          transition: .3s;
+          margin-bottom: 30px; }
+          .call_main .wrapper .left_call-after-blk .call-after-main .mark-specialist:hover {
+            background: #1042a5; }
+        .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main-title {
+          font-weight: 500 !important;
+          font-size: 16px;
+          line-height: 17px;
+          color: #474747;
+          margin-bottom: 27px; }
+        .call_main .wrapper .left_call-after-blk .call-after-main textarea {
+          width: 100%;
+          background: #F2F7FD;
+          border-radius: 10px;
+          border: 0;
+          padding: 15px 25px;
+          width: 100%;
+          resize: none;
+          margin-bottom: 27px; }
+        .call_main .wrapper .left_call-after-blk .call-after-main .call-after-rate {
+          margin-bottom: 52px; }
+          .call_main .wrapper .left_call-after-blk .call-after-main .call-after-rate::after {
+            background: url(../img/svg/reviews-ico.svg);
+            background-size: cover;
+            height: 24px;
+            width: 24px;
+            right: 24px; }
+            .call_main .wrapper .left_call-after-blk .call-after-main .call-after-rate::after:hover {
+              right: 24px; } }
 
 @media screen and (max-width: 920px) {
   .popup-active {
@@ -6173,7 +6524,256 @@ footer {
         max-width: 8.889vw; }
     .specialist_main .specialist_card:hover .card_footer {
       max-height: 13.889vw;
-      padding: 0px 1.111vw 1.736vw 1.111vw; } }
+      padding: 0px 1.111vw 1.736vw 1.111vw; }
+  .profile-main .profile-main-wrapper {
+    flex-direction: column; }
+    .profile-main .profile-main-wrapper .profile_left .profile-blk {
+      padding: 5vw;
+      width: 100%;
+      border-radius: 3.125vw !important; }
+      .profile-main .profile-main-wrapper .profile_left .profile-blk .block_header {
+        margin-bottom: 2.656vw;
+        flex-direction: column; }
+        .profile-main .profile-main-wrapper .profile_left .profile-blk .block_header .block_photo {
+          margin-right: 0;
+          margin-bottom: 5vw; }
+          .profile-main .profile-main-wrapper .profile_left .profile-blk .block_header .block_photo img {
+            width: 83.750vw;
+            height: 83.750vw; }
+      .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox {
+        margin-bottom: 0.573vw; }
+        .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .constults p {
+          margin-right: 1.042vw; }
+        .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .constults .consults-amount {
+          margin-right: 0.521vw; }
+        .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .make-appointment:hover:after {
+          right: 1.927vw; }
+      .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .card_statistics {
+        max-width: 10.729vw; }
+      .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_header {
+        margin-bottom: 0.781vw; }
+      .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_text {
+        margin-bottom: 2.604vw; }
+      .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_diplomas {
+        margin-bottom: 2.604vw;
+        gap: 1.146vw; }
+        .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_diplomas .diploma {
+          width: 22.885vw;
+          height: 16.865vw; }
+    .profile-main .profile-main-wrapper .profile_right .vertical-reviews {
+      max-width: unset !important;
+      width: 100% !important; }
+  .programs_main .wrapper {
+    grid-template-columns: 1fr; }
+  .call_main .wrapper .call_left {
+    box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+    padding: 14px;
+    display: flex;
+    flex-direction: column; }
+    .call_main .wrapper .call_left .left_header {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 42px; }
+      .call_main .wrapper .call_left .left_header .header_thumb {
+        width: 158px;
+        height: 158px;
+        margin-right: 32px; }
+      .call_main .wrapper .call_left .left_header .header_info-blk {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        padding: 0;
+        border-radius: 3.125vw;
+        margin-bottom: 7.500vw; }
+        .call_main .wrapper .call_left .left_header .header_info-blk .header_thumb {
+          height: 84.688vw;
+          width: 84.688vw;
+          border-radius: 3.125vw;
+          margin-right: 0;
+          margin-bottom: 6.188vw; }
+        .call_main .wrapper .call_left .left_header .header_info-blk .header_info {
+          margin-top: 0; }
+          .call_main .wrapper .call_left .left_header .header_info-blk .header_info .card_statistics {
+            column-gap: 35px; }
+          .call_main .wrapper .call_left .left_header .header_info-blk .header_info .card_name {
+            font-size: 5.625vw;
+            line-height: 5.938vw;
+            margin-bottom: 6.188vw; }
+          .call_main .wrapper .call_left .left_header .header_info-blk .header_info .profession {
+            font-size: 3.750vw;
+            line-height: 5vw;
+            border-radius: 3.125vw;
+            padding: 2vw 5vw;
+            margin-right: 1.563vw; }
+          .call_main .wrapper .call_left .left_header .header_info-blk .header_info .card_statistics {
+            margin-top: 3.125vw; }
+            .call_main .wrapper .call_left .left_header .header_info-blk .header_info .card_statistics .card_statistic .statistic-name {
+              font-size: 3.750vw;
+              line-height: 6.250vw; }
+            .call_main .wrapper .call_left .left_header .header_info-blk .header_info .card_statistics .card_statistic .statistic_text, .call_main .wrapper .call_left .left_header .header_info-blk .header_info .card_statistics .card_statistic .raiting-text {
+              font-size: 5vw;
+              line-height: 6.250vw; }
+            .call_main .wrapper .call_left .left_header .header_info-blk .header_info .card_statistics .card_statistic .raiting_star {
+              height: 2.188vw;
+              width: 2.188vw;
+              margin-right: 0.625vw; }
+              .call_main .wrapper .call_left .left_header .header_info-blk .header_info .card_statistics .card_statistic .raiting_star img {
+                height: 2.188vw;
+                width: 2.188vw; }
+      .call_main .wrapper .call_left .left_header .header_time {
+        margin-left: 0; }
+        .call_main .wrapper .call_left .left_header .header_time .time_header {
+          font-size: 5.625vw;
+          line-height: 5.625vw;
+          margin-bottom: 11.250vw; }
+        .call_main .wrapper .call_left .left_header .header_time .time_time {
+          width: 100%;
+          padding: 14px 90px 14px 45px;
+          box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35);
+          border-radius: 3.125vw;
+          font-size: 5vw;
+          line-height: 7.188vw; }
+          .call_main .wrapper .call_left .left_header .header_time .time_time::after {
+            width: 6.563vw;
+            height: 6.563vw;
+            right: 8.125vw; }
+    .call_main .wrapper .call_left .left_title {
+      font-size: 5vw;
+      line-height: 7.500vw;
+      margin-bottom: 6.250vw; }
+    .call_main .wrapper .call_left .left_text {
+      font-size: 5vw;
+      line-height: 5.938vw;
+      margin-bottom: 7.500vw; }
+    .call_main .wrapper .call_left .left_call-blk {
+      display: flex;
+      flex-direction: column; }
+      .call_main .wrapper .call_left .left_call-blk .call-window {
+        width: 100%;
+        height: 138.438vw;
+        border-radius: 3.125vw;
+        margin-bottom: 7.500vw; }
+        .call_main .wrapper .call_left .left_call-blk .call-window .call-btn-box img {
+          width: 139px;
+          height: 139px; }
+        .call_main .wrapper .call_left .left_call-blk .call-window .call-btn-box .call_text {
+          display: none; }
+      .call_main .wrapper .call_left .left_call-blk .call-ended {
+        align-items: flex-end; }
+      .call_main .wrapper .call_left .left_call-blk .call_nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        gap: 26px; }
+        .call_main .wrapper .call_left .left_call-blk .call_nav .call_time {
+          display: none;
+          font-size: 20px;
+          line-height: 27px;
+          white-space: nowrap;
+          font-weight: 500 !important;
+          margin-bottom: 90px; }
+        .call_main .wrapper .call_left .left_call-blk .call_nav .call_groupbox {
+          display: flex;
+          flex-direction: row;
+          gap: 8.125vw; }
+          .call_main .wrapper .call_left .left_call-blk .call_nav .call_groupbox label {
+            width: 18.438vw;
+            height: 18.438vw;
+            margin-bottom: 11.250vw; }
+            .call_main .wrapper .call_left .left_call-blk .call_nav .call_groupbox label img {
+              width: 18.438vw;
+              height: 18.438vw; }
+            .call_main .wrapper .call_left .left_call-blk .call_nav .call_groupbox label::after {
+              width: 12.500vw;
+              height: 0.625vw; }
+          .call_main .wrapper .call_left .left_call-blk .call_nav .call_groupbox input:checked + label::after {
+            width: 12.500vw;
+            height: 0.625vw; }
+  .call_main .wrapper .call_right {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .call_main .wrapper .call_right .right_block {
+      padding: 48px 31px 34px 31px;
+      background: #DDF9EC;
+      border-radius: 3.125vw;
+      margin-bottom: 0; }
+      .call_main .wrapper .call_right .right_block .right_title {
+        font-size: 5.625vw;
+        line-height: 5.625vw;
+        margin-bottom: 2.063vw; }
+      .call_main .wrapper .call_right .right_block .right_text {
+        font-size: 4.375vw;
+        line-height: 5.938vw;
+        margin-bottom: 7.500vw; }
+  .call_main .wrapper .left_call-after-blk {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px; }
+    .call_main .wrapper .left_call-after-blk .call-after-window {
+      width: 60vw;
+      min-height: 32.813vw;
+      border-radius: 3.125vw;
+      margin-right: 0;
+      padding: 3.125vw;
+      margin-bottom: 9.688vw; }
+      .call_main .wrapper .left_call-after-blk .call-after-window .window-text {
+        font-size: 5vw;
+        line-height: 6.563vw;
+        margin-bottom: 0; }
+      .call_main .wrapper .left_call-after-blk .call-after-window .window-time {
+        font-size: 7.500vw;
+        line-height: 10vw; }
+    .call_main .wrapper .left_call-after-blk .call-after-main {
+      border-radius: 3.125vw; }
+      .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main-text {
+        font-size: 5vw;
+        line-height: 6.875vw;
+        margin-bottom: 6.875vw; }
+      .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main_stars {
+        margin-bottom: 29px; }
+        .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main_stars .star {
+          display: flex; }
+          .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main_stars .star img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px; }
+            .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main_stars .star img:first-child {
+              display: none; }
+            .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main_stars .star img:last-child {
+              display: inline; }
+      .call_main .wrapper .left_call-after-blk .call-after-main .mark-specialist {
+        padding: 3.625vw 8.750vw 3.625vw 8.750vw;
+        font-size: 4.375vw !important;
+        line-height: 6.250vw !important;
+        border-radius: 3.125vw; }
+      .call_main .wrapper .left_call-after-blk .call-after-main .call-after-main-title {
+        font-weight: 500 !important;
+        font-size: 16px;
+        line-height: 17px;
+        color: #474747;
+        margin-bottom: 27px; }
+      .call_main .wrapper .left_call-after-blk .call-after-main textarea {
+        width: 100%;
+        background: #F2F7FD;
+        border-radius: 10px;
+        border: 0;
+        padding: 15px 25px;
+        width: 100%;
+        resize: none;
+        margin-bottom: 27px; }
+      .call_main .wrapper .left_call-after-blk .call-after-main .call-after-rate {
+        margin-bottom: 52px; }
+        .call_main .wrapper .left_call-after-blk .call-after-main .call-after-rate::after {
+          background: url(../img/svg/reviews-ico.svg);
+          background-size: cover;
+          height: 24px;
+          width: 24px;
+          right: 24px; }
+          .call_main .wrapper .left_call-after-blk .call-after-main .call-after-rate::after:hover {
+            right: 24px; } }
 
 @media screen and (max-width: 500px) {
   .popup_popup_blk_title {
