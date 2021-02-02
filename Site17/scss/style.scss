@@ -3894,6 +3894,10 @@ footer{
     }
   }
 
+  .page_prev{
+    transform: rotate(180deg) translateY(-1px);
+  }
+
   .pages_pagination{
     margin: 0 50px;
     cursor: default;
@@ -6341,7 +6345,6 @@ footer{
         }
       }
     }
-
   }
 
 }
@@ -7777,6 +7780,89 @@ footer{
       }
     }
 
+  }
+
+  .specialists-nav .specialist_search{
+    padding: 1.458vw 2.153vw;
+    box-shadow: 0px 0px 3.472vw rgba(208, 206, 187, 0.18);
+    border-radius: 0.694vw;
+    margin-bottom: 2.014vw;
+
+    .search_input-group{
+      margin-right: 1.597vw;
+
+      .input {
+        border-radius: 0.694vw;
+        font-size: 0.972vw;
+        line-height: 1.319vw;
+        padding: 1.042vw 1.389vw;
+    }
+
+      .search-btn{
+        flex-shrink: 0;
+        width: 4.722vw;
+        height: 4.028vw;
+        border-radius: 0.694vw;
+
+        img{
+          height: 1.389vw;
+        }
+
+      }
+
+      &:nth-child(1){
+        max-width: 38.819vw;
+      }
+
+      &:nth-child(2){
+        max-width: 23.819vw;
+      }
+
+      &:nth-child(3){
+        max-width: 29.861vw;
+      }
+
+    }
+  }
+
+  .specialist_main{
+    margin-bottom: 4.375vw;
+  
+    .wrapper{
+      gap: 2.361vw;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+  
+    .specialist_card{
+  
+      .card_footer{
+        box-shadow: 0px 1.528vw 3.056vw -0.833vw rgba(221, 224, 230, 0.71);
+        border-radius: 0.694vw;
+        padding: 0px 1.111vw 0px 1.111vw;
+  
+        a{
+          padding:1.250vw 1.250vw;
+          margin-right: 0.833vw;
+        }
+  
+        .footer_make-appointment{
+          max-width: 11.806vw;
+        }
+  
+        .footer_details{
+          max-width: 8.889vw;
+        }
+  
+      }
+  
+      &:hover{
+        .card_footer{
+          max-height: 13.889vw;
+          padding: 0px 1.111vw 1.736vw 1.111vw;
+        }
+      }
+    }
   }
 
 }
@@ -9701,6 +9787,114 @@ footer{
       }
     }
 
+  }
+
+  .specialists-nav .specialist_search{
+    padding: 5vw;
+    flex-direction: column;
+    box-shadow: 0px 0px 3.472vw rgba(208, 206, 187, 0.18);
+    border-radius: 3.125vw;
+    margin-bottom: 8.438vw;
+
+    .search_input-group{
+      margin-right: 0;
+      margin-bottom: 4.688vw;
+
+      .input {
+        border-radius: 3.125vw;
+        font-size: 3.750vw;
+        line-height: 1.319vw;
+        padding: 3.125vw 7.500vw;
+      }
+
+      .search-btn{
+        flex-shrink: 0;
+        width: 13.750vw;
+        height: 11.563vw;
+        border-radius: 3.125vw;
+
+        img{
+          height: 4.063vw;
+        }
+
+      }
+
+      &:nth-child(1){
+        max-width: 100%;
+      }
+
+      &:nth-child(2){
+        max-width: 100%;
+      }
+
+      &:nth-child(3){
+        max-width: 100%;
+      }
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+    }
+  }
+
+  .specialist_filter{
+
+    label{
+      font-size: 3.750vw !important;
+      line-height: 6.250vw !important;
+      padding: 2.500vw 8.938vw 2.500vw 8.938vw !important;
+      margin-right: 3.125vw !important;
+      border-radius: 3.125vw !important;
+      margin-bottom: 1.625vw !important;
+      min-width: unset !important;
+
+      &::after {
+        left: 4.313vw !important;
+        width: 2.438vw !important;
+        height: 1.813vw !important;
+      }
+    }
+  }
+
+  .specialist_main{
+    margin-bottom: 4.375vw;
+  
+    .wrapper{
+      gap: 2.361vw;
+      grid-template-columns: 1fr;
+    }
+    
+  
+    .specialist_card{
+  
+      .card_footer{
+        box-shadow: 0px 1.528vw 3.056vw -0.833vw rgba(221, 224, 230, 0.71);
+        border-radius: 0.694vw;
+        padding: 0px 1.111vw 0px 1.111vw;
+  
+        a{
+          padding:1.250vw 1.250vw;
+          margin-right: 0.833vw;
+        }
+  
+        .footer_make-appointment{
+          max-width: 11.806vw;
+        }
+  
+        .footer_details{
+          max-width: 8.889vw;
+        }
+  
+      }
+  
+      &:hover{
+        .card_footer{
+          max-height: 13.889vw;
+          padding: 0px 1.111vw 1.736vw 1.111vw;
+        }
+      }
+    }
   }
 
 }
