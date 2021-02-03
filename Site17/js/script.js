@@ -398,6 +398,9 @@ let closeShedulePopup= document.querySelector(".save")
 
 let calendarPopupOpen = document.querySelector(".date-selection");
 let calendarPopupOpen1 = document.querySelectorAll(".create-shedule__popup");
+let calendarPopupOpen2 = document.querySelector(".date-search");
+
+
 let calendarPopup = document.querySelector(".calendar__popup");
 
 
@@ -425,6 +428,17 @@ if(popupClose && createShedulePopupOpen){
         checkHeight(calendarPopup);
     });
 
+}
+
+if(calendarPopupOpen2){
+    console.log('123');
+
+
+    calendarPopupOpen2.addEventListener('click',()=>{
+        closeAllPopups();
+        calendarPopup.classList.add("popup-active");
+        checkHeight(calendarPopup);
+    });
 }
 
 // 
