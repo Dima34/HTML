@@ -29,6 +29,7 @@
             </div>
 
             <div class="header_nav">
+
                 <ul class="nav_itemlist">
                     <img src="./img/svg/burger-close.png" alt="burger-close" class="burger-close" style="display: none;">
                     <li class="nav_item nav_item-active"><a href="#">О нас</a></li>
@@ -84,12 +85,25 @@
 
                     <div class="search_input-group">
                         <input type="text" name="fio" id="fio" placeholder="Поиск по дате" class = "date-input input">
-                        <a href="#" class="search-btn date-search"><img src="./img/svg/calendar-w-thumb.svg" alt="thumb"></a>
+                        <p class="search-btn date-search"><img src="./img/svg/calendar-w-thumb.svg" alt="thumb"></p>
                     </div>
 
                     <div class="search_input-group">
-                        <input type="text" name="fio" id="fio" placeholder="Направления консультации" class = "way-input input">
-                        <a href="#" class="search-btn way-search"><img src="./img/svg/arrow-w-thumb.svg" alt="thumb"></a>
+                        <!-- <input type="text" name="fio" id="fio" placeholder="Направления консультации" class = "way-input input"> -->
+                        <div class="custom-select-wrapper">
+                            <div class="custom-select">
+                                <div class="custom-select__trigger"><span>Направления консультации</span>
+                                    <p href="#" class="search-btn way-search"><img src="./img/svg/arrow-w-thumb.svg" alt="thumb"></p>
+                                </div>
+                                <div class="custom-options">
+                                    <span class="custom-option selected" data-value="1">Направления консультации1</span>
+                                    <span class="custom-option" data-value="2">Направления консультации2</span>
+                                    <span class="custom-option" data-value="3">Направления консультации3</span>
+                                    <span class="custom-option" data-value="4">Направления консультации4</span>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
 
                 </div>
@@ -955,6 +969,77 @@
 
     </main>
 
+    <div class="calendar__popup popup">
+
+        <div class="popup_popup_blk">
+            <h2 class="popup_popup_blk_title">
+                Выберете точную дату
+            </h2>
+
+            <div class="popup_popup_blk_main">
+                 
+                <div class="calendar-widged">
+
+                    <div class="calendar_month">
+                        <div class="arrow_left"><img src="./img/svg/calendar-arrow.svg" alt="arrow"></div>
+                        <div class="month_text">
+                            <p>Август 2020</p>
+                            <p class = "month-active">Сентябрь 2020</p>
+                            <p>Октябрь 2020</p>
+                        </div>
+                        <div class="arrow_left"><img src="./img/svg/calendar-arrow.svg" alt="arrow"></div>
+                    </div>
+
+                    <div class="calendar-grid">
+                        <p class="calendar_day">Пн</p>
+                        <p class="calendar_day">Вт</p>
+                        <p class="calendar_day">Ср</p>
+                        <p class="calendar_day">Чт</p>
+                        <p class="calendar_day">Пт</p>
+                        <p class="calendar_day">Сб</p>
+                        <p class="calendar_day">Вс</p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date1"> <label for="date1">1</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date2"> <label for="date2">2</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date3"> <label for="date3">3</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date4"> <label for="date4">4</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date5"> <label for="date5">5</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date6"> <label for="date6">6</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date7"> <label for="date7">7</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date8"> <label for="date8">8</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date9"> <label for="date9">9</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date10"> <label for="date10">10</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date11"> <label for="date11">11</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date12"> <label for="date12">12</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date13"> <label for="date13">13</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date14"> <label for="date14">14</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date15"> <label for="date15">15</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date16"> <label for="date16">16</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date17"> <label for="date17">17</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date18"> <label for="date18">18</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date19"> <label for="date19">19</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date20"> <label for="date20">20</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date21"> <label for="date21">21</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date22"> <label for="date22">22</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date23"> <label for="date23">23</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date24"> <label for="date24">24</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date25"> <label for="date25">25</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date26"> <label for="date26">26</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date27"> <label for="date27">27</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date28"> <label for="date28">28</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date29"> <label for="date29">29</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date30"> <label for="date30">30</label></p>
+                        <p class="calendar_date"><input type="checkbox" name="date" id = "date31"> <label for="date31">31</label></p>
+                    </div>
+                </div>
+
+                <p class="calendar_select popup_btn">Выбрать</p>
+                
+            </div>
+
+            <img src="./img/svg/pp_close.svg" alt="close" class="pp_close">
+        </div>
+
+    </div>
     
     <div class="authorize__popup popup">
 
