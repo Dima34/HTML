@@ -2272,6 +2272,11 @@ footer{
           color: #1763F8;
           margin-bottom: 29px;
           cursor: pointer;
+          transition: .3s;
+
+          &:hover{
+            color: #1042a5;
+          }
         }
 
         .info_faq{
@@ -2280,7 +2285,13 @@ footer{
           text-decoration-line: underline;
           color: #B3BACC;
           cursor: pointer;
+          transition: .3s;
+
+          &:hover{
+            color: #1763F8;
+          }
         }
+
 
         .info_soundcheck{
           margin-top: 38px;
@@ -10877,6 +10888,7 @@ footer{
     
             .info_groupbox{
               margin-bottom: 0.573vw;
+              flex-direction: column;
   
               .constults{
   
@@ -10892,7 +10904,12 @@ footer{
               }
   
               .make-appointment{
-              
+                width: 100%;
+                margin: 10px 0;
+
+                &:after {
+                  right: 6.063vw;
+                }
   
                 &:hover{
   

@@ -1615,13 +1615,19 @@ footer {
           text-decoration-line: underline;
           color: #1763F8;
           margin-bottom: 29px;
-          cursor: pointer; }
+          cursor: pointer;
+          transition: .3s; }
+          .check .wrapper .check_blk .blk_info .info_btn:hover {
+            color: #1042a5; }
         .check .wrapper .check_blk .blk_info .info_faq {
           font-size: 16px;
           line-height: 16px;
           text-decoration-line: underline;
           color: #B3BACC;
-          cursor: pointer; }
+          cursor: pointer;
+          transition: .3s; }
+          .check .wrapper .check_blk .blk_info .info_faq:hover {
+            color: #1763F8; }
         .check .wrapper .check_blk .blk_info .info_soundcheck {
           margin-top: 38px;
           margin-bottom: 37px; }
@@ -6717,13 +6723,19 @@ footer {
             width: 83.750vw;
             height: 83.750vw; }
       .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox {
-        margin-bottom: 0.573vw; }
+        margin-bottom: 0.573vw;
+        flex-direction: column; }
         .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .constults p {
           margin-right: 1.042vw; }
         .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .constults .consults-amount {
           margin-right: 0.521vw; }
-        .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .make-appointment:hover:after {
-          right: 1.927vw; }
+        .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .make-appointment {
+          width: 100%;
+          margin: 10px 0; }
+          .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .make-appointment:after {
+            right: 6.063vw; }
+          .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .make-appointment:hover:after {
+            right: 1.927vw; }
       .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .card_statistics {
         max-width: 10.729vw; }
       .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_header {
