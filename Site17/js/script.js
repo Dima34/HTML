@@ -121,7 +121,7 @@ let RemindPopupOpen = document.querySelectorAll(".remind-link");
 let RemindPopup = document.querySelector(".remind__popup");
 
 let RecoveryPopupOpen = document.querySelectorAll(".link_forgot-pass");
-let RecoveryPopup = document.querySelector(".remind__popup");
+let RecoveryPopup = document.querySelector(".recovery__popup");
 
 
 let AllPopups = document.querySelectorAll(".popup")
