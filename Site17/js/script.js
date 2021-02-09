@@ -204,6 +204,16 @@ if(popupClose && AuthorizePopupOpen){
 
 }
 
+if(RegPopupOpen && RegPopup){
+
+    RegPopupOpen.addEventListener('click',()=>{
+        closeAllPopups();
+        RegPopup.classList.add("popup-active");
+        checkHeight(RegPopup);
+    });  
+
+}
+
 if(RegSPopup && RegSPopupOpen){
 
     for (let i = 0; i < RegSPopupOpen.length; i++) {
