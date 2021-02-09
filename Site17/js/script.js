@@ -117,6 +117,9 @@ let RegPopupOpen = document.querySelector(".login_register");
 let RegPopupOpen1 = document.querySelectorAll(".create-acc");
 let RegPopup = document.querySelector(".reg__popup");
 
+let RegSPopupOpen = document.querySelectorAll(".nav_consult");
+let RegSPopup = document.querySelector(".reg-s__popup");
+
 let RemindPopupOpen = document.querySelectorAll(".remind-link");
 let RemindPopup = document.querySelector(".remind__popup");
 
@@ -196,6 +199,19 @@ if(popupClose && AuthorizePopupOpen){
         popupClose[i].addEventListener('click',()=>{
             closeAllPopups();
         });
+        
+    }
+
+}
+
+if(RegSPopup && RegSPopupOpen){
+
+    for (let i = 0; i < RegSPopupOpen.length; i++) {
+        RegSPopupOpen[i].addEventListener('click',()=>{
+            closeAllPopups();
+            RegSPopup.classList.add("popup-active");
+            checkHeight(RegSPopup);
+        });  
         
     }
 
@@ -497,6 +513,11 @@ if(popupClose && payPopupOpen){
         checkHeight(payPopup);
     });
 
+}
+
+if(popupClose && paymentSuccessPopup){
+
+
     paymentSuccessPopupOpen.addEventListener('click',()=>{
         closeAllPopups();
         paymentSuccessPopup.classList.add("popup-active");
@@ -540,8 +561,7 @@ if(verticalBlock){
     let blocksInSlideMustBe;
 
     if(SwiperWrapper.hasAttribute("data-blocks-in-slide")){
-        blocksInSlideMustBe = SwiperWrapper.getAttribute("data-blocks-in-slide") ;
-        console.log(blocksInSlideMustBe);
+        blocksInSlideMustBe = SwiperWrapper.getAttribute("data-blocks-in-slide");
     }
     else{
         blocksInSlideMustBe = 3 ;
@@ -598,20 +618,16 @@ if(verticalBlock){
                 croppedText[i].innerHTML = fullText[i].innerHTML
             }
            
-            
         }
     
         // Cropped text functional
         for (let i = 0; i < fullText.length; i++) {
             
-            
-
             croppedText[i].onmouseover = ()=>{
-                fullText[i].classList.add("block");
-                console.log('good');
+                fullText[i].classList.add("visible");
             }
             fullText[i].onmouseout = ()=>{
-                fullText[i].classList.remove("block");
+                fullText[i].classList.remove("visible");
             }
 
         }
@@ -662,3 +678,29 @@ window.addEventListener('click', function (e) {
         }
     }
 });
+
+
+// 
+// BYN Add
+// 
+
+let bynInput = document.querySelectorAll(".set_price-input");
+
+for (let i = 0; i < bynInput.length; i++) {
+    
+    bynInput[i].addEventListener("change", ()=>{
+
+        tmp = bynInput[i].value;
+        tmp += " byn";
+        bynInput[i].type='text';
+        bynInput[i].value = tmp;
+
+        console.log(bynInput[i].value);
+    }) 
+
+    bynInput[i].addEventListener("click", ()=>{
+
+        bynInput[i].type='number';
+    }) 
+    
+}

@@ -366,7 +366,7 @@ main {
   margin-bottom: 26px; }
 
 .subtitle {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 19px;
   color: #213243;
   padding-left: 1px; }
@@ -400,6 +400,13 @@ body {
 
 .block {
   display: block !important; }
+
+.visible {
+  visibility: visible !important;
+  opacity: 1 !important; }
+
+.b-red {
+  border: 1px solid #FE001E !important; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -541,6 +548,17 @@ header {
         font-size: 16px;
         line-height: 22px;
         font-weight: 500 !important; }
+    header .wrapper-b .thumb-notification {
+      position: relative; }
+      header .wrapper-b .thumb-notification::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 40px;
+        width: 17px;
+        height: 17px;
+        background: url(../img/svg/thumb-notification.svg) center no-repeat;
+        background-size: cover; }
     header .wrapper-b .header_mobile-logo {
       display: none; }
 
@@ -1829,6 +1847,8 @@ footer {
           .program_main .program_content .program_consults .consult_blk .consult_ticket .ticket_right p {
             font-weight: 500 !important;
             width: 100%; }
+      .program_main .program_content .program_consults .consult_blk .consult_consult {
+        cursor: pointer; }
       .program_main .program_content .program_consults .consult_blk .consult_consult, .program_main .program_content .program_consults .consult_blk .consult_consult-activated {
         font-size: 16px;
         line-height: 16px;
@@ -1898,12 +1918,16 @@ footer {
     .pc_description .wrapper .desription_price .set_price input::-webkit-inner-spin-button {
       -webkit-appearance: none; }
     .pc_description .wrapper .desription_price .set_price input {
+      display: block;
       margin-right: 16px;
       font-weight: 500 !important;
       font-size: 18px;
       line-height: 23px;
-      width: 100px;
-      color: #213243; }
+      min-width: 100px;
+      max-width: 120px;
+      width: fit-content;
+      color: #213243;
+      text-align: center; }
       .pc_description .wrapper .desription_price .set_price input::placeholder {
         opacity: 1;
         color: #213243; }
@@ -2184,70 +2208,78 @@ footer {
         margin-top: 1px;
         margin-right: 6px;
         transform: rotate(180deg); }
-  .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide {
-    opacity: 0 !important; }
-    .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew {
-      padding: 30px 0 50px 0;
-      background: #DDF9EC;
-      border-radius: 20px;
-      margin-bottom: 17px; }
-      .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 10px;
-        padding: 0px 24px 0px 35px; }
-        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_title {
-          font-weight: 500 !important;
-          font-size: 16px;
-          line-height: 24px;
-          color: #1F1E1B; }
-        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting {
-          display: flex; }
-          .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star {
-            margin-right: 5px;
+  .vertical-reviews .vertical-reviews-container {
+    overflow: visible; }
+    .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide {
+      opacity: 0 !important; }
+      .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew {
+        padding: 30px 0 50px 0;
+        background: #DDF9EC;
+        border-radius: 20px;
+        margin-bottom: 17px; }
+        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+          padding: 0px 24px 0px 35px; }
+          .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_title {
+            font-weight: 500 !important;
+            font-size: 16px;
+            line-height: 24px;
+            color: #1F1E1B; }
+          .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting {
             display: flex; }
-            .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star img {
-              width: 14px;
-              height: 14px; }
-              .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star img:last-child {
-                display: none; }
-          .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star-active img:first-child {
-            display: none; }
-          .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star-active img:last-child {
-            display: block; }
-      .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_main .review_date {
-        font-size: 12px;
-        line-height: 20px;
-        color: #B3BACC;
-        margin-bottom: 15px;
-        padding: 0px 24px 0px 35px; }
-      .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_main .rewiew_text {
-        font-size: 14px;
-        line-height: 19px;
-        color: #545454;
-        padding-right: 32px;
-        position: relative;
-        padding: 0px 24px 0px 35px; }
-        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_main .rewiew_text .full_text {
-          position: absolute;
-          left: 0;
-          width: 100%;
-          top: 0;
-          background-color: #DDF9EC;
-          padding: 0px 24px 50px 35px;
-          border-radius: 20px;
-          display: none; }
-      .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew:nth-child(2) {
-        background: #F6DCDB; }
-        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew:nth-child(2) .rewiew_main .rewiew_text .full_text {
-          background-color: #F6DCDB; }
-      .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew:nth-child(3) {
-        background: #F8F9DD; }
-        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew:nth-child(3) .rewiew_main .rewiew_text .full_text {
-          background-color: #F8F9DD; }
-  .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide-active {
-    opacity: 1 !important; }
+            .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star {
+              margin-right: 5px;
+              display: flex; }
+              .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star img {
+                width: 14px;
+                height: 14px; }
+                .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star img:last-child {
+                  display: none; }
+            .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star-active img:first-child {
+              display: none; }
+            .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_header .rewiew_raiting .star-active img:last-child {
+              display: block; }
+        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_main .review_date {
+          font-size: 12px;
+          line-height: 20px;
+          color: #B3BACC;
+          margin-bottom: 15px;
+          padding: 0px 24px 0px 35px; }
+        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_main .rewiew_text {
+          font-size: 14px;
+          line-height: 19px;
+          color: #545454;
+          padding-right: 32px;
+          position: relative;
+          padding: 0px 24px 0px 35px; }
+          .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew .rewiew_main .rewiew_text .full_text {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 0;
+            background-color: #DDF9EC;
+            padding: 0px 24px 50px 35px;
+            border-radius: 20px;
+            display: block;
+            visibility: hidden;
+            opacity: 0;
+            -webkit-box-shadow: 0px 22px 25px 4px rgba(208, 205, 187, 0.37);
+            -moz-box-shadow: 0px 22px 25px 4px rgba(208, 205, 187, 0.37);
+            box-shadow: 0px 22px 25px 4px rgba(208, 205, 187, 0.37);
+            transition: .3s; }
+        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew:nth-child(2) {
+          background: #F6DCDB; }
+          .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew:nth-child(2) .rewiew_main .rewiew_text .full_text {
+            background-color: #F6DCDB; }
+        .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew:nth-child(3) {
+          background: #F8F9DD; }
+          .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide .vertical-reviews_rewiew:nth-child(3) .rewiew_main .rewiew_text .full_text {
+            background-color: #F8F9DD; }
+    .vertical-reviews .vertical-reviews-container .swiper-wrapper .swiper-slide-active {
+      opacity: 1 !important; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2547,6 +2579,66 @@ footer {
       color: #FFFFFF;
       background: #1763F8;
       box-shadow: 0px 22px 44px -12px rgba(46, 117, 255, 0.35); }
+    .calendar-widged .calendar-grid .range {
+      position: relative; }
+      .calendar-widged .calendar-grid .range label {
+        position: relative;
+        z-index: 2; }
+      .calendar-widged .calendar-grid .range::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 128%;
+        background: #EDEDED;
+        border-radius: 0;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%); }
+    .calendar-widged .calendar-grid .range-start {
+      position: relative; }
+      .calendar-widged .calendar-grid .range-start label {
+        position: relative;
+        z-index: 2; }
+      .calendar-widged .calendar-grid .range-start::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 128%;
+        background: #EDEDED;
+        border-radius: 10px 0 0 10px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%); }
+    .calendar-widged .calendar-grid .range-end {
+      position: relative; }
+      .calendar-widged .calendar-grid .range-end label {
+        position: relative;
+        z-index: 2; }
+      .calendar-widged .calendar-grid .range-end::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 128%;
+        background: #EDEDED;
+        border-radius: 0 10px 10px 0;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%); }
+    .calendar-widged .calendar-grid .range-single {
+      position: relative; }
+      .calendar-widged .calendar-grid .range-single label {
+        position: relative;
+        z-index: 2; }
+      .calendar-widged .calendar-grid .range-single::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #EDEDED;
+        border-radius: 10px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%); }
     .calendar-widged .calendar-grid .calendar_day {
       color: #1763F8; }
 
@@ -2931,7 +3023,7 @@ footer {
     padding-left: 30px;
     margin-bottom: 20px; }
   .appointment__popup .popup_popup_blk .main_comment input {
-    width: 90%; }
+    width: 100%; }
 
 .appointment__popup .popup_popup_blk .popup_btn {
   padding: 18px 71px 18px 31px; }
@@ -2966,11 +3058,13 @@ footer {
       border-radius: 12px;
       padding: 24px 29px;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      display: flex;
+      align-items: center; }
     .pay__popup .popup_popup_blk .popup_popup_blk_main .pay_ticket .ticket_left p {
       font-weight: 500 !important;
       font-size: 16px;
-      line-height: 17px;
+      line-height: 24px;
       color: #242729;
       margin-bottom: 8px; }
       .pay__popup .popup_popup_blk .popup_popup_blk_main .pay_ticket .ticket_left p:last-child {
@@ -3613,7 +3707,7 @@ footer {
     line-height: 2.083vw;
     margin-bottom: 1.354vw; }
   .subtitle {
-    font-size: 0.729vw;
+    font-size: 0.83vw;
     line-height: 0.990vw; }
   .on-title {
     font-size: 0.729vw;
@@ -4279,7 +4373,7 @@ footer {
       .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_diplomas .diploma {
         width: 10.885vw;
         height: 7.865vw; }
-  .profile-main .profile-main-wrapper .profile_right .vertical-reviews {
+  .vertical-reviews {
     width: 37.031vw; }
   .call_main .wrapper .call_left {
     box-shadow: 0px 0px 2.604vw rgba(208, 206, 187, 0.18);
@@ -5605,13 +5699,21 @@ footer {
             padding: 1.563vw 0.885vw; }
       header .wrapper-b .header_nav .header_login .login_pc {
         margin-right: 0;
-        justify-content: center; }
+        justify-content: center;
+        width: fit-content;
+        margin: 0 auto; }
         header .wrapper-b .header_nav .header_login .login_pc img {
           display: none; }
         header .wrapper-b .header_nav .header_login .login_pc p {
           font-size: 5vw;
           line-height: 12.875vw;
           padding: 1.563vw 0.885vw; }
+      header .wrapper-b .header_nav .header_login .thumb-notification::after {
+        top: 50%;
+        transform: translateY(-50%);
+        left: -17px;
+        width: 17px;
+        height: 17px; }
       header .wrapper-b .header_nav .burger-close {
         display: block !important;
         position: absolute;
@@ -5903,9 +6005,10 @@ footer {
             padding: 5vw 1.146vw;
             border-radius: 1.563vw; }
         .program_main .program_content .program_consults .consult_blk .consult_consult, .program_main .program_content .program_consults .consult_blk .consult_consult-activated {
-          font-size: 0.833vw;
-          line-height: 0.833vw;
-          margin-top: 0.521vw; }
+          font-size: 2.833vw;
+          line-height: 3.833vw;
+          margin-top: 2.521vw;
+          margin-bottom: 1.4vw; }
     .program_main .program_content .program_title {
       font-size: 4.375vw;
       line-height: 7.500vw;
@@ -6737,7 +6840,8 @@ footer {
           .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .info_groupbox .make-appointment:hover:after {
             right: 1.927vw; }
       .profile-main .profile-main-wrapper .profile_left .profile-blk .header_info .card_statistics {
-        max-width: 10.729vw; }
+        max-width: 10.729vw;
+        column-gap: 30px; }
       .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_header {
         margin-bottom: 0.781vw; }
       .profile-main .profile-main-wrapper .profile_left .profile-blk .block_main .main_text {

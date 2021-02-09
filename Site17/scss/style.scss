@@ -395,7 +395,7 @@ main{
 }
 
 .subtitle{
-  font-size: 14px;
+  font-size: 16px;
   line-height: 19px;
   color: #213243;
   padding-left: 1px;
@@ -435,6 +435,15 @@ body{
 
 .block{
   display: block !important;
+}
+
+.visible{
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.b-red{
+  border: 1px solid #FE001E !important;
 }
 
 /* ------------------------------------ */
@@ -649,6 +658,22 @@ header{
         font-size: 16px;
         line-height: 22px;
         font-weight: 500 !important;
+      }
+    }
+
+    .thumb-notification{
+      position: relative;
+
+      &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 40px;
+        width: 17px;
+        height: 17px;
+        background: url(../img/svg/thumb-notification.svg) center no-repeat;
+        background-size: cover;
+
       }
     }
 
@@ -2580,6 +2605,10 @@ footer{
 
         }
 
+        .consult_consult{
+          cursor: pointer;
+        }
+
         .consult_consult,.consult_consult-activated{
           font-size: 16px;
           line-height: 16px;
@@ -2703,12 +2732,16 @@ footer{
         }
 
         input{
+          display: block;
           margin-right: 16px;
           font-weight: 500 !important;
           font-size: 18px;
           line-height: 23px;
-          width: 100px;
+          min-width: 100px;
+          max-width: 120px;
+          width: fit-content;
           color: #213243;
+          text-align: center;
 
           &::placeholder{
             opacity: 1;
@@ -3121,6 +3154,7 @@ footer{
   }
 
   .vertical-reviews-container{
+    overflow: visible;
 
     .swiper-wrapper{
 
@@ -3206,7 +3240,13 @@ footer{
                 background-color:#DDF9EC;
                 padding: 0px 24px 50px 35px;
                 border-radius: 20px;
-                display: none;
+                display: block;
+                visibility: hidden;
+                opacity: 0;
+                -webkit-box-shadow: 0px 22px 25px 4px rgba(208,205,187,0.37);
+                -moz-box-shadow: 0px 22px 25px 4px rgba(208,205,187,0.37);
+                box-shadow: 0px 22px 25px 4px rgba(208,205,187,0.37);
+                transition: .3s;
                 
               }
             }
@@ -3238,6 +3278,8 @@ footer{
               }
             }
           }
+
+          
         }
       }
 
@@ -3687,6 +3729,90 @@ footer{
       }
 
 
+    }
+
+    .range{
+      position: relative;
+
+      label{
+        position: relative;
+        z-index: 2;
+      }
+
+      &::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 128%;
+        background: #EDEDED;
+        border-radius: 0;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .range-start{
+      position: relative;
+
+      label{
+        position: relative;
+        z-index: 2;
+      }
+
+      &::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 128%;
+        background: #EDEDED;
+        border-radius: 10px 0 0 10px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .range-end{
+      position: relative;
+
+      label{
+        position: relative;
+        z-index: 2;
+      }
+
+      &::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 128%;
+        background: #EDEDED;
+        border-radius: 0 10px 10px 0;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .range-single{
+      position: relative;
+
+      label{
+        position: relative;
+        z-index: 2;
+      }
+
+      &::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #EDEDED;
+        border-radius: 10px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
 
     .calendar_day{
@@ -4257,7 +4383,7 @@ footer{
       }
 
       input{
-        width: 90%;
+        width: 100%;
       }
     }
 
@@ -4312,6 +4438,8 @@ footer{
           padding: 24px 29px;
           width: 100%;
           height: 100%;
+          display: flex;
+          align-items: center;
         }
 
         .ticket_left{
@@ -4319,7 +4447,7 @@ footer{
           p{
             font-weight: 500 !important;
             font-size: 16px;
-            line-height: 17px;
+            line-height: 24px;
             color: #242729;
             margin-bottom: 8px;
 
@@ -5258,7 +5386,7 @@ footer{
   }
   
   .subtitle{
-    font-size: 0.729vw;
+    font-size: 0.83vw;
     line-height: 0.990vw;
   }
   
@@ -6562,13 +6690,15 @@ footer{
 
       .profile_right{
 
-        .vertical-reviews{
-          width: 37.031vw;
-        }
+        
         
       }
       
     }
+  }
+
+  .vertical-reviews{
+    width: 37.031vw;
   }
   
   .call_main{
@@ -8933,6 +9063,8 @@ footer{
           .login_pc{
             margin-right: 0;
             justify-content: center;
+            width: fit-content;
+            margin: 0 auto;
 
             img{
               display: none;
@@ -8944,7 +9076,14 @@ footer{
               padding: 1.563vw 0.885vw;
             }
           }
-          
+
+          .thumb-notification::after {
+            top: 50%;
+            transform: translateY(-50%);
+            left: -17px;
+            width: 17px;
+            height: 17px;
+          }
           
         }
 
@@ -9451,9 +9590,10 @@ footer{
           }
   
           .consult_consult,.consult_consult-activated{
-            font-size: 0.833vw;
-            line-height: 0.833vw;
-            margin-top: 0.521vw;
+            font-size: 2.833vw;
+            line-height: 3.833vw;
+            margin-top: 2.521vw;
+            margin-bottom: 1.4vw;
           }
         }
 
@@ -10922,6 +11062,7 @@ footer{
   
             .card_statistics{
               max-width: 10.729vw;
+              column-gap: 30px;
             }
           }
   
@@ -11534,7 +11675,8 @@ footer{
   
   
       }
-  
+
+      
     }
   }
 }

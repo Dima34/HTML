@@ -84,7 +84,7 @@
 
         <div class="wrapper">
 
-            <div class="program_main bought-program_main">
+            <div class="program_main un-bought-program_main">
                 
                 <div class="program_img ibg">
                     <img src="./img/program_img.png" alt="img">
@@ -95,13 +95,13 @@
                     <div class="program_header">
 
                         <p class="program_price">Стоимость пакета: <span>60 byn</span></p>
-                        <p class="program_status">Оплачен</p>
+                        <p class="program_status">Оплатить и записаться </p>
 
                     </div>
 
                     <div class="program_consults">
 
-                        <div class="consult_blk consult-activated">
+                        <div class="consult_blk">
 
                             <div class="consult_ticket">
                                 <div class="ticket_left">
@@ -111,9 +111,6 @@
                                     <p>1 час</p>
                                 </div>
                             </div>
-
-                            <p class="consult_consult">Получить консультацию</p>
-                            <p class="consult_consult-activated">Консультация получена</p>
                         </div>
 
                         <div class="consult_blk">
@@ -126,9 +123,6 @@
                                     <p>1 час</p>
                                 </div>
                             </div>
-
-                            <p class="consult_consult">Получить консультацию</p>
-                            <p class="consult_consult-activated">Консультация получена</p>
                         </div>
 
                         <div class="consult_blk">
@@ -141,41 +135,7 @@
                                     <p>1 час</p>
                                 </div>
                             </div>
-
-                            <p class="consult_consult">Получить консультацию</p>
-                            <p class="consult_consult-activated">Консультация получена</p>
                         </div>
-
-                        <div class="consult_blk">
-
-                            <div class="consult_ticket">
-                                <div class="ticket_left">
-                                    <p>Психолог</p>
-                                </div>
-                                <div class="ticket_right">
-                                    <p>1 час</p>
-                                </div>
-                            </div>
-
-                            <p class="consult_consult">Получить консультацию</p>
-                            <p class="consult_consult-activated">Консультация получена</p>
-                        </div>
-
-                        <div class="consult_blk">
-
-                            <div class="consult_ticket">
-                                <div class="ticket_left">
-                                    <p>Психолог</p>
-                                </div>
-                                <div class="ticket_right">
-                                    <p>1 час</p>
-                                </div>
-                            </div>
-
-                            <p class="consult_consult">Получить консультацию</p>
-                            <p class="consult_consult-activated">Консультация получена</p>
-                        </div>
-
 
                     </div>
 
@@ -386,6 +346,87 @@
         </footer>
 
     </main>
+
+    <div class="pay__popup popup">
+
+        <div class="popup_popup_blk">
+            <h2 class="popup_popup_blk_title">
+                Оплата консультации
+            </h2>
+
+            <p class="popup_popup_blk_subtitle">
+                Вы можете оплатить консультацию данному <br>
+                специалисту любым удобным вам способом.
+            </p>
+
+            <div class="popup_popup_blk_main">
+
+                <p class="pay_title">Услуга</p>
+
+                <div class="pay_ticket">
+                    <div class="ticket_left">
+                        <p class="ticket_name">
+                            Пакет психолога <br>
+                            из 3-х консультаций
+                        </p>
+                    </div>
+                    <div class="ticket_right">
+                        <p class="ticket_price">30<span>byn</span></p>
+                    </div>
+                </div>
+
+                <p class="pay_title">Платежная система</p>
+
+                <div class="pay-methods">
+
+                    <input type="radio" name="pay-method" id="pay-method1" checked>
+                    <label for="pay-method1" class = "pay-system">
+                        <img src="./img/pay-method1.png" alt="pay-method">
+                    </label>
+
+                    <input type="radio" name="pay-method" id="pay-method2">
+                    <label for="pay-method2" class = "pay-system">
+                        <img src="./img/pay-method2.png" alt="pay-method">
+                    </label>
+
+                    <input type="radio" name="pay-method" id="pay-method3">
+                    <label for="pay-method3" class = "pay-system">
+                        <img src="./img/pay-method3.png" alt="pay-method">
+                    </label>
+
+                    <input type="radio" name="pay-method" id="pay-method4">
+                    <label for="pay-method4" class = "pay-system">
+                        <img src="./img/pay-method4.png" alt="pay-method">
+                    </label>
+
+                </div>
+                
+                <a href="#" class="popup_btn">Оплатить</a>
+            </div>
+
+            <img src="./img/svg/pp_close.svg" alt="close" class="pp_close">
+        </div>
+
+    </div>
+
+    <div class="payment-success__popup popup">
+
+        <div class="popup_popup_blk">
+            <h2 class="popup_popup_blk_title">
+                Спасибо!
+            </h2>
+
+            <div class="popup_popup_blk_main">
+
+               <img src="./img/svg/payment-success.svg" alt="payment success" class="payment-success">
+                <p class="payment-sucess_text">Ваша оплата принята</p>
+
+            </div>
+
+            <img src="./img/svg/pp_close.svg" alt="close" class="pp_close">
+        </div>
+
+    </div>
 
     <div class="authorize__popup popup">
 
