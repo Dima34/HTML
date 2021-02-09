@@ -113,7 +113,7 @@ let AuthorizePopupOpen1 = document.querySelectorAll(".enter-acc");
 let AutorizePopup = document.querySelector(".authorize__popup");
 
 
-let RegPopupOpen = document.querySelector(".login_register");
+let RegPopupOpen = document.querySelectorAll(".login_register");
 let RegPopupOpen1 = document.querySelectorAll(".create-acc");
 let RegPopup = document.querySelector(".reg__popup");
 
@@ -183,17 +183,6 @@ if(popupClose && AuthorizePopupOpen){
     }
     
 
-    if(RegPopupOpen){
-
-        RegPopupOpen.addEventListener('click',()=>{
-            closeAllPopups();
-            RegPopup.classList.add("popup-active");
-            checkHeight(RegPopup);
-        });
-
-    }
-    
-
     for (let i = 0; i < popupClose.length; i++) {
             
         popupClose[i].addEventListener('click',()=>{
@@ -206,12 +195,13 @@ if(popupClose && AuthorizePopupOpen){
 
 if(RegPopupOpen && RegPopup){
 
-    RegPopupOpen.addEventListener('click',()=>{
-        closeAllPopups();
-        RegPopup.classList.add("popup-active");
-        checkHeight(RegPopup);
-    });  
-
+    for (let i = 0; i < RegPopupOpen.length; i++) {
+        RegPopupOpen[i].addEventListener('click',()=>{
+            closeAllPopups();
+            RegPopup.classList.add("popup-active");
+            checkHeight(RegPopup);
+        });  
+    }
 }
 
 if(RegSPopup && RegSPopupOpen){
