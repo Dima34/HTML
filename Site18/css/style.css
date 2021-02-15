@@ -613,4 +613,196 @@ footer p {
   font-size: 15px;
   letter-spacing: 1.07px; }
 
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------=======TABLE========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+* {
+  box-sizing: border-box !important; }
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .table .table_title {
+    margin-bottom: 50px; }
+  .table .table-blk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    border: 3px solid darkgray;
+    padding: 10px 15px;
+    text-align: center; }
+  .table .table_header {
+    width: 368px;
+    height: 69px;
+    margin-bottom: 50px;
+    position: relative; }
+    .table .table_header::after {
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 50px;
+      border-left: 3px dashed darkgray;
+      top: 100%; }
+  .table .table_single-block {
+    position: relative; }
+    .table .table_single-block::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      top: 108%;
+      left: 50%;
+      height: 50px;
+      transform: translateX(-50%);
+      border-left: 1px solid gray; }
+  .table .table_horizontal-blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 183px);
+    column-gap: 30px;
+    padding-top: 30px;
+    margin-top: 50px;
+    padding-bottom: 40px;
+    position: relative; }
+    .table .table_horizontal-blocks .table-blk {
+      position: relative; }
+      .table .table_horizontal-blocks .table-blk::after, .table .table_horizontal-blocks .table-blk::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 1px solid gray; }
+      .table .table_horizontal-blocks .table-blk::after {
+        height: 30px;
+        bottom: 105%; }
+      .table .table_horizontal-blocks .table-blk::before {
+        height: 40px;
+        top: 105%; }
+    .table .table_horizontal-blocks .absolute-title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: bold !important; }
+      .table .table_horizontal-blocks .absolute-title * {
+        font-weight: bold !important; }
+      .table .table_horizontal-blocks .absolute-title:first-child {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        bottom: 107%;
+        margin-bottom: 0; }
+      .table .table_horizontal-blocks .absolute-title:nth-child(2) {
+        bottom: 0;
+        margin-bottom: 7px; }
+    .table .table_horizontal-blocks::after, .table .table_horizontal-blocks::before {
+      position: absolute;
+      width: 77.8%;
+      content: "";
+      left: 50%;
+      transform: translateX(-50%);
+      height: 0px;
+      border-top: 1px solid gray; }
+    .table .table_horizontal-blocks::after {
+      top: 0; }
+    .table .table_horizontal-blocks::before {
+      bottom: 0; }
+  .table .table_chest {
+    position: relative; }
+    .table .table_chest .ribs {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 183px);
+      column-gap: 150px;
+      padding: 15px 0px; }
+      .table .table_chest .ribs p {
+        margin-bottom: 0; }
+      .table .table_chest .ribs .chest-bone {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 0;
+        border-left: 1px solid gray;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%); }
+      .table .table_chest .ribs .rib {
+        position: relative;
+        background: white; }
+        .table .table_chest .ribs .rib .rib-connector {
+          position: absolute;
+          width: 37px;
+          height: 0;
+          border-top: 1px solid gray;
+          top: 50%;
+          left: 126%;
+          transform: rotate(-45deg) translateY(-10px) translateX(10px); }
+        .table .table_chest .ribs .rib .rib-border {
+          position: absolute;
+          right: calc( 100% + 51px);
+          top: -50%;
+          height: calc( 100% + 60px);
+          width: 0;
+          border-left: 1px solid gray; }
+        .table .table_chest .ribs .rib:nth-child(2) .rib-connector {
+          transform: rotate(45deg) translateY(-10px) translateX(-10px);
+          right: 126%;
+          left: unset; }
+        .table .table_chest .ribs .rib:nth-child(2) .rib-border {
+          left: calc( 100% + 51px); }
+        .table .table_chest .ribs .rib::after, .table .table_chest .ribs .rib::before {
+          position: absolute;
+          content: "";
+          height: 0;
+          width: 50px;
+          border-top: 1px solid gray;
+          top: 50%;
+          transform: translateY(-50%); }
+        .table .table_chest .ribs .rib::after {
+          left: 101%; }
+        .table .table_chest .ribs .rib::before {
+          right: 101%; }
+      .table .table_chest .ribs:nth-child(3) {
+        padding-top: 30px; }
+        .table .table_chest .ribs:nth-child(3) .rib .rib-border {
+          height: calc( 50% + 30px);
+          transform: translateX(0);
+          top: calc( 50% - 1px); }
+      .table .table_chest .ribs:last-child .chest-bone {
+        height: calc( 50% - 25px); }
+      .table .table_chest .ribs:last-child .rib .rib-border {
+        height: calc( 50% + 30px);
+        transform: translateX(0);
+        top: -30px; }
+    .table .table_chest .border-block {
+      position: absolute;
+      display: block;
+      writing-mode: tb-rl;
+      transform: scale(-1, -1); }
+      .table .table_chest .border-block p {
+        margin-bottom: 0;
+        font-weight: bold !important; }
+      .table .table_chest .border-block:after {
+        position: absolute;
+        content: "";
+        height: 0;
+        width: 55px;
+        border-top: 1px solid gray; }
+      .table .table_chest .border-block:nth-child(1) {
+        right: calc( 100% + 100px);
+        top: 50%;
+        transform: scale(-1, -1) translateY(50%); }
+        .table .table_chest .border-block:nth-child(1)::after {
+          right: 100%; }
+      .table .table_chest .border-block:nth-child(2) {
+        left: calc( 100% + 100px);
+        top: 50%;
+        transform: scale(-1, -1) translateY(50%); }
+        .table .table_chest .border-block:nth-child(2)::after {
+          left: 100%; }
+
 /*# sourceMappingURL=style.css.map */

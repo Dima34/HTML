@@ -9,3 +9,12 @@ function ibg(){
 }
     
 ibg();
+
+let upBtn = document.querySelector(".up-btn");
+if(upBtn){
+    upBtn.style.top = window.scrollY + window.innerHeight -200 + "px";
+
+    window.addEventListener("scroll", ()=>{
+        upBtn.style.top = window.scrollY + window.innerHeight -200 + "px";
+    })
+}
