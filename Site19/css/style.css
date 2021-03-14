@@ -1,0 +1,162 @@
+/* open-sans-300 - latin_greek-ext_greek_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-300.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-300.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-300.woff2") format("woff2"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-300.woff") format("woff"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-300.ttf") format("truetype"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-300.svg#OpenSans") format("svg");
+  /* Legacy iOS */ }
+
+/* open-sans-regular - latin_greek-ext_greek_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-regular.woff2") format("woff2"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-regular.woff") format("woff"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-regular.ttf") format("truetype"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */ }
+
+/* open-sans-600 - latin_greek-ext_greek_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-600.woff2") format("woff2"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-600.woff") format("woff"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-600.ttf") format("truetype"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-600.svg#OpenSans") format("svg");
+  /* Legacy iOS */ }
+
+/* open-sans-700 - latin_greek-ext_greek_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-700.woff2") format("woff2"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-700.woff") format("woff"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-700.ttf") format("truetype"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-700.svg#OpenSans") format("svg");
+  /* Legacy iOS */ }
+
+/* open-sans-800 - latin_greek-ext_greek_cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-800.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-800.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-800.woff2") format("woff2"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-800.woff") format("woff"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-800.ttf") format("truetype"), url("../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-800.svg#OpenSans") format("svg");
+  /* Legacy iOS */ }
+
+.wrapper {
+  max-width: 1333px;
+  margin: 0 auto; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.active-x {
+  left: 0 !important; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------========HEADER========------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+header {
+  position: absolute;
+  width: 100%;
+  padding-top: 62px; }
+  header .wrapper {
+    display: flex;
+    flex-direction: row-reverse; }
+    header .wrapper .header-burger {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      header .wrapper .header-burger .burger-text {
+        font-family: 'Open Sans' !important;
+        font-weight: 400 !important;
+        font-size: 30px;
+        margin-right: 29px; }
+      header .wrapper .header-burger .burger-image {
+        cursor: pointer; }
+  header .header-burger-menu {
+    position: absolute;
+    left: calc(100% + 400px);
+    top: 0;
+    background: #FFE76A;
+    width: 100%;
+    height: 100vh;
+    transition-duration: 1s; }
+    header .header-burger-menu .burger-menu-svg {
+      height: 100vh;
+      position: absolute;
+      right: 100%; }
+    header .header-burger-menu .wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; }
+      header .header-burger-menu .wrapper .burger_header {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 62px;
+        top: 0;
+        left: 0; }
+        header .header-burger-menu .wrapper .burger_header .burger-close {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          cursor: pointer; }
+          header .header-burger-menu .wrapper .burger_header .burger-close .close-text {
+            font-family: 'Open Sans' !important;
+            font-weight: 400 !important;
+            font-size: 30px;
+            margin-right: 29px; }
+      header .header-burger-menu .wrapper .burger_itemlist {
+        position: relative;
+        z-index: 2; }
+        header .header-burger-menu .wrapper .burger_itemlist .burger_item {
+          text-align: center;
+          margin-bottom: 11px; }
+        header .header-burger-menu .wrapper .burger_itemlist .burger_item a {
+          font-family: 'Open Sans' !important;
+          font-weight: 700 !important;
+          font-size: 60px;
+          line-height: 82px;
+          color: white;
+          outline: none;
+          transition: .3s;
+          position: relative; }
+          header .header-burger-menu .wrapper .burger_itemlist .burger_item a::after {
+            content: url(../img/svg/burgerItem-oval.svg);
+            opacity: 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -43%); }
+          header .header-burger-menu .wrapper .burger_itemlist .burger_item a:hover {
+            color: black; }
+          header .header-burger-menu .wrapper .burger_itemlist .burger_item a:hover::after {
+            opacity: 1; }
+  header .header-burger-menu.active-x .burger_header .burger-logo, header .header-burger-menu.active-x .burger_header .burger-close {
+    animation-delay: 4s;
+    animation: itemShow 2s ease-in-out; }
+
+@keyframes itemShow {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes setHeight {}
+
+/*# sourceMappingURL=style.css.map */
