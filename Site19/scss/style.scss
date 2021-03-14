@@ -180,6 +180,8 @@ header{
                 .burger_item{
                     text-align: center;
                     margin-bottom: 11px;
+                    transform:translateX(200%);
+                    opacity: 0;
                 }
 
                 .burger_item a{
@@ -202,11 +204,9 @@ header{
 
                     &:hover{
                         color: black;
-
                     }
 
                     &:hover::after{
-                        
                         opacity: 1;
                     }
                 }
@@ -232,11 +232,20 @@ header{
     }
 }
 
+.cursor{
+    width: 50px;
+    height: 50px;
+    background: red;
+    position: absolute;
+    border-radius: 50%;
+    transition-duration: .3s;
+}
+
 @keyframes itemShow{
     0%{opacity: 0;}
     100%{opacity: 1;}
 }
 
 @keyframes setHeight{
-    
+
 }

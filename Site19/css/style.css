@@ -126,7 +126,9 @@ header {
         z-index: 2; }
         header .header-burger-menu .wrapper .burger_itemlist .burger_item {
           text-align: center;
-          margin-bottom: 11px; }
+          margin-bottom: 11px;
+          transform: translateX(200%);
+          opacity: 0; }
         header .header-burger-menu .wrapper .burger_itemlist .burger_item a {
           font-family: 'Open Sans' !important;
           font-weight: 700 !important;
@@ -150,6 +152,14 @@ header {
   header .header-burger-menu.active-x .burger_header .burger-logo, header .header-burger-menu.active-x .burger_header .burger-close {
     animation-delay: 4s;
     animation: itemShow 2s ease-in-out; }
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  background: red;
+  position: absolute;
+  border-radius: 50%;
+  transition-duration: .3s; }
 
 @keyframes itemShow {
   0% {
