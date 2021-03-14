@@ -46,8 +46,9 @@ if(OpenBtn){
         for (let i = 0; i < burgerItems.length; i++) {
             opacityReversedCounter(burgerItems[i],5);
             setTimeout(() => {
+                burgerItems[i].style.transitionDuration = "0";
                 burgerItems[i].style.transform = "translateX(200%)";
-            }, 500);
+            }, 200);
         }        
     });
 }
@@ -81,15 +82,16 @@ opacityReversedCounter = (element,speed) =>{
 // Cursor
 // 
 
-let cursorBig = document.querySelector(".cursor-big");
-let cursorSmall = document.querySelector(".cursor-small");
+let cursor = document.querySelector(".cursor");
 
 
-
-window.requestAnimationFrame(()=>{
-    window.addEventListener("mousemove", (e)=>{
-        cursorBig.style.left = e.clientX+"px";
-        cursorBig.style.top = e.clientY+"px";
-    });
+window.addEventListener("mousemove", (e)=>{
+    cursor.style.left = e.clientX+"px";
+    cursor.style.top = e.clientY+"px";
+});
     
-})
+
+
+
+
+
