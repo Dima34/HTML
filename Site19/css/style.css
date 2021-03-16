@@ -129,6 +129,20 @@ header {
           margin-bottom: 11px;
           transform: translateX(200%);
           opacity: 0; }
+          header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(1) a:hover::after {
+            content: url(../img/svg/item-oval1.svg); }
+          header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(2) a:hover::after {
+            content: url(../img/svg/item-oval2.svg); }
+          header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(3) a:hover::after {
+            content: url(../img/svg/item-oval3.svg); }
+          header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(4) a:hover::after {
+            content: url(../img/svg/item-oval4.svg); }
+          header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(5) a:hover::after {
+            content: url(../img/svg/item-oval5.svg); }
+          header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(6) a:hover::after {
+            content: url(../img/svg/item-oval6.svg); }
+          header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(7) a:hover::after {
+            content: url(../img/svg/item-oval7.svg); }
         header .header-burger-menu .wrapper .burger_itemlist .burger_item a {
           font-family: 'Open Sans' !important;
           font-weight: 700 !important;
@@ -137,9 +151,9 @@ header {
           color: white;
           outline: none;
           transition: .3s;
-          position: relative; }
+          position: relative;
+          overflow: visible; }
           header .header-burger-menu .wrapper .burger_itemlist .burger_item a::after {
-            content: url(../img/svg/burgerItem-oval.svg);
             opacity: 0;
             position: absolute;
             left: 50%;
@@ -156,21 +170,22 @@ header {
 .cursor {
   width: 25px;
   height: 25px;
-  background: #FFE76A;
   position: absolute;
   border-radius: 50%;
-  transition-duration: .15s;
-  transform: translateX(-50%) translateY(-50%);
+  transition-duration: .1s;
+  transform: translateX(-75%) translateY(-80%);
   pointer-events: none;
   z-index: 9999;
   mix-blend-mode: difference; }
+
+.mask-1 {
+  height: 300px;
+  clip-path: url(.mask2); }
 
 @keyframes itemShow {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
-
-@keyframes setHeight {}
 
 /*# sourceMappingURL=style.css.map */

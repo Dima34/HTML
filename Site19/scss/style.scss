@@ -182,6 +182,34 @@ header{
                     margin-bottom: 11px;
                     transform:translateX(200%);
                     opacity: 0;
+
+                    &:nth-child(1) a:hover::after{
+                        content: url(../img/svg/item-oval1.svg);
+                    }
+
+                    &:nth-child(2) a:hover::after{
+                        content: url(../img/svg/item-oval2.svg);
+                    }
+
+                    &:nth-child(3) a:hover::after{
+                        content: url(../img/svg/item-oval3.svg);
+                    }
+
+                    &:nth-child(4) a:hover::after{
+                        content: url(../img/svg/item-oval4.svg);
+                    }
+
+                    &:nth-child(5) a:hover::after{
+                        content: url(../img/svg/item-oval5.svg);
+                    }
+
+                    &:nth-child(6) a:hover::after{
+                        content: url(../img/svg/item-oval6.svg);
+                    }
+
+                    &:nth-child(7) a:hover::after{
+                        content: url(../img/svg/item-oval7.svg);
+                    }
                 }
 
                 .burger_item a{
@@ -192,9 +220,10 @@ header{
                     outline: none;
                     transition: .3s;
                     position: relative;
+                    overflow: visible;
 
                     &::after{
-                        content: url(../img/svg/burgerItem-oval.svg);
+                        // content: url(../img/svg/item-oval1.svg);
                         opacity: 0;
                         position: absolute;
                         left: 50%;
@@ -235,11 +264,10 @@ header{
 .cursor{
     width: 25px;
     height: 25px;
-    background: #FFE76A;
     position: absolute;
     border-radius: 50%;
-    transition-duration: .15s;
-    transform: translateX(-50%) translateY(-50%);
+    transition-duration: .1s;
+    transform: translateX(-75%) translateY(-80%);
     pointer-events: none;
     z-index: 9999;
     mix-blend-mode: difference;
@@ -249,11 +277,12 @@ img:hover ~ .cursor{
 
 }
 
+.mask-1{
+    height: 300px;
+    clip-path: url(.mask2)
+}
+
 @keyframes itemShow{
     0%{opacity: 0;}
     100%{opacity: 1;}
-}
-
-@keyframes setHeight{
-
 }
