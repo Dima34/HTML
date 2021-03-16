@@ -89,6 +89,14 @@ window.addEventListener("mousemove", (e)=>{
     cursor.style.left = e.clientX+"px";
     cursor.style.top = e.clientY+"px";
 });
+
+document.onmouseleave = function(event) {
+    cursor.style.display = "none"
+};
+
+document.onmouseenter = function(event) {
+    cursor.style.display = "block"
+};
     
 
 
