@@ -132,13 +132,16 @@ header {
           header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(1) a:hover::after {
             content: url(../img/svg/item-oval1.svg); }
           header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(2) a:hover::after {
-            content: url(../img/svg/item-oval2.svg); }
+            content: url(../img/svg/item-oval2.svg);
+            top: 59%; }
           header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(3) a:hover::after {
-            content: url(../img/svg/item-oval3.svg); }
+            content: url(../img/svg/item-oval3.svg);
+            top: 58%; }
           header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(4) a:hover::after {
             content: url(../img/svg/item-oval4.svg); }
           header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(5) a:hover::after {
-            content: url(../img/svg/item-oval5.svg); }
+            content: url(../img/svg/item-oval5.svg);
+            top: 59%; }
           header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(6) a:hover::after {
             content: url(../img/svg/item-oval6.svg); }
           header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(7) a:hover::after {
@@ -147,7 +150,7 @@ header {
           font-family: 'Open Sans' !important;
           font-weight: 700 !important;
           font-size: 60px;
-          line-height: 82px;
+          line-height: 95px;
           color: white;
           outline: none;
           transition: .3s;
