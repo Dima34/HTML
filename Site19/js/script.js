@@ -87,7 +87,7 @@ let cursor = document.querySelector(".cursor");
 
 window.addEventListener("mousemove", (e)=>{
     cursor.style.left = e.clientX+"px";
-    cursor.style.top = e.clientY+"px";
+    cursor.style.top = e.clientY+ window.pageYOffset +"px";
 });
 
 document.onmouseleave = function(event) {
@@ -97,9 +97,32 @@ document.onmouseleave = function(event) {
 document.onmouseenter = function(event) {
     cursor.style.display = "block"
 };
+
+
+// 
+// Parallax
+// 
+
+mouseParallax = (elem)=> {
+    // Add event listener
+    document.addEventListener("mousemove", parallax);
     
+    // Magic happens here
+    function parallax(e) {
+        let _w = window.innerWidth/2;
+        let _h = window.innerHeight/2;
+        let _mouseX = e.clientX;
+        let _mouseY = e.clientY;
+        let factor = -0.007
+        let _depth1 = `${(_mouseX - _w) * factor}% ,${(_mouseY - _h) * factor}%`;
+        
+        let x = `${_depth1}`;
+        elem.style.transform = `translate(${x})`;
+    }
+
+};
 
 
-
+mouseParallax(document.querySelector(".line1_ring"));
 
 

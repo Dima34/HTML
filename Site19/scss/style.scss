@@ -83,6 +83,35 @@ body{
     left: 0 !important;
 }
 
+.uplined{
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        right: calc(100% - 8px);
+        top: 5px;
+        background: #FFE76A;
+    }
+}
+
+.orange{
+    color: #FFE76A !important;
+}
+
+.bordered-text{
+    color: white !important;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+*{
+    color: black;
+    box-sizing: border-box;
+}
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -95,6 +124,7 @@ header{
     position: absolute;
     width: 100%;
     padding-top: 62px;
+    z-index: 9999;
 
     .wrapper{
         display: flex;
@@ -280,12 +310,326 @@ img:hover ~ .cursor{
 
 }
 
-.mask-1{
-    height: 300px;
-    clip-path: url(.mask2)
-}
-
 @keyframes itemShow{
     0%{opacity: 0;}
     100%{opacity: 1;}
+}
+
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------======MAIN INTRO======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.intro{
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content min-content;
+        padding-top: 123px;
+
+        .intro_left{
+            position: relative;
+            min-height: 780px;
+
+            .intro_logo{
+                margin-bottom: 63px;
+                width: 79px;
+                height: auto;
+            }
+
+            .intro_uptitle{
+                @include Open(400);
+                font-size:30px;
+                line-height: 41px;
+                margin-bottom: 27px;
+            }
+
+            .intro_title{
+                @include Open(700);
+                font-size: 90px;
+                line-height: 120px;
+                color: black;
+                margin-bottom: 27px;
+            }
+
+            .intro_subtitle{
+                font-size: 35px;
+                line-height: 38px;
+                @include Open(300);
+                max-width: 513px;
+            }
+
+
+            &::after{
+                content: url(../img/svg/main-intro-circle.svg);
+                position: absolute;
+                left: -106px;
+                top: -113px;
+            }
+        }
+
+        .intro_right{
+            @include Open(300);
+            font-size: 40px;
+            line-height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----======MAIN WHAT WE DO=====----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.what-we-do{
+    position: relative;
+    min-height: 490px;
+    padding-bottom: 75px;
+
+    .wrapper{
+
+        .what-we-do_title{
+            @include Open(800);
+            font-size: 66px;
+            line-height: 140px;
+        }
+
+        .what-we-do_subtitle{
+            @include Open(300);
+            max-width: 859px;
+            font-size: 40px;
+            line-height: 70px;
+            letter-spacing: 0.01em;
+        }
+
+    }
+
+    .shape{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======OUR GOALS======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.our-goals{
+    position: relative;
+    margin-top: -13px;
+
+    .our-goals-waves{
+        position: absolute;
+        left: 0;
+        bottom: calc(100% - 15px);
+        width: 100%;
+    }
+
+    &::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 98%;
+        left: 0;
+        bottom: 0;
+        background: #FFE76A;
+        z-index: -1;
+    }
+
+    .wrapper{
+        padding: 0 67px 0 87px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 35px;
+
+        .goal{
+
+            .goal_header{
+                display: flex;
+                margin-bottom: 7px; 
+
+                .header_num{
+                    font-size: 40px;
+                    letter-spacing: 0.02em;
+                    line-height: 80px;
+                    margin-right: 47px;
+                    @include Open(600);
+                    position: relative;
+
+                    &::after{
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                    } 
+                }
+
+                .header_title{
+                    text-transform: uppercase;
+                    font-size: 40px;
+                    line-height: 80px;
+                    letter-spacing: 0.02em;
+                    @include Open(600);
+                }
+            }
+
+            .goal_text{
+                padding-left: 93px;
+                font-size: 25px;
+                line-height: 50px;
+                @include Open(300);
+                letter-spacing: 0.02em;
+            }
+
+
+            &:nth-child(3n+1) .goal_header .header_num, &:nth-child(4n+2) .goal_header .header_title,&:nth-child(4n+3) .goal_header .header_title{
+                color: white;
+            }
+
+            &:nth-child(4n+1) .goal_header .header_num::after{
+                content: url(../img/svg/goal-ring1.svg);
+                transform: translate(-51%, -39%);
+            }
+
+            &:nth-child(4n+2) .goal_header .header_num::after{
+                content: url(../img/svg/goal-ring2.svg);
+                transform: translate(-50%, -41%) ;
+            }
+
+            &:nth-child(4n+3) .goal_header .header_num::after{
+                content: url(../img/svg/goal-ring3.svg);
+                transform: translate(-50%, -41%);
+            }
+
+            &:nth-child(4n+4) .goal_header .header_num::after{
+                content: url(../img/svg/goal-ring4.svg);
+                transform: translate(-50%, -38%);
+            }
+        }
+
+    }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------======GHOST TEXT======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.ghost-text{
+    background: #FFE76A;
+    padding-top: 19px;
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        p{
+            font-size: 120px;
+            line-height: 138px;
+            @include Open(700);
+            letter-spacing: 0.02em;
+            color: #FFE76A;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgba(255, 255, 255, 0.75);;
+            letter-spacing: 0.02em;
+
+            &:first-child{
+                margin-left: 1px;
+            }
+
+            &:last-child{
+                display: block;
+                margin-right: 2px;
+                margin-left: auto;
+                margin-top: -50px;
+            }
+        }
+
+        
+    }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------========WHY WE========------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.why-we{
+    background: #FFE76A;
+    position: relative;
+    min-height: 600px;
+
+    .wrapper{
+
+        .line{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .line1{
+            padding: 0 74px 0 80px ;
+
+            .left{
+                padding: 84px 28px 0 112px;
+                width: 540px;
+                position: relative;
+                z-index: 2;
+
+                h2{
+                    position: relative;
+                    color: white;
+                    z-index: 1;
+                    @include Open(700);
+                    font-size: 80px;
+                    line-height: 110px;
+                }
+                
+
+                &::after{
+                    position: absolute;
+                    content: url(../img/svg/why-we-oval1.svg);
+                    left: 0;
+                    top: 0;
+                    z-index: 0;
+                }
+
+                .line1_ring{
+                    position: absolute;
+                    top: 0;
+                    left: -50px;
+                    z-index: -1;
+                    transform: translate(0% , 0%);
+                }
+            }
+        }
+
+    }
+
+    .shape{
+        position: absolute;
+        right: 0; 
+        top: 146px;
+    }
+
 }
