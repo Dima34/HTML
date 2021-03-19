@@ -1,3 +1,11 @@
+console.log('%cDeveloped by Djigit & yur4ik96', 'color: #c434c4; font-size: 50px ');
+
+console.log(
+  '%cTG: @Djigit34 / @yura_k18',
+  'color: #c434c4; background: #eee; font-size: 30px '
+);
+
+
 function ibg(){
 
     let ibg=document.querySelectorAll(".ibg");
@@ -9,8 +17,6 @@ function ibg(){
 }
     
 ibg();
-
-
 
 // 
 // Burger
@@ -189,3 +195,107 @@ if(tickerBlock.length > 0){
         
     })
 }
+
+//
+//  Animation
+//
+
+let loadingTime = 2500;
+
+document.addEventListener("DOMContentLoaded", 
+()=>{
+    setTimeout(() => {
+        scrolling()
+    }, loadingTime);
+    
+});
+window.addEventListener('scroll',scrolling);
+
+
+function isPartiallyVisible(el){
+    var elementBoundary = el.getBoundingClientRect();
+    var top = elementBoundary.top;
+    var bottom = elementBoundary.bottom;
+    var height = elementBoundary.height;
+
+    return((top + height >= 0) && (height + window.innerHeight >= bottom));
+}
+function isFullyVisible(el) {
+    var elementBoundary = el.getBoundingClientRect();
+    
+    var top = elementBoundary.top;
+    var bottom = elementBoundary.bottom;
+
+    return ((top >= 0) && (bottom <= window.innerHeight));
+}
+
+// Elements
+function animPartiallyVisible(elem,Class,duration = undefined){
+    if(isPartiallyVisible(elem)){
+        elem.classList.add(Class);
+    }
+    if(duration != undefined){
+        elem.style.animationDuration = duration;
+    }
+}
+function animPartiallyVisibleALL(elem,Class,duration = undefined){
+    
+    if(elem){
+
+        for(var i = 0; i < elem.length;i++){
+            if(isPartiallyVisible(elem[i])){
+                elem[i].classList.add(Class);
+            }
+            if(duration != undefined){
+                elem[i].style.animationDuration = duration;
+            }
+        }
+
+    }
+    
+    
+}
+function animPartiallyVisibleReadress(elem,toElem,Class){
+    if(isPartiallyVisible(elem)){
+        toElem.classList.add(Class);
+    }
+}
+function animPartiallyVisibleRaALL(elem,toElem,Class,arrLen){
+    for(var i = 0; i < arrLen;i++){
+        if(isPartiallyVisible(elem[i])){
+            toElem[i].classList.add(Class);
+        }
+    }
+    
+}
+function animPartiallyVisibleRaChildALL(elem,toElem,Class){
+    for(var i = 0; i < toElem.length;i++){
+        if(isPartiallyVisible(elem)){
+            toElem[i].classList.add(Class);
+        }
+    }
+    
+}
+function animPartiallyVisibleRaChild(elem,toElem,Class){
+    if(isPartiallyVisible(elem)){
+        toElem.classList.add(Class);
+    }
+}
+
+function queryA(clas){
+    tmp = document.querySelectorAll(clas);
+    return tmp;
+}
+
+let first = true;
+
+function scrolling(e){
+    animPartiallyVisibleALL(queryA(".goal:nth-child(2n-1)"),"animate__fadeInLeft", "2s");
+    animPartiallyVisibleALL(queryA(".goal:nth-child(2n)"),"animate__fadeInRight", "2s");
+    animPartiallyVisibleALL(queryA(".why-we .line1"),"animate__fadeInLeft", "2s");
+    animPartiallyVisibleALL(queryA(".why-we .line2"),"animate__fadeInRight", "2s");
+}
+
+
+
+
