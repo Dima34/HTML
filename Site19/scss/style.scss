@@ -541,14 +541,16 @@ img:hover ~ .cursor{
 /* ------------------------------------ */
 
 .ghost-text{
-    background: #FFE76A;
     padding-top: 19px;
     position: relative;
-    z-index: 2 ;
+    z-index: 3 ;
 
     .wrapper{
         display: flex;
         flex-direction: column;
+        position: relative;
+        z-index: 2;
+
         p{
             font-size: 120px;
             line-height: 138px;
@@ -572,6 +574,17 @@ img:hover ~ .cursor{
         }
 
         
+    }
+
+    &::after{
+        content: "";
+        width: 100%;
+        height: calc(100% - 70px);
+        
+        background: #FFE76A;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 
@@ -675,7 +688,6 @@ img:hover ~ .cursor{
         content: url(../img/svg/why-we-stars.svg);
     }
 }
-
 
 .underlined{
     position: relative;
@@ -821,8 +833,6 @@ img:hover ~ .cursor{
     }
 
 }
-
-
 
 /* ------------------------------------ */
 /* ------------------------------------ */

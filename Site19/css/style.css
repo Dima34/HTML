@@ -379,13 +379,14 @@ header {
 /* ------------------------------------ */
 /* ------------------------------------ */
 .ghost-text {
-  background: #FFE76A;
   padding-top: 19px;
   position: relative;
-  z-index: 2; }
+  z-index: 3; }
   .ghost-text .wrapper {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative;
+    z-index: 2; }
     .ghost-text .wrapper p {
       font-size: 120px;
       line-height: 138px;
@@ -403,6 +404,14 @@ header {
         margin-right: 2px;
         margin-left: auto;
         margin-top: -50px; }
+  .ghost-text::after {
+    content: "";
+    width: 100%;
+    height: calc(100% - 70px);
+    background: #FFE76A;
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
