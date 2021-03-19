@@ -479,7 +479,8 @@ header {
   position: relative;
   min-height: 600px;
   margin-top: -70px;
-  padding-bottom: 360px; }
+  padding-bottom: 360px;
+  z-index: 2; }
   .why-we .wrapper .line {
     display: flex;
     flex-direction: row; }
