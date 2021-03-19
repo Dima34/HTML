@@ -100,10 +100,32 @@ document.onmouseenter = function(event) {
 
 
 // 
+// Crooked letters
+// 
+
+let croockedBlock = document.querySelectorAll(".crooked-letters");
+
+if(croockedBlock.length > 0){
+    
+    croockedBlock.forEach((e)=>{
+        let tmp = e.innerHTML;
+
+        e.innerHTML = "";
+
+        for (let i = 0; i < tmp.length; i++) {
+            
+            e.innerHTML+=`<span>${tmp[i]}</span>`
+            
+        }
+    })
+}
+
+
+// 
 // Parallax
 // 
 
-mouseParallax = (elem)=> {
+mouseParallax = (elem, factor = 0.1, reversed = false)=> {
     // Add event listener
     document.addEventListener("mousemove", parallax);
     
@@ -113,16 +135,57 @@ mouseParallax = (elem)=> {
         let _h = window.innerHeight/2;
         let _mouseX = e.clientX;
         let _mouseY = e.clientY;
-        let factor = -0.007
-        let _depth1 = `${(_mouseX - _w) * factor}% ,${(_mouseY - _h) * factor}%`;
+        let _depth;
+
+        if(reversed == true){
+            _depth = `${(_mouseX - _w) * -factor}% ,${(_mouseY - _h) * -factor}%`;
+        }
+        else{
+            _depth = `${(_mouseX - _w) * factor}% ,${(_mouseY - _h) * factor}%`;
+        }
+
         
-        let x = `${_depth1}`;
+        
+        let x = `${_depth}`;
         elem.style.transform = `translate(${x})`;
     }
 
 };
 
 
-mouseParallax(document.querySelector(".line1_ring"));
+mouseParallax(document.querySelector(".line1_ring"), 0.007);
+mouseParallax(document.querySelector(".line2_ring"), 0.001, true);
+mouseParallax(document.querySelector(".line2_explosion"), 0.001, true);
 
 
+
+// 
+// Ticker
+// 
+
+let tickerBlock = document.querySelectorAll(".ticker");
+
+if(tickerBlock.length > 0){
+    tickerBlock.forEach((elem)=>{
+        let tickerLine = elem.querySelector(".ticker_line")
+        let tmp = elem.querySelector("p").cloneNode(true);
+        
+        tickerLine.innerHTML = "";
+
+        for (let i = 0; i < 3; i++) {
+            tickerLine.appendChild(tmp.cloneNode(true));
+        }
+        
+        let strokeWidth = getComputedStyle(tickerLine.querySelector("p")).width.slice(0, -2);
+        let tickAmount = 0;
+        tiker = setInterval(()=>{
+            tickerLine.style.transform = `translateX(${tickAmount}px)`;
+            tickAmount++;
+
+            if(tickAmount > strokeWidth){
+                tickAmount = 0;
+            }
+        },7)
+        
+    })
+}
