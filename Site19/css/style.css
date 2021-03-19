@@ -600,7 +600,8 @@ header {
 .main_lines {
   margin-top: -135px;
   position: relative;
-  right: 41px; }
+  right: 41px;
+  z-index: 2; }
   .main_lines .line1 {
     background: #FFFFFF;
     border: 1.6px solid #000000;
