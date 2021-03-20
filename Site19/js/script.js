@@ -188,7 +188,7 @@ if(tickerBlock.length > 0){
             tickerLine.style.transform = `translateX(${tickAmount}px)`;
             tickAmount++;
 
-            if(tickAmount > strokeWidth){
+            if(tickAmount = strokeWidth){
                 tickAmount = 0;
             }
         },7)
