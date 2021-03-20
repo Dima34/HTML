@@ -661,12 +661,16 @@ footer {
       letter-spacing: 0.02em;
       margin-bottom: 62px;
       position: relative;
-      animation: BtnBounce 2s linear infinite; }
+      animation: BtnBounce 2s linear infinite;
+      transition: .3s; }
       footer .wrapper .footer-centered-text::after {
         position: absolute;
         content: url(../img/svg/footer-up-btn-circle-black.svg);
         left: -25px;
         top: -18px; }
+      footer .wrapper .footer-centered-text:hover {
+        color: #FFE76A;
+        animation-play-state: paused; }
     footer .wrapper .footer_info {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

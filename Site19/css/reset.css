@@ -92,7 +92,7 @@ html {
   /* 2 */ }
 
 a:focus {
-  outline: thin dotted; }
+  outline: none; }
 
 a:active,
 a:hover {

@@ -943,12 +943,18 @@ footer{
             margin-bottom: 62px;
             position: relative;
             animation: BtnBounce 2s linear infinite;
+            transition: .3s;
 
             &::after{
                 position: absolute;
                 content: url(../img/svg/footer-up-btn-circle-black.svg);
                 left: -25px;
                 top: -18px;
+            }
+
+            &:hover{
+                color: #FFE76A;
+                animation-play-state: paused;
             }
         }
 
