@@ -162,6 +162,10 @@ mouseParallax = (elem, factor = 0.1, reversed = false)=> {
 mouseParallax(document.querySelector(".line1_ring"), 0.007);
 mouseParallax(document.querySelector(".line2_ring"), 0.001, true);
 mouseParallax(document.querySelector(".line2_explosion"), 0.001, true);
+mouseParallax(document.querySelector(".goal-ring.ring1"), 0.007);
+mouseParallax(document.querySelector(".goal-ring.ring2"), 0.007);
+mouseParallax(document.querySelector(".goal-ring.ring3"), 0.007);
+mouseParallax(document.querySelector(".goal-ring.ring4"), 0.007);
 
 
 
@@ -184,7 +188,8 @@ if(tickerBlock.length > 0){
         
         let strokeWidth = getComputedStyle(tickerLine.querySelector("p")).width.slice(0, -2);
         let tickAmount = 0;
-        tickerLine.style.left = -strokeWidth*2+"px";
+
+        tickerLine.style.left = -strokeWidth+"px";
 
         tiker = setInterval(()=>{
             tickerLine.style.transform = `translateX(${tickAmount}px)`;

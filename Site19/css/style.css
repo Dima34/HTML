@@ -328,7 +328,8 @@ header {
     padding: 0 67px 0 87px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 35px; }
+    row-gap: 93px;
+    column-gap: 45px; }
     .our-goals .wrapper .goal .goal_header {
       display: flex;
       margin-bottom: 7px; }
@@ -340,10 +341,20 @@ header {
         font-family: 'Open Sans' !important;
         font-weight: 600 !important;
         position: relative; }
-        .our-goals .wrapper .goal .goal_header .header_num::after {
-          position: absolute;
-          left: 50%;
-          top: 50%; }
+        .our-goals .wrapper .goal .goal_header .header_num .goal-ring {
+          position: absolute; }
+        .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring1 {
+          left: -54%;
+          top: -4%; }
+        .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring2 {
+          left: -53%;
+          top: -12%; }
+        .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring3 {
+          left: -43%;
+          top: -9%; }
+        .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring4 {
+          left: -64%;
+          top: -3%; }
       .our-goals .wrapper .goal .goal_header .header_title {
         text-transform: uppercase;
         font-size: 40px;
@@ -360,18 +371,6 @@ header {
       letter-spacing: 0.02em; }
     .our-goals .wrapper .goal:nth-child(3n+1) .goal_header .header_num, .our-goals .wrapper .goal:nth-child(4n+2) .goal_header .header_title, .our-goals .wrapper .goal:nth-child(4n+3) .goal_header .header_title {
       color: white; }
-    .our-goals .wrapper .goal:nth-child(4n+1) .goal_header .header_num::after {
-      content: url(../img/svg/goal-ring1.svg);
-      transform: translate(-51%, -39%); }
-    .our-goals .wrapper .goal:nth-child(4n+2) .goal_header .header_num::after {
-      content: url(../img/svg/goal-ring2.svg);
-      transform: translate(-50%, -41%); }
-    .our-goals .wrapper .goal:nth-child(4n+3) .goal_header .header_num::after {
-      content: url(../img/svg/goal-ring3.svg);
-      transform: translate(-50%, -41%); }
-    .our-goals .wrapper .goal:nth-child(4n+4) .goal_header .header_num::after {
-      content: url(../img/svg/goal-ring4.svg);
-      transform: translate(-50%, -38%); }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -644,14 +643,20 @@ footer {
     align-items: center; }
     footer .wrapper .up-btn {
       display: block;
-      margin-bottom: 16px; }
+      margin-bottom: 67px; }
     footer .wrapper .footer-centered-text {
       font-family: 'Open Sans' !important;
       font-weight: 600 !important;
       font-size: 30px;
       line-height: 70px;
       letter-spacing: 0.02em;
-      margin-bottom: 22px; }
+      margin-bottom: 62px;
+      position: relative; }
+      footer .wrapper .footer-centered-text::after {
+        position: absolute;
+        content: url(../img/svg/footer-up-btn-circle-black.svg);
+        left: -25px;
+        top: -18px; }
     footer .wrapper .footer_info {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

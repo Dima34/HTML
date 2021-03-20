@@ -304,8 +304,6 @@ header{
     }
 }
 
-
-
 .cursor{
     width: 25px;
     height: 25px;
@@ -472,7 +470,8 @@ img:hover ~ .cursor{
         padding: 0 67px 0 87px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        row-gap: 35px;
+        row-gap: 93px;
+        column-gap: 45px;
 
         .goal{
 
@@ -488,11 +487,30 @@ img:hover ~ .cursor{
                     @include Open(600);
                     position: relative;
 
-                    &::after{
+                    .goal-ring{
                         position: absolute;
-                        left: 50%;
-                        top: 50%;
+                        
                     } 
+
+                    .goal-ring.ring1{
+                        left: -54%;
+                        top: -4%;
+                    }
+        
+                    .goal-ring.ring2{       
+                        left: -53%;
+                        top: -12%;
+                    }
+        
+                    .goal-ring.ring3{
+                        left: -43%;
+                        top: -9%;
+                    }
+        
+                    .goal-ring.ring4{
+                        left: -64%;
+                        top: -3%;
+                    }
                 }
 
                 .header_title{
@@ -517,25 +535,7 @@ img:hover ~ .cursor{
                 color: white;
             }
 
-            &:nth-child(4n+1) .goal_header .header_num::after{
-                content: url(../img/svg/goal-ring1.svg);
-                transform: translate(-51%, -39%);
-            }
-
-            &:nth-child(4n+2) .goal_header .header_num::after{
-                content: url(../img/svg/goal-ring2.svg);
-                transform: translate(-50%, -41%) ;
-            }
-
-            &:nth-child(4n+3) .goal_header .header_num::after{
-                content: url(../img/svg/goal-ring3.svg);
-                transform: translate(-50%, -41%);
-            }
-
-            &:nth-child(4n+4) .goal_header .header_num::after{
-                content: url(../img/svg/goal-ring4.svg);
-                transform: translate(-50%, -38%);
-            }
+            
         }
 
     }
@@ -925,7 +925,7 @@ footer{
 
         .up-btn{
             display: block;
-            margin-bottom: 16px;
+            margin-bottom: 67px;
         }
 
         .footer-centered-text{
@@ -933,7 +933,15 @@ footer{
             font-size: 30px;
             line-height: 70px;
             letter-spacing: 0.02em;
-            margin-bottom: 22px;
+            margin-bottom: 62px;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                content: url(../img/svg/footer-up-btn-circle-black.svg);
+                left: -25px;
+                top: -18px;
+            }
         }
 
         .footer_info{
@@ -953,7 +961,6 @@ footer{
                     line-height: 45px;
                     @include Open(300);
                     letter-spacing: 0.02em;
-
                 }
             }
 
