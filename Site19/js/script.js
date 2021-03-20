@@ -290,10 +290,10 @@ function queryA(clas){
 let first = true;
 
 function scrolling(e){
-    animPartiallyVisibleALL(queryA(".goal:nth-child(2n-1)"),"animate__fadeInLeft", "2s");
-    animPartiallyVisibleALL(queryA(".goal:nth-child(2n)"),"animate__fadeInRight", "2s");
-    animPartiallyVisibleALL(queryA(".why-we .line1"),"animate__fadeInLeft", "2s");
-    animPartiallyVisibleALL(queryA(".why-we .line2"),"animate__fadeInRight", "2s");
+    animPartiallyVisibleALL(queryA(".goal:nth-child(2n-1)"),"animate__fadeInLeft", "1s");
+    animPartiallyVisibleALL(queryA(".goal:nth-child(2n)"),"animate__fadeInRight", "1s");
+    animPartiallyVisibleALL(queryA(".why-we .line1"),"animate__fadeInLeft", "1s");
+    animPartiallyVisibleALL(queryA(".why-we .line2"),"animate__fadeInRight", "1s");
 }
 
 

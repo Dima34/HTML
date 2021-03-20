@@ -110,6 +110,8 @@ header {
         margin-right: 29px; }
       header .wrapper .header-burger .burger-image {
         cursor: pointer; }
+    header .wrapper .header-burger.dark .burger-text {
+      color: white; }
   header .header-burger-menu {
     position: absolute;
     left: calc(100% + 400px);
@@ -594,7 +596,6 @@ header {
     flex-shrink: 0;
     padding: 0 50px;
     white-space: nowrap;
-    min-width: 120%;
     width: fit-content !important; }
 
 .main_lines {
@@ -609,15 +610,12 @@ header {
     transform: rotate(4deg);
     position: absolute;
     text-align: center; }
-  .main_lines .line2 {
-    background: #000000;
-    transform: rotate(-4deg); }
   .main_lines .line1, .main_lines .line2 {
-    width: 120%;
+    min-width: 120%;
     margin-left: -10%;
     padding: 30px 0; }
     .main_lines .line1 p, .main_lines .line2 p {
-      font-size: 48px;
+      font-size: 52px;
       line-height: 70px;
       font-family: 'Open Sans' !important;
       font-weight: 600 !important;
@@ -625,6 +623,9 @@ header {
       color: #FFE76A;
       width: 100%;
       text-align: center; }
+  .main_lines .line2 {
+    background: #000000;
+    transform: rotate(-4deg); }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
