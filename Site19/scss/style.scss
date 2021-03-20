@@ -855,7 +855,8 @@ img:hover ~ .cursor{
     display: flex;
     flex-direction: row-reverse;
     position: relative;
-    // left: -100%;
+    left: -100%;
+    width: fit-content;
 
     p{
         flex-shrink: 0;

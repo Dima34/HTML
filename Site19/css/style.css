@@ -590,7 +590,9 @@ header {
 .ticker_line {
   display: flex;
   flex-direction: row-reverse;
-  position: relative; }
+  position: relative;
+  left: -100%;
+  width: fit-content; }
   .ticker_line p {
     flex-shrink: 0;
     padding: 0 50px;
