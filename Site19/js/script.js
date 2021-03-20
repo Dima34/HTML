@@ -189,16 +189,16 @@ if(tickerBlock.length > 0){
         let strokeWidth = getComputedStyle(tickerLine.querySelector("p")).width.slice(0, -2);
         let tickAmount = 0;
 
-        tickerLine.style.left = -strokeWidth+"px";
+        // tickerLine.style.left = -strokeWidth+"px";
 
-        tiker = setInterval(()=>{
-            tickerLine.style.transform = `translateX(${tickAmount}px)`;
-            tickAmount++;
+        // tiker = setInterval(()=>{
+        //     tickerLine.style.transform = `translateX(${tickAmount}px)`;
+        //     tickAmount++;
 
-            if(tickAmount >= strokeWidth){
-                tickAmount = 0;
-            }
-        },7)
+        //     if(tickAmount >= strokeWidth){
+        //         tickAmount = 0;
+        //     }
+        // },7)
         
     })
 }

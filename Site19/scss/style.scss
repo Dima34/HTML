@@ -316,10 +316,6 @@ header{
     mix-blend-mode: difference;
 }
 
-img:hover ~ .cursor{
-
-}
-
 @keyframes itemShow{
     0%{opacity: 0;}
     100%{opacity: 1;}
@@ -855,8 +851,9 @@ img:hover ~ .cursor{
     display: flex;
     flex-direction: row-reverse;
     position: relative;
-    left: -100%;
+    // left: -100%;
     width: fit-content;
+    animation: tickerLine 20s linear infinite;
 
     p{
         flex-shrink: 0;
@@ -865,6 +862,16 @@ img:hover ~ .cursor{
         // min-width: 120%;
         width: fit-content !important;
     }
+}
+
+@keyframes tickerLine{
+    0%{transform: translateX(-50%);}
+    100%{transform: translateX(0%);}
+}
+
+.burger-logo,.burger-close{
+    animation-delay: 4s;
+    
 }
 
 .main_lines{
@@ -935,6 +942,7 @@ footer{
             letter-spacing: 0.02em;
             margin-bottom: 62px;
             position: relative;
+            animation: BtnBounce 2s linear infinite;
 
             &::after{
                 position: absolute;
@@ -1005,4 +1013,10 @@ footer{
             }
         }
     }
+}
+
+@keyframes BtnBounce{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(5%);}
+    100%{transform: translateY(0);}
 }
