@@ -15,13 +15,14 @@ gulp.task("sass-compile", function(){
 })
 
 gulp.task('fileinclude', function() {
-    return gulp.src(['./src/index.html'])
+    return gulp.src(['./src/index.html','./src/about-us.html'])
       .pipe(fileinclude({
         prefix: '@@',
         basepath: '@file'
       }))
       .pipe(gulp.dest('./'));
-  });
+    });
+
 
 gulp.task("watch", function(){
     gulp.watch("./src/**/*.html", gulp.series("fileinclude")),
