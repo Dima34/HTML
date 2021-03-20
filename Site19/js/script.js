@@ -178,7 +178,7 @@ if(tickerBlock.length > 0){
         
         tickerLine.innerHTML = "";
 
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 4; i++) {
             tickerLine.appendChild(tmp.cloneNode(true));
         }
         

@@ -589,9 +589,8 @@ header {
 /* ------------------------------------ */
 .ticker_line {
   display: flex;
-  flex-direction: row;
-  position: relative;
-  left: -200%; }
+  flex-direction: row-reverse;
+  position: relative; }
   .ticker_line p {
     flex-shrink: 0;
     padding: 0 50px;
