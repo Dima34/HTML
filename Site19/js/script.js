@@ -184,6 +184,8 @@ if(tickerBlock.length > 0){
         
         let strokeWidth = getComputedStyle(tickerLine.querySelector("p")).width.slice(0, -2);
         let tickAmount = 0;
+        tickerLine.style.left = -strokeWidth*2+"px";
+
         tiker = setInterval(()=>{
             tickerLine.style.transform = `translateX(${tickAmount}px)`;
             tickAmount++;
