@@ -133,28 +133,31 @@ if(croockedBlock.length > 0){
 
 mouseParallax = (elem, factor = 0.1, reversed = false)=> {
     // Add event listener
-    document.addEventListener("mousemove", parallax);
+    if(elem){
+        document.addEventListener("mousemove", parallax);
     
-    // Magic happens here
-    function parallax(e) {
-        let _w = window.innerWidth/2;
-        let _h = window.innerHeight/2;
-        let _mouseX = e.clientX;
-        let _mouseY = e.clientY;
-        let _depth;
+        // Magic happens here
+        function parallax(e) {
+            let _w = window.innerWidth/2;
+            let _h = window.innerHeight/2;
+            let _mouseX = e.clientX;
+            let _mouseY = e.clientY;
+            let _depth;
 
-        if(reversed == true){
-            _depth = `${(_mouseX - _w) * -factor}% ,${(_mouseY - _h) * -factor}%`;
-        }
-        else{
-            _depth = `${(_mouseX - _w) * factor}% ,${(_mouseY - _h) * factor}%`;
-        }
+            if(reversed == true){
+                _depth = `${(_mouseX - _w) * -factor}% ,${(_mouseY - _h) * -factor}%`;
+            }
+            else{
+                _depth = `${(_mouseX - _w) * factor}% ,${(_mouseY - _h) * factor}%`;
+            }
 
-        
-        
-        let x = `${_depth}`;
-        elem.style.transform = `translate(${x})`;
+            
+            
+            let x = `${_depth}`;
+            elem.style.transform = `translate(${x})`;
+        }
     }
+    
 
 };
 

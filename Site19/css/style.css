@@ -78,9 +78,32 @@ body {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black; }
 
+.bordered-text-black {
+  color: black !important;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white; }
+
 * {
   color: black;
   box-sizing: border-box; }
+
+.black {
+  background-color: black; }
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.ibg > img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -723,5 +746,250 @@ footer {
     transform: translateY(10%); }
   100% {
     transform: translateY(0); } }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=======ABOUT INTRO=======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.about-intro .wrapper {
+  padding: 92px 81px 0 81px;
+  display: flex;
+  flex-direction: column; }
+  .about-intro .wrapper .intro-title {
+    display: inline-block;
+    font-size: 80px;
+    line-height: 140px;
+    font-family: 'Open Sans' !important;
+    font-weight: 800 !important;
+    color: white;
+    letter-spacing: 0.02em;
+    margin-bottom: 64px; }
+    .about-intro .wrapper .intro-title .bordered-text-black {
+      letter-spacing: 0.02em; }
+  .about-intro .wrapper p {
+    font-family: 'Open Sans' !important;
+    font-weight: 300 !important;
+    color: white; }
+  .about-intro .wrapper .intro-think {
+    max-width: 626px;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    align-self: flex-end;
+    margin-right: 44px;
+    margin-bottom: 64px; }
+    .about-intro .wrapper .intro-think .orange {
+      font-weight: 600 !important; }
+  .about-intro .wrapper .intro-where-we-from {
+    font-size: 25px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    margin-bottom: 25px; }
+    .about-intro .wrapper .intro-where-we-from .orange {
+      font-weight: 400; }
+  .about-intro .wrapper .intro-subtext {
+    align-self: flex-end;
+    margin-right: 138px;
+    max-width: 531px;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.01em; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======WHO IS WHO=======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.who-is-who {
+  position: relative; }
+  .who-is-who .who-is-who-shape {
+    position: absolute;
+    right: 0;
+    top: 330px; }
+  .who-is-who .wrapper {
+    padding: 0 87px 0 54px;
+    margin-top: 45px; }
+    .who-is-who .wrapper .block {
+      position: relative;
+      display: flex;
+      margin-bottom: 36px; }
+      .who-is-who .wrapper .block .left {
+        position: relative; }
+        .who-is-who .wrapper .block .left .ring {
+          position: absolute;
+          left: -8%;
+          top: 4.5%; }
+        .who-is-who .wrapper .block .left .image-group {
+          width: 467px;
+          height: 503px;
+          position: relative;
+          clip-path: url(#who-is-who-mask1);
+          background: black; }
+          .who-is-who .wrapper .block .left .image-group .image-container {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+            pointer-events: none; }
+          .who-is-who .wrapper .block .left .image-group .image-container:nth-child(1) {
+            opacity: 0;
+            filter: blur(10px);
+            transform: scale(1.1); }
+          .who-is-who .wrapper .block .left .image-group:hover .image-container:nth-child(2) {
+            opacity: 0;
+            filter: blur(10px);
+            transform: scale(1.1); }
+          .who-is-who .wrapper .block .left .image-group:hover .image-container:nth-child(1) {
+            opacity: 1;
+            filter: blur(0px);
+            transform: translateX(0) scale(1); }
+        .who-is-who .wrapper .block .left #who-is-who-mask1 {
+          transform: scale(102) translate(-0.979px, -0.83px); }
+      .who-is-who .wrapper .block .right {
+        margin-left: 55px; }
+        .who-is-who .wrapper .block .right .block-title {
+          font-size: 120px;
+          line-height: 120px;
+          font-family: 'Open Sans' !important;
+          font-weight: 600 !important;
+          margin-top: 52px;
+          margin-bottom: 54px; }
+          .who-is-who .wrapper .block .right .block-title.bordered-text-black {
+            -webkit-text-stroke-color: #404040; }
+        .who-is-who .wrapper .block .right .block-description {
+          font-family: 'Open Sans' !important;
+          font-weight: 300 !important;
+          font-size: 25px;
+          line-height: 50px;
+          letter-spacing: 0.01em;
+          color: white;
+          max-width: 665px; }
+          .who-is-who .wrapper .block .right .block-description .orange {
+            font-weight: 600 !important; }
+      .who-is-who .wrapper .block:nth-child(2) {
+        margin-bottom: 116px; }
+        .who-is-who .wrapper .block:nth-child(2) .left .image-group {
+          clip-path: url(#who-is-who-mask2); }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======OUR PETS=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.our-pets {
+  margin-bottom: 176px; }
+  .our-pets .wrapper {
+    padding: 0 117px 0 87px; }
+    .our-pets .wrapper .our-pets_title {
+      font-size: 30px;
+      line-height: 48px;
+      font-family: 'Open Sans' !important;
+      font-weight: 300 !important;
+      letter-spacing: 0.01em;
+      color: white;
+      margin-bottom: 21px; }
+      .our-pets .wrapper .our-pets_title .orange {
+        font-weight: 600 !important; }
+    .our-pets .wrapper .our-pets_content {
+      display: flex;
+      flex-direction: row; }
+      .our-pets .wrapper .our-pets_content .our-pets-image {
+        position: relative;
+        width: 511px;
+        height: 416px; }
+        .our-pets .wrapper .our-pets_content .our-pets-image .image-group {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          clip-path: url(#our-pets-mask1);
+          background: black; }
+          .our-pets .wrapper .our-pets_content .our-pets-image .image-group .image-container {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+            pointer-events: none; }
+          .our-pets .wrapper .our-pets_content .our-pets-image .image-group .image-container:nth-child(1) {
+            opacity: 0;
+            filter: blur(10px);
+            transform: scale(1.1); }
+          .our-pets .wrapper .our-pets_content .our-pets-image .image-group:hover .image-container:nth-child(2) {
+            opacity: 0;
+            filter: blur(10px);
+            transform: scale(1.1); }
+          .our-pets .wrapper .our-pets_content .our-pets-image .image-group:hover .image-container:nth-child(1) {
+            opacity: 1;
+            filter: blur(0px);
+            transform: translateX(0) scale(1); }
+      .our-pets .wrapper .our-pets_content .ring {
+        position: absolute;
+        left: -5%;
+        top: 4.5%; }
+      .our-pets .wrapper .our-pets_content .left {
+        padding-top: 141px;
+        padding-left: 22px;
+        margin-right: 56px; }
+      .our-pets .wrapper .our-pets_content .right .ring {
+        left: 5%;
+        top: -4.5%; }
+      .our-pets .wrapper .our-pets_content .right .right_text {
+        font-size: 30px;
+        line-height: 48px;
+        font-family: 'Open Sans' !important;
+        font-weight: 400 !important;
+        letter-spacing: 0.01em;
+        color: #FFE76A;
+        margin-top: 44px;
+        max-width: 479px;
+        position: relative;
+        padding-bottom: 50px; }
+        .our-pets .wrapper .our-pets_content .right .right_text::after {
+          position: absolute;
+          content: url(../img/svg/our-pets-underline.svg);
+          left: 0;
+          bottom: 0; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======GALLERY=======-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.gallery .wrapper .swiper-container {
+  overflow: visible;
+  padding-left: 207px; }
+  .gallery .wrapper .swiper-container .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 462px; }
+    .gallery .wrapper .swiper-container .swiper-wrapper .swiper-slide {
+      width: fit-content;
+      margin-right: 30px;
+      width: 370px;
+      height: 353px;
+      border-radius: 25px;
+      transition: .3s; }
+      .gallery .wrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active {
+        width: 544px;
+        height: 462px; }
+  .gallery .wrapper .swiper-container .swiper-button-next {
+    right: unset;
+    left: 63px;
+    width: fit-content; }
+    .gallery .wrapper .swiper-container .swiper-button-next::after {
+      display: none; }
 
 /*# sourceMappingURL=style.css.map */
