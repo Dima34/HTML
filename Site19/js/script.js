@@ -170,6 +170,10 @@ mouseParallax(document.querySelector(".goal-ring.ring2"), 0.007);
 mouseParallax(document.querySelector(".goal-ring.ring3"), 0.007);
 mouseParallax(document.querySelector(".goal-ring.ring4"), 0.007);
 
+mouseParallax(document.querySelector(".who-is-who .ring1"), 0.002);
+mouseParallax(document.querySelector(".who-is-who .ring2"), 0.002);
+mouseParallax(document.querySelector(".our-pets .ring3"), 0.003);
+mouseParallax(document.querySelector(".our-pets .ring4"), 0.002), true;
 
 
 // 
