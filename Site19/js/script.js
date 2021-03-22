@@ -174,7 +174,10 @@ mouseParallax(document.querySelector(".who-is-who .ring1"), 0.002);
 mouseParallax(document.querySelector(".who-is-who .ring2"), 0.002);
 mouseParallax(document.querySelector(".our-pets .ring3"), 0.003);
 mouseParallax(document.querySelector(".our-pets .ring4"), 0.002, true);
-mouseParallax(document.querySelector(".group1"), 0.0015, true);
+mouseParallax(document.querySelector(".move-container1"), 0.001);
+mouseParallax(document.querySelector(".move-container2"), 0.001, true);
+mouseParallax(document.querySelector(".move-container3"), 0.001);
+mouseParallax(document.querySelector(".move-container4"), 0.001);
 
 // 
 // Ticker
