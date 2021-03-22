@@ -738,6 +738,16 @@ footer {
           font-family: 'Open Sans' !important;
           font-weight: 300 !important;
           letter-spacing: 0.02em; }
+  footer.white .wrapper .footer-centered-text {
+    color: white; }
+    footer.white .wrapper .footer-centered-text::after {
+      content: url(../img/svg/footer-up-btn-circle-white.svg); }
+    footer.white .wrapper .footer-centered-text:hover {
+      color: #FFE76A; }
+  footer.white .wrapper .footer_info a, footer.white .wrapper .footer_info p {
+    color: white; }
+    footer.white .wrapper .footer_info a:hover, footer.white .wrapper .footer_info p:hover {
+      color: #FFE76A; }
 
 @keyframes BtnBounce {
   0% {

@@ -1044,6 +1044,30 @@ footer{
             }
         }
     }
+
+    &.white{
+        .wrapper{
+            .footer-centered-text{
+                color: white;
+
+                &::after{
+                    content: url(../img/svg/footer-up-btn-circle-white.svg);
+                }
+
+                &:hover{
+                    color: #FFE76A;
+                }
+            }
+
+            .footer_info a, .footer_info p{
+                color: white;
+
+                &:hover{
+                    color: #FFE76A;
+                }
+            }
+        }
+    }
 }
 
 @keyframes BtnBounce{
