@@ -1,3 +1,5 @@
+// <!-- Made by Djigit_ telegram: @Djigit34 -->
+
 /* open-sans-300 - latin_greek-ext_greek_cyrillic */
 @font-face {
     font-family: 'Open Sans';
@@ -137,6 +139,13 @@ body{
     opacity: 0;
     visibility: hidden; }
 
+a{
+    transition: .3s !important;
+}
+
+a:hover{
+    color: #FFE76A !important;
+}
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1447,4 +1456,301 @@ footer{
             }
         }
     }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=====CONTACTS INTRO=====------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.contacts-intro{
+    background: #FFE76A;
+    position: relative;
+
+    .wrapper{
+        padding: 0 82px;
+        padding-top: 92px;
+
+        .intro_title{
+            font-size: 80px;
+            line-height: 140px;
+            @include Open(800);
+            text-align: center;
+            letter-spacing: 0.02em;
+            margin-bottom: 28px;
+        }
+
+        .intro_subtitle{
+            max-width: 945px;
+            font-size: 30px;
+            line-height: 52px;
+            @include Open(300);
+            text-align: center;
+            letter-spacing: 0.01em;
+            margin: 0 auto;
+            position: relative;
+            padding-bottom: 50px;
+
+            span{
+                font-weight: 400 !important;
+            }
+
+            &::after{
+                position: absolute;
+                content: url(../img/svg/contacts-intro-underline.svg);
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        .intro_text{
+            @include Open(300);
+            font-size: 25px;
+            line-height: 45px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            max-width: 1060px;
+            margin: 0 auto;
+            margin-bottom: 89px;
+        }
+
+        .intro_lets-talk{
+            position: relative;
+            width: fit-content;
+            margin: 0 auto;
+
+            p{
+                font-size: 30px;
+                line-height: 50px;
+                @include Open(600);
+                color: white;
+                letter-spacing: 0.01em; 
+                position: relative;
+                max-width: 339px;
+                z-index: 3;
+
+                &::after{
+                    position: absolute;
+                    content: url(../img/svg/contacts-intro-cup.svg);
+                    top: 47px;
+                    left: calc(100% + 5px);
+                }
+            }
+
+            &::after{
+                position: absolute;
+                content: url(../img/svg/contacts-intro-black-shape.svg);
+                z-index: 2;
+                left: -56px;
+                top: -47px;
+            }
+
+            .lets-talk-ring{
+                position: absolute;
+                z-index: 2;
+                top: -40px;
+                left: -35px;
+            }
+        }
+    }
+
+    .contacts-intro-shape{
+        position: absolute;
+        top: 254px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .contacts-intro-waves{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        transform: scale(1,-1);
+    }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------========ADRESS========------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.adress{
+    background: white;
+    padding-bottom: 147px;
+    padding-top: 229px;
+    .wrapper{
+        padding: 0 81px ;
+
+        .adress_title{
+            font-size: 66px;
+            line-height: 140px;
+            @include Open(800);
+            letter-spacing: 0.03em;
+            margin-bottom: 25px;
+        }
+
+        .adress_street{
+            font-size: 35px;
+            line-height: 70px;
+            @include Open(300);
+            letter-spacing: 0.01em;
+            color: black;
+            max-width: 890px;
+            margin-bottom: 45px;
+        }
+
+        .contact-block{
+            display: flex;
+            flex-direction: row;
+            max-width: 905px;
+            justify-content: space-between;
+            gap: 20px;
+
+            .col{
+                .col-header{
+                    font-size: 35px;
+                    line-height: 70px;
+                    @include Open(800);
+                    letter-spacing: 0.02em;
+                }
+
+                a{
+                    font-size: 35px;
+                    line-height: 70px;
+                    @include Open(300);
+                    letter-spacing: 0.01em;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=========MAP=========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.map{
+    position: relative;
+
+    .wrapper{
+        padding: 0 81px;
+
+        .map-header{
+            font-size: 66px;
+            line-height: 80px;
+            @include Open(800);
+            letter-spacing: 0.03em;
+            margin-bottom: 31px;
+        }
+
+        .how-to-find{
+            margin-top: 77px;
+            margin-bottom: 66px;
+
+            .map-header{
+                color: white;
+                margin-bottom: 21px;
+            }
+
+            .contacts-header{
+                font-size: 40px;
+                line-height: 70px;
+                @include Open(800);
+                letter-spacing: 0.03em;
+                margin-bottom: 26px;
+                color: #FFE76A;
+            }
+
+            .contacts{
+                display: flex;
+                flex-direction: row;
+                max-width: 905px;
+                justify-content: space-between;
+                gap: 20px;
+    
+                .col{
+                    .col-header{
+                        font-size: 35px;
+                        line-height: 70px;
+                        @include Open(800);
+                        letter-spacing: 0.02em;
+                        color: white;
+                    }
+    
+                    a{
+                        font-size: 35px;
+                        line-height: 70px;
+                        @include Open(300);
+                        letter-spacing: 0.01em;
+                        display: block;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .map-blk{
+            position: relative;
+            z-index: 2;
+                
+            .map-title{
+                margin-bottom: 42px;
+                font-size: 35px;
+                line-height: 70px;
+                @include Open(300);
+                letter-spacing: 0.01em;
+                color: #FFFFFF;
+            }
+        }
+
+        .shape-block{
+            position: relative;
+            margin-top: 103px;
+            margin-bottom: 196px;
+
+            .shape-block-shape{
+                position: absolute;
+                bottom: -152px;
+                left: -200px;
+            }
+
+            p{
+                font-size: 40px;
+                line-height: 70px;
+                @include Open(800);
+                letter-spacing: 0.01em;
+                max-width: 711px;
+                color: white;
+            }
+
+        }
+        
+    }
+
+    .map-wave{
+        position: absolute;
+        left: 0;
+        bottom: calc(100% - 1px);
+        width: 100%;
+    }
+
+    .shape{
+        position: absolute;
+        top: 787px;
+        right: 0;
+    }
+
+
 }

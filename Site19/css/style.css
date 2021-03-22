@@ -105,6 +105,12 @@ body {
   opacity: 0;
   visibility: hidden; }
 
+a {
+  transition: .3s !important; }
+
+a:hover {
+  color: #FFE76A !important; }
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1002,5 +1008,235 @@ footer {
     width: fit-content; }
     .gallery .wrapper .swiper-container .swiper-button-next::after {
       display: none; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=====CONTACTS INTRO=====------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.contacts-intro {
+  background: #FFE76A;
+  position: relative; }
+  .contacts-intro .wrapper {
+    padding: 0 82px;
+    padding-top: 92px; }
+    .contacts-intro .wrapper .intro_title {
+      font-size: 80px;
+      line-height: 140px;
+      font-family: 'Open Sans' !important;
+      font-weight: 800 !important;
+      text-align: center;
+      letter-spacing: 0.02em;
+      margin-bottom: 28px; }
+    .contacts-intro .wrapper .intro_subtitle {
+      max-width: 945px;
+      font-size: 30px;
+      line-height: 52px;
+      font-family: 'Open Sans' !important;
+      font-weight: 300 !important;
+      text-align: center;
+      letter-spacing: 0.01em;
+      margin: 0 auto;
+      position: relative;
+      padding-bottom: 50px; }
+      .contacts-intro .wrapper .intro_subtitle span {
+        font-weight: 400 !important; }
+      .contacts-intro .wrapper .intro_subtitle::after {
+        position: absolute;
+        content: url(../img/svg/contacts-intro-underline.svg);
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%); }
+    .contacts-intro .wrapper .intro_text {
+      font-family: 'Open Sans' !important;
+      font-weight: 300 !important;
+      font-size: 25px;
+      line-height: 45px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      max-width: 1060px;
+      margin: 0 auto;
+      margin-bottom: 89px; }
+    .contacts-intro .wrapper .intro_lets-talk {
+      position: relative;
+      width: fit-content;
+      margin: 0 auto; }
+      .contacts-intro .wrapper .intro_lets-talk p {
+        font-size: 30px;
+        line-height: 50px;
+        font-family: 'Open Sans' !important;
+        font-weight: 600 !important;
+        color: white;
+        letter-spacing: 0.01em;
+        position: relative;
+        max-width: 339px;
+        z-index: 3; }
+        .contacts-intro .wrapper .intro_lets-talk p::after {
+          position: absolute;
+          content: url(../img/svg/contacts-intro-cup.svg);
+          top: 47px;
+          left: calc(100% + 5px); }
+      .contacts-intro .wrapper .intro_lets-talk::after {
+        position: absolute;
+        content: url(../img/svg/contacts-intro-black-shape.svg);
+        z-index: 2;
+        left: -56px;
+        top: -47px; }
+      .contacts-intro .wrapper .intro_lets-talk .lets-talk-ring {
+        position: absolute;
+        z-index: 2;
+        top: -40px;
+        left: -35px; }
+  .contacts-intro .contacts-intro-shape {
+    position: absolute;
+    top: 254px;
+    left: 0;
+    z-index: 1; }
+  .contacts-intro .contacts-intro-waves {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    transform: scale(1, -1); }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------========ADRESS========------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.adress {
+  background: white;
+  padding-bottom: 147px;
+  padding-top: 229px; }
+  .adress .wrapper {
+    padding: 0 81px; }
+    .adress .wrapper .adress_title {
+      font-size: 66px;
+      line-height: 140px;
+      font-family: 'Open Sans' !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.03em;
+      margin-bottom: 25px; }
+    .adress .wrapper .adress_street {
+      font-size: 35px;
+      line-height: 70px;
+      font-family: 'Open Sans' !important;
+      font-weight: 300 !important;
+      letter-spacing: 0.01em;
+      color: black;
+      max-width: 890px;
+      margin-bottom: 45px; }
+    .adress .wrapper .contact-block {
+      display: flex;
+      flex-direction: row;
+      max-width: 905px;
+      justify-content: space-between;
+      gap: 20px; }
+      .adress .wrapper .contact-block .col .col-header {
+        font-size: 35px;
+        line-height: 70px;
+        font-family: 'Open Sans' !important;
+        font-weight: 800 !important;
+        letter-spacing: 0.02em; }
+      .adress .wrapper .contact-block .col a {
+        font-size: 35px;
+        line-height: 70px;
+        font-family: 'Open Sans' !important;
+        font-weight: 300 !important;
+        letter-spacing: 0.01em;
+        display: block; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=========MAP=========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.map {
+  position: relative; }
+  .map .wrapper {
+    padding: 0 81px; }
+    .map .wrapper .map-header {
+      font-size: 66px;
+      line-height: 80px;
+      font-family: 'Open Sans' !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.03em;
+      margin-bottom: 31px; }
+    .map .wrapper .how-to-find {
+      margin-top: 77px;
+      margin-bottom: 66px; }
+      .map .wrapper .how-to-find .map-header {
+        color: white;
+        margin-bottom: 21px; }
+      .map .wrapper .how-to-find .contacts-header {
+        font-size: 40px;
+        line-height: 70px;
+        font-family: 'Open Sans' !important;
+        font-weight: 800 !important;
+        letter-spacing: 0.03em;
+        margin-bottom: 26px;
+        color: #FFE76A; }
+      .map .wrapper .how-to-find .contacts {
+        display: flex;
+        flex-direction: row;
+        max-width: 905px;
+        justify-content: space-between;
+        gap: 20px; }
+        .map .wrapper .how-to-find .contacts .col .col-header {
+          font-size: 35px;
+          line-height: 70px;
+          font-family: 'Open Sans' !important;
+          font-weight: 800 !important;
+          letter-spacing: 0.02em;
+          color: white; }
+        .map .wrapper .how-to-find .contacts .col a {
+          font-size: 35px;
+          line-height: 70px;
+          font-family: 'Open Sans' !important;
+          font-weight: 300 !important;
+          letter-spacing: 0.01em;
+          display: block;
+          color: white; }
+    .map .wrapper .map-blk {
+      position: relative;
+      z-index: 2; }
+      .map .wrapper .map-blk .map-title {
+        margin-bottom: 42px;
+        font-size: 35px;
+        line-height: 70px;
+        font-family: 'Open Sans' !important;
+        font-weight: 300 !important;
+        letter-spacing: 0.01em;
+        color: #FFFFFF; }
+    .map .wrapper .shape-block {
+      position: relative;
+      margin-top: 103px;
+      margin-bottom: 196px; }
+      .map .wrapper .shape-block .shape-block-shape {
+        position: absolute;
+        bottom: -152px;
+        left: -200px; }
+      .map .wrapper .shape-block p {
+        font-size: 40px;
+        line-height: 70px;
+        font-family: 'Open Sans' !important;
+        font-weight: 800 !important;
+        letter-spacing: 0.01em;
+        max-width: 711px;
+        color: white; }
+  .map .map-wave {
+    position: absolute;
+    left: 0;
+    bottom: calc(100% - 1px);
+    width: 100%; }
+  .map .shape {
+    position: absolute;
+    top: 787px;
+    right: 0; }
 
 /*# sourceMappingURL=style.css.map */

@@ -178,6 +178,8 @@ mouseParallax(document.querySelector(".move-container1"), 0.001);
 mouseParallax(document.querySelector(".move-container2"), 0.001, true);
 mouseParallax(document.querySelector(".move-container3"), 0.001);
 mouseParallax(document.querySelector(".move-container4"), 0.001);
+mouseParallax(document.querySelector(".lets-talk-ring"), 0.001);
+mouseParallax(document.querySelector(".shape-block-shape"), 0.001);
 
 // 
 // Ticker
