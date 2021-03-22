@@ -974,7 +974,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 462px; }
+    height: 462px !important; }
     .gallery .wrapper .swiper-container .swiper-wrapper .swiper-slide {
       width: fit-content;
       margin-right: 30px;

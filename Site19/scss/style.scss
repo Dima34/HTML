@@ -1389,7 +1389,7 @@ footer{
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                height: 462px;
+                height: 462px !important;
                 
                 .swiper-slide{
                     width: fit-content;
