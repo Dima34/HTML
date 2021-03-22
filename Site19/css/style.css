@@ -746,8 +746,8 @@ footer {
       color: #FFE76A; }
   footer.white .wrapper .footer_info a, footer.white .wrapper .footer_info p {
     color: white; }
-    footer.white .wrapper .footer_info a:hover, footer.white .wrapper .footer_info p:hover {
-      color: #FFE76A; }
+  footer.white .wrapper .info_col1 a:hover, footer.white .wrapper .info_col2 a:hover, footer.white .wrapper .info_col3 a:hover {
+    color: #FFE76A; }
 
 @keyframes BtnBounce {
   0% {

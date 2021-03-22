@@ -1062,6 +1062,10 @@ footer{
             .footer_info a, .footer_info p{
                 color: white;
 
+                
+            }
+
+            .info_col1 a, .info_col2 a, .info_col3 a{
                 &:hover{
                     color: #FFE76A;
                 }
