@@ -22,27 +22,33 @@ ibg();
 // Burger
 // 
 
-let OpenBtn = document.querySelector(".header-burger");
+let OpenBtn = document.querySelectorAll(".header-burger-open");
 
-if(OpenBtn){
+if(OpenBtn.length > 0){
 
     let menu = document.querySelector(".header-burger-menu");
     let CloseBtn = document.querySelector(".burger-close");
     let burgerItems = document.querySelectorAll(".burger_item");
+    
+    for (let i = 0; i < OpenBtn.length; i++) {
+        
+        OpenBtn[i].addEventListener('click',()=>{
+            menu.classList.add("active-x")
+            document.getElementById("closeSVG").style.display = "none";
+            document.getElementById("openSVG").style.display = "block";
+    
+            let startS = 0.5;
+            for (let i = 0; i < burgerItems.length; i++) {
+                startS +=0.15;
+                burgerItems[i].style.transitionDuration = startS + "s";
+                burgerItems[i].style.transform = "translateX(0px)";
+                opacityCounter(burgerItems[i],25);
+            }
+        });
+        
+    }
 
-    OpenBtn.addEventListener('click',()=>{
-        menu.classList.add("active-x")
-        document.getElementById("closeSVG").style.display = "none";
-        document.getElementById("openSVG").style.display = "block";
-
-        let startS = 0.5;
-        for (let i = 0; i < burgerItems.length; i++) {
-            startS +=0.15;
-            burgerItems[i].style.transitionDuration = startS + "s";
-            burgerItems[i].style.transform = "translateX(0px)";
-            opacityCounter(burgerItems[i],25);
-        }
-    });
+    
 
     CloseBtn.addEventListener('click',()=>{
         menu.classList.remove("active-x")
@@ -82,6 +88,18 @@ opacityReversedCounter = (element,speed) =>{
         }
     },speed)
 }
+
+let sideburgerBtn = document.querySelector(".header-burger-open-side");
+
+document.addEventListener("scroll", ()=>{
+    if(window.scrollY > 800){
+        sideburgerBtn.style.opacity = "1"
+    }
+    else{
+        sideburgerBtn.style.opacity = "0"
+    }
+    
+})
 
 
 // 

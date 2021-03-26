@@ -142,14 +142,15 @@ header {
     header .wrapper .header-burger.dark .burger-text {
       color: white; }
   header .header-burger-menu {
-    position: absolute;
+    position: fixed;
     left: calc(100% + 400px);
     top: 0;
     background: #FFE76A;
     width: 100%;
     height: 100vh;
     transition-duration: 1s;
-    pointer-events: all; }
+    pointer-events: all;
+    z-index: 6; }
     header .header-burger-menu .burger-menu-svg {
       height: 100vh;
       position: absolute;
@@ -227,6 +228,34 @@ header {
   header .header-burger-menu.active-x .burger_header .burger-logo, header .header-burger-menu.active-x .burger_header .burger-close {
     animation-delay: 4s;
     animation: itemShow 2s ease-in-out; }
+  header .header-burger-open-side {
+    display: block;
+    width: fit-content;
+    position: fixed;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding: 46px 13px 53px 26px;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    font-family: 'Open Sans' !important;
+    font-weight: 400 !important;
+    color: #FFFFFF;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 5;
+    transition: .3s;
+    pointer-events: all;
+    cursor: pointer; }
+    header .header-burger-open-side:hover {
+      color: #FFE76A; }
+    header .header-burger-open-side::after {
+      position: absolute;
+      content: url(../img/svg/header-side-menu-open-shape.svg);
+      top: 0;
+      left: 0;
+      z-index: -1; }
 
 .cursor {
   width: 25px;
@@ -518,7 +547,7 @@ header {
   position: relative;
   min-height: 600px;
   margin-top: -70px;
-  padding-bottom: 360px;
+  padding-bottom: 306px;
   z-index: 2; }
   .why-we .wrapper .line {
     display: flex;
@@ -564,7 +593,8 @@ header {
         margin-bottom: 36px;
         color: black; }
   .why-we .wrapper .line2 {
-    padding: 0 64px 0 112px; }
+    padding: 0 64px 0 112px;
+    margin-bottom: 139px; }
     .why-we .wrapper .line2 .left {
       padding-top: 43px;
       margin-right: 121px; }
@@ -603,6 +633,57 @@ header {
         right: -103px;
         top: -52px;
         z-index: 4; }
+  .why-we .wrapper .why-we_contact-us .contact-us_title {
+    font-size: 55px;
+    line-height: 100px;
+    font-family: 'Open Sans' !important;
+    font-weight: 800 !important;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 71px; }
+    .why-we .wrapper .why-we_contact-us .contact-us_title .bordered-text {
+      -webkit-text-stroke-width: 1px; }
+  .why-we .wrapper .why-we_contact-us .input_group {
+    max-width: 715px;
+    padding-right: 33px;
+    padding-left: 1px;
+    margin: 0 auto;
+    display: flex; }
+    .why-we .wrapper .why-we_contact-us .input_group input {
+      border: 0;
+      background: 0;
+      padding: 16px 1px;
+      max-width: 400px;
+      margin-right: 62px;
+      width: 100%;
+      border-bottom: 2px solid #000000; }
+      .why-we .wrapper .why-we_contact-us .input_group input, .why-we .wrapper .why-we_contact-us .input_group input::placeholder {
+        font-size: 25px;
+        line-height: 50px;
+        font-family: 'Open Sans' !important;
+        font-weight: 300 !important;
+        letter-spacing: 0.02em;
+        opacity: 1;
+        color: #FFFFFF; }
+    .why-we .wrapper .why-we_contact-us .input_group button {
+      border: 0;
+      background: 0;
+      font-size: 40px;
+      line-height: 70px;
+      font-family: 'Open Sans' !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.03em;
+      position: relative;
+      z-index: 2;
+      transition: .3s; }
+      .why-we .wrapper .why-we_contact-us .input_group button::after {
+        position: absolute;
+        content: url(../img/svg/why-we-contact-us-shape.svg);
+        left: -38px;
+        top: -10px;
+        z-index: -1; }
+      .why-we .wrapper .why-we_contact-us .input_group button:hover {
+        color: #FFE76A; }
   .why-we .shape {
     position: absolute;
     right: 0;
@@ -771,9 +852,11 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 .about-intro .wrapper {
-  padding: 92px 81px 0 81px;
+  padding: 73px 81px 0 81px;
   display: flex;
   flex-direction: column; }
+  .about-intro .wrapper .intro-logo {
+    margin-bottom: 20px; }
   .about-intro .wrapper .intro-title {
     display: inline-block;
     font-size: 80px;
@@ -1021,7 +1104,9 @@ footer {
   position: relative; }
   .contacts-intro .wrapper {
     padding: 0 82px;
-    padding-top: 92px; }
+    padding-top: 73px; }
+    .contacts-intro .wrapper .intro-logo {
+      margin-bottom: 15px; }
     .contacts-intro .wrapper .intro_title {
       font-size: 80px;
       line-height: 140px;

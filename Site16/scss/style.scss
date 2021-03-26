@@ -599,9 +599,17 @@ header{
           line-height: 13px;
           margin-right: 41px;
           padding: 12px 20px;
-          color: #ffffff;
-          background: #61A036;
+          cursor: pointer;
           border-radius: 7px;
+          border: 2px solid #61A036;
+          transition: .3s;
+
+          &:hover{
+            background: #AAE382;
+            // color: #626F77;
+            border-color: #AAE382;
+            
+          }
         }
 
         .desktop_bin,.desktop_favorite,.desktop_profile{

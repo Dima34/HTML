@@ -3,6 +3,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const watch = require('gulp-watch');
+const fileinclude = require('gulp-file-include');
 
 gulp.task("sass-compile", function(){
     return gulp.src("./scss/**/*.scss")
@@ -13,8 +14,23 @@ gulp.task("sass-compile", function(){
     
 })
 
+gulp.task('fileinclude', function() {
+    return gulp.src(['./src/index.html'])
+      .pipe(fileinclude({
+        prefix: '@@',
+        basepath: '@file'
+      }))
+      .pipe(gulp.dest('./'));
+    });
+
+
 gulp.task("watch", function(){
-    gulp.watch("./scss/**/*.scss", gulp.series("sass-compile"))
+    gulp.watch("./src/**/*.html", gulp.series("fileinclude")),
+    gulp.watch("./scss/**/*.scss", 
+    gulp.series("sass-compile"))
+    
 })
+
+
 
 
