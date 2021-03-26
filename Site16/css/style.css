@@ -961,7 +961,7 @@ header {
             line-height: 13px;
             font-family: "Gotham" !important;
             font-weight: 400 !important;
-            color: #989898;
+            color: #595959;
             padding-right: 10px; }
           .product_product .wrapper .product_main .product .product_subtitle .product_country span {
             font-size: 20px;
@@ -1048,7 +1048,7 @@ header {
             font-family: "Gotham" !important;
             font-weight: 500 !important;
             text-decoration-line: line-through;
-            color: #818181;
+            color: #595959;
             margin-bottom: 4px; }
           .product_product .wrapper .product_main .product .product_subtitle .products_variants .product_variant .variant_price {
             font-size: 24px;
@@ -1128,9 +1128,13 @@ header {
           text-align: center;
           font-family: "Gotham" !important;
           font-weight: 400 !important;
-          background: #61A036;
           border-radius: 7px;
-          color: white; }
+          border: 2px solid #61A036;
+          transition: .3s; }
+          .product_product .wrapper .product_main .product .product_subtitle .product_make-order:hover {
+            background: #AAE382;
+            color: white;
+            border-color: #AAE382; }
     .product_product .wrapper .product_sidebar {
       margin-left: 27px;
       display: flex;
@@ -1252,15 +1256,19 @@ header {
         margin-bottom: 10px; }
       .product_same_cathegory .wrapper .swiper-container .swiper-slide .product_blk .product_button {
         display: block;
-        background: #61A036;
         border-radius: 7px;
         font-size: 18px;
         line-height: 17px;
         font-family: "Gotham" !important;
         font-weight: 400 !important;
         text-align: center;
-        color: white;
-        padding: 15px; }
+        padding: 15px;
+        border: 2px solid #61A036;
+        transition: .3s; }
+        .product_same_cathegory .wrapper .swiper-container .swiper-slide .product_blk .product_button:hover {
+          background: #AAE382;
+          color: white;
+          border-color: #AAE382; }
       .product_same_cathegory .wrapper .swiper-container .swiper-slide .product_blk .product_heart {
         position: absolute;
         right: 14px;
