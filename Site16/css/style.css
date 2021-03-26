@@ -994,9 +994,8 @@ header {
             border-radius: 7px;
             margin-bottom: 9px; }
           .product_product .wrapper .product_main .product .product_subtitle .product_seasons .product_season-active {
-            background: #AAE382;
-            color: white;
-            border-color: #AAE382; }
+            border: 2px solid #61A036;
+            color: black; }
         .product_product .wrapper .product_main .product .product_subtitle .product_desc {
           font-size: 18px;
           line-height: 175%;
@@ -1071,9 +1070,9 @@ header {
               font-weight: 500 !important;
               color: black; }
           .product_product .wrapper .product_main .product .product_subtitle .products_variants .product_variant input:checked + label {
-            border: 1px solid #61A036; }
+            border: 1px solid #3D6321; }
             .product_product .wrapper .product_main .product .product_subtitle .products_variants .product_variant input:checked + label .variant_title, .product_product .wrapper .product_main .product .product_subtitle .products_variants .product_variant input:checked + label .variant_price, .product_product .wrapper .product_main .product .product_subtitle .products_variants .product_variant input:checked + label .variant_have span {
-              color: #61A036; }
+              color: #3D6321; }
             .product_product .wrapper .product_main .product .product_subtitle .products_variants .product_variant input:checked + label .variant_title::after {
               background: url(../img/svg/cheackbox_checked.svg) center; }
           .product_product .wrapper .product_main .product .product_subtitle .products_variants .product_variant:last-child {

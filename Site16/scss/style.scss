@@ -1284,9 +1284,8 @@ header{
             }
   
             .product_season-active{
-              background: #AAE382;
-              color: white;
-              border-color: #AAE382;
+              border: 2px solid #61A036;
+              color: black;
             }
           }
   
@@ -1380,10 +1379,10 @@ header{
               }
   
               input:checked + label{
-                border: 1px solid #61A036;
+                border: 1px solid #3D6321;
                 
                 .variant_title,.variant_price,.variant_have span{
-                  color: #61A036;
+                  color:#3D6321;
                 }
   
   
