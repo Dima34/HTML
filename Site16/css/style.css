@@ -744,14 +744,18 @@ header {
           display: block;
           white-space: normal;
           padding: 16px 35px;
-          background-color: #61A036;
           border-radius: 7px;
-          color: white;
           font-size: 16px;
           font-family: "Gotham" !important;
           font-weight: 400 !important;
           line-height: 15px;
-          text-align: center; }
+          text-align: center;
+          border: 2px solid #61A036;
+          transition: .3s; }
+          .popular .wrapper .popular_blocks .swiper-container1 .swiper-wrapper .swiper-slide .popular_blk .popular_button:hover {
+            background: #AAE382;
+            border-color: #AAE382;
+            color: white; }
     .popular .wrapper .popular_blocks .swiper-container1 .swiper-button-next1, .popular .wrapper .popular_blocks .swiper-container1 .swiper-button-prev1 {
       display: none; }
     .popular .wrapper .popular_blocks .swiper-container1 .swiper-scrollbar {
@@ -770,14 +774,17 @@ header {
     .popular .wrapper .popular_footer .popular-footer-button {
       white-space: normal;
       padding: 16px 40px;
-      background-color: #61A036;
       border-radius: 7px;
-      border: none;
-      color: white;
       font-size: 16px;
       font-family: "Gotham" !important;
       font-weight: 400 !important;
-      line-height: 15px; }
+      line-height: 15px;
+      border: 2px solid #61A036;
+      transition: .3s; }
+      .popular .wrapper .popular_footer .popular-footer-button:hover {
+        background: #AAE382;
+        border-color: #AAE382;
+        color: white; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2835,11 +2842,16 @@ footer .wrapper {
         line-height: 13px;
         font-family: "Gotham" !important;
         font-weight: 500 !important;
-        color: white;
-        background: #61A036;
         border-radius: 7px;
         display: block;
-        width: fit-content; }
+        width: fit-content;
+        color: black;
+        border: 2px solid #61A036;
+        transition: .3s; }
+        footer .wrapper .footer_menu .footer_contacts .footer_callme:hover {
+          background: #AAE382;
+          border-color: #AAE382;
+          color: white; }
   footer .wrapper .footer_rights {
     grid-column-start: 2;
     grid-column-end: 3;

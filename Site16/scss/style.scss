@@ -938,13 +938,20 @@ header{
                 display: block;
                 white-space: normal;
                 padding: 16px 35px;
-                background-color: #61A036;
                 border-radius: 7px;
-                color: white;
                 font-size: 16px;
                 @include Gotham(400);
                 line-height: 15px;
                 text-align: center;
+                border: 2px solid #61A036;
+                transition: .3s;
+                
+                &:hover{
+                  background: #AAE382;
+                  border-color: #AAE382;
+                  color: white;
+                }
+                
               }
             }
           }
@@ -978,13 +985,18 @@ header{
       .popular-footer-button {
         white-space: normal;
         padding: 16px 40px;
-        background-color: #61A036;
         border-radius: 7px;
-        border: none;
-        color: white;
         font-size: 16px;
         @include Gotham(400);
         line-height: 15px;
+        border: 2px solid #61A036;
+        transition: .3s;
+        
+        &:hover{
+          background: #AAE382;
+          border-color: #AAE382;
+          color: white;
+        }
       }
     }
   }
@@ -3812,12 +3824,20 @@ footer{
           font-size: 14px;
           line-height: 13px;
           @include Gotham(500);
-          color: white;
-          background: #61A036;
           border-radius: 7px;
           display: block;
           width: fit-content;
+          color: black;
+          border: 2px solid #61A036;
+          transition: .3s;
+
+          &:hover{
+            background: #AAE382;
+            border-color: #AAE382;
+            color: white;
+          }
         }
+
       }
     }
 
