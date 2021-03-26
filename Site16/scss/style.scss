@@ -1679,7 +1679,7 @@ header{
         font-size: 24px;
         line-height: 23px;
         @include Gotham(500);
-        color: #61A036;
+        color: #3C6321;
         margin-bottom: 40px;
       }
 
@@ -1688,7 +1688,7 @@ header{
         .cathalog_sidebar_section_title{
           font-size: 24px;
           line-height: 23px;
-          color: #61A036;
+          color: #3C6321;
           padding-left: 32px;
           position: relative;
           margin-bottom: 30px;
@@ -1756,13 +1756,19 @@ header{
 
         .cathalog_sidebar_download{
           display: block;
-          background: #61A036;
           border-radius: 7px;
           @include Gotham(400);
           line-height: 15px;
-          color: #FFFFFF;
           padding: 15px;
           text-align: center;
+          border: 2px solid #61A036;
+          transition: .3s;
+
+          &:hover{
+            background: #AAE382;
+            color: white;
+            border-color: #AAE382;
+          }
         }
       }
     }
@@ -1924,15 +1930,21 @@ header{
           }
 
           .product_button{
-            background: #61A036;
             border-radius: 7px;
             display: block;
             padding: 16px;
             text-align: center;
-            color: white;
             font-size: 16px;
             line-height: 15px;
             @include Gotham(400);
+            border: 2px solid #61A036;
+            transition: .3s;
+
+            &:hover{
+              background: #AAE382;
+              color: white;
+              border-color: #AAE382;
+            }
           }
 
           .product_heart{
@@ -1989,14 +2001,22 @@ header{
 
     .pagination_blk{
       height: 50px;
-      border: 1px solid #61A036;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 16px 9px;
       min-width: 50px;
-      border-radius: 7px;
+      border-radius: 50%;
       margin-right: 10px;
+      cursor: pointer;
+      border: 2px solid #61A036;
+      transition: .3s;
+
+      &:hover{
+        background: #AAE382;
+        color: white;
+        border-color: #AAE382;
+      }
 
       p{
         font-size: 20px;
@@ -2075,7 +2095,7 @@ header{
       margin-bottom: 15px;
   
       span{
-        color: #EF5F5F;
+        color:#B01111;
       }
     }
   
@@ -2109,10 +2129,16 @@ header{
       display: block;
       padding: 15px;
       text-align: center;
-      background: #61A036;
       border-radius: 7px;
       @include Gotham(400);
-      color: #FFFFFF;
+      border: 2px solid #61A036;
+      transition: .3s;
+
+      &:hover{
+        background: #AAE382;
+        color: white;
+        border-color: #AAE382;
+      }
     }
   
   }
@@ -2396,15 +2422,21 @@ header{
 
     .login_enter{
       display: block;
-      background: #61A036;
       border-radius: 7px;
       font-size: 18px;
       line-height: 17px;
       @include Gotham(400);
-      color: #FFFFFF;
       padding: 15px;
       text-align: center;
       margin-bottom: 29px;
+      border: 2px solid #61A036;
+      transition: .3s;
+
+      &:hover{
+        background: #AAE382;
+        color: white;
+        border-color: #AAE382;
+      }
     }
 
     .login_groupbox{
@@ -2494,8 +2526,8 @@ header{
       }
 
       .select_selected{
-        color: #61A036;
-        border-bottom: 2px solid #61A036;
+        color: #3C6321;
+        border-bottom: 2px solid #3C6321;
       }
     }
 
@@ -2582,11 +2614,17 @@ header{
             font-size: 18px;
             line-height: 17px;
             @include Gotham(400);
-            color: #FFFFFF;
             border-radius: 7px;
-            background: #61A036;
             display: block;
             width: fit-content;
+            border: 2px solid #61A036;
+            transition: .3s;
+
+            &:hover{
+              background: #AAE382;
+              color: white;
+              border-color: #AAE382;
+            }
           }
   
         }
@@ -2943,11 +2981,17 @@ header{
         }
   
         .track_btn{
-          background: #61A036;
           border-radius: 7px;
           padding: 15px 30px;
-          color: white;
           @include Gotham(400);
+          border: 2px solid #61A036;
+          transition: .3s;
+
+          &:hover{
+            background: #AAE382;
+            color: white;
+            border-color: #AAE382;
+          }
         }
       }
 
@@ -3662,7 +3706,7 @@ header{
           padding-bottom: 10px;
 
           p{
-            color: #61A036;
+            color: #3C6321;
           }
 
           .line_counter{
@@ -3689,16 +3733,22 @@ header{
 
       .cart_buy{
         display: block;
-        background: #61A036;
         border-radius: 7px;
         padding: 20px;
-        color: #FFFFFF;
         border: 0;
         @include Gotham(500);
         font-size: 18px;
         line-height: 17px;
         text-align: center;
         margin-bottom: 167px;
+        border: 2px solid #61A036;
+        transition: .3s;
+
+        &:hover{
+          background: #AAE382;
+          color: white;
+          border-color: #AAE382;
+        }
       }
     }
 
@@ -3724,7 +3774,7 @@ header{
           font-size: 14px;
           line-height: 175%;
           @include Gotham(400);
-          color: #969696;
+          color: #595959;
         }
 
         .subtitle_img{
@@ -5274,7 +5324,6 @@ footer{
         height: 2.604vw;
         padding: 0.833vw 0.469vw;
         min-width: 2.604vw;
-        border-radius: 0.365vw;
         margin-right: 0.521vw;
 
         p{
@@ -7473,7 +7522,6 @@ footer{
         height: 5.859vw;
         padding: 1.953vw 1.042vw;
         min-width: 5.859vw;
-        border-radius: 7px;
         margin-right: 1.302vw;
 
         p{
@@ -9902,7 +9950,6 @@ footer{
         height: 10.938vw;
         padding: 4.063vw 1.875vw;
         min-width: 10.938vw;
-        border-radius: 2.188vw;
         margin-right: 1.302vw;
 
         p{

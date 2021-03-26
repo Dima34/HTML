@@ -1293,12 +1293,12 @@ header {
         line-height: 23px;
         font-family: "Gotham" !important;
         font-weight: 500 !important;
-        color: #61A036;
+        color: #3C6321;
         margin-bottom: 40px; }
       .cathalog_cathalog .wrapper .cathalog_sidebar .cathalog_sidebar_section .cathalog_sidebar_section_title {
         font-size: 24px;
         line-height: 23px;
-        color: #61A036;
+        color: #3C6321;
         padding-left: 32px;
         position: relative;
         margin-bottom: 30px;
@@ -1345,14 +1345,18 @@ header {
           margin-bottom: 10px; }
         .cathalog_cathalog .wrapper .cathalog_sidebar .cathalog_sidebar_text .cathalog_sidebar_download {
           display: block;
-          background: #61A036;
           border-radius: 7px;
           font-family: "Gotham" !important;
           font-weight: 400 !important;
           line-height: 15px;
-          color: #FFFFFF;
           padding: 15px;
-          text-align: center; }
+          text-align: center;
+          border: 2px solid #61A036;
+          transition: .3s; }
+          .cathalog_cathalog .wrapper .cathalog_sidebar .cathalog_sidebar_text .cathalog_sidebar_download:hover {
+            background: #AAE382;
+            color: white;
+            border-color: #AAE382; }
     .cathalog_cathalog .wrapper .cathalog_main {
       margin-left: 53px; }
       .cathalog_cathalog .wrapper .cathalog_main .all-products_popup {
@@ -1469,16 +1473,20 @@ header {
             color: #5B5B5B;
             margin-bottom: 15px; }
           .cathalog_cathalog .wrapper .cathalog_main .cathalog_products .product_blk .product_button {
-            background: #61A036;
             border-radius: 7px;
             display: block;
             padding: 16px;
             text-align: center;
-            color: white;
             font-size: 16px;
             line-height: 15px;
             font-family: "Gotham" !important;
-            font-weight: 400 !important; }
+            font-weight: 400 !important;
+            border: 2px solid #61A036;
+            transition: .3s; }
+            .cathalog_cathalog .wrapper .cathalog_main .cathalog_products .product_blk .product_button:hover {
+              background: #AAE382;
+              color: white;
+              border-color: #AAE382; }
           .cathalog_cathalog .wrapper .cathalog_main .cathalog_products .product_blk .product_heart {
             position: absolute;
             top: 13px;
@@ -1515,14 +1523,20 @@ header {
     align-items: center; }
     .page_navigation .navigation_pagination .pagination_blk {
       height: 50px;
-      border: 1px solid #61A036;
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 16px 9px;
       min-width: 50px;
-      border-radius: 7px;
-      margin-right: 10px; }
+      border-radius: 50%;
+      margin-right: 10px;
+      cursor: pointer;
+      border: 2px solid #61A036;
+      transition: .3s; }
+      .page_navigation .navigation_pagination .pagination_blk:hover {
+        background: #AAE382;
+        color: white;
+        border-color: #AAE382; }
       .page_navigation .navigation_pagination .pagination_blk p {
         font-size: 20px;
         line-height: 19px;
@@ -1587,7 +1601,7 @@ header {
       color: #373737;
       margin-bottom: 15px; }
       .pp__popup_popup_blk .pp__popup_popup_blk_main .pp_input_title span {
-        color: #EF5F5F; }
+        color: #B01111; }
     .pp__popup_popup_blk .pp__popup_popup_blk_main .pp_input {
       display: block;
       width: 100%;
@@ -1616,11 +1630,15 @@ header {
       display: block;
       padding: 15px;
       text-align: center;
-      background: #61A036;
       border-radius: 7px;
       font-family: "Gotham" !important;
       font-weight: 400 !important;
-      color: #FFFFFF; }
+      border: 2px solid #61A036;
+      transition: .3s; }
+      .pp__popup_popup_blk .pp__popup_popup_blk_main .pp_send:hover {
+        background: #AAE382;
+        color: white;
+        border-color: #AAE382; }
   .pp__popup_popup_blk .pp_close {
     position: absolute;
     right: 20px;
@@ -1850,16 +1868,20 @@ header {
     width: 100%; }
   .login .login_wrap .login_enter {
     display: block;
-    background: #61A036;
     border-radius: 7px;
     font-size: 18px;
     line-height: 17px;
     font-family: "Gotham" !important;
     font-weight: 400 !important;
-    color: #FFFFFF;
     padding: 15px;
     text-align: center;
-    margin-bottom: 29px; }
+    margin-bottom: 29px;
+    border: 2px solid #61A036;
+    transition: .3s; }
+    .login .login_wrap .login_enter:hover {
+      background: #AAE382;
+      color: white;
+      border-color: #AAE382; }
   .login .login_wrap .login_groupbox {
     display: flex;
     justify-content: space-between; }
@@ -1929,8 +1951,8 @@ header {
       padding: 0 0 15px 0;
       margin-right: 47px; }
     .coop_app .wrapper .app_selections .select_selected {
-      color: #61A036;
-      border-bottom: 2px solid #61A036; }
+      color: #3C6321;
+      border-bottom: 2px solid #3C6321; }
   .coop_app .wrapper .app_main_sell {
     display: none; }
   .coop_app .wrapper .app_main .app_main_wrap {
@@ -1985,11 +2007,15 @@ header {
       line-height: 17px;
       font-family: "Gotham" !important;
       font-weight: 400 !important;
-      color: #FFFFFF;
       border-radius: 7px;
-      background: #61A036;
       display: block;
-      width: fit-content; }
+      width: fit-content;
+      border: 2px solid #61A036;
+      transition: .3s; }
+      .coop_app .wrapper .app_main .app_main_wrap .app_main_right .app_main_send:hover {
+        background: #AAE382;
+        color: white;
+        border-color: #AAE382; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -2210,12 +2236,16 @@ header {
       font-family: "Gotham" !important;
       font-weight: 400 !important; }
   .tracking .wrapper .tracking_track .track_groupbox .track_btn {
-    background: #61A036;
     border-radius: 7px;
     padding: 15px 30px;
-    color: white;
     font-family: "Gotham" !important;
-    font-weight: 400 !important; }
+    font-weight: 400 !important;
+    border: 2px solid #61A036;
+    transition: .3s; }
+    .tracking .wrapper .tracking_track .track_groupbox .track_btn:hover {
+      background: #AAE382;
+      color: white;
+      border-color: #AAE382; }
   .tracking .wrapper .tracking_track .track_description {
     font-size: 16px;
     line-height: 153.69%;
@@ -2720,7 +2750,7 @@ header {
           padding: 0;
           padding-bottom: 10px; }
           .cart .wrapper .cart_main .cart_line:first-child p {
-            color: #61A036; }
+            color: #3C6321; }
           .cart .wrapper .cart_main .cart_line:first-child .line_counter {
             display: flex;
             justify-content: center; }
@@ -2738,17 +2768,21 @@ header {
           line-height: 34px; }
       .cart .wrapper .cart_main .cart_buy {
         display: block;
-        background: #61A036;
         border-radius: 7px;
         padding: 20px;
-        color: #FFFFFF;
         border: 0;
         font-family: "Gotham" !important;
         font-weight: 500 !important;
         font-size: 18px;
         line-height: 17px;
         text-align: center;
-        margin-bottom: 167px; }
+        margin-bottom: 167px;
+        border: 2px solid #61A036;
+        transition: .3s; }
+        .cart .wrapper .cart_main .cart_buy:hover {
+          background: #AAE382;
+          color: white;
+          border-color: #AAE382; }
     .cart .wrapper .cart_sidebar {
       grid-column-start: 2;
       grid-column-end: 3;
@@ -2769,7 +2803,7 @@ header {
           line-height: 175%;
           font-family: "Gotham" !important;
           font-weight: 400 !important;
-          color: #969696; }
+          color: #595959; }
         .cart .wrapper .cart_sidebar .sidebar_blk .subtitle_img {
           position: absolute;
           left: 0;
@@ -3756,7 +3790,6 @@ footer .wrapper {
         height: 2.604vw;
         padding: 0.833vw 0.469vw;
         min-width: 2.604vw;
-        border-radius: 0.365vw;
         margin-right: 0.521vw; }
         .page_navigation .navigation_pagination .pagination_blk p {
           font-size: 1.042vw;
@@ -5019,7 +5052,6 @@ footer .wrapper {
         height: 5.859vw;
         padding: 1.953vw 1.042vw;
         min-width: 5.859vw;
-        border-radius: 7px;
         margin-right: 1.302vw; }
         .page_navigation .navigation_pagination .pagination_blk p {
           font-size: 2.344vw;
@@ -6476,7 +6508,6 @@ footer .wrapper {
         height: 10.938vw;
         padding: 4.063vw 1.875vw;
         min-width: 10.938vw;
-        border-radius: 2.188vw;
         margin-right: 1.302vw; }
         .page_navigation .navigation_pagination .pagination_blk p {
           font-size: 4.375vw;
