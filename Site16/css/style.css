@@ -494,6 +494,7 @@ header {
         transition: .3s; }
         header .desktop .desktop_header_wrapper .desktop_other .desktop_header_callme:hover {
           background: #AAE382;
+          color: white;
           border-color: #AAE382; }
       header .desktop .desktop_header_wrapper .desktop_other .desktop_bin, header .desktop .desktop_header_wrapper .desktop_other .desktop_favorite, header .desktop .desktop_header_wrapper .desktop_other .desktop_profile {
         padding-top: 5px;
@@ -543,14 +544,21 @@ header {
         line-height: 175%;
         color: #828282; }
     .search .wrapper a {
-      background: #61a036;
+      background: white;
       min-width: 155px;
       padding: 15px 45px;
       font-size: 18px;
       line-height: 175%;
-      color: #ffffff;
+      color: black;
+      border-left: 2px solid #61a036;
+      border-radius: 7px;
       font-family: "Gotham" !important;
-      font-weight: 400 !important; }
+      font-weight: 400 !important;
+      transition: .3s; }
+      .search .wrapper a:hover {
+        background: #AAE382;
+        border-color: #AAE382;
+        color: white; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */

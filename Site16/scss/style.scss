@@ -606,7 +606,7 @@ header{
 
           &:hover{
             background: #AAE382;
-            // color: #626F77;
+            color: white;
             border-color: #AAE382;
             
           }
@@ -676,13 +676,22 @@ header{
     }
 
     a {
-      background: #61a036;
+      background:white;
       min-width: 155px;
       padding: 15px 45px;
       font-size: 18px;
       line-height: 175%;
-      color: #ffffff;
+      color: black;
+      border-left:2px solid #61a036;
+      border-radius: 7px;
       @include Gotham(400);
+      transition: .3s;
+
+      &:hover{
+        background: #AAE382;
+        border-color: #AAE382;
+        color: white;
+      }
     }
   }
 }
