@@ -994,9 +994,9 @@ header {
             border-radius: 7px;
             margin-bottom: 9px; }
           .product_product .wrapper .product_main .product .product_subtitle .product_seasons .product_season-active {
-            background: #61A036;
-            border: 0;
-            color: #ffffff; }
+            background: #AAE382;
+            color: white;
+            border-color: #AAE382; }
         .product_product .wrapper .product_main .product .product_subtitle .product_desc {
           font-size: 18px;
           line-height: 175%;
