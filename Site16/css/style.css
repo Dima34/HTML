@@ -1531,7 +1531,7 @@ header {
       border-radius: 50%;
       margin-right: 10px;
       cursor: pointer;
-      border: 2px solid #61A036;
+      border: 2px solid #3A6020;
       transition: .3s; }
       .page_navigation .navigation_pagination .pagination_blk:hover {
         background: #AAE382;
@@ -1545,7 +1545,7 @@ header {
       .page_navigation .navigation_pagination .pagination_blk:last-child {
         margin-right: 0; }
     .page_navigation .navigation_pagination .pagination_blk-active {
-      background: #61A036; }
+      background: #3A6020; }
       .page_navigation .navigation_pagination .pagination_blk-active p {
         color: white; }
 
@@ -1696,7 +1696,7 @@ header {
       color: #373737;
       margin-bottom: 15px; }
       .pre-order__popup_popup_blk .pre-order__popup_popup_blk_main .pre-order_input_title span {
-        color: #EF5F5F; }
+        color: #B01111; }
     .pre-order__popup_popup_blk .pre-order__popup_popup_blk_main .pp_input {
       display: block;
       width: 100%;
@@ -1763,8 +1763,8 @@ header {
     .reg .wrapper .reg_choices .reg-choice-selected {
       font-family: "Gotham" !important;
       font-weight: 500 !important;
-      color: #61A036;
-      border-bottom: 2px solid #61A036; }
+      color: #3A6020;
+      border-bottom: 2px solid #3A6020; }
   .reg .wrapper .reg_main {
     width: 289px;
     margin: 0 auto; }
@@ -1775,7 +1775,7 @@ header {
       font-weight: 500 !important;
       margin-bottom: 15px; }
       .reg .wrapper .reg_main .reg_input_title span {
-        color: #EF5F5F; }
+        color: #B01111; }
     .reg .wrapper .reg_main .reg_input {
       background: 0;
       border: 1px solid #D8DCE4;
@@ -1907,7 +1907,7 @@ header {
   color: #373737;
   margin-bottom: 15px; }
   .input_title span {
-    color: #EF5F5F; }
+    color: #B01111; }
 
 .input {
   font-size: 14px;
@@ -2501,7 +2501,7 @@ header {
       color: #373737;
       margin-bottom: 15px; }
       .make-an-order .wrapper .make-an-order_adress .adress_input_title span {
-        color: #EF5F5F; }
+        color: #B01111; }
     .make-an-order .wrapper .make-an-order_adress .adress_line1 {
       display: flex;
       justify-content: space-between;
@@ -3021,7 +3021,7 @@ footer .wrapper {
       color: #373737;
       margin-bottom: 15px; }
       .info-change__popup_popup_blk .info-change__popup_popup_blk_main .info-change_input_title span {
-        color: #EF5F5F; }
+        color: #B01111; }
     .info-change__popup_popup_blk .info-change__popup_popup_blk_main .info-change_input {
       display: block;
       width: 100%;
