@@ -1733,11 +1733,15 @@ header {
       display: block;
       padding: 15px;
       text-align: center;
-      background: #61A036;
       border-radius: 7px;
       font-family: "Gotham" !important;
       font-weight: 400 !important;
-      color: #FFFFFF; }
+      border: 2px solid #61A036;
+      transition: .3s; }
+      .pre-order__popup_popup_blk .pre-order__popup_popup_blk_main .pre-order_send:hover {
+        background: #AAE382;
+        color: white;
+        border-color: #AAE382; }
   .pre-order__popup_popup_blk .pre-order_close {
     position: absolute;
     right: 20px;
