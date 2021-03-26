@@ -1155,7 +1155,7 @@ header {
           line-height: 175%;
           font-family: "Gotham" !important;
           font-weight: 400 !important;
-          color: #969696; }
+          color: #595959; }
         .product_product .wrapper .product_sidebar .sidebar_blk .subtitle_img {
           position: absolute;
           left: 0;
@@ -3104,7 +3104,7 @@ footer .wrapper {
     font-family: "Gotham" !important;
     font-weight: 500 !important; }
   .lk_main-my-orders .wrapper .orders__dropdown_block_header .order_date {
-    color: #969696; }
+    color: #595959; }
   .lk_main-my-orders .wrapper .orders__dropdown_block_header .order_status {
     margin-left: auto; }
 
