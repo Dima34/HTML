@@ -2004,6 +2004,7 @@ footer{
                     line-height: 35px;
                     position: relative;
                     margin-top: 12px;
+                    transition: .3s;
 
                     &::after{
                         content: "";
@@ -2012,6 +2013,15 @@ footer{
                         left: calc(100% + 15px);
                         width: 25px;
                         height: 10px;
+                        transition: .3s;
+                    }
+
+                    &:hover{
+                        color: white !important;
+
+                        &::after{
+                            left: calc(100% + 25px);
+                        }
                     }
                 }
                 

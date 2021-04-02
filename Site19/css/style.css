@@ -1432,14 +1432,20 @@ footer {
         font-size: 35px;
         line-height: 35px;
         position: relative;
-        margin-top: 12px; }
+        margin-top: 12px;
+        transition: .3s; }
         .what-you-need .wrapper .services-list .list-item .list-link::after {
           content: "";
           background: url(../img/svg/what-we-do_what-you-need_arrow.svg) center no-repeat;
           position: absolute;
           left: calc(100% + 15px);
           width: 25px;
-          height: 10px; }
+          height: 10px;
+          transition: .3s; }
+        .what-you-need .wrapper .services-list .list-item .list-link:hover {
+          color: white !important; }
+          .what-you-need .wrapper .services-list .list-item .list-link:hover::after {
+            left: calc(100% + 25px); }
     .what-you-need .wrapper .services-list:nth-child(1) .list-item:nth-child(1) .list-link:after {
       top: 18px; }
     .what-you-need .wrapper .services-list:nth-child(1) .list-item:nth-child(2) .list-link:after {
