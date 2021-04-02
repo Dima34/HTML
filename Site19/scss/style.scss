@@ -143,6 +143,10 @@ a{
     transition: .3s !important;
 }
 
+a,p,h1,h2,h3,span{
+    font-family: 'Open Sans' !important;
+}
+
 a:hover{
     color: #FFE76A !important;
 }
@@ -310,7 +314,7 @@ header{
                     }
 
                     &:hover{
-                        color: black;
+                        color: black !important;
                     }
 
                     &:hover::after{
@@ -319,10 +323,6 @@ header{
                 }
             }
         }
-
-        
-
-
     }
 
     .header-burger-menu.active-x{
@@ -355,7 +355,7 @@ header{
         right: 0;
         transform: translateY(-50%);
         z-index: 5;
-        // opacity: 0;
+        opacity: 0;
         transition: .3s;
         pointer-events: all;
         cursor: pointer;
@@ -390,7 +390,6 @@ header{
     0%{opacity: 0;}
     100%{opacity: 1;}
 }
-
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1398,7 +1397,6 @@ footer{
     }
 }
 
-
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1867,4 +1865,276 @@ footer{
     }
 
 
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=====WHAT WE DO INTRO=====----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.what-we-do_intro{
+    .wrapper{
+        padding: 0px 88px;
+        padding-top: 92px;
+
+        .logo{
+            margin-bottom: 27px;
+            display: block;
+        }
+
+        .intro_title{
+            text-align: center;
+            margin-bottom: 15px;
+            @include Open(800);
+            font-size: 80px;
+            line-height: 140px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        .intro_subtitle{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 85px;
+            font-size: 35px;
+            line-height: 52px;
+            @include Open(300);
+            text-align: center;
+            letter-spacing: 0.01em;
+        }
+
+        .intro_alert{
+            max-width: 467px;
+            padding-left: 43px;
+            position: relative;
+            margin: 0 auto;
+            font-size: 30px;
+            line-height: 53px;
+            letter-spacing: 0.01em;
+            
+
+            .alert_text{
+                position: relative;
+                z-index: 2;
+            }
+
+            .alert-ring{
+                position: absolute;
+                top: -25px;
+                right: -20px;
+                z-index: -1;
+            }
+
+            &::after{
+                content: "";
+                content: url(../img/svg/what-we-do-intro-shape.svg);
+                position: absolute;
+                top: -42px;
+                right: -33px;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----======WHAT YOU NEED======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.what-you-need{
+    background: #FFE76A;
+    position: relative;
+    margin-top: 392px;
+
+    #top{
+        position: absolute;
+        bottom: calc(100% - 1px);
+        left: 0;
+    }
+
+    #bottom{
+        position: absolute;
+        top: calc(100% - 6px);
+        left: 0;
+    }
+
+    #textLine{
+        transform: translateY(-50px);
+        font-size: 55px;
+        @include Open(600);
+        line-height: 60px;
+        fill: white;
+        stroke:black;
+        stroke-width:2;
+    }
+
+    #textInside{
+        color: white;
+    }
+
+    .wrapper{
+        padding: 47px 137px 0 101px;
+        display: flex;
+        justify-content: space-between;
+
+        .services-list{
+
+            .list-item{
+                display: flex;
+                margin-bottom: 28px;
+                
+                .list-number{
+                    font-size: 18px;
+                    line-height: 20px;
+                    font-weight: 400 !important;
+                    color: white;
+                    display: block;
+                    margin: 11px 11px 0 0;
+                }
+                    
+                .list-link{
+                    font-size: 35px;
+                    line-height: 35px;
+                    position: relative;
+                    margin-top: 12px;
+
+                    &::after{
+                        content: "";
+                        background: url(../img/svg/what-we-do_what-you-need_arrow.svg) center no-repeat;
+                        position: absolute;
+                        left: calc(100% + 15px);
+                        width: 25px;
+                        height: 10px;
+                    }
+                }
+                
+            }
+
+            &:nth-child(1){
+
+                .list-item:nth-child(1) .list-link:after{
+                    top: 18px;
+                }
+
+                .list-item:nth-child(2) .list-link:after{
+                    top: 18px;
+                }
+
+                .list-item:nth-child(3) .list-link:after{
+                    top: 13px;
+                }
+
+                .list-item:nth-child(4) .list-link:after{
+                    top: 18px;
+                }
+            }
+
+            &:nth-child(2){
+
+                .list-item:nth-child(1) .list-link:after{
+                    top: 18px;
+                }
+
+                .list-item:nth-child(2) .list-link:after{
+                    top: 18px;
+                }
+
+                .list-item:nth-child(3) .list-link:after{
+                    top: 18px;
+                }
+
+                .list-item:nth-child(4) .list-link:after{
+                    top: 18px;
+                }
+            }
+        }
+    }
+
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=====LETS DO TOGETHER=====----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.lets-do-together{
+    margin-top: 289px;
+
+    .wrapper{
+        padding: 41px 0 10px 0;
+
+        .lets-do{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 140px 0 10px;
+
+            .lets-do-button{
+                display: block;
+                position: relative;
+                font-weight: 600 !important;
+                font-size: 35px;
+                line-height: 70px;
+
+                &::after{
+                    position: absolute;
+                    content: url(../img/svg/lets-do-button.svg);
+                    z-index: -1;
+                    left: -27px;
+                    top: -26px;
+                }
+            }
+        }
+
+        .lets-do-alert{
+            font-size: 88px;
+            line-height: 115px;
+            text-align: center;
+            letter-spacing: 0.065em;
+            font-weight: 800 !important;
+            color: #FFE76A;
+            display: block;
+            max-width: 969px;
+            margin: 0 auto;
+            margin-top: 155px;
+        }
+    }
+}
+
+.popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    display: none; 
+}
+  
+.popup-active {
+    display: flex; 
+}
+  
+.popup_popup_blk {
+    max-width: 465px;
+    width: 100%;
+    padding: 25px 0px 0 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+    border-radius: 10px;
+    position: relative; 
 }

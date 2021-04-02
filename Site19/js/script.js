@@ -70,7 +70,6 @@ opacityCounter = (element,speed) =>{
     let timer = setInterval(()=>{
         tmp+=0.1;
         element.style.opacity = tmp;
-        console.log(tmp);
         if(tmp >=1){
             clearTimeout(timer)
         }
@@ -198,6 +197,7 @@ mouseParallax(document.querySelector(".move-container3"), 0.001);
 mouseParallax(document.querySelector(".move-container4"), 0.001);
 mouseParallax(document.querySelector(".lets-talk-ring"), 0.001);
 mouseParallax(document.querySelector(".shape-block-shape"), 0.001);
+mouseParallax(document.querySelector(".alert-ring"), 0.001);
 
 // 
 // Ticker
@@ -334,5 +334,86 @@ function scrolling(e){
 }
 
 
+// 
+// What We Do Ticker
+// 
+
+let text = document.getElementById("textLine");
+let textInside = document.getElementById("textInside");
+
+if(text){
+    let tmp = textInside.textContent;
+
+    let newTmp;
+
+    newTmp = ""
+
+    for(i = 0; i < 25; i++){
+    newTmp += tmp+"\u00A0";
+    }
+
+    textInside.textContent = newTmp;
+
+    let currPos = -10440;
+    text.setAttribute("x", currPos)
+
+    let timer = setInterval(() => {
+    currPos+=1;
+    text.setAttribute("x", currPos);
+    
+    if(currPos >= 0){
+        currPos = -(10440 + 154)
+        
+    }
+    
+    }, 25);
+}
 
 
+// 
+// Pop Up
+// 
+
+let RegSPopupOpen = document.querySelectorAll(".nav_consult");
+let RegSPopup = document.querySelector(".about-you_popup");
+
+if(RegSPopup && RegSPopupOpen){
+
+    for (let i = 0; i < RegSPopupOpen.length; i++) {
+        RegSPopupOpen[i].addEventListener('click',()=>{
+            closeAllPopups();
+            RegSPopup.classList.add("popup-active");
+            checkHeight(RegSPopup);
+        });  
+        
+    }
+
+}
+
+function closeAllPopups(){
+    popupClose = document.querySelectorAll(".pp_close");
+    
+    for (let i = 0; i < popupClose.length; i++) {
+        
+        AllPopups[i].classList.remove("popup-active");
+        
+    }
+}  
+
+function checkHeight(el){
+
+    insideBlock = el.querySelector(".popup_popup_blk");
+
+    if(insideBlock){
+        elHeight = Number(window.getComputedStyle(insideBlock).height.slice(0,-2));
+
+        if(elHeight >window.innerHeight){
+            
+            el.style.alignItems = "flex-start";
+            el.style.overflowY = "scroll";
+
+        }
+        
+
+    }
+}

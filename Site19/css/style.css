@@ -108,6 +108,9 @@ body {
 a {
   transition: .3s !important; }
 
+a, p, h1, h2, h3, span {
+  font-family: 'Open Sans' !important; }
+
 a:hover {
   color: #FFE76A !important; }
 
@@ -222,7 +225,7 @@ header {
             top: 50%;
             transform: translate(-50%, -43%); }
           header .header-burger-menu .wrapper .burger_itemlist .burger_item a:hover {
-            color: black; }
+            color: black !important; }
           header .header-burger-menu .wrapper .burger_itemlist .burger_item a:hover::after {
             opacity: 1; }
   header .header-burger-menu.active-x .burger_header .burger-logo, header .header-burger-menu.active-x .burger_header .burger-close {
@@ -245,6 +248,7 @@ header {
     right: 0;
     transform: translateY(-50%);
     z-index: 5;
+    opacity: 0;
     transition: .3s;
     pointer-events: all;
     cursor: pointer; }
@@ -1323,5 +1327,199 @@ footer {
     position: absolute;
     top: 787px;
     right: 0; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=====WHAT WE DO INTRO=====----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.what-we-do_intro .wrapper {
+  padding: 0px 88px;
+  padding-top: 92px; }
+  .what-we-do_intro .wrapper .logo {
+    margin-bottom: 27px;
+    display: block; }
+  .what-we-do_intro .wrapper .intro_title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Open Sans' !important;
+    font-weight: 800 !important;
+    font-size: 80px;
+    line-height: 140px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase; }
+  .what-we-do_intro .wrapper .intro_subtitle {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 85px;
+    font-size: 35px;
+    line-height: 52px;
+    font-family: 'Open Sans' !important;
+    font-weight: 300 !important;
+    text-align: center;
+    letter-spacing: 0.01em; }
+  .what-we-do_intro .wrapper .intro_alert {
+    max-width: 467px;
+    padding-left: 43px;
+    position: relative;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 53px;
+    letter-spacing: 0.01em; }
+    .what-we-do_intro .wrapper .intro_alert .alert_text {
+      position: relative;
+      z-index: 2; }
+    .what-we-do_intro .wrapper .intro_alert .alert-ring {
+      position: absolute;
+      top: -25px;
+      right: -20px;
+      z-index: -1; }
+    .what-we-do_intro .wrapper .intro_alert::after {
+      content: "";
+      content: url(../img/svg/what-we-do-intro-shape.svg);
+      position: absolute;
+      top: -42px;
+      right: -33px;
+      z-index: -1; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----======WHAT YOU NEED======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.what-you-need {
+  background: #FFE76A;
+  position: relative;
+  margin-top: 392px; }
+  .what-you-need #top {
+    position: absolute;
+    bottom: calc(100% - 1px);
+    left: 0; }
+  .what-you-need #bottom {
+    position: absolute;
+    top: calc(100% - 6px);
+    left: 0; }
+  .what-you-need #textLine {
+    transform: translateY(-50px);
+    font-size: 55px;
+    font-family: 'Open Sans' !important;
+    font-weight: 600 !important;
+    line-height: 60px;
+    fill: white;
+    stroke: black;
+    stroke-width: 2; }
+  .what-you-need #textInside {
+    color: white; }
+  .what-you-need .wrapper {
+    padding: 47px 137px 0 101px;
+    display: flex;
+    justify-content: space-between; }
+    .what-you-need .wrapper .services-list .list-item {
+      display: flex;
+      margin-bottom: 28px; }
+      .what-you-need .wrapper .services-list .list-item .list-number {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 400 !important;
+        color: white;
+        display: block;
+        margin: 11px 11px 0 0; }
+      .what-you-need .wrapper .services-list .list-item .list-link {
+        font-size: 35px;
+        line-height: 35px;
+        position: relative;
+        margin-top: 12px; }
+        .what-you-need .wrapper .services-list .list-item .list-link::after {
+          content: "";
+          background: url(../img/svg/what-we-do_what-you-need_arrow.svg) center no-repeat;
+          position: absolute;
+          left: calc(100% + 15px);
+          width: 25px;
+          height: 10px; }
+    .what-you-need .wrapper .services-list:nth-child(1) .list-item:nth-child(1) .list-link:after {
+      top: 18px; }
+    .what-you-need .wrapper .services-list:nth-child(1) .list-item:nth-child(2) .list-link:after {
+      top: 18px; }
+    .what-you-need .wrapper .services-list:nth-child(1) .list-item:nth-child(3) .list-link:after {
+      top: 13px; }
+    .what-you-need .wrapper .services-list:nth-child(1) .list-item:nth-child(4) .list-link:after {
+      top: 18px; }
+    .what-you-need .wrapper .services-list:nth-child(2) .list-item:nth-child(1) .list-link:after {
+      top: 18px; }
+    .what-you-need .wrapper .services-list:nth-child(2) .list-item:nth-child(2) .list-link:after {
+      top: 18px; }
+    .what-you-need .wrapper .services-list:nth-child(2) .list-item:nth-child(3) .list-link:after {
+      top: 18px; }
+    .what-you-need .wrapper .services-list:nth-child(2) .list-item:nth-child(4) .list-link:after {
+      top: 18px; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----=====LETS DO TOGETHER=====----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.lets-do-together {
+  margin-top: 289px; }
+  .lets-do-together .wrapper {
+    padding: 41px 0 10px 0; }
+    .lets-do-together .wrapper .lets-do {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 140px 0 10px; }
+      .lets-do-together .wrapper .lets-do .lets-do-button {
+        display: block;
+        position: relative;
+        font-weight: 600 !important;
+        font-size: 35px;
+        line-height: 70px; }
+        .lets-do-together .wrapper .lets-do .lets-do-button::after {
+          position: absolute;
+          content: url(../img/svg/lets-do-button.svg);
+          z-index: -1;
+          left: -27px;
+          top: -26px; }
+    .lets-do-together .wrapper .lets-do-alert {
+      font-size: 88px;
+      line-height: 115px;
+      text-align: center;
+      letter-spacing: 0.065em;
+      font-weight: 800 !important;
+      color: #FFE76A;
+      display: block;
+      max-width: 969px;
+      margin: 0 auto;
+      margin-top: 155px; }
+
+.popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  display: none; }
+
+.popup-active {
+  display: flex; }
+
+.popup_popup_blk {
+  max-width: 465px;
+  width: 100%;
+  padding: 25px 0px 0 0px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
+  border-radius: 10px;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
