@@ -269,7 +269,7 @@ header {
   transition-duration: .1s;
   transform: translateX(-75%) translateY(-80%);
   pointer-events: none;
-  z-index: 9999;
+  z-index: 10001;
   mix-blend-mode: difference; }
 
 @keyframes itemShow {
@@ -1502,7 +1502,15 @@ footer {
       margin: 0 auto;
       margin-top: 155px; }
 
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------========POPUP=======-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 .popup {
+  z-index: 10000;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -1511,7 +1519,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(3px);
   display: none; }
@@ -1519,13 +1526,117 @@ footer {
 .popup-active {
   display: flex; }
 
-.popup_popup_blk {
-  max-width: 465px;
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----======ABOUT YOU POPUP=====----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.about-you-open {
   width: 100%;
-  padding: 25px 0px 0 0px;
-  background: #FFFFFF;
-  box-shadow: 0px 0px 50px rgba(208, 206, 187, 0.18);
-  border-radius: 10px;
-  position: relative; }
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5000; }
+  .about-you-open .wrapper {
+    padding-top: 13px;
+    padding-right: 432px;
+    display: flex;
+    justify-content: flex-end; }
+    .about-you-open .wrapper .about-you-open-btn {
+      pointer-events: all;
+      font-size: 25px;
+      line-height: 30px;
+      font-family: 'Open Sans' !important;
+      font-weight: 400 !important;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+      position: relative;
+      transition: .3s;
+      cursor: pointer; }
+      .about-you-open .wrapper .about-you-open-btn::after {
+        content: url(../img/svg/about-you-popup_btn-open-ring.svg);
+        position: absolute;
+        top: -14px;
+        left: -26px;
+        z-index: -1; }
+      .about-you-open .wrapper .about-you-open-btn:hover {
+        color: #FFE76A; }
+
+.about-you_popup .wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 4px; }
+  .about-you_popup .wrapper .about-you_popup_blk {
+    padding: 44px 152px 66px 152px;
+    max-width: 631px;
+    width: 100%;
+    position: relative; }
+    .about-you_popup .wrapper .about-you_popup_blk input, .about-you_popup .wrapper .about-you_popup_blk textarea {
+      display: block;
+      padding: 12px 14px 11px 14px;
+      border: 1px solid white;
+      border-radius: 10px;
+      width: 100%;
+      background: 0; }
+    .about-you_popup .wrapper .about-you_popup_blk input, .about-you_popup .wrapper .about-you_popup_blk textarea, .about-you_popup .wrapper .about-you_popup_blk input::placeholder, .about-you_popup .wrapper .about-you_popup_blk textarea::placeholder {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 10px;
+      font-family: 'Open Sans' !important;
+      font-weight: 300 !important;
+      opacity: 1;
+      color: white; }
+    .about-you_popup .wrapper .about-you_popup_blk textarea {
+      resize: none;
+      height: 81px;
+      margin-bottom: 46px; }
+      .about-you_popup .wrapper .about-you_popup_blk textarea::-webkit-scrollbar {
+        width: 4px;
+        border-radius: 10px;
+        height: 8px;
+        background-color: 0; }
+      .about-you_popup .wrapper .about-you_popup_blk textarea::-webkit-scrollbar-thumb {
+        background-color: white;
+        border-radius: 30%;
+        box-shadow: inset 1px 1px 10px #f3faf7; }
+      .about-you_popup .wrapper .about-you_popup_blk textarea::-webkit-scrollbar-thumb:hover {
+        background-color: #253861; }
+      .about-you_popup .wrapper .about-you_popup_blk textarea::-webkit-scrollbar-button:vertical:start:decrement {
+        display: none; }
+      .about-you_popup .wrapper .about-you_popup_blk textarea::-webkit-scrollbar-button:vertical:end:increment {
+        display: none; }
+    .about-you_popup .wrapper .about-you_popup_blk button {
+      font-family: 'Open Sans' !important;
+      font-weight: 600 !important;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: 0.03em;
+      color: white;
+      position: relative;
+      z-index: 2;
+      display: block;
+      margin: 0 auto;
+      transform: translate(-1px, -3px);
+      transition: .3s; }
+      .about-you_popup .wrapper .about-you_popup_blk button::after {
+        position: absolute;
+        content: url(../img/svg/about-you-popup_btn-ring.svg);
+        z-index: -1;
+        left: -31px;
+        top: -23px; }
+      .about-you_popup .wrapper .about-you_popup_blk button:hover {
+        color: #FFE76A;
+        transform: translate(-1px, -5px) scale(1.04); }
+    .about-you_popup .wrapper .about-you_popup_blk::after {
+      position: absolute;
+      content: url(../img/svg/about-you-popup-background.svg);
+      top: 0;
+      left: 0;
+      z-index: -1; }
 
 /*# sourceMappingURL=style.css.map */

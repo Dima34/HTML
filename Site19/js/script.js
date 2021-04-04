@@ -374,16 +374,16 @@ if(text){
 // Pop Up
 // 
 
-let RegSPopupOpen = document.querySelectorAll(".nav_consult");
-let RegSPopup = document.querySelector(".about-you_popup");
+let aboutYouPopupOpen = document.querySelectorAll(".about-you-open-btn");
+let aboutYouPopup = document.querySelector(".about-you_popup");
 
-if(RegSPopup && RegSPopupOpen){
+if(aboutYouPopup && aboutYouPopupOpen){
 
-    for (let i = 0; i < RegSPopupOpen.length; i++) {
-        RegSPopupOpen[i].addEventListener('click',()=>{
+    for (let i = 0; i < aboutYouPopupOpen.length; i++) {
+        aboutYouPopupOpen[i].addEventListener('click',()=>{
             closeAllPopups();
-            RegSPopup.classList.add("popup-active");
-            checkHeight(RegSPopup);
+            aboutYouPopup.classList.add("popup-active");
+            checkHeight(aboutYouPopup);
         });  
         
     }
@@ -391,12 +391,11 @@ if(RegSPopup && RegSPopupOpen){
 }
 
 function closeAllPopups(){
-    popupClose = document.querySelectorAll(".pp_close");
+    let popupsList = document.querySelectorAll(".popup");
     
-    for (let i = 0; i < popupClose.length; i++) {
-        
-        AllPopups[i].classList.remove("popup-active");
-        
+    for (let i = 0; i < popupsList.length; i++) {
+        console.log("close");
+        popupsList[i].classList.remove("popup-active");
     }
 }  
 
@@ -417,3 +416,32 @@ function checkHeight(el){
 
     }
 }
+
+function CheckExistClass(obj, classToFind){
+    let exist = false;
+
+    obj.forEach((ev)=>{
+        if(ev == classToFind){
+            exist = true;
+        }
+    })
+
+    if(exist == true){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+document.addEventListener("click", (e)=>{
+    obj = e.path[0].classList
+    
+    console.log(e.path);
+    console.log(obj);
+    
+    // if(!CheckExistClass(obj, "popup_inner") && !CheckExistClass(obj, "popup-btn")){
+    //     closeAllPopups()
+    // }
+    
+})
