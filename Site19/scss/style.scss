@@ -1097,6 +1097,29 @@ footer{
             }
         }
 
+        .lets-do-button{
+            display: block;
+            position: relative;
+            font-weight: 600 !important;
+            font-size: 35px;
+            line-height: 70px;
+            cursor: pointer;
+            transition: .3s;
+            margin-bottom: 61px;
+
+            &::after{
+                position: absolute;
+                content: url(../img/svg/lets-do-button.svg);
+                z-index: -1;
+                left: -27px;
+                top: -26px;
+            }
+
+            &:hover{
+                color: white;
+            }
+        }
+
         .footer_info{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -2440,3 +2463,168 @@ footer{
     }
 }
 
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----======SERVICE PAGES======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.service{
+    padding-top: 92px;
+    margin-bottom: 104px;
+
+    .wrapper{
+        padding: 0 77px;
+
+        .logo{
+            margin-bottom: 52px;
+            display: block;
+        }
+
+        .service_title{
+            text-transform: uppercase;
+            font-size: 80px;
+            line-height: 130px;
+            @include Open(800);
+            margin-bottom: 11px;
+            letter-spacing: 0.02em;
+        }
+
+        .service_subtitle,.service_firs-subtitle{
+            font-size: 30px;
+            line-height: 49px;
+            @include Open(300);
+            margin-bottom: 60px;
+            letter-spacing: 0.01em;
+        }
+
+        .service_firs-subtitle{
+            margin-bottom: 18px;
+        }
+
+        .sevice-list{
+            padding-right: 19px;
+
+            .listitem{
+                display: grid;
+                grid-template-columns: 70px 1fr;
+                font-size: 25px;
+                line-height: 20px;
+                @include Open(300);
+                margin-bottom: 30px;
+                margin-top: -7px;
+
+                .list-number{
+                    justify-self: center;
+                    position: relative;
+                    font-size: 22px;
+                    line-height: 20px;
+                    font-weight: 400 !important;
+                    display: block;
+                    transform: translate(-6px, 13px);
+
+                    &::after{
+                        position: absolute;
+                        content: url(../img/svg/list-number-ring.svg);
+                        left: -19px;
+                        top: -14px;
+                    }
+                }
+
+                .list-text{
+                    margin-left: 1px;
+                    letter-spacing: 0.02em;
+                    font-size: 25px;
+                    line-height: 45px;
+                }
+            }
+        }
+
+        .service-conquer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-right: 67px;
+            margin-bottom: -53px;
+
+            .left{
+                .conquer-list{
+                    margin-top: -10px;
+
+                    .item{
+                        display: grid;
+                        grid-template-columns: 120px 1fr;
+                        margin-bottom: 33px;
+
+                        .number{
+                            font-size: 40px;
+                            line-height: 80px;
+                            @include Open(600);
+                            letter-spacing: 0.02em;
+                            position: relative;
+                            transform: translateX(24px);
+
+                            &::after{
+                                content: url(../img/svg/content-marketing_ring-black.svg);
+                                position: absolute;
+                                left: -25px;
+                                top: -3px;                            
+                            }
+                            
+                        }
+
+                        .text{
+                            font-size: 40px;
+                            line-height: 80px;
+                            @include Open(600);
+                            text-transform: uppercase;
+                            letter-spacing: 0.02em;
+                            
+                        }
+
+                        &:nth-child(2n+2){
+                            
+                            .number{
+                                color:  #FFE76A;
+
+                                &::after{
+                                    content: url(../img/svg/content-marketing_ring-orange.svg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right{
+                .conquer-text{
+                    max-width: 524px;
+                    font-size: 30px;
+                    line-height: 53px;
+                    margin-top: 101px;
+                    position: relative;
+                    
+                    &::after{
+                        position: absolute;
+                        content: url(../img/svg/content-marketing_shape.svg);
+                        left: -43px;
+                        top: -48px;
+                        z-index: -1;
+                    }
+
+                    img{
+                        position: absolute;
+                        left: -23px;
+                        top: -26px;
+                        z-index: -1;
+
+                    }
+                }
+            }
+
+            
+        }
+    }
+}

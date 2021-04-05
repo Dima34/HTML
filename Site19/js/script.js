@@ -460,6 +460,7 @@ document.addEventListener("click", (e)=>{
     obj = e.path
     
     if(!CheckExistClass(obj, "popup_inner") && !CheckExistClass(obj, "popup-btn")){
+        console.log("close");
         closeAllPopups()
     }
     

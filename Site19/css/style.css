@@ -785,6 +785,23 @@ footer {
       footer .wrapper .footer-centered-text:hover {
         color: #FFE76A;
         animation-play-state: paused; }
+    footer .wrapper .lets-do-button {
+      display: block;
+      position: relative;
+      font-weight: 600 !important;
+      font-size: 35px;
+      line-height: 70px;
+      cursor: pointer;
+      transition: .3s;
+      margin-bottom: 61px; }
+      footer .wrapper .lets-do-button::after {
+        position: absolute;
+        content: url(../img/svg/lets-do-button.svg);
+        z-index: -1;
+        left: -27px;
+        top: -26px; }
+      footer .wrapper .lets-do-button:hover {
+        color: white; }
     footer .wrapper .footer_info {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -1744,5 +1761,120 @@ footer {
     top: 0;
     position: absolute;
     z-index: -1; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----======SERVICE PAGES======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.service {
+  padding-top: 92px;
+  margin-bottom: 104px; }
+  .service .wrapper {
+    padding: 0 77px; }
+    .service .wrapper .logo {
+      margin-bottom: 52px;
+      display: block; }
+    .service .wrapper .service_title {
+      text-transform: uppercase;
+      font-size: 80px;
+      line-height: 130px;
+      font-family: 'Open Sans' !important;
+      font-weight: 800 !important;
+      margin-bottom: 11px;
+      letter-spacing: 0.02em; }
+    .service .wrapper .service_subtitle, .service .wrapper .service_firs-subtitle {
+      font-size: 30px;
+      line-height: 49px;
+      font-family: 'Open Sans' !important;
+      font-weight: 300 !important;
+      margin-bottom: 60px;
+      letter-spacing: 0.01em; }
+    .service .wrapper .service_firs-subtitle {
+      margin-bottom: 18px; }
+    .service .wrapper .sevice-list {
+      padding-right: 19px; }
+      .service .wrapper .sevice-list .listitem {
+        display: grid;
+        grid-template-columns: 70px 1fr;
+        font-size: 25px;
+        line-height: 20px;
+        font-family: 'Open Sans' !important;
+        font-weight: 300 !important;
+        margin-bottom: 30px;
+        margin-top: -7px; }
+        .service .wrapper .sevice-list .listitem .list-number {
+          justify-self: center;
+          position: relative;
+          font-size: 22px;
+          line-height: 20px;
+          font-weight: 400 !important;
+          display: block;
+          transform: translate(-6px, 13px); }
+          .service .wrapper .sevice-list .listitem .list-number::after {
+            position: absolute;
+            content: url(../img/svg/list-number-ring.svg);
+            left: -19px;
+            top: -14px; }
+        .service .wrapper .sevice-list .listitem .list-text {
+          margin-left: 1px;
+          letter-spacing: 0.02em;
+          font-size: 25px;
+          line-height: 45px; }
+    .service .wrapper .service-conquer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: 67px;
+      margin-bottom: -53px; }
+      .service .wrapper .service-conquer .left .conquer-list {
+        margin-top: -10px; }
+        .service .wrapper .service-conquer .left .conquer-list .item {
+          display: grid;
+          grid-template-columns: 120px 1fr;
+          margin-bottom: 33px; }
+          .service .wrapper .service-conquer .left .conquer-list .item .number {
+            font-size: 40px;
+            line-height: 80px;
+            font-family: 'Open Sans' !important;
+            font-weight: 600 !important;
+            letter-spacing: 0.02em;
+            position: relative;
+            transform: translateX(24px); }
+            .service .wrapper .service-conquer .left .conquer-list .item .number::after {
+              content: url(../img/svg/content-marketing_ring-black.svg);
+              position: absolute;
+              left: -25px;
+              top: -3px; }
+          .service .wrapper .service-conquer .left .conquer-list .item .text {
+            font-size: 40px;
+            line-height: 80px;
+            font-family: 'Open Sans' !important;
+            font-weight: 600 !important;
+            text-transform: uppercase;
+            letter-spacing: 0.02em; }
+          .service .wrapper .service-conquer .left .conquer-list .item:nth-child(2n+2) .number {
+            color: #FFE76A; }
+            .service .wrapper .service-conquer .left .conquer-list .item:nth-child(2n+2) .number::after {
+              content: url(../img/svg/content-marketing_ring-orange.svg); }
+      .service .wrapper .service-conquer .right .conquer-text {
+        max-width: 524px;
+        font-size: 30px;
+        line-height: 53px;
+        margin-top: 101px;
+        position: relative; }
+        .service .wrapper .service-conquer .right .conquer-text::after {
+          position: absolute;
+          content: url(../img/svg/content-marketing_shape.svg);
+          left: -43px;
+          top: -48px;
+          z-index: -1; }
+        .service .wrapper .service-conquer .right .conquer-text img {
+          position: absolute;
+          left: -23px;
+          top: -26px;
+          z-index: -1; }
 
 /*# sourceMappingURL=style.css.map */
