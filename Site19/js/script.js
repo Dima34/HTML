@@ -390,11 +390,26 @@ if(aboutYouPopup && aboutYouPopupOpen){
 
 }
 
+let briefPopupOpen = document.querySelectorAll(".lets-do-button");
+let briefPopup = document.querySelector(".brief_popup");
+
+if(briefPopup && briefPopupOpen){
+
+    for (let i = 0; i < briefPopupOpen.length; i++) {
+        briefPopupOpen[i].addEventListener('click',()=>{
+            closeAllPopups();
+            briefPopup.classList.add("popup-active");
+            checkHeight(briefPopup);
+        });  
+        
+    }
+
+}
+
 function closeAllPopups(){
     let popupsList = document.querySelectorAll(".popup");
     
     for (let i = 0; i < popupsList.length; i++) {
-        console.log("close");
         popupsList[i].classList.remove("popup-active");
     }
 }  
@@ -417,14 +432,21 @@ function checkHeight(el){
     }
 }
 
-function CheckExistClass(obj, classToFind){
+function CheckExistClass(objList, classToFind){
     let exist = false;
+    
+    if(objList.length > 0){
 
-    obj.forEach((ev)=>{
-        if(ev == classToFind){
-            exist = true;
+        for (let b = 0; b < (objList.length-2); b++) {
+
+            for (let i = 0; i < objList[b].classList.length; i++) {
+                if(objList[b].classList[i] == classToFind){
+                    exist = true;
+                }
+            }
         }
-    })
+    }
+    
 
     if(exist == true){
         return true;
@@ -435,13 +457,10 @@ function CheckExistClass(obj, classToFind){
 }
 
 document.addEventListener("click", (e)=>{
-    obj = e.path[0].classList
+    obj = e.path
     
-    console.log(e.path);
-    console.log(obj);
-    
-    // if(!CheckExistClass(obj, "popup_inner") && !CheckExistClass(obj, "popup-btn")){
-    //     closeAllPopups()
-    // }
+    if(!CheckExistClass(obj, "popup_inner") && !CheckExistClass(obj, "popup-btn")){
+        closeAllPopups()
+    }
     
 })
