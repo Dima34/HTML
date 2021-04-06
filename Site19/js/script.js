@@ -91,7 +91,7 @@ opacityReversedCounter = (element,speed) =>{
 let sideburgerBtn = document.querySelector(".header-burger-open-side");
 
 document.addEventListener("scroll", ()=>{
-    if(window.scrollY > 800){
+    if(window.scrollY > 200){
         sideburgerBtn.style.opacity = "1"
     }
     else{
@@ -326,7 +326,6 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".why-we .line1"),"animate__fadeInLeft", "1s");
     animPartiallyVisibleALL(queryA(".why-we .line2"),"animate__fadeInRight", "1s");
 }
-
 
 // 
 // What We Do Ticker
