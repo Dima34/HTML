@@ -129,7 +129,8 @@ header {
   pointer-events: none; }
   header .wrapper {
     display: flex;
-    flex-direction: row-reverse; }
+    flex-direction: row-reverse;
+    padding-right: 77px; }
     header .wrapper .header-burger {
       display: flex;
       flex-direction: row;
@@ -1923,6 +1924,32 @@ footer {
           content: url(../img/svg/white-arrow.svg);
           left: 8px;
           top: -36px; }
+    .service .wrapper .twin-title {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      column-gap: 111px;
+      padding-top: 55px;
+      margin-bottom: 75px; }
+      .service .wrapper .twin-title .left {
+        font-size: 150px;
+        line-height: 140px;
+        font-family: 'Open Sans' !important;
+        font-weight: 800 !important;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        -webkit-text-stroke-width: 3px; }
+        .service .wrapper .twin-title .left::after {
+          color: #FFE76A;
+          -webkit-text-stroke-width: 3px;
+          -webkit-text-stroke-color: black;
+          top: 6px; }
+      .service .wrapper .twin-title .right {
+        font-size: 30px;
+        line-height: 49px;
+        font-family: 'Open Sans' !important;
+        font-weight: 300 !important;
+        letter-spacing: 0.02em; }
 
 .black .service .wrapper .service_subtitle {
   color: white; }

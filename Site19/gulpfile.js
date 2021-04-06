@@ -17,17 +17,18 @@ gulp.task("sass-compile", function(){
 gulp.task('fileinclude', function() {
     return gulp.src(
       [
-      './src/index.html',
-      './src/about-us.html',
-      './src/contacts.html', 
-      './src/what-we-do.html',
-      './src/create-site.html',
-      './src/create-shop.html',
-      './src/create-social-marketing.html',
-      './src/create-audit.html',
-      './src/create-content-marketing.html',
-      './src/create-marketing.html',
-      './src/create-branding.html'
+        './src/index.html',
+        './src/about-us.html',
+        './src/contacts.html', 
+        './src/what-we-do.html',
+        './src/create-site.html',
+        './src/create-shop.html',
+        './src/create-social-marketing.html',
+        './src/create-audit.html',
+        './src/create-content-marketing.html',
+        './src/create-marketing.html',
+        './src/create-branding.html',
+        './src/create-seo.html'
       ])
 
       .pipe(fileinclude({
