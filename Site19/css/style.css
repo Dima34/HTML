@@ -173,7 +173,8 @@ header {
         width: 100%;
         margin-top: 62px;
         top: 0;
-        left: 0; }
+        left: 0;
+        padding: 0 80px; }
         header .header-burger-menu .wrapper .burger_header .burger-close {
           display: flex;
           flex-direction: row;
