@@ -25,7 +25,9 @@ gulp.task('fileinclude', function() {
       './src/create-shop.html',
       './src/create-social-marketing.html',
       './src/create-audit.html',
-      './src/create-content-marketing.html'
+      './src/create-content-marketing.html',
+      './src/create-marketing.html',
+      './src/create-branding.html'
       ])
 
       .pipe(fileinclude({

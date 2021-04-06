@@ -465,3 +465,13 @@ document.addEventListener("click", (e)=>{
     }
     
 })
+
+// 
+// Border
+// 
+
+let ShadowBorderElems = document.querySelectorAll(".shadow-border");
+
+ShadowBorderElems.forEach((elem)=>{
+    elem.setAttribute("text", elem.textContent)
+})

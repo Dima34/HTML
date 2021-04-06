@@ -1184,6 +1184,7 @@ footer{
 
     &.white{
         .wrapper{
+
             .footer-centered-text{
                 color: white;
 
@@ -1196,10 +1197,24 @@ footer{
                 }
             }
 
-            .footer_info a, .footer_info p{
+            .lets-do-button{
                 color: white;
 
-                
+                span{
+                    color: #FFE76A !important;
+                }
+
+                &:hover{
+                    color: #FFE76A;
+                }
+
+                &::after{
+                    content: url(../img/svg/lets-do-button-white-ring.svg);
+                }
+            }
+
+            .footer_info a, .footer_info p{
+                color: white;
             }
 
             .info_col1 a, .info_col2 a, .info_col3 a{
@@ -2626,5 +2641,92 @@ footer{
 
             
         }
+
+        .shadow-border{
+            position: relative;
+            color: transparent;
+            letter-spacing: 0.05em;
+            font-size: 90px;
+            line-height: 130px;
+            
+            &::after{
+                content: attr(text);
+                color: black;
+                -webkit-text-stroke: 1px rgba(255, 255, 255, 0.35);
+                position: absolute;
+                z-index: -1;
+                left: 13px;
+                top: 2px;
+                letter-spacing: 0.04em;
+            }
+        }
+
+        .link-block{
+            font-size: 30px;
+            line-height: 50px;
+            @include Open(300);
+            width: 100%;
+            margin-left: 2px;
+            margin-top: 22px;
+            margin-bottom: 63px;
+
+            p{
+                margin-bottom: 25px;
+                color: white;
+                letter-spacing: 0.01em;
+
+                .orange{
+                    letter-spacing: 0.045em;
+                }
+            }
+
+
+
+            .arrow{
+                display: inline-block;
+                position: relative;
+                width: 59px;
+
+                &::after{
+                    position: absolute;
+                    content: url(../img/svg/white-arrow.svg);
+                    left: 8px;
+                    top: -36px;
+                }
+            }
+        }
+
     }
+}
+
+
+.black{
+
+    .service{
+
+        .wrapper{
+            .service_subtitle{
+                color: white;
+            }
+            
+            .sevice-list{
+                
+                .listitem{
+                    .list-number{
+                        color: white;
+                    }
+
+                    .list-text{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .service-shape{
+        position: absolute;
+        right: 0;
+        top: 451px;
+    } 
 }

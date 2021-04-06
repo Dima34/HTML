@@ -852,6 +852,14 @@ footer {
       content: url(../img/svg/footer-up-btn-circle-white.svg); }
     footer.white .wrapper .footer-centered-text:hover {
       color: #FFE76A; }
+  footer.white .wrapper .lets-do-button {
+    color: white; }
+    footer.white .wrapper .lets-do-button span {
+      color: #FFE76A !important; }
+    footer.white .wrapper .lets-do-button:hover {
+      color: #FFE76A; }
+    footer.white .wrapper .lets-do-button::after {
+      content: url(../img/svg/lets-do-button-white-ring.svg); }
   footer.white .wrapper .footer_info a, footer.white .wrapper .footer_info p {
     color: white; }
   footer.white .wrapper .info_col1 a:hover, footer.white .wrapper .info_col2 a:hover, footer.white .wrapper .info_col3 a:hover {
@@ -1876,5 +1884,58 @@ footer {
           left: -23px;
           top: -26px;
           z-index: -1; }
+    .service .wrapper .shadow-border {
+      position: relative;
+      color: transparent;
+      letter-spacing: 0.05em;
+      font-size: 90px;
+      line-height: 130px; }
+      .service .wrapper .shadow-border::after {
+        content: attr(text);
+        color: black;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.35);
+        position: absolute;
+        z-index: -1;
+        left: 13px;
+        top: 2px;
+        letter-spacing: 0.04em; }
+    .service .wrapper .link-block {
+      font-size: 30px;
+      line-height: 50px;
+      font-family: 'Open Sans' !important;
+      font-weight: 300 !important;
+      width: 100%;
+      margin-left: 2px;
+      margin-top: 22px;
+      margin-bottom: 63px; }
+      .service .wrapper .link-block p {
+        margin-bottom: 25px;
+        color: white;
+        letter-spacing: 0.01em; }
+        .service .wrapper .link-block p .orange {
+          letter-spacing: 0.045em; }
+      .service .wrapper .link-block .arrow {
+        display: inline-block;
+        position: relative;
+        width: 59px; }
+        .service .wrapper .link-block .arrow::after {
+          position: absolute;
+          content: url(../img/svg/white-arrow.svg);
+          left: 8px;
+          top: -36px; }
+
+.black .service .wrapper .service_subtitle {
+  color: white; }
+
+.black .service .wrapper .sevice-list .listitem .list-number {
+  color: white; }
+
+.black .service .wrapper .sevice-list .listitem .list-text {
+  color: white; }
+
+.black .service-shape {
+  position: absolute;
+  right: 0;
+  top: 451px; }
 
 /*# sourceMappingURL=style.css.map */
