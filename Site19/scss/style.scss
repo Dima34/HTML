@@ -407,6 +407,7 @@ header{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: min-content min-content;
         padding-top: 123px;
+        padding-left: 71px;
 
         .intro_left{
             position: relative;
@@ -475,7 +476,9 @@ header{
 .what-we-do{
     position: relative;
     min-height: 490px;
+    padding: 0 74px;
     padding-bottom: 75px;
+    
 
     .wrapper{
 
@@ -1062,6 +1065,7 @@ header{
 /* ------------------------------------ */
 
 footer{
+    padding: 0 109px;
     padding-bottom: 60px;
     margin-top: 81px;
     .wrapper{
@@ -2582,8 +2586,7 @@ footer{
                             position: relative;
                             transform: translateX(24px);
 
-                            &::after{
-                                content: url(../img/svg/content-marketing_ring-black.svg);
+                            img{
                                 position: absolute;
                                 left: -25px;
                                 top: -3px;                            
@@ -2604,10 +2607,6 @@ footer{
                             
                             .number{
                                 color:  #FFE76A;
-
-                                &::after{
-                                    content: url(../img/svg/content-marketing_ring-orange.svg);
-                                }
                             }
                         }
                     }

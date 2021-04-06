@@ -290,7 +290,8 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content min-content;
-  padding-top: 123px; }
+  padding-top: 123px;
+  padding-left: 71px; }
   .intro .wrapper .intro_left {
     position: relative;
     min-height: 780px; }
@@ -345,6 +346,7 @@ header {
 .what-we-do {
   position: relative;
   min-height: 490px;
+  padding: 0 74px;
   padding-bottom: 75px; }
   .what-we-do .wrapper .what-we-do_title {
     font-family: 'Open Sans' !important;
@@ -759,6 +761,7 @@ header {
 /* ------------------------------------ */
 /* ------------------------------------ */
 footer {
+  padding: 0 109px;
   padding-bottom: 60px;
   margin-top: 81px; }
   footer .wrapper {
@@ -1852,8 +1855,7 @@ footer {
             letter-spacing: 0.02em;
             position: relative;
             transform: translateX(24px); }
-            .service .wrapper .service-conquer .left .conquer-list .item .number::after {
-              content: url(../img/svg/content-marketing_ring-black.svg);
+            .service .wrapper .service-conquer .left .conquer-list .item .number img {
               position: absolute;
               left: -25px;
               top: -3px; }
@@ -1866,8 +1868,6 @@ footer {
             letter-spacing: 0.02em; }
           .service .wrapper .service-conquer .left .conquer-list .item:nth-child(2n+2) .number {
             color: #FFE76A; }
-            .service .wrapper .service-conquer .left .conquer-list .item:nth-child(2n+2) .number::after {
-              content: url(../img/svg/content-marketing_ring-orange.svg); }
       .service .wrapper .service-conquer .right .conquer-text {
         max-width: 524px;
         font-size: 30px;

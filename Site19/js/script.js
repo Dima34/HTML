@@ -150,7 +150,7 @@ if(croockedBlock.length > 0){
 
 mouseParallax = (elem, factor = 0.1, reversed = false)=> {
     // Add event listener
-    if(elem){
+    if(elem.length>0){
         document.addEventListener("mousemove", parallax);
     
         // Magic happens here
@@ -171,7 +171,10 @@ mouseParallax = (elem, factor = 0.1, reversed = false)=> {
             
             
             let x = `${_depth}`;
-            elem.style.transform = `translate(${x})`;
+            elem.forEach((e)=>{
+                e.style.transform = `translate(${x})`;
+            })
+            
         }
     }
     
@@ -179,25 +182,28 @@ mouseParallax = (elem, factor = 0.1, reversed = false)=> {
 };
 
 
-mouseParallax(document.querySelector(".line1_ring"), 0.007);
-mouseParallax(document.querySelector(".line2_ring"), 0.001, true);
-mouseParallax(document.querySelector(".line2_explosion"), 0.001, true);
-mouseParallax(document.querySelector(".goal-ring.ring1"), 0.007);
-mouseParallax(document.querySelector(".goal-ring.ring2"), 0.007);
-mouseParallax(document.querySelector(".goal-ring.ring3"), 0.007);
-mouseParallax(document.querySelector(".goal-ring.ring4"), 0.007);
+mouseParallax(document.querySelectorAll(".line1_ring"), 0.007);
+mouseParallax(document.querySelectorAll(".line2_ring"), 0.001, true);
+mouseParallax(document.querySelectorAll(".line2_explosion"), 0.001, true);
+mouseParallax(document.querySelectorAll(".goal-ring.ring1"), 0.007);
+mouseParallax(document.querySelectorAll(".goal-ring.ring2"), 0.007);
+mouseParallax(document.querySelectorAll(".goal-ring.ring3"), 0.007);
+mouseParallax(document.querySelectorAll(".goal-ring.ring4"), 0.007);
 
-mouseParallax(document.querySelector(".who-is-who .ring1"), 0.002);
-mouseParallax(document.querySelector(".who-is-who .ring2"), 0.002);
-mouseParallax(document.querySelector(".our-pets .ring3"), 0.003);
-mouseParallax(document.querySelector(".our-pets .ring4"), 0.002, true);
-mouseParallax(document.querySelector(".move-container1"), 0.001);
-mouseParallax(document.querySelector(".move-container2"), 0.001, true);
-mouseParallax(document.querySelector(".move-container3"), 0.001);
-mouseParallax(document.querySelector(".move-container4"), 0.001);
-mouseParallax(document.querySelector(".lets-talk-ring"), 0.001);
-mouseParallax(document.querySelector(".shape-block-shape"), 0.001);
-mouseParallax(document.querySelector(".alert-ring"), 0.001);
+mouseParallax(document.querySelectorAll(".who-is-who .ring1"), 0.002);
+mouseParallax(document.querySelectorAll(".who-is-who .ring2"), 0.002);
+mouseParallax(document.querySelectorAll(".our-pets .ring3"), 0.003);
+mouseParallax(document.querySelectorAll(".our-pets .ring4"), 0.002, true);
+mouseParallax(document.querySelectorAll(".move-container1"), 0.001);
+mouseParallax(document.querySelectorAll(".move-container2"), 0.001, true);
+mouseParallax(document.querySelectorAll(".move-container3"), 0.001);
+mouseParallax(document.querySelectorAll(".move-container4"), 0.001);
+mouseParallax(document.querySelectorAll(".lets-talk-ring"), 0.001);
+mouseParallax(document.querySelectorAll(".shape-block-shape"), 0.001);
+mouseParallax(document.querySelectorAll(".alert-ring"), 0.001);
+mouseParallax(document.querySelectorAll(".conquer-text .ring"), 0.001);
+mouseParallax(document.querySelectorAll(".conquer-list .item:nth-child(2n+1) .ring"), 0.002);
+mouseParallax(document.querySelectorAll(".conquer-list .item:nth-child(2n+2) .ring"), 0.001, true);
 
 // 
 // Ticker
@@ -217,19 +223,7 @@ if(tickerBlock.length > 0){
         }
         
         let strokeWidth = getComputedStyle(tickerLine.querySelector("p")).width.slice(0, -2);
-        let tickAmount = 0;
-
-        // tickerLine.style.left = -strokeWidth+"px";
-
-        // tiker = setInterval(()=>{
-        //     tickerLine.style.transform = `translateX(${tickAmount}px)`;
-        //     tickAmount++;
-
-        //     if(tickAmount >= strokeWidth){
-        //         tickAmount = 0;
-        //     }
-        // },7)
-        
+        let tickAmount = 0;        
     })
 }
 
@@ -368,7 +362,6 @@ if(text){
     
     }, 25);
 }
-
 
 // 
 // Pop Up
