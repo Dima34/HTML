@@ -437,7 +437,7 @@ header {
       font-family: 'Open Sans' !important;
       font-weight: 300 !important;
       letter-spacing: 0.02em; }
-    .our-goals .wrapper .goal:nth-child(4n+3) .goal_header .header_title:hover {
+    .our-goals .wrapper .goal:nth-child(4n+3) .goal_header .header_title:hover, .our-goals .wrapper .goal:nth-child(4n+2) .goal_header .header_title:hover {
       color: black !important; }
     .our-goals .wrapper .goal:nth-child(3n+1) .goal_header .header_num, .our-goals .wrapper .goal:nth-child(4n+2) .goal_header .header_title, .our-goals .wrapper .goal:nth-child(4n+3) .goal_header .header_title {
       color: white; }

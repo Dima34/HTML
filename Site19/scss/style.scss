@@ -604,7 +604,7 @@ header{
                 letter-spacing: 0.02em;
             }
 
-            &:nth-child(4n+3) .goal_header .header_title{
+            &:nth-child(4n+3) .goal_header .header_title,&:nth-child(4n+2) .goal_header .header_title{
 
                 &:hover{
                     color: black !important;
