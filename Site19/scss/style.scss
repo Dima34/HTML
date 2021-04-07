@@ -589,6 +589,10 @@ header{
                     line-height: 80px;
                     letter-spacing: 0.02em;
                     @include Open(600);
+
+                    &:hover{
+                        color: white !important;
+                    }
                 }
             }
 
@@ -600,6 +604,12 @@ header{
                 letter-spacing: 0.02em;
             }
 
+            &:nth-child(4n+3) .goal_header .header_title{
+
+                &:hover{
+                    color: black !important;
+                }
+            }
 
             &:nth-child(3n+1) .goal_header .header_num, &:nth-child(4n+2) .goal_header .header_title,&:nth-child(4n+3) .goal_header .header_title{
                 color: white;
