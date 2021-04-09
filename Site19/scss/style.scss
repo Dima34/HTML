@@ -341,7 +341,6 @@ header{
     }
 
     .header-burger-open-side{
-        // background: black;
         display: block;
         width: fit-content;
         position: fixed;
@@ -1809,6 +1808,8 @@ footer{
 
 .map{
     position: relative;
+    background: black;
+    padding-bottom: 49px;
 
     .wrapper{
         padding: 0 81px;
@@ -1881,26 +1882,8 @@ footer{
             }
         }
 
-        .shape-block{
-            position: relative;
-            margin-top: 103px;
-            margin-bottom: 196px;
-
-            .shape-block-shape{
-                position: absolute;
-                bottom: -152px;
-                left: -200px;
-            }
-
-            p{
-                font-size: 40px;
-                line-height: 70px;
-                @include Open(800);
-                letter-spacing: 0.01em;
-                max-width: 711px;
-                color: white;
-            }
-
+        img{
+            width: 100%;
         }
         
     }
@@ -1912,6 +1895,11 @@ footer{
         width: 100%;
     }
 
+    .wave-bottom{
+        top: calc(100% - 3px);
+        transform: scale(1,-1);
+    }
+
     .shape{
         position: absolute;
         top: 787px;
@@ -1919,6 +1907,65 @@ footer{
     }
 
 
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=========ALT WAYS=========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.alt-ways{
+    margin-bottom: -50px;
+
+    .wrapper{
+        padding: 185px 131px 0 0;
+
+        display: flex;
+        justify-content: space-between;
+        
+        .left{
+            width: 550px;
+            height: 400px;
+            margin-left: -58px;
+            border: 1px solid black;
+        }
+
+        .right{
+            padding-top: 97px;
+            
+            .shape-group{
+                max-width: 482px;
+                position: relative;
+
+                p{
+                    font-size: 30px;
+                    line-height: 50px;
+                    @include Open(600);
+                    letter-spacing: 0.01em;
+                    color: white;
+                }
+
+                &::after{
+                    content: url(../img/svg/alt-ways_shape.svg);
+                    position: absolute;
+                    left: -54px;
+                    top: -54px;
+                    z-index: -1;
+                }
+
+                .shape-ring{
+                    position: absolute;
+                    left: -36px;
+                    top: -33px;
+                    z-index: -1;
+                }
+
+            }
+        }
+    }
 }
 
 /* ------------------------------------ */

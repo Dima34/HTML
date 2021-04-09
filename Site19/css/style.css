@@ -1280,7 +1280,9 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 .map {
-  position: relative; }
+  position: relative;
+  background: black;
+  padding-bottom: 49px; }
   .map .wrapper {
     padding: 0 81px; }
     .map .wrapper .map-header {
@@ -1336,31 +1338,62 @@ footer {
         font-weight: 300 !important;
         letter-spacing: 0.01em;
         color: #FFFFFF; }
-    .map .wrapper .shape-block {
-      position: relative;
-      margin-top: 103px;
-      margin-bottom: 196px; }
-      .map .wrapper .shape-block .shape-block-shape {
-        position: absolute;
-        bottom: -152px;
-        left: -200px; }
-      .map .wrapper .shape-block p {
-        font-size: 40px;
-        line-height: 70px;
-        font-family: 'Open Sans' !important;
-        font-weight: 800 !important;
-        letter-spacing: 0.01em;
-        max-width: 711px;
-        color: white; }
+    .map .wrapper img {
+      width: 100%; }
   .map .map-wave {
     position: absolute;
     left: 0;
     bottom: calc(100% - 1px);
     width: 100%; }
+  .map .wave-bottom {
+    top: calc(100% - 3px);
+    transform: scale(1, -1); }
   .map .shape {
     position: absolute;
     top: 787px;
     right: 0; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=========ALT WAYS=========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.alt-ways {
+  margin-bottom: -50px; }
+  .alt-ways .wrapper {
+    padding: 185px 131px 0 0;
+    display: flex;
+    justify-content: space-between; }
+    .alt-ways .wrapper .left {
+      width: 550px;
+      height: 400px;
+      margin-left: -58px;
+      border: 1px solid black; }
+    .alt-ways .wrapper .right {
+      padding-top: 97px; }
+      .alt-ways .wrapper .right .shape-group {
+        max-width: 482px;
+        position: relative; }
+        .alt-ways .wrapper .right .shape-group p {
+          font-size: 30px;
+          line-height: 50px;
+          font-family: 'Open Sans' !important;
+          font-weight: 600 !important;
+          letter-spacing: 0.01em;
+          color: white; }
+        .alt-ways .wrapper .right .shape-group::after {
+          content: url(../img/svg/alt-ways_shape.svg);
+          position: absolute;
+          left: -54px;
+          top: -54px;
+          z-index: -1; }
+        .alt-ways .wrapper .right .shape-group .shape-ring {
+          position: absolute;
+          left: -36px;
+          top: -33px;
+          z-index: -1; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */

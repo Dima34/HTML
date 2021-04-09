@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
-<body class="black">
+<body class="">
     @@include('./header.html', {
         "logoCircle":"black",
         "logoLines":"white"
@@ -24,7 +24,7 @@
 
         <div class="wrapper">
 
-            <a href="./index.html"><img src="./img/svg/logo-white.svg" alt="logo" class="intro-logo"></a>
+            <a target="_blank" href="./index.html"><img src="./img/svg/logo-white.svg" alt="logo" class="intro-logo"></a>
             <h1 class="intro_title">ΕΠΙΚΟΙΝΩΝΙΑ</h1>
 
             <p class="intro_subtitle">
@@ -60,13 +60,13 @@
             <div class="contact-block">
                 <div class="col">
                     <p class="col-header">Τηλ:</p>
-                    <a href="tel:6941527747">6941527747</a>
-                    <a href="tel:6945864900">6945864900</a>
+                    <a target="_blank" href="tel:6941527747">6941527747</a>
+                    <a target="_blank" href="tel:6945864900">6945864900</a>
                 </div>
 
                 <div class="col">
                     <p class="col-header">Email: </p>
-                    <a href="mailto:info@tia.gr">info@tia.gr</a>
+                    <a target="_blank" href="mailto:info@tia.gr">info@tia.gr</a>
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@
     <div class="map">
         <img src="./img/svg/contacts-map-wave.svg" alt="wave" class="map-wave">
         <img src="./img/svg/contacts-map-shape.svg" alt="shape" class="shape">
-
+        <img src="./img/svg/contacts-map-wave.svg" alt="wave" class="map-wave wave-bottom">
         <div class="wrapper">
             <h2 class="map-header"><span class="orange">Χάρτης </span></h2>
             <div class="map-blk">
@@ -88,14 +88,14 @@
                 <div class="contacts">
                     <div class="col">
                         <p class="col-header">Στάσεις:</p>
-                        <a href="tel:6941527747">6941527747</a>
-                        <a href="tel:6945864900">6945864900</a>
+                        <a target="_blank" href="tel:6941527747">6941527747</a>
+                        <a target="_blank" href="tel:6945864900">6945864900</a>
                     </div>
     
                     <div class="col">
                         <p class="col-header">Λεωφορεία:</p>
-                        <a href="mailto:info@tia.gr">info@tia.gr</a>
-                        <a href="mailto:info@tia.gr">info@tia.gr</a>
+                        <a target="_blank" href="mailto:info@tia.gr">info@tia.gr</a>
+                        <a target="_blank" href="mailto:info@tia.gr">info@tia.gr</a>
                     </div>
                 </div>
             </div>
@@ -105,30 +105,43 @@
                 <div class="map-title">Κοντινότερα πάρκινγκ</div>
                 <img src="./img/contacts-map.png" alt="map">
             </div>
+        </div>
+    </div>
 
-            <div class="shape-block">
-                <img src="./img/svg/contacts-map-shape-block-shape.svg" alt="shape" class="shape-block-shape">
+    <div class="alt-ways">
 
-                <p>
-                    <span class="orange">
-                        Επίσης μπορείτε να έρθετε με 
-                        ποδήλατο, πατίνι, μονόκυκλο, 
-                        rollers ή το μετρό
-                    </span>
-                    (καλά θα ‘ταν)
-                    <span class="orange">.</span>
-                </p>
+        <div class="wrapper">
+
+            <div class="left">
+
+            </div>
+            <div class="right">
+
+                <div class="shape-group">
+                    <p>
+                        <span class="orange">
+                            Εναλλακτικές επιλογές: 
+                            ποδήλατο, πατίνι, μονόκυκλο, 
+                            rollers ή το μετρό
+                        </span>
+                        (καλά θα ‘ταν).
+                    </p>
+                    <img src="./img/svg/alt-ways_ring.svg" alt="shape ring" class="shape-ring">
+                </div>
             </div>
         </div>
 
-        
     </div>
     
     <div class="cursor">
         <img src="./img/svg/coursor.svg" alt="cursor">
     </div>
 
-    @@include('./footer-white.html')
+    @@include('./footer.html', {
+        button:"",
+        centeredBtn:'<a target="_blank" href="./contacts.html"  class="footer-centered-text"><span class="orange">Ας</span> γνωριστούμε</a>'
+      }
+    )
 
     @@include('./about-you-popup.html')
     

@@ -204,6 +204,7 @@ mouseParallax(document.querySelectorAll(".alert-ring"), 0.001);
 mouseParallax(document.querySelectorAll(".conquer-text .ring"), 0.001);
 mouseParallax(document.querySelectorAll(".conquer-list .item:nth-child(2n+1) .ring"), 0.002);
 mouseParallax(document.querySelectorAll(".conquer-list .item:nth-child(2n+2) .ring"), 0.001, true);
+mouseParallax(document.querySelectorAll(".shape-group .shape-ring"), 0.001, true);
 
 // 
 // Ticker
@@ -325,6 +326,11 @@ function scrolling(e){
     animPartiallyVisibleALL(queryA(".goal:nth-child(2n)"),"animate__fadeInRight", "1s");
     animPartiallyVisibleALL(queryA(".why-we .line1"),"animate__fadeInLeft", "1s");
     animPartiallyVisibleALL(queryA(".why-we .line2"),"animate__fadeInRight", "1s");
+    animPartiallyVisibleALL(queryA(".how-to-find"),"animate__fadeIn", "1s");
+    animPartiallyVisibleALL(queryA(".adress_title"),"animate__fadeIn", "1s");
+    animPartiallyVisibleALL(queryA(".adress_street"),"animate__fadeIn", "1s");
+    animPartiallyVisibleALL(queryA(".map-header"),"animate__fadeIn", "1s");
+    animPartiallyVisibleALL(queryA(".map-blk"),"animate__fadeIn", "1s");
 }
 
 // 
