@@ -818,13 +818,17 @@ footer {
       footer .wrapper .footer_info a:hover {
         color: #FFE76A;
         transition: .3s; }
-      footer .wrapper .footer_info .info_col1 a {
-        display: block;
-        font-size: 25px;
-        line-height: 45px;
-        font-family: 'Open Sans' !important;
-        font-weight: 300 !important;
-        letter-spacing: 0.02em; }
+      footer .wrapper .footer_info .info_col1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; }
+        footer .wrapper .footer_info .info_col1 a {
+          display: block;
+          font-size: 25px;
+          line-height: 45px;
+          font-family: 'Open Sans' !important;
+          font-weight: 300 !important;
+          letter-spacing: 0.02em; }
       footer .wrapper .footer_info .info_col2 {
         justify-self: center; }
         footer .wrapper .footer_info .info_col2 p {
@@ -1312,20 +1316,20 @@ footer {
         max-width: 905px;
         justify-content: space-between;
         gap: 20px; }
-        .map .wrapper .how-to-find .contacts .col .col-header {
-          font-size: 35px;
-          line-height: 70px;
-          font-family: 'Open Sans' !important;
-          font-weight: 800 !important;
-          letter-spacing: 0.02em;
-          color: white; }
-        .map .wrapper .how-to-find .contacts .col a {
+        .map .wrapper .how-to-find .contacts .col p {
           font-size: 35px;
           line-height: 70px;
           font-family: 'Open Sans' !important;
           font-weight: 300 !important;
           letter-spacing: 0.01em;
           display: block;
+          color: white; }
+        .map .wrapper .how-to-find .contacts .col .col-header {
+          font-size: 35px;
+          line-height: 70px;
+          font-family: 'Open Sans' !important;
+          font-weight: 800 !important;
+          letter-spacing: 0.02em;
           color: white; }
     .map .wrapper .map-blk {
       position: relative;

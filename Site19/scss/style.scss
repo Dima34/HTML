@@ -1146,6 +1146,10 @@ footer{
             }
 
             .info_col1{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                
                 a{
                     display: block;
                     font-size: 25px;
@@ -1848,15 +1852,8 @@ footer{
                 gap: 20px;
     
                 .col{
-                    .col-header{
-                        font-size: 35px;
-                        line-height: 70px;
-                        @include Open(800);
-                        letter-spacing: 0.02em;
-                        color: white;
-                    }
-    
-                    a{
+
+                    p{
                         font-size: 35px;
                         line-height: 70px;
                         @include Open(300);
@@ -1864,6 +1861,15 @@ footer{
                         display: block;
                         color: white;
                     }
+
+                    .col-header{
+                        font-size: 35px;
+                        line-height: 70px;
+                        @include Open(800);
+                        letter-spacing: 0.02em;
+                        color: white;
+                    }
+                        
                 }
             }
         }
