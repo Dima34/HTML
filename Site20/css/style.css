@@ -48,21 +48,6 @@
   src: local(""), url("../fonts/roboto-v27-latin_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-v27-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v27-latin_cyrillic-900.woff") format("woff"), url("../fonts/roboto-v27-latin_cyrillic-900.ttf") format("truetype"), url("../fonts/roboto-v27-latin_cyrillic-900.svg#Roboto") format("svg");
   /* Legacy iOS */ }
 
-.ibg {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative; }
-
-.ibg > img {
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden; }
-
 .wrapper {
   max-width: 1920px;
   margin: 0 auto; }
@@ -70,6 +55,9 @@
 body {
   margin: 0;
   padding: 0; }
+
+* {
+  box-sizing: border-box !important; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -82,7 +70,7 @@ header {
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); }
   header .wrapper {
-    padding: 23px 97px 15px 25px;
+    padding: 23px 79px 12px 25px;
     display: flex;
     flex-direction: row; }
     header .wrapper .header_logo-group {
@@ -90,7 +78,7 @@ header {
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 9px; }
+      gap: 8px; }
     header .wrapper .search-bar-group {
       display: flex;
       margin-left: 75px;
@@ -103,20 +91,22 @@ header {
         box-sizing: border-box;
         border-radius: 47px;
         background: 0;
-        padding: 14px 48px 13px 24px;
+        padding: 13px 48px 13px 24px;
         width: 100%;
         font-family: 'Roboto' !important;
         font-weight: 400 !important;
         font-size: 20px;
-        line-height: 23px; }
+        line-height: 23px;
+        height: fit-content; }
         header .wrapper .search-bar-group .search-bar::placeholder {
-          opacity: 1; }
+          opacity: 1;
+          color: black; }
       header .wrapper .search-bar-group .search-btn {
         background: 0;
         border: 0;
         display: block;
         padding: 0;
-        margin-left: -37px; }
+        margin-left: -39px; }
     header .wrapper .nav-group {
       max-width: 605px;
       width: 100%;
@@ -133,10 +123,14 @@ header {
         width: 100%; }
         header .wrapper .nav-group .nav li a {
           padding: 0 10px; }
-          header .wrapper .nav-group .nav li a svg {
+          header .wrapper .nav-group .nav li a svg path {
             transition: .3s; }
-            header .wrapper .nav-group .nav li a svg .shape, header .wrapper .nav-group .nav li a svg .door, header .wrapper .nav-group .nav li a svg .photo, header .wrapper .nav-group .nav li a svg .dot, header .wrapper .nav-group .nav li a svg line {
-              transition: .3s; }
+          header .wrapper .nav-group .nav li a .shape, header .wrapper .nav-group .nav li a .door, header .wrapper .nav-group .nav li a .photo {
+            fill: white; }
+          header .wrapper .nav-group .nav li a .dot {
+            fill: #02569C; }
+          header .wrapper .nav-group .nav li a .line {
+            stroke: #02569C; }
           header .wrapper .nav-group .nav li a:hover .shape {
             fill: #02569C; }
           header .wrapper .nav-group .nav li a:hover .door, header .wrapper .nav-group .nav li a:hover .photo, header .wrapper .nav-group .nav li a:hover .dot {
@@ -151,7 +145,8 @@ header {
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-left: auto; }
+      margin-left: auto;
+      position: relative; }
       header .wrapper .header_profile .profile-name {
         font-size: 20px;
         line-height: 23px;
@@ -163,16 +158,66 @@ header {
         margin-right: 20px;
         flex-shrink: 0; }
       header .wrapper .header_profile .profile-image {
-        max-width: 70px;
-        max-height: 70px;
-        width: 100%;
-        height: 100%;
+        width: 70px;
+        height: 70px;
         border: 2px solid #02569C;
         border-radius: 50%;
+        object-fit: cover;
         margin-right: 20px;
-        flex-shrink: 0; }
+        flex-shrink: 0;
+        transform: translateY(-2px); }
       header .wrapper .header_profile .profile-more {
         cursor: pointer; }
+      header .wrapper .header_profile .profile_dropdown {
+        padding: 20px 20px 24px 20px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: white;
+        width: 332px; }
+        header .wrapper .header_profile .profile_dropdown .dropdown_header {
+          display: grid;
+          grid-template-columns: min-content 1fr min-content;
+          grid-template-rows: min-content min-content;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #939597; }
+          header .wrapper .header_profile .profile_dropdown .dropdown_header .thumb {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #02569C;
+            object-fit: cover;
+            margin-right: 10px;
+            grid-column: 1/2;
+            grid-row: 1/3; }
+          header .wrapper .header_profile .profile_dropdown .dropdown_header .name {
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            font-family: 'Roboto' !important;
+            font-weight: 400 !important;
+            color: #02569C;
+            margin-top: 2px;
+            grid-column: 2/3;
+            grid-row: 1/2;
+            justify-self: baseline;
+            align-self: baseline; }
+          header .wrapper .header_profile .profile_dropdown .dropdown_header .view-profile {
+            font-size: 15px;
+            line-height: 18px;
+            font-family: 'Roboto' !important;
+            font-weight: 400 !important;
+            text-align: center;
+            color: #939597;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            justify-self: baseline;
+            align-self: baseline; }
+          header .wrapper .header_profile .profile_dropdown .dropdown_header .close-dropdown {
+            align-self: center;
+            justify-self: center;
+            grid-column: 3/4;
+            grid-row: 1/3; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */

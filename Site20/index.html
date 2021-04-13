@@ -34,9 +34,11 @@
                 <li>
                     <a href="#" class="nav-home">
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                           
                             <path class = "shape" d="M37.1221 37.125V19.8583C37.1221 19.6667 37.082 19.4772 37.0045 19.302C36.927 19.1268 36.8138 18.9698 36.672 18.8409L22.9211 6.33953C22.668 6.10942 22.3382 5.98192 21.9961 5.98193C21.654 5.98195 21.3242 6.10947 21.0711 6.3396L7.32206 18.8409C7.18032 18.9698 7.06708 19.1268 6.98959 19.302C6.9121 19.4772 6.87207 19.6667 6.87207 19.8582V37.125" stroke="#02569C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M2.74707 37.125H41.2471" stroke="#02569C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path class="door" d="M26.1221 37.1235V26.1235H17.8721V37.1235" stroke="#02569C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        
                         </svg>     
                     </a>
                 </li>
@@ -76,13 +78,44 @@
         </div>
 
         <div class="header_profile">
-            <p class="profile-name">Иванов Иван</p>
+            <a href="#" class="profile-name">Иванов Иван</a>
 
-            <div class="profile-image ibg">
-                <img src="./img/profile-photo.png" alt="profile-photo">
-            </div>
-
+            <img src="./img/profile-photo.png" alt="profile-photo" class="profile-image">
+            
             <img src="./img/svg/header_profile-more.svg" alt="more" class="profile-more"> 
+
+            <div class="profile_dropdown">
+                <div class="dropdown_header">
+                    <img src="./img/profile-photo.png" alt="thumb" class="thumb">
+                    <p class="name">Иванов Иван</p>
+                    <a href="#" class="view-profile">смотреть профиль</a>
+                    <img src="./img/svg/dropdown-close.svg" alt="close" class="close-dropdown">
+                </div>
+                <div class="dropdown_main">
+                    <ul class="options-list">
+                        <li>
+                            <a href="#">
+                                <img src="./img/svg/settings-ico.svg" alt="ico" class="ico">
+                                <p class="opt-name">Settings</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="./img/svg/support-ico.svg" alt="ico" class="ico">
+                                <p class="opt-name">Support messages</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="./img/svg/exit-ico.svg" alt="ico" class="ico">
+                                <p class="opt-name">Exit</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
