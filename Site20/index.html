@@ -503,6 +503,88 @@
                             <div class="swiper-button-prev"><img src="./img/svg/swiper-arrow.svg" alt="arrow"></div>
                         </div>
                     </div>
+
+                    <div class="stories">
+                        <h2 class="right-title">Stories</h2>
+
+                        <div class="swiper-container stories-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/story-1.png" alt="story">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./img/story-2.png" alt="story">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./img/story-3.png" alt="story">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./img/story-4.png" alt="story">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./img/story-5.png" alt="story">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./img/story-6.png" alt="story">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./img/story-1.png" alt="story">
+                                </div>
+                              
+                            </div>
+                      
+                        </div>
+
+                        <div class="swiper-button-next1"><img src="./img/svg/swiper-arrow1.svg" alt="arrow"></div>
+                        <div class="swiper-button-prev1"><img src="./img/svg/swiper-arrow1.svg" alt="arrow"></div>
+                    </div>
+
+                    <div class="photo">
+                        <h2 class="right-title">Photos</h2>
+
+                        <div class="swiper-container photo-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/photo-1.png" alt="story">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./img/photo-2.png" alt="story">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./img/photo-3.png" alt="story">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./img/photo-4.png" alt="story">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./img/photo-5.png" alt="story">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./img/photo-6.png" alt="story">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./img/photo-1.png" alt="story">
+                                </div>
+                              
+                            </div>
+                      
+                        </div>
+
+                        <div class="swiper-button-next2"><img src="../img/svg/swiper-arrow1.svg" alt="arrow"></div>
+                        <div class="swiper-button-prev2"><img src="../img/svg/swiper-arrow1.svg" alt="arrow"></div>
+                    </div>
                 </div>
             </main>
         </div>
@@ -520,7 +602,7 @@
     <script src="./js/script.js"></script>
 
     <script>
-        var swiper = new Swiper(".swiper-container", {
+        var swiper = new Swiper(".info-bar-swiper", {
           slidesPerView: "auto",
           spaceBetween: 60,
           navigation: {
@@ -528,7 +610,25 @@
             prevEl: ".swiper-button-prev"
           }
         });
-      </script>
+
+        var swiper = new Swiper(".stories-swiper", {
+          slidesPerView: "auto",
+          spaceBetween: 15,
+          navigation: {
+            nextEl: ".swiper-button-next1",
+            prevEl: ".swiper-button-prev1"
+          }
+        });
+
+        var swiper = new Swiper(".photo-swiper", {
+          slidesPerView: "auto",
+          spaceBetween: 15,
+          navigation: {
+            nextEl: ".swiper-button-next2",
+            prevEl: ".swiper-button-prev2"
+          }
+        });
+    </script>
 </body>
 
 </html>
