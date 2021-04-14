@@ -543,6 +543,7 @@ header{
         column-gap: 45px;
 
         .goal{
+            position: relative;
 
             .goal_header{
                 display: flex;
@@ -614,7 +615,23 @@ header{
                 color: white;
             }
 
-            
+            video{
+                position: absolute;
+                left: calc(100% + 50px);
+                top: 0;
+                z-index: 2;
+                opacity: 0;
+                transition: .3s;
+            }
+
+        }
+
+        .goal.video-active{
+            video{
+                left: calc(100% + 20px);
+                opacity: 1;
+                pointer-events: none;
+            }
         }
 
     }

@@ -9,6 +9,7 @@
     <title>STELEXY</title>
     <link rel="shortcut icon" href="./img/svg/logo.svg" type="image/png">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -85,12 +86,14 @@
             <img src="./img/svg/header_profile-more.svg" alt="more" class="profile-more"> 
 
             <div class="profile_dropdown">
+
                 <div class="dropdown_header">
                     <img src="./img/profile-photo.png" alt="thumb" class="thumb">
                     <p class="name">Иванов Иван</p>
                     <a href="#" class="view-profile">смотреть профиль</a>
                     <img src="./img/svg/dropdown-close.svg" alt="close" class="close-dropdown">
                 </div>
+                
                 <div class="dropdown_main">
                     <ul class="options-list">
                         <li>
@@ -121,7 +124,390 @@
 
 </header>
 
-    
+    <div class="index">
+
+        <div class="wrapper">
+
+            <aside>
+                <ul class="aside-list">
+                    <li class="profile-item">
+                        <a href="#">
+                            <img src="../img/profile-photo.png" alt="icon">
+                            <p>Мой профиль</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            <img src="./img/svg/aside_news-ico.svg" alt="icon">
+                            <p>Новости</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            <img src="./img/svg/aside_live-ico.svg" alt="icon">
+                            <p>Прямой эфир</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            <img src="./img/svg/aside_photo-ico.svg" alt="icon">
+                            <p>Фотографии</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            <img src="./img/svg/aside_video-ico.svg" alt="icon">
+                            <p>Видео</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            <img src="./img/svg/aside_groups-ico.svg" alt="icon">
+                            <p>Группы</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            <img src="./img/svg/aside_favorites-ico.svg" alt="icon">
+                            <p>Избранное</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            <img src="./img/svg/aside_disc-ico.svg" alt="icon">
+                            <p>Диск</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            <img src="./img/svg/aside_adv-ico.svg" alt="icon">
+                            <p>Реклама</p>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            <img src="./img/svg/aside_help-ico.svg" alt="icon">
+                            <p>Помощь</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="aside-info">
+                    <a href="#">Правовая информация</a>
+                    <a href="#">Язык</a>
+                    <a href="#">Реклама</a>
+                    <a href="#">Разработчикам</a>
+                    <a href="#">Ещё</a>
+                    <p>Stelexy © 2021</p>
+                </div>
+
+                <div class="aside-adv">
+                    <p class="title">
+                        реклама
+                    </p>
+
+                    <div class="adv-blk">
+                        <img src="../img/adv-img.png" alt="img">
+                        <p class="blk-header">Название рекламы</p>
+                        <p class="blk-desc">
+                            Описание рекламы Описание рекламы Описание рекламы Описание рекламы
+                        </p>
+                    </div>
+
+                    <div class="adv-blk">
+                        <img src="../img/adv-img.png" alt="img">
+                        <p class="blk-header">Название рекламы</p>
+                        <p class="blk-desc">
+                            Описание рекламы Описание рекламы Описание рекламы Описание рекламы
+                        </p>
+                    </div>
+                </div>
+            </aside>
+
+            <main>
+                <img src="./img/profile-intro.png" alt="intro" class="intro">
+
+                <div class="left">
+                    <div class="user-photo user-is-online">
+                        <img src="./img/profile-photo.png" alt="user photo">
+                    </div>
+
+                    <div class="subscribe-blk">
+                        <input type="checkbox" name="subscribe" id="subscribe">
+                        <p class="subscribe" id = "subscribe-btn">Subscribe</p>
+                        <div class="subscribed">
+                            <p>
+                                <span><img src="../img/svg/subscribed-ico.svg" alt="ico"></span>
+                                You are subscribed
+                                <span><img src="../img/svg/subscribed-arrow.svg" alt="ico"></span>
+                            </p>
+                            <div class="subscibed-menu">
+                                <p class="unsubscibe" id = "unsubscribe-btn">Unsubscribe</p>
+                                <p class="mute">Hide news</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="write-a-message">
+                        Write a message
+                    </p>
+
+                    <div class="general white-block">
+                        <h2 class="general-header">
+                            General information
+                        </h2>
+
+                        <div class="general-main">
+
+                            <div class="info-blk">
+                                <div class="left">
+                                    <img src="./img/svg/birthday-ico.svg" alt="ico">
+                                    <p>Birthday</p>
+                                </div>
+                                <p>May 2, 1996</p>
+                            </div>
+
+                            <div class="info-blk">
+                                <div class="left">
+                                    <img src="./img/svg/city-ico.svg" alt="ico">
+                                    <p>City</p>
+                                </div>
+                                <p>Moscow</p>
+                            </div>
+
+                            <div class="info-blk">
+                                <div class="left">
+                                    <img src="./img/svg/status-ico.svg" alt="ico">
+                                    <p>Family <br>
+                                        status</p>
+                                </div>
+                                <p>married</p>
+                            </div>
+
+                            <div class="info-blk">
+                                <div class="left">
+                                    <img src="./img/svg/workplace-ico.svg" alt="ico">
+                                    <p>Place of work</p>
+                                </div>
+                                <p>Stelexy inc</p>
+                            </div>
+
+                            <div class="info-blk">
+                                <div class="left">
+                                    <img src="./img/svg/position-ico.svg" alt="ico">
+                                    <p>Position</p>
+                                </div>
+                                <p>Leader</p>
+                            </div>
+
+                            <div class="info-blk">
+                                <div class="left">
+                                    <img src="./img/svg/education-ico.svg" alt="ico">
+                                    <p>Education</p>
+                                </div>
+                                <p>MAEP 19</p>
+                            </div>
+
+                            <div class="info-blk">
+                                <div class="left">
+                                    <img src="./img/svg/website-ico.svg" alt="ico">
+                                    <p>Website</p>
+                                </div>
+                                <p>https://r-d.one</p>
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="show-full">Show full information</a>
+                    </div>
+
+                    <div class="awards white-block">
+                        <h2 class="left-block-header">
+                            Awards
+                            <span><img src="./img/svg/awards-ico.svg" alt="ico"></span>
+                        </h2>
+
+                        <div class="main">
+                            <a href="#"><img src="../img/award-1.png" alt="ico"></a>
+                            <a href="#"><img src="../img/award-2.png" alt="ico"></a>
+                            <a href="#"><img src="../img/award-3.png" alt="ico"></a>
+                            <a href="#"><img src="../img/award-4.png" alt="ico"></a>
+                            <a href="#"><img src="../img/award-5.png" alt="ico"></a>
+                            <a href="#"><img src="../img/award-6.png" alt="ico"></a>
+                        </div>
+
+                        <a href="#" class="show-full">Show all...</a>
+                    </div>
+
+                    <div class="friends white-block">
+                        <h2 class="left-block-header">
+                            Friends
+                            <span><img src="./img/svg/friends-ico.svg" alt="ico"></span>
+                        </h2>
+
+                        <div class="main">
+                            <a href="#">
+                                <img src="./img/friend-1.png" alt="thumb">
+                                <p>Anatoly</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/friend-2.png" alt="thumb">
+                                <p>Evgeniy</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/friend-3.png" alt="thumb">
+                                <p>Vasiliy</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/friend-4.png" alt="thumb">
+                                <p>Dmitriy</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/friend-5.png" alt="thumb">
+                                <p>Vitaliy</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/friend-6.png" alt="thumb">
+                                <p>Andrew</p>
+                            </a>
+                        </div>
+
+                        <a href="#" class="show-full">Show all...</a>
+                    </div>
+
+                    <div class="subscription white-block">
+                        <h2 class="left-block-header">
+                            Subscriptions
+                            <span><img src="./img/svg/subsriptions-ico.svg" alt="ico"></span>
+                        </h2>
+
+                        <div class="main">
+                            <a href="#">
+                                <img src="./img/friend-1.png" alt="thumb">
+                                <p class="name" >Jenny Wilson</p>
+                                <p class="description">Movies and films</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/friend-2.png" alt="thumb">
+                                <p class="name" >Jane Cooper</p>
+                                <p class="description">Cinemas</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/friend-3.png" alt="thumb">
+                                <p class="name" >Brooklyn Simmons</p>
+                                <p class="description">Cats</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/friend-4.png" alt="thumb">
+                                <p class="name" >Kristin Watson</p>
+                                <p class="description">Sport</p>
+                            </a>
+                            <a href="#">
+                                <img src="./img/friend-5.png" alt="thumb">
+                                <p class="name" >Ronald Richards</p>
+                                <p class="description">Video games</p>
+                            </a>
+                        </div>
+
+                        <a href="#" class="show-full">Show all...</a>
+                    </div>
+                    
+                    <div class="video white-block">
+                        <h2 class="left-block-header">
+                            Video
+                            <span><img src="./img/svg/video-ico.svg" alt="ico"></span>
+                        </h2>
+
+                        <div class="main">
+                            <div class="video-blk">
+                                <img class = "video-image" src="./img/video-1.png" alt="image">
+                                <button class="play"><img src="./img/svg/video-play-btn.svg" alt="play btn"></button>
+                            </div>
+
+                            <div class="video-blk">
+                                <img class = "video-image" src="./img/video-2.png" alt="image">
+                                <button class="play"><img src="./img/svg/video-play-btn.svg" alt="play btn"></button>
+                            </div>
+                        </div>
+
+                        <a href="#" class="show-full">Show all...</a>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="user-info white-block">
+                        <h1 class="user-name">Ivanov Ivan<span><img src="../img/svg/status-check.svg" alt="check"></span></h1>
+                        <p class="user-status">providing access to closed resources of the planet <span>edit</span></p>
+                        
+                        <div class="user-status-info">
+                            <div class="status-info_groupbox">
+                                <p class = "title"><span><img src="./img/svg/status-info-brief.svg" alt="thumb"></span>Status in Stelexy</p>
+                                <p>The president</p>
+                            </div>
+                            <div class="status-info_groupbox">
+                                <p class = "title"><span><img src="./img/svg/status-info-card.svg" alt="thumb"></span>Participant</p>
+                                <p>United Russia</p>
+                            </div>
+                        </div>
+
+                        <div class="raiting-bar">
+                            <div class="inner-bar">
+                                <p>500K</p>
+                                <p>Rating</p>
+                            </div>
+                        </div>
+
+                        <div class="info-bar white-block">
+                            <div class="swiper-container info-bar-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <p class="value">203</p>
+                                        <p class="name">Post</p>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <p class="value">233К</p>
+                                        <p class="name">Followers</p>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <p class="value">122К</p>
+                                        <p class="name">Comments</p>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <p class="value">25К</p>
+                                        <p class="name">Reposts</p>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <p class="value">128K</p>
+                                        <p class="name">Views</p>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <p class="value">15</p>
+                                        <p class="name">Tags</p>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <p class="value">25К</p>
+                                        <p class="name">Transitions</p>
+                                    </div>
+                                  
+                                </div>
+                          
+                            </div>
+
+                            <div class="swiper-button-next"><img src="./img/svg/swiper-arrow.svg" alt="arrow"></div>
+                            <div class="swiper-button-prev"><img src="./img/svg/swiper-arrow.svg" alt="arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    </div>  
 
     <footer>
 
@@ -130,7 +516,19 @@
 
 </footer>
    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+          slidesPerView: "auto",
+          spaceBetween: 60,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+          }
+        });
+      </script>
 </body>
 
 </html>

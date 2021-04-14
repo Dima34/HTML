@@ -473,3 +473,26 @@ let ShadowBorderElems = document.querySelectorAll(".shadow-border");
 ShadowBorderElems.forEach((elem)=>{
     elem.setAttribute("text", elem.textContent)
 })
+
+// 
+// Hover video play
+// 
+
+let Goalblk = document.querySelectorAll(".goal-with-video")
+
+if(Goalblk.length > 0){
+    for (let i = 0; i < Goalblk.length; i++) {
+        
+        Goalblk[i].onmouseenter = ()=>{
+            Goalblk[i].classList.add("video-active");
+            Goalblk[i].querySelector("video").play();
+        }
+   
+        Goalblk[i].onmouseleave = ()=>{
+            Goalblk[i].classList.remove("video-active");
+            Goalblk[i].querySelector("video").pause();
+        }
+    }
+    
+    
+}

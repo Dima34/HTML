@@ -230,3 +230,8 @@ a {
 
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+  button{
+    background: 0;
+    border: 0;
+  }

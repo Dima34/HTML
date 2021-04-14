@@ -1,19 +1,101 @@
-console.log('%cDeveloped by Djigit & yur4ik96', 'color: #c434c4; font-size: 50px ');
+console.log('%cDeveloped by Djigit', 'color: #c434c4; font-size: 50px ');
 
 console.log(
-  '%cTG: @Djigit34 / @yura_k18',
+  '%cTG: @Djigit34',
   'color: #c434c4; background: #eee; font-size: 30px '
 );
 
+// 
+// Header profile dropdown
+// 
 
-function ibg(){
+let profileDropDown = document.querySelector(".profile_dropdown");
+let profileDropDownOpen = document.querySelector(".profile-more");
+let profileDropDownClose = document.querySelector(".close-dropdown");
 
-    let ibg=document.querySelectorAll(".ibg");
-    for (var i = 0; i < ibg.length; i++) {
-    if(ibg[i].querySelector('img')){
-    ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
-    }
-    }
+if(profileDropDown){
+
+  profileDropDownOpen.addEventListener("click",()=> {
+    profileDropDown.classList.add("profile_dropdown-active");
+  })
+
+  profileDropDownClose.addEventListener("click",()=> {
+    profileDropDown.classList.remove("profile_dropdown-active");
+  })
+
 }
-    
-ibg();
+
+// 
+// Subscribe
+// 
+
+let SubscribeCheckbox = document.getElementById("subscribe");
+let SubscribeBtn = document.getElementById("subscribe-btn");
+let UnsubscribeBtn = document.getElementById("unsubscribe-btn");
+let UnsubscribeBlk = document.querySelector(".subscribed");
+let UnsubscibeDropDown = document.querySelector(".subscibed-menu");
+let UnsubscibeDropDownOpen = document.querySelector(".subscribed>p");
+
+if(UnsubscibeDropDown){
+
+  UnsubscibeDropDownOpen.addEventListener("click",()=> {
+    UnsubscibeDropDown.classList.add("subscribed-menu-active");
+  })
+
+
+}
+
+function closeAllPopups(){
+  let popupsList = document.querySelectorAll(".popup");
+  
+  for (let i = 0; i < popupsList.length; i++) {
+      popupsList[i].classList.remove("popup-active");
+  }
+} 
+
+function CheckExistClass(objList, classToFind){
+  let exist = false;
+  
+  if(objList.length > 0){
+
+      for (let b = 0; b < (objList.length-2); b++) {
+
+          for (let i = 0; i < objList[b].classList.length; i++) {
+              if(objList[b].classList[i] == classToFind){
+                  exist = true;
+              }
+          }
+      }
+  }
+  
+
+  if(exist == true){
+      return true;
+  }
+  else{
+      return false;
+  }
+}
+
+document.addEventListener("click", (e)=>{
+  obj = e.path
+  
+  if(!CheckExistClass(obj, "subscribed")){
+      console.log("close");
+      UnsubscibeDropDown.classList.remove("subscribed-menu-active");
+  }
+  
+})
+
+SubscribeBtn.addEventListener("click", ()=>{
+  SubscribeBtn.style.display = "none";
+  UnsubscribeBlk.style.display = "block";
+  SubscribeCheckbox.checked = true;
+})
+
+UnsubscribeBtn.addEventListener("click", ()=>{
+  SubscribeBtn.style.display = "block";
+  UnsubscribeBlk.style.display = "none";
+  SubscribeCheckbox.checked = false;
+})
+
