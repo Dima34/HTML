@@ -41,8 +41,6 @@ if(UnsubscibeDropDown){
   UnsubscibeDropDownOpen.addEventListener("click",()=> {
     UnsubscibeDropDown.classList.add("subscribed-menu-active");
   })
-
-
 }
 
 function closeAllPopups(){
@@ -99,3 +97,28 @@ UnsubscribeBtn.addEventListener("click", ()=>{
   SubscribeCheckbox.checked = false;
 })
 
+// 
+// Write-New
+// 
+
+let WriteNewBlk = document.querySelector(".write-new");
+
+if(WriteNewBlk){
+  let WriteNewInput = WriteNewBlk.querySelector("input");
+  
+  WriteNewInput.addEventListener("click", ()=>{
+    WriteNewBlk.classList.add("input-active")
+  })
+
+
+}
+
+document.addEventListener("click", (e)=>{
+  obj = e.path
+
+  if(!CheckExistClass(obj, "write-new")){
+    console.log("close");
+    WriteNewBlk.classList.remove("input-active");
+  }
+  
+})

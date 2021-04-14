@@ -659,7 +659,8 @@ body {
         .index .wrapper main .right .write-new {
           padding: 24px 24px 30px 45px;
           display: flex;
-          gap: 15px; }
+          gap: 15px;
+          margin-bottom: 106px; }
           .index .wrapper main .right .write-new > img {
             width: 76px;
             height: 76px;
@@ -669,7 +670,59 @@ body {
             width: 100%;
             display: flex; }
             .index .wrapper main .right .write-new .write-main input {
-              width: 100%; }
+              width: 100%;
+              background: 0;
+              border: 0;
+              padding: 0;
+              padding: 20px 0;
+              height: fit-content;
+              font-size: 22px;
+              line-height: 26px;
+              font-family: 'Roboto' !important;
+              font-weight: 400 !important;
+              color: #3F3F3F;
+              border-bottom: 1px solid #3F3F3F; }
+              .index .wrapper main .right .write-new .write-main input::placeholder {
+                opacity: 1;
+                color: #3F3F3F; }
+            .index .wrapper main .right .write-new .write-main .publish {
+              background: #02569C;
+              border-radius: 5px;
+              font-size: 22px;
+              line-height: 26px;
+              font-family: 'Roboto' !important;
+              font-weight: 400 !important;
+              text-align: center;
+              color: #FFFFFF;
+              padding: 13px 48px;
+              display: none; }
+            .index .wrapper main .right .write-new .write-main .button-group {
+              display: flex;
+              margin-left: -275px; }
+              .index .wrapper main .right .write-new .write-main .button-group button {
+                margin-left: 55px;
+                transition: opacity .3s; }
+                .index .wrapper main .right .write-new .write-main .button-group button:first-child {
+                  margin-left: 0; }
+                .index .wrapper main .right .write-new .write-main .button-group button:hover {
+                  opacity: 0.8; }
+          .index .wrapper main .right .write-new.input-active {
+            padding-bottom: 18px;
+            margin-bottom: 30px; }
+            .index .wrapper main .right .write-new.input-active .write-main {
+              flex-wrap: wrap; }
+            .index .wrapper main .right .write-new.input-active .button-group {
+              display: flex;
+              margin-left: 0;
+              width: 100%;
+              margin-top: 24px; }
+              .index .wrapper main .right .write-new.input-active .button-group button {
+                margin-left: 55px; }
+                .index .wrapper main .right .write-new.input-active .button-group button:first-child {
+                  margin-left: 0; }
+              .index .wrapper main .right .write-new.input-active .button-group .publish {
+                display: block;
+                margin-left: auto; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
