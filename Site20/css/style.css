@@ -618,7 +618,7 @@ body {
             opacity: 0.5; }
         .index .wrapper main .right .photo {
           position: relative;
-          margin-bottom: 30px; }
+          margin-bottom: 50px; }
           .index .wrapper main .right .photo .right-title {
             font-size: 20px;
             line-height: 23px;
@@ -656,6 +656,20 @@ body {
             transform: scale(-1); }
           .index .wrapper main .right .photo:hover .swiper-button-next2, .index .wrapper main .right .photo:hover .swiper-button-prev2 {
             opacity: 0.5; }
+        .index .wrapper main .right .write-new {
+          padding: 24px 24px 30px 45px;
+          display: flex;
+          gap: 15px; }
+          .index .wrapper main .right .write-new > img {
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            object-fit: cover; }
+          .index .wrapper main .right .write-new .write-main {
+            width: 100%;
+            display: flex; }
+            .index .wrapper main .right .write-new .write-main input {
+              width: 100%; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
