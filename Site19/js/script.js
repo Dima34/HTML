@@ -483,7 +483,7 @@ let Goalblk = document.querySelectorAll(".goal-with-video")
 if(Goalblk.length > 0){
     for (let i = 0; i < Goalblk.length; i++) {
         
-        Goalblk[i].onmouseenter = ()=>{
+        Goalblk[i].onmouseover = ()=>{
             Goalblk[i].classList.add("video-active");
             Goalblk[i].querySelector("video").play();
         }
