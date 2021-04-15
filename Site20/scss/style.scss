@@ -84,6 +84,10 @@ body{
     font-weight: $size !important;
 }
 
+button{
+    padding: 0;
+}
+
 *{
     box-sizing: border-box !important;
 }
@@ -1343,6 +1347,223 @@ body{
                         .commetns{
                             
                             margin-left: auto;
+                        }
+                    }
+
+                    .post_comments{
+
+                        .comment-blk{
+                            border-bottom: 1px solid #C4C4C4;
+
+                            .comment{
+                                padding: 15px 0;
+                                display: grid;
+                                grid-template-columns: 1fr min-content;
+
+                                .comment_header{
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    margin-bottom: 10px;
+
+                                    img{
+                                        width: 38px;
+                                        height: 38px;
+                                        object-fit: cover;
+                                        margin-right: 7px;
+                                        border-radius: 50%;
+                                    }
+
+                                    .name{
+                                        font-size: 17px;
+                                        line-height: 20px;
+                                        @include Roboto(400);
+                                        color: #02569C;
+                                    }
+                                }
+
+                                .comment_text{
+                                    font-size: 17px;
+                                    line-height: 20px;
+                                    @include Roboto(400);
+                                    margin-bottom: 10px;
+
+                                    & .mention{
+                                        color: #02569C;
+                                    }
+                                }
+
+                                .comment_footer{
+                                    display: flex;
+
+                                    p,button{
+                                        font-size: 16px;
+                                        line-height: 19px;
+                                        @include Roboto(400);
+                                    }
+
+                                    button{
+                                        padding: 0;
+                                        text-align: left;
+                                        transition:  opacity .3s;
+                                        color: #02569C;
+
+                                        &:hover{
+                                            opacity: 0.8;
+                                        }
+                                    }
+
+                                    .date{
+                                        color: #939597;
+                                        margin-right: 15px;
+                                    }
+                                }
+
+                                .comment_likes{
+                                    grid-column: 2/3;
+                                    grid-row: 1/4;
+                                    align-self: center;
+                                    white-space: nowrap;
+                                    color: #02569C;
+                                    font-size: 17px;
+                                    line-height: 20px;
+                                    @include Roboto(400);
+                                    
+                                    .likes-amount{
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+
+                            .sub-comment-blk{
+                                padding-left: 27px;
+                                padding-bottom: 15px;
+
+                                .comment{
+                                    &:first-child{
+                                        padding-top: 0;
+                                    }
+                                }
+                            }
+                        }
+
+                        .comment-input{
+                            display: flex;
+                            align-items: center;
+
+                            .input-group{
+                                border: 1px solid #939597;
+                                border-radius: 5px;
+                                width: 100%;
+                                display: flex;
+                                flex-wrap: nowrap;
+                                align-items: start;
+
+                                .button-group{
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: 12px;
+                                
+                                    button{
+                                        height: 26px;
+                                        margin-right: 15px;
+
+                                        svg{
+                                            path{
+                                                stroke: black;
+                                                transition: color .3s;
+                                            }
+                                            
+
+                                            &:hover{
+                                                path{
+                                                    stroke: #02569C;
+                                                }
+                                                
+                                            }
+                                        }
+                                    }
+
+                                    .send-message{
+                                        font-size: 17px;
+                                        line-height: 20px;
+                                        @include Roboto(400);
+                                        text-align: right;
+                                        color: #02569C;
+                                        transition: .3s;
+
+                                        &:hover{
+                                            opacity: 0.8;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .user-thumb{
+                                width: 50px;
+                                height: 50px;
+                                margin-right: 13px;
+                                object-fit: cover;
+                                border-radius: 50%;
+                            }
+
+                            .textarea{
+                                width: 100%;
+                                resize: none;
+                                background: 0;
+                                border: 0;
+                                padding: 15px 12px;
+                                font-size: 17px;
+                                line-height: 20px;
+                                @include Roboto(400);
+                                word-break: break-word;
+
+                                &>.placeholder {
+                                    color: #939597;
+                                    pointer-events: none;
+                                }
+
+                                &>.mention{
+                                    color: #02569C;
+                                }
+
+                                & .text{
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        .main-comment-show-all{
+                            margin: 0 auto;
+                            margin-top: 15px;
+                            margin-bottom: 11px;
+                            display: block;
+                            font-size: 17px;
+                            line-height: 20px;
+                            @include Roboto(400);
+                            text-align: center;
+                            color: #3F3F3F;
+                            transition: .3s;
+
+                            &:hover{
+                                color: #02569C;
+                            }
+                        }
+
+                        .main-comment-input{
+                            padding-top: 15px;
+                        }
+
+                        .sub-comment-blk{
+                            .sub-comment-input{
+                                .comment-input{
+                                    display: none;
+                                }
+                                .comment-input.active{
+                                    display: flex;
+                                }
+                            }
+
                         }
                     }
                 }
