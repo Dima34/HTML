@@ -210,41 +210,51 @@ function updateComments(){
       let mainCommentInput = postComment[i].querySelector(".main-comment-input > .comment-input");
 
       mainCommentInput.querySelector(".send-message").addEventListener("click", ()=>{
-        CreateCommentBlock(postComment[i].querySelector(".comments-wrapper"),"./img/profile-photo.png" ,"Dima", "Hello!", "22")
+        let mainCommentInputText = mainCommentInput.querySelector(".textarea");
+
+        if(!(mainCommentInputText.querySelector(".placeholder"))){
+          console.log("post");
+        }
+        CreateCommentBlock(postComment[i].querySelector(".comments-wrapper"),"./img/profile-photo.png" ,"Ivanov Ivan", "Hello!", "22")
         updateComments()
       })
 
-      // Ответ подкомментариев
-      let subCommentInput = postComment[i].querySelector(".sub-comment-blk").querySelector(".comment-input");
-      let subCommentGroup = postComment[i].querySelector(".sub-comment-group");
-      let subCommentAnswerBtn = postComment[i].querySelector(".sub-comment-group").querySelectorAll(".answer");
-      
-      // При клике проявляем инпут и вставляем имя того, кто упомянул
-      subCommentAnswerBtn.forEach((answerBtn)=>{
-        SubCommentInputOpen(answerBtn);
-      }) 
-
-      // При клике на кнопку постится блок с текстом
-      subCommentInput.querySelector(".send-message").addEventListener("click", ()=>{
-
-        let subCommentInputText = subCommentInput.querySelector(".textarea");
+      let CommentBlk = postComment[i].querySelectorAll(".comment-blk");
+      CommentBlk.forEach((currentBlk)=>{
         
-        if(!(subCommentInputText.innerHTML.length - subCommentInputText.querySelector(".mention").textContent.length < 38)){
-          CreateSubCommentBlock(subCommentGroup, "./img/profile-photo.png", "Ivan Ivanov", subCommentInputText.innerHTML, "16.04.2021");
-          subCommentAnswerBtn = UpdateSubAnswerBtns(postComment[i])
+        // Ответ подкомментариев
+        let subCommentInput = currentBlk.querySelector(".sub-comment-blk").querySelector(".comment-input");
+        let subCommentGroup = currentBlk.querySelector(".sub-comment-group");
+        let subCommentAnswerBtn = subCommentGroup.querySelectorAll(".answer");
+        
+        // При клике проявляем инпут и вставляем имя того, кто упомянул
+        subCommentAnswerBtn.forEach((answerBtn)=>{
+          SubCommentInputOpen(answerBtn);
+        }) 
 
-          subCommentAnswerBtn.forEach((answerBtn)=>{
-            SubCommentInputOpen(answerBtn);
-          }) 
-        }
+        // При клике на кнопку постится блок с текстом
+        subCommentInput.querySelector(".send-message").addEventListener("click", ()=>{
 
-        CloseAndCleanAllSubCommmentInputs();
+          let subCommentInputText = subCommentInput.querySelector(".textarea");
+          
+          if(!(subCommentInputText.innerHTML.length - subCommentInputText.querySelector(".mention").textContent.length < 38)){
+            CreateSubCommentBlock(subCommentGroup, "./img/profile-photo.png", "Ivan Ivanov", subCommentInputText.innerHTML, "16.04.2021");
+            subCommentAnswerBtn = UpdateSubAnswerBtns(postComment[i])
+
+            subCommentAnswerBtn.forEach((answerBtn)=>{
+              SubCommentInputOpen(answerBtn);
+            }) 
+          }
+
+          CloseAndCleanAllSubCommmentInputs();
+        })
+
+        // Ответ комментариев
+        let CommentAnswerBtn = currentBlk.querySelector(".main-comment").querySelector(".answer");
+        
+        SubCommentInputOpen(CommentAnswerBtn);
+
       })
-
-      // Ответ комментариев
-      let CommentAnswerBtn = postComment[i].querySelector(".main-comment").querySelector(".answer");
-      
-      SubCommentInputOpen(CommentAnswerBtn);
     }
   }
 }
@@ -252,10 +262,12 @@ function updateComments(){
 // При клике проявляем инпут и вставляем имя того, кто упомянул
 function SubCommentInputOpen(AnswerBtn){
   AnswerBtn.addEventListener("click", ()=>{
+    console.log(AnswerBtn);
     let mentorName = AnswerBtn.parentNode.parentNode.querySelector(".name").textContent;
 
-    let subCommentInput = AnswerBtn.parentNode.parentNode.parentNode.parentNode.querySelector(".comment-input");
+    let subCommentInput = AnswerBtn.parentNode.parentNode.parentNode.querySelector(".comment-input");
     subCommentInput.classList.add("active");
+    console.log(subCommentInput = AnswerBtn.parentNode.parentNode.parentNode);
     subCommentInput.querySelector(".textarea").innerHTML= `<span class="mention">${mentorName},</span> &nbsp; `;
   })
   
@@ -320,15 +332,16 @@ function CreateCommentBlock(whereToAddBlk,imageSource,name, text, date){
 
   <div class="sub-comment-blk">
 
-      <div class="sub-comment-gpoup">
+      <div class="sub-comment-group">
       </div>
       
       <div class="sub-comment-input">
           <div class="comment-input">
               <img src="./img/profile-photo.png" alt="thumb" class = "user-thumb">
               <div class="input-group">
-                  <textarea rows='1' placeholder = "Write a comment" id = "text1"></textarea>
-
+              <div class = "textarea" contenteditable="true" placeholder="Write a comment">
+                  <span class="placeholder">Write a comment</span>
+              </div>
                   <div class="button-group">
                       <button class="send-photo">
                           <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
