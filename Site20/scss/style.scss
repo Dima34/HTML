@@ -958,6 +958,8 @@ body{
                     display: flex;
                     gap: 15px;
                     margin-bottom: 106px;
+                    box-shadow: unset;
+
 
                     &>img{
                         width: 76px;
@@ -969,13 +971,14 @@ body{
                     .write-main{
                         width: 100%;
                         display: flex;
+                        margin-top: 11px;
 
                         input{
                             width: 100%;
                             background: 0;
                             border: 0;
                             padding: 0;
-                            padding: 20px 0;
+                            padding: 15px 0;
                             height: fit-content;
                             font-size: 22px;
                             line-height: 26px;
@@ -1004,10 +1007,11 @@ body{
 
                         .button-group{
                             display: flex;
-                            margin-left: -275px;
+                            margin-left: -249px;
+                            margin-top: -12px;
                             
                             button{
-                                margin-left: 55px;
+                                margin-left: 43px;
                                 transition: opacity .3s;
 
                                 &:first-child{
@@ -1025,7 +1029,7 @@ body{
 
                     &.input-active{
                         padding-bottom: 18px;
-                        margin-bottom: 30px;
+                        margin-bottom: 50px;
 
                         .write-main{
                             flex-wrap: wrap;
@@ -1054,6 +1058,111 @@ body{
                     }
 
                     
+                }
+
+                .post{
+                    padding: 30px 30px 25px 30px;
+
+                    .post_header{
+                        display: grid;
+                        grid-template-columns: min-content 1fr min-content min-content;
+                        grid-template-rows: min-content min-content;
+                        column-gap: 20px;
+                        margin-bottom: 20px;
+
+                        .post-icon{
+                            width: 76px;
+                            height: 76px;
+                            position: relative;
+                            grid-column: 1/2;
+                            grid-row: 1/3;
+                            
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                                object-fit: cover;
+                            }
+
+                            &.online{
+                                &::after{
+                                    content: "";
+                                    background: url("../img/svg/profile_left_online.svg") center;
+                                    background-size: cover;
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 20px;
+                                    top: 0;
+                                    right: 6px;
+                                }
+                            }
+                        }
+
+                        .name{
+                            align-self: end;
+                            font-size: 25px;
+                            line-height: 29px;
+                            @include Roboto(400);
+                            grid-column: 2/3;
+                            grid-row: 1/2;
+
+                            span{
+                                margin-left: 6px;
+                                display: inline-block;
+                                transform: translateY(-2px);
+                            }
+                        }
+
+                        .date{
+                            align-self: start;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #3F3F3F;
+                            @include Roboto(400);
+                            grid-column: 2/3;
+                            grid-row: 2/3;
+                            margin-top: 3px;
+                        }
+
+                        .watch-amount{
+                            grid-column: 3/4;
+                            grid-row: 1/3;
+                            align-self: center;
+                            display: flex;
+                            flex-wrap: nowrap;
+                            align-items: center;
+                            font-size: 17px;
+                            line-height: 20px;
+                            @include Roboto(400);
+                            color: #3F3F3F;
+                            margin-right: 21px;
+                            
+                            span{
+                                display: inline-block;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        .more{
+                            grid-column: 4/5;
+                            grid-row: 1/3;
+                            align-self: center;
+                        }
+                    }
+
+                    .post_content{
+                        width: 100%;
+                        height: 480px;
+                    }
+
+                    .several-photo{
+                        display: grid;
+                        grid-template-columns: 1fr 264px;
+                        grid-template-rows: 1fr 1fr;
+                        gap: 15px;
+
+                        
+                    }
                 }
             }
 
