@@ -1148,6 +1148,66 @@ body{
                             grid-column: 4/5;
                             grid-row: 1/3;
                             align-self: center;
+                            position: relative;
+                            z-index: 2;
+                            cursor: pointer;
+
+                            .more-option{
+                                width: 216px;
+                                height: 104px;
+                                position: absolute;
+                                top: 140%;
+                                right: 0px;
+                                display: flex;
+                                flex-direction: column;
+                                padding: 26px 24px 22px 24px;
+                                opacity: 0;
+                                visibility: hidden;
+                                pointer-events: none;
+                                transition: .3s;
+
+
+                                .bg{
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    z-index: -1;
+
+                                }
+
+                                button{
+                                    padding: 0;
+                                    text-align: left;
+                                    font-size: 18px;
+                                    line-height: 21px;
+                                    @include Roboto(400);
+                                    margin-bottom: 14px;
+                                    color: #02569C;
+                                    transition:  opacity .3s;
+
+                                    &:last-child{
+                                        margin-bottom: 0;
+                                    }
+
+                                    &:hover{
+                                        opacity: 0.8;
+                                    }
+                                }
+
+                                
+                            }
+
+                            &.more-option-active{
+
+                                .more-option{
+                                    opacity: 1;
+                                    visibility: visible;
+                                    pointer-events: all;
+                                }
+                                
+                            }
+
+                            
                         }
                     }
 
@@ -1165,6 +1225,7 @@ body{
                         grid-template-columns: 1fr 264px;
                         grid-template-rows: 1fr 1fr;
                         gap: 14px;
+                        margin-bottom: 30px;
 
                         img:nth-child(1){
                             grid-column: 1/2;
@@ -1179,6 +1240,109 @@ body{
                         img:nth-child(3){
                             grid-column: 2/3;
                             grid-row: 2/3;
+                        }
+                    }
+
+                    .post_text{
+                        margin-bottom: 26px;
+
+                        p{
+                            font-size: 22px;
+                            line-height: 26px;
+                            @include Roboto(400);
+                            color: #3F3F3F;
+                        }
+                    }
+
+                    .post_footer{
+                        display: flex;
+
+                        .raiting-block{
+                            display: grid;
+                            grid-template-columns: min-content 1fr min-content;
+                            margin-left: 1px;
+                            
+                            .up{
+                                align-self: center;
+                                margin-right: 14px; 
+                                display: inline-block;
+                                transform: translateY(-1px);   
+                                cursor: pointer;
+
+                                &.active{
+                                    fill: #159700;
+                                }
+                            }
+
+                            .down{
+                                align-self: center;
+                                margin-left: 11px; 
+                                display: inline-block;
+                                transform: translateY(2px);
+                                cursor: pointer;
+
+                                &.active{
+                                    fill: red;
+                                }
+                            }
+
+                            .raiting{
+                                height: 46px;
+                                width: 46px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border: 1px solid #3F3F3F;
+                                border-radius: 50%;
+                                font-size: 17px;
+                                line-height: 20px;
+                                @include Roboto(400);
+                                color: #3F3F3F;
+                            }
+
+                            .raiting-text{
+                                grid-column: 1/4;
+                                grid-row: 2/3;
+                                justify-self: center;
+                                font-size: 17px;
+                                line-height: 20px;
+                                text-align: center;
+                                @include Roboto(300);
+                                margin-top: 5px;                                
+                                color: #3F3F3F;
+                                text-align: center;
+                            }
+                        }
+
+                        .commetns, .reposts{
+                            display: flex;
+                            align-items: center;
+                            font-size: 17px;
+                            line-height: 20px;
+                            color: #3F3F3F;
+                            @include Roboto(400);
+
+                            span{
+                                margin-right: 5px;
+                            }
+                        }
+
+                        .commetns, .reposts, .add-to-bookmarks{
+                            height: fit-content;
+                            margin-top: 6px;
+                        }
+
+                        .add-to-bookmarks{
+                            margin-left: 21px;
+                        }
+
+                        .reposts{
+                            margin-left: 15px;
+                        }
+
+                        .commetns{
+                            
+                            margin-left: auto;
                         }
                     }
                 }

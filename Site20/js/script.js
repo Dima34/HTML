@@ -122,3 +122,83 @@ document.addEventListener("click", (e)=>{
   }
   
 })
+
+// 
+// Etc
+// 
+
+let moreBlk = document.querySelectorAll(".more");
+
+if(moreBlk.length >0){
+  
+  for (let i = 0; i < moreBlk.length; i++) {
+    
+    moreBlk[i].addEventListener("click", ()=>{
+      moreBlk[i].classList.add("more-option-active")
+    })
+    
+  }
+  
+
+
+}
+
+document.addEventListener("click", (e)=>{
+  obj = e.path
+
+  if(!CheckExistClass(obj, "more")){
+    for (let i = 0; i < moreBlk.length; i++) {
+      moreBlk[i].classList.remove("more-option-active");
+    }
+    
+  }
+  
+})
+
+// 
+// Raiting
+// 
+
+let raitingBlk = document.querySelectorAll(".raiting-block");
+
+if(raitingBlk.length > 0){
+
+  for (let i = 0; i < raitingBlk.length; i++) {
+    
+    let raitingUp = raitingBlk[i].querySelector(".up");
+    let raitingScore = raitingBlk[i].querySelector(".raiting");
+    let raitingDown = raitingBlk[i].querySelector(".down");
+
+    let startAmount = raitingScore.innerHTML
+
+    raitingUp.addEventListener("click", ()=>{
+
+      if(!raitingUp.classList.contains("active")){
+        raitingScore.innerHTML =  Number.parseInt(startAmount) + 1;
+        raitingUp.classList.add("active")
+        raitingDown.classList.remove("active")
+      }
+      else{
+        raitingScore.innerHTML =  startAmount;
+        raitingUp.classList.remove("active");
+      }
+      
+    })
+
+    raitingDown.addEventListener("click", ()=>{
+
+      if(!raitingDown.classList.contains("active")){
+        raitingScore.innerHTML =  Number.parseInt(startAmount) - 1;
+        raitingDown.classList.add("active")
+        raitingUp.classList.remove("active")
+      }
+      else{
+        raitingScore.innerHTML =  startAmount;
+        raitingDown.classList.remove("active");
+      }
+    })
+
+  }
+  
+
+}
