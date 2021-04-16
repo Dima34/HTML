@@ -114,7 +114,7 @@ if(WriteNewBlk){
   
     if(!CheckExistClass(obj, "write-new")){
       
-      if("s"){
+      if(!(WriteNewInput.value.length>0)){
         WriteNewBlk.classList.remove("input-active");
       }
       
