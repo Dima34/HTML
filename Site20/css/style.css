@@ -165,7 +165,8 @@ button {
       padding-top: 245px;
       display: grid;
       grid-template-columns: 435px minmax(600px, 940px) 1fr;
-      column-gap: 30px; }
+      column-gap: 30px;
+      height: fit-content; }
       .index .wrapper main .white-block {
         border-radius: 20px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -182,7 +183,8 @@ button {
         position: relative;
         z-index: 1;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        height: fit-content; }
         .index .wrapper main .left .user-photo {
           width: fit-content;
           align-self: center;
@@ -465,7 +467,8 @@ button {
       .index .wrapper main .right {
         position: relative;
         z-index: 2;
-        padding-top: 89px; }
+        padding-top: 89px;
+        height: fit-content; }
         .index .wrapper main .right .swiper-button-disabled {
           display: none; }
         .index .wrapper main .right .swiper-button-prev {
@@ -1076,6 +1079,11 @@ button {
             display: none; }
           .index .wrapper main .right .post .post_comments .sub-comment-blk .sub-comment-input .comment-input.active {
             display: flex; }
+      .index .wrapper main .bottom {
+        width: 100%;
+        height: 200px;
+        background: red;
+        grid-column: 1/3; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */

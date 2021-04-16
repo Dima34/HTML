@@ -109,16 +109,16 @@ if(WriteNewBlk){
     WriteNewBlk.classList.add("input-active")
   })
 
-
+  document.addEventListener("click", (e)=>{
+    obj = e.path
+  
+    if(!CheckExistClass(obj, "write-new")){
+      WriteNewBlk.classList.remove("input-active");
+    }
+  })
 }
 
-document.addEventListener("click", (e)=>{
-  obj = e.path
 
-  if(!CheckExistClass(obj, "write-new")){
-    WriteNewBlk.classList.remove("input-active");
-  }
-})
 
 // 
 // Etc
@@ -134,19 +134,21 @@ if(moreBlk.length >0){
       moreBlk[i].classList.add("more-option-active")
     }) 
   }
-}
 
-document.addEventListener("click", (e)=>{
-  obj = e.path
-
-  if(!CheckExistClass(obj, "more")){
-    for (let i = 0; i < moreBlk.length; i++) {
-      moreBlk[i].classList.remove("more-option-active");
+  document.addEventListener("click", (e)=>{
+    obj = e.path
+  
+    if(!CheckExistClass(obj, "more")){
+      for (let i = 0; i < moreBlk.length; i++) {
+        moreBlk[i].classList.remove("more-option-active");
+      }
+      
     }
     
-  }
-  
-})
+  })
+}
+
+
 
 // 
 // Raiting
