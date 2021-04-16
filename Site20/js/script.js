@@ -198,28 +198,32 @@ if(raitingBlk.length > 0){
 // 
 // Comment system
 // 
-
+let postComment = document.querySelectorAll(".post_comments");
 updateComments()
 
+postComment.forEach((el)=>{
+  let mainCommentInput = el.querySelector(".main-comment-input > .comment-input");
+
+  mainCommentInput.querySelector(".send-message").addEventListener("click", ()=>{
+    let mainCommentInputText = mainCommentInput.querySelector(".textarea");
+
+    if(!(mainCommentInputText.querySelector(".placeholder"))){
+      console.log("post");
+    }
+    CreateCommentBlock(el.querySelector(".comments-wrapper"),"./img/profile-photo.png" ,"Ivanov Ivan", "Hello!", "22")
+    updateComments()
+  })
+})
+
+
 function updateComments(){
-  let postComment = document.querySelectorAll(".post_comments");
+  postComment = document.querySelectorAll(".post_comments");
 
   if(postComment.length > 0){
 
     for (let i = 0; i < postComment.length; i++) {
-      console.log("check ", i);
       
-      let mainCommentInput = postComment[i].querySelector(".main-comment-input > .comment-input");
-
-      mainCommentInput.querySelector(".send-message").addEventListener("click", ()=>{
-        let mainCommentInputText = mainCommentInput.querySelector(".textarea");
-
-        if(!(mainCommentInputText.querySelector(".placeholder"))){
-          console.log("post");
-        }
-        CreateCommentBlock(postComment[i].querySelector(".comments-wrapper"),"./img/profile-photo.png" ,"Ivanov Ivan", "Hello!", "22")
-        updateComments()
-      })
+      
 
       let CommentBlk = postComment[i].querySelectorAll(".comment-blk");
       CommentBlk.forEach((currentBlk)=>{
