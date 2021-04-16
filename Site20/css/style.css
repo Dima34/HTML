@@ -164,7 +164,7 @@ button {
       position: relative;
       padding-top: 245px;
       display: grid;
-      grid-template-columns: minmax(316px, 435px) minmax(678px, 940px) 1fr;
+      grid-template-columns: 435px minmax(600px, 940px) 1fr;
       column-gap: 30px; }
       .index .wrapper main .white-block {
         border-radius: 20px;
@@ -843,7 +843,9 @@ button {
             width: 100%;
             height: 480px; }
             .index .wrapper main .right .post .post_content img {
-              object-fit: cover; }
+              object-fit: cover;
+              width: 100%;
+              height: 100%; }
           .index .wrapper main .right .post .several-photo {
             display: grid;
             grid-template-columns: 1fr 264px;

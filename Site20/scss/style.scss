@@ -242,7 +242,7 @@ button{
             position: relative;
             padding-top: 245px;
             display: grid;
-            grid-template-columns: minmax(316px, 435px) minmax(678px, 940px) 1fr;
+            grid-template-columns: 435px minmax(600px, 940px) 1fr;
             column-gap: 30px;
 
             .white-block{
@@ -1221,6 +1221,8 @@ button{
                         
                         img{
                             object-fit: cover;
+                            width: 100%;
+                            height: 100%;
                         }
                     }
 
