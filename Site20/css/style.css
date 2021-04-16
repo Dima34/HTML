@@ -217,7 +217,8 @@ button {
             text-align: center;
             color: white;
             cursor: pointer;
-            transition: background-color .3s; }
+            transition: background-color .3s;
+            font-size: 22px; }
             .index .wrapper main .left .subscribe-blk .subscribe:hover {
               background-color: #2579BF; }
           .index .wrapper main .left .subscribe-blk .subscribed {
