@@ -235,7 +235,8 @@ button {
               color: white;
               cursor: pointer;
               z-index: 2;
-              position: relative; }
+              position: relative;
+              font-size: 22px; }
             .index .wrapper main .left .subscribe-blk .subscribed .subscibed-menu {
               background: white;
               width: 100%;
