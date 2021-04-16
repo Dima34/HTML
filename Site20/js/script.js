@@ -198,6 +198,7 @@ if(raitingBlk.length > 0){
 // 
 // Comment system
 // 
+
 let postComment = document.querySelectorAll(".post_comments");
 updateComments()
 
@@ -208,13 +209,27 @@ postComment.forEach((el)=>{
     let mainCommentInputText = mainCommentInput.querySelector(".textarea");
 
     if(!(mainCommentInputText.querySelector(".placeholder"))){
-      console.log("post");
+      let date = new Date();
+      let fullDate = date.getDate()+"."+date.getMonth()+"."+date.getFullYear();
+      
+      CreateCommentBlock(
+        el.querySelector(".comments-wrapper"),
+        "./img/profile-photo.png",
+        "Ivanov Ivan",
+        mainCommentInputText.textContent,
+        fullDate
+      )
+      updateComments()
     }
-    CreateCommentBlock(el.querySelector(".comments-wrapper"),"./img/profile-photo.png" ,"Ivanov Ivan", "Hello!", "22")
-    updateComments()
+
+    
+
+
+    
   })
 })
 
+console.log(new Date().getDate());
 
 function updateComments(){
   postComment = document.querySelectorAll(".post_comments");

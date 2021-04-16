@@ -961,6 +961,12 @@ button {
                   font-family: 'Roboto' !important;
                   font-weight: 400 !important;
                   color: #02569C; }
+                  .index .wrapper main .right .post .post_comments .comment-blk .comment .comment_header .name.verified {
+                    position: relative; }
+                    .index .wrapper main .right .post .post_comments .comment-blk .comment .comment_header .name.verified::after {
+                      display: inline-block;
+                      transform: translateY(4px) translateX(2px);
+                      content: url(../img/svg/commetns-verified.svg); }
               .index .wrapper main .right .post .post_comments .comment-blk .comment .comment_text {
                 font-size: 17px;
                 line-height: 20px;
@@ -1001,8 +1007,20 @@ button {
             .index .wrapper main .right .post .post_comments .comment-blk .sub-comment-blk {
               padding-left: 27px;
               padding-bottom: 15px; }
-              .index .wrapper main .right .post .post_comments .comment-blk .sub-comment-blk .comment:first-child {
+              .index .wrapper main .right .post .post_comments .comment-blk .sub-comment-blk .comment {
                 padding-top: 0; }
+            .index .wrapper main .right .post .post_comments .comment-blk .show-answers {
+              font-size: 17px;
+              line-height: 20px;
+              font-family: 'Roboto' !important;
+              font-weight: 400 !important;
+              color: #939597;
+              margin-top: -15px;
+              margin-bottom: 15px;
+              display: block;
+              transition: color .3s; }
+              .index .wrapper main .right .post .post_comments .comment-blk .show-answers:hover {
+                color: #02569C; }
           .index .wrapper main .right .post .post_comments .comment-input {
             display: flex;
             align-items: center; }
