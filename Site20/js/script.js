@@ -220,16 +220,12 @@ postComment.forEach((el)=>{
         fullDate
       )
       updateComments()
+
+      mainCommentInput.querySelector(".textarea").innerHTML = `<span class="placeholder">${mainCommentInput.querySelector(".textarea").getAttribute("placeholder")}</span>`
     }
 
-    
-
-
-    
   })
 })
-
-console.log(new Date().getDate());
 
 function updateComments(){
   postComment = document.querySelectorAll(".post_comments");
@@ -466,6 +462,34 @@ if(ContentEditable.length > 0){
     })
   })
 }
+
+// 
+//  Comment likes 
+// 
+
+let commentLike = document.querySelectorAll(".comment_likes");
+
+if(commentLike.length > 0){
+
+  commentLike.forEach((el)=>{
+    let likeBtn = el.querySelector("svg");
+    let likeText = el.querySelector(".likes-amount");
+
+    likeBtn.addEventListener("click", ()=>{
+      if(el.classList.contains("like-checked")){
+        likeText.textContent--;
+        el.classList.remove("like-checked");
+      }
+      else{
+        likeText.textContent++;
+        el.classList.add("like-checked");
+      }
+      
+    })
+  })
+
+}
+
 
 
 
