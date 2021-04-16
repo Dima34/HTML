@@ -55,7 +55,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: #F9F8F8; }
+  background: #F9F8F8;
+  transform: scale(0.8);
+  margin-top: -605px; }
 
 button {
   padding: 0; }
@@ -679,7 +681,7 @@ button {
             width: 100%;
             display: flex;
             margin-top: 11px; }
-            .index .wrapper main .right .write-new .write-main input {
+            .index .wrapper main .right .write-new .write-main textarea {
               width: 100%;
               background: 0;
               border: 0;
@@ -692,7 +694,7 @@ button {
               font-weight: 400 !important;
               color: #3F3F3F;
               border-bottom: 1px solid #3F3F3F; }
-              .index .wrapper main .right .write-new .write-main input::placeholder {
+              .index .wrapper main .right .write-new .write-main textarea::placeholder {
                 opacity: 1;
                 color: #3F3F3F; }
             .index .wrapper main .right .write-new .write-main .publish {

@@ -103,7 +103,7 @@ UnsubscribeBtn.addEventListener("click", ()=>{
 let WriteNewBlk = document.querySelector(".write-new");
 
 if(WriteNewBlk){
-  let WriteNewInput = WriteNewBlk.querySelector("input");
+  let WriteNewInput = WriteNewBlk.querySelector("textarea");
   
   WriteNewInput.addEventListener("click", ()=>{
     WriteNewBlk.classList.add("input-active")
@@ -113,7 +113,11 @@ if(WriteNewBlk){
     obj = e.path
   
     if(!CheckExistClass(obj, "write-new")){
-      WriteNewBlk.classList.remove("input-active");
+      
+      if("s"){
+        WriteNewBlk.classList.remove("input-active");
+      }
+      
     }
   })
 }
@@ -489,12 +493,4 @@ if(commentLike.length > 0){
   })
 
 }
-
-
-
-
-
-
-
-
 
