@@ -20,8 +20,10 @@
     <div class="wrapper">
 
         <div class="header_logo-group">
-            <img src="./img/svg/logo.svg" alt="logo" class="logo">
-            <img src="./img/svg/logo-text.svg" alt="logo text" class="logo-text">
+            <a href="./index.html">
+                <img src="./img/svg/logo.svg" alt="logo" class="logo">
+                <img src="./img/svg/logo-text.svg" alt="logo text" class="logo-text">
+            </a>
         </div>
 
         <div class="search-bar-group">
@@ -29,6 +31,40 @@
             <button type="submit" class="search-btn">
                 <img src="./img/svg/search-ico.svg" alt="search-ico">
             </button>
+
+            <div class="last-search-pp">
+                <h2 class="header">Recent requests</h2>
+                <div class="last-group">
+                    <p class="last-group-header">People</p>
+
+                    <div class="item">
+                        <img src="./img/friend-1.png" alt="icon" class="thumb">
+                        <p class="name">Courtney Henry</p>
+                        <img src="./img/svg/chat-ico.svg" alt="icon" class="chat-ico">
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/friend-2.png" alt="icon" class="thumb">
+                        <p class="name">Esther Howard</p>
+                        <img src="./img/svg/chat-ico.svg" alt="icon" class="chat-ico">
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/friend-3.png" alt="icon" class="thumb">
+                        <p class="name">Jerome Bell</p>
+                        <img src="./img/svg/chat-ico.svg" alt="icon" class="chat-ico">
+                    </div>
+                </div>
+                <div class="last-group">
+                    <p class="last-group-header">Communities</p>
+
+                    <div class="item">
+                        <img src="./img/award-1.png" alt="icon" class="thumb">
+                        <p class="name">chat-ico</p>
+                        <img src="./img/svg/chat-ico.svg" alt="icon" class="chat-ico">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="nav-group">
@@ -249,9 +285,12 @@
                         </div>
                     </div>
 
-                    <p class="write-a-message">
-                        Write a message
-                    </p>
+                    
+                    <div class="write-a-message">
+                        <p>
+                            Write a message
+                        </p>
+                    </div>
 
                     <div class="general white-block">
                         <h2 class="general-header">
@@ -420,12 +459,12 @@
                         </h2>
 
                         <div class="main">
-                            <div class="video-blk">
+                            <div class="video-blk video-pp-open">
                                 <img class = "video-image" src="./img/video-1.png" alt="image">
                                 <button class="play"><img src="./img/svg/video-play-btn.svg" alt="play btn"></button>
                             </div>
 
-                            <div class="video-blk">
+                            <div class="video-blk video-pp-open">
                                 <img class = "video-image" src="./img/video-2.png" alt="image">
                                 <button class="play"><img src="./img/svg/video-play-btn.svg" alt="play btn"></button>
                             </div>
@@ -1615,12 +1654,12 @@
 </div>
                 </div>
 
-                <div class="info-wrire-block">
-                    <input type="text" placeholder="Message text">
-                    <button class="emoji"><img src="./img/svg/photo-pp-emoji.svg" alt="emoji"></button>
-                    <button class = "more"><img src="./img/svg/photo-pp-more.svg" alt="emoji"></button>
-                    <button class="send">Send</button>
-                </div>
+                <div class="info-write-block">
+    <input type="text" placeholder="Message text">
+    <button class="emoji"><img src="./img/svg/photo-pp-emoji.svg" alt="emoji"></button>
+    <button class = "more"><img src="./img/svg/photo-pp-more.svg" alt="emoji"></button>
+    <button class="send">Send</button>
+</div>
             </div>
 
             <div class="photo-footer">
@@ -1700,6 +1739,563 @@
         </div>
 
         <img src="./img/svg/pp-close.svg" alt="close" class="pp-close">        
+    
+    </div>
+
+    <div class="write-a-message-popup">
+        <div class="header">
+            <img src="./img/friend-1.png" 
+                alt="user-image" class="user-thumb">
+            <p class="user-name">Ivanov Ivan</p>
+            <img src="../img/svg/write-a-message-close-descktop.svg" 
+                alt="close" class="close">
+        </div>
+
+        <div class="main">
+
+            <div class="message my">
+                <p class="message-text">
+                    In our quest to improve 
+                    the user experience, we.
+                </p>
+                <p class="time isread">12:20</p>
+            </div>
+
+            <div class="message opposite">
+                <p class="message-text">
+                    Each of us.
+                </p>
+                <p class="message-text">
+                    And also the elements of the political process.
+                </p>
+                <div class="time-with-oppenent">
+                    <img src="./img/friend-1.png" alt="img" 
+                    class="opponent-image">
+                    <p class="time"> 12:25</p>
+                </div>
+                
+            </div>
+
+            <div class="message my">
+                <p class="message-text">
+                    In our quest to improve 
+                    the user experience, we.
+                </p>
+                <p class="time isread">12:20</p>
+            </div>
+
+            <div class="message opposite">
+                <p class="message-text">
+                    And also the elements of the political process.
+                </p>
+                <div class="time-with-oppenent">
+                    <img src="./img/friend-1.png" alt="img" 
+                    class="opponent-image">
+                    <p class="time"> 12:25</p>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <div class="footer">
+            <div class="info-write-block">
+    <input type="text" placeholder="Message text">
+    <button class="emoji"><img src="./img/svg/photo-pp-emoji.svg" alt="emoji"></button>
+    <button class = "more"><img src="./img/svg/photo-pp-more.svg" alt="emoji"></button>
+    <button class="send">Send</button>
+</div>
+        </div>
+    </div>
+
+    <div class="video_popup popup">
+
+        <div class="wrapper popup-wrapper">
+    
+            <div class="video-info">
+                <div class="info-header">
+                    <h2 class="name">Ivanov Ivan<span><img src="./img/svg/commetns-verified.svg" alt="checked"></span></h2>
+                    <img src="./img/profile-photo.png" alt="thumb" class="header-photo">
+                    <p class="date">12.02.2021</p>
+                    <div class="more">
+    <img src="./img/svg/more-ico.svg" alt="more">
+    <div class="more-option">
+        <img src="./img/svg/more-bg.svg" alt="bg" class="bg">
+        <button>Copy link</button>
+        <button>Complain</button>
+    </div>
+</div>
+                </div>
+                
+                <video-js data-setup='{"controls": true}' poster = "./img/video-popup-poster.png">
+                    <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                    <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                </video-js>
+                
+                <div class="video-description">
+                    <h2 class="video-name">Video title</h2>
+                    <p class="views">121,212 views</p>
+                </div>
+
+                <div class="post_footer">
+                    <div class="raiting-block">
+                        <svg class="up" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.067 0.75C10.2594 0.416667 10.7406 0.416666 10.933 0.75L20.0263 16.5C20.2187 16.8333 19.9782 17.25 19.5933 17.25H1.40673C1.02183 17.25 0.781271 16.8333 0.973721 16.5L10.067 0.75Z" stroke="#159700"/>
+                        </svg>
+                            
+                        <p class="raiting">50</p>
+                        
+                        <svg class="down" width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.067 17.25C10.2594 17.5833 10.7406 17.5833 10.933 17.25L20.0263 1.5C20.2187 1.16667 19.9782 0.75 19.5933 0.75H1.40673C1.02183 0.75 0.781271 1.16667 0.973721 1.5L10.067 17.25Z" stroke="#EA0000"/>
+                        </svg>
+                
+                        <p class="raiting-text">Rating <span class="value">50</span></p>
+                
+                        <div class="raiting-popup">
+                            <div class="popup-header">
+                                <h2>Rating 50</h2>
+                                <img src="./img/svg/raiting-pp-close.svg" alt="close" class="raiting-pp-close">
+                            </div>
+                            <div class="popup-main">
+                                <div class="popup-item">
+                                    <img src="./img/friend-1.png" alt="item image">
+                                    <p>Anna</p>
+                                </div>
+                
+                                <div class="popup-item">
+                                    <img src="./img/friend-2.png" alt="item image">
+                                    <p>Anna</p>
+                                </div>
+                
+                                <div class="popup-item">
+                                    <img src="./img/friend-3.png" alt="item image">
+                                    <p>Anna</p>
+                                </div>
+                
+                                <div class="popup-item">
+                                    <img src="./img/friend-4.png" alt="item image">
+                                    <p>Anna</p>
+                                </div>
+                
+                                <div class="popup-item">
+                                    <img src="./img/friend-5.png" alt="item image">
+                                    <p>Anna</p>
+                                </div>
+                
+                                <div class="popup-item">
+                                    <img src="./img/friend-1.png" alt="item image">
+                                    <p>Anna</p>
+                                </div>
+                
+                                <div class="popup-item">
+                                    <img src="./img/friend-2.png" alt="item image">
+                                    <p>Anna</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <p class="add-to-yourself"><span><img src="./img/svg/add-to-youself-ico.svg" alt="icon"></span>Add to yourself</p>
+                    <p class="commetns"><span><img src="./img/svg/post-comments.svg" alt="icon"></span>50</p>
+                    <p class="reposts"><span><img src="./img/svg/post-repost.png" alt="icon"></span>50</p>
+                    <img src="./img/svg/post-bookmarks.svg" alt="add-to-bookmarks" class="add-to-bookmarks">
+                
+                    <div class="repost-popup">
+                        <button>In a group</button>
+                        <button>Into history</button>
+                        <button>Send message</button>
+                    </div>
+                </div>
+
+                <div class="info-commetns">
+                    <div class="main-comment">
+                        <div class="comment">
+    <div class="comment_header">
+        <img src="./img/friend-1.png" alt="thumb">
+        <p class="name">Vasilisa Kovaleva</p>
+    </div>
+
+    <div class="comment_text">
+        <p>
+            <span class="mention">Vasilisa Kovaleva,</span>  For the modern world, constant information.
+        </p>
+    </div>
+
+    <div class="comment_footer">
+        <p class="date">20:01</p>
+        <button class="answer">to answer</button>
+    </div>
+
+    <div class="comment_likes">
+        <p>
+            <span class="likes-amount">2</span>
+            <span>
+                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 15C9 15 1 10.5455 1 5.13637C1.00016 4.18034 1.33332 3.25387 1.94284 2.51448C2.55235 1.7751 3.40059 1.26843 4.34335 1.08062C5.28611 0.89281 6.26519 1.03546 7.11412 1.4843C7.96306 1.93315 8.62945 2.6605 9.00001 3.54268L8.99999 3.54268C9.37054 2.6605 10.0369 1.93316 10.8859 1.48431C11.7348 1.03546 12.7139 0.892811 13.6566 1.08062C14.5994 1.26843 15.4476 1.7751 16.0572 2.51448C16.6667 3.25387 16.9998 4.18034 17 5.13637C17 10.5455 9 15 9 15Z" stroke="#02569C" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                    
+            </span>
+        </p>
+    </div>
+</div>
+                        <div class="sub-comments">
+                            <div class="comment">
+    <div class="comment_header">
+        <img src="./img/friend-1.png" alt="thumb">
+        <p class="name">Vasilisa Kovaleva</p>
+    </div>
+
+    <div class="comment_text">
+        <p>
+            <span class="mention">Vasilisa Kovaleva,</span>  For the modern world, constant information.
+        </p>
+    </div>
+
+    <div class="comment_footer">
+        <p class="date">20:01</p>
+        <button class="answer">to answer</button>
+    </div>
+
+    <div class="comment_likes">
+        <p>
+            <span class="likes-amount">2</span>
+            <span>
+                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 15C9 15 1 10.5455 1 5.13637C1.00016 4.18034 1.33332 3.25387 1.94284 2.51448C2.55235 1.7751 3.40059 1.26843 4.34335 1.08062C5.28611 0.89281 6.26519 1.03546 7.11412 1.4843C7.96306 1.93315 8.62945 2.6605 9.00001 3.54268L8.99999 3.54268C9.37054 2.6605 10.0369 1.93316 10.8859 1.48431C11.7348 1.03546 12.7139 0.892811 13.6566 1.08062C14.5994 1.26843 15.4476 1.7751 16.0572 2.51448C16.6667 3.25387 16.9998 4.18034 17 5.13637C17 10.5455 9 15 9 15Z" stroke="#02569C" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                    
+            </span>
+        </p>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <button class="show-all">Show all comments ...</button>
+                    
+                </div>
+
+                <div class="info-write-block">
+    <input type="text" placeholder="Message text">
+    <button class="emoji"><img src="./img/svg/photo-pp-emoji.svg" alt="emoji"></button>
+    <button class = "more"><img src="./img/svg/photo-pp-more.svg" alt="emoji"></button>
+    <button class="send">Send</button>
+</div>
+            </div>
+
+            <div class="other-videos">
+                <h2 class="other-header">Other videos of Ivan Ivanov:</h2>
+                
+                <div class="other-block">
+                    <img src="../img/video-image-1.png" alt="video-image" 
+                    class="video-image">
+                    <h2 class="video-title">Video title</h2>
+                    <p class="video-views">121,212 views</p>
+                </div>
+
+                <div class="other-block">
+                    <img src="../img/video-image-2.png" alt="video-image" class="video-image">
+                    <h2 class="video-title">Video title</h2>
+                    <p class="video-views">121,212 views</p>
+                </div>
+
+                <div class="other-block">
+                    <img src="../img/video-image-3.png" alt="video-image" class="video-image">
+                    <h2 class="video-title">Video title</h2>
+                    <p class="video-views">121,212 views</p>
+                </div>
+
+                <div class="other-block">
+                    <img src="../img/video-image-4.png" alt="video-image" class="video-image">
+                    <h2 class="video-title">Video title</h2>
+                    <p class="video-views">121,212 views</p>
+                </div>
+
+                <div class="other-block">
+                    <img src="../img/video-image-5.png" alt="video-image" class="video-image">
+                    <h2 class="video-title">Video title</h2>
+                    <p class="video-views">121,212 views</p>
+                </div>
+
+                <div class="other-block">
+                    <img src="../img/video-image-6.png" alt="video-image" class="video-image">
+                    <h2 class="video-title">Video title</h2>
+                    <p class="video-views">121,212 views</p>
+                </div>
+
+                <div class="other-block">
+                    <img src="../img/video-image-7.png" alt="video-image" class="video-image">
+                    <h2 class="video-title">Video title</h2>
+                    <p class="video-views">121,212 views</p>
+                </div>
+            </div>
+    
+            <img src="./img/svg/swiper-arrow1.svg" alt="next" class="next-post">
+            
+        </div>
+
+        <img src="./img/svg/pp-close.svg" alt="close" class="pp-close">        
+    
+    </div>
+
+    <div class="repost_popup popup">
+
+        <div class="wrapper popup-wrapper">
+    
+            <div class="header">
+                <p class="nav-item active" data-for = ".everything">Everything</p>
+                <p class="nav-item" data-for = ".friends">My friends</p>
+                <img src="./img/svg/write-a-message-close-descktop.svg" alt="close" class="close">
+            </div>
+
+            <div class="everything repost-main active">
+                
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+                
+            </div>
+            
+            <div class="friends repost-main">
+                
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-2.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-2.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-2.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-1.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-2.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-2.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+
+                <a href="#">
+                    <img src="./img/friend-2.png" alt="icon">
+                    <p>Albert Flores</p>
+                </a>
+                
+            </div>
+        </div>
+      
     
     </div>
 

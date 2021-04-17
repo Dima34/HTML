@@ -23,6 +23,17 @@ if(profileDropDown){
     profileDropDown.classList.remove("profile_dropdown-active");
   })
 
+  document.addEventListener("click", (e)=>{
+    obj = e.path
+  
+    if(!CheckExistClass(obj, "profile_dropdown") && !CheckExistClass(obj, "profile-more")){
+      
+      profileDropDown.classList.remove("profile_dropdown-active");
+      
+    }
+    
+  })
+
 }
 
 // 
@@ -531,11 +542,8 @@ let photoPopup = document.querySelector(".photo_popup");
 if(photoPopup){
   let photoPopupOpen = document.querySelectorAll(".photo-pp-open");
 
-  console.log(photoPopupOpen);
-
   photoPopupOpen.forEach((e)=>{
     e.addEventListener("click", ()=>{
-      console.log(13);
       photoPopup.classList.add("popup-active");
     })
   })
@@ -552,5 +560,124 @@ if(photoPopup){
   })
 }
 
+// 
+// Write a message popup
+// 
+
+let writeAMessagePopup = document.querySelector(".write-a-message-popup");
+
+if(writeAMessagePopup){
+  let writeAMessagePopupOpen = document.querySelector(".write-a-message");
+  let writeAMessagePopupClose = writeAMessagePopup.querySelector(".close");
+
+  writeAMessagePopupOpen.addEventListener("click", ()=>{
+    writeAMessagePopup.classList.add("active");
+  })
+
+  writeAMessagePopupClose.addEventListener("click", ()=>{
+    writeAMessagePopup.classList.remove("active");
+  })
+
+}
 
 
+// 
+// Video popup
+// 
+
+let videoPopup = document.querySelector(".video_popup");
+
+if(videoPopup){
+  let videoPopupOpen = document.querySelectorAll(".video-pp-open");
+
+  videoPopupOpen.forEach((e)=>{
+    e.addEventListener("click", ()=>{
+      videoPopup.classList.add("popup-active");
+    })
+  })
+
+  document.addEventListener("click", (e)=>{
+    obj = e.path
+  
+    if(!CheckExistClass(obj, "popup-wrapper") && !CheckExistClass(obj, "video-pp-open")){
+      
+      videoPopup.classList.remove("popup-active");
+      
+    }
+    
+  })
+}
+
+
+// 
+// Search popup
+// 
+
+let SearchBar = document.querySelector(".search-bar");
+
+if(SearchBar){
+  let lasSearchPp = document.querySelector(".last-search-pp");
+
+  SearchBar.addEventListener("input", ()=>{
+    if(SearchBar.value.length > 0){
+      lasSearchPp.classList.add("active");
+    }
+    else{
+      lasSearchPp.classList.remove("active");
+    }
+  })
+}
+
+// 
+// Search popup
+// 
+
+let repostPopup = document.querySelector(".repost_popup");
+
+if(repostPopup){
+  let repostBtn = repostPopup.querySelectorAll(".nav-item");
+  let repostBlocks = repostPopup.querySelectorAll(".repost-main");
+  let repostPopupClose = repostPopup.querySelector(".close");
+
+  repostBtn.forEach((el)=>{
+    el.addEventListener("click",()=>{
+      repostBlocks.forEach((elem)=>{
+        elem.classList.remove("active");
+      })
+
+      repostBtn.forEach((elem)=>{
+        elem.classList.remove("active");
+      })
+
+      el.classList.add("active");
+      
+      repostPopup.querySelector(el.getAttribute("data-for")).classList.add("active");
+      
+    })
+  })
+
+  let raitingPopup = document.querySelectorAll(".raiting-popup");
+
+  raitingPopup.forEach((ppOpen)=>{
+    ppOpen.addEventListener("click", ()=>{
+      repostPopup.classList.add("popup-active")
+    })
+  })
+
+  repostPopupClose.addEventListener("click", ()=>{
+    repostPopup.classList.remove("popup-active");
+  })
+
+  document.addEventListener("click", (e)=>{
+    obj = e.path
+
+    if(!CheckExistClass(obj, "raiting-popup") && !CheckExistClass(obj, "popup-wrapper")){
+
+      
+      repostPopup.classList.remove("popup-active");
+      
+    }
+  })
+
+
+}
