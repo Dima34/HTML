@@ -77,8 +77,8 @@ body{
     margin: 0;
     padding: 0;
     background: #F9F8F8;
-    transform: scale(0.8);
-    margin-top: -605px
+    // transform: scale(0.8);
+    // margin-top: -605px
 }
 
 @mixin Roboto($size){
@@ -924,6 +924,7 @@ button{
                         align-items: center;
                         height: 150px;
                         width: 140px;
+                        cursor: pointer;
 
                         img{
                             object-fit: cover;
@@ -1155,77 +1156,14 @@ button{
                             }
                         }
 
-                        .more{
-                            grid-column: 4/5;
-                            grid-row: 1/3;
-                            align-self: center;
-                            position: relative;
-                            z-index: 2;
-                            cursor: pointer;
-
-                            .more-option{
-                                width: 216px;
-                                height: 104px;
-                                position: absolute;
-                                top: 140%;
-                                right: 0px;
-                                display: flex;
-                                flex-direction: column;
-                                padding: 26px 24px 22px 24px;
-                                opacity: 0;
-                                visibility: hidden;
-                                pointer-events: none;
-                                transition: .3s;
-
-
-                                .bg{
-                                    position: absolute;
-                                    left: 0;
-                                    top: 0;
-                                    z-index: -1;
-
-                                }
-
-                                button{
-                                    padding: 0;
-                                    text-align: left;
-                                    font-size: 18px;
-                                    line-height: 21px;
-                                    @include Roboto(400);
-                                    margin-bottom: 14px;
-                                    color: #02569C;
-                                    transition:  opacity .3s;
-
-                                    &:last-child{
-                                        margin-bottom: 0;
-                                    }
-
-                                    &:hover{
-                                        opacity: 0.8;
-                                    }
-                                }
-
-                                
-                            }
-
-                            &.more-option-active{
-
-                                .more-option{
-                                    opacity: 1;
-                                    visibility: visible;
-                                    pointer-events: all;
-                                }
-                                
-                            }
-
-                            
-                        }
+                        
                     }
 
                     .post_content{
                         width: 100%;
                         height: 480px;
                         margin-bottom: 30px;
+                        cursor: pointer;
                         
                         img{
                             object-fit: cover;
@@ -1323,218 +1261,12 @@ button{
                         }
                     }
 
-                    .post_footer{
-                        display: flex;
-
-                        .raiting-block{
-                            display: grid;
-                            grid-template-columns: min-content 1fr min-content;
-                            margin-left: 1px;
-                            
-                            .up{
-                                align-self: center;
-                                margin-right: 14px; 
-                                display: inline-block;
-                                transform: translateY(-1px);   
-                                cursor: pointer;
-
-                                &.active{
-                                    fill: #159700;
-                                }
-                            }
-
-                            .down{
-                                align-self: center;
-                                margin-left: 11px; 
-                                display: inline-block;
-                                transform: translateY(2px);
-                                cursor: pointer;
-
-                                &.active{
-                                    fill: red;
-                                }
-                            }
-
-                            .raiting{
-                                height: 46px;
-                                width: 46px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                border: 1px solid #3F3F3F;
-                                border-radius: 50%;
-                                font-size: 17px;
-                                line-height: 20px;
-                                @include Roboto(400);
-                                color: #3F3F3F;
-                            }
-
-                            .raiting-text{
-                                grid-column: 1/4;
-                                grid-row: 2/3;
-                                justify-self: center;
-                                font-size: 17px;
-                                line-height: 20px;
-                                text-align: center;
-                                @include Roboto(300);
-                                margin-top: 5px;                                
-                                color: #3F3F3F;
-                                text-align: center;
-                            }
-                        }
-
-                        .commetns, .reposts{
-                            display: flex;
-                            align-items: center;
-                            font-size: 17px;
-                            line-height: 20px;
-                            color: #3F3F3F;
-                            @include Roboto(400);
-
-                            span{
-                                margin-right: 5px;
-                            }
-                        }
-
-                        .commetns, .reposts, .add-to-bookmarks{
-                            height: fit-content;
-                            margin-top: 6px;
-                        }
-
-                        .add-to-bookmarks{
-                            margin-left: 21px;
-                        }
-
-                        .reposts{
-                            margin-left: 15px;
-                        }
-
-                        .commetns{
-                            
-                            margin-left: auto;
-                        }
-                    }
-
                     .post_comments{
 
                         .comment-blk{
                             border-bottom: 1px solid #C4C4C4;
 
-                            .comment{
-                                padding: 15px 0;
-                                display: grid;
-                                grid-template-columns: 1fr min-content;
-
-                                .comment_header{
-                                    display: flex;
-                                    flex-direction: row;
-                                    align-items: center;
-                                    margin-bottom: 10px;
-
-                                    img{
-                                        width: 38px;
-                                        height: 38px;
-                                        object-fit: cover;
-                                        margin-right: 7px;
-                                        border-radius: 50%;
-                                    }
-
-                                    .name{
-                                        font-size: 17px;
-                                        line-height: 20px;
-                                        @include Roboto(400);
-                                        color: #02569C;
-
-                                        &.verified{
-                                            position: relative;
-    
-                                            &::after{
-                                                display: inline-block;
-                                                transform: translateY(4px) translateX(2px);
-                                                content: url(../img/svg/commetns-verified.svg);
-                                            }
-                                        }
-                                    }
-
-                                    
-                                }
-
-                                .comment_text{
-                                    font-size: 17px;
-                                    line-height: 20px;
-                                    @include Roboto(400);
-                                    margin-bottom: 10px;
-
-                                    & .mention{
-                                        color: #02569C;
-                                    }
-                                }
-
-                                .comment_footer{
-                                    display: flex;
-
-                                    p,button{
-                                        font-size: 16px;
-                                        line-height: 19px;
-                                        @include Roboto(400);
-                                    }
-
-                                    button{
-                                        padding: 0;
-                                        text-align: left;
-                                        transition:  opacity .3s;
-                                        color: #02569C;
-
-                                        &:hover{
-                                            opacity: 0.8;
-                                        }
-                                    }
-
-                                    .date{
-                                        color: #939597;
-                                        margin-right: 15px;
-                                    }
-                                }
-
-                                .comment_likes{
-                                    grid-column: 2/3;
-                                    grid-row: 1/4;
-                                    align-self: center;
-                                    white-space: nowrap;
-                                    color: #02569C;
-                                    font-size: 17px;
-                                    line-height: 20px;
-                                    @include Roboto(400);
-
-                                    svg{
-                                        path{
-                                            fill:none;
-                                            transition:.3s;
-                                        }
-                                        
-                                        cursor: pointer;
-                                    }
-                                    
-                                    .likes-amount{
-                                        margin-right: 5px;
-                                    }
-
-                                    &.like-checked{
-                                        svg{
-                                            path{
-                                                fill:#02569C;
-                                            }
-                                            
-                                        }
-                                    }
-
-                                    span:last-child{
-                                        display: inline-block;
-                                        transform: translateY(2px);
-                                    }
-                                }
-                            }
-
+                            
                             .sub-comment-blk{
                                 padding-left: 27px;
                                 
@@ -1689,6 +1421,450 @@ button{
                 grid-column: 1/3;
             }
 
+        }
+    }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======POST FOOTER======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.post_footer{
+    display: flex;
+    position: relative;
+
+    .raiting-block{
+        display: grid;
+        grid-template-columns: min-content 1fr min-content;
+        margin-left: 1px;
+        position: relative;
+        
+        .up{
+            align-self: center;
+            margin-right: 14px; 
+            display: inline-block;
+            transform: translateY(-1px);   
+            cursor: pointer;
+
+            &.active{
+                fill: #159700;
+            }
+        }
+
+        .down{
+            align-self: center;
+            margin-left: 11px; 
+            display: inline-block;
+            transform: translateY(2px);
+            cursor: pointer;
+
+            &.active{
+                fill: red;
+            }
+        }
+
+        .raiting{
+            height: 46px;
+            width: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #3F3F3F;
+            border-radius: 50%;
+            font-size: 17px;
+            line-height: 20px;
+            @include Roboto(400);
+            color: #3F3F3F;
+        }
+
+        .raiting-text{
+            grid-column: 1/4;
+            grid-row: 2/3;
+            justify-self: center;
+            font-size: 17px;
+            line-height: 20px;
+            text-align: center;
+            @include Roboto(300);
+            margin-top: 5px;                                
+            color: #3F3F3F;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+
+            &::after{
+                content: "";
+                position: absolute;
+                color: red;
+                width: 80px;
+                height: 80px;
+                bottom: 100%;
+                left: 10px;
+                display: none;
+            }
+
+            &:hover{
+
+                &::after{
+                    display: block;
+                }
+            }
+        }
+
+        .raiting-popup{
+            position: absolute;
+            width: 416px;
+            padding: 10px 8px;
+            z-index: 2;
+            bottom: 117%;
+            left: -31px;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: .3s;
+
+            .popup-header{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 8px;
+
+                h2{
+                    font-size: 18px;
+                    line-height: 21px;
+                    @include Roboto(400);
+                    color: #FFFFFF;
+                }
+
+                img{
+                    display: none;
+                }
+            }
+
+            .popup-main{
+                display: flex;
+                justify-content: space-between;
+
+                .popup-item{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #FFFFFF;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        margin-bottom: 5px;
+                    }
+
+                    p{
+                        font-size: 15px;
+                        line-height: 18px;
+                        @include Roboto(400);
+                        text-align: center;
+                        
+                        color: #FFFFFF;  
+                    }
+                }
+            }
+
+            &::after{
+                position: absolute;
+                content: url(../img/svg/raiting-pp-bg.svg);
+                left: 0;
+                top: 0;
+                z-index: -1;
+            }
+        }
+
+        .raiting-text:hover + .raiting-popup{
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+
+        .raiting-popup:hover{
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+    }
+
+    .commetns, .reposts{
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        line-height: 20px;
+        color: #3F3F3F;
+        @include Roboto(400);
+
+        span{
+            margin-right: 5px;
+        }
+    }
+
+    .commetns, .reposts, .add-to-bookmarks{
+        height: fit-content;
+        margin-top: 6px;
+    }
+
+    .add-to-bookmarks{
+        margin-left: 21px;
+    }
+
+    .reposts{
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    .repost-popup{
+        position: absolute;
+        padding: 26px 24px;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        top: 56%;
+        right: 91px;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: .3s;
+
+        button{
+            font-size: 18px;
+            line-height: 21px;
+            @include Roboto(400);
+            margin-bottom: 14px;
+            color: #02569C;
+            text-align: left;
+            transition:  opacity .3s;
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+
+        &::after{
+            content: url(../img/svg/repost-cloud.svg);
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            z-index: -1;
+        }
+
+        &.active{
+            visibility: visible;
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    .commetns{
+        
+        margin-left: auto;
+    }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======MORE PART======-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.more{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    align-self: center;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+
+    .more-option{
+        width: 216px;
+        height: 104px;
+        position: absolute;
+        top: 140%;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        padding: 26px 24px 22px 24px;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: .3s;
+
+
+        .bg{
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+
+        }
+
+        button{
+            padding: 0;
+            text-align: left;
+            font-size: 18px;
+            line-height: 21px;
+            @include Roboto(400);
+            margin-bottom: 14px;
+            color: #02569C;
+            transition:  opacity .3s;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+
+        
+    }
+
+    &.more-option-active{
+
+        .more-option{
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+        
+    }
+
+    
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======COMMETNT======-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.comment{
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+
+    .comment_header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+
+        img{
+            width: 38px;
+            height: 38px;
+            object-fit: cover;
+            margin-right: 7px;
+            border-radius: 50%;
+        }
+
+        .name{
+            font-size: 17px;
+            line-height: 20px;
+            @include Roboto(400);
+            color: #02569C;
+
+            &.verified{
+                position: relative;
+
+                &::after{
+                    display: inline-block;
+                    transform: translateY(4px) translateX(2px);
+                    content: url(../img/svg/commetns-verified.svg);
+                }
+            }
+        }
+
+        
+    }
+
+    .comment_text{
+        font-size: 17px;
+        line-height: 20px;
+        @include Roboto(400);
+        margin-bottom: 10px;
+
+        & .mention{
+            color: #02569C;
+        }
+    }
+
+    .comment_footer{
+        display: flex;
+
+        p,button{
+            font-size: 16px;
+            line-height: 19px;
+            @include Roboto(400);
+        }
+
+        button{
+            padding: 0;
+            text-align: left;
+            transition:  opacity .3s;
+            color: #02569C;
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+
+        .date{
+            color: #939597;
+            margin-right: 15px;
+        }
+    }
+
+    .comment_likes{
+        grid-column: 2/3;
+        grid-row: 1/4;
+        align-self: center;
+        white-space: nowrap;
+        color: #02569C;
+        font-size: 17px;
+        line-height: 20px;
+        @include Roboto(400);
+
+        svg{
+            path{
+                fill:none;
+                transition:.3s;
+            }
+            
+            cursor: pointer;
+        }
+        
+        .likes-amount{
+            margin-right: 5px;
+        }
+
+        &.like-checked{
+            svg{
+                path{
+                    fill:#02569C;
+                }
+                
+            }
+        }
+
+        span:last-child{
+            display: inline-block;
+            transform: translateY(2px);
         }
     }
 }
@@ -2020,4 +2196,238 @@ footer{
         margin-bottom: 23px;
     }
 
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------========POPUP========-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.popup {
+    z-index: 10000;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: .3s;
+
+    .pp-close{
+        position: absolute;
+        right: 100px;
+        top: 45px;
+        cursor: pointer;
+    }
+
+    .wrapper{
+        position: relative;
+
+        .next-post{
+            position: absolute;
+            left: calc(100% + 20px);
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    }
+}
+  
+.popup-active {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+}
+
+.photo_popup{
+
+    .wrapper{
+        max-width: 1231px;
+        background: #FFFFFF;
+        border-radius: 15px;
+        max-height: 761px;
+
+        display: grid;
+        grid-template-columns: 1fr minmax(300px, 471px);
+        grid-template-rows: 1fr min-content;
+
+        .photo{
+            grid-column: 1/2;
+            grid-row: 1/2;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .photo-info{
+            grid-column: 2/3;
+            grid-row: 1/3;
+            display: grid; 
+            grid-template-rows: min-content min-content 1fr min-content;
+            
+            .info-header{
+                border-radius: 0 15px 0 0;
+                background: #F4F4F4;
+                padding: 15px 20px;
+                display: grid;
+                grid-template-columns: min-content 1fr min-content;
+                grid-template-rows: 1fr 1fr;
+
+                .name{
+                    align-self: end;
+                    font-size: 18px;
+                    line-height: 21px;
+                    @include Roboto(400);
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+
+                    span{
+                        margin-left: 5px;
+                    }
+                }
+
+                .date{
+                    font-size: 16px;
+                    line-height: 19px;
+                    @include Roboto(400);
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                    color: #3F3F3F;
+                    align-self: start;
+                    margin-top: 3px;
+                }
+
+                .header-photo{
+                    grid-column: 1/2;
+                    grid-row: 1/3;
+                    width: 55px;
+                    height: 55px;
+                    object-fit: cover;
+                    margin-right: 15px;
+                    justify-self: center;
+                    border-radius: 50%;
+                }
+            }
+            
+            .info-main{
+                padding: 20px 20px 20px 27px;
+                border-top: 1px solid #C4C4C4;
+                border-bottom: 1px solid #C4C4C4;
+                height: fit-content;
+
+                p{
+                    font-size: 17px;
+                    line-height: 20px;
+                    @include Roboto(400);
+                    color: #000000;
+                }
+
+                .mention{
+                    margin-top: 35px;
+
+                    span{
+                        color: #02569C;
+                    }
+                }
+            }
+
+            .info-commetns{
+                padding: 14px 20px 14px 20px;
+                width: 100%;
+                height: 100%;
+                overflow-y: scroll;
+
+                .comment{
+                    padding-top: 0;
+                }
+            }
+
+            .info-wrire-block{
+                display: flex;
+                padding: 25px 17px;
+                align-content: center;
+                border-top: 1px solid #C4C4C4;
+
+                input{
+                    border: 1px solid #02569C;
+                    border-radius: 47px;
+                    background: 0;
+                    padding: 10px 41px 10px 15px;
+                    font-size: 16px;
+                    line-height: 19px;
+                    @include Roboto(400);
+                    display: block;
+                    height: fit-content;
+                    align-self: center;
+
+                    &::placeholder{
+                        opacity: 1;
+                        color: #3F3F3F;
+                    }
+                }
+
+                .emoji{
+                    margin-left: -39px;
+                }
+
+                .more{
+                    margin-left: 29px;
+                }
+
+                .send{
+                    margin-left: 14px;
+                    font-size: 16px;
+                    line-height: 19px;
+                    @include Roboto(400);
+                    text-align: center;
+                    padding: 7px;
+                    max-width: 133px;
+                    min-width: fit-content;
+                    color: #FFFFFF;
+                    background: #02569C;
+                    border-radius: 5px;
+                    width: 100%;
+                    transition: opacity .3s;
+
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+
+        .photo-footer{
+            grid-column: 1/2;
+            grid-row: 2/3;
+            background: #F4F4F4;
+            padding: 11px 20px 10px 20px;
+            border-radius: 0 0 0 15px;
+
+
+            .post_footer{
+                align-items: center;
+
+                .repost-popup{
+                    top: unset;
+                    bottom: 64%;
+                    padding: 17px 24px;
+
+
+                    &::after{
+                        transform: scale(1, -1);
+                    }
+                }
+            }
+        }
+    }
 }

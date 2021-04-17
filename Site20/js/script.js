@@ -152,8 +152,6 @@ if(moreBlk.length >0){
   })
 }
 
-
-
 // 
 // Raiting
 // 
@@ -493,4 +491,66 @@ if(commentLike.length > 0){
   })
 
 }
+
+// 
+// Repost
+// 
+
+let repostBlk = document.querySelectorAll(".reposts");
+
+if(repostBlk.length >0){
+  
+  
+  for (let i = 0; i < repostBlk.length; i++) {
+    
+    repostBlk[i].addEventListener("click", ()=>{
+      repostBlk[i].parentNode.querySelector(".repost-popup").classList.add("active")
+    }) 
+  }
+
+  document.addEventListener("click", (e)=>{
+    obj = e.path
+  
+    if(!CheckExistClass(obj, "repost-popup") && !CheckExistClass(obj, "reposts")){
+      
+      for (let i = 0; i < repostBlk.length; i++) {
+        repostBlk[i].parentNode.querySelector(".repost-popup").classList.remove("active")
+      }
+      
+    }
+    
+  })
+}
+
+// 
+// Photo popup
+// 
+
+let photoPopup = document.querySelector(".photo_popup");
+
+if(photoPopup){
+  let photoPopupOpen = document.querySelectorAll(".photo-pp-open");
+
+  console.log(photoPopupOpen);
+
+  photoPopupOpen.forEach((e)=>{
+    e.addEventListener("click", ()=>{
+      console.log(13);
+      photoPopup.classList.add("popup-active");
+    })
+  })
+
+  document.addEventListener("click", (e)=>{
+    obj = e.path
+  
+    if(!CheckExistClass(obj, "popup-wrapper") && !CheckExistClass(obj, "photo-pp-open")){
+      
+      photoPopup.classList.remove("popup-active");
+      
+    }
+    
+  })
+}
+
+
 
