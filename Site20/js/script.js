@@ -40,19 +40,53 @@ if(profileDropDown){
 // Subscribe
 // 
 
-let SubscribeCheckbox = document.getElementById("subscribe");
-let SubscribeBtn = document.getElementById("subscribe-btn");
-let UnsubscribeBtn = document.getElementById("unsubscribe-btn");
-let UnsubscribeBlk = document.querySelector(".subscribed");
-let UnsubscibeDropDown = document.querySelector(".subscibed-menu");
-let UnsubscibeDropDownOpen = document.querySelector(".subscribed>p");
+let subscribeBlk = document.querySelectorAll(".subscribe-blk")
 
-if(UnsubscibeDropDown){
+if(subscribeBlk.length > 0){
 
-  UnsubscibeDropDownOpen.addEventListener("click",()=> {
-    UnsubscibeDropDown.classList.add("subscribed-menu-active");
+  subscribeBlk.forEach((el)=>{
+
+    let SubscribeCheckbox = el.querySelector(".subscribe-input");
+    let SubscribeBtn = el.querySelector(".subscribe-btn");
+    let UnsubscribeBtn = el.querySelector(".unsubscribe-btn");
+    let UnsubscribeBlk = el.querySelector(".subscribed");
+    let UnsubscibeDropDown = el.querySelector(".subscibed-menu");
+    let UnsubscibeDropDownOpen = el.querySelector(".subscribed>p");
+
+    if(UnsubscibeDropDown){
+
+      UnsubscibeDropDownOpen.addEventListener("click",()=> {
+        UnsubscibeDropDown.classList.add("subscribed-menu-active");
+      })
+
+    }
+
+    document.addEventListener("click", (e)=>{
+      obj = e.path
+      
+      if(!CheckExistClass(obj, "subscribed")){
+        UnsubscibeDropDown.classList.remove("subscribed-menu-active");
+      }
+      
+    })
+
+    SubscribeBtn.addEventListener("click", ()=>{
+      console.log(123);
+      SubscribeBtn.style.display = "none";
+      UnsubscribeBlk.style.display = "block";
+      SubscribeCheckbox.checked = true;
+    })
+
+    UnsubscribeBtn.addEventListener("click", ()=>{
+      SubscribeBtn.style.display = "block";
+      UnsubscribeBlk.style.display = "none";
+      SubscribeCheckbox.checked = false;
+    })
+
   })
+
 }
+
 
 function closeAllPopups(){
   let popupsList = document.querySelectorAll(".popup");
@@ -76,7 +110,6 @@ function CheckExistClass(objList, classToFind){
           }
       }
   }
-  
 
   if(exist == true){
       return true;
@@ -86,51 +119,35 @@ function CheckExistClass(objList, classToFind){
   }
 }
 
-document.addEventListener("click", (e)=>{
-  obj = e.path
-  
-  if(!CheckExistClass(obj, "subscribed")){
-    UnsubscibeDropDown.classList.remove("subscribed-menu-active");
-  }
-  
-})
-
-SubscribeBtn.addEventListener("click", ()=>{
-  SubscribeBtn.style.display = "none";
-  UnsubscribeBlk.style.display = "block";
-  SubscribeCheckbox.checked = true;
-})
-
-UnsubscribeBtn.addEventListener("click", ()=>{
-  SubscribeBtn.style.display = "block";
-  UnsubscribeBlk.style.display = "none";
-  SubscribeCheckbox.checked = false;
-})
 
 // 
 // Write-New
 // 
 
-let WriteNewBlk = document.querySelector(".write-new");
+let WriteNewBlk = document.querySelectorAll(".write-new");
 
-if(WriteNewBlk){
-  let WriteNewInput = WriteNewBlk.querySelector("textarea");
-  
-  WriteNewInput.addEventListener("click", ()=>{
-    WriteNewBlk.classList.add("input-active")
-  })
+if(WriteNewBlk.length > 0){
 
-  document.addEventListener("click", (e)=>{
-    obj = e.path
+  WriteNewBlk.forEach((el)=>{
+    let WriteNewInput = el.querySelector("textarea");
   
-    if(!CheckExistClass(obj, "write-new")){
-      
-      if(!(WriteNewInput.value.length>0)){
-        WriteNewBlk.classList.remove("input-active");
+    WriteNewInput.addEventListener("click", ()=>{
+      el.classList.add("input-active")
+    })
+
+    document.addEventListener("click", (e)=>{
+      obj = e.path
+    
+      if(!CheckExistClass(obj, "write-new")){
+        
+        if(!(WriteNewInput.value.length>0)){
+          el.classList.remove("input-active");
+        }
+        
       }
-      
-    }
+    })
   })
+  
 }
 
 
@@ -613,23 +630,28 @@ if(videoPopup){
 // Search popup
 // 
 
-let SearchBar = document.querySelector(".search-bar");
+let SearchBar = document.querySelectorAll(".search-bar");
 
-if(SearchBar){
-  let lasSearchPp = document.querySelector(".last-search-pp");
+if(SearchBar.length>0){
 
-  SearchBar.addEventListener("input", ()=>{
-    if(SearchBar.value.length > 0){
-      lasSearchPp.classList.add("active");
-    }
-    else{
-      lasSearchPp.classList.remove("active");
-    }
+  SearchBar.forEach((el)=>{
+
+    let lasSearchPp = el.parentNode.querySelector(".last-search-pp");
+
+    el.addEventListener("input", ()=>{
+      if(el.value.length > 0){
+        lasSearchPp.classList.add("active");
+      }
+      else{
+        lasSearchPp.classList.remove("active");
+      }
+    })
   })
+  
 }
 
 // 
-// Search popup
+// Repost popup
 // 
 
 let repostPopup = document.querySelector(".repost_popup");
@@ -680,4 +702,28 @@ if(repostPopup){
   })
 
 
+}
+
+// 
+// Aside open
+// 
+
+let Aside = document.querySelector("aside");
+if(Aside){
+  let asideOpen = document.querySelector(".nav-burger");
+  
+
+  asideOpen.addEventListener("click", ()=>{
+    Aside.classList.add("active");
+  })
+
+  document.addEventListener("click", (e)=>{
+    obj = e.path
+
+    if(!CheckExistClass(obj, "nav-burger") && !CheckExistClass(obj, "aside")){
+
+      Aside.classList.remove("active");
+      
+    }
+  })
 }
