@@ -623,6 +623,22 @@ header{
                 opacity: 0;
                 transition: .3s;
                 pointer-events: none;
+                clip-path: url(#mask);
+                
+            }
+
+            #mask{
+                transform: scale(0.6) translateX(35px);
+            }
+
+            &:nth-child(3){
+                video{
+                    clip-path: url(#mask1);
+                }
+
+                #mask1{
+                    transform: scale(0.6) translateX(35px);
+                }
             }
 
         }

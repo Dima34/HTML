@@ -450,7 +450,14 @@ header {
         z-index: 2;
         opacity: 0;
         transition: .3s;
-        pointer-events: none; }
+        pointer-events: none;
+        clip-path: url(#mask); }
+      .our-goals .wrapper .goal #mask {
+        transform: scale(0.6) translateX(35px); }
+      .our-goals .wrapper .goal:nth-child(3) video {
+        clip-path: url(#mask1); }
+      .our-goals .wrapper .goal:nth-child(3) #mask1 {
+        transform: scale(0.6) translateX(35px); }
     .our-goals .wrapper .goal.video-active video {
       left: calc(100% + 20px);
       opacity: 1;
