@@ -354,7 +354,8 @@
                         </p>
                     </div>
 
-                    <div class="general">
+                    <div class="general white-block">
+                        <h2 class="general-header">General information</h2>
 
                         <div class="general-main">
 
@@ -997,9 +998,10 @@
                         </div>
 
                         <div class="post_content video vjs-big-play-centered">
-                            <video-js data-setup='{"controls": true}' poster = "./img/video-poster.png">
-                                <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
-                                <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                            <video-js id="video1" data-setup='{"controls": true}' poster = "./img/video-poster.png">
+                                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" res="360" label="360p" />
+                                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" res="480" default label="480p"/>
+                                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" res="720" label="720p"/>
                             </video-js>
                         </div>
 
@@ -1534,6 +1536,153 @@
 
     <div class="index mobile">
 
+        <aside>
+
+            <div class="search-bar-group">
+                <input type="text" class="search-bar" placeholder="Поиск">
+                <button type="submit" class="search-btn">
+                    <img src="./img/svg/search-ico.svg" alt="search-ico">
+                </button>
+    
+                <div class="last-search-pp">
+                    <h2 class="header">Recent requests</h2>
+
+                    <div class="last-group">
+                        <p class="last-group-header">People</p>
+    
+                        <div class="item">
+                            <img src="./img/friend-1.png" alt="icon" class="thumb">
+                            <p class="name">Courtney Henry</p>
+                            <img src="./img/svg/chat-ico.svg" alt="icon" class="chat-ico">
+                        </div>
+    
+                        <div class="item">
+                            <img src="./img/friend-2.png" alt="icon" class="thumb">
+                            <p class="name">Esther Howard</p>
+                            <img src="./img/svg/chat-ico.svg" alt="icon" class="chat-ico">
+                        </div>
+    
+                        <div class="item">
+                            <img src="./img/friend-3.png" alt="icon" class="thumb">
+                            <p class="name">Jerome Bell</p>
+                            <img src="./img/svg/chat-ico.svg" alt="icon" class="chat-ico">
+                        </div>
+                    </div>
+                    <div class="last-group">
+                        <p class="last-group-header">Communities</p>
+    
+                        <div class="item">
+                            <img src="./img/award-1.png" alt="icon" class="thumb">
+                            <p class="name">chat-ico</p>
+                            <img src="./img/svg/chat-ico.svg" alt="icon" class="chat-ico">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="aside-list">
+                <li class="profile-item">
+                    <div class="profile-menu-open-wrapper">
+                        <img src="./img/profile-photo.png" alt="icon">
+                        <p>My profile</p>
+
+                        <img class="profile-menu-open" src="./img/svg/header_profile-more.svg" alt="arrow">
+                    </div>
+                        
+                    <div class="menu">
+                        <ul class="list">
+
+                            <li >
+                                <a href="#">
+                                    <img src="./img/svg/settings-ico.svg" alt="icon">
+                                    <p>Settings</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/svg/support-ico.svg" alt="icon">
+                                    <p>Support messages</p>
+                                </a>
+                            </li>
+            
+                            <li>
+                                <a href="#">
+                                    <img src="./img/svg/exit-ico.svg" alt="icon">
+                                    <p>Exit</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li >
+                    <a href="#">
+                        <img src="./img/svg/aside_news-ico.svg" alt="icon">
+                        <p>News</p>
+                    </a>
+                </li>
+                <li >
+                    <a href="#">
+                        <img src="./img/svg/aside_live-ico.svg" alt="icon">
+                        <p>Live</p>
+                    </a>
+                </li>
+
+                <li >
+                    <a href="#">
+                        <img src="./img/svg/aside_message.svg" alt="icon">
+                        <p>Message</p>
+                    </a>
+                </li>
+
+                <li >
+                    <a href="#">
+                        <img src="./img/svg/aside_photo-ico.svg" alt="icon">
+                        <p>Photo</p>
+                    </a>
+                </li>
+                <li >
+                    <a href="#">
+                        <img src="./img/svg/aside_video-ico.svg" alt="icon">
+                        <p>Video</p>
+                    </a>
+                </li>
+                <li >
+                    <a href="#">
+                        <img src="./img/svg/aside_groups-ico.svg" alt="icon">
+                        <p>Group</p>
+                    </a>
+                </li>
+                <li >
+                    <a href="#">
+                        <img src="./img/svg/aside_favorites-ico.svg" alt="icon">
+                        <p>Favorites</p>
+                    </a>
+                </li>
+                <li >
+                    <a href="#">
+                        <img src="./img/svg/aside_disc-ico.svg" alt="icon">
+                        <p>Disk</p>
+                    </a>
+                </li>
+                <li >
+                    <a href="#">
+                        <img src="./img/svg/aside_adv-ico.svg" alt="icon">
+                        <p>Advertising</p>
+                    </a>
+                </li>
+                <li >
+                    <a href="#">
+                        <img src="./img/svg/aside_help-ico.svg" alt="icon">
+                        <p>Help</p>
+                    </a>
+                </li>
+            </ul>
+
+            <img src="../img/svg/write-a-message-close-descktop.svg" alt="close" class="close">
+        </aside>
+
         <div class="search-bar-group">
             <input type="text" class="search-bar" placeholder="Поиск">
             <button type="submit" class="search-btn">
@@ -1671,7 +1820,7 @@
                         <img src="./img/mobile-photo1.png" alt="image" class="creativity-photos">
                         <img src="./img/mobile-photo6.png" alt="image" class="creativity-photos">
                         <img src="./img/mobile-photo1.png" alt="image" class="creativity-photos">
-                        <img src="./img/mobile-photo5.png" alt="image" class="creativity-photos">
+                        <img src="./img/mobile-photo6.png" alt="image" class="creativity-photos">
                         <img src="./img/mobile-photo3.png" alt="image" class="creativity-photos">
                     </div>
                 </div>
@@ -2786,17 +2935,11 @@
     <script src="./js/script.js"></script>
     <script src="./js/autosize.min.js"></script>
 
-    <script>
-        var ta = document.querySelectorAll("textarea");
-        
-        for (let i = 0; i < ta.length; i++) {
-            ta[i].style.display = "none"
-            ta[i].style.display = "block"
-            
-        }
-        
+    <script>        
+        ta = document.querySelectorAll("textarea");
         autosize(ta);
         autosize.update(ta);
+
 
         var swiper = new Swiper(".info-bar-swiper", {
           slidesPerView: "auto",

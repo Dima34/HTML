@@ -716,22 +716,66 @@ if(repostPopup){
 // Aside open
 // 
 
-let Aside = document.querySelector("aside");
-if(Aside){
+let Aside = document.querySelectorAll("aside");
+
+if(Aside.length > 0){
   let asideOpen = document.querySelector(".nav-burger");
-  
 
-  asideOpen.addEventListener("click", ()=>{
-    Aside.classList.add("active");
-  })
+  Aside.forEach((el)=>{
+    let closeBtn = el.querySelector(".close");
 
-  document.addEventListener("click", (e)=>{
-    obj = e.path
-
-    if(!CheckExistClass(obj, "nav-burger") && !CheckExistClass(obj, "aside")){
-
-      Aside.classList.remove("active");
-      
+    if(closeBtn){
+      closeBtn.addEventListener("click", ()=>{
+        el.classList.remove("active");
+      })
     }
+
+    asideOpen.addEventListener("click", ()=>{
+      el.classList.add("active");
+    })
+
+    document.addEventListener("click", (e)=>{
+      obj = e.path
+
+      if(!CheckExistClass(obj, "nav-burger") && !CheckExistClass(obj, "active")){
+        el.classList.remove("active");
+        
+      }
+    })
+  })
+  
+}
+
+
+// 
+// Aside  profile dropdown
+// 
+
+let asideProfileDropdown = document.querySelector(".profile-menu-open-wrapper");
+
+if(asideProfileDropdown){
+  let asideProfileDropdownOpen = asideProfileDropdown.querySelector(".profile-menu-open");
+  let asideProfileDropdownMenu = asideProfileDropdown.parentNode.querySelector(".menu");
+
+  asideProfileDropdownOpen.addEventListener("click", ()=>{
+    if(asideProfileDropdownOpen.classList.contains("active")){
+      asideProfileDropdownMenu.classList.remove("active");
+      asideProfileDropdownOpen.classList.remove("active");
+    } else{
+      asideProfileDropdownMenu.classList.add("active");
+      asideProfileDropdownOpen.classList.add("active");
+    }
+
+    document.addEventListener("click", (e)=>{
+      obj = e.path
+  
+      if(!CheckExistClass(obj, "profile-menu-open") && !CheckExistClass(obj, "menu")){
+  
+        asideProfileDropdownMenu.classList.remove("active");
+        asideProfileDropdownOpen.classList.remove("active");
+      }
+    })
+    
   })
 }
+

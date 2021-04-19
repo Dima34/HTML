@@ -2220,6 +2220,106 @@ footer .footer_company-name {
     display: block;
     position: relative;
     padding-top: 109px; }
+    .index.mobile aside {
+      padding: 57px 82px 40px 30px;
+      height: fit-content;
+      width: 284px;
+      min-height: 100vh;
+      height: 100%;
+      position: fixed;
+      right: 0;
+      top: 0;
+      background: white;
+      z-index: 6;
+      overflow-y: scroll;
+      transform: translateX(100%);
+      transition: transform .3s; }
+      .index.mobile aside .search-bar-group {
+        display: none;
+        padding: 0;
+        margin-bottom: 20px; }
+        .index.mobile aside .search-bar-group .search-bar {
+          font-size: 15px;
+          line-height: 18px; }
+        .index.mobile aside .search-bar-group .search-btn img {
+          width: 18px;
+          height: 18px; }
+        .index.mobile aside .search-bar-group .last-search-pp {
+          width: 100%;
+          top: 100%; }
+      .index.mobile aside .aside-list li {
+        margin-bottom: 28px; }
+        .index.mobile aside .aside-list li a, .index.mobile aside .aside-list li .profile-menu-open {
+          display: flex;
+          align-items: center;
+          transition: color .3;
+          justify-content: flex-end; }
+          .index.mobile aside .aside-list li a:hover, .index.mobile aside .aside-list li .profile-menu-open:hover {
+            color: #02569C; }
+        .index.mobile aside .aside-list li img {
+          margin-right: 15px; }
+        .index.mobile aside .aside-list li p {
+          font-size: 20px;
+          line-height: 23px;
+          font-family: 'Roboto' !important;
+          font-weight: 400 !important; }
+        .index.mobile aside .aside-list li:last-child {
+          padding-bottom: 55px;
+          border: 0; }
+      .index.mobile aside .aside-list .profile-item img {
+        border: 1px solid #02569C;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%; }
+      .index.mobile aside .aside-list .profile-item p {
+        color: #02569C; }
+      .index.mobile aside .aside-list .profile-item {
+        position: relative; }
+        .index.mobile aside .aside-list .profile-item .profile-menu-open-wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end; }
+          .index.mobile aside .aside-list .profile-item .profile-menu-open-wrapper .profile-menu-open {
+            border-radius: 0;
+            border: 0;
+            width: 14px;
+            height: auto;
+            display: block;
+            transition: .3s;
+            margin-right: 7px;
+            margin-left: 11px; }
+            .index.mobile aside .aside-list .profile-item .profile-menu-open-wrapper .profile-menu-open.active {
+              transform: rotate(-180deg); }
+        .index.mobile aside .aside-list .profile-item .menu {
+          position: absolute;
+          width: 100%;
+          top: 100%;
+          background: white;
+          z-index: 2;
+          padding: 33px 0 30px 0;
+          height: fit-content;
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: none;
+          transition: .3s; }
+          .index.mobile aside .aside-list .profile-item .menu .list li img {
+            border: unset; }
+          .index.mobile aside .aside-list .profile-item .menu .list li:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0; }
+          .index.mobile aside .aside-list .profile-item .menu.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all; }
+      .index.mobile aside .close {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        cursor: pointer; }
+      .index.mobile aside.active {
+        transform: translateX(0); }
     .index.mobile .intro {
       width: 100%;
       height: 190px;
@@ -3030,5 +3130,166 @@ footer .footer_company-name {
       height: fit-content; }
       .repost_popup .wrapper .repost-main {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
+
+@media screen and (max-width: 700px) {
+  header .wrapper {
+    padding: 13px;
+    position: relative; }
+    header .wrapper .header_logo-group {
+      margin: 0 auto; }
+    header .wrapper .nav-group {
+      width: fit-content;
+      position: absolute;
+      top: 6px;
+      right: 18px; }
+      header .wrapper .nav-group .nav li, header .wrapper .nav-group .nav .nav-compass {
+        display: none; }
+      header .wrapper .nav-group .nav .nav-burger {
+        display: block !important; }
+  .index.mobile {
+    padding-top: 0; }
+    .index.mobile .intro {
+      top: 105px;
+      height: 130px; }
+    .index.mobile aside {
+      width: 100vw;
+      padding: 75px 30px; }
+      .index.mobile aside .search-bar-group {
+        display: flex; }
+      .index.mobile aside .profile-menu-open {
+        margin-left: auto !important; }
+      .index.mobile aside .aside-list li a, .index.mobile aside .aside-list li .profile-menu-open-wrapper {
+        justify-content: flex-start !important; }
+    .index.mobile .search-bar-group {
+      display: none; }
+    .index.mobile .wrapper main {
+      padding-top: 153px; }
+      .index.mobile .wrapper main .user-photo {
+        margin-bottom: 5px; }
+        .index.mobile .wrapper main .user-photo img {
+          width: 101px;
+          height: 101px; }
+        .index.mobile .wrapper main .user-photo .change-photo {
+          right: -7px; }
+        .index.mobile .wrapper main .user-photo.user-is-online::after {
+          position: absolute;
+          content: "";
+          background: url(../img/svg/profile_left_online-mobile.svg) center;
+          background-size: cover;
+          right: 8px;
+          width: 20px;
+          height: 20px; } }
+
+@media screen and (max-width: 530px) {
+  header .wrapper {
+    padding: 15px; }
+    header .wrapper .header_logo-group a {
+      align-items: center; }
+      header .wrapper .header_logo-group a .logo {
+        height: 35px;
+        width: 35px; }
+      header .wrapper .header_logo-group a .logo-text {
+        height: 14px;
+        width: auto; }
+    header .wrapper .nav-group {
+      margin-top: 4px; }
+  .index.mobile {
+    overflow-x: hidden; }
+    .index.mobile .intro {
+      top: 87px;
+      border: 0; }
+    .index.mobile .wrapper main {
+      padding-top: 136px; }
+      .index.mobile .wrapper main .user-description {
+        font-size: 15px;
+        line-height: 18px;
+        padding: 0 15px; }
+      .index.mobile .wrapper main .actions-group {
+        padding: 0 15px; }
+        .index.mobile .wrapper main .actions-group .subscribe-blk .subscribe, .index.mobile .wrapper main .actions-group .subscribe-blk .subscribed p {
+          font-size: 15px;
+          line-height: 18px; }
+        .index.mobile .wrapper main .actions-group .subscribe-blk .subscribed > p span img {
+          width: 10px;
+          height: 5px; }
+        .index.mobile .wrapper main .actions-group .write-a-message p {
+          font-size: 15px;
+          line-height: 18px; }
+      .index.mobile .wrapper main .user-status-info {
+        border-top: none;
+        position: relative;
+        padding: 17px 15px 10px 15px; }
+        .index.mobile .wrapper main .user-status-info .status-info_groupbox {
+          grid-template-columns: 205px max-content; }
+          .index.mobile .wrapper main .user-status-info .status-info_groupbox p {
+            font-size: 16px;
+            line-height: 19px; }
+          .index.mobile .wrapper main .user-status-info .status-info_groupbox .title {
+            display: flex;
+            flex-direction: row;
+            align-items: center; }
+            .index.mobile .wrapper main .user-status-info .status-info_groupbox .title span {
+              margin-right: 5px; }
+        .index.mobile .wrapper main .user-status-info .show-full {
+          border-bottom: 0;
+          padding-bottom: 2px;
+          font-size: 14px;
+          line-height: 16px; }
+        .index.mobile .wrapper main .user-status-info::after {
+          position: absolute;
+          content: "";
+          width: 110vw;
+          top: 0;
+          left: -10%;
+          border-top: 1px solid #02569C;
+          height: 1px; }
+        .index.mobile .wrapper main .user-status-info::before {
+          position: absolute;
+          content: "";
+          width: 263px;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          border-top: 1px solid #02569C;
+          height: 1px; }
+      .index.mobile .wrapper main .raiting-bar {
+        width: 92%;
+        margin: 0 auto;
+        margin-bottom: 23px; }
+      .index.mobile .wrapper main .creativity-blk {
+        padding: 0 15px; }
+        .index.mobile .wrapper main .creativity-blk .header h2, .index.mobile .wrapper main .creativity-blk .header a {
+          font-size: 16px;
+          line-height: 19px; }
+        .index.mobile .wrapper main .creativity-blk.photos .main {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 9px; }
+          .index.mobile .wrapper main .creativity-blk.photos .main img {
+            width: 100%;
+            height: 80px; }
+        .index.mobile .wrapper main .creativity-blk.stories .main {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr; }
+          .index.mobile .wrapper main .creativity-blk.stories .main img {
+            width: 100%;
+            height: 140px;
+            display: none; }
+            .index.mobile .wrapper main .creativity-blk.stories .main img:nth-child(1), .index.mobile .wrapper main .creativity-blk.stories .main img:nth-child(2), .index.mobile .wrapper main .creativity-blk.stories .main img:nth-child(3), .index.mobile .wrapper main .creativity-blk.stories .main img:nth-child(4) {
+              display: block; }
+  .repost_popup {
+    padding: 6px 6px; }
+    .repost_popup .wrapper .nav-item {
+      font-size: 17px;
+      line-height: 18px;
+      padding-bottom: 15px; }
+    .repost_popup .wrapper .repost-main {
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 18px; }
+      .repost_popup .wrapper .repost-main a img {
+        width: 40px;
+        height: 40px; }
+      .repost_popup .wrapper .repost-main a p {
+        text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
