@@ -213,7 +213,9 @@ button {
             top: 15px;
             right: 40px; }
         .index .wrapper main .left .subscribe-blk {
-          margin-bottom: 20px; }
+          margin-bottom: 20px;
+          position: relative;
+          z-index: 4; }
           .index .wrapper main .left .subscribe-blk input {
             display: none; }
           .index .wrapper main .left .subscribe-blk .subscribe {
@@ -701,7 +703,7 @@ button {
           padding: 24px 24px 30px 45px;
           display: flex;
           gap: 15px;
-          margin-bottom: 106px;
+          margin-bottom: 50px;
           box-shadow: unset; }
           .index .wrapper main .right .write-new > img {
             width: 76px;
@@ -769,7 +771,7 @@ button {
                 margin-left: auto; }
         .index .wrapper main .right .post {
           padding: 30px 30px 25px 30px;
-          margin-bottom: 30px; }
+          margin-bottom: 50px; }
           .index .wrapper main .right .post .post_header {
             display: grid;
             grid-template-columns: min-content 1fr min-content min-content;
@@ -1401,7 +1403,10 @@ header {
         flex-shrink: 0;
         transform: translateY(-2px); }
       header .wrapper .header_profile .profile-more {
-        cursor: pointer; }
+        cursor: pointer;
+        transition: transform .3s; }
+        header .wrapper .header_profile .profile-more.active {
+          transform: rotate(180deg); }
       header .wrapper .header_profile .profile_dropdown {
         padding: 20px 20px 24px 20px;
         position: absolute;

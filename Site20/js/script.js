@@ -16,11 +16,20 @@ let profileDropDownClose = document.querySelector(".close-dropdown");
 if(profileDropDown){
 
   profileDropDownOpen.addEventListener("click",()=> {
-    profileDropDown.classList.add("profile_dropdown-active");
+    if(profileDropDownOpen.classList.contains("active")){
+      profileDropDown.classList.remove("profile_dropdown-active");
+      profileDropDownOpen.classList.remove("active");
+    }
+    else{
+      profileDropDown.classList.add("profile_dropdown-active");
+      profileDropDownOpen.classList.add("active"); 
+    }
+       
   })
 
   profileDropDownClose.addEventListener("click",()=> {
     profileDropDown.classList.remove("profile_dropdown-active");
+    profileDropDownOpen.classList.remove("active");
   })
 
   document.addEventListener("click", (e)=>{
@@ -29,7 +38,7 @@ if(profileDropDown){
     if(!CheckExistClass(obj, "profile_dropdown") && !CheckExistClass(obj, "profile-more")){
       
       profileDropDown.classList.remove("profile_dropdown-active");
-      
+      profileDropDownOpen.classList.remove("active");
     }
     
   })
@@ -71,7 +80,6 @@ if(subscribeBlk.length > 0){
     })
 
     SubscribeBtn.addEventListener("click", ()=>{
-      console.log(123);
       SubscribeBtn.style.display = "none";
       UnsubscribeBlk.style.display = "block";
       SubscribeCheckbox.checked = true;

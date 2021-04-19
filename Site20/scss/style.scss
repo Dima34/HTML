@@ -314,6 +314,8 @@ button{
                 
                 .subscribe-blk{
                     margin-bottom: 20px;
+                    position: relative;
+                    z-index: 4;
 
                     input{
                         display: none;
@@ -1012,7 +1014,7 @@ button{
                     padding: 24px 24px 30px 45px;
                     display: flex;
                     gap: 15px;
-                    margin-bottom: 106px;
+                    margin-bottom: 50px;
                     box-shadow: unset;
 
 
@@ -1117,7 +1119,7 @@ button{
 
                 .post{
                     padding: 30px 30px 25px 30px;
-                    margin-bottom: 30px;
+                    margin-bottom: 50px;
 
                     .post_header{
                         display: grid;
@@ -2063,6 +2065,11 @@ header{
 
             .profile-more{
                 cursor: pointer;
+                transition: transform .3s;
+
+                &.active{
+                    transform: rotate(180deg);
+                }
             }
 
             .profile_dropdown{
