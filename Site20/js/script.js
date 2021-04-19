@@ -779,3 +779,86 @@ if(asideProfileDropdown){
   })
 }
 
+// 
+// Mobile photo popup
+// 
+
+let mobilePhotoPopup = document.querySelector(".photo-mobile-popup");
+
+if(mobilePhotoPopup){
+  let mobilePhotoPopupOpen = document.querySelectorAll(".mobile-photo-pp-open");
+  let mobilePhotoPopupClose = mobilePhotoPopup.querySelector(".close")
+
+  mobilePhotoPopupOpen.forEach((el)=>{
+    el.addEventListener("click", ()=>{
+    
+      mobilePhotoPopup.classList.add("active");
+      
+    })
+  })
+
+  mobilePhotoPopupClose.addEventListener("click", ()=>{
+    
+    mobilePhotoPopup.classList.remove("active");
+    
+  })
+  
+}
+
+
+
+// 
+// Write a message mobile popup
+// 
+
+let mobileWriteAMessagePopup = document.querySelector(".write-a-message-popup-mobile");
+
+if(mobileWriteAMessagePopup){
+  let mobileWriteAMessagePopupOpen = document.querySelectorAll(".write-a-message");
+  let mobileWriteAMessagePopupClose = mobileWriteAMessagePopup.querySelector(".close")
+
+  mobileWriteAMessagePopupOpen.forEach((el)=>{
+    el.addEventListener("click", ()=>{
+    
+      mobileWriteAMessagePopup.classList.add("active");
+      
+    })
+  })
+
+  mobileWriteAMessagePopupClose.addEventListener("click", ()=>{
+    
+    mobileWriteAMessagePopup.classList.remove("active");
+    
+  })
+  
+}
+
+
+// 
+// Post mobile popup
+// 
+
+let postMobilePopup = document.querySelector(".post-popup-mobile");
+
+if(postMobilePopup){
+  let postMobilePopupOpen = document.querySelectorAll(".post-mobile-open");
+  let postMobilePopupClose = postMobilePopup.querySelector(".close")
+
+  postMobilePopupOpen.forEach((el)=>{
+    el.addEventListener("click", ()=>{
+      document.addEventListener("click", (e)=>{
+        obj = e.path
+      })
+      
+      postMobilePopup.classList.add("active");
+      
+    })
+  })
+
+  postMobilePopupClose.addEventListener("click", ()=>{
+    
+    postMobilePopup.classList.remove("active");
+    
+  })
+  
+}
