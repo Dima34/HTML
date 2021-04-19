@@ -3277,6 +3277,8 @@ footer .footer_company-name {
             display: none; }
             .index.mobile .wrapper main .creativity-blk.stories .main img:nth-child(1), .index.mobile .wrapper main .creativity-blk.stories .main img:nth-child(2), .index.mobile .wrapper main .creativity-blk.stories .main img:nth-child(3), .index.mobile .wrapper main .creativity-blk.stories .main img:nth-child(4) {
               display: block; }
+      .index.mobile .wrapper main .post {
+        margin-bottom: 10px; }
   .repost_popup {
     padding: 6px 6px; }
     .repost_popup .wrapper .nav-item {
