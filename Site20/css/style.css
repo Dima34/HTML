@@ -163,6 +163,50 @@ button {
           .index .wrapper aside .aside-adv .adv-blk:last-child {
             border: 0;
             padding-bottom: 0; }
+      .index .wrapper aside.unlogin {
+        padding-bottom: 35px;
+        overflow-x: hidden; }
+        .index .wrapper aside.unlogin .aside-list li:last-child {
+          padding-bottom: 25px;
+          border-bottom: 0;
+          position: relative;
+          margin-bottom: 50px; }
+          .index .wrapper aside.unlogin .aside-list li:last-child::after {
+            position: absolute;
+            content: "";
+            top: 100%;
+            left: -30px;
+            width: 120%;
+            height: 1px;
+            border-bottom: 1px solid #C4C4C4; }
+        .index .wrapper aside.unlogin .sign-up, .index .wrapper aside.unlogin .sign-in {
+          display: none;
+          font-size: 22px;
+          line-height: 26px;
+          font-family: 'Roboto' !important;
+          font-weight: 400 !important;
+          text-align: center;
+          background: #02569C;
+          border-radius: 5px;
+          padding: 14px;
+          width: 90%;
+          margin-left: 25px;
+          color: #FFFFFF;
+          white-space: nowrap;
+          transition: .3s;
+          border: 2px solid #02569C;
+          margin-bottom: 20px; }
+          .index .wrapper aside.unlogin .sign-up:hover, .index .wrapper aside.unlogin .sign-in:hover {
+            color: #02569C;
+            border: 2px solid #02569C;
+            background: white; }
+        .index .wrapper aside.unlogin .sign-in {
+          color: #02569C;
+          border: 2px solid #02569C;
+          background: white; }
+          .index .wrapper aside.unlogin .sign-in:hover {
+            color: white;
+            background: #02569C; }
     .index .wrapper .search-bar-mobile {
       display: none; }
     .index .wrapper main {
@@ -1499,6 +1543,38 @@ header {
         visibility: visible;
         pointer-events: all; }
 
+.header-unlogin .wrapper {
+  padding: 23px 25px 12px 25px; }
+
+.header-unlogin .header_profile {
+  flex-shrink: 0; }
+  .header-unlogin .header_profile .sign-up, .header-unlogin .header_profile .sign-in {
+    font-size: 22px;
+    line-height: 26px;
+    font-family: 'Roboto' !important;
+    font-weight: 400 !important;
+    text-align: center;
+    background: #02569C;
+    border-radius: 5px;
+    padding: 14px;
+    width: 217px;
+    margin-left: 25px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    transition: .3s;
+    border: 2px solid #02569C; }
+    .header-unlogin .header_profile .sign-up:hover, .header-unlogin .header_profile .sign-in:hover {
+      color: #02569C;
+      border: 2px solid #02569C;
+      background: white; }
+  .header-unlogin .header_profile .sign-in {
+    color: #02569C;
+    border: 2px solid #02569C;
+    background: white; }
+    .header-unlogin .header_profile .sign-in:hover {
+      color: white;
+      background: #02569C; }
+
 .search-bar-group {
   display: flex;
   margin-left: 75px;
@@ -2157,6 +2233,8 @@ footer .footer_company-name {
     display: block !important; }
   header .search-bar-group {
     margin-left: 20px !important; }
+  header.header-unlogin .header_profile {
+    display: none; }
   .index .wrapper {
     grid-template-columns: 1fr;
     column-gap: 10px; }
@@ -2173,6 +2251,8 @@ footer .footer_company-name {
       transition: .3s; }
       .index .wrapper aside.active {
         transform: translateX(0); }
+      .index .wrapper aside.unlogin .sign-up, .index .wrapper aside.unlogin .sign-in {
+        display: block !important; }
     .index .wrapper main {
       grid-template-columns: 435px minmax(600px, 940px); }
       .index .wrapper main .left {
@@ -2318,6 +2398,33 @@ footer .footer_company-name {
         right: 12px;
         top: 12px;
         cursor: pointer; }
+      .index.mobile aside .sign-up, .index.mobile aside .sign-in {
+        font-size: 16px;
+        line-height: 18px;
+        font-family: 'Roboto' !important;
+        font-weight: 400 !important;
+        text-align: center;
+        background: #02569C;
+        border-radius: 5px;
+        padding: 10px;
+        width: 217px;
+        margin-left: 25px;
+        margin-bottom: 12px;
+        color: #FFFFFF;
+        white-space: nowrap;
+        transition: .3s;
+        border: 2px solid #02569C; }
+        .index.mobile aside .sign-up:hover, .index.mobile aside .sign-in:hover {
+          color: #02569C;
+          border: 2px solid #02569C;
+          background: white; }
+      .index.mobile aside .sign-in {
+        color: #02569C;
+        border: 2px solid #02569C;
+        background: white; }
+        .index.mobile aside .sign-in:hover {
+          color: white;
+          background: #02569C; }
       .index.mobile aside.active {
         transform: translateX(0); }
     .index.mobile .intro {
@@ -3741,6 +3848,12 @@ footer .footer_company-name {
         margin-left: auto !important; }
       .index.mobile aside .aside-list li a, .index.mobile aside .aside-list li .profile-menu-open-wrapper {
         justify-content: flex-start !important; }
+    .index.mobile aside .sign-up, .index.mobile aside .sign-in {
+      font-size: 16px;
+      line-height: 19px;
+      width: 315px;
+      margin-left: 0;
+      display: block; }
     .index.mobile .search-bar-group {
       display: none; }
     .index.mobile .wrapper main {

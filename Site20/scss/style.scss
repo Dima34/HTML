@@ -242,6 +242,66 @@ button{
                     }
                 }
             }
+
+            &.unlogin{
+                padding-bottom: 35px;
+                overflow-x: hidden;
+
+                .aside-list{
+                    li:last-child{
+                        padding-bottom: 25px;
+                        border-bottom: 0;
+                        position: relative;
+                        margin-bottom: 50px;
+
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            top: 100%;
+                            left: -30px;
+                            width: 120%;
+                            height: 1px;
+                            border-bottom: 1px solid #C4C4C4;
+                        }
+                    }
+                }
+
+                .sign-up, .sign-in{
+                    display: none;
+                    font-size: 22px;
+                    line-height: 26px;
+                    @include Roboto(400);
+                    text-align: center;
+                    background: #02569C;
+                    border-radius: 5px;
+                    padding: 14px;
+                    width: 90%;
+                    margin-left: 25px;
+                    color: #FFFFFF;
+                    white-space: nowrap;
+                    transition: .3s;
+                    border: 2px solid #02569C;
+                    margin-bottom: 20px;
+        
+                    &:hover{
+                        color: #02569C;
+                        border: 2px solid #02569C;
+                        background: white;
+                    }
+                }
+
+                .sign-in{
+                    color: #02569C;
+                    border: 2px solid #02569C;
+                    background: white;
+        
+                    &:hover{
+                        color: white;
+                        background: #02569C;
+                    }
+                }
+            }
+            
         }
 
         .search-bar-mobile{
@@ -1954,8 +2014,6 @@ header{
             }
         }
 
-        
-
         .nav-group{
             max-width: 605px;
             width: 100%;
@@ -2194,10 +2252,57 @@ header{
                 visibility: visible;
                 pointer-events: all;
             }
+
+            
         }
     }
 
 
+}
+
+.header-unlogin{
+
+    .wrapper{
+        padding: 23px 25px 12px 25px;
+    }
+
+    .header_profile{
+        flex-shrink: 0;
+
+        .sign-up, .sign-in{
+            font-size: 22px;
+            line-height: 26px;
+            @include Roboto(400);
+            text-align: center;
+            background: #02569C;
+            border-radius: 5px;
+            padding: 14px;
+            width: 217px;
+            margin-left: 25px;
+            color: #FFFFFF;
+            white-space: nowrap;
+            transition: .3s;
+            border: 2px solid #02569C;
+
+            &:hover{
+                color: #02569C;
+                border: 2px solid #02569C;
+                background: white;
+            }
+        }
+
+        .sign-in{
+            color: #02569C;
+            border: 2px solid #02569C;
+            background: white;
+
+            &:hover{
+                color: white;
+                background: #02569C;
+            }
+        }
+    }
+    
 }
 
 .search-bar-group{
@@ -3114,9 +3219,14 @@ footer{
         .search-bar-group{
             margin-left: 20px !important;
         }
+
+        &.header-unlogin .header_profile{
+            display: none;
+        }
     }
 
     .index{
+
         .wrapper{
             grid-template-columns: 1fr;
             column-gap: 10px;
@@ -3136,7 +3246,15 @@ footer{
                 &.active{
                     transform: translateX(0);
                 }
+
+                &.unlogin{
+    
+                    .sign-up, .sign-in{
+                        display: block !important;
+                    }
+                }
             }
+
 
             main{
                 grid-template-columns: 435px minmax(600px, 940px);
@@ -3400,6 +3518,40 @@ footer{
                     right: 12px;
                     top: 12px;
                     cursor: pointer;
+                }
+
+                .sign-up, .sign-in{
+                    font-size: 16px;
+                    line-height: 18px;
+                    @include Roboto(400);
+                    text-align: center;
+                    background: #02569C;
+                    border-radius: 5px;
+                    padding: 10px;
+                    width: 217px;
+                    margin-left: 25px;
+                    margin-bottom: 12px;
+                    color: #FFFFFF;
+                    white-space: nowrap;
+                    transition: .3s;
+                    border: 2px solid #02569C;
+        
+                    &:hover{
+                        color: #02569C;
+                        border: 2px solid #02569C;
+                        background: white;
+                    }
+                }
+        
+                .sign-in{
+                    color: #02569C;
+                    border: 2px solid #02569C;
+                    background: white;
+        
+                    &:hover{
+                        color: white;
+                        background: #02569C;
+                    }
                 }
 
                 &.active{
@@ -5530,6 +5682,16 @@ line-height: 14px;
             }
         }
 
+        aside{
+            .sign-up, .sign-in{
+                font-size: 16px;
+                line-height: 19px;
+                width: 315px; 
+                margin-left: 0;
+                display: block;
+            }
+        }
+
         .search-bar-group{
             display: none;
         }
@@ -5650,6 +5812,8 @@ line-height: 14px;
 
             main{
                 padding-top: 136px;
+
+
 
                 .user-description{
                     font-size: 15px;
