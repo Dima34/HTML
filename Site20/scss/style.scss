@@ -1903,6 +1903,7 @@ button{
         line-height: 20px;
         @include Roboto(400);
         margin-bottom: 10px;
+        padding-right: 30px;
 
         & .mention{
             color: #02569C;
@@ -2833,6 +2834,10 @@ footer{
         opacity: 1;
         pointer-events: all;
     }
+}
+
+.write-a-message-popup-mobile,.photo-mobile-popup,.post-popup-mobile {
+    display: none;
 }
 
 .video_popup{
@@ -4769,6 +4774,7 @@ line-height: 14px;
         visibility: hidden;
         pointer-events: none;
         transition: .3s;
+        display: block;
 
         .popup-wrapper{
             overflow-y: scroll;
@@ -5528,6 +5534,7 @@ line-height: 14px;
         opacity: 0;
         pointer-events: 0;
         transition: .3s;
+        display: block;
 
         .popup-wrapper{
             height: 100vh;

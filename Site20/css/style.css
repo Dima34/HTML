@@ -1309,7 +1309,8 @@ button {
     line-height: 20px;
     font-family: 'Roboto' !important;
     font-weight: 400 !important;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    padding-right: 30px; }
     .comment .comment_text .mention {
       color: #02569C; }
   .comment .comment_footer {
@@ -1964,6 +1965,9 @@ footer .footer_company-name {
     visibility: visible;
     opacity: 1;
     pointer-events: all; }
+
+.write-a-message-popup-mobile, .photo-mobile-popup, .post-popup-mobile {
+  display: none; }
 
 .video_popup {
   overflow-y: scroll;
@@ -3248,7 +3252,8 @@ footer .footer_company-name {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: .3s; }
+    transition: .3s;
+    display: block; }
     .photo-mobile-popup .popup-wrapper {
       overflow-y: scroll;
       display: flex;
@@ -3754,7 +3759,8 @@ footer .footer_company-name {
     visibility: hidden;
     opacity: 0;
     pointer-events: 0;
-    transition: .3s; }
+    transition: .3s;
+    display: block; }
     .post-popup-mobile .popup-wrapper {
       height: 100vh;
       overflow-y: scroll; }
