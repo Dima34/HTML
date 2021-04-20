@@ -73,6 +73,12 @@
     margin: 0 auto;
 }
 
+html {
+    transform: scale(.75);
+    transform-origin: top center;
+}
+
+
 body{
     margin: 0;
     padding: 0;
