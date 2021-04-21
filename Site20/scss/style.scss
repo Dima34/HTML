@@ -2379,6 +2379,13 @@ header{
         display: block;
         padding: 0;
         margin-left: -39rem;
+        height: fit-content;
+        padding-top: 13rem;
+
+        img{
+            width: 24rem;
+            height: 24rem;
+        }
     }
 
     .last-search-pp{
