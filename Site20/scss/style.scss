@@ -747,6 +747,11 @@ button{
                             position: relative;
                             cursor: pointer;
 
+                            &>img{
+                                width: 100%;
+                                height: 100%;
+                            }
+
                             &:last-child{
                                 margin-bottom: 0;
                             }
