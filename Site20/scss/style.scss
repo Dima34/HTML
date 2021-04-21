@@ -1392,7 +1392,9 @@ button{
                                     padding-top: 0;
                                 }
 
-                                
+                                .comment-input{
+                                    margin-bottom: 20px;
+                                }
                             }
 
                             .show-answers{
@@ -2144,6 +2146,16 @@ header{
             .profile-more{
                 cursor: pointer;
                 transition: transform .3s;
+                position: relative;
+
+                &::after{
+                    position: absolute;
+                    width: 250%;
+                    height: 200%;
+                    left: -50%;
+                    top: -50%;
+                    content: "";
+                }
 
                 &.active{
                     transform: rotate(180deg);
@@ -2862,7 +2874,7 @@ footer{
 .video_popup{
     overflow-y: scroll;
     align-items: flex-start;
-    padding: 9px 0;
+    padding: 9px 140px;
 
     .next-post{
         top: 509px;

@@ -947,6 +947,8 @@ button {
               padding-left: 27px; }
               .index .wrapper main .right .post .post_comments .comment-blk .sub-comment-blk .comment {
                 padding-top: 0; }
+              .index .wrapper main .right .post .post_comments .comment-blk .sub-comment-blk .comment-input {
+                margin-bottom: 20px; }
             .index .wrapper main .right .post .post_comments .comment-blk .show-answers {
               font-size: 17px;
               line-height: 20px;
@@ -1458,7 +1460,15 @@ header {
         transform: translateY(-2px); }
       header .wrapper .header_profile .profile-more {
         cursor: pointer;
-        transition: transform .3s; }
+        transition: transform .3s;
+        position: relative; }
+        header .wrapper .header_profile .profile-more::after {
+          position: absolute;
+          width: 250%;
+          height: 200%;
+          left: -50%;
+          top: -50%;
+          content: ""; }
         header .wrapper .header_profile .profile-more.active {
           transform: rotate(180deg); }
       header .wrapper .header_profile .profile_dropdown {
@@ -1981,7 +1991,7 @@ footer .footer_company-name {
 .video_popup {
   overflow-y: scroll;
   align-items: flex-start;
-  padding: 9px 0; }
+  padding: 9px 140px; }
   .video_popup .next-post {
     top: 509px; }
   .video_popup .wrapper {
