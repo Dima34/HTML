@@ -178,7 +178,7 @@
                             <p>
                                 <span><img src="./img/svg/subscribed-ico.svg" alt="ico"></span>
                                 You are subscribed
-                                <span><img src="./img/svg/subscribed-arrow.svg" alt="ico"></span>
+                                <span><img src="./img/svg/subscribed-arrow.svg" alt="ico" class="arrow"></span>
                             </p>
                             <div class="subscibed-menu">
                                 <p class="unsubscibe unsubscribe-btn">Unsubscribe</p>
@@ -1069,7 +1069,7 @@
                         <div class="subscribed">
                             <p>
                                 You are subscribed
-                                <span><img src="./img/svg/subscribed-arrow.svg" alt="ico"></span>
+                                <span><img src="./img/svg/subscribed-arrow.svg" alt="ico" class="arrow"></span>
                             </p>
                             <div class="subscibed-menu">
                                 <p class="unsubscibe unsubscribe-btn">Unsubscribe</p>
@@ -1174,7 +1174,7 @@
                     </div>
                 </div>
 
-                <div class="post white-block post-mobile-open">
+                <div class="post white-block">
                     <div class="post_header">
                         <div class="post-icon online">
                             <img src="./img/profile-photo.png" alt="photo">
@@ -1191,7 +1191,7 @@
                         <img src="./img/post-photo-3.png" alt="photo">
                     </div>
 
-                    @@include("./post-footer.html")
+                    @@include("./post-footer-mobile.html")
 
                     <div class="post_text">
                         <p>
@@ -1220,7 +1220,7 @@
                         </video>
                     </div>
 
-                    @@include("./post-footer.html")
+                    @@include("./post-footer-mobile.html")
 
                     <div class="post_text">
                         <p>
@@ -1247,7 +1247,7 @@
                         <img src="./img/single-photo.png" alt="photo">
                     </div>
 
-                    @@include("./post-footer.html")
+                    @@include("./post-footer-mobile.html")
 
                     <div class="post_text">
                         <p>
@@ -1301,7 +1301,10 @@
                 
                     <p class="commetns"><span><img src="./img/svg/comment-gray.svg" alt="icon"></span>50</p>
                     <p class="reposts"><span><img src="./img/svg/repost-gray.svg" alt="icon"></span>50</p>
-                    <img src="./img/svg/bookmarks-gray.svg" alt="add-to-bookmarks" class="add-to-bookmarks">
+
+                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none" class="add-to-bookmarks">
+                        <path d="M18.4375 23.25L9.99913 18.5625L1.5625 23.25V1.6875C1.5625 1.43886 1.66127 1.2004 1.83709 1.02459C2.0129 0.848772 2.25136 0.75 2.5 0.75H17.5C17.7486 0.75 17.9871 0.848772 18.1629 1.02459C18.3387 1.2004 18.4375 1.43886 18.4375 1.6875V23.25Z" stroke="#02569C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 
                     <div class="repost-popup">
                         <button>In a group</button>
@@ -1502,7 +1505,7 @@
 
             <div class="header">
                 <img src="./img/svg/write-popup-back.svg" alt="close" class="close">
-                <p class="user-name">Ivanov Ivan</p>
+                <p class="user-name close">Ivanov Ivan</p>
                 
             </div>
     
@@ -1635,8 +1638,12 @@
                     <p class="add-to-yourself"><span><img src="./img/svg/add-to-youself-ico.svg" alt="icon"></span>Add to yourself</p>
                     <p class="commetns"><span><img src="./img/svg/post-comments.svg" alt="icon"></span>50</p>
                     <p class="reposts"><span><img src="./img/svg/post-repost.png" alt="icon"></span>50</p>
-                    <img src="./img/svg/post-bookmarks.svg" alt="add-to-bookmarks" class="add-to-bookmarks">
                 
+                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none" class="add-to-bookmarks">
+                        <path d="M18.4375 23.25L9.99913 18.5625L1.5625 23.25V1.6875C1.5625 1.43886 1.66127 1.2004 1.83709 1.02459C2.0129 0.848772 2.25136 0.75 2.5 0.75H17.5C17.7486 0.75 17.9871 0.848772 18.1629 1.02459C18.3387 1.2004 18.4375 1.43886 18.4375 1.6875V23.25Z" stroke="#02569C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                        
+
                     <div class="repost-popup">
                         <button>In a group</button>
                         <button>Into history</button>

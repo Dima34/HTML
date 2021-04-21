@@ -65,7 +65,15 @@ if(subscribeBlk.length > 0){
     if(UnsubscibeDropDown){
 
       UnsubscibeDropDownOpen.addEventListener("click",()=> {
-        UnsubscibeDropDown.classList.add("subscribed-menu-active");
+        if(UnsubscibeDropDownOpen.classList.contains("active")){
+          UnsubscibeDropDown.classList.remove("subscribed-menu-active");
+          UnsubscibeDropDownOpen.classList.remove("active")
+        }
+        else{
+          UnsubscibeDropDown.classList.add("subscribed-menu-active");
+          UnsubscibeDropDownOpen.classList.add("active")
+        }
+        
       })
 
     }
@@ -75,6 +83,7 @@ if(subscribeBlk.length > 0){
       
       if(!CheckExistClass(obj, "subscribed")){
         UnsubscibeDropDown.classList.remove("subscribed-menu-active");
+        UnsubscibeDropDownOpen.classList.remove("active")
       }
       
     })
@@ -842,7 +851,7 @@ let postMobilePopup = document.querySelector(".post-popup-mobile");
 
 if(postMobilePopup){
   let postMobilePopupOpen = document.querySelectorAll(".post-mobile-open");
-  let postMobilePopupClose = postMobilePopup.querySelector(".close")
+  let postMobilePopupClose = postMobilePopup.querySelectorAll(".close")
 
   postMobilePopupOpen.forEach((el)=>{
     el.addEventListener("click", ()=>{
@@ -855,10 +864,34 @@ if(postMobilePopup){
     })
   })
 
-  postMobilePopupClose.addEventListener("click", ()=>{
+  postMobilePopupClose.forEach((el)=>{
+    el.addEventListener("click", ()=>{
     
-    postMobilePopup.classList.remove("active");
-    
+      postMobilePopup.classList.remove("active");
+      
+    })
   })
   
+  
+}
+
+// 
+// Bookmarks
+// 
+
+let Bookmarks = document.querySelectorAll(".add-to-bookmarks");
+
+if(Bookmarks.length>0){
+
+  Bookmarks.forEach((el)=>{
+
+    el.addEventListener("click",()=>{
+  
+      if(el.classList.contains("active")){
+        el.classList.remove("active");
+      } else{
+        el.classList.add("active");
+      }
+    })
+  })
 }

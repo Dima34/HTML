@@ -116,7 +116,7 @@ button{
         column-gap: 50px;
 
         aside{
-            padding: 0 0 236px 0;
+            padding: 0 0 116px 0;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius:0 0 20px 0;
             height: fit-content;
@@ -415,6 +415,18 @@ button{
                             z-index: 2;
                             position: relative;
                             font-size: 22px;
+
+                            .arrow{
+                                transition: .3s;
+                            }
+
+                            &.active{
+
+                                .arrow{
+                                    transform: rotate(180deg);
+                                    
+                                }
+                            }
                         }
 
                         .subscibed-menu{
@@ -1722,6 +1734,13 @@ button{
 
     .add-to-bookmarks{
         margin-left: 21px;
+        margin-top: 10px;
+        fill: none;
+        transition: .3s;
+
+        &.active{
+            fill: #02569C;
+        }
     }
 
     .reposts{
@@ -1975,7 +1994,6 @@ button{
         }
     }
 }
-
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -4749,6 +4767,26 @@ line-height: 14px;
         
     }
 
+    .full-header{
+        padding: 25px 21px 18px 21px;
+        
+        a{
+            display: flex;
+            align-items: center;
+
+            img{
+                margin-right: 14px;
+            }
+
+            p{
+                font-size: 16px;
+                line-height: 19px;
+                color: #02569C;
+                @include Roboto(400);
+            }
+        }
+    }
+
     .repost_popup{
         align-items: unset;
         overflow-y: scroll;
@@ -5970,6 +6008,119 @@ line-height: 14px;
         } 
     }
 
+    .index.mobile.index-full{
+        .intro{
+            top: 64px;
+        }
+
+        .wrapper{
+
+            main{
+                padding-top: 105px;
+
+                .general{
+                    padding: 0;
+                    border-top: 0;
+
+                    .general-main{
+                        width: fit-content;
+                        margin: 0 auto;
+
+                        .info-blk{
+                            grid-template-columns: 225px 1fr;
+                        }
+                    }
+
+                    &::after{
+                        display: none;
+                    }
+
+                    &.first{
+                        margin-bottom: 0;
+                    }
+                }
+
+                .info-bar{
+                    .bar-wrapper{
+                        gap: 30px;
+
+
+                    }
+                }
+
+                .awards{
+
+                    .main{
+                        display: flex;
+                        gap: 10px;
+                        justify-content: center;
+
+                        a{
+                            img{
+                                margin-right: 0;
+                            }
+
+                            .label{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .friends{
+
+                    .main{
+                        a{
+                            display: none;
+
+                            &:nth-child(1),
+                            &:nth-child(2),
+                            &:nth-child(3),
+                            &:nth-child(4){
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                .subscription{
+
+                    .main{
+                        a{
+                            display: none;
+
+                            &:nth-child(1),
+                            &:nth-child(2),
+                            &:nth-child(3){
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+
+                .video{
+                    .header{
+                        margin-bottom: 22px;
+                    }
+
+                    .main{
+                        flex-direction: column;
+                        align-items: center;
+
+                        .video-blk{
+
+                            .video-wrapper{
+                                width: 285px;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
     .repost_popup{
         padding: 6px 6px;
 
@@ -6003,7 +6154,7 @@ line-height: 14px;
         }
     }
 
-   .photo-mobile-popup{
+    .photo-mobile-popup{
 
     .popup-wrapper{
 
