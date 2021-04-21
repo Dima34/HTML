@@ -925,6 +925,10 @@ button{
                         padding: 10rem 25rem 11rem 26rem;
                         position: relative;
 
+                        .swiper-wrapper{
+                            transform: translateX(17px);
+                        }
+
                         .swiper-slide{
                             width: fit-content;
                             display: flex;
