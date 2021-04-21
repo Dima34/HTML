@@ -2484,7 +2484,8 @@ footer .footer_company-name {
         padding-top: 97rem; }
         .index.mobile .wrapper main .info-bar {
           padding: 15rem 15rem 0 15rem;
-          margin-bottom: 22rem; }
+          margin-bottom: 22rem;
+          margin-right: 60rem; }
           .index.mobile .wrapper main .info-bar .bar-wrapper {
             max-width: 375rem;
             margin: 0 auto;
