@@ -124,6 +124,7 @@ button{
             box-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.25);
             border-radius:0 0 20rem 0;
             height: fit-content;
+            height: -moz-fit-content;
 
             .aside-list{
                 padding: 0 0 0 25rem;
@@ -320,7 +321,7 @@ button{
             grid-template-columns: 435rem minmax(600rem, 940rem) 1fr;
             column-gap: 30rem;
             height: fit-content;
-
+            height: -moz-fit-content;
 
 
             .white-block{
@@ -345,9 +346,11 @@ button{
                 display: flex;
                 flex-direction: column;
                 height: fit-content;
+                height: -moz-fit-content;
 
                 .user-photo{
                     width: fit-content;
+                    width: -moz-fit-content;
                     align-self: center;
                     margin-bottom: 25rem;
 
@@ -787,6 +790,7 @@ button{
                 z-index: 2;
                 padding-top: 89rem;
                 height: fit-content;
+                height: -moz-fit-content;
 
                 .swiper-button-disabled{
                     display: none;
@@ -899,6 +903,7 @@ button{
                             align-items: center;
                             justify-content: center;
                             min-width: fit-content;
+                            min-width: -moz-fit-content;
                             width: 74.28%;
                             height: 100%;
 
@@ -930,6 +935,7 @@ button{
 
                         .swiper-slide{
                             width: fit-content;
+                            width: -moz-fit-content;
                             display: flex;
                             flex-direction: column;
                             align-items: center;
@@ -990,6 +996,7 @@ button{
 
                     .swiper-slide{
                         width: fit-content;
+                        width: -moz-fit-content;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -1010,6 +1017,7 @@ button{
                         top: 53%;
                         z-index: 2;
                         height: fit-content;
+                        height: -moz-fit-content;
                         opacity: 0;
                         transition: opacity .3s;
                         cursor: pointer;
@@ -1051,6 +1059,7 @@ button{
 
                     .swiper-slide{
                         width: fit-content;
+                        width: -moz-fit-content;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -1072,6 +1081,7 @@ button{
                         top: 53%;
                         z-index: 2;
                         height: fit-content;
+                        height: -moz-fit-content;
                         opacity: 0;
                         transition: opacity .3s;
                         cursor: pointer;
@@ -1125,6 +1135,7 @@ button{
                             padding: 0;
                             padding: 15rem 0;
                             height: fit-content;
+                            height: -moz-fit-content;
                             font-size: 22rem;
                             line-height: 26rem;
                             @include Roboto(400);
@@ -1746,6 +1757,7 @@ button{
 
     .commetns, .reposts, .add-to-bookmarks{
         height: fit-content;
+        height: -moz-fit-content;
         margin-top: 6rem;
     }
 
@@ -2372,6 +2384,7 @@ header{
         font-size: 20rem;
         line-height: 23rem;
         height: fit-content;
+        height: -moz-fit-content;
 
         &::placeholder{
             opacity: 1;
@@ -2444,6 +2457,7 @@ header{
                     @include Roboto(400);
                     color: #000000; 
                     height: fit-content;
+                    height: -moz-fit-content;
                     align-self: center; 
                 }
 
@@ -2619,6 +2633,7 @@ footer{
                 border-top: 1rem solid #C4C4C4;
                 border-bottom: 1rem solid #C4C4C4;
                 height: fit-content;
+                height: -moz-fit-content;
 
                 p{
                     font-size: 17rem;
@@ -2692,6 +2707,7 @@ footer{
         @include Roboto(400);
         display: block;
         height: fit-content;
+        height: -moz-fit-content;
         align-self: center;
 
         &::placeholder{
@@ -2717,6 +2733,7 @@ footer{
         padding: 7rem;
         max-width: 133rem;
         min-width: fit-content;
+        height: -moz-fit-content;
         color: #FFFFFF;
         background: #02569C;
         border-radius: 5rem;
@@ -3014,6 +3031,7 @@ footer{
                 border-top: 1rem solid #C4C4C4;
                 border-bottom: 1rem solid #C4C4C4;
                 height: fit-content;
+                height: -moz-fit-content;
 
                 p{
                     font-size: 17rem;
@@ -3086,6 +3104,7 @@ footer{
                 font-family: 'Roboto' !important;
                 font-weight: 400 !important;
                 height: fit-content;
+                height: -moz-fit-content;
                 margin-top: 6rem;
             }
         }
@@ -3122,6 +3141,7 @@ footer{
 
             .send{
                 height: fit-content;
+                height: -moz-fit-content;
                 align-self: center;
                 margin-left: 29rem;
             }
@@ -3428,6 +3448,7 @@ footer{
             aside{
                 padding: 57rem 82rem 40rem 30rem;
                 height: fit-content;
+                height: -moz-fit-content;
                 width: 284rem;
                 min-height: 100vh;
                 height: 100%;
@@ -3545,6 +3566,7 @@ footer{
                             z-index: 2;
                             padding: 33rem 0 30rem 0;
                             height: fit-content;
+                            height: -moz-fit-content;
                             opacity: 0;
                             visibility: hidden;
                             pointer-events: none;
@@ -3739,6 +3761,7 @@ footer{
 
                     .user-photo{
                         width: fit-content;
+                        width: -moz-fit-content;
                         align-self: center;
                         margin-bottom: 12rem;
 
@@ -4096,6 +4119,7 @@ footer{
                             align-items: center;
                             justify-content: center;
                             min-width: fit-content;
+                            min-width: -moz-fit-content;
                             width: 74.28%;
                             height: 100%;
 
@@ -4279,6 +4303,7 @@ line-height: 14rem;
                                 padding: 0;
                                 padding: 11rem 0;
                                 height: fit-content;
+                                height: -moz-fit-content;
                                 font-size: 15rem;
                                 line-height: 18rem;
                                 @include Roboto(400);
@@ -4829,6 +4854,7 @@ line-height: 14rem;
 
         .wrapper{            
             height: fit-content;
+            height: -moz-fit-content;
 
 
             .repost-main{
@@ -5716,6 +5742,7 @@ line-height: 14rem;
 
             .nav-group{
                 width: fit-content;
+                width: -moz-fit-content;
                 position: absolute;
                 top: 6rem;
                 right: 18rem;
@@ -6060,6 +6087,7 @@ line-height: 14rem;
 
                     .general-main{
                         width: fit-content;
+                        width: -moz-fit-content;
                         margin: 0 auto;
 
                         .info-blk{
