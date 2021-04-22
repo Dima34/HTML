@@ -615,7 +615,7 @@ header{
                 color: white;
             }
 
-            video{
+            .goal-video{
                 position: absolute;
                 left: calc(100% + 50px);
                 top: 0;
@@ -623,12 +623,30 @@ header{
                 opacity: 0;
                 transition: .3s;
                 pointer-events: none;
-                clip-path: url(#mask);
                 
+                width: 567px;
+                height: 320px;
+
+                &::after{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    content: "";
+                    left: 0;
+                    top: 0;
+                    background: black;
+                    z-index: -1;
+                    transform: scale(1.015);
+                    clip-path: url(#mask);
+                }
+
+                video{
+                    clip-path: url(#mask);
+                }
             }
 
             #mask{
-                transform: scale(0.6) translateX(35px);
+                transform: scale(0.6) translateX(30px);
             }
 
             &:nth-child(3){
@@ -637,14 +655,14 @@ header{
                 }
 
                 #mask1{
-                    transform: scale(0.6) translateX(35px);
+                    transform: scale(0.6) translateX(30px);
                 }
             }
 
         }
 
         .goal.video-active{
-            video{
+            .goal-video{
                 left: calc(100% + 20px);
                 opacity: 1;
                 pointer-events: none;

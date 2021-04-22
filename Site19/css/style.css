@@ -443,7 +443,7 @@ header {
         color: black !important; }
       .our-goals .wrapper .goal:nth-child(3n+1) .goal_header .header_num, .our-goals .wrapper .goal:nth-child(4n+2) .goal_header .header_title, .our-goals .wrapper .goal:nth-child(4n+3) .goal_header .header_title {
         color: white; }
-      .our-goals .wrapper .goal video {
+      .our-goals .wrapper .goal .goal-video {
         position: absolute;
         left: calc(100% + 50px);
         top: 0;
@@ -451,14 +451,28 @@ header {
         opacity: 0;
         transition: .3s;
         pointer-events: none;
-        clip-path: url(#mask); }
+        width: 567px;
+        height: 320px; }
+        .our-goals .wrapper .goal .goal-video::after {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          content: "";
+          left: 0;
+          top: 0;
+          background: black;
+          z-index: -1;
+          transform: scale(1.015);
+          clip-path: url(#mask); }
+        .our-goals .wrapper .goal .goal-video video {
+          clip-path: url(#mask); }
       .our-goals .wrapper .goal #mask {
-        transform: scale(0.6) translateX(35px); }
+        transform: scale(0.6) translateX(30px); }
       .our-goals .wrapper .goal:nth-child(3) video {
         clip-path: url(#mask1); }
       .our-goals .wrapper .goal:nth-child(3) #mask1 {
-        transform: scale(0.6) translateX(35px); }
-    .our-goals .wrapper .goal.video-active video {
+        transform: scale(0.6) translateX(30px); }
+    .our-goals .wrapper .goal.video-active .goal-video {
       left: calc(100% + 20px);
       opacity: 1;
       pointer-events: none; }
