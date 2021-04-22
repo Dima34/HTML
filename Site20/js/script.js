@@ -5,6 +5,18 @@ console.log(
   'color: #c434c4; background: #eee; font-size: 30px '
 );
 
+function getScale(){
+  innerW = window.innerWidth;
+
+  if(innerW>=1820){
+      return 1;
+  } else if (innerW >= 1460){
+      return 0.8;
+  }
+}
+console.log(getScale());
+document.querySelector("html").style.fontSize = getScale() + "px";
+
 // 
 // Header profile dropdown
 // 
