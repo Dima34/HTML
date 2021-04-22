@@ -179,8 +179,13 @@ if(moreBlk.length >0){
   
   for (let i = 0; i < moreBlk.length; i++) {
     
-    moreBlk[i].addEventListener("click", ()=>{
-      moreBlk[i].classList.add("more-option-active")
+    moreBlk[i].querySelector("img").addEventListener("click", ()=>{
+      if(moreBlk[i].classList.contains("more-option-active")){
+        moreBlk[i].classList.remove("more-option-active")
+      }else{
+        moreBlk[i].classList.add("more-option-active")
+      }
+      
     }) 
   }
 
