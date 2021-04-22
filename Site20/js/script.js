@@ -14,7 +14,7 @@ function getScale(){
       return 0.8;
   }
 }
-console.log(getScale());
+
 document.querySelector("html").style.fontSize = getScale() + "px";
 
 // 
