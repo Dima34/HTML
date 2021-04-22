@@ -2322,6 +2322,34 @@ footer .footer_company-name {
         .index .wrapper main .right .post .post_content {
           grid-template-columns: 1fr 30%;
           height: 30vw; }
+        .index .wrapper main .right .user-info .user-status-info {
+          flex-direction: column; }
+          .index .wrapper main .right .user-info .user-status-info .status-info_groupbox {
+            grid-template-columns: min-content minmax(min-content, 168rem); }
+            .index .wrapper main .right .user-info .user-status-info .status-info_groupbox p:first-child {
+              white-space: nowrap;
+              margin-right: 22rem;
+              width: fit-content;
+              width: -moz-fit-contnet; }
+          .index .wrapper main .right .user-info .user-status-info .status-info_groupbox:first-child {
+            padding-bottom: 11rem;
+            border: 0;
+            border-bottom: 1px solid #02569C; }
+            .index .wrapper main .right .user-info .user-status-info .status-info_groupbox:first-child p:last-child {
+              position: relative;
+              margin-left: 15px; }
+              .index .wrapper main .right .user-info .user-status-info .status-info_groupbox:first-child p:last-child::after {
+                position: absolute;
+                content: url(../img/svg/president-ico.svg);
+                left: -34rem;
+                top: 0; }
+          .index .wrapper main .right .user-info .user-status-info .status-info_groupbox:last-child {
+            grid-template-columns: min-content minmax(min-content, 168rem);
+            border-right: 0;
+            padding-top: 11rem; }
+            .index .wrapper main .right .user-info .user-status-info .status-info_groupbox:last-child .title, .index .wrapper main .right .user-info .user-status-info .status-info_groupbox:last-child p {
+              text-align: start;
+              padding: 0; }
   .popup {
     padding: 30rem 70rem; }
     .popup .pp-close {

@@ -3334,7 +3334,6 @@ footer{
                 }
             }
 
-
             main{
                 grid-template-columns: 435rem minmax(600rem, 940rem);
 
@@ -3355,6 +3354,50 @@ footer{
 
                     .user-info{
 
+                        .user-status-info{
+                            flex-direction: column;
+
+                            .status-info_groupbox{
+                                grid-template-columns: min-content minmax(min-content, 168rem);
+                                
+
+                                p:first-child{
+                                    white-space:nowrap;
+                                    margin-right: 22rem;
+                                    width: fit-content;
+                                    width: -moz-fit-contnet;
+                                }
+                            }
+
+                            .status-info_groupbox:first-child{
+                                padding-bottom: 11rem;
+                                border: 0;
+                                border-bottom: 1px solid #02569C;
+
+                                p:last-child{
+                                    position: relative;
+                                    margin-left: 15px;
+
+                                    &::after{
+                                        position: absolute;
+                                        content: url(../img/svg/president-ico.svg);
+                                        left: -34rem;
+                                        top: 0;
+                                    }
+                                }
+                            }
+
+                            .status-info_groupbox:last-child {
+                                grid-template-columns: min-content minmax(min-content, 168rem);
+                                border-right: 0;
+                                padding-top: 11rem;
+
+                                .title, p{
+                                    text-align: start;
+                                    padding: 0;
+                                }
+                            }
+                        }
                     }
                 }
             }
