@@ -468,8 +468,11 @@ header {
           clip-path: url(#mask); }
       .our-goals .wrapper .goal #mask {
         transform: scale(0.6) translateX(30px); }
+      .our-goals .wrapper .goal:nth-child(3) .goal-video::after {
+        transform: scale(1.5);
+        background: #FFE76A; }
       .our-goals .wrapper .goal:nth-child(3) video {
-        clip-path: url(#mask1); }
+        clip-path: none; }
       .our-goals .wrapper .goal:nth-child(3) #mask1 {
         transform: scale(0.6) translateX(30px); }
     .our-goals .wrapper .goal.video-active .goal-video {

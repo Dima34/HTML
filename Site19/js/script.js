@@ -494,5 +494,4 @@ if(Goalblk.length > 0){
         }
     }
     
-    
 }

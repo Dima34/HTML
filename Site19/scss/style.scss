@@ -650,8 +650,16 @@ header{
             }
 
             &:nth-child(3){
+                .goal-video{
+
+                    &::after{
+                        transform: scale(1.5);
+                        background: #FFE76A;
+                    }
+                }
+
                 video{
-                    clip-path: url(#mask1);
+                    clip-path: none;
                 }
 
                 #mask1{

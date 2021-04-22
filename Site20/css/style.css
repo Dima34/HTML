@@ -242,9 +242,8 @@ button {
           align-self: center;
           margin-bottom: 25rem; }
           .index .wrapper main .left .user-photo > img {
-            max-width: 335rem;
-            width: 100%;
-            aspect-ratio: 1/1;
+            width: 335rem;
+            height: 335rem;
             border: 5rem solid #FFFFFF;
             border-radius: 50%;
             object-fit: cover; }
