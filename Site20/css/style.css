@@ -1635,6 +1635,7 @@ header {
     padding: 0;
     margin-left: -39rem;
     height: fit-content;
+    height: -moz-fit-content;
     padding-top: 13rem; }
     .search-bar-group .search-btn img {
       width: 24rem;
