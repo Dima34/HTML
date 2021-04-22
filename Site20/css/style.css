@@ -2301,7 +2301,8 @@ footer .footer_company-name {
           grid-template-columns: 1fr 30%;
           height: 30vw; }
         .index .wrapper main .right .user-info .user-status-info {
-          flex-direction: column; }
+          flex-direction: column;
+          margin-bottom: 11rem; }
           .index .wrapper main .right .user-info .user-status-info .status-info_groupbox {
             grid-template-columns: min-content minmax(min-content, 168rem); }
             .index .wrapper main .right .user-info .user-status-info .status-info_groupbox p:first-child {

@@ -3289,53 +3289,15 @@ footer{
 }
 
 @media screen and (max-width: 1460px) {
-    header{
-
-        // .nav-burger{
-        //     display: block !important;
-        // }
-
-        // .search-bar-group{
-        //     margin-left: 20rem !important;
-        // }
-
-        // &.header-unlogin .header_profile{
-        //     display: none;
-        // }
-    }
 
     .index{
 
         .wrapper{
-            // grid-template-columns: 1fr;
             column-gap: 20rem;
 
-            // aside{
-            //     position: fixed;
-            //     left: 0;
-            //     top: 0;
-            //     width: 400rem;
-            //     z-index: 7;
-            //     background: white;
-            //     height: 100vh;
-            //     overflow-y: scroll;
-            //     transform: translateX(-100%);
-            //     transition: .3s;
-
-            //     &.active{
-            //         transform: translateX(0);
-            //     }
-
-            //     &.unlogin{
-    
-            //         .sign-up, .sign-in{
-            //             display: block !important;
-            //         }
-            //     }
-            // }
+           
 
             main{
-                // grid-template-columns: 435rem minmax(600rem, 940rem);
                 column-gap: 20rem;
 
                 .left{
@@ -3357,6 +3319,7 @@ footer{
 
                         .user-status-info{
                             flex-direction: column;
+                            margin-bottom: 11rem;
 
                             .status-info_groupbox{
                                 grid-template-columns: min-content minmax(min-content, 168rem);
