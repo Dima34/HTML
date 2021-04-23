@@ -929,28 +929,8 @@ button {
             .index .wrapper main .right .post .several-photo img:nth-child(3) {
               grid-column: 2/3;
               grid-row: 2/3; }
-          .index .wrapper main .right .post .video video-js {
-            width: 100%;
-            height: 100%; }
-            .index .wrapper main .right .post .video video-js .vjs-control-bar {
-              background: none;
-              margin-bottom: 5rem; }
-            .index .wrapper main .right .post .video video-js .vjs-big-play-button {
-              background: none;
-              border: none; }
-            .index .wrapper main .right .post .video video-js .vjs-big-play-button .vjs-icon-placeholder:before {
-              content: url(../img/svg/video-play-btn.svg);
-              transform: scale(1.25) translateY(-13rem); }
-            .index .wrapper main .right .post .video video-js .vjs-play-control .vjs-icon-placeholder:before {
-              transform: scale(1.5); }
-            .index .wrapper main .right .post .video video-js .vjs-mute-control .vjs-icon-placeholder:before {
-              transform: scale(1.3); }
-            .index .wrapper main .right .post .video video-js .vjs-fullscreen-control .vjs-icon-placeholder:before {
-              transform: scale(1.5); }
-            .index .wrapper main .right .post .video video-js .vjs-picture-in-picture-control .vjs-icon-placeholder:before {
-              transform: scale(1.2); }
-            .index .wrapper main .right .post .video video-js .vjs-remaining-time-display {
-              font-size: 15rem; }
+          .index .wrapper main .right .post .video video .plyr__poster {
+            background-size: cover; }
           .index .wrapper main .right .post .single-photo img {
             width: 100%;
             height: 100%;
