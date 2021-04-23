@@ -1107,11 +1107,10 @@ button {
         content: "";
         position: absolute;
         color: red;
-        width: 80rem;
+        width: 54rem;
         height: 80rem;
         bottom: 100%;
-        left: 10rem;
-        display: none; }
+        left: 10rem; }
       .post_footer .raiting-block .raiting-text:hover::after {
         display: block; }
     .post_footer .raiting-block .raiting-popup {

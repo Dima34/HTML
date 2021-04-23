@@ -631,7 +631,7 @@
                             <div class="post-icon online">
                                 <img src="./img/profile-photo.png" alt="photo">
                             </div>
-                            <h2 class="name">Ivanov Ivan<span><img src="./img/svg/post-acc-verified.svg" alt="verified"></span></h2>
+                            <h2 class="name">Ivanov Ivann<span><img src="./img/svg/post-acc-verified.svg" alt="verified"></span></h2>
                             <p class="date">12.02.2021</p>
                             <p class="watch-amount"><span><img src="./img/svg/post-wartched.svg" alt="post ico"></span> 85К</p>
                             @@include("./more-part.html")
@@ -1566,7 +1566,7 @@
                     @@include("./more-part.html")
                 </div>
                             
-                <video class = "plyrPlayer" playsinline controls data-poster="./img/video-poster.png">
+                <video class = "plyrPlayer" speed = "false" playsinline controls data-poster="./img/video-poster.png">
                     <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576">
                     <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
                     <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080">
@@ -1637,7 +1637,7 @@
                 
                     <p class="add-to-yourself"><span><img src="./img/svg/add-to-youself-ico.svg" alt="icon"></span>Add to yourself</p>
                     <p class="commetns"><span><img src="./img/svg/post-comments.svg" alt="icon"></span>50</p>
-                    <p class="reposts"><span><img src="./img/svg/post-repost.png" alt="icon"></span>50</p>
+                    <p class="reposts"><span><img src="./img/svg/post-repost.svg" alt="icon"></span>50</p>
                 
                     <svg width="20" height="24" viewBox="0 0 20 24" fill="none" class="add-to-bookmarks">
                         <path d="M18.4375 23.25L9.99913 18.5625L1.5625 23.25V1.6875C1.5625 1.43886 1.66127 1.2004 1.83709 1.02459C2.0129 0.848772 2.25136 0.75 2.5 0.75H17.5C17.7486 0.75 17.9871 0.848772 18.1629 1.02459C18.3387 1.2004 18.4375 1.43886 18.4375 1.6875V23.25Z" stroke="#02569C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1991,7 +1991,7 @@
     <script src="https://cdn.plyr.io/3.6.7/plyr.polyfilled.js"></script>
     <script>
 
-        const players = Plyr.setup('.plyrPlayer');
+        const players = Plyr.setup('.plyrPlayer',{ settings: ["captions", "quality"]});
     </script>
   
 
