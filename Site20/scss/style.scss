@@ -107,6 +107,12 @@ button{
     }
 }
 
+
+    .plyr__poster{
+        background-size: cover !important;
+    }
+
+
 .index{
     padding-top: 130rem; 
 
@@ -1340,11 +1346,7 @@ button{
 
                     .video{
                         
-                        video{
-                            .plyr__poster{
-                                background-size: cover;
-                            }
-                        }
+                        
                     }
 
                     .single-photo{
