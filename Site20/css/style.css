@@ -75,6 +75,14 @@ button {
 .plyr__poster {
   background-size: cover !important; }
 
+.plyr__menu__container > div > div:nth-child(1) {
+  display: none !important; }
+
+.plyr__menu__container > div > div:nth-child(3) {
+  display: block !important; }
+  .plyr__menu__container > div > div:nth-child(3) > button {
+    display: none; }
+
 .index {
   padding-top: 130rem; }
   .index.mobile {

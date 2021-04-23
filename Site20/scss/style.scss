@@ -108,10 +108,27 @@ button{
 }
 
 
-    .plyr__poster{
-        background-size: cover !important;
-    }
+.plyr__poster{
+    background-size: cover !important;
+}
 
+.plyr__menu__container{
+    
+    &>div{
+        
+        &>div:nth-child(1){
+            display: none !important;
+        }
+
+        &>div:nth-child(3){
+            display: block !important;
+
+            &>button{
+                display: none;
+            }
+        }
+    }
+}
 
 .index{
     padding-top: 130rem; 
