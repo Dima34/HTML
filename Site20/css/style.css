@@ -1088,7 +1088,10 @@ button {
       line-height: 20rem;
       font-family: 'Roboto' !important;
       font-weight: 400 !important;
-      color: #3F3F3F; }
+      color: #3F3F3F;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      user-select: none; }
     .post_footer .raiting-block .raiting-text {
       grid-column: 1/4;
       grid-row: 2/3;

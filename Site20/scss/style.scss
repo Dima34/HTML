@@ -1588,6 +1588,9 @@ button{
             line-height: 20rem;
             @include Roboto(400);
             color: #3F3F3F;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            user-select: none; 
         }
 
         .raiting-text{
@@ -5616,7 +5619,7 @@ line-height: 14rem;
                     width: 35rem;
                     height: 35rem;
                     font-size: 15rem;
-                    line-height: 18rem;
+                    line-height: 18rem;  
                 }
 
                 .raiting-popup{
