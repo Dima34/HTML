@@ -567,9 +567,9 @@ button {
             font-weight: 400 !important;
             margin-bottom: 20rem; }
             .index .wrapper main .right .user-info .user-name span {
-              margin-left: 13rem;
+              margin-left: 7rem;
               display: inline-block;
-              transform: translateY(-5rem);
+              transform: translateY(-2rem);
               cursor: pointer; }
           .index .wrapper main .right .user-info .user-status {
             font-size: 20rem;
