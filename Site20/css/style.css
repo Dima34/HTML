@@ -1160,12 +1160,15 @@ button {
             font-weight: 400 !important;
             text-align: center;
             color: #FFFFFF; }
+      .post_footer .raiting-block .raiting-popup.scaled::after {
+        transform: scale(0.8); }
       .post_footer .raiting-block .raiting-popup::after {
         position: absolute;
         content: url(../img/svg/raiting-pp-bg.svg);
         left: 0;
         top: 0;
-        z-index: -1; }
+        z-index: -1;
+        transform-origin: left top; }
     .post_footer .raiting-block .raiting-text:hover + .raiting-popup {
       opacity: 1;
       visibility: visible;
@@ -1221,11 +1224,14 @@ button {
       transition: opacity .3s; }
       .post_footer .repost-popup button:hover {
         opacity: 0.8; }
+    .post_footer .repost-popup.scaled::after {
+      transform: scale(0.8); }
     .post_footer .repost-popup::after {
       content: url(../img/svg/repost-cloud.svg);
       position: absolute;
       left: 0;
       top: 0;
+      transform-origin: left top;
       z-index: -1; }
     .post_footer .repost-popup.active {
       visibility: visible;
@@ -1265,7 +1271,10 @@ button {
       position: absolute;
       left: 0;
       top: 0;
-      z-index: -1; }
+      z-index: -1;
+      transform-origin: left top; }
+    .more .more-option.scaled .bg {
+      transform: scale(0.8); }
     .more .more-option button {
       padding: 0;
       text-align: left;
@@ -1844,6 +1853,9 @@ footer .footer_company-name {
         padding: 17rem 24rem; }
         .photo_popup .wrapper .photo-footer .post_footer .repost-popup::after {
           transform: scale(1, -1); }
+        .photo_popup .wrapper .photo-footer .post_footer .repost-popup.scaled::after {
+          transform: scale(0.8, -0.8);
+          top: 107px; }
 
 .info-write-block {
   display: flex;
@@ -2139,6 +2151,9 @@ footer .footer_company-name {
         height: fit-content;
         height: -moz-fit-content;
         margin-top: 6rem; }
+      .video_popup .wrapper .post_footer .repost-popup.scaled {
+        top: 77%;
+        right: 116rem; }
     .video_popup .wrapper .info-commetns {
       overflow-y: auto !important;
       padding-bottom: 25rem !important; }

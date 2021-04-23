@@ -17,6 +17,21 @@ function getScale(){
 
 document.querySelector("html").style.fontSize = getScale() + "px";
 
+if(getScale()==0.8){
+
+  document.querySelectorAll(".more-option").forEach((el)=>{
+    el.classList.add("scaled");
+  })
+
+  document.querySelectorAll(".repost-popup").forEach((el)=>{
+    el.classList.add("scaled");
+  })
+
+  document.querySelectorAll(".raiting-popup").forEach((el)=>{
+    el.classList.add("scaled");
+  })
+}
+
 // 
 // Header profile dropdown
 // 
