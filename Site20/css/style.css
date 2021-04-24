@@ -654,26 +654,30 @@ button {
           .index .wrapper main .right .user-info .info-bar {
             padding: 10rem 25rem 11rem 26rem;
             position: relative; }
-            .index .wrapper main .right .user-info .info-bar .swiper-wrapper {
+            .index .wrapper main .right .user-info .info-bar .swiper-container {
               transform: translateX(17px); }
             .index .wrapper main .right .user-info .info-bar .swiper-slide {
               width: fit-content;
               width: -moz-fit-content;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
               margin-right: 55rem; }
-              .index .wrapper main .right .user-info .info-bar .swiper-slide p {
-                color: #02569C;
-                font-family: 'Roboto' !important;
-                font-weight: 400 !important; }
-              .index .wrapper main .right .user-info .info-bar .swiper-slide .value {
-                font-size: 25rem;
-                line-height: 29rem;
-                margin-bottom: 5rem; }
-              .index .wrapper main .right .user-info .info-bar .swiper-slide .name {
-                font-size: 17rem;
-                line-height: 20rem; }
+              .index .wrapper main .right .user-info .info-bar .swiper-slide a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: .3s; }
+                .index .wrapper main .right .user-info .info-bar .swiper-slide a p {
+                  color: #02569C;
+                  font-family: 'Roboto' !important;
+                  font-weight: 400 !important; }
+                .index .wrapper main .right .user-info .info-bar .swiper-slide a .value {
+                  font-size: 25rem;
+                  line-height: 29rem;
+                  margin-bottom: 5rem; }
+                .index .wrapper main .right .user-info .info-bar .swiper-slide a .name {
+                  font-size: 17rem;
+                  line-height: 20rem; }
+                .index .wrapper main .right .user-info .info-bar .swiper-slide a:hover {
+                  opacity: 0.8; }
           .index .wrapper main .right .user-info .edit-cover {
             position: absolute;
             bottom: calc(100% + 12rem);
@@ -1203,7 +1207,7 @@ button {
     margin-top: 6rem; }
   .post_footer .add-to-bookmarks {
     margin-left: 21rem;
-    margin-top: 10rem;
+    margin-top: 8rem;
     fill: none;
     transition: .3s; }
     .post_footer .add-to-bookmarks.active {
@@ -1709,10 +1713,33 @@ header {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* -------========ASIDE=========------- */
+/* -------========SCROLL========------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+*::-webkit-scrollbar {
+  width: 11rem;
+  /* ширина для вертикального скролла */
+  height: 1rem;
+  /* высота для горизонтального скролла */
+  background-color: unset; }
+
+/* ползунок скроллбара */
+*::-webkit-scrollbar-thumb {
+  background-color: #02569C;
+  border-radius: 30em;
+  border: 4rem solid white; }
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #02569C; }
+
+/* Стрелки */
+*::-webkit-scrollbar-button:vertical:start:decrement {
+  display: none; }
+
+*::-webkit-scrollbar-button:vertical:end:increment {
+  display: none; }
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1862,7 +1889,8 @@ footer .footer_company-name {
         bottom: 64%;
         padding: 17rem 24rem; }
         .photo_popup .wrapper .photo-footer .post_footer .repost-popup::after {
-          transform: scale(1, -1); }
+          transform: scale(1, -1);
+          top: 131rem; }
         .photo_popup .wrapper .photo-footer .post_footer .repost-popup.scaled::after {
           transform: scale(0.8, -0.8);
           top: 107px; }
@@ -1952,25 +1980,7 @@ footer .footer_company-name {
       cursor: pointer; }
   .write-a-message-popup .main {
     height: 100%;
-    overflow-y: scroll;
-    /* ползунок скроллбара */
-    /* Стрелки */ }
-    .write-a-message-popup .main::-webkit-scrollbar {
-      width: 11rem;
-      /* ширина для вертикального скролла */
-      height: 1rem;
-      /* высота для горизонтального скролла */
-      background-color: unset; }
-    .write-a-message-popup .main::-webkit-scrollbar-thumb {
-      background-color: #02569C;
-      border-radius: 30em;
-      border: 4rem solid white; }
-    .write-a-message-popup .main::-webkit-scrollbar-thumb:hover {
-      background-color: #02569C; }
-    .write-a-message-popup .main::-webkit-scrollbar-button:vertical:start:decrement {
-      display: none; }
-    .write-a-message-popup .main::-webkit-scrollbar-button:vertical:end:increment {
-      display: none; }
+    overflow-y: scroll; }
     .write-a-message-popup .main .message {
       display: flex;
       flex-direction: column;
@@ -3448,7 +3458,11 @@ footer .footer_company-name {
           right: 115rem;
           padding: 17rem 24rem; }
           .photo-mobile-popup .footer .post_footer .repost-popup::after {
-            transform: scale(1, -1); }
+            transform: scale(1, -1);
+            top: 130px; }
+          .photo-mobile-popup .footer .post_footer .repost-popup.scaled::after {
+            transform: scale(0.8, -0.8);
+            top: 107px; }
     .photo-mobile-popup.active {
       opacity: 1;
       visibility: visible;
@@ -4113,6 +4127,11 @@ footer .footer_company-name {
               display: block; }
       .index.mobile .wrapper main .post {
         margin-bottom: 10rem; }
+        .index.mobile .wrapper main .post .post_content {
+          margin-bottom: 15rem; }
+          .index.mobile .wrapper main .post .post_content.video {
+            height: fit-content;
+            height: -moz-fit-content; }
   .index.mobile.index-full .intro {
     top: 64rem; }
   .index.mobile.index-full .wrapper main {
@@ -4216,7 +4235,10 @@ footer .footer_company-name {
       min-width: unset;
       width: 133rem; }
   .post-popup-mobile .popup-wrapper .main .post_content {
-    height: 240rem; } }
+    height: 240rem; }
+    .post-popup-mobile .popup-wrapper .main .post_content.video {
+      height: fit-content;
+      height: -moz-fit-content; } }
 
 @media screen and (max-width: 430px) {
   .post-popup-mobile .popup-wrapper .main .post_content {
