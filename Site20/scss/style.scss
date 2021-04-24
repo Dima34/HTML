@@ -3639,12 +3639,13 @@ footer{
                         }
 
                         .menu{
-                            position: absolute;
+                            position: relative;
                             width: 100%;
                             top: 100%;
                             background: white;
                             z-index: 2;
-                            padding: 33rem 0 30rem 0;
+                            padding-top: 0;
+                            max-height: 0;
                             height: fit-content;
                             height: -moz-fit-content;
                             opacity: 0;
@@ -3666,9 +3667,11 @@ footer{
                             }
 
                             &.active{
+                                padding-top: 33rem;
                                 opacity: 1;
                                 visibility: visible;
                                 pointer-events: all;
+                                max-height: 500rem;
                             }
                         }
                     }
