@@ -202,7 +202,7 @@ button{
             }
 
             .aside-info{
-                padding: 30rem 13rem 20rem 13rem;
+                padding: 30rem 0rem 20rem 13rem;
                 margin: 0 15rem;
                 border-top: 1rem solid #C4C4C4;
                 border-bottom: 1rem solid #C4C4C4;
@@ -217,14 +217,14 @@ button{
                 }
 
                 a{
-                    padding-right: 15rem;
+                    padding-right: 27rem;
                     position: relative;
 
                     &::after{
                         position: absolute;
                         content: url(../img/svg/dot.svg);
-                        right: 1rem;
-                        top: 50%;
+                        right: 12rem;
+                        top: 48%;
                         transform: translateY(-64%);
                     }
                 }
@@ -4230,7 +4230,7 @@ footer{
 
                                 &:last-child{
                                     font-size: 12rem;
-line-height: 14rem;
+                                    line-height: 14rem;
                                 }
                             }
                         }
@@ -4589,7 +4589,7 @@ line-height: 14rem;
                         .post_content{
                             width: 100%;
                             height: 250rem;
-                            margin-bottom: 30rem;
+                            margin-bottom: 12rem;
                             cursor: pointer;
                             
                             img{
@@ -4601,7 +4601,7 @@ line-height: 14rem;
     
                         .several-photo{
                             display: grid;
-                            grid-template-columns: 1fr 147rem;
+                            grid-template-columns: 1fr 138rem;
                             grid-template-rows: 1fr 1fr;
                             gap: 7rem;
     
@@ -6413,8 +6413,8 @@ line-height: 14rem;
                 .emoji{
                     grid-column: 3/4;
                     margin: 0;
-                    margin-left: 17rem;
-                    margin-right: 17rem;
+                    margin-left: 5rem;
+                    margin-right: 10rem;
                 }
 
                 .send{

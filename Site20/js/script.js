@@ -611,6 +611,7 @@ if(photoPopup){
   photoPopupOpen.forEach((e)=>{
     e.addEventListener("click", ()=>{
       photoPopup.classList.add("popup-active");
+      checkHeight(photoPopup)
     })
   })
 
@@ -834,6 +835,7 @@ if(mobilePhotoPopup){
     el.addEventListener("click", ()=>{
     
       mobilePhotoPopup.classList.add("active");
+      checkHeight(mobilePhotoPopup)
       
     })
   })
@@ -847,6 +849,21 @@ if(mobilePhotoPopup){
 }
 
 
+function checkHeight(el){
+
+  insideBlock = el.querySelector(".popup-wrapper");
+
+  if(insideBlock){
+      elHeight = Number(window.getComputedStyle(insideBlock).height.slice(0,-2));
+
+      if(elHeight >window.innerHeight){
+          
+          el.style.alignItems = "flex-start";
+          el.style.overflowY = "scroll";
+
+      }
+  }
+}
 
 // 
 // Write a message mobile popup
