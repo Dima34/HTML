@@ -1061,7 +1061,7 @@ button {
         grid-column: 1/3; }
 
 .btn-up {
-  width: 100rem;
+  width: 120rem;
   height: 100vh;
   display: flex;
   align-items: center;
