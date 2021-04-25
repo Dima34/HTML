@@ -1076,7 +1076,8 @@ button {
   opacity: .5;
   display: none; }
   .btn-up svg {
-    opacity: 0.3; }
+    opacity: 0.3;
+    transform: scale(1.2); }
   .btn-up img {
     display: none; }
   .btn-up:hover {
