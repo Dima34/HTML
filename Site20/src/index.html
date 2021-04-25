@@ -1294,7 +1294,14 @@
                     <h2 class="name">Ivanov Ivan</h2>
                     <p class="date">12.02.2021</p>
     
-                    @@include("./more-part.html")
+                    <div class="more">
+                        <img src="./img/svg/more-ico-white.svg" alt="more">
+                        <div class="more-option">
+                            <img src="./img/svg/more-bg.svg" alt="bg" class="bg">
+                            <button>Copy link</button>
+                            <button>Complain</button>
+                        </div>
+                    </div>
                 </div>
     
                 <p class="description">
@@ -1998,7 +2005,11 @@
     </div>
 
     @@include('./footer.html')
-   
+
+    <div class="btn-up">
+        <img src="./img/svg/swiper-arrow.svg" alt="arrow">
+    </div>
+    
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/autosize.min.js"></script>

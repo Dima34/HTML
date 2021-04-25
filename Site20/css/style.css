@@ -1060,6 +1060,26 @@ button {
         background: red;
         grid-column: 1/3; }
 
+.btn-up {
+  width: 55rem;
+  height: 55rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #02569C;
+  position: fixed;
+  z-index: 5;
+  background: white;
+  right: 25rem;
+  bottom: 25rem;
+  cursor: pointer;
+  transition: .3s;
+  opacity: 0; }
+  .btn-up img {
+    display: block;
+    transform: rotate(-90deg) translateX(1rem); }
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3466,6 +3486,10 @@ footer .footer_company-name {
           .photo-mobile-popup .footer .post_footer .repost-popup.scaled::after {
             transform: scale(0.8, -0.8);
             top: 107px; }
+        .photo-mobile-popup .footer .post_footer .add-to-bookmarks path {
+          stroke: #C4C4C4; }
+        .photo-mobile-popup .footer .post_footer .add-to-bookmarks.active {
+          fill: #C4C4C4; }
     .photo-mobile-popup.active {
       opacity: 1;
       visibility: visible;

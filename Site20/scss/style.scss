@@ -1565,6 +1565,29 @@ button{
     }
 }
 
+.btn-up{
+    width: 55rem;
+    height: 55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #02569C;
+    position: fixed;
+    z-index: 5;
+    background: white;
+    right: 25rem;
+    bottom: 25rem;
+    cursor: pointer;
+    transition: .3s;
+    opacity: 0;
+
+    img{
+        display: block;
+        transform: rotate(-90deg) translateX(1rem);
+    }
+}
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -5085,6 +5108,17 @@ footer{
                             top: 107px;
                         }
                         
+                    }
+                }
+
+                .add-to-bookmarks{
+                    path{
+                        stroke: #C4C4C4;
+                    }
+                    
+
+                    &.active{
+                        fill: #C4C4C4;
                     }
                 }
             }

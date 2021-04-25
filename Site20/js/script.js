@@ -848,7 +848,6 @@ if(mobilePhotoPopup){
   
 }
 
-
 function checkHeight(el){
 
   insideBlock = el.querySelector(".popup-wrapper");
@@ -890,7 +889,6 @@ if(mobileWriteAMessagePopup){
   })
   
 }
-
 
 // 
 // Post mobile popup
@@ -942,5 +940,30 @@ if(Bookmarks.length>0){
         el.classList.add("active");
       }
     })
+  })
+}
+
+// 
+// Btn up
+// 
+
+let BtnUp = document.querySelector(".btn-up");
+
+if (BtnUp){
+  document.addEventListener("scroll", ()=>{
+    
+    if(window.pageYOffset> 900){
+      BtnUp.style.opacity = 1;
+    } else{
+      BtnUp.style.opacity = 0;
+    }
+
+    BtnUp.addEventListener("click", ()=>{
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    })
+
   })
 }
