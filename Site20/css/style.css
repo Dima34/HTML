@@ -72,6 +72,9 @@ button {
   .swiper-button-next::after, .swiper-button-prev::after {
     display: none; }
 
+.plyr--video {
+  height: 100%; }
+
 .plyr__poster {
   background-size: cover !important; }
 
@@ -2317,7 +2320,7 @@ footer .footer_company-name {
         padding-right: 15rem; }
         .index .wrapper main .right .post .post_content {
           grid-template-columns: 1fr 30%;
-          height: 30vw; }
+          height: 35vw; }
         .index .wrapper main .right .user-info .user-status-info {
           flex-direction: column;
           margin-bottom: 11rem; }
@@ -4223,7 +4226,8 @@ footer .footer_company-name {
       margin: 0;
       margin-right: 7rem; }
     .write-a-message-popup-mobile .footer .info-write-block input {
-      grid-column: 2/3; }
+      grid-column: 2/3;
+      width: 100%; }
     .write-a-message-popup-mobile .footer .info-write-block .emoji {
       grid-column: 3/4;
       margin: 0;

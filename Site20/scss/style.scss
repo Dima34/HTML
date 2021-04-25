@@ -107,6 +107,9 @@ button{
     }
 }
 
+.plyr--video{
+    height: 100%;
+}
 
 .plyr__poster{
     background-size: cover !important;
@@ -3343,7 +3346,7 @@ footer{
 
                         .post_content{
                             grid-template-columns: 1fr 30%;
-                            height: 30vw;
+                            height: 35vw;
                         }
                     }
 
@@ -6408,6 +6411,7 @@ footer{
 
                 input{
                     grid-column: 2/3;
+                    width: 100%;
                 }
 
                 .emoji{
