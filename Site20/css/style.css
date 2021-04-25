@@ -4219,6 +4219,7 @@ footer .footer_company-name {
   .write-a-message-popup-mobile .footer .info-write-block {
     padding: 10rem 8rem 20rem 10rem;
     border-top: 0;
+    width: 100%;
     display: grid;
     grid-template-columns: min-content 1fr min-content min-content; }
     .write-a-message-popup-mobile .footer .info-write-block .more {
