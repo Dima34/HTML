@@ -2420,6 +2420,7 @@ footer .footer_company-name {
     .index .wrapper main {
       grid-template-columns: 435rem minmax(600rem, 940rem); }
   .btn-up {
+    visibility: hidden;
     width: 55rem;
     height: 55rem;
     display: flex;
@@ -2434,7 +2435,7 @@ footer .footer_company-name {
     bottom: 25rem;
     cursor: pointer;
     transition: .3s;
-    opacity: 1; }
+    opacity: 0; }
     .btn-up:hover {
       opacity: 1;
       background: white; }

@@ -3525,6 +3525,7 @@ footer{
     }
 
     .btn-up{
+        visibility: hidden;
         width: 55rem;
         height: 55rem;
         display: flex;
@@ -3539,7 +3540,7 @@ footer{
         bottom: 25rem;
         cursor: pointer;
         transition: .3s;
-        opacity: 1;
+        opacity: 0;
 
         &:hover{
             opacity: 1;
