@@ -952,10 +952,10 @@ let BtnUp = document.querySelector(".btn-up");
 if (BtnUp){
   document.addEventListener("scroll", ()=>{
     
-    if(window.pageYOffset> 900){
-      BtnUp.style.opacity = 1;
+    if(window.pageYOffset> 1700){
+      BtnUp.style.display = "flex";
     } else{
-      BtnUp.style.opacity = 0;
+      BtnUp.style.display = "none";
     }
 
     BtnUp.addEventListener("click", ()=>{
