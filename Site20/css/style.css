@@ -1883,7 +1883,7 @@ footer .footer_company-name {
     grid-column: 1/2;
     grid-row: 2/3;
     background: #F4F4F4;
-    padding: 11rem 20rem 10rem 20rem;
+    padding: 11rem 20rem 8rem 20rem;
     border-radius: 0 0 0 15rem; }
     .photo_popup .wrapper .photo-footer .post_footer {
       align-items: center; }
