@@ -33,6 +33,10 @@ footer, header, hgroup, menu, nav, section {
  display: block;
 }
 
+a{
+    cursor: pointer !important;
+}
+
 body {
  line-height: 1;
 }
