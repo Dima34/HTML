@@ -227,6 +227,12 @@ a{
    color: black;
 }
 
+body{
+    max-width: 425px;
+    margin: 0 auto;
+    position: relative;
+}
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -263,7 +269,7 @@ a:focus, a:visited{
    outline: none;
 }
 
-@media screen and (max-width:425px){
+
     .x_active{
         -webkit-transform: translateX(0) !important;
                 transform: translateX(0) !important;
@@ -595,11 +601,16 @@ a:focus, a:visited{
     .nav-block {
         padding-bottom: 20px;
         position: absolute;
-        -webkit-transform: translateX(-120%);
-                transform: translateX(-120%);
+        /* -webkit-transform: translateX(-120%);
+                transform: translateX(-120%); */
+        display: none;
         margin-bottom: 50px;
         height: 0;
         overflow-y: auto;
+    }
+
+    .nav-block.x_active{
+        display: block;
     }
     /* ------------------------------------ */
     /* -------=======SERVICES======-------- */
@@ -837,11 +848,14 @@ a:focus, a:visited{
     .bottom-menu{
         position: fixed;
         width: 100%;
+        max-width: 425px;
         height: 57px;
         bottom: 0;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 10;
     }
+
     .bottom-menu-wrap{
         position: absolute;
         bottom: 0;
@@ -2372,6 +2386,9 @@ a:focus, a:visited{
     }
     .bottom-nav{
         visibility: hidden;
+        max-width: 425px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .bottom-active{
         visibility: visible;
@@ -2526,5 +2543,5 @@ a:focus, a:visited{
         position: absolute;
     }
     
-}
+
 
