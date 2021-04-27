@@ -344,6 +344,7 @@ a:focus, a:visited{
     grid-row-start: 1;
     grid-row-end: 1;
     width: fit-content;
+    text-decoration: underline;
 }
 .underline{
     position: relative;
