@@ -1348,6 +1348,11 @@ footer{
           text-transform: uppercase;
           color: #ffffff;
           @include Open(400);
+
+          img{
+            width: 40px;
+            height: 40px;
+          }
         }
         a:first-child{
           margin-right: 60px;

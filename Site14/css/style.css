@@ -1099,6 +1099,9 @@ footer {
           color: #ffffff;
           font-family: 'Open Sans' !important;
           font-weight: 400 !important; }
+          footer .wrapper .header__nav .nav_links a img {
+            width: 40px;
+            height: 40px; }
         footer .wrapper .header__nav .nav_links a:first-child {
           margin-right: 60px; }
 
