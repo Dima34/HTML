@@ -662,31 +662,16 @@ header{
 
             &:nth-child(3){
                 .goal-video{
-                    left: calc(100% + 79px);
-                    top: -35px;
-                    transform: scale(0.8);
 
                     &::before{
-                        width: 110%;
+                        width: 120%;
                         height: 122%;
                         top: -20px;
                         left: -10px;
                     }
                 }
 
-                &.goal.video-active{
-
-
-                    .goal-video{
-                        left: calc(100% + 79px);
-                        opacity: 1;
-                        pointer-events: none;
-                    }
-                }
-
-                video{
-                    
-                }
+                
 
                 #mask1{
                     transform: scale(0.6) translateX(30px);
