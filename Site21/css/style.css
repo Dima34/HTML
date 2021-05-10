@@ -442,4 +442,117 @@ footer {
       footer .wrapper .col3 a {
         font-weight: 400 !important; }
 
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -----======GALLERY INTRO======------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.gallery-intro {
+  position: relative; }
+  .gallery-intro .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    min-width: 100vw; }
+  .gallery-intro .wrapper {
+    display: grid;
+    grid-template-columns: 14.06% 20.31% 31.41% 20.31% 14.06%;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 119px; }
+    .gallery-intro .wrapper .mark-block {
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      border-right: 1px solid rgba(255, 255, 255, 0.5);
+      grid-column: 2/5;
+      grid-row: 1/2; }
+      .gallery-intro .wrapper .mark-block:nth-child(3) {
+        grid-column: 3/4;
+        grid-row: 1/2; }
+    .gallery-intro .wrapper .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 120px; }
+    .gallery-intro .wrapper .gallery-swiper {
+      height: 500px;
+      overflow: visible;
+      grid-column: 1/6;
+      grid-row: 1/2;
+      width: 100%;
+      margin-top: 219px;
+      transform: translateX(-26px); }
+      .gallery-intro .wrapper .gallery-swiper .swiper-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        .gallery-intro .wrapper .gallery-swiper .swiper-wrapper .swiper-slide {
+          height: 274px !important;
+          width: 225px !important;
+          transition: .3s;
+          opacity: 0;
+          margin: 0 17px; }
+          .gallery-intro .wrapper .gallery-swiper .swiper-wrapper .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .3s; }
+        .gallery-intro .wrapper .gallery-swiper .swiper-wrapper .swiper-slide-active {
+          height: 500px !important;
+          width: 400px !important;
+          opacity: 1; }
+        .gallery-intro .wrapper .gallery-swiper .swiper-wrapper .tetiratySlide {
+          width: 163px !important;
+          height: 190px !important;
+          opacity: 1;
+          z-index: -1; }
+        .gallery-intro .wrapper .gallery-swiper .swiper-wrapper .tetiratySlide-left {
+          transform: translateX(125px); }
+        .gallery-intro .wrapper .gallery-swiper .swiper-wrapper .tetiratySlide-right {
+          transform: translateX(-125px); }
+        .gallery-intro .wrapper .gallery-swiper .swiper-wrapper .swiper-slide-next, .gallery-intro .wrapper .gallery-swiper .swiper-wrapper .swiper-slide-prev {
+          opacity: 1; }
+      .gallery-intro .wrapper .gallery-swiper .swiper-button-next, .gallery-intro .wrapper .gallery-swiper .swiper-button-prev {
+        width: fit-content;
+        height: fit-content; }
+        .gallery-intro .wrapper .gallery-swiper .swiper-button-next img, .gallery-intro .wrapper .gallery-swiper .swiper-button-prev img {
+          width: 80px;
+          height: 80px;
+          box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.25); }
+        .gallery-intro .wrapper .gallery-swiper .swiper-button-next:after, .gallery-intro .wrapper .gallery-swiper .swiper-button-prev:after {
+          display: none; }
+      .gallery-intro .wrapper .gallery-swiper .swiper-button-next {
+        right: -25px;
+        top: 46.5%;
+        transform: scale(-1, 1); }
+      .gallery-intro .wrapper .gallery-swiper .swiper-button-prev {
+        left: 25px;
+        top: 46.5%; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======GALLERY=======-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.gallery {
+  background: #232323;
+  padding: 70px 0; }
+  .gallery .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 33px; }
+    .gallery .wrapper a {
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .gallery .wrapper a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
 /*# sourceMappingURL=style.css.map */
