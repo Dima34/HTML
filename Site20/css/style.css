@@ -2486,6 +2486,9 @@ footer .footer_company-name {
           transform: translateY(-64%); }
   .login .wrapper .right {
     padding-top: 21rem; }
+    .login .wrapper .right img {
+      width: 663rem;
+      height: 663rem; }
 
 .login-code .wrapper .left .form {
   padding: 50rem; }
