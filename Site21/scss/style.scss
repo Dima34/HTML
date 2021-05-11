@@ -694,7 +694,6 @@ footer{
         grid-template-columns: 14.06% 20.31% 31.41% 20.31% 14.06%;
         border-left: 1px solid rgba(255, 255, 255, 0.5);
         border-right: 1px solid rgba(255, 255, 255, 0.5);
-        padding-bottom: 119px;
 
         .mark-block{
             border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -723,6 +722,7 @@ footer{
             width: 100%;
             margin-top: 219px;
             transform: translateX(-26px);
+            padding-bottom: 119px;
 
             .swiper-wrapper{
                 display: flex;
