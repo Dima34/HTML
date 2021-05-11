@@ -2350,99 +2350,207 @@ footer .footer_company-name {
   padding-right: 89rem;
   padding-left: 15px;
   padding-top: 195rem; }
-  .login .wrapper .left .form {
-    max-width: 570rem;
-    padding: 63rem 50rem 13rem 50rem;
-    background: #FFFFFF;
-    border-radius: 25rem; }
-    .login .wrapper .left .form input {
-      border: 2rem solid #02569C;
-      border-radius: 40rem;
-      padding: 17rem 20rem 19rem 20rem;
-      font-size: 22rem;
-      line-height: 26rem;
-      text-align: center;
-      color: #02569C;
-      margin-bottom: 39rem;
-      display: block;
-      width: 100%; }
-      .login .wrapper .left .form input::placeholder {
+  .login .wrapper .left {
+    width: 100%; }
+    .login .wrapper .left .form {
+      max-width: 570rem;
+      padding: 63rem 50rem 13rem 50rem;
+      background: #FFFFFF;
+      border-radius: 25rem; }
+      .login .wrapper .left .form .form-title {
+        font-size: 24rem;
+        line-height: 28rem;
+        font-family: 'Roboto' !important;
+        font-weight: 400 !important;
+        margin-bottom: 40rem;
         color: #02569C;
-        opacity: 1;
+        text-align: center; }
+      .login .wrapper .left .form .alert {
+        color: #D52B1E;
+        margin-bottom: 28rem;
+        text-align: center;
+        margin-top: -15rem;
+        display: none; }
+        .login .wrapper .left .form .alert.active {
+          display: block; }
+      .login .wrapper .left .form input {
+        border: 2rem solid #02569C;
+        border-radius: 40rem;
+        padding: 17rem 20rem 19rem 20rem;
         font-size: 22rem;
-        line-height: 26rem; }
-    .login .wrapper .left .form input[type='password'] {
-      margin-bottom: 30rem; }
-    .login .wrapper .left .form .input-group {
-      display: flex;
-      align-items: row;
-      gap: 20rem; }
-    .login .wrapper .left .form p {
-      font-size: 22rem;
-      line-height: 26rem;
-      text-align: center;
-      font-family: 'Roboto' !important;
-      font-weight: 400 !important;
-      color: #02569C;
-      text-align: left; }
-    .login .wrapper .left .form .date-title {
-      margin-bottom: 24rem; }
-    .login .wrapper .left .form .date-group {
-      display: flex;
-      flex-direction: row;
-      gap: 10rem;
-      margin-bottom: 80rem; }
-      .login .wrapper .left .form .date-group input {
-        border-radius: 20rem;
-        font-size: 20rem;
-        line-height: 23rem;
-        padding: 6rem 8rem 7rem 8rem;
-        margin-bottom: 0; }
-        .login .wrapper .left .form .date-group input::placeholder {
+        line-height: 26rem;
+        text-align: center;
+        color: #02569C;
+        margin-bottom: 39rem;
+        display: block;
+        width: 100%; }
+        .login .wrapper .left .form input::placeholder {
+          color: #02569C;
+          opacity: 1;
+          font-size: 22rem;
+          line-height: 26rem; }
+        .login .wrapper .left .form input.red {
+          color: #D52B1E;
+          border-color: #D52B1E; }
+          .login .wrapper .left .form input.red::placeholder {
+            color: #D52B1E; }
+      .login .wrapper .left .form input[type='password'] {
+        margin-bottom: 30rem; }
+      .login .wrapper .left .form .input-group {
+        display: flex;
+        align-items: row;
+        gap: 20rem; }
+      .login .wrapper .left .form p, .login .wrapper .left .form a, .login .wrapper .left .form label {
+        font-size: 22rem;
+        line-height: 26rem;
+        text-align: center;
+        font-family: 'Roboto' !important;
+        font-weight: 400 !important;
+        color: #02569C;
+        text-align: left; }
+      .login .wrapper .left .form .date-title {
+        margin-bottom: 24rem; }
+      .login .wrapper .left .form .date-group {
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+        margin-bottom: 80rem; }
+        .login .wrapper .left .form .date-group input {
+          border-radius: 20rem;
           font-size: 20rem;
-          line-height: 23rem; }
-        .login .wrapper .left .form .date-group input::-webkit-outer-spin-button, .login .wrapper .left .form .date-group input::-webkit-inner-spin-button {
-          -webkit-appearance: none;
-          margin: 0; }
-    .login .wrapper .left .form .create-btn {
-      background: #159700;
-      border-radius: 40rem;
-      padding: 20rem;
-      font-size: 22rem;
-      line-height: 26rem;
-      text-align: center;
-      display: block;
-      width: 100%;
-      color: #FFFFFF; }
-    .login .wrapper .left .form .socials-group {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      margin-top: 45px; }
-      .login .wrapper .left .form .socials-group a:nth-child(2) {
-        margin: 0 50rem; }
-  .login .wrapper .left .footer {
-    margin-top: 44rem;
-    max-width: 400rem; }
-    .login .wrapper .left .footer a, .login .wrapper .left .footer p {
-      font-size: 18rem;
-      line-height: 21rem;
-      font-family: 'Roboto' !important;
-      font-weight: 400 !important;
-      color: #939597;
-      margin-bottom: 10rem;
-      display: inline-block; }
-    .login .wrapper .left .footer a {
-      padding-right: 26rem;
-      position: relative; }
-      .login .wrapper .left .footer a::after {
-        position: absolute;
-        content: url(../img/svg/dot.svg);
-        right: 12rem;
-        top: 48%;
-        transform: translateY(-64%); }
+          line-height: 23rem;
+          padding: 6rem 8rem 7rem 8rem;
+          margin-bottom: 0; }
+          .login .wrapper .left .form .date-group input::placeholder {
+            font-size: 20rem;
+            line-height: 23rem; }
+          .login .wrapper .left .form .date-group input::-webkit-outer-spin-button, .login .wrapper .left .form .date-group input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0; }
+      .login .wrapper .left .form .create-btn {
+        background: #159700;
+        border-radius: 40rem;
+        padding: 20rem;
+        font-size: 22rem;
+        line-height: 26rem;
+        text-align: center;
+        display: block;
+        width: 100%;
+        color: #FFFFFF;
+        transition: .3s;
+        opacity: 1; }
+        .login .wrapper .left .form .create-btn:hover {
+          opacity: 0.8; }
+      .login .wrapper .left .form .sign-btn {
+        background: #02569C;
+        border-radius: 40rem;
+        padding: 20rem;
+        font-size: 22rem;
+        line-height: 26rem;
+        text-align: center;
+        display: block;
+        width: 100%;
+        color: #FFFFFF;
+        transition: .3s;
+        opacity: 1;
+        margin-top: 40rem;
+        margin-bottom: 33rem; }
+        .login .wrapper .left .form .sign-btn:hover {
+          opacity: 0.8; }
+      .login .wrapper .left .form .socials-group {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 45px; }
+        .login .wrapper .left .form .socials-group a:nth-child(2) {
+          margin: 0 50rem; }
+    .login .wrapper .left .footer {
+      margin-top: 44rem;
+      max-width: 400rem; }
+      .login .wrapper .left .footer a, .login .wrapper .left .footer p {
+        font-size: 18rem;
+        line-height: 21rem;
+        font-family: 'Roboto' !important;
+        font-weight: 400 !important;
+        color: #939597;
+        margin-bottom: 10rem;
+        display: inline-block; }
+      .login .wrapper .left .footer a {
+        padding-right: 26rem;
+        position: relative; }
+        .login .wrapper .left .footer a::after {
+          position: absolute;
+          content: url(../img/svg/dot.svg);
+          right: 12rem;
+          top: 48%;
+          transform: translateY(-64%); }
   .login .wrapper .right {
     padding-top: 21rem; }
+
+.login-code .wrapper .left .form {
+  padding: 50rem; }
+
+.login-sign-up .wrapper .left .form {
+  padding-bottom: 40rem; }
+  .login-sign-up .wrapper .left .form input {
+    margin-bottom: 30rem; }
+  .login-sign-up .wrapper .left .form label {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+    margin-bottom: 23rem; }
+    .login-sign-up .wrapper .left .form label::after {
+      content: url(../img/svg/checkbox-circle.svg);
+      position: absolute;
+      right: calc(100% + 20rem);
+      top: 50%;
+      transform: translateY(-40%); }
+    .login-sign-up .wrapper .left .form label::before {
+      content: url(../img/svg/checkbox-check.svg);
+      position: absolute;
+      right: calc(100% + 26rem);
+      top: 50%;
+      transform: translateY(-56%);
+      opacity: 0;
+      transition: .3s; }
+  .login-sign-up .wrapper .left .form input[type="checkbox"] {
+    display: none; }
+  .login-sign-up .wrapper .left .form input[type="checkbox"]:checked + label::before {
+    opacity: 1; }
+  .login-sign-up .wrapper .left .form .forgot {
+    display: block;
+    margin: 0 auto;
+    width: fit-content; }
+  .login-sign-up .wrapper .left .form .socials-group {
+    padding-bottom: 11rem;
+    margin: 0 16rem;
+    margin-top: 40rem;
+    margin-bottom: 40rem;
+    border-bottom: 1px solid #02569C; }
+  .login-sign-up .wrapper .left .form .create-btn {
+    max-width: 334px;
+    margin: 0 auto; }
+
+.login-sign-up-pass-rec .wrapper .left .form .alert {
+  font-size: 20px;
+  line-height: 23px; }
+
+.login-sign-up-pass-send-code .wrapper .left .form a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto; }
+  .login-sign-up-pass-send-code .wrapper .left .form a.underlined {
+    position: relative; }
+    .login-sign-up-pass-send-code .wrapper .left .form a.underlined::after {
+      content: "";
+      position: absolute;
+      width: 110%;
+      top: calc(100% + 10rem);
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1px;
+      border-bottom: 1px solid #02569C; }
 
 @media screen and (max-width: 1460px) {
   .index .wrapper {
@@ -4455,7 +4563,7 @@ footer .footer_company-name {
         margin-bottom: 0;
         flex-direction: column;
         gap: 0; }
-      .login .wrapper .left .form p {
+      .login .wrapper .left .form p, .login .wrapper .left .form a, .login .wrapper .left .form label {
         font-size: 18rem;
         line-height: 21rem; }
       .login .wrapper .left .form .date-title {
@@ -4472,10 +4580,21 @@ footer .footer_company-name {
             border-left: 1px solid #02569C;
             border-right: 1px solid #02569C;
             border-radius: 0; }
-      .login .wrapper .left .form .create-btn {
+      .login .wrapper .left .form .create-btn, .login .wrapper .left .form .sign-btn {
         font-size: 20rem;
         line-height: 23rem;
         padding: 16rem; }
+      .login .wrapper .left .form .form-title {
+        display: block !important;
+        font-size: 20rem;
+        line-height: 23rem;
+        text-align: center;
+        color: #02569C;
+        font-family: 'Roboto' !important;
+        font-weight: 400 !important;
+        margin-bottom: 20rem; }
+      .login .wrapper .left .form .sign-btn {
+        margin-top: 25rem; }
     .login .wrapper .left .footer {
       text-align: center;
       margin: 0 auto;
@@ -4484,15 +4603,20 @@ footer .footer_company-name {
       .login .wrapper .left .footer a, .login .wrapper .left .footer p {
         font-size: 16px;
         line-height: 18px; }
-    .login .wrapper .left .form-title {
-      display: block !important;
-      font-size: 20rem;
-      line-height: 23rem;
-      text-align: center;
-      color: #02569C;
-      font-family: 'Roboto' !important;
-      font-weight: 400 !important;
-      margin-bottom: 20rem; } }
+  .login-sign-up .wrapper .left .form {
+    padding-top: 64rem;
+    padding-bottom: 45rem; }
+    .login-sign-up .wrapper .left .form label {
+      display: none; }
+    .login-sign-up .wrapper .left .form input {
+      margin-bottom: 30rem; }
+    .login-sign-up .wrapper .left .form .sign-btn {
+      margin-bottom: 45rem; }
+  .login-sign-up-pass-send-code .wrapper .left .form {
+    padding-top: 64rem;
+    padding-bottom: 45rem; }
+  .login-sign-up-pass-rec .wrapper .left .alert {
+    padding-top: 20rem; } }
 
 @media screen and (max-width: 430px) {
   .post-popup-mobile .popup-wrapper .main .post_content {

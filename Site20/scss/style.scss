@@ -3379,12 +3379,34 @@ footer{
         padding-top: 195rem;
 
         .left{
+            width: 100%;
 
             .form{
                 max-width: 570rem;
                 padding: 63rem 50rem 13rem 50rem;
                 background: #FFFFFF;
                 border-radius: 25rem;
+
+                .form-title{
+                    font-size: 24rem;
+                    line-height: 28rem;
+                    @include Roboto(400);
+                    margin-bottom: 40rem;
+                    color: #02569C;
+                    text-align: center;
+                }
+
+                .alert{
+                    color: #D52B1E;
+                    margin-bottom: 28rem;
+                    text-align: center;
+                    margin-top: -15rem;
+                    display: none;
+
+                    &.active{
+                        display: block;
+                    }
+                }
 
                 input{
                     border: 2rem solid #02569C;
@@ -3404,6 +3426,15 @@ footer{
                         font-size: 22rem;
                         line-height: 26rem;
                     }
+
+                    &.red{
+                        color: #D52B1E;
+                        border-color: #D52B1E;
+
+                        &::placeholder{
+                            color: #D52B1E;
+                        }
+                    }
                 }
 
                 input[type = 'password']{
@@ -3416,7 +3447,7 @@ footer{
                     gap: 20rem;
                 }
 
-                p{
+                p,a,label{
                     font-size: 22rem;
                     line-height: 26rem;
                     text-align: center;
@@ -3465,6 +3496,34 @@ footer{
                     display: block;
                     width: 100%;
                     color: #FFFFFF;
+                    transition: .3s;
+                    opacity: 1;
+
+                    &:hover{
+                        opacity: 0.8;
+                    }
+
+                }
+
+                .sign-btn{
+                    background: #02569C;
+                    border-radius: 40rem;
+                    padding: 20rem;
+                    font-size: 22rem;
+                    line-height: 26rem;
+                    text-align: center;
+                    display: block;
+                    width: 100%;
+                    color: #FFFFFF;
+                    transition: .3s;
+                    opacity: 1;
+                    margin-top: 40rem;
+                    margin-bottom: 33rem;
+    
+                    &:hover{
+                        opacity: 0.8;
+                    }
+    
                 }
 
                 .socials-group{
@@ -3510,6 +3569,156 @@ footer{
         .right{
             padding-top: 21rem;
         }
+    }
+}
+
+.login-code{
+
+    .wrapper{
+
+        .left{
+
+            .form{
+                padding: 50rem;
+
+            }
+        }
+
+        
+    }
+}
+
+.login-sign-up{
+
+    .wrapper{
+
+        .left{
+
+            .form{
+                padding-bottom: 40rem;
+
+                input{
+                    margin-bottom: 30rem;
+                }
+
+                label{
+                    display: block;
+                    margin: 0 auto;
+                    width: fit-content;
+                    position: relative;
+                    margin-bottom: 23rem;
+
+                    &::after{
+                        content: url(../img/svg/checkbox-circle.svg);
+                        position: absolute;
+                        right: calc(100% + 20rem);
+                        top:50%;
+                        transform: translateY(-40%);
+
+                    }
+
+                    &::before{
+                        content: url(../img/svg/checkbox-check.svg);
+                        position: absolute;
+                        right: calc(100% + 26rem);
+                        top: 50%;
+                        transform: translateY(-56%);
+                        opacity: 0;
+                        transition: .3s;
+
+                    }
+                }
+
+                input[type="checkbox"]{
+                    display: none;
+                }
+
+                input[type="checkbox"]:checked + label{
+                    &::before{
+                        opacity: 1;
+
+                    }
+                }
+
+                .forgot{
+                    display: block;
+                    margin: 0 auto;
+                    width: fit-content;
+                }
+
+                .socials-group{
+                    padding-bottom: 11rem;
+                    margin: 0 16rem;
+                    margin-top: 40rem;
+                    margin-bottom: 40rem;
+                    border-bottom: 1px solid #02569C;
+                }
+
+                .create-btn{
+                    max-width: 334px;
+                    margin: 0 auto;
+                }
+
+            }
+            
+        }
+    }
+
+}
+
+.login-sign-up-pass-rec{
+
+    .wrapper{
+
+        .left{
+
+            .form{
+                
+                .alert{
+                    font-size: 20px;
+                    line-height: 23px;
+                }
+
+            }
+        }
+
+        
+    }
+}
+
+.login-sign-up-pass-send-code{
+
+    .wrapper{
+
+        .left{
+
+            .form{
+                
+                a{
+                    display: block;
+                    width: fit-content;
+                    margin: 0 auto;
+                    
+                    &.underlined{
+                        position: relative;
+
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 110%;
+                            top: calc(100% + 10rem);
+                            left: 50%;
+                            transform: translateX(-50%);
+                            height: 1px;
+                            border-bottom: 1px solid #02569C;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        
     }
 }
 
@@ -6749,9 +6958,6 @@ footer{
                         height: -moz-fit-content;
                     }
                 }
-
-                
-
                 
             }
         } 
@@ -6786,7 +6992,7 @@ footer{
                         gap: 0;
                     }
 
-                    p{
+                    p,a,label{
                         font-size: 18rem;
                         line-height: 21rem;   
                     }
@@ -6813,10 +7019,24 @@ footer{
                         }
                     }
 
-                    .create-btn{
+                    .create-btn,.sign-btn{
                         font-size: 20rem;
                         line-height: 23rem; 
                         padding: 16rem;
+                    }
+
+                    .form-title{
+                        display: block !important;
+                        font-size: 20rem;
+                        line-height: 23rem;
+                        text-align: center;
+                        color: #02569C;
+                        @include Roboto(400);
+                        margin-bottom: 20rem;
+                    }
+
+                    .sign-btn{
+                        margin-top: 25rem;
                     }
                 }
                 
@@ -6832,17 +7052,63 @@ footer{
                     }
                 }
 
-                .form-title{
-                    display: block !important;
-                    font-size: 20rem;
-                    line-height: 23rem;
-                    text-align: center;
-                    color: #02569C;
-                    @include Roboto(400);
-                    margin-bottom: 20rem;
-                }
+                
             }
 
+        }
+    }
+
+    .login-sign-up{
+
+        .wrapper{
+
+            .left{
+
+                .form{
+                    padding-top: 64rem;
+                    padding-bottom: 45rem;
+
+                    label{
+                        display: none;
+                    }
+
+                    input{
+                        margin-bottom: 30rem;
+                    }
+
+                    .sign-btn{
+                        margin-bottom: 45rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .login-sign-up-pass-send-code{
+
+        .wrapper{
+
+            .left{
+
+                .form{
+                    padding-top: 64rem;
+                    padding-bottom: 45rem;
+
+                    
+                }
+            }
+        }
+    }
+    
+    .login-sign-up-pass-rec{
+        .wrapper{
+
+            .left{
+
+                .alert{
+                    padding-top: 20rem;
+                }
+            }
         }
     }
 }

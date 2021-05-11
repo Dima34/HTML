@@ -194,8 +194,6 @@ if(WriteNewBlk.length > 0){
   
 }
 
-
-
 // 
 // Etc
 // 
@@ -647,7 +645,6 @@ if(writeAMessagePopup){
 
 }
 
-
 // 
 // Video popup
 // 
@@ -674,7 +671,6 @@ if(videoPopup){
     
   })
 }
-
 
 // 
 // Search popup
@@ -787,7 +783,6 @@ if(Aside.length > 0){
   })
   
 }
-
 
 // 
 // Aside  profile dropdown
@@ -966,4 +961,43 @@ if (BtnUp){
     })
 
   })
+}
+
+// 
+// Login-code alert
+// 
+
+let loginCode = document.querySelector(".login-code");
+
+if(loginCode){
+
+  createBtn = loginCode.querySelector(".create-btn");
+
+  createBtn.addEventListener("click", ()=>{
+    
+    loginCode.querySelector(".alert").classList.add("active");
+    loginCode.querySelector("input").classList.add("red");
+
+
+  })
+
+}
+
+// 
+// login-sign-up-pass-rec alert
+// 
+
+let signUpRec = document.querySelector(".login-sign-up-pass-rec");
+
+if(signUpRec){
+
+  createBtn = signUpRec.querySelector(".sign-btn");
+
+  createBtn.addEventListener("click", ()=>{
+    
+    signUpRec.querySelector(".alert").classList.add("active");
+
+
+  })
+
 }
