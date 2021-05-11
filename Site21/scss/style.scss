@@ -123,6 +123,14 @@ body{
     border-top:1px solid rgba(255, 255, 255, 0.5);;
 }
 
+a{
+    transition: .3s;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1123,6 +1131,8 @@ footer{
             grid-template-columns: 33.33% 33.33% 33.33%;
             border-left: 1px solid rgba(255, 255, 255, 0.5);
             border-right: 1px solid rgba(255, 255, 255, 0.5);
+            padding-top: 101px;
+            padding-bottom: 84px;
         }
 
     }
@@ -1145,6 +1155,88 @@ footer{
             .logo{
                 width: 106px;
                 height: auto;
+                margin: 0 auto;
+                display: block;
+                margin-bottom: 23px;
+            }
+
+            .form{
+                border-top: 1px solid rgba(255, 255, 255, 0.5);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                padding: 33px 21px;
+                background: #232323;
+
+                .title{
+                    font-size: 37px;
+                    line-height: 50px;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                    margin-bottom: 30px;
+                    text-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+                    
+                    font-weight: 400 !important;
+                }
+
+                input, textarea{
+                    border: 1px solid #ACEBFF;
+                    filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.4)); 
+                    padding: 1px 13px; 
+                    font-size: 18px;
+                    line-height: 50px;
+                    display: flex;
+                    align-items: center;
+                    color: #C8FCFF;
+                    display: block;
+                    width: 100%;
+                    background: 0;
+                    margin-bottom: 13px;
+
+                    &::placeholder{
+                        opacity: 1;
+                        color: #C8FCFF;
+                        font-size: 18px;
+                        line-height: 50px;
+                    }
+                }
+
+                textarea{
+                    resize: none;
+                    height: 80px;
+                }
+
+                .submit{
+                    box-shadow: (0px 4px 60px rgba(0, 0, 0, 0.6));
+                    display: block;
+                    width: 100%;
+                    height: fit-content;
+                    padding: 13px;
+                    font-size: 35px;
+                    line-height: 24px;
+                    align-items: center;
+                    letter-spacing: 0.03em;
+                    color: #202020;
+                    margin-bottom: 31px;
+                    background: url(../img/ocean-text-bg.png) center no-repeat;
+                    background-size: cover;
+                    border: 0;
+                    font-weight: 400 !important;
+                    transition: .3s;
+
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+
+            }
+
+            .contacts{
+                display: flex;
+                justify-content: center;
+                
+                a:nth-child(2){
+                    margin: 0 40px;
+                }
             }
             
         }

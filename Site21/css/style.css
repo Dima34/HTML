@@ -87,6 +87,12 @@ body {
   height: 1px;
   border-top: 1px solid rgba(255, 255, 255, 0.5); }
 
+a {
+  transition: .3s; }
+
+a:hover {
+  opacity: 0.8; }
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -746,7 +752,9 @@ footer {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.5); }
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 101px;
+    padding-bottom: 84px; }
 
 .contacts .part1 .col1 {
   padding-top: 255px; }
@@ -759,7 +767,69 @@ footer {
   border-right: 1px solid rgba(255, 255, 255, 0.5); }
   .contacts .part1 .col2 .logo {
     width: 106px;
-    height: auto; }
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 23px; }
+  .contacts .part1 .col2 .form {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 33px 21px;
+    background: #232323; }
+    .contacts .part1 .col2 .form .title {
+      font-size: 37px;
+      line-height: 50px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      text-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+      font-weight: 400 !important; }
+    .contacts .part1 .col2 .form input, .contacts .part1 .col2 .form textarea {
+      border: 1px solid #ACEBFF;
+      filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.4));
+      padding: 1px 13px;
+      font-size: 18px;
+      line-height: 50px;
+      display: flex;
+      align-items: center;
+      color: #C8FCFF;
+      display: block;
+      width: 100%;
+      background: 0;
+      margin-bottom: 13px; }
+      .contacts .part1 .col2 .form input::placeholder, .contacts .part1 .col2 .form textarea::placeholder {
+        opacity: 1;
+        color: #C8FCFF;
+        font-size: 18px;
+        line-height: 50px; }
+    .contacts .part1 .col2 .form textarea {
+      resize: none;
+      height: 80px; }
+    .contacts .part1 .col2 .form .submit {
+      box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.6);
+      display: block;
+      width: 100%;
+      height: fit-content;
+      padding: 13px;
+      font-size: 35px;
+      line-height: 24px;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: #202020;
+      margin-bottom: 31px;
+      background: url(../img/ocean-text-bg.png) center no-repeat;
+      background-size: cover;
+      border: 0;
+      font-weight: 400 !important;
+      transition: .3s; }
+      .contacts .part1 .col2 .form .submit:hover {
+        opacity: 0.8; }
+  .contacts .part1 .col2 .contacts {
+    display: flex;
+    justify-content: center; }
+    .contacts .part1 .col2 .contacts a:nth-child(2) {
+      margin: 0 40px; }
 
 .contacts .part1 .col3 {
   padding-top: 155px; }
