@@ -11,6 +11,10 @@ function getScale(){
   if(innerW>=1820){
       return 1;
   } else if (innerW >= 1460){
+      if(document.querySelector("div.login")){
+        return 0.6;
+      }
+      
       return 0.8;
   }
 }
