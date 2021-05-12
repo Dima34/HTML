@@ -60,24 +60,28 @@ if(timerGroup){
 
     // while(nearTime == undefined || x >= timeArray.length){
 
-    //   if((timeArray[x].hours - currentH) >= 0){
-
-    //     if(timeArray[x].minutes - currentM > 0){
-
-    //       console.log("time array minutes - ",timeArray[x].minutes);
-    //       nearTime = x;
-    //       break;
-
-    //     }
-        
-    //   } else{
-    //     if(timeArray.length > x){
-
-    //       x++;
-
-    //     }
-    //   }
+    //   
     // }
+
+    do{
+      if((timeArray[x].hours - currentH) >= 0){
+
+            if(timeArray[x].minutes - currentM > 0){
+    
+              console.log("time array minutes - ",timeArray[x].minutes);
+              nearTime = x;
+              break;
+    
+            }
+            
+          } else{
+            if(timeArray.length > x){
+    
+              x++;
+    
+            }
+          }
+    }while(nearTime == undefined || x >= timeArray.length);
 
    
     return nearTime;
