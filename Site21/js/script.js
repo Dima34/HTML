@@ -134,28 +134,30 @@ if(timerGroup){
 
   function setTimerByList(timeObj){
     let date = new Date;
+
+    let M, S, H
     
     if(timeObj.hours > 0 && timeObj.hours <= 9){
 
-      timerH.innerText = `0${timeObj.hours}`;
+      H = `0${timeObj.hours}`;
 
     } else{
 
-      timerH.innerText = timeObj.hours;
+      H= timeObj.hours;
 
     }
 
-    timerM.innerText = timeObj.minutes;
+    M = timeObj.minutes - 1;
+  
+    S = 60 - date.getSeconds();
 
-    if(60 - date.getSeconds() <= 9){
+    convertedTime = getFormattedTime({hours:H,minutes:M,seconds:S})
 
-      timerS.innerText = `0${60 - date.getSeconds()}`;
+    console.log("converted ", convertedTime);
 
-    } else{
-
-      timerS.innerText = 60 - date.getSeconds();
-
-    }
+    timerH.innerText = convertedTime.hours;
+    timerM.innerText = convertedTime.minutes;
+    timerS.innerText = convertedTime.seconds;
     
   }
 
@@ -287,6 +289,10 @@ if(timerGroup){
     else{
       formattedS = tObj.seconds
     }
+
+    console.log(formattedH);
+    console.log(formattedM);
+    console.log(formattedS);
 
     return {hours : formattedH, minutes : formattedM, seconds : formattedS}
 
