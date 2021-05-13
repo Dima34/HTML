@@ -407,6 +407,23 @@ header{
                 }
             }
 
+            .timer-alert{
+                font-size: 30px;
+                line-height: 53px;
+                margin-top: 13px;
+                letter-spacing: 0.04em;
+                color: #FF2828;
+                font-weight: 400 !important;
+                display: none;
+            }
+
+            &.ended{
+                margin-bottom: 0;
+
+                .timer-alert{
+                    display: block;
+                }
+            }
         }
     }
 

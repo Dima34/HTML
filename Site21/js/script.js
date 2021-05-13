@@ -22,11 +22,14 @@ if(timerGroup){
 
   let date = new Date();
 
-  SetTimer();
+  initTimer();
 
-  setInterval(updateTimer, 1000);
+  if(!document.querySelector(".timer").classList.contains("ended")){
+    setInterval(updateTimer, 1000);
+  }
+  
 
-  function SetTimer(){
+  function initTimer(){
     
     timerGroup.setAttribute("day", convertDay(date.getDay()));
 
@@ -43,52 +46,38 @@ if(timerGroup){
 
     });
 
-
-    console.log(getNearTime(timeList)); 
-
-  }
-
-  function getNearTime(timeArray){
-
-    let currentH = date.getHours();
-    let currentM = date.getMinutes();
-    let currentS = date.getSeconds();
-
-    let nearTime;
-    x = 0;
+    let nearTime = getNearTime(timeList);
 
 
-    // while(nearTime == undefined || x >= timeArray.length){
+    if(nearTime.hours != undefined){
 
-    //   
-    // }
+      timeLeft = getLeftTime(nearTime);
 
-    do{
-      if((timeArray[x].hours - currentH) >= 0){
+      setTimerByList(timeLeft);
 
-            if(timeArray[x].minutes - currentM > 0){
+    } else{
+
+      setTimer("00", "00", "00")
+      document.querySelector(".timer").classList.add("ended")
+    }
     
-              console.log("time array minutes - ",timeArray[x].minutes);
-              nearTime = x;
-              break;
-    
-            }
-            
-          } else{
-            if(timeArray.length > x){
-    
-              x++;
-    
-            }
-          }
-    }while(nearTime == undefined || x >= timeArray.length);
-
-   
-    return nearTime;
   }
 
   function updateTimer(){
     date = new Date();
+
+    let currentDate = {};
+
+    currentDate.H = Number(timerH.textContent);
+    currentDate.M = Number(timerM.textContent);
+    currentDate.S = Number(timerS.textContent);
+
+    console.log("update");
+
+    // console.log(`CurrentH - ${currentDate.H}`);
+    // console.log(`CurrentM - ${currentDate.M}`);
+    // console.log(`CurrentS - ${currentDate.S}`);
+    // console.log("----");
 
   }
 
@@ -96,13 +85,105 @@ if(timerGroup){
     return dateBlock.querySelectorAll(".day")[dayNum]
   }
 
-
   function convertDay(dayNum){
 
     let dayArr = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 
     return dayArr[dayNum];
 
+  }
+
+  function setTimerByList(timeObj){
+    let date = new Date;
+    
+    if(timeObj.hours > 0 && timeObj.hours <= 9){
+
+      timerH.innerText = `0${timeObj.hours}`;
+
+    } else{
+
+      timerH.innerText = timeObj.hours;
+
+    }
+
+    timerM.innerText = timeObj.minutes;
+
+    if(60 - date.getSeconds() <= 9){
+
+      timerS.innerText = `0${60 - date.getSeconds()}`;
+
+    } else{
+
+      timerS.innerText = 60 - date.getSeconds();
+
+    }
+    
+  }
+
+  function setTimer(H, M, S){
+
+    timerH.innerText = H;
+    timerM.innerText = M;
+    timerS.innerText = S;
+
+  }
+
+  function getNearTime(timeArray){
+    let currentH = date.getHours();
+    let currentM = date.getMinutes();
+
+    let nearTime = {hours : undefined, minutes : undefined};
+   
+    for (let i = 0; i < timeArray.length; i++) {
+      
+
+      if(timeArray[i].hours - currentH >= 0){
+        
+
+        if(timeArray[i].hours == currentH){
+
+          if(timeArray[i].minutes > currentM){
+            // console.log("We have a ",timeArray[i].hours, ":", timeArray[i].minutes );
+
+            nearTime = {hours : timeArray[i].hours, minutes : timeArray[i].minutes};
+            break;
+          }
+
+        } else{
+          // console.log("We have a ",timeArray[i].hours, ":", timeArray[i].minutes );
+
+          nearTime = {hours : timeArray[i].hours, minutes : timeArray[i].minutes};
+          break;
+        }
+
+      }
+    }        
+   
+    return nearTime;
+  }
+
+  function getLeftTime(timeObject){
+    let date = new Date;
+    
+    let leftMinutes = timeObject.minutes - date.getMinutes();
+    let leftHours = timeObject.hours - date.getHours();
+
+    if(leftMinutes < 0){
+
+      leftMinutes = 60+ (leftMinutes);
+      leftHours--;
+
+    }
+
+    // console.log(" ");
+    // console.log("----------------GET LEFT TIME DEBUG-------------------");
+    // console.log(` Input time - ${timeObject.hours}:${timeObject.minutes}`);
+    // console.log(` Current time - ${date.getHours()}:${date.getMinutes()}`);
+    // console.log(` Differance - ${leftHours}:${leftMinutes}`);
+    // console.log("------------------------------------------------------");
+    // console.log(" ");
+
+    return {hours : leftHours, minutes : leftMinutes}
   }
 
 }

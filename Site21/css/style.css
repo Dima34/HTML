@@ -283,6 +283,18 @@ header {
               top: 39px; }
           .departure .wrapper .timer .timer-group .timer-item:nth-child(3) .box::after, .departure .wrapper .timer .timer-group .timer-item:nth-child(3) .box::before {
             display: none; }
+      .departure .wrapper .timer .timer-alert {
+        font-size: 30px;
+        line-height: 53px;
+        margin-top: 13px;
+        letter-spacing: 0.04em;
+        color: #FF2828;
+        font-weight: 400 !important;
+        display: none; }
+      .departure .wrapper .timer.ended {
+        margin-bottom: 0; }
+        .departure .wrapper .timer.ended .timer-alert {
+          display: block; }
   .departure .run-line .run-wrapper {
     display: flex;
     flex-direction: row;
