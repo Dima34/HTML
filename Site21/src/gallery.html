@@ -95,6 +95,9 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            autoplay: {
+                delay: 0.5,
+            },
         });
 
         let tertiaryLeft;
@@ -102,9 +105,11 @@
         let prevSlideIndex;
         let nextSlideIndex;
 
-        swiper.on('beforeInit', function () {
-            console.log(init);
-        });
+        setTimeout(()=>{
+            swiper.autoplay.stop()
+        } , 10);
+
+           
 
         swiper.on('slideChangeTransitionStart', function () {
             
