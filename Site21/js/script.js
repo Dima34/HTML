@@ -24,11 +24,12 @@ if(timerGroup){
 
   initTimer();
 
+  let timerId
+
   if(!document.querySelector(".timer").classList.contains("ended")){
-    setInterval(updateTimer, 1000);
+    timerId = setInterval(updateTimer, 1000);
   }
   
-
   function initTimer(){
     
     timerGroup.setAttribute("day", convertDay(date.getDay()));
@@ -68,16 +69,54 @@ if(timerGroup){
 
     let currentDate = {};
 
-    currentDate.H = Number(timerH.textContent);
-    currentDate.M = Number(timerM.textContent);
-    currentDate.S = Number(timerS.textContent);
+    currentDate.hours = Number(timerH.textContent);
+    currentDate.minutes = Number(timerM.textContent);
+    currentDate.seconds = Number(timerS.textContent);
 
-    console.log("update");
+    newTime = getDecreasedSecond(currentDate);
 
-    // console.log(`CurrentH - ${currentDate.H}`);
-    // console.log(`CurrentM - ${currentDate.M}`);
-    // console.log(`CurrentS - ${currentDate.S}`);
-    // console.log("----");
+    if(newTime.hours == 0 && newTime.minutes == 0 && newTime. seconds == 0){
+
+      let dayBlock = GetCurrentDateblock(date.getDay());
+
+      let timeList = [];
+
+      dayBlock.querySelectorAll("span").forEach((el)=>{
+
+        let hours = el.innerText.slice(0, el.innerText.indexOf(":"));
+        let minutes = el.innerText.slice(el.innerText.indexOf(":")+1);
+
+        timeList.push({hours:hours,minutes});
+
+      });
+
+
+      nearTime = getNearTime(timeList);
+
+      console.log(nearTime);
+
+      if(nearTime.hours != undefined){
+
+        console.log("not");
+        timeLeft = getLeftTime(nearTime);
+  
+        setTimerByList(timeLeft);
+  
+      } else{
+  
+        setTimer("00", "00", "00")
+        document.querySelector(".timer").classList.add("ended")
+        clearInterval(timerId);
+        console.log("cleared");
+      }
+
+    } else{
+      timerH.innerText = newTime.hours;
+      timerM.innerText = newTime.minutes;
+      timerS.innerText = newTime.seconds;
+    }
+
+    
 
   }
 
@@ -184,6 +223,73 @@ if(timerGroup){
     // console.log(" ");
 
     return {hours : leftHours, minutes : leftMinutes}
+  }
+
+  function getDecreasedSecond(timeObject = {hours: 0, minutes: 0, seconds:0}){
+
+    let newH, newM, newS;
+
+    if(timeObject.seconds == 1){
+
+      if(timeObject.minutes == 0){
+
+        if(timeObject.hours == 0){
+          newM = 0;
+          newH = 0;
+          newS = 0;
+        } else{
+          newH = timeObject.hours - 1;
+          newM = 0;
+          newS = 0;
+        }
+      } else{
+
+        newH = timeObject.hours;
+        newM = timeObject.minutes - 1;
+        newS = 59;
+
+      }
+    } else{
+      
+      newH = timeObject.hours;
+      newM = timeObject.minutes;
+      newS = timeObject.seconds - 1;
+
+    }
+      
+
+    return getFormattedTime({hours: newH, minutes: newM, seconds:newS})
+  }
+
+  function getFormattedTime(tObj){
+
+    let formattedH;
+    let formattedM;
+    let formattedS;
+
+    if(tObj.hours <= 9){
+      formattedH = `0${tObj.hours}`
+    } 
+    else{
+      formattedH = tObj.hours
+    }
+    
+    if(tObj.minutes <= 9){
+      formattedM = `0${tObj.minutes}`
+    }
+    else{
+      formattedM = tObj.minutes
+    }
+
+    if(tObj.seconds <= 9){
+      formattedS = `0${tObj.seconds}`
+    }
+    else{
+      formattedS = tObj.seconds
+    }
+
+    return {hours : formattedH, minutes : formattedM, seconds : formattedS}
+
   }
 
 }
