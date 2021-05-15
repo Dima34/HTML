@@ -2501,6 +2501,7 @@ footer .footer_company-name {
     display: block;
     margin: 0 auto;
     width: fit-content;
+    width: -moz-fit-content;
     position: relative;
     margin-bottom: 23rem; }
     .login-sign-up .wrapper .left .form label::after {
@@ -2524,7 +2525,8 @@ footer .footer_company-name {
   .login-sign-up .wrapper .left .form .forgot {
     display: block;
     margin: 0 auto;
-    width: fit-content; }
+    width: fit-content;
+    width: -moz-fit-content; }
   .login-sign-up .wrapper .left .form .socials-group {
     padding-bottom: 11rem;
     margin: 0 16rem;
@@ -2542,6 +2544,7 @@ footer .footer_company-name {
 .login-sign-up-pass-send-code .wrapper .left .form a {
   display: block;
   width: fit-content;
+  width: -moz-fit-content;
   margin: 0 auto; }
   .login-sign-up-pass-send-code .wrapper .left .form a.underlined {
     position: relative; }

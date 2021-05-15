@@ -3610,6 +3610,7 @@ footer{
                     display: block;
                     margin: 0 auto;
                     width: fit-content;
+                    width: -moz-fit-content;
                     position: relative;
                     margin-bottom: 23rem;
 
@@ -3649,6 +3650,7 @@ footer{
                     display: block;
                     margin: 0 auto;
                     width: fit-content;
+                    width: -moz-fit-content;
                 }
 
                 .socials-group{
@@ -3702,6 +3704,7 @@ footer{
                 a{
                     display: block;
                     width: fit-content;
+                    width: -moz-fit-content;
                     margin: 0 auto;
                     
                     &.underlined{
