@@ -300,8 +300,6 @@ if(timerGroup){
 
 }
 
-
-
 // 
 // Runline
 // 
@@ -333,3 +331,23 @@ if(Runline){
   }, 20)  
 
 }
+
+// 
+// ovalAnumation
+// 
+
+// let ovalRunline = document.querySelector(".ovalRunline");
+
+// if(ovalRunline){
+
+//   let Text = ovalRunline.querySelector("text")
+
+//   let rotationX = Text.getAttribute("x");
+  
+//   setInterval(()=>{
+//     rotationX++;
+//     Text.setAttribute("x", rotationX)
+    
+//   }, 10)
+
+// }
