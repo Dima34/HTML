@@ -861,11 +861,11 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-/* -------=======OUR PLACE======------- */
+/* --------=======CRUISES======-------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
-#our-place header {
+.header-wave-bg header {
   background: url(../img/header-background.png);
   background-size: cover; }
 
@@ -893,45 +893,45 @@ footer {
   position: relative;
   z-index: 2; }
 
-.our-place {
+.cruises {
   background: #232323;
   padding-top: 102px; }
-  .our-place .wrapper {
+  .cruises .wrapper {
     border-right: 1px solid rgba(255, 255, 255, 0.55);
     border-left: 1px solid rgba(255, 255, 255, 0.55);
     padding-top: 25px; }
-    .our-place .wrapper .logo {
+    .cruises .wrapper .logo {
       margin: 0 auto;
       display: block;
       width: fit-content;
       height: fit-content;
       margin-bottom: -5px; }
-    .our-place .wrapper .intro {
+    .cruises .wrapper .intro {
       padding: 0 54px;
       margin-top: -33px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       margin-bottom: 83px; }
-      .our-place .wrapper .intro p {
+      .cruises .wrapper .intro p {
         font-size: 22px;
         line-height: 32px;
         letter-spacing: 0.01em; }
-      .our-place .wrapper .intro .line {
+      .cruises .wrapper .intro .line {
         display: flex;
         flex-direction: column; }
-      .our-place .wrapper .intro .line1 {
+      .cruises .wrapper .intro .line1 {
         padding-top: 63px; }
-        .our-place .wrapper .intro .line1 p {
+        .cruises .wrapper .intro .line1 p {
           margin-bottom: 52px;
           max-width: 370px; }
-        .our-place .wrapper .intro .line1 img {
+        .cruises .wrapper .intro .line1 img {
           max-width: 248px;
           max-height: 484px;
           margin-left: -8px;
           margin-top: -8px; }
-      .our-place .wrapper .intro .line2 {
+      .cruises .wrapper .intro .line2 {
         margin-left: -88px; }
-        .our-place .wrapper .intro .line2 img {
+        .cruises .wrapper .intro .line2 img {
           width: 100%;
           height: 460px;
           object-fit: cover;
@@ -939,34 +939,34 @@ footer {
           max-width: 398px;
           margin-left: auto;
           display: block; }
-        .our-place .wrapper .intro .line2 p {
+        .cruises .wrapper .intro .line2 p {
           max-width: 401px; }
-      .our-place .wrapper .intro .line3 {
+      .cruises .wrapper .intro .line3 {
         margin-left: -2px; }
-        .our-place .wrapper .intro .line3 img {
+        .cruises .wrapper .intro .line3 img {
           margin-left: auto;
           margin-top: -25px;
           max-width: 270px;
           max-height: 502px;
           margin-bottom: 29px; }
-    .our-place .wrapper .shedule {
+    .cruises .wrapper .shedule {
       padding: 0 54px;
       margin-bottom: 110px;
       display: grid;
       grid-template-columns: 1fr 1fr; }
-      .our-place .wrapper .shedule .big-title {
+      .cruises .wrapper .shedule .big-title {
         grid-column: 1/3;
         margin-bottom: 60px; }
-      .our-place .wrapper .shedule p {
+      .cruises .wrapper .shedule p {
         font-size: 22px;
         line-height: 32px;
         letter-spacing: 0.006em; }
-      .our-place .wrapper .shedule .shedule-block .groupbox {
+      .cruises .wrapper .shedule .shedule-block .groupbox {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%; }
-      .our-place .wrapper .shedule .shedule-block .header {
+      .cruises .wrapper .shedule .shedule-block .header {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -974,19 +974,19 @@ footer {
         max-width: 320px;
         flex-shrink: 0;
         width: 100%; }
-        .our-place .wrapper .shedule .shedule-block .header p {
+        .cruises .wrapper .shedule .shedule-block .header p {
           font-size: 24px;
           line-height: 33px;
           letter-spacing: 0.01em; }
-          .our-place .wrapper .shedule .shedule-block .header p:nth-child(1) {
+          .cruises .wrapper .shedule .shedule-block .header p:nth-child(1) {
             align-self: flex-start; }
-          .our-place .wrapper .shedule .shedule-block .header p:nth-child(2) {
+          .cruises .wrapper .shedule .shedule-block .header p:nth-child(2) {
             margin-right: 35px;
             margin-top: -15px; }
-          .our-place .wrapper .shedule .shedule-block .header p:nth-child(3) {
+          .cruises .wrapper .shedule .shedule-block .header p:nth-child(3) {
             align-self: flex-end;
             margin-top: -10px; }
-      .our-place .wrapper .shedule .shedule-block .main {
+      .cruises .wrapper .shedule .shedule-block .main {
         padding-top: 43px;
         border-top: 1px solid rgba(255, 255, 255, 0.6);
         width: 100%;
@@ -994,40 +994,40 @@ footer {
         flex-direction: column;
         align-items: center;
         padding-bottom: 27px; }
-        .our-place .wrapper .shedule .shedule-block .main p {
+        .cruises .wrapper .shedule .shedule-block .main p {
           font-size: 25px;
           line-height: 34px;
           letter-spacing: 0.01em;
           color: #FFFFFF;
           margin-bottom: 7px; }
-          .our-place .wrapper .shedule .shedule-block .main p:last-child {
+          .cruises .wrapper .shedule .shedule-block .main p:last-child {
             margin-bottom: 0; }
-      .our-place .wrapper .shedule .left > p {
+      .cruises .wrapper .shedule .left > p {
         margin-bottom: 25px;
         max-width: 598px;
         width: 100%; }
-      .our-place .wrapper .shedule .left .shedule-block {
+      .cruises .wrapper .shedule .left .shedule-block {
         margin-top: 70px;
         max-width: 539px;
         box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.7); }
-      .our-place .wrapper .shedule .right {
+      .cruises .wrapper .shedule .right {
         padding-left: 90px; }
-        .our-place .wrapper .shedule .right .shedule-block .header {
+        .cruises .wrapper .shedule .right .shedule-block .header {
           padding: 20px 0; }
-          .our-place .wrapper .shedule .right .shedule-block .header p:nth-child(1) {
+          .cruises .wrapper .shedule .right .shedule-block .header p:nth-child(1) {
             padding-left: 8px; }
-          .our-place .wrapper .shedule .right .shedule-block .header p:nth-child(2) {
+          .cruises .wrapper .shedule .right .shedule-block .header p:nth-child(2) {
             margin-right: -5px; }
-          .our-place .wrapper .shedule .right .shedule-block .header p:nth-child(3) {
+          .cruises .wrapper .shedule .right .shedule-block .header p:nth-child(3) {
             padding-right: 15px; }
-        .our-place .wrapper .shedule .right .shedule-block .main {
+        .cruises .wrapper .shedule .right .shedule-block .main {
           padding-top: 25px; }
-    .our-place .wrapper .arabella-gallery {
+    .cruises .wrapper .arabella-gallery {
       position: relative;
       padding-bottom: 67px; }
-      .our-place .wrapper .arabella-gallery .big-title {
+      .cruises .wrapper .arabella-gallery .big-title {
         margin-bottom: 56px; }
-      .our-place .wrapper .arabella-gallery .link {
+      .cruises .wrapper .arabella-gallery .link {
         font-size: 24px;
         line-height: 33px;
         letter-spacing: 0.05em;
@@ -1038,84 +1038,84 @@ footer {
         padding-right: 58px;
         position: relative;
         margin-bottom: 17px; }
-        .our-place .wrapper .arabella-gallery .link::after {
+        .cruises .wrapper .arabella-gallery .link::after {
           content: url(../img/link-arrow.png);
           position: absolute;
           right: -1px;
           transition: .3s; }
-        .our-place .wrapper .arabella-gallery .link:hover::after {
+        .cruises .wrapper .arabella-gallery .link:hover::after {
           right: -5px; }
-      .our-place .wrapper .arabella-gallery .oval {
+      .cruises .wrapper .arabella-gallery .oval {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         width: 777px;
         top: 230px; }
-        .our-place .wrapper .arabella-gallery .oval svg textPath {
+        .cruises .wrapper .arabella-gallery .oval svg textPath {
           font-size: 16px;
           line-height: 21px;
           letter-spacing: 0.058em;
           text-transform: uppercase;
           font-family: 'Playfair Display' !important;
           fill: white; }
-      .our-place .wrapper .arabella-gallery .gallery-swiper {
+      .cruises .wrapper .arabella-gallery .gallery-swiper {
         height: 500px;
         overflow: visible;
         grid-column: 1/6;
         grid-row: 1/2;
         width: 100%;
         transform: translateX(-28px); }
-        .our-place .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper {
+        .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper {
           display: flex;
           flex-direction: row;
           align-items: center; }
-          .our-place .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide {
+          .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide {
             height: 155px !important;
             width: 230px !important;
             transition: .3s;
             opacity: 0;
             margin: 0 17px;
             border: 1px solid rgba(255, 255, 255, 0.5); }
-            .our-place .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide img {
+            .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide img {
               width: 100%;
               height: 100%;
               object-fit: cover;
               transition: .3s; }
-          .our-place .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-active {
+          .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-active {
             width: 409px !important;
             height: 296px !important;
             opacity: 1; }
-          .our-place .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-next, .our-place .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-prev {
+          .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-next, .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-prev {
             opacity: 1; }
-        .our-place .wrapper .arabella-gallery .gallery-swiper .swiper-button-next, .our-place .wrapper .arabella-gallery .gallery-swiper .swiper-button-prev {
+        .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-next, .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-prev {
           width: fit-content;
           height: fit-content; }
-          .our-place .wrapper .arabella-gallery .gallery-swiper .swiper-button-next img, .our-place .wrapper .arabella-gallery .gallery-swiper .swiper-button-prev img {
+          .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-next img, .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-prev img {
             width: 80px;
             height: 80px; }
-          .our-place .wrapper .arabella-gallery .gallery-swiper .swiper-button-next:after, .our-place .wrapper .arabella-gallery .gallery-swiper .swiper-button-prev:after {
+          .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-next:after, .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-prev:after {
             display: none; }
-        .our-place .wrapper .arabella-gallery .gallery-swiper .swiper-button-next {
+        .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-next {
           right: -29px;
           top: 46.5%;
           transform: scale(-1, 1); }
-        .our-place .wrapper .arabella-gallery .gallery-swiper .swiper-button-prev {
+        .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-prev {
           left: 27px;
           top: 46.5%; }
-    .our-place .wrapper .alcohol {
+    .cruises .wrapper .alcohol {
       margin-bottom: 110px; }
-      .our-place .wrapper .alcohol .big-title {
+      .cruises .wrapper .alcohol .big-title {
         font-size: 53px;
         line-height: 77px;
         letter-spacing: 0.03em;
         margin-bottom: 53px; }
-      .our-place .wrapper .alcohol > p {
+      .cruises .wrapper .alcohol > p {
         font-size: 24px;
         line-height: 32px;
         margin-bottom: 25px;
         letter-spacing: 0.01em;
         text-align: center; }
-      .our-place .wrapper .alcohol .drinks {
+      .cruises .wrapper .alcohol .drinks {
         display: grid;
         grid-template-columns: 1fr 1fr;
         max-width: 1100px;
@@ -1123,61 +1123,61 @@ footer {
         margin-top: 60px;
         column-gap: 20px;
         row-gap: 60px; }
-        .our-place .wrapper .alcohol .drinks .drink {
+        .cruises .wrapper .alcohol .drinks .drink {
           max-width: 520px;
           background: #232323;
           border: 1px solid rgba(255, 255, 255, 0.6);
           box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.4);
           display: grid;
           grid-template-columns: 141px 1fr; }
-          .our-place .wrapper .alcohol .drinks .drink:nth-child(2n) {
+          .cruises .wrapper .alcohol .drinks .drink:nth-child(2n) {
             justify-self: end;
             width: 100%; }
-          .our-place .wrapper .alcohol .drinks .drink .left {
+          .cruises .wrapper .alcohol .drinks .drink .left {
             width: 100%;
             min-height: 181px;
             border-right: 1px solid rgba(255, 255, 255, 0.6); }
-            .our-place .wrapper .alcohol .drinks .drink .left img {
+            .cruises .wrapper .alcohol .drinks .drink .left img {
               width: 100%;
               height: 100%;
               object-fit: cover; }
-          .our-place .wrapper .alcohol .drinks .drink .right {
+          .cruises .wrapper .alcohol .drinks .drink .right {
             width: 100%; }
-            .our-place .wrapper .alcohol .drinks .drink .right .header {
+            .cruises .wrapper .alcohol .drinks .drink .right .header {
               display: flex;
               padding: 17px 10px 18px 11px;
               justify-content: space-between;
               align-items: center;
               gap: 15px; }
-              .our-place .wrapper .alcohol .drinks .drink .right .header h3, .our-place .wrapper .alcohol .drinks .drink .right .header p {
+              .cruises .wrapper .alcohol .drinks .drink .right .header h3, .cruises .wrapper .alcohol .drinks .drink .right .header p {
                 font-size: 20px;
                 line-height: 27px;
                 font-weight: 400 !important; }
-            .our-place .wrapper .alcohol .drinks .drink .right .main {
+            .cruises .wrapper .alcohol .drinks .drink .right .main {
               padding: 8px 11px;
               border-top: 1px solid rgba(255, 255, 255, 0.4); }
-              .our-place .wrapper .alcohol .drinks .drink .right .main p {
+              .cruises .wrapper .alcohol .drinks .drink .right .main p {
                 font-size: 18px;
                 line-height: 25px; }
-    .our-place .wrapper .cocktails .big-title {
+    .cruises .wrapper .cocktails .big-title {
       margin-bottom: 65px; }
-    .our-place .wrapper .cocktails .cocktails-group {
+    .cruises .wrapper .cocktails .cocktails-group {
       max-width: 955px;
       margin: 0 auto;
       display: flex;
       gap: 70px;
       flex-wrap: wrap;
       justify-content: center; }
-      .our-place .wrapper .cocktails .cocktails-group .cocktail {
+      .cruises .wrapper .cocktails .cocktails-group .cocktail {
         padding: 22px;
         background: #232323;
         border: 1px solid rgba(255, 255, 255, 0.5); }
-        .our-place .wrapper .cocktails .cocktails-group .cocktail img {
+        .cruises .wrapper .cocktails .cocktails-group .cocktail img {
           max-height: 230px;
           width: 100%;
           object-fit: cover;
           margin-bottom: 16px; }
-        .our-place .wrapper .cocktails .cocktails-group .cocktail p {
+        .cruises .wrapper .cocktails .cocktails-group .cocktail p {
           font-family: 'Playfair Display' !important;
           font-size: 24px;
           line-height: 50px;
@@ -1235,5 +1235,289 @@ footer {
         margin-left: auto; }
       .social-events .event-block.reversed .right img {
         border-radius: 0%; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======OUR PLACE======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.subtitle {
+  font-size: 24px;
+  line-height: 35px;
+  font-family: 'EB Garamond' !important;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase; }
+
+.subitle-subscription {
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  font-family: 'EB Garamond' !important;
+  width: 100%;
+  text-align: right;
+  margin: 30px 0;
+  white-space: nowrap; }
+
+.our-place {
+  background: #232323;
+  padding-top: 102px; }
+  .our-place .wrapper {
+    border-right: 1px solid rgba(255, 255, 255, 0.55);
+    border-left: 1px solid rgba(255, 255, 255, 0.55);
+    padding-top: 18px; }
+    .our-place .wrapper .logo {
+      margin: 0 auto;
+      display: block;
+      width: fit-content;
+      height: fit-content;
+      margin-bottom: -5px; }
+    .our-place .wrapper .intro {
+      display: grid;
+      grid-template-columns: min-content 1fr min-content;
+      padding-top: 41px;
+      margin-bottom: 20px; }
+      .our-place .wrapper .intro .subtitle {
+        max-width: 1060px;
+        display: block;
+        margin: 0 auto;
+        grid-column: 1/4; }
+      .our-place .wrapper .intro .left {
+        grid-column: 1/2;
+        margin-top: -30px; }
+      .our-place .wrapper .intro .center {
+        grid-column: 2/3;
+        max-width: 570px;
+        max-height: 419px;
+        justify-self: center;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+        object-fit: cover;
+        margin-top: 55px; }
+      .our-place .wrapper .intro .right {
+        grid-column: 3/4;
+        margin-top: 159px; }
+    .our-place .wrapper .our-thessaloniki .big-title {
+      margin-bottom: 89px; }
+    .our-place .wrapper .our-thessaloniki .place-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 1047px;
+      padding-left: 38px;
+      margin: 0 auto;
+      margin-bottom: 60px; }
+      .our-place .wrapper .our-thessaloniki .place-block .left {
+        max-width: 451px;
+        max-height: 360px;
+        width: 100%;
+        height: 100%;
+        align-self: center; }
+        .our-place .wrapper .our-thessaloniki .place-block .left img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border: 1px solid rgba(255, 255, 255, 0.6);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4); }
+      .our-place .wrapper .our-thessaloniki .place-block .right {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .our-place .wrapper .our-thessaloniki .place-block .right .text a, .our-place .wrapper .our-thessaloniki .place-block .right .signature {
+          font-family: 'EB Garamond' !important;
+          font-size: 22px;
+          line-height: 29px; }
+        .our-place .wrapper .our-thessaloniki .place-block .right .text {
+          margin-top: auto;
+          text-transform: uppercase; }
+          .our-place .wrapper .our-thessaloniki .place-block .right .text a {
+            position: relative; }
+            .our-place .wrapper .our-thessaloniki .place-block .right .text a::after {
+              content: url(../img/svg/our-place-link-arrow.svg);
+              display: inline-block;
+              transform: translateX(10px);
+              transition: .3s;
+              position: absolute; }
+            .our-place .wrapper .our-thessaloniki .place-block .right .text a:hover::after {
+              transform: translateX(15px); }
+        .our-place .wrapper .our-thessaloniki .place-block .right .signature {
+          margin-top: auto;
+          align-self: flex-end;
+          padding-right: 40px; }
+      .our-place .wrapper .our-thessaloniki .place-block:last-child {
+        margin-bottom: 151px; }
+  .our-place.article .wrapper {
+    padding: 0 55px; }
+    .our-place.article .wrapper .logo {
+      margin-top: 19px; }
+    .our-place.article .wrapper .comment-subtitle {
+      margin-top: 42px;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 30px;
+      letter-spacing: 0.01em; }
+    .our-place.article .wrapper .article-block {
+      margin-bottom: 75px; }
+      .our-place.article .wrapper .article-block .block-title {
+        font-size: 35px;
+        line-height: 46px;
+        font-family: 'EB Garamond' !important;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 35px; }
+      .our-place.article .wrapper .article-block p {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 23px;
+        letter-spacing: 0.01em; }
+        .our-place.article .wrapper .article-block p span {
+          font-family: 'EB Garamond' !important;
+          text-transform: uppercase; }
+      .our-place.article .wrapper .article-block .big-image {
+        max-width: 960px;
+        max-height: 456px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+        margin: 0 auto;
+        margin-top: 55px;
+        margin-bottom: 60px;
+        display: block; }
+      .our-place.article .wrapper .article-block .block-small-title {
+        font-size: 30px;
+        font-family: 'EB Garamond' !important;
+        line-height: 39px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 38px; }
+      .our-place.article .wrapper .article-block .wave-border {
+        max-width: 1015px;
+        margin: 55px auto;
+        padding: 12px; }
+        .our-place.article .wrapper .article-block .wave-border > div {
+          padding: 45px 50px; }
+          .our-place.article .wrapper .article-block .wave-border > div .title {
+            font-size: 24px;
+            line-height: 45px;
+            font-family: 'EB Garamond' !important;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase; }
+        .our-place.article .wrapper .article-block .wave-border .several-items h2, .our-place.article .wrapper .article-block .wave-border .several-items p, .our-place.article .wrapper .article-block .wave-border .several-items a {
+          margin-bottom: 23px; }
+        .our-place.article .wrapper .article-block .wave-border .several-items .title {
+          text-align: left; }
+        .our-place.article .wrapper .article-block .wave-border .several-items p span {
+          font-family: 'Open Sans' !important;
+          font-weight: 400 !important; }
+        .our-place.article .wrapper .article-block .wave-border .several-items a {
+          font-family: 'Open Sans' !important;
+          font-weight: 400 !important; }
+        .our-place.article .wrapper .article-block .wave-border .several-items > *:last-child {
+          margin-bottom: 0; }
+        .our-place.article .wrapper .article-block .wave-border .alert {
+          position: relative; }
+          .our-place.article .wrapper .article-block .wave-border .alert::after {
+            content: url(../img/svg/alert-ico.svg);
+            transform: translateX(15px);
+            position: absolute; }
+    .our-place.article .wrapper .comment-block {
+      max-width: 897px;
+      margin: 0 auto;
+      padding-bottom: 153px; }
+      .our-place.article .wrapper .comment-block .post-views {
+        font-size: 30px;
+        line-height: 32px;
+        font-family: 'EB Garamond' !important;
+        letter-spacing: 0.01em;
+        position: relative;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 70px; }
+        .our-place.article .wrapper .comment-block .post-views::before {
+          content: url(../img/svg/views-ico.svg);
+          margin-right: 9px; }
+      .our-place.article .wrapper .comment-block .title {
+        font-family: 'EB Garamond' !important;
+        font-size: 30px;
+        line-height: 39px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 23px; }
+      .our-place.article .wrapper .comment-block .subtitle {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 30px; }
+      .our-place.article .wrapper .comment-block .inputgroup {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 28px;
+        row-gap: 20px;
+        margin-bottom: 30px; }
+        .our-place.article .wrapper .comment-block .inputgroup textarea {
+          grid-column: 1/4;
+          height: 184px;
+          padding: 19px 22px;
+          resize: none; }
+        .our-place.article .wrapper .comment-block .inputgroup input {
+          padding: 15px 22px; }
+        .our-place.article .wrapper .comment-block .inputgroup textarea, .our-place.article .wrapper .comment-block .inputgroup input {
+          font-size: 22px;
+          line-height: 32px;
+          background: 0;
+          border: 1px solid rgba(255, 255, 255, 0.6); }
+      .our-place.article .wrapper .comment-block input[type="checkbox"] {
+        display: none; }
+      .our-place.article .wrapper .comment-block label {
+        font-size: 22px;
+        line-height: 32px;
+        padding-left: 36px;
+        position: relative;
+        display: block; }
+        .our-place.article .wrapper .comment-block label::after {
+          position: absolute;
+          content: url(../img/svg/checkbox-box.svg);
+          left: 0;
+          top: 0; }
+        .our-place.article .wrapper .comment-block label::before {
+          position: absolute;
+          content: url(../img/svg/checkbox-checked.svg);
+          left: 4px;
+          top: -4px;
+          opacity: 0;
+          transition: .3s; }
+      .our-place.article .wrapper .comment-block input[type="checkbox"]:checked + label::before {
+        opacity: 1; }
+      .our-place.article .wrapper .comment-block .submit {
+        box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.6);
+        display: block;
+        max-width: 357px;
+        width: 100%;
+        height: fit-content;
+        padding: 13px;
+        font-size: 30px;
+        line-height: 47px;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: #202020;
+        margin-bottom: 31px;
+        background: url(../img/ocean-text-bg.png) center no-repeat;
+        background-size: cover;
+        border: 0;
+        font-weight: 400 !important;
+        transition: .3s;
+        margin: 0 auto;
+        margin-top: 35px; }
+        .our-place.article .wrapper .comment-block .submit:hover {
+          opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */
