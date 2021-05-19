@@ -1903,6 +1903,11 @@ footer{
     white-space: nowrap;
 }
 
+.text-centered{
+    text-align: center;
+}
+
+
 .our-place{
     background: #232323;
     padding-top: 102px;
@@ -2074,7 +2079,7 @@ footer{
                     line-height: 32px;
                     margin-bottom: 23px;
                     letter-spacing: 0.01em;
-                    display: block;
+                    
 
                     .bold{
                         font-family: 'Open Sans' !important;
@@ -2087,8 +2092,41 @@ footer{
                         text-transform: uppercase; 
 
                     }
+ 
+                }
 
-                    
+                p{
+                    display: block;
+                }
+
+                .tip-text{
+                    font-size: 70px;
+                    line-height: 60px;
+                    font-family: 'Cormorant' !important;
+                    margin-bottom: 24px;
+                }
+
+                .post-subscription-1{
+                    text-align: right;
+                }
+
+                .post-subscription-2{
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                &>.alert{
+                    position: relative;
+                    display: block;
+                    padding-left: 38px;
+
+                    &::after{
+                        content: url(../img/alert-ico.png);
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
                 }
 
                 .big-image{
@@ -2599,5 +2637,9 @@ footer{
             }
         }
     }
+}
+
+.lh-45{
+    line-height: 45px !important;
 }
 

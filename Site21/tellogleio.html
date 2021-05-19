@@ -12,7 +12,25 @@
 </head>
 
 <body class = "header-wave-bg">
-    @@include('./header.html')
+    <header id="header"> 
+    
+    <div class="wrapper">
+
+        <nav>
+            <ul class="nav__list">
+                <li><a href="./cruise.html">Κρουαζιέρα</a></li>
+                <li><a href="./history.html">Ιστορία</a></li>
+                <li><a href="#">Πειρατικό Κατάστημα</a></li>
+                <li><a href="./our-place.html">Η Θεσσαλονίκη Μας</a></li>
+                <li><a href="#">Cocktail Academy</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact-us.html">Επικοινωνία</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
 
     <div class="our-place article">
         <div class="horizontal-line"></div>
@@ -329,7 +347,52 @@
         <div class="horizontal-line"></div>
     </div>
 
-    @@include('./footer.html')
+    <footer>
+    
+    <img src="./img/footer-bg.png" alt="bg" class="bg">
+    
+    <div class="wrapper">
+
+        <div class="col col1">
+
+            <div class="footer-contacts">
+
+                <a href="#"><img src="./img/svg/footer-inst.svg" alt="contact image"></a>
+                <a href="#"><img src="./img/svg/footer-yt.svg" alt="contact image"></a>
+                <a href="#"><img src="./img/svg/footer-fb.svg" alt="contact image"></a>
+
+            </div>
+
+            <div class="logo-group">
+
+                <img src="./img/svg/footer-logo.svg" alt="logo" class="logo">
+
+                <div class="logo-desc">
+                    <h2 class="logo-title">Arabella Cruise Bar</h2>
+                    <p class="logo-subtitle">4,597 likes</p>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="col col2">
+
+            <img src="./img/footer-flag.png" alt="flag" class="flag">
+            <p class="copryright">© 2020 Arabella Cruise Bar | Πολιτική Απορρήτου</p>
+
+        </div>
+
+        <div class="col col3">
+
+            <p class="contanct">Email: <a href="mailto:boatarabella@gmail.com">boatarabella@gmail.com</a></p>
+            <p class="contanct">Τηλέφωνο: <a href="tel:+306987221040">+30 6987221040</a></p>
+
+        </div>
+
+    </div>
+
+</footer>
    
     <script src="./js/script.js"></script>    
 </body>
