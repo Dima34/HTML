@@ -1302,56 +1302,56 @@ footer {
       .our-place .wrapper .intro .right {
         grid-column: 3/4;
         margin-top: 159px; }
-    .our-place .wrapper .our-thessaloniki .big-title {
-      margin-bottom: 89px; }
-    .our-place .wrapper .our-thessaloniki .place-block {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      max-width: 1047px;
-      padding-left: 38px;
-      margin: 0 auto;
-      margin-bottom: 60px; }
-      .our-place .wrapper .our-thessaloniki .place-block .left {
-        max-width: 451px;
-        max-height: 360px;
-        width: 100%;
-        height: 100%;
-        align-self: center; }
-        .our-place .wrapper .our-thessaloniki .place-block .left img {
+    .our-place .wrapper .our-thessaloniki {
+      padding-bottom: 151px; }
+      .our-place .wrapper .our-thessaloniki .big-title {
+        margin-bottom: 89px; }
+      .our-place .wrapper .our-thessaloniki .place-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 1047px;
+        padding-left: 38px;
+        margin: 0 auto;
+        margin-bottom: 60px; }
+        .our-place .wrapper .our-thessaloniki .place-block .left {
+          max-width: 451px;
+          max-height: 360px;
           width: 100%;
           height: 100%;
-          object-fit: cover;
-          border: 1px solid rgba(255, 255, 255, 0.6);
-          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4); }
-      .our-place .wrapper .our-thessaloniki .place-block .right {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; }
-        .our-place .wrapper .our-thessaloniki .place-block .right .text a, .our-place .wrapper .our-thessaloniki .place-block .right .signature {
-          font-family: 'EB Garamond' !important;
-          font-size: 22px;
-          line-height: 29px; }
-        .our-place .wrapper .our-thessaloniki .place-block .right .text {
-          margin-top: auto;
-          text-transform: uppercase; }
-          .our-place .wrapper .our-thessaloniki .place-block .right .text a {
-            position: relative; }
-            .our-place .wrapper .our-thessaloniki .place-block .right .text a::after {
-              content: url(../img/svg/our-place-link-arrow.svg);
-              display: inline-block;
-              transform: translateX(10px);
-              transition: .3s;
-              position: absolute; }
-            .our-place .wrapper .our-thessaloniki .place-block .right .text a:hover::after {
-              transform: translateX(15px); }
-        .our-place .wrapper .our-thessaloniki .place-block .right .signature {
-          margin-top: auto;
-          align-self: flex-end;
-          padding-right: 40px; }
-      .our-place .wrapper .our-thessaloniki .place-block:last-child {
-        margin-bottom: 151px; }
+          align-self: center; }
+          .our-place .wrapper .our-thessaloniki .place-block .left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4); }
+        .our-place .wrapper .our-thessaloniki .place-block .right {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          .our-place .wrapper .our-thessaloniki .place-block .right .text a, .our-place .wrapper .our-thessaloniki .place-block .right .signature {
+            font-family: 'EB Garamond' !important;
+            font-size: 22px;
+            line-height: 29px; }
+          .our-place .wrapper .our-thessaloniki .place-block .right .text {
+            margin-top: auto;
+            text-transform: uppercase; }
+            .our-place .wrapper .our-thessaloniki .place-block .right .text a {
+              position: relative; }
+              .our-place .wrapper .our-thessaloniki .place-block .right .text a::after {
+                content: url(../img/svg/our-place-link-arrow.svg);
+                display: inline-block;
+                transform: translateX(10px);
+                transition: .3s;
+                position: absolute; }
+              .our-place .wrapper .our-thessaloniki .place-block .right .text a:hover::after {
+                transform: translateX(15px); }
+          .our-place .wrapper .our-thessaloniki .place-block .right .signature {
+            margin-top: auto;
+            align-self: flex-end;
+            padding-right: 40px; }
   .our-place.article .wrapper {
     padding: 0 55px;
     padding-bottom: 153px;
