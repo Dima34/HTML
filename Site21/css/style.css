@@ -1350,9 +1350,9 @@ footer {
       .our-place .wrapper .our-thessaloniki .place-block:last-child {
         margin-bottom: 151px; }
   .our-place.article .wrapper {
-    padding: 0 55px; }
-    .our-place.article .wrapper .logo {
-      margin-top: 19px; }
+    padding: 0 55px;
+    padding-bottom: 153px;
+    padding-top: 19px; }
     .our-place.article .wrapper .comment-subtitle {
       margin-top: 42px;
       font-size: 24px;
@@ -1370,12 +1370,13 @@ footer {
         width: 100%;
         text-align: center;
         margin-bottom: 35px; }
-      .our-place.article .wrapper .article-block p {
+      .our-place.article .wrapper .article-block p, .our-place.article .wrapper .article-block a {
         font-size: 22px;
         line-height: 32px;
         margin-bottom: 23px;
-        letter-spacing: 0.01em; }
-        .our-place.article .wrapper .article-block p span {
+        letter-spacing: 0.01em;
+        display: block; }
+        .our-place.article .wrapper .article-block p span, .our-place.article .wrapper .article-block a span {
           font-family: 'EB Garamond' !important;
           text-transform: uppercase; }
       .our-place.article .wrapper .article-block .big-image {
@@ -1390,6 +1391,45 @@ footer {
         margin-top: 55px;
         margin-bottom: 60px;
         display: block; }
+      .our-place.article .wrapper .article-block .big-rounded-image {
+        max-width: 740px;
+        max-height: 429px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+        margin: 0 auto;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        display: block;
+        border-radius: 50%; }
+      .our-place.article .wrapper .article-block .medium-image {
+        max-width: 640px;
+        max-height: 420px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+        margin: 0 auto;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        display: block; }
+      .our-place.article .wrapper .article-block .img-group-small {
+        max-width: 770px;
+        display: grid;
+        grid-template-columns: 1fr 257px;
+        column-gap: 32px;
+        margin: 0 auto;
+        margin-top: 45px;
+        margin-bottom: 45px; }
+        .our-place.article .wrapper .article-block .img-group-small img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25); }
       .our-place.article .wrapper .article-block .block-small-title {
         font-size: 30px;
         font-family: 'EB Garamond' !important;
@@ -1426,13 +1466,12 @@ footer {
         .our-place.article .wrapper .article-block .wave-border .alert {
           position: relative; }
           .our-place.article .wrapper .article-block .wave-border .alert::after {
-            content: url(../img/svg/alert-ico.svg);
+            content: url(../img/alert-ico.png);
             transform: translateX(15px);
             position: absolute; }
     .our-place.article .wrapper .comment-block {
       max-width: 897px;
-      margin: 0 auto;
-      padding-bottom: 153px; }
+      margin: 0 auto; }
       .our-place.article .wrapper .comment-block .post-views {
         font-size: 30px;
         line-height: 32px;
@@ -1444,7 +1483,7 @@ footer {
         margin: 0 auto;
         margin-bottom: 70px; }
         .our-place.article .wrapper .comment-block .post-views::before {
-          content: url(../img/svg/views-ico.svg);
+          content: url(../img/views-ico.png);
           margin-right: 9px; }
       .our-place.article .wrapper .comment-block .title {
         font-family: 'EB Garamond' !important;
@@ -1519,5 +1558,31 @@ footer {
         margin-top: 35px; }
         .our-place.article .wrapper .comment-block .submit:hover {
           opacity: 0.8; }
+    .our-place.article .wrapper .comment-comments {
+      max-width: 970px;
+      margin: 0 auto;
+      margin-top: 75px; }
+      .our-place.article .wrapper .comment-comments .title {
+        font-family: 'EB Garamond' !important;
+        font-size: 40px;
+        line-height: 32px;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 36px; }
+      .our-place.article .wrapper .comment-comments .comment {
+        padding: 25px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.6);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        margin: 30px; }
+        .our-place.article .wrapper .comment-comments .comment .text {
+          font-size: 22px;
+          line-height: 32px;
+          margin-bottom: 23px; }
+        .our-place.article .wrapper .comment-comments .comment .subsription {
+          font-size: 22px;
+          line-height: 29px; }
+        .our-place.article .wrapper .comment-comments .comment:last-child {
+          margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

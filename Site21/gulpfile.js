@@ -15,7 +15,7 @@ gulp.task("sass-compile", function(){
 })
 
 gulp.task('fileinclude', function() {
-    return gulp.src(['./src/index.html','./src/farmaceutic-museum.html','./src/our-place.html','./src/cruise.html','./src/gallery.html', './src/history.html','./src/contact-us.html'])
+    return gulp.src(['./src/index.html','./src/glasshouse-project.html','./src/farmaceutic-museum.html','./src/our-place.html','./src/cruise.html','./src/gallery.html', './src/history.html','./src/contact-us.html'])
       .pipe(fileinclude({
         prefix: '@@',
         basepath: '@file'
