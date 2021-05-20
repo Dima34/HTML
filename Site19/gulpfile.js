@@ -18,6 +18,8 @@ gulp.task('fileinclude', function() {
     return gulp.src(
       [
         './src/index.html',
+        './src/article.html',
+        './src/tiapedia.html',
         './src/about-us.html',
         './src/contacts.html', 
         './src/what-we-do.html',

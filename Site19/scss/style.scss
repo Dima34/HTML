@@ -654,6 +654,11 @@ header{
                 video{
                     clip-path: url(#mask);
                 }
+
+                &.reversed{
+                    left: unset;
+                    right: calc(100% + 70px);
+                }
             }
 
             #mask{
@@ -685,6 +690,11 @@ header{
                 left: calc(100% + 20px);
                 opacity: 1;
                 pointer-events: none;
+            }
+
+            .reversed{
+                left: unset;
+                right: calc(100% + 50px);
             }
         }
 
@@ -2896,4 +2906,195 @@ footer{
         right: 0;
         top: 451px;
     } 
+}
+
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======TIAPEDIA=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.pedia-intro{
+
+    .wrapper{
+
+
+        &:nth-child(1){
+            padding: 91px 84px 0 84px; 
+        }
+        
+        display: flex;
+        flex-direction: column;
+
+        .intro-logo{
+            margin-bottom: 29px;
+        }
+
+        .intro-title{
+            display: inline-block;
+            font-size: 90px;
+            line-height: 130px;
+            font-family: 'Open Sans' !important;
+            font-weight: 800 !important;
+            color: white;
+            letter-spacing: 0.06em;
+            margin-bottom: 64px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        p{
+            font-size: 35px;
+            line-height: 48px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            @include Open(300);
+            color: white;
+            padding-top: 31px;
+            padding-bottom: 40px;
+        }
+    }
+
+    .split-wave{
+        width: 100vw;
+    }
+
+
+}
+
+.pedia-main{
+    position: relative;
+    margin-top: -18px;
+
+    .white-part{
+        background: #FFFFFF;
+
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 74px;
+            max-width: 1198px;
+
+            .article-block{
+                background: black;
+                padding: 24px 30px 34px 30px;
+                border-radius: 40px;
+                height: 420px;
+                display: flex;
+                flex-direction: column;
+
+                p{
+                    font-size: 28px;
+                    line-height: 38px;  
+                    @include Open(300);
+                    color: white;
+                    height: 194px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
+                    overflow-y: hidden;
+                    flex-shrink: 0;
+                }
+
+                .side-btn{
+                    margin-left: auto;
+                    margin-right: -61px;
+                }
+
+                .main-btn{
+                    position: relative;
+
+                    font-size: 30px;
+                    line-height: 41px;
+                    @include Open(300);
+                    color: #FFE76A;
+                    margin-top: -11px;
+                    margin-left: 20px;
+                    transition: .3s;
+                    z-index: 1;
+                    font-weight: 400 !important;
+
+                    svg{
+                        position: absolute;
+                        left: -21px;
+                        top: -18px;
+                        z-index: -1;
+
+                        path{
+                            stroke: white;
+                            fill: black;
+                            transition: .3s;
+                        }
+                        transition: .3s;
+                    }
+
+                    &:hover{
+                        color:  black !important;
+
+                        svg{
+
+                            path{
+                                fill: #FFE76A;
+                                stroke: #FFE76A;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .wave{
+        width: 100vw;
+        left: 0;
+        position: relative;
+    }
+
+    .top-wave{
+        
+    }
+
+    .bottom-wave{
+        transform: scale(1,-1);
+    }
+    
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======ARTICLE=======-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.article{
+
+    .wrapper{
+        padding-bottom: 140px;
+
+        h1{
+            font-size: 35px;
+            line-height: 51px;
+            color: white;
+            @include Open(800);
+            margin-bottom: 36px;
+            letter-spacing: 0.11em;
+            text-transform: uppercase;
+        }
+
+        p{
+            font-size: 25px;
+            line-height: 40px;
+            margin-bottom: 28px;
+            @include Open(300);
+            letter-spacing: 0.02em;
+            color: white;
+        }
+    }
+
 }
