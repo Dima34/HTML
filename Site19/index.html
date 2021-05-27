@@ -7,9 +7,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIA</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 </head>
 
 <body>
@@ -105,7 +107,7 @@
         </p>
       </div>
 
-      <img src="./img/svg/what-we-do_shape.svg" alt="what we do shape" class="shape">
+      <img src="./img/svg/what-we-do_shape.svg" alt="what we do shape" class="shape shape-bottom">
       
     </section> 
 
@@ -311,19 +313,77 @@
           </div>
         </div>
 
-        <div class="why-we_contact-us">
-          <h2 class="contact-us_title bordered-text">
-            Αφήστε πάνω μας την επικοινωνία 
-          </h2>
-          <div class="input_group">
-            <input type="text" name="text input" id="input">
-            <button>Αποστολή</button>
+      </div>
+
+      <img src="./img/svg/why-we-shape.svg" alt="shape" class="shape shape-right">
+      <img src="./img/svg/our-goals-waves.svg" alt="shape" class="shape shape-bottom">
+    </div>
+
+    <div class="contact-us">
+      <div class="wrapper">
+
+        <h2 class="contact-us_title">
+          Αφήστε πάνω μας την επικοινωνία 
+        </h2>
+
+        <div class="input_group">
+          <input type="text" name="text input" id="input">
+          <button>Αποστολή</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="works">
+
+      <img src="./img/svg/our-goals-waves.svg" alt="shape" class="shape shape-top">
+
+      <div class="colored-wrapper">
+
+        <div class="wrapper">
+
+          <h2 class="bordered-text">ΤΑ ΕΡΓΑ ΜΑΣ</h2>
+  
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <img src="./img/works-hara.png" alt="image">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./img/works-tatoo.png" alt="image">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./img/works-hara.png" alt="image">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./img/works-tatoo.png" alt="image">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./img/works-hara.png" alt="image">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./img/works-tatoo.png" alt="image">
+              </div>
+
+            </div>
+            
+            <div class="swiper-button-next"><img src="../img/svg/works-arrow-right.svg" alt="arrow"></div>
+            <div class="swiper-button-prev"><img src="../img/svg/works-arrow-left.svg" alt="arrow"></div>
           </div>
+          <button>
+            Пερισσότερα
+          </button>
+  
         </div>
 
       </div>
 
-      <img src="./img/svg/why-we-shape.svg" alt="shape" class="shape">
     </div>
 
     <div class="main_lines">
@@ -396,7 +456,22 @@
 
 </div>
    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: "auto",
+        spaceBetween: 0,
+        autoHeight: true,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
 </body>
 
 </html>
