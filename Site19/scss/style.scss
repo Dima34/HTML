@@ -1684,6 +1684,8 @@ footer{
 /* ------------------------------------ */
 
 .gallery{
+    overflow: hidden;
+
     .wrapper{
 
         .swiper-container{
@@ -4034,6 +4036,176 @@ footer{
         }
     }
 
+    .about-intro{
+
+        .wrapper{            
+            padding: 93px 0 0 0px;
+
+            .intro-logo{
+
+                img{
+                    width: 64px;
+                    margin-bottom: 20px;
+                }
+                
+            }
+
+            .intro-title{
+                font-size: 63px;
+                line-height: 140px;
+                margin-bottom: 12px;
+            }
+
+            .intro-think{
+                margin-bottom: 38px;
+
+                p{
+                    font-size: 25px;
+                    line-height: 50px;
+                }
+            }
+
+            .intro-where-we-from{
+                margin-bottom: 50px;
+
+                p{
+                    font-size: 20px;
+                    line-height: 40px;
+                }
+            }
+
+            .intro-subtext{
+                font-size: 25px;
+                line-height: 50px;
+            }
+        }
+    }
+
+    .who-is-who{
+        .who-is-who-shape{
+            display: none;
+        }
+
+        .wrapper{
+            padding: 0;
+
+            .block{
+                margin-bottom: -28px;
+
+                .left{
+                    transform: scale(0.74) translate(32px, -5px);
+                    transform-origin: left top;
+                }
+
+                .right{
+                    margin-left: -70px;
+
+                    .block-title{
+                        margin-top: 7px;
+                        font-size: 100px;
+                        line-height: 120px;
+                        margin-bottom: 31px;
+                    }
+
+                    .block-description{
+                        font-size: 23px;
+                        line-height: 35px;
+                    }
+                }
+
+                &:nth-child(2){
+
+                    .right{
+                        padding-top: 20px;
+
+                        .block-title{
+                            margin-bottom: 25px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .our-pets{
+        margin-top: -186px; 
+        margin-bottom: 0;
+
+        
+        .wrapper{
+
+            .our-pets_title{
+                font-size: 25px;
+                line-height: 48px;
+            }
+
+            .our-pets_content{
+
+                .left, .right{
+                    .our-pets-image{
+                        transform: scale(0.74) translate(32px, -5px);
+                        transform-origin: left top;
+                    }
+                }
+
+                .left{
+                    margin-right: 0;
+                    padding-top: 110px;
+                    padding-left: 7px;
+                }
+
+                .right{
+                    margin-left: -119px;
+                    padding-top: 34px;
+
+                    .right_text{                        
+                        font-size: 25px;
+                        line-height: 40px;
+                        margin-top: -57px;
+                        max-width: 432px;
+                        margin-left: 13px;
+
+                        &::after{
+                            transform: scale(0.9);
+                            transform-origin: left;
+                        }
+                    }
+                }
+
+                
+                
+            }
+        }
+    }
+
+    .gallery{
+
+        .wrapper{
+
+            .swiper-container{
+                padding-left: 103px;
+
+                .swiper-wrapper{
+
+                    .swiper-slide{
+                        width: 270px;
+                        height: 256px;
+                    }
+
+                    .swiper-slide.swiper-slide-active{
+                        width: 414px;
+                        height: 365px;
+                    }
+                }
+
+                .swiper-button-next {                    
+                    left: -31px;
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width:1100px){
@@ -4449,7 +4621,180 @@ footer{
         }
         
     }
+
+    .about-intro{
+
+        .wrapper{            
+            padding: 72px 0 0 0px;
+
+            .intro-logo{
+
+                img{
+                    width: 42px;
+                    margin-bottom: 0px;                
+                }
+                
+            }
+
+            .intro-title{
+                font-size: 50px;
+                line-height: 140px;
+                margin-bottom: -4px;
+            }
+
+            .intro-think{
+                margin-bottom: 38px;
+
+                p{
+                    font-size: 20px;
+                    line-height: 35px;
+                }
+            }
+
+            .intro-where-we-from{
+                margin-bottom:33px;
+
+                p{
+                    font-size: 18px;
+                    line-height: 40px;
+                }
+            }
+
+            .intro-subtext{
+                font-size: 18px;
+                line-height: 20px;
+                margin-right: 94px;
+
+            }
+        }
+    }
+
+    .who-is-who{
+
+        .wrapper{
+            padding: 0;
+
+            .block{
+                margin-bottom: -28px;
+
+                .left{
+                    transform: scale(0.53) translate(23px, -5px);
+                    transform-origin: left top;
+                }
+
+                .right{
+                    margin-left: -182px;
+
+                    .block-title{
+                        margin-top: 7px;
+                        font-size: 80px;
+                        line-height: 120px;
+                        margin-bottom: 11px;
+                    }
+
+                    .block-description{
+                        font-size: 20px;
+                        line-height: 35px;
+                    }
+                }
+
+                &:nth-child(2){
+                    margin-top: -122px;
+
+                    .right{
+                        padding-top: 0px;
+                        margin-top: -40px;
+
+                        .block-title{
+                            margin-bottom: 25px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .our-pets{
+        margin-top: -296px; 
+        margin-bottom: 0;
+
+        
+        .wrapper{
+            padding: 0;
+
+            .our-pets_title{
+                font-size: 20px;
+                line-height: 40px;
+                margin-bottom: 5px;
+            }
+
+            .our-pets_content{
+
+                .left, .right{
+                    .our-pets-image{
+                        transform: scale(0.61, 0.66) translate(32px, -5px);
+                        transform-origin: left top;
+                    }
+                }
+
+                .left{
+                    margin-right: 0;
+                    padding-top: 110px;
+                    padding-left: 7px;
+                }
+
+                .right{
+                    margin-left: -158px;
+                    max-width: 320px;
+
+                    .right_text{                        
+                        font-size: 20px;
+                        line-height: 35px;
+                        margin-top: -86px;
+                        max-width: 432px;
+                        margin-left: 13px;
+
+                        &::after{
+                            transform: scale(0.669);
+                            transform-origin: left top;
+                        }
+                    }
+                }              
+                
+            }
+        }
+    }
+
+    .gallery{
+
+        .wrapper{
+            margin-top: -55px;
+
+            .swiper-container{
+                padding-left: 263px;
+
+                .swiper-wrapper{
+
+                    .swiper-slide{
+                        width: 213px;
+                        height: 172px;
+                    }
+
+                    .swiper-slide.swiper-slide-active{
+                        width: 317px;
+                        height: 259px;
+                    }
+                }
+
+                .swiper-button-next {                    
+                    left: -31px;
+                }
+            }
+        }
+    }
      
+
 }
 
 @media screen and (max-width:750px){
