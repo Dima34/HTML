@@ -263,14 +263,28 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-        var swiper = new Swiper(".swiper-container", {
+        if(window.innerWidth > 750){
+            var swiper = new Swiper(".swiper-container", {
             slidesPerView: "auto",
             centeredSlides: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-            },
-        });
-      </script>
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                },
+            });
+        } else{
+
+            var swiper = new Swiper(".swiper-container", {
+            slidesPerView: "auto",
+            loop: true,
+            centeredSlides: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                },
+            });
+
+        }
+        
+    </script>
 </body>
 
 </html>
