@@ -4385,6 +4385,68 @@ footer{
         }
     }
 
+    .what-you-need{
+
+        .wrapper{
+            padding: 47px 0px 0 0px;
+
+
+            .services-list{
+
+                .list-number{
+
+                }
+
+                .list-link{
+
+                }
+            }
+        }
+    }
+
+    .what-we-do_intro{
+        .wrapper{
+            padding: 0px;
+            padding-top: 72px;
+        }
+        
+    }
+
+    .pedia-intro{
+        .wrapper:nth-child(1){
+            padding: 0;
+            padding-top: 73px;
+
+            .intro-title{
+                font-size: 80px;
+                line-height: 130px;
+            }
+        }
+
+        .wrapper{
+
+            p{
+                font-size: 25px;
+                line-height: 34px; 
+            }
+        }
+    }
+
+    .pedia-main{
+
+        .white-part{
+
+            .wrapper{
+                margin-top: -1px;
+                margin-bottom: -1px;
+
+                grid-template-columns: 1fr 1fr;
+                gap: 56px;
+            }
+        }        
+
+    }
+
 }
 
 @media screen and (max-width:1100px){
@@ -4989,6 +5051,133 @@ footer{
 
     .contacts-intro .contacts-intro-shape {
         display: none;
+    }
+
+    .what-we-do_intro{
+
+        .wrapper{
+
+            .logo{
+                margin-bottom: 41px;
+
+                img{
+                    width: 50px;
+                }
+            }
+
+            .intro_title{
+                font-size: 50px;
+                line-height: 40px;
+                margin-bottom: 32px;
+            }
+
+            .intro_subtitle{
+                font-size: 23px;
+                line-height: 52px;
+                margin-bottom: 66px;
+            }
+
+            .intro_alert{
+                max-width: 355px;
+                padding-left: 0;
+
+                .alert_text{
+                    font-size: 25px;
+                    line-height: 53px;
+                }
+
+                .alert-ring{
+                    width: 429.44px;
+                    height: 224.76px;
+                    top: -21px;
+                    right: -17px;
+                }
+
+                &::after{
+                    top: -42px;
+                    right: -72px;
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+
+    .what-you-need{
+        margin-top: 325px;
+
+        svg{
+            text{
+                textPath{
+                    font-size: 100px;
+                }
+            }
+        }
+        .wrapper{
+            padding-top: 81px;
+            gap: 88px;
+            justify-content: unset;
+
+            .services-list{
+
+                .list-item{
+                    margin-bottom: 11px;
+                    
+                    .list-number{
+                        font-size: 18px;
+                        line-height: 20px;
+                        margin-right: 3px;
+                    }
+
+                    .list-link{
+                        font-size: 25px;
+                        line-height: 38px;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .lets-do-together {
+        margin-top: 207px;
+
+        .wrapper{
+
+            .lets-do{
+                padding: 0 58px 0 10px;
+
+                .lets-do-button{
+                    font-size: 23px;
+                    line-height: 70px; 
+
+                    &::after{
+                        left: -89px;
+                        transform: scale(0.65);
+                        top: -29px;
+                    }
+                }
+            }
+
+            .lets-do-alert{
+                font-size: 50px;
+                line-height: 68px;
+                margin-top: 113px;
+            }
+        }
+    }
+
+    .pedia-intro{
+        .wrapper:nth-child(1){
+            padding-top: 65px;
+            
+            .intro-logo{
+                img{
+                    width: 60px;
+                }
+            }
+
+        }
+
     }
 
 }
@@ -5855,6 +6044,200 @@ footer{
                 }
             }
         }
+    }
+
+    .what-we-do_intro{
+
+        .wrapper{
+            padding-top: 92px;
+
+            .logo{
+                margin-bottom: 49px;
+
+                img{
+                    width: 64px;
+                }
+            }
+
+            .intro_title{
+                font-size: 40px;
+                line-height: 40px;
+                margin-bottom: 26px;
+            }
+
+            .intro_subtitle{
+                font-size: 20px;
+                line-height: 33px;
+                margin-bottom: 61px;
+            }
+
+            .intro_alert{
+                max-width: 308px;
+                padding-left: 0;
+
+                .alert_text{
+                    font-size: 21px;
+                    line-height: 35px;
+                    margin-left: 9px;
+                    letter-spacing: unset;
+                }
+
+                .alert-ring{
+                    width: 346px;
+                    height: 182px;
+                    top: -25px;
+                    right: -12px;
+                }
+
+                &::after{
+                    top: -73px;
+                    right: -98px;
+                    transform: scale(0.69);
+                }
+            }
+        }
+    }
+
+    .what-you-need{
+        margin-top: 240px;
+
+        svg{
+            text{
+                textPath{
+                    font-size: 80px;
+                }
+            }
+        }
+
+        .wrapper{
+            padding-top: 17px;
+            gap: 0;
+            justify-content: unset;
+            flex-direction:  column;
+            padding-bottom: 38px;
+
+            .services-list{
+
+                .list-item{
+                    margin-bottom: 11px;
+                    
+                    .list-number{
+                        font-size: 18px;
+                        line-height: 20px;
+                        margin-right: 3px;
+                    }
+
+                    .list-link{
+                        font-size: 25px;
+                        line-height: 38px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .lets-do-together {
+        margin-top: 207px;
+
+        .wrapper{
+
+            .lets-do{
+                padding: 0px 10px 0 10px;
+                flex-direction: column;
+                align-items: center;
+
+                .lets-do-button{
+                    font-size: 23px;
+                    line-height: 70px; 
+                    margin-top: 105px;
+
+                    &::after{
+                        left: -89px;
+                        transform: scale(0.65);
+                        top: -29px;
+                    }
+                }
+            }
+
+            .lets-do-alert{
+                font-size: 30px;
+                line-height: 41px;
+                margin-top: 89px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .pedia-intro{
+        .wrapper:nth-child(1){
+            padding: 0;
+            padding-top: 73px;
+
+            .intro-title{
+                font-size: 50px;
+                line-height: 60px;
+                margin-bottom: 58px;
+            }
+        }
+
+        .wrapper{
+
+            p{
+                font-size: 22px;
+                line-height: 33px;
+            }
+        }
+    }
+
+    .pedia-main{
+
+        .white-part{
+
+            .wrapper{
+                margin-top: -1px;
+                margin-bottom: -1px;
+                padding-bottom: 82px;
+                padding-top: 20px;
+
+                grid-template-columns: 1fr;
+                gap: 30px;
+
+                .article-block{
+                    height: 344px;
+                    margin: 0 24px;
+
+                    .text{
+                        font-size: 24px;
+                        line-height: 33px;
+                    }
+
+                    .side-btn{
+                        margin-right: -35px;
+                        margin-top: -42px;
+                        margin-right: -61px;
+
+                        img{
+                            width: 100px;
+                        }
+                    }
+
+                    .main-btn{
+                        font-size: 25px;
+                        line-height: 34px;
+                        margin-top: -7px;
+                        margin-left: 14px;
+
+                        svg{
+                            left: -33px;
+                            top: -21px;
+                            transform: scale(0.82);
+                        }
+                    }
+                }
+            }
+        }        
+
     }
     
 }

@@ -2839,7 +2839,26 @@ footer {
         .alt-ways .wrapper .right .shape-group::after {
           left: -114px;
           top: -74px;
-          transform: scale(0.79); } }
+          transform: scale(0.79); }
+  .what-you-need .wrapper {
+    padding: 47px 0px 0 0px; }
+  .what-we-do_intro .wrapper {
+    padding: 0px;
+    padding-top: 72px; }
+  .pedia-intro .wrapper:nth-child(1) {
+    padding: 0;
+    padding-top: 73px; }
+    .pedia-intro .wrapper:nth-child(1) .intro-title {
+      font-size: 80px;
+      line-height: 130px; }
+  .pedia-intro .wrapper p {
+    font-size: 25px;
+    line-height: 34px; }
+  .pedia-main .white-part .wrapper {
+    margin-top: -1px;
+    margin-bottom: -1px;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px; } }
 
 @media screen and (max-width: 1100px) {
   * .wrapper {
@@ -3138,7 +3157,70 @@ footer {
   .map .shape {
     display: none; }
   .contacts-intro .contacts-intro-shape {
-    display: none; } }
+    display: none; }
+  .what-we-do_intro .wrapper .logo {
+    margin-bottom: 41px; }
+    .what-we-do_intro .wrapper .logo img {
+      width: 50px; }
+  .what-we-do_intro .wrapper .intro_title {
+    font-size: 50px;
+    line-height: 40px;
+    margin-bottom: 32px; }
+  .what-we-do_intro .wrapper .intro_subtitle {
+    font-size: 23px;
+    line-height: 52px;
+    margin-bottom: 66px; }
+  .what-we-do_intro .wrapper .intro_alert {
+    max-width: 355px;
+    padding-left: 0; }
+    .what-we-do_intro .wrapper .intro_alert .alert_text {
+      font-size: 25px;
+      line-height: 53px; }
+    .what-we-do_intro .wrapper .intro_alert .alert-ring {
+      width: 429.44px;
+      height: 224.76px;
+      top: -21px;
+      right: -17px; }
+    .what-we-do_intro .wrapper .intro_alert::after {
+      top: -42px;
+      right: -72px;
+      transform: scale(0.9); }
+  .what-you-need {
+    margin-top: 325px; }
+    .what-you-need svg text textPath {
+      font-size: 100px; }
+    .what-you-need .wrapper {
+      padding-top: 81px;
+      gap: 88px;
+      justify-content: unset; }
+      .what-you-need .wrapper .services-list .list-item {
+        margin-bottom: 11px; }
+        .what-you-need .wrapper .services-list .list-item .list-number {
+          font-size: 18px;
+          line-height: 20px;
+          margin-right: 3px; }
+        .what-you-need .wrapper .services-list .list-item .list-link {
+          font-size: 25px;
+          line-height: 38px; }
+  .lets-do-together {
+    margin-top: 207px; }
+    .lets-do-together .wrapper .lets-do {
+      padding: 0 58px 0 10px; }
+      .lets-do-together .wrapper .lets-do .lets-do-button {
+        font-size: 23px;
+        line-height: 70px; }
+        .lets-do-together .wrapper .lets-do .lets-do-button::after {
+          left: -89px;
+          transform: scale(0.65);
+          top: -29px; }
+    .lets-do-together .wrapper .lets-do-alert {
+      font-size: 50px;
+      line-height: 68px;
+      margin-top: 113px; }
+  .pedia-intro .wrapper:nth-child(1) {
+    padding-top: 65px; }
+    .pedia-intro .wrapper:nth-child(1) .intro-logo img {
+      width: 60px; } }
 
 @media screen and (max-width: 750px) {
   * .wrapper {
@@ -3603,7 +3685,115 @@ footer {
         .alt-ways .wrapper .right .shape-group::after {
           left: -140px;
           top: -82px;
-          transform: scale(0.62); } }
+          transform: scale(0.62); }
+  .what-we-do_intro .wrapper {
+    padding-top: 92px; }
+    .what-we-do_intro .wrapper .logo {
+      margin-bottom: 49px; }
+      .what-we-do_intro .wrapper .logo img {
+        width: 64px; }
+    .what-we-do_intro .wrapper .intro_title {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 26px; }
+    .what-we-do_intro .wrapper .intro_subtitle {
+      font-size: 20px;
+      line-height: 33px;
+      margin-bottom: 61px; }
+    .what-we-do_intro .wrapper .intro_alert {
+      max-width: 308px;
+      padding-left: 0; }
+      .what-we-do_intro .wrapper .intro_alert .alert_text {
+        font-size: 21px;
+        line-height: 35px;
+        margin-left: 9px;
+        letter-spacing: unset; }
+      .what-we-do_intro .wrapper .intro_alert .alert-ring {
+        width: 346px;
+        height: 182px;
+        top: -25px;
+        right: -12px; }
+      .what-we-do_intro .wrapper .intro_alert::after {
+        top: -73px;
+        right: -98px;
+        transform: scale(0.69); }
+  .what-you-need {
+    margin-top: 240px; }
+    .what-you-need svg text textPath {
+      font-size: 80px; }
+    .what-you-need .wrapper {
+      padding-top: 17px;
+      gap: 0;
+      justify-content: unset;
+      flex-direction: column;
+      padding-bottom: 38px; }
+      .what-you-need .wrapper .services-list .list-item {
+        margin-bottom: 11px; }
+        .what-you-need .wrapper .services-list .list-item .list-number {
+          font-size: 18px;
+          line-height: 20px;
+          margin-right: 3px; }
+        .what-you-need .wrapper .services-list .list-item .list-link {
+          font-size: 25px;
+          line-height: 38px;
+          margin-left: 5px; }
+  .lets-do-together {
+    margin-top: 207px; }
+    .lets-do-together .wrapper .lets-do {
+      padding: 0px 10px 0 10px;
+      flex-direction: column;
+      align-items: center; }
+      .lets-do-together .wrapper .lets-do .lets-do-button {
+        font-size: 23px;
+        line-height: 70px;
+        margin-top: 105px; }
+        .lets-do-together .wrapper .lets-do .lets-do-button::after {
+          left: -89px;
+          transform: scale(0.65);
+          top: -29px; }
+    .lets-do-together .wrapper .lets-do-alert {
+      font-size: 30px;
+      line-height: 41px;
+      margin-top: 89px;
+      margin-bottom: 50px; }
+  .pedia-intro .wrapper:nth-child(1) {
+    padding: 0;
+    padding-top: 73px; }
+    .pedia-intro .wrapper:nth-child(1) .intro-title {
+      font-size: 50px;
+      line-height: 60px;
+      margin-bottom: 58px; }
+  .pedia-intro .wrapper p {
+    font-size: 22px;
+    line-height: 33px; }
+  .pedia-main .white-part .wrapper {
+    margin-top: -1px;
+    margin-bottom: -1px;
+    padding-bottom: 82px;
+    padding-top: 20px;
+    grid-template-columns: 1fr;
+    gap: 30px; }
+    .pedia-main .white-part .wrapper .article-block {
+      height: 344px;
+      margin: 0 24px; }
+      .pedia-main .white-part .wrapper .article-block .text {
+        font-size: 24px;
+        line-height: 33px; }
+      .pedia-main .white-part .wrapper .article-block .side-btn {
+        margin-right: -35px;
+        margin-top: -42px;
+        margin-right: -61px; }
+        .pedia-main .white-part .wrapper .article-block .side-btn img {
+          width: 100px; }
+      .pedia-main .white-part .wrapper .article-block .main-btn {
+        font-size: 25px;
+        line-height: 34px;
+        margin-top: -7px;
+        margin-left: 14px; }
+        .pedia-main .white-part .wrapper .article-block .main-btn svg {
+          left: -33px;
+          top: -21px;
+          transform: scale(0.82); } }
 
 @media screen and (max-width: 425px) {
   header .header-burger-menu .wrapper .burger_header {
