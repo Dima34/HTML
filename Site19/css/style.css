@@ -2451,6 +2451,12 @@ footer {
       header .header-burger-menu .wrapper .burger_itemlist .burger_item a {
         font-size: 45px;
         line-height: 61px; }
+        header .header-burger-menu .wrapper .burger_itemlist .burger_item a::after {
+          transform: translate(-50%, -43%) scale(0.78); }
+      header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(2) a:hover::after {
+        top: 49%; }
+      header .header-burger-menu .wrapper .burger_itemlist .burger_item:nth-child(3) a:hover::after {
+        top: 49%; }
   .intro .wrapper {
     padding-top: 86px;
     padding-left: 60px; }
@@ -3133,6 +3139,8 @@ footer {
       width: 55px; }
   header .header-burger-menu .wrapper .burger_itemlist .burger_item a {
     font-size: 45px;
-    line-height: 61px; } }
+    line-height: 61px; }
+    header .header-burger-menu .wrapper .burger_itemlist .burger_item a::after {
+      display: none; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -3588,7 +3588,20 @@ footer{
                     .burger_item a{
                         font-size: 45px;
                         line-height: 61px;
+
+                        &::after{
+                            transform: translate(-50%, -43%) scale(0.78);
+                        }
                     }
+
+                    .burger_item:nth-child(2) a:hover::after {
+                        top: 49%;
+                    }
+                    
+                    .burger_item:nth-child(3) a:hover::after {
+                        top: 49%;
+                    }
+                    
                 }
             }
         }
@@ -4937,6 +4950,10 @@ footer{
                     .burger_item a{
                         font-size: 45px;
                         line-height: 61px;
+
+                        &::after{
+                            display: none;
+                        }
                     }
                 }
             }
