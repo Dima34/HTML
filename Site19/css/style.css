@@ -395,7 +395,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 93px;
-    column-gap: 45px; }
+    column-gap: 45px;
+    overflow: hidden; }
     .our-goals .wrapper .goal {
       position: relative; }
       .our-goals .wrapper .goal .goal_header {
@@ -2298,6 +2299,9 @@ footer {
       margin-right: 4px; }
     header .wrapper .header-burger svg {
       transform: scale(0.88); }
+  header .header-burger-menu .wrapper .burger_itemlist .burger_item a {
+    font-size: 60px;
+    line-height: 82px; }
   .intro .wrapper {
     max-width: 1070px;
     padding-left: 0;
@@ -2432,6 +2436,21 @@ footer {
       header .wrapper .header-burger .burger-text {
         margin-right: -10px;
         font-size: 26px; }
+    header .header-burger-menu .wrapper {
+      max-width: 1150px !important; }
+      header .header-burger-menu .wrapper .burger_header {
+        padding: 0 30px 0 60px; }
+        header .header-burger-menu .wrapper .burger_header a .burger-logo {
+          width: 71px; }
+        header .header-burger-menu .wrapper .burger_header .burger-close .close-text {
+          font-size: 26px;
+          line-height: 35px;
+          margin-right: 15px; }
+        header .header-burger-menu .wrapper .burger_header .burger-close .close-ico {
+          width: 60px; }
+      header .header-burger-menu .wrapper .burger_itemlist .burger_item a {
+        font-size: 45px;
+        line-height: 61px; }
   .intro .wrapper {
     padding-top: 86px;
     padding-left: 60px; }
