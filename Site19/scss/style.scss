@@ -4206,6 +4206,185 @@ footer{
         }
     }
 
+    .contacts-intro{
+        .wrapper{
+            .intro_title{
+                font-size: 60px;
+                line-height: 100px;
+                margin-bottom: 10px;
+                margin-top: 20px;
+            }
+    
+            .intro_subtitle{
+                font-size: 22px;
+                line-height: 35px;
+                margin-bottom: 30px;
+            }
+    
+            .intro_text{
+                font-size: 20px;
+                line-height: 30px;
+            }
+    
+            .intro_lets-talk{
+
+                p{
+                    font-size: 25px;
+                    line-height: 40px;
+                    max-width: 290px;
+
+                    &::after{
+                        top: 12px;
+
+                    }
+                }
+
+                &::after{
+                    transform: scale(0.9);
+                    left: -73px;
+                    top: -61px;
+                
+                }
+
+                .lets-talk-ring{
+                    width: 464.08px;
+                    height: 226.96px;
+                    top: -32px;
+                    left: -18px;
+                }
+                
+            }
+        }
+
+        
+    }
+
+    .adress{
+
+        .wrapper{
+
+            .adress_title{
+                font-size: 45px;
+                line-height: 87px;
+                margin-bottom: 6px;
+            }
+
+            .adress_street{
+                font-size: 25px;
+                line-height: 70px;
+                margin-bottom: 31px;
+            }
+
+            .contact-block{
+
+                .col{
+                    .col-header{
+                        font-size: 30px;
+                        line-height: 70px;
+                    }
+
+                    a{
+                        font-size: 25px;
+                        line-height: 36px;
+                    }
+                }
+            }
+        }
+    }
+
+    .map{
+
+        .wrapper{
+
+            .map-header{
+                font-size: 45px;
+                line-height: 80px;
+                margin-bottom: 13px;
+            }
+
+
+            .how-to-find{
+                margin-top: 51px;
+                margin-bottom: 40px;
+
+                .contacts-header{
+                    font-size: 35px;
+                    line-height: 70px;
+                }
+    
+                .contacts{
+                
+                    .col{
+                        p{
+                            font-size: 25px;
+                            line-height: 40px;
+                        }
+        
+                        .col-header{
+                            font-size: 30px;
+                            line-height: 70px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }               
+
+            }
+
+            .map-blk{
+
+                .map-title{
+                    font-size: 25px;
+                    line-height: 26px;
+                }   
+
+            }
+            
+        }
+
+        
+    }
+
+    .alt-ways{
+
+        .wrapper{
+            padding: 185px 56px 0 0;
+            margin-bottom: 140px;
+
+            .left {
+                width: 491px;
+            }
+
+
+            .right{
+                padding-top: 118px;
+
+                .shape-group{
+                    max-width: 384px;
+
+                    p{
+                        font-size: 25px;
+                        line-height: 40px;
+
+                        
+                    }
+
+                    .shape-ring{
+                        width: 460.05px;
+                        height: 208.81px;
+                        left: -36px;
+                        top: -26px;
+                    }
+
+                    &::after{
+                        left: -114px;
+                        top: -74px;
+                        transform: scale(0.79);
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width:1100px){
@@ -4793,7 +4972,24 @@ footer{
             }
         }
     }
+
+    .alt-ways{
+
+        .wrapper{
+            padding: 185px 0px 0 0;
+            margin-bottom: 140px;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
      
+    .map .shape {
+        display: none;
+    }
+
+    .contacts-intro .contacts-intro-shape {
+        display: none;
+    }
 
 }
 
@@ -5442,6 +5638,219 @@ footer{
 
                 .swiper-button-next {                    
                     display: none;
+                }
+            }
+        }
+    }
+
+    .contacts-intro{
+        .wrapper{
+            padding: 0;
+            padding-top: 94px;
+            padding-bottom: 85px;
+
+            .intro_title{
+                font-size: 40px;
+                line-height: 40px;
+                margin-bottom: 20px;
+                text-align: left;
+            }
+    
+            .intro_subtitle{
+                font-size: 20px;
+                line-height: 33px;
+                text-align: left;
+                margin-bottom: 18px;
+
+                &::after{
+                    transform: translateX(-52%) scale(0.7)
+                }
+            }
+    
+            .intro_text{
+                font-size: 20px;
+                line-height: 33px;
+                text-align: left;
+                margin-bottom: 65px;
+
+            }
+    
+            .intro_lets-talk{
+                margin: 0 0 0 18px;
+
+                p{
+                    font-size: 18px;
+                    line-height: 30px;
+                    max-width: 208px;
+
+                    &::after{
+                        top: -7px;
+                        left: calc(100% + 1px);
+                        transform: scale(0.8);
+                    }
+                }
+
+                &::after{
+                    transform: scale(0.65);
+                    left: -115px;
+                    top: -81px;
+                
+                }
+
+                .lets-talk-ring{
+                    width: 336.29px;
+                    height: 169.07px;
+                    top: -31px;
+                    left: -6px;
+                }
+                
+            }
+        }
+
+        .contacts-intro-waves{
+            top: calc(100% - 3px);
+        }
+    }
+
+    .adress{
+        padding-top: 93px;
+        padding-bottom: 93px;
+
+        .wrapper{
+            padding: 0;
+
+            .adress_title{
+                font-size: 30px;
+                line-height: 40px;
+                margin-bottom: 12px;
+            }
+
+            .adress_street{
+                font-size: 20px;
+                line-height: 33px;
+                margin-bottom: 15px;
+            }
+
+            .contact-block{
+
+                .col{
+                    .col-header{
+                        font-size: 25px;
+                        line-height: 50px;
+                    }
+
+                    a{
+                        font-size: 20px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .map{
+
+        .wrapper{
+            padding: 0;
+            padding-top: 30px;
+
+            .map-blk{
+                height: 200px;
+
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .map-title{
+                    display: none;
+                }
+            }
+
+            .map-header{
+                font-size: 30px;
+                line-height: 50px;
+                margin-bottom: 13px;
+            }
+
+
+            .how-to-find{
+                margin-top: 41px;
+                margin-bottom: 40px;
+
+                .contacts-header{
+                    font-size: 30px;
+                    line-height: 45px;
+                }
+    
+                .contacts{
+                    flex-direction: column;
+                
+                    .col{
+                        p{
+                            font-size: 20px;
+                            line-height: 35px;
+                        }
+        
+                        .col-header{
+                            font-size: 25px;
+                            line-height: 25px;
+                            margin-bottom: 5px;
+                            margin-bottom: 14px;
+                        }
+                    }
+                }               
+
+            }
+
+            .map-blk{
+
+                .map-title{
+                    font-size: 25px;
+                    line-height: 26px;
+                }   
+
+            }
+            
+        }   
+    }
+
+    .alt-ways{
+
+        .wrapper{
+            padding: 85px 0 0 0;
+            margin-bottom: 140px;
+
+            .left {
+                width: 317px;
+                margin-left: 0;
+                height: 250px;
+            }
+
+
+            .right{
+                padding-top: 58px;
+
+                .shape-group{
+                    max-width: 302px;
+
+                    p{
+                        font-size: 20px;
+                        line-height: 35px;                        
+                    }
+
+                    .shape-ring{
+                        width: 338px;
+                        height: 165px;
+                        left: -36px;
+                        top: -26px;
+                    }
+
+                    &::after{
+                        left: -140px;
+                        top: -82px;
+                        transform: scale(0.62);
+                    }
                 }
             }
         }
