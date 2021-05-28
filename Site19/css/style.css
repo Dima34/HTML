@@ -3044,6 +3044,13 @@ footer {
         transform: scale(0.66) translate(7px, 22px); }
   .main_lines .line1 p, .main_lines .line2 p {
     font-size: 30px; }
+  footer .wrapper .lets-do-button {
+    font-size: 20px;
+    line-height: 40px; }
+    footer .wrapper .lets-do-button::after {
+      left: -107px;
+      top: -42px;
+      transform: scale(0.65); }
   footer .wrapper .footer-centered-text {
     font-size: 20px;
     line-height: 70px;
@@ -3220,7 +3227,26 @@ footer {
   .pedia-intro .wrapper:nth-child(1) {
     padding-top: 65px; }
     .pedia-intro .wrapper:nth-child(1) .intro-logo img {
-      width: 60px; } }
+      width: 60px; }
+  .service-shape {
+    display: none; }
+  .article {
+    padding-top: 70px; }
+    .article .wrapper {
+      padding: 0; }
+      .article .wrapper .logo {
+        margin-bottom: 62px; }
+        .article .wrapper .logo img {
+          width: 49px;
+          margin-left: 30px; }
+      .article .wrapper .atricle-title {
+        font-size: 25px;
+        line-height: 51px;
+        margin-bottom: 25px; }
+      .article .wrapper p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 21px; } }
 
 @media screen and (max-width: 750px) {
   * .wrapper {
@@ -3793,7 +3819,24 @@ footer {
         .pedia-main .white-part .wrapper .article-block .main-btn svg {
           left: -33px;
           top: -21px;
-          transform: scale(0.82); } }
+          transform: scale(0.82); }
+  .article {
+    padding-top: 92px; }
+    .article .wrapper {
+      padding: 0; }
+      .article .wrapper .logo {
+        margin-bottom: 62px; }
+        .article .wrapper .logo img {
+          width: 60px;
+          margin-left: 0; }
+      .article .wrapper .atricle-title {
+        font-size: 23px;
+        line-height: 40px;
+        margin-bottom: 38px; }
+      .article .wrapper p {
+        font-size: 17px;
+        line-height: 28px;
+        margin-bottom: 18px; } }
 
 @media screen and (max-width: 425px) {
   header .header-burger-menu .wrapper .burger_header {
