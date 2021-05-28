@@ -3119,4 +3119,20 @@ footer {
           font-size: 22px;
           line-height: 30px; } }
 
+@media screen and (max-width: 425px) {
+  header .header-burger-menu .wrapper .burger_header {
+    padding: 0 25px;
+    margin-top: 20px; }
+    header .header-burger-menu .wrapper .burger_header a {
+      align-self: center; }
+      header .header-burger-menu .wrapper .burger_header a .burger-logo {
+        width: 71px; }
+    header .header-burger-menu .wrapper .burger_header .burger-close .close-text {
+      display: none; }
+    header .header-burger-menu .wrapper .burger_header .burger-close .close-ico {
+      width: 55px; }
+  header .header-burger-menu .wrapper .burger_itemlist .burger_item a {
+    font-size: 45px;
+    line-height: 61px; } }
+
 /*# sourceMappingURL=style.css.map */

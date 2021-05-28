@@ -4902,3 +4902,44 @@ footer{
     }
     
 }
+
+@media screen and (max-width:425px){
+    header{
+        
+        .header-burger-menu{
+            .wrapper{
+
+                .burger_header{
+                    padding: 0 25px;
+                    margin-top: 20px;
+
+                    a{
+                        align-self: center;
+
+                        .burger-logo{
+                            width: 71px;
+                        }
+                    }
+
+                    .burger-close{
+
+                        .close-text{
+                            display: none;
+                        }
+
+                        .close-ico{
+                            width: 55px;
+                        }
+                    }
+                }
+
+                .burger_itemlist{
+                    .burger_item a{
+                        font-size: 45px;
+                        line-height: 61px;
+                    }
+                }
+            }
+        }
+    }
+}
