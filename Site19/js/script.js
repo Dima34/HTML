@@ -107,19 +107,22 @@ document.addEventListener("scroll", ()=>{
 
 let cursor = document.querySelector(".cursor");
 
-
-window.addEventListener("mousemove", (e)=>{
-    cursor.style.left = e.clientX+"px";
-    cursor.style.top = e.clientY+ window.pageYOffset +"px";
-});
-
-document.onmouseleave = function(event) {
-    cursor.style.display = "none"
-};
-
-document.onmouseenter = function(event) {
-    cursor.style.display = "block"
-};
+if(window.innerWidth > 1000){
+    window.addEventListener("mousemove", (e)=>{
+        cursor.style.left = e.clientX+"px";
+        cursor.style.top = e.clientY+ window.pageYOffset +"px";
+    });
+    
+    document.onmouseleave = function(event) {
+        cursor.style.display = "none"
+    };
+    
+    document.onmouseenter = function(event) {
+        cursor.style.display = "block"
+    };
+} else{
+    cursor.style.display = "none";
+}
 
 
 // 
@@ -181,30 +184,33 @@ mouseParallax = (elem, factor = 0.1, reversed = false)=> {
 
 };
 
+if(window.innerWidth > 1000){
+    mouseParallax(document.querySelectorAll(".line1_ring"), 0.007);
+    mouseParallax(document.querySelectorAll(".line2_ring"), 0.001, true);
+    mouseParallax(document.querySelectorAll(".line2_explosion"), 0.001, true);
+    mouseParallax(document.querySelectorAll(".goal-ring.ring1"), 0.007);
+    mouseParallax(document.querySelectorAll(".goal-ring.ring2"), 0.007);
+    mouseParallax(document.querySelectorAll(".goal-ring.ring3"), 0.007);
+    mouseParallax(document.querySelectorAll(".goal-ring.ring4"), 0.007);
 
-mouseParallax(document.querySelectorAll(".line1_ring"), 0.007);
-mouseParallax(document.querySelectorAll(".line2_ring"), 0.001, true);
-mouseParallax(document.querySelectorAll(".line2_explosion"), 0.001, true);
-mouseParallax(document.querySelectorAll(".goal-ring.ring1"), 0.007);
-mouseParallax(document.querySelectorAll(".goal-ring.ring2"), 0.007);
-mouseParallax(document.querySelectorAll(".goal-ring.ring3"), 0.007);
-mouseParallax(document.querySelectorAll(".goal-ring.ring4"), 0.007);
+    mouseParallax(document.querySelectorAll(".who-is-who .ring1"), 0.002);
+    mouseParallax(document.querySelectorAll(".who-is-who .ring2"), 0.002);
+    mouseParallax(document.querySelectorAll(".our-pets .ring3"), 0.003);
+    mouseParallax(document.querySelectorAll(".our-pets .ring4"), 0.002, true);
+    mouseParallax(document.querySelectorAll(".move-container1"), 0.001);
+    mouseParallax(document.querySelectorAll(".move-container2"), 0.001, true);
+    mouseParallax(document.querySelectorAll(".move-container3"), 0.001);
+    mouseParallax(document.querySelectorAll(".move-container4"), 0.001);
+    mouseParallax(document.querySelectorAll(".lets-talk-ring"), 0.001);
+    mouseParallax(document.querySelectorAll(".shape-block-shape"), 0.001);
+    mouseParallax(document.querySelectorAll(".alert-ring"), 0.001);
+    mouseParallax(document.querySelectorAll(".conquer-text .ring"), 0.001);
+    mouseParallax(document.querySelectorAll(".conquer-list .item:nth-child(2n+1) .ring"), 0.002);
+    mouseParallax(document.querySelectorAll(".conquer-list .item:nth-child(2n+2) .ring"), 0.001, true);
+    mouseParallax(document.querySelectorAll(".shape-group .shape-ring"), 0.001, true);
 
-mouseParallax(document.querySelectorAll(".who-is-who .ring1"), 0.002);
-mouseParallax(document.querySelectorAll(".who-is-who .ring2"), 0.002);
-mouseParallax(document.querySelectorAll(".our-pets .ring3"), 0.003);
-mouseParallax(document.querySelectorAll(".our-pets .ring4"), 0.002, true);
-mouseParallax(document.querySelectorAll(".move-container1"), 0.001);
-mouseParallax(document.querySelectorAll(".move-container2"), 0.001, true);
-mouseParallax(document.querySelectorAll(".move-container3"), 0.001);
-mouseParallax(document.querySelectorAll(".move-container4"), 0.001);
-mouseParallax(document.querySelectorAll(".lets-talk-ring"), 0.001);
-mouseParallax(document.querySelectorAll(".shape-block-shape"), 0.001);
-mouseParallax(document.querySelectorAll(".alert-ring"), 0.001);
-mouseParallax(document.querySelectorAll(".conquer-text .ring"), 0.001);
-mouseParallax(document.querySelectorAll(".conquer-list .item:nth-child(2n+1) .ring"), 0.002);
-mouseParallax(document.querySelectorAll(".conquer-list .item:nth-child(2n+2) .ring"), 0.001, true);
-mouseParallax(document.querySelectorAll(".shape-group .shape-ring"), 0.001, true);
+}
+
 
 // 
 // Ticker
