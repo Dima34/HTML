@@ -5226,6 +5226,62 @@ footer{
         }
     }
 
+    .service{
+        padding-top: 70px;
+
+        .wrapper{
+            padding: 0;
+
+            .logo{
+                img{
+                    width: 50px;
+                }
+            }
+
+            .service_title{
+
+                font-size: 60px;
+                line-height: 60px;
+
+                .shadow-border{
+                    font-size: 60px;
+                    line-height: 60px;
+
+                    &::after{
+                        left: 5px;
+                        top: 15px;
+                    }
+                }
+
+            }
+
+            .service_subtitle{
+                font-size: 23px;
+                line-height: 35px;
+                margin-bottom: 30px;
+            }
+
+            .sevice-list{
+
+                .listitem{
+                    margin-bottom: 48px;
+
+                    .list-number{
+                        font-size: 22px;
+                        line-height: 20px;
+                        margin-top: -8px;
+                    }
+
+                    .list-text{
+                        font-size: 22px;
+                        line-height: 25px;
+                    }
+
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width:750px){
@@ -6311,6 +6367,62 @@ footer{
                 font-size: 17px;
                 line-height: 28px;
                 margin-bottom: 18px;
+            }
+        }
+    }
+
+    .service{
+        padding-top: 93px;
+
+        .wrapper{
+            padding: 0;
+
+            .logo{
+                img{
+                    width: 77px;
+                }
+            }
+
+            .service_title{
+
+                font-size: 50px;
+                line-height: 60px;
+
+                .shadow-border{
+                    font-size: 50px;
+                    line-height: 60px;
+
+                    &::after{      
+                        left: 6px;
+                        top: 8px;
+                    }
+                }
+
+            }
+
+            .service_subtitle{
+                font-size: 17px;
+                line-height: 28px;
+                margin-bottom: 30px;
+            }
+
+            .sevice-list{
+
+                .listitem{
+                    margin-bottom: 48px;
+
+                    .list-number{
+                        font-size: 22px;
+                        line-height: 20px;
+                        margin-top: 0px;
+                    }
+
+                    .list-text{
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+
+                }
             }
         }
     }

@@ -3246,7 +3246,35 @@ footer {
       .article .wrapper p {
         font-size: 18px;
         line-height: 30px;
-        margin-bottom: 21px; } }
+        margin-bottom: 21px; }
+  .service {
+    padding-top: 70px; }
+    .service .wrapper {
+      padding: 0; }
+      .service .wrapper .logo img {
+        width: 50px; }
+      .service .wrapper .service_title {
+        font-size: 60px;
+        line-height: 60px; }
+        .service .wrapper .service_title .shadow-border {
+          font-size: 60px;
+          line-height: 60px; }
+          .service .wrapper .service_title .shadow-border::after {
+            left: 5px;
+            top: 15px; }
+      .service .wrapper .service_subtitle {
+        font-size: 23px;
+        line-height: 35px;
+        margin-bottom: 30px; }
+      .service .wrapper .sevice-list .listitem {
+        margin-bottom: 48px; }
+        .service .wrapper .sevice-list .listitem .list-number {
+          font-size: 22px;
+          line-height: 20px;
+          margin-top: -8px; }
+        .service .wrapper .sevice-list .listitem .list-text {
+          font-size: 22px;
+          line-height: 25px; } }
 
 @media screen and (max-width: 750px) {
   * .wrapper {
@@ -3836,7 +3864,35 @@ footer {
       .article .wrapper p {
         font-size: 17px;
         line-height: 28px;
-        margin-bottom: 18px; } }
+        margin-bottom: 18px; }
+  .service {
+    padding-top: 93px; }
+    .service .wrapper {
+      padding: 0; }
+      .service .wrapper .logo img {
+        width: 77px; }
+      .service .wrapper .service_title {
+        font-size: 50px;
+        line-height: 60px; }
+        .service .wrapper .service_title .shadow-border {
+          font-size: 50px;
+          line-height: 60px; }
+          .service .wrapper .service_title .shadow-border::after {
+            left: 6px;
+            top: 8px; }
+      .service .wrapper .service_subtitle {
+        font-size: 17px;
+        line-height: 28px;
+        margin-bottom: 30px; }
+      .service .wrapper .sevice-list .listitem {
+        margin-bottom: 48px; }
+        .service .wrapper .sevice-list .listitem .list-number {
+          font-size: 22px;
+          line-height: 20px;
+          margin-top: 0px; }
+        .service .wrapper .sevice-list .listitem .list-text {
+          font-size: 18px;
+          line-height: 25px; } }
 
 @media screen and (max-width: 425px) {
   header .header-burger-menu .wrapper .burger_header {
