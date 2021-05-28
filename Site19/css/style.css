@@ -3155,7 +3155,8 @@ footer {
         transform: scale(0.68);
         margin-right: 8px; }
     header .header-burger-open-side {
-      transform: translateY(-50%) scale(0.7); }
+      transform: translateY(-50%) scale(0.7);
+      transform-origin: right; }
   .intro .wrapper {
     padding-left: 0;
     padding-top: 93px;
