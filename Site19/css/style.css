@@ -3292,7 +3292,109 @@ footer {
           text-align: center;
           width: 100%;
           font-size: 22px;
-          line-height: 30px; } }
+          line-height: 30px; }
+  .about-intro .wrapper {
+    padding: 94px 0 0 0px; }
+    .about-intro .wrapper .intro-logo {
+      margin-bottom: 53px; }
+      .about-intro .wrapper .intro-logo img {
+        width: 61px; }
+    .about-intro .wrapper .intro-title {
+      font-size: 37px;
+      line-height: 44px;
+      margin-bottom: 25px; }
+    .about-intro .wrapper .intro-think {
+      margin-bottom: 38px;
+      margin-right: 0; }
+      .about-intro .wrapper .intro-think p {
+        font-size: 17px;
+        line-height: 28px; }
+    .about-intro .wrapper .intro-where-we-from {
+      margin-bottom: 33px; }
+      .about-intro .wrapper .intro-where-we-from p {
+        font-size: 17px;
+        line-height: 28px; }
+    .about-intro .wrapper .intro-subtext {
+      font-size: 20px;
+      line-height: 20px;
+      margin-right: 0px; }
+  .who-is-who .wrapper {
+    padding: 0; }
+    .who-is-who .wrapper .block {
+      margin-bottom: -28px;
+      flex-direction: column-reverse; }
+      .who-is-who .wrapper .block .left {
+        margin-top: 36px;
+        margin-left: 38px; }
+      .who-is-who .wrapper .block .right {
+        margin-left: 0px; }
+        .who-is-who .wrapper .block .right .block-title {
+          margin-top: 24px;
+          font-size: 70px;
+          line-height: 120px;
+          margin-bottom: 3px;
+          text-align: center; }
+        .who-is-who .wrapper .block .right .block-description {
+          font-size: 20px;
+          line-height: 28px; }
+      .who-is-who .wrapper .block:nth-child(2) {
+        margin-top: -166px; }
+        .who-is-who .wrapper .block:nth-child(2) .right {
+          padding-top: 0px;
+          margin-top: -40px; }
+          .who-is-who .wrapper .block:nth-child(2) .right .block-title {
+            margin-bottom: -2px; }
+  .our-pets {
+    margin-top: -281px;
+    margin-bottom: 0; }
+    .our-pets .wrapper {
+      padding: 0; }
+      .our-pets .wrapper .our-pets_title {
+        font-size: 19px;
+        line-height: 30px;
+        margin-bottom: 5px; }
+      .our-pets .wrapper .our-pets_content {
+        flex-direction: column; }
+        .our-pets .wrapper .our-pets_content .left .our-pets-image, .our-pets .wrapper .our-pets_content .right .our-pets-image {
+          transform: scale(0.33, 0.35) translate(-10px, -5px);
+          transform-origin: left top; }
+        .our-pets .wrapper .our-pets_content .left {
+          margin-right: 0;
+          padding-top: 110px;
+          padding-left: 7px; }
+          .our-pets .wrapper .our-pets_content .left .our-pets-image {
+            transform: scale(0.33, 0.35) translate(-10px, -5px); }
+        .our-pets .wrapper .our-pets_content .right {
+          max-width: 340px;
+          margin-top: -509px;
+          margin-left: 0; }
+          .our-pets .wrapper .our-pets_content .right .our-pets-image {
+            margin-left: 174px;
+            transform: scale(0.33, 0.37) translate(-10px, 54px); }
+          .our-pets .wrapper .our-pets_content .right .right_text {
+            font-size: 19px;
+            line-height: 30px;
+            margin-top: -157px;
+            margin-left: 0px;
+            padding-bottom: 40px; }
+            .our-pets .wrapper .our-pets_content .right .right_text::after {
+              transform: scale(0.769);
+              transform-origin: left top; }
+  .gallery .wrapper {
+    margin-top: 55px; }
+    .gallery .wrapper .swiper-container {
+      padding-left: 0px;
+      transform: translateX(161%); }
+      .gallery .wrapper .swiper-container .swiper-wrapper {
+        height: 200px !important; }
+        .gallery .wrapper .swiper-container .swiper-wrapper .swiper-slide {
+          width: 155px;
+          height: 130px; }
+        .gallery .wrapper .swiper-container .swiper-wrapper .swiper-slide.swiper-slide-active {
+          width: 241px;
+          height: 193px; }
+      .gallery .wrapper .swiper-container .swiper-button-next {
+        display: none; } }
 
 @media screen and (max-width: 425px) {
   header .header-burger-menu .wrapper .burger_header {

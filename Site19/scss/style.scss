@@ -5258,6 +5258,194 @@ footer{
             }
         }
     }
+
+    .about-intro{
+
+        .wrapper{            
+            padding: 94px 0 0 0px;
+
+            .intro-logo{
+                margin-bottom: 53px;    
+
+                img{
+                    width: 61px;            
+                }
+                
+            }
+
+            .intro-title{
+                font-size: 37px;
+                line-height: 44px;
+                margin-bottom: 25px;
+            }
+
+            .intro-think{
+                margin-bottom: 38px;
+                margin-right: 0;
+
+                p{
+                    font-size: 17px;
+                    line-height: 28px;
+                }
+            }
+
+            .intro-where-we-from{
+                margin-bottom:33px;
+
+                p{
+                    font-size: 17px;
+                    line-height: 28px;
+                }
+            }
+
+            .intro-subtext{
+                font-size: 20px;
+                line-height: 20px;
+                margin-right: 0px;
+
+            }
+        }
+    }
+
+    .who-is-who{
+
+        .wrapper{
+            padding: 0;
+
+            .block{
+                margin-bottom: -28px;
+                flex-direction: column-reverse;
+
+                .left{
+                    margin-top: 36px;
+                    margin-left: 38px;
+                }
+
+                .right{
+                    margin-left: 0px;
+
+                    .block-title{
+                        margin-top: 24px;
+                        font-size: 70px;
+                        line-height: 120px;
+                        margin-bottom: 3px;
+                        text-align: center;
+                    }
+
+                    .block-description{
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                }
+
+                &:nth-child(2){
+                    margin-top: -166px;
+
+                    .right{
+                        padding-top: 0px;
+                        margin-top: -40px;
+
+                        .block-title{
+                            margin-bottom: -2px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .our-pets{
+        margin-top: -281px; 
+        margin-bottom: 0;
+
+        
+        .wrapper{
+            padding: 0;
+
+            .our-pets_title{
+                font-size: 19px;
+                line-height: 30px;
+                margin-bottom: 5px;
+            }
+
+            .our-pets_content{
+                flex-direction: column;
+
+                .left, .right{
+                    .our-pets-image{
+                        transform: scale(0.33, 0.35) translate(-10px, -5px);
+                        transform-origin: left top;
+                    }
+                }
+
+                .left{
+                    margin-right: 0;
+                    padding-top: 110px;
+                    padding-left: 7px;
+
+                    .our-pets-image{
+                        transform: scale(0.33, 0.35) translate(-10px, -5px);
+                    }
+                }
+
+                .right{
+                    max-width: 340px;
+                    margin-top: -509px;
+                    margin-left: 0;
+
+                    .our-pets-image{
+                        margin-left: 174px;
+                        transform: scale(0.33, 0.37) translate(-10px, 54px);
+                    }
+
+                    .right_text{                        
+                        font-size: 19px;
+                        line-height: 30px;
+                        margin-top: -157px;
+                        margin-left: 0px;
+                        padding-bottom: 40px;
+
+                        &::after{
+                            transform: scale(0.769);
+                            transform-origin: left top;
+                        }
+                    }
+                }              
+                
+            }
+        }
+    }
+
+    .gallery{
+
+        .wrapper{
+            margin-top: 55px;
+
+            .swiper-container{
+                padding-left: 0px;
+                transform: translateX(161%);
+
+                .swiper-wrapper{
+                    height: 200px !important;
+
+                    .swiper-slide{
+                        width: 155px;
+                        height: 130px;
+                    }
+
+                    .swiper-slide.swiper-slide-active{
+                        width: 241px;
+                        height: 193px;
+                    }
+                }
+
+                .swiper-button-next {                    
+                    display: none;
+                }
+            }
+        }
+    }
     
 }
 
