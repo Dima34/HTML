@@ -396,7 +396,8 @@ header {
     grid-template-columns: 1fr 1fr;
     row-gap: 93px;
     column-gap: 45px;
-    overflow: hidden; }
+    overflow: hidden;
+    padding-top: 30px; }
     .our-goals .wrapper .goal {
       position: relative; }
       .our-goals .wrapper .goal .goal_header {
@@ -2123,7 +2124,8 @@ footer {
   position: relative;
   margin-top: -18px; }
   .pedia-main .white-part {
-    background: #FFFFFF; }
+    background: #FFFFFF;
+    margin: -1px 0; }
     .pedia-main .white-part .wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -2353,7 +2355,8 @@ footer {
       padding: 0 24px;
       margin-top: -27px;
       row-gap: 29px;
-      column-gap: 87px; }
+      column-gap: 87px;
+      padding-top: 20px; }
       .our-goals .wrapper .goal .goal_header .header_title {
         font-size: 35px; }
       .our-goals .wrapper .goal .goal_text {
@@ -3000,7 +3003,8 @@ footer {
   .our-goals .wrapper {
     padding: 0 13px;
     padding-top: 10px;
-    column-gap: 23px; }
+    column-gap: 23px;
+    padding-left: 10px; }
     .our-goals .wrapper .goal .goal_header {
       margin-bottom: 7px; }
       .our-goals .wrapper .goal .goal_header .header_num {
