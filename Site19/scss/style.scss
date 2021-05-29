@@ -1850,7 +1850,7 @@ footer{
 
 .adress{
     background: white;
-    padding-bottom: 147px;
+    padding-bottom: 229px;
     padding-top: 229px;
     .wrapper{
         padding: 0 81px ;
@@ -1983,6 +1983,15 @@ footer{
                 @include Open(300);
                 letter-spacing: 0.01em;
                 color: #FFFFFF;
+            }
+
+            p{
+                display: block;
+                height: 100%;
+
+                iframe{
+                    height: 100%;
+                }
             }
         }
 

@@ -1302,7 +1302,7 @@ footer {
 /* ------------------------------------ */
 .adress {
   background: white;
-  padding-bottom: 147px;
+  padding-bottom: 229px;
   padding-top: 229px; }
   .adress .wrapper {
     padding: 0 81px; }
@@ -1408,6 +1408,11 @@ footer {
         font-weight: 300 !important;
         letter-spacing: 0.01em;
         color: #FFFFFF; }
+      .map .wrapper .map-blk p {
+        display: block;
+        height: 100%; }
+        .map .wrapper .map-blk p iframe {
+          height: 100%; }
     .map .wrapper img {
       width: 100%; }
   .map .map-wave {
