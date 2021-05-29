@@ -392,6 +392,10 @@ if(aboutYouPopup && aboutYouPopupOpen){
         
     }
 
+    aboutYouPopup.querySelector(".popup-close").addEventListener("click",()=>{
+        closeAllPopups();
+    })
+
 }
 
 let briefPopupOpen = document.querySelectorAll(".lets-do-button");
@@ -408,6 +412,10 @@ if(briefPopup && briefPopupOpen){
         
     }
 
+    briefPopup.querySelector(".popup-close").addEventListener("click",()=>{
+        closeAllPopups();
+    })
+
 }
 
 function closeAllPopups(){
@@ -419,8 +427,9 @@ function closeAllPopups(){
 }  
 
 function checkHeight(el){
+    console.log("check");
 
-    insideBlock = el.querySelector(".popup_popup_blk");
+    insideBlock = el.querySelector(".popup_inner");
 
     if(insideBlock){
         elHeight = Number(window.getComputedStyle(insideBlock).height.slice(0,-2));

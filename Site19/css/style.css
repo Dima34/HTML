@@ -1726,10 +1726,11 @@ footer {
     .about-you_popup .wrapper .about-you_popup_blk input, .about-you_popup .wrapper .about-you_popup_blk textarea {
       display: block;
       padding: 12px 14px 11px 14px;
-      border: 1px solid white;
+      border: 1px solid black;
       border-radius: 10px;
       width: 100%;
-      background: 0; }
+      background: 0;
+      color: black; }
     .about-you_popup .wrapper .about-you_popup_blk input, .about-you_popup .wrapper .about-you_popup_blk textarea, .about-you_popup .wrapper .about-you_popup_blk input::placeholder, .about-you_popup .wrapper .about-you_popup_blk textarea::placeholder {
       font-size: 18px;
       line-height: 18px;
@@ -1737,7 +1738,7 @@ footer {
       font-family: 'Open Sans' !important;
       font-weight: 300 !important;
       opacity: 1;
-      color: white; }
+      color: rgba(0, 0, 0, 0.6); }
     .about-you_popup .wrapper .about-you_popup_blk textarea {
       resize: none;
       height: 81px;
@@ -1763,7 +1764,7 @@ footer {
       font-size: 30px;
       line-height: 30px;
       letter-spacing: 0.03em;
-      color: white;
+      color: black;
       position: relative;
       z-index: 2;
       display: block;
@@ -1847,7 +1848,7 @@ footer {
     transition: .3s; }
     .brief_popup .brief_popup_blk button::after {
       position: absolute;
-      content: url(../img/svg/about-you-popup_btn-ring.svg);
+      content: url(../img/svg/brief-popup_btn-ring.svg);
       z-index: -1;
       left: -31px;
       top: -23px; }
@@ -2899,7 +2900,47 @@ footer {
       .service .wrapper .service-conquer .right .conquer-text::after {
         left: -118px;
         top: -56px;
-        transform: scale(0.8, 0.9); } }
+        transform: scale(0.8, 0.9); }
+  .brief_popup .brief_popup_blk {
+    padding: 74px 50px 47px 85px;
+    width: 693px;
+    column-gap: 45px; }
+    .brief_popup .brief_popup_blk .brief-header {
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 10px; }
+    .brief_popup .brief_popup_blk .brief-left .brief-title, .brief_popup .brief_popup_blk .brief-right .brief-title {
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.01em;
+      margin-bottom: 18px; }
+    .brief_popup .brief_popup_blk .brief-left input, .brief_popup .brief_popup_blk .brief-left textarea {
+      border-radius: 7px;
+      margin-bottom: 6px;
+      padding: 11px 14px 10px 14px;
+      font-size: 15px;
+      line-height: 16px; }
+      .brief_popup .brief_popup_blk .brief-left input::placeholder, .brief_popup .brief_popup_blk .brief-left textarea::placeholder {
+        font-size: 15px;
+        line-height: 16px; }
+    .brief_popup .brief_popup_blk .brief-left textarea {
+      height: 62px;
+      margin-bottom: 29px; }
+    .brief_popup .brief_popup_blk .brief-left button {
+      font-size: 20px;
+      line-height: 30px;
+      margin-left: 25px; }
+      .brief_popup .brief_popup_blk .brief-left button::after {
+        left: -57px;
+        top: -27px;
+        transform: scale(0.65); }
+    .brief_popup .brief_popup_blk .brief-right .brief-title {
+      margin-bottom: 34px; }
+    .brief_popup .brief_popup_blk .brief-right label {
+      font-size: 19px;
+      line-height: 44px; }
+    .brief_popup .brief_popup_blk::after {
+      content: url(../img/svg/brief-popup-backround-700.svg); } }
 
 @media screen and (max-width: 1100px) {
   * .wrapper {
@@ -3227,8 +3268,8 @@ footer {
     .what-we-do_intro .wrapper .intro_alert .alert-ring {
       width: 429.44px;
       height: 224.76px;
-      top: -21px;
-      right: -17px; }
+      top: -13px;
+      right: -22px; }
     .what-we-do_intro .wrapper .intro_alert::after {
       top: -42px;
       right: -72px;
@@ -3369,7 +3410,42 @@ footer {
           .service .wrapper .service-conquer .right .conquer-text::after {
             left: -142px;
             top: -74px;
-            transform: scale(0.63, 0.63); } }
+            transform: scale(0.63, 0.63); }
+  .about-you_popup .wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 340px !important; }
+    .about-you_popup .wrapper .about-you_popup_blk {
+      padding: 50px 42px 50px 42px;
+      background: #FFFFFF;
+      border: 1px solid #FFE76A;
+      border-radius: 20px;
+      position: relative; }
+      .about-you_popup .wrapper .about-you_popup_blk input, .about-you_popup .wrapper .about-you_popup_blk textarea {
+        border-radius: 7px;
+        margin-bottom: 8px;
+        padding: 11px 14px 10px 14px;
+        font-size: 15px;
+        line-height: 16px; }
+        .about-you_popup .wrapper .about-you_popup_blk input::placeholder, .about-you_popup .wrapper .about-you_popup_blk textarea::placeholder {
+          font-size: 15px;
+          line-height: 16px; }
+      .about-you_popup .wrapper .about-you_popup_blk textarea {
+        margin-bottom: 36px; }
+      .about-you_popup .wrapper .about-you_popup_blk button {
+        font-size: 20px;
+        line-height: 30px; }
+        .about-you_popup .wrapper .about-you_popup_blk button::after {
+          left: -57px;
+          top: -27px;
+          transform: scale(0.65); }
+      .about-you_popup .wrapper .about-you_popup_blk::after {
+        display: none; }
+      .about-you_popup .wrapper .about-you_popup_blk .popup-close {
+        display: block !important;
+        position: absolute;
+        right: 6px;
+        top: 6px; } }
 
 @media screen and (max-width: 750px) {
   * .wrapper {
@@ -4051,7 +4127,65 @@ footer {
           .service .wrapper .service-conquer .right .conquer-text::after {
             left: -158px;
             top: -66px;
-            transform: scale(0.6, 0.72); } }
+            transform: scale(0.6, 0.72); }
+  .brief_popup {
+    padding: 40px 0; }
+    .brief_popup .brief_popup_blk {
+      width: 340px;
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 50px 42px 50px 42px;
+      column-gap: 0;
+      background: #FFFFFF;
+      border: 1px solid #FFE76A;
+      border-radius: 20px;
+      position: relative; }
+      .brief_popup .brief_popup_blk .brief-header {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 5px;
+        grid-column: 1/2;
+        text-align: center; }
+      .brief_popup .brief_popup_blk .brief-left .brief-title, .brief_popup .brief_popup_blk .brief-right .brief-title {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        margin-bottom: 20px; }
+      .brief_popup .brief_popup_blk .brief-left {
+        grid-row: 3/4;
+        grid-column: 1/2; }
+        .brief_popup .brief_popup_blk .brief-left input, .brief_popup .brief_popup_blk .brief-left textarea {
+          border-radius: 7px;
+          margin-bottom: 6px;
+          padding: 11px 14px 10px 14px;
+          font-size: 15px;
+          line-height: 16px; }
+          .brief_popup .brief_popup_blk .brief-left input::placeholder, .brief_popup .brief_popup_blk .brief-left textarea::placeholder {
+            font-size: 15px;
+            line-height: 16px; }
+        .brief_popup .brief_popup_blk .brief-left textarea {
+          height: 62px;
+          margin-bottom: 29px; }
+        .brief_popup .brief_popup_blk .brief-left button {
+          margin: 0 auto; }
+      .brief_popup .brief_popup_blk .brief-right {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        margin-bottom: 14px; }
+        .brief_popup .brief_popup_blk .brief-right .brief-title {
+          margin-bottom: 20px; }
+        .brief_popup .brief_popup_blk .brief-right label {
+          font-size: 18px;
+          line-height: 35px;
+          margin-bottom: 6px; }
+      .brief_popup .brief_popup_blk .popup-close {
+        display: block !important;
+        position: absolute;
+        right: 6px;
+        top: 6px; }
+      .brief_popup .brief_popup_blk::after {
+        display: none; } }
 
 @media screen and (max-width: 425px) {
   header .header-burger-menu .wrapper .burger_header {
