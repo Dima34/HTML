@@ -347,7 +347,7 @@ header {
 .what-we-do {
   position: relative;
   min-height: 490px;
-  padding: 0 74px;
+  padding: 0 133px;
   padding-bottom: 75px; }
   .what-we-do .wrapper .what-we-do_title {
     font-family: 'Open Sans' !important;
@@ -373,31 +373,24 @@ header {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+.orange-wrap {
+  background: #FFE76A;
+  margin-top: -1px; }
+
 .our-goals {
   position: relative;
-  margin-top: -13px; }
+  margin-top: -236px;
+  overflow: hidden; }
   .our-goals .our-goals-waves {
-    position: absolute;
+    position: relative;
     left: 0;
-    bottom: calc(100% - 15px);
     width: 100%; }
-  .our-goals::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 98%;
-    left: 0;
-    bottom: 0;
-    background: #FFE76A;
-    z-index: -1; }
   .our-goals .wrapper {
     padding: 0 67px 0 87px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 93px;
-    column-gap: 45px;
-    overflow: hidden;
-    padding-top: 30px; }
+    column-gap: 45px; }
     .our-goals .wrapper .goal {
       position: relative; }
       .our-goals .wrapper .goal .goal_header {
@@ -2350,13 +2343,13 @@ footer {
     .what-we-do .shape-bottom {
       display: none; }
   .our-goals {
-    z-index: 4; }
+    z-index: 4;
+    margin-top: -180px; }
     .our-goals .wrapper {
       padding: 0 24px;
-      margin-top: -27px;
+      margin-top: -0px;
       row-gap: 29px;
-      column-gap: 87px;
-      padding-top: 20px; }
+      column-gap: 87px; }
       .our-goals .wrapper .goal .goal_header .header_title {
         font-size: 35px; }
       .our-goals .wrapper .goal .goal_text {
@@ -3000,25 +2993,27 @@ footer {
     .what-we-do .wrapper .what-we-do_subtitle {
       font-size: 23px;
       line-height: 32px; }
-  .our-goals .wrapper {
-    padding: 0 13px;
-    padding-top: 10px;
-    column-gap: 23px;
-    padding-left: 10px; }
-    .our-goals .wrapper .goal .goal_header {
-      margin-bottom: 7px; }
-      .our-goals .wrapper .goal .goal_header .header_num {
-        margin-right: 27px; }
-      .our-goals .wrapper .goal .goal_header .header_title {
-        font-size: 26px; }
-    .our-goals .wrapper .goal .goal_text {
-      font-size: 17px;
-      line-height: 25px;
-      padding-left: 60px; }
-    .our-goals .wrapper .goal .goal-video {
-      display: none; }
-    .our-goals .wrapper .goal svg {
-      display: none; }
+  .our-goals {
+    margin-top: -140px; }
+    .our-goals .wrapper {
+      padding: 0 13px;
+      padding-top: 10px;
+      column-gap: 23px;
+      padding-left: 10px; }
+      .our-goals .wrapper .goal .goal_header {
+        margin-bottom: 7px; }
+        .our-goals .wrapper .goal .goal_header .header_num {
+          margin-right: 27px; }
+        .our-goals .wrapper .goal .goal_header .header_title {
+          font-size: 26px; }
+      .our-goals .wrapper .goal .goal_text {
+        font-size: 17px;
+        line-height: 25px;
+        padding-left: 60px; }
+      .our-goals .wrapper .goal .goal-video {
+        display: none; }
+      .our-goals .wrapper .goal svg {
+        display: none; }
   .ghost-text .wrapper p {
     font-size: 69px;
     line-height: 74px;
@@ -3511,43 +3506,45 @@ footer {
     .what-we-do .wrapper .what-we-do_subtitle {
       font-size: 21px;
       line-height: 30px; }
-  .our-goals .our-goals-waves {
-    transform: scale(-1, 1);
-    bottom: calc(100% - 20px); }
-  .our-goals .wrapper {
-    grid-template-columns: 1fr;
-    padding: 0 0px;
-    padding-top: 64px;
-    row-gap: 50px; }
-    .our-goals .wrapper .goal .goal_header {
-      flex-direction: row-reverse;
-      justify-content: space-between; }
-      .our-goals .wrapper .goal .goal_header .header_num {
-        margin-right: 10px;
-        font-size: 20px;
-        line-height: 30px;
-        letter-spacing: 0.02em;
-        margin-top: 10px; }
-        .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring1, .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring3 {
-          content: url("../img/svg/goal-ring-white-mobile.svg"); }
-        .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring2, .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring4 {
-          content: url("../img/svg/goal-ring-blackmobile.svg"); }
-        .our-goals .wrapper .goal .goal_header .header_num .goal-ring {
-          height: 43px; }
-        .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring1, .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring2, .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring3, .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring4 {
-          left: -101%;
-          top: -17%; }
-      .our-goals .wrapper .goal .goal_header .header_title {
-        font-size: 30px;
-        margin-top: 9px;
-        margin-bottom: 4px; }
-    .our-goals .wrapper .goal:nth-child(3) .goal_header .header_num {
-      color: white; }
-    .our-goals .wrapper .goal:nth-child(4) .goal_header .header_num {
-      color: black; }
-    .our-goals .wrapper .goal .goal_text {
-      padding-left: 0;
-      line-height: 27px; }
+  .our-goals {
+    margin-top: -57px; }
+    .our-goals .our-goals-waves {
+      transform: scale(-1, 1);
+      bottom: calc(100% - 20px); }
+    .our-goals .wrapper {
+      grid-template-columns: 1fr;
+      padding: 0 0px;
+      padding-top: 47px;
+      row-gap: 50px; }
+      .our-goals .wrapper .goal .goal_header {
+        flex-direction: row-reverse;
+        justify-content: space-between; }
+        .our-goals .wrapper .goal .goal_header .header_num {
+          margin-right: 10px;
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: 0.02em;
+          margin-top: 10px; }
+          .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring1, .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring3 {
+            content: url("../img/svg/goal-ring-white-mobile.svg"); }
+          .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring2, .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring4 {
+            content: url("../img/svg/goal-ring-blackmobile.svg"); }
+          .our-goals .wrapper .goal .goal_header .header_num .goal-ring {
+            height: 43px; }
+          .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring1, .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring2, .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring3, .our-goals .wrapper .goal .goal_header .header_num .goal-ring.ring4 {
+            left: -101%;
+            top: -17%; }
+        .our-goals .wrapper .goal .goal_header .header_title {
+          font-size: 30px;
+          margin-top: 9px;
+          margin-bottom: 4px; }
+      .our-goals .wrapper .goal:nth-child(3) .goal_header .header_num {
+        color: white; }
+      .our-goals .wrapper .goal:nth-child(4) .goal_header .header_num {
+        color: black; }
+      .our-goals .wrapper .goal .goal_text {
+        padding-left: 0;
+        line-height: 27px; }
   .ghost-text {
     padding-top: 75px; }
     .ghost-text .wrapper p {
