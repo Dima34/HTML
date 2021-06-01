@@ -411,7 +411,7 @@ header{
 
         .intro_left{
             position: relative;
-            min-height: 780px;
+            min-height: 744px;
 
             .intro_logo{
                 display: block;
@@ -456,11 +456,14 @@ header{
 
         .intro_right{
             @include Open(300);
-            font-size: 40px;
-            line-height: 55px;
             display: flex;
-            justify-content: center;
             align-items: center;
+
+            video{
+                margin-left: 51px;
+                margin-bottom: 76px;
+                transform: scale(1.12);
+            }
         }
     }
 }
@@ -3652,10 +3655,19 @@ footer{
                 }
 
                 &::after{
-                    transform: scale(0.73) translate(62px, 34px);
+                    transform: scale(0.73) translate(52px, 34px);
                 }
 
-            }            
+            }     
+            
+            .intro_right{
+
+                video{
+                    margin-left: 8px;
+                    margin-bottom: 46px;
+                    transform: scale(1); 
+                }
+            }
         }
     }
 
@@ -4661,7 +4673,7 @@ footer{
 
     .intro .wrapper {
         padding-top: 68px;
-        padding-left: 51px;
+        padding-left: 43px;
 
         .intro_left{
             min-height: 410px;
@@ -4702,7 +4714,17 @@ footer{
             }
 
             &::after{
-                transform: scale(0.63, 0.6) translate(76px, 81px);
+                transform: translate(56px, 61px);
+                content: url(../img/svg/intro-shape-768.svg);
+            }
+        }
+
+        .intro_right{
+
+            video{
+                margin-left: 8px;
+                margin-bottom: 79px;
+                transform: scale(0.9);
             }
         }
     }
@@ -5702,6 +5724,7 @@ footer{
     }
 
     .intro{
+        overflow: hidden;
 
         .wrapper{
             padding-left: 0;
@@ -5710,10 +5733,10 @@ footer{
             flex-direction: column;
 
             .intro_left{
-                min-height: 600px;
+                min-height: 478px;
 
                 .intro_logo{
-                    margin-bottom: 135px;
+                    margin-bottom: 101px;
 
                     img{
                         width: 64px;
@@ -5724,38 +5747,42 @@ footer{
                     font-size: 20px;
                     letter-spacing: unset;
                     white-space: nowrap;
-                    padding-left: 14px;
+                    padding-left: 0px;
                 }
 
                 .intro_title{
-                    
                     font-size: 61px;
-                    line-height: 84px;
-                    padding-top: 27px;
-                    margin-bottom: 19px;
-                    padding-left: 15px;
+                    line-height: 79px;
+                    padding-top: 26px;
+                    margin-bottom: 15px;
+                    padding-left: 0px;
 
-                    .uplined::after {
-                        width: 36px;
-                        height: 4px;
-                        right: calc(100% - 14px);
-                        top: 21px;
+                    &.uplined::after {
+                        width: 28px;
+                        height: 3px;
+                        right: calc(100% - 10px);
+                        top: 18px;
                     }
                 }
 
                 .intro_subtitle{
-                    padding-left: 15px;
+                    padding-left: 0px;
                 }
 
                 &::after{
                     content: url(../img/svg/intro-shape-mobile.svg);
-                    transform:  translate(83px, 181px);
+                    transform: translate(-108px, 178px);
                     z-index: -1;
                 }
             }
 
             .intro_right{
                 min-height: 143px;
+
+                video{
+                    margin-left: 0;
+                    transform: scale(1.15)
+                }
             }
         }
 
