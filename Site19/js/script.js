@@ -81,7 +81,6 @@ opacityReversedCounter = (element,speed) =>{
     let timer = setInterval(()=>{
         tmp-=0.1;
         element.style.opacity = tmp;
-        console.log(tmp);
         if(tmp <=0){
             clearTimeout(timer)
         }
@@ -184,7 +183,7 @@ mouseParallax = (elem, factor = 0.1, reversed = false)=> {
 
 };
 
-if(window.innerWidth > 1000){
+if(window.innerWidth > 1100){
     mouseParallax(document.querySelectorAll(".line1_ring"), 0.007);
     mouseParallax(document.querySelectorAll(".line2_ring"), 0.001, true);
     mouseParallax(document.querySelectorAll(".line2_explosion"), 0.001, true);
@@ -473,7 +472,6 @@ document.addEventListener("click", (e)=>{
     obj = e.path
     
     if(!CheckExistClass(obj, "popup_inner") && !CheckExistClass(obj, "popup-btn")){
-        console.log("close");
         closeAllPopups()
     }
     

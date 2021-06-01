@@ -5098,12 +5098,39 @@ footer{
                 margin-bottom: -28px;
 
                 .left{
-                    transform: scale(0.53) translate(23px, -5px);
-                    transform-origin: left top;
+                    transform: unset;
+                    margin-left: -24px;
+                    margin-top: 13px;
+
+                    .image-group{
+                        clip-path: unset;
+                        transform: none;
+                        width: 298px;
+                        height: 303px;
+                        position: relative;
+                        overflow: hidden;
+                        z-index: 0;                     
+    
+                        &::after{
+                            position: absolute;
+                            width: 110%;
+                            height: 110%;
+                            content: "";
+                            background: url(../img/mask1.png);
+                            transform: scale(1);
+                            z-index: 2;                          
+                        }
+
+                    }
+
+                    .ring{
+                        display: none;
+                    }
+                   
                 }
 
                 .right{
-                    margin-left: -182px;
+                    margin-left: 0px;
 
                     .block-title{
                         margin-top: 7px;
@@ -5115,18 +5142,39 @@ footer{
                     .block-description{
                         font-size: 20px;
                         line-height: 35px;
+                        padding-left: 10px;
                     }
                 }
 
                 &:nth-child(2){
-                    margin-top: -122px;
+                    margin-top: 45px;
+                    margin-bottom: 32px;
+
+                    .left{
+                        transform: unset;
+                        padding-top: 26px;
+                        padding-left: 3px;
+    
+                        .image-group{
+                            clip-path: unset;
+                            transform: none;
+
+                            &::after{
+                                background: url(../img/mask2.png);
+                                background-size: 298px 303px;
+                            }
+                        }
+                    }
 
                     .right{
                         padding-top: 0px;
-                        margin-top: -40px;
 
                         .block-title{
-                            margin-bottom: 25px;
+                            margin-bottom: 16px;
+                        }
+
+                        .block-description{
+                            padding-left: 0;
                         }
                     }
 
@@ -5136,7 +5184,7 @@ footer{
     }
 
     .our-pets{
-        margin-top: -296px; 
+        margin-top: 0; 
         margin-bottom: 0;
 
         
@@ -5151,9 +5199,17 @@ footer{
 
             .our-pets_content{
 
+                .ring{
+                    display: none;
+                }
+
+                .our-pets-image .image-group{
+                    clip-path: unset;
+                }
+
                 .left, .right{
                     .our-pets-image{
-                        transform: scale(0.61, 0.66) translate(32px, -5px);
+                        transform: unset;
                         transform-origin: left top;
                     }
                 }
@@ -5176,10 +5232,12 @@ footer{
                         margin-left: 13px;
 
                         &::after{
-                            transform: scale(0.669);
+                            transform: unset;
                             transform-origin: left top;
                         }
                     }
+
+                    
                 }              
                 
             }
