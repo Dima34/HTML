@@ -370,13 +370,48 @@ header {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* -----======MAIN WHAT WE DO=====----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.our-projects-body .what-we-do_intro .wrapper .intro_subtitle {
+  margin-bottom: 72px; }
+
+.our-projects-body .our-projects .wave {
+  width: 100vw; }
+
+.our-projects-body .our-projects .wave-top {
+  transform: scale(1, -1); }
+
+.our-projects-body .our-projects .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 116px;
+  row-gap: 41px;
+  padding: 45px 75px; }
+  .our-projects-body .our-projects .wrapper .proj-block img {
+    width: 100%;
+    height: 332px;
+    object-fit: cover;
+    margin-bottom: 7px;
+    border-radius: 20px; }
+  .our-projects-body .our-projects .wrapper .proj-block p {
+    font-size: 25px;
+    line-height: 34px; }
+    .our-projects-body .our-projects .wrapper .proj-block p span {
+      font-weight: 400 !important; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* -------=======OUR GOALS======------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
 .orange-wrap {
   background: #FFE76A;
-  margin-top: -1px; }
+  margin-top: -1px;
+  margin-bottom: -1px; }
 
 .our-goals {
   position: relative;
@@ -2426,7 +2461,9 @@ footer {
       .works .colored-wrapper .wrapper .swiper-container .swiper-button-prev {
         left: 170px; }
   footer {
-    padding: 0px 70px; } }
+    padding: 0px 70px; }
+  .our-projects-body .our-projects .wrapper {
+    padding: 45px 0px; } }
 
 @media screen and (max-width: 1250px) {
   * .wrapper {
@@ -2946,7 +2983,16 @@ footer {
       font-size: 19px;
       line-height: 44px; }
     .brief_popup .brief_popup_blk::after {
-      content: url(../img/svg/brief-popup-backround-700.svg); } }
+      content: url(../img/svg/brief-popup-backround-700.svg); }
+  .our-projects-body .our-projects .wrapper {
+    padding: 28px 0px;
+    column-gap: 105px;
+    row-gap: 52px; }
+    .our-projects-body .our-projects .wrapper .proj-block img {
+      height: 270px; }
+    .our-projects-body .our-projects .wrapper .proj-block p {
+      font-size: 20px;
+      line-height: 27px; } }
 
 @media screen and (max-width: 1100px) {
   * .wrapper {
@@ -3332,8 +3378,8 @@ footer {
     line-height: 40px;
     margin-bottom: 32px; }
   .what-we-do_intro .wrapper .intro_subtitle {
-    font-size: 23px;
-    line-height: 52px;
+    font-size: 20px;
+    line-height: 35px;
     margin-bottom: 66px; }
   .what-we-do_intro .wrapper .intro_alert {
     max-width: 355px;
@@ -3521,7 +3567,18 @@ footer {
         display: block !important;
         position: absolute;
         right: 6px;
-        top: 6px; } }
+        top: 6px; }
+  .our-projects-body .our-projects .wrapper {
+    padding: 28px 0px;
+    column-gap: 0px;
+    grid-template-columns: 1fr;
+    row-gap: 45px;
+    max-width: 431px !important; }
+    .our-projects-body .our-projects .wrapper .proj-block img {
+      height: 270px; }
+    .our-projects-body .our-projects .wrapper .proj-block p {
+      font-size: 20px;
+      line-height: 27px; } }
 
 @media screen and (max-width: 750px) {
   * .wrapper {
@@ -4293,7 +4350,24 @@ footer {
         right: 6px;
         top: 6px; }
       .brief_popup .brief_popup_blk::after {
-        display: none; } }
+        display: none; }
+  .our-projects-body .what-we-do_intro .intro_subtitle {
+    margin-bottom: 38px; }
+  .our-projects-body .our-projects .wave {
+    transform: scale(1.7); }
+  .our-projects-body .our-projects .wave-top {
+    transform: scale(1.7, -1.7); }
+  .our-projects-body .our-projects .wrapper {
+    padding: 50px 0px;
+    column-gap: 0px;
+    grid-template-columns: 1fr;
+    row-gap: 38px;
+    max-width: 330px !important; }
+    .our-projects-body .our-projects .wrapper .proj-block img {
+      height: 200px; }
+    .our-projects-body .our-projects .wrapper .proj-block p {
+      font-size: 20px;
+      line-height: 27px; } }
 
 @media screen and (max-width: 425px) {
   header .header-burger-menu .wrapper .burger_header {

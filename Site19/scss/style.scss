@@ -511,6 +511,67 @@ header{
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+/* -----======MAIN WHAT WE DO=====----- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.our-projects-body{
+
+    .what-we-do_intro{
+
+        .wrapper{
+
+            .intro_subtitle{
+                margin-bottom: 72px;
+            }
+        }
+    }
+   
+    .our-projects{
+
+        .wave{
+            width: 100vw;
+        }
+
+        .wave-top{
+            transform: scale(1, -1);
+        }
+
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 116px;
+            row-gap: 41px;
+            padding: 45px 75px;
+
+            .proj-block{
+
+                img{
+                    width: 100%;
+                    height: 332px;
+                    object-fit: cover;
+                    margin-bottom: 7px;
+                    border-radius: 20px;
+                }
+
+                p{
+                    font-size: 25px;
+                    line-height: 34px;
+
+                    span{
+                        font-weight: 400 !important;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
 /* -------=======OUR GOALS======------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -519,6 +580,7 @@ header{
 .orange-wrap{
     background: #FFE76A;
     margin-top: -1px;
+    margin-bottom: -1px;
 }
 
 .our-goals{
@@ -1007,7 +1069,6 @@ header{
 
 
 }
-
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -3537,6 +3598,17 @@ footer{
         padding: 0px 70px;
     }
 
+    .our-projects-body{
+
+        .our-projects{
+               
+            .wrapper{
+                padding: 45px 0px;
+            }
+    
+        }
+    }
+
 }
 
 @media screen and (max-width:1250px){
@@ -4625,6 +4697,30 @@ footer{
         }
     }
 
+    .our-projects-body{
+
+        .our-projects{
+               
+            .wrapper{
+                padding: 28px 0px;
+                column-gap: 105px;
+                row-gap: 52px;
+
+                .proj-block{
+                    img{
+                        height: 270px;
+                    }
+
+                    p{
+                        font-size: 20px;
+                        line-height: 27px;
+                    }
+                }
+            }
+    
+        }
+    }
+
 }
 
 @media screen and (max-width:1100px){
@@ -5367,8 +5463,8 @@ footer{
             }
 
             .intro_subtitle{
-                font-size: 23px;
-                line-height: 52px;
+                font-size: 20px;
+                line-height: 35px;
                 margin-bottom: 66px;
             }
 
@@ -5722,6 +5818,31 @@ footer{
         }
     }
 
+    .our-projects-body{
+
+        .our-projects{
+               
+            .wrapper{
+                padding: 28px 0px;
+                column-gap: 0px;
+                grid-template-columns: 1fr;
+                row-gap: 45px;
+                max-width: 431px !important;
+
+                .proj-block{
+                    img{
+                        height: 270px;
+                    }
+
+                    p{
+                        font-size: 20px;
+                        line-height: 27px;
+                    }
+                }
+            }
+    
+        }
+    }
 }
 
 @media screen and (max-width:750px){
@@ -7111,6 +7232,47 @@ footer{
             &::after{
                display: none;
             }
+        }
+    }
+
+    .our-projects-body{
+
+        .what-we-do_intro{
+
+            .intro_subtitle{
+                margin-bottom: 38px;
+            }
+        }
+
+        .our-projects{
+
+            .wave{
+                transform: scale(1.7);
+            }
+
+            .wave-top{
+                transform: scale(1.7, -1.7);
+            }
+               
+            .wrapper{
+                padding: 50px 0px;
+                column-gap: 0px;
+                grid-template-columns: 1fr;
+                row-gap: 38px;
+                max-width: 330px !important;
+
+                .proj-block{
+                    img{
+                        height: 200px;
+                    }
+
+                    p{
+                        font-size: 20px;
+                        line-height: 27px;
+                    }
+                }
+            }
+    
         }
     }
     
