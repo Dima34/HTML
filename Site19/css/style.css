@@ -3578,11 +3578,11 @@ footer {
       .intro .wrapper .intro_right {
         min-height: 143px;
         padding-bottom: 79px;
-        border: 1px solid green; }
+        border: 1px solid yellow; }
         .intro .wrapper .intro_right video {
           margin-left: 0;
           transform: scale(1.15);
-          border: 1px solid red;
+          border: 1px solid pink;
           margin-bottom: 0; }
   .what-we-do {
     min-height: 260px; }
