@@ -18,6 +18,9 @@ gulp.task('fileinclude', function() {
     return gulp.src(
       [
         './src/index.html',
+        './src/project-gastroenterology.html',
+        './src/project-hara.html',
+        './src/project-arabella.html',
         './src/our-projects.html',
         './src/article.html',
         './src/tiapedia.html',
@@ -33,6 +36,7 @@ gulp.task('fileinclude', function() {
         './src/create-branding.html',
         './src/create-seo.html'
       ])
+      
 
       .pipe(fileinclude({
         prefix: '@@',

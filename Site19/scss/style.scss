@@ -3306,6 +3306,161 @@ footer{
 
 }
 
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* -------=======PROJECT=======-------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.project{
+    padding-top: 92px;
+    margin-bottom: 104px;
+
+    .wrapper{
+        padding: 0 77px;
+
+        .logo{
+            margin-bottom: 64px;
+            display: block;
+        }
+
+        .service_title{
+            font-size: 66px;
+            line-height: 50px;
+            @include Open(800);
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 49px;
+        }
+
+        p{
+            font-size: 25px;
+            line-height: 40px;
+            @include Open(300);
+            margin-bottom: 25px;
+            letter-spacing: 0.01em;
+        }
+
+        .slider{
+
+            padding: 31px;
+            margin: 50px auto;
+            width: 931px;
+            height: 593px;
+            background: #FFE76A;
+            border: 1px solid #000000;
+            border-radius: 20px;
+
+            .swiper-container{
+                overflow: visible;
+                border: 1px solid black;
+                border-radius: 20px;
+
+                .swiper-slide{
+                    width: 100%;
+                    height: 100%;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 20px;
+                    }
+                }
+
+                .swiper-button-prev,.swiper-button-next{
+                    transition: .3s;
+
+                    &::after{
+                        display: none;
+                    }
+
+                }
+
+                .swiper-button-next {
+                    right: -63px;
+                }
+
+                .swiper-button-prev {
+                    left: -60px;
+                }
+
+                .swiper-button-disabled{
+                    opacity: 0;
+                }
+                
+            }
+
+        }
+
+        .image-s{
+            width: 800px;
+            display: block;
+            margin: 50px auto;
+            border: 2px solid #000000;
+            border-radius: 20px;
+            object-fit: cover;
+            height: 304px;
+        }
+
+        .twin{
+            width: 1000px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 105px;
+            margin: 50px auto;
+
+            img{
+                width: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+
+                &:nth-child(1){
+                    height: 651px;
+                }
+
+                &:nth-child(2){
+                    height: 1183px;
+                }
+            }
+        }
+
+        .image-m{
+            width: 700px;
+            display: block;
+            margin: 50px auto;
+            border: 2px solid #000000;
+            border-radius: 20px;
+            object-fit: cover;
+            height: 407px;
+        }
+
+        .image-l{
+            width: 700px;
+            display: block;
+            margin: 50px auto;
+            border: 2px solid #000000;
+            border-radius: 20px;
+            object-fit: cover;
+            height: 622px;
+        }
+
+        .image-b{
+            width: 700px;
+            display: block;
+            margin: 50px auto;
+            border: 2px solid #000000;
+            border-radius: 20px;
+            object-fit: cover;
+            height: 1147px;
+        }
+
+    }
+}
+
+
 @media screen and (max-width:1400px){
 
     *{
@@ -4721,6 +4876,16 @@ footer{
         }
     }
 
+    .project{
+        padding-top: 92px;
+        margin-bottom: 104px;
+    
+        .wrapper{
+            padding: 0;
+        }
+    }
+  
+
 }
 
 @media screen and (max-width:1100px){
@@ -5839,6 +6004,108 @@ footer{
                         line-height: 27px;
                     }
                 }
+            }
+    
+        }
+    }
+
+    .project{
+        padding-top: 71px;
+        margin-bottom: 104px;
+    
+        .wrapper{
+            padding: 0 0px;
+    
+            .logo{
+                margin-bottom: 31px;
+
+                img{
+                    width: 50px;
+                }
+            }
+    
+            .service_title{
+                font-size: 45px;
+                line-height: 50px;
+                margin-bottom: 25px;
+            }
+    
+            p{
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 22px;
+            }
+    
+            .slider{
+    
+                padding: 22px;
+                margin: 35px auto;
+                max-width: 637px;
+                height: 404px;
+    
+                .swiper-container{
+    
+                    .swiper-button-next {
+                        right: -38px;
+                    }
+    
+                    .swiper-button-prev {
+                        left: -35px;
+                    }
+                        
+                }
+    
+            }
+
+            .image-s{
+                width: 100%;
+                height: 276px;
+            }
+    
+            .twin{
+                width: 100%;
+                gap: 45px;
+    
+                img{
+    
+                    &:nth-child(1){
+                        height: 478px;
+                    }
+    
+                    &:nth-child(2){
+                        height: 880px;
+                    }
+                }
+            }
+    
+            .image-m{
+                width: 700px;
+                display: block;
+                margin: 50px auto;
+                border: 2px solid #000000;
+                border-radius: 20px;
+                object-fit: cover;
+                height: 407px;
+            }
+    
+            .image-l{
+                width: 700px;
+                display: block;
+                margin: 50px auto;
+                border: 2px solid #000000;
+                border-radius: 20px;
+                object-fit: cover;
+                height: 622px;
+            }
+    
+            .image-b{
+                width: 700px;
+                display: block;
+                margin: 50px auto;
+                border: 2px solid #000000;
+                border-radius: 20px;
+                object-fit: cover;
+                height: 1147px;
             }
     
         }
@@ -7271,6 +7538,103 @@ footer{
                         line-height: 27px;
                     }
                 }
+            }
+    
+        }
+    }
+
+    .project{
+        padding-top: 93px;
+        margin-bottom: 104px;
+    
+        .wrapper{
+            padding: 0 0px;
+    
+            .logo{
+                margin-bottom: 51px;
+
+                img{
+                    width: 62px;
+                }
+            }
+    
+            .service_title{
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 29px;
+                word-break: break-all;
+            }
+    
+            p{
+                font-size: 20px;
+                line-height: 33px;
+                margin-bottom: 20px;
+            }
+    
+            .slider{
+    
+                padding: 14px;
+                margin: 35px auto;
+                width: 100%;
+                height: 210px;
+    
+                .swiper-container{
+
+                    .swiper-slide{
+                        img{
+                            border-radius: 20px;
+                        }
+                    }
+    
+                    .swiper-button-next, .swiper-button-prev {
+                        display: none;
+                    }
+                        
+                }
+    
+            }
+
+            .image-s{
+                width: 300px;
+                height: 114px;
+            }
+    
+            .twin{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+    
+                img{
+    
+                    &:nth-child(1){
+                        width: 300px;
+                        height: 437px;
+                    }
+    
+                    &:nth-child(2){
+                        width: 300px;
+                        height: 793px;
+                    }
+                }
+            }
+    
+            .image-m{
+                width: 300px;
+                margin: 40px auto;
+                height: 174px;
+            }
+    
+            .image-l{
+                width: 300px;
+                margin: 40px auto;
+                height: 266px;
+            }
+    
+            .image-b{
+                width: 300px;
+                margin: 40px auto;
+                height: 500px;
             }
     
         }
