@@ -18,6 +18,7 @@ gulp.task('fileinclude', function() {
     return gulp.src(
       [
         './src/index.html',
+        './src/template.html',
         './src/project-gastroenterology.html',
         './src/project-hara.html',
         './src/project-arabella.html',
