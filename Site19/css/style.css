@@ -235,33 +235,15 @@ header {
     animation: itemShow 2s ease-in-out; }
   header .header-burger-open-side {
     display: block;
-    width: fit-content;
     position: fixed;
-    writing-mode: tb-rl;
-    text-orientation: mixed;
-    padding: 46px 13px 53px 26px;
-    font-size: 25px;
-    line-height: 30px;
-    letter-spacing: 0.05em;
-    font-family: 'Open Sans' !important;
-    font-weight: 400 !important;
-    color: #FFFFFF;
     top: 50%;
-    right: 0;
     transform: translateY(-50%);
-    z-index: 5;
-    opacity: 0;
+    right: 0;
+    opacity: 1;
     transition: .3s;
-    pointer-events: all;
-    cursor: pointer; }
-    header .header-burger-open-side:hover {
-      color: #FFE76A; }
-    header .header-burger-open-side::after {
-      position: absolute;
-      content: url(../img/svg/header-side-menu-open-shape.svg);
-      top: 0;
-      left: 0;
-      z-index: -1; }
+    z-index: 5;
+    cursor: pointer;
+    pointer-events: all; }
 
 .cursor {
   width: 25px;
@@ -3281,6 +3263,8 @@ footer {
         font-size: 21px; }
       header .wrapper .header-burger svg {
         transform: scale(0.51); }
+    header .header-burger-open-side img {
+      width: 58px; }
   .intro .wrapper {
     padding-top: 68px;
     padding-left: 43px; }
@@ -4016,12 +4000,10 @@ footer {
           z-index: -1; }
       .intro .wrapper .intro_right {
         min-height: 143px;
-        padding-bottom: 79px;
-        border: 1px solid yellow; }
+        padding-bottom: 79px; }
         .intro .wrapper .intro_right video {
           margin-left: 0;
           transform: scale(1.15);
-          border: 1px solid pink;
           margin-bottom: 0; }
   .what-we-do {
     min-height: 260px; }
@@ -4183,10 +4165,13 @@ footer {
     .works .colored-wrapper .wrapper .swiper-container .swiper-button-next, .works .colored-wrapper .wrapper .swiper-container .swiper-button-prev {
       display: none; }
   .main_lines .line1, .main_lines .line2 {
-    padding: 0; }
+    padding: 0;
+    margin-left: -7%; }
     .main_lines .line1 p, .main_lines .line2 p {
       font-size: 18px;
       line-height: 70px; }
+    .main_lines .line1 .line1 p, .main_lines .line2 .line1 p {
+      white-space: nowrap; }
   footer {
     padding: 0;
     padding-top: 10px; }
@@ -4492,7 +4477,7 @@ footer {
   .what-you-need {
     margin-top: 240px; }
     .what-you-need svg text textPath {
-      font-size: 80px; }
+      font-size: 160px; }
     .what-you-need .wrapper {
       padding-top: 17px;
       gap: 0;
