@@ -5,6 +5,11 @@ console.log(
   'color: #c434c4; background: #eee; font-size: 30px '
 );
 
+document.addEventListener("DOMContentLoaded", function(event) {
+    let screen = document.querySelector(".loading");
+    screen.style.display = "none";
+});
+
 
 function ibg(){
 

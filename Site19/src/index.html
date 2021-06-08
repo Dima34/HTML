@@ -15,6 +15,8 @@
 </head>
 
 <body>
+    @@include('./loading.html')
+
     @@include('./header.html', {
       "logoCircle":"#FFE76A",
       "logoLines":"black"
@@ -38,7 +40,7 @@
         </div>
 
         <div class="intro_right">
-          <video autoplay loop muted playsinline>
+          <video autoplay muted playsinline>
             <source src="./videos/main_video.mp4"/>
             <p>Не поддерживается</p>
           </video>
