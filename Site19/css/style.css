@@ -2593,10 +2593,18 @@ footer {
   align-items: center;
   justify-content: center;
   z-index: 10000;
-  background: #FFE76A; }
+  background: #FFE76A;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: 1s; }
   .loading video {
     width: 600px;
     height: 337px; }
+  .loading.disabled {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; }
 
 @media screen and (max-width: 1400px) {
   * .wrapper {

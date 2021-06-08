@@ -3689,10 +3689,20 @@ footer{
     justify-content: center;
     z-index: 10000;
     background: #FFE76A;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transition: 1s;
 
     video{
         width: 600px;
         height: 337px;
+    }
+
+    &.disabled{
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
     }
 }
 

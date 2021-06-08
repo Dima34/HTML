@@ -5,10 +5,22 @@ console.log(
   'color: #c434c4; background: #eee; font-size: 30px '
 );
 
+let screen = document.querySelector(".loading");
+
 document.addEventListener("DOMContentLoaded", function(event) {
-    let screen = document.querySelector(".loading");
-    screen.style.display = "none";
+    
+    setTimeout(()=>{
+        screen.classList.add("disabled");
+    
+        let right_video = document.querySelector(".intro_right");
+    
+        if(right_video){
+            right_video.querySelector("video").play();
+        }
+    }, 2000)
+
 });
+
 
 
 function ibg(){
