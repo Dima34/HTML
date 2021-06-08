@@ -153,7 +153,7 @@ if(timerGroup){
 
     convertedTime = getFormattedTime({hours:H,minutes:M,seconds:S})
 
-    console.log("converted ", convertedTime);
+    // console.log("converted ", convertedTime);
 
     timerH.innerText = convertedTime.hours;
     timerM.innerText = convertedTime.minutes;
@@ -290,9 +290,9 @@ if(timerGroup){
       formattedS = tObj.seconds
     }
 
-    console.log(formattedH);
-    console.log(formattedM);
-    console.log(formattedS);
+    // console.log(formattedH);
+    // console.log(formattedM);
+    // console.log(formattedS);
 
     return {hours : formattedH, minutes : formattedM, seconds : formattedS}
 
@@ -332,22 +332,3 @@ if(Runline){
 
 }
 
-// 
-// ovalAnumation
-// 
-
-// let ovalRunline = document.querySelector(".ovalRunline");
-
-// if(ovalRunline){
-
-//   let Text = ovalRunline.querySelector("text")
-
-//   let rotationX = Text.getAttribute("x");
-  
-//   setInterval(()=>{
-//     rotationX++;
-//     Text.setAttribute("x", rotationX)
-    
-//   }, 10)
-
-// }

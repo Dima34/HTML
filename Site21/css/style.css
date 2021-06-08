@@ -78,6 +78,15 @@
   src: local(""), url("../fonts/eb-garamond-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/eb-garamond-v15-latin-regular.woff2") format("woff2"), url("../fonts/eb-garamond-v15-latin-regular.woff") format("woff"), url("../fonts/eb-garamond-v15-latin-regular.ttf") format("truetype"), url("../fonts/eb-garamond-v15-latin-regular.svg#EBGaramond") format("svg");
   /* Legacy iOS */ }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
+
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
@@ -219,6 +228,31 @@ header {
         width: 100%;
         height: 135px;
         object-fit: cover; }
+    .intro .wrapper .intro-donate {
+      font-family: 'EB Garamond' !important;
+      font-size: 40px;
+      line-height: 52px;
+      text-align: center;
+      letter-spacing: 0.06em;
+      height: 100%;
+      width: 299px;
+      position: relative;
+      padding: 42px 45px;
+      background: #232323;
+      border-right: 1px solid rgba(255, 255, 255, 0.5);
+      box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: left; }
+      .intro .wrapper .intro-donate:hover {
+        opacity: 1; }
+        .intro .wrapper .intro-donate:hover::after {
+          right: 28px; }
+      .intro .wrapper .intro-donate::after {
+        content: url(../img/svg/donation-arrow.svg);
+        position: absolute;
+        top: 50%;
+        right: 34px;
+        transform: translateY(-50%);
+        transition: .3s; }
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -1102,6 +1136,18 @@ footer {
         .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-prev {
           left: 27px;
           top: 46.5%; }
+    .cruises .wrapper .arabella-video {
+      margin-bottom: 113px; }
+      .cruises .wrapper .arabella-video .big-title {
+        margin-bottom: 75px; }
+      .cruises .wrapper .arabella-video .videos {
+        display: flex;
+        flex-direction: row;
+        gap: 78px; }
+        .cruises .wrapper .arabella-video .videos .left, .cruises .wrapper .arabella-video .videos .right {
+          height: 338px;
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          width: 100%; }
     .cruises .wrapper .alcohol {
       margin-bottom: 110px; }
       .cruises .wrapper .alcohol .big-title {
@@ -1358,6 +1404,8 @@ footer {
     padding-top: 19px; }
     .our-place.article .wrapper .logo {
       margin-bottom: 45px; }
+    .our-place.article .wrapper .subtitle {
+      margin-bottom: 30px; }
     .our-place.article .wrapper .comment-subtitle {
       margin-top: 42px;
       font-size: 24px;
@@ -1375,6 +1423,39 @@ footer {
         width: 100%;
         text-align: center;
         margin-bottom: 35px; }
+      .our-place.article .wrapper .article-block .block-subtitle {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 35px;
+        font-family: 'EB Garamond' !important;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase; }
+      .our-place.article .wrapper .article-block .split-arrow {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px; }
+      .our-place.article .wrapper .article-block .link {
+        font-family: 'EB Garamond' !important;
+        font-size: 30px;
+        line-height: 35px;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        padding-right: 50px;
+        position: relative; }
+        .our-place.article .wrapper .article-block .link::after {
+          content: url(../img/svg/donation-arrow.svg);
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          transition: .3s; }
+        .our-place.article .wrapper .article-block .link:hover::after {
+          right: -4px; }
       .our-place.article .wrapper .article-block p, .our-place.article .wrapper .article-block a {
         font-size: 22px;
         line-height: 32px;
@@ -1616,6 +1697,116 @@ footer {
         width: 100%; }
         .our-place.article .wrapper .article-block .ocean-line::after {
           content: url(../img/ocean-line.png); }
+    .our-place.article .wrapper .donation .text-progress {
+      display: flex;
+      font-size: 22px;
+      line-height: 60px;
+      letter-spacing: 0.01em;
+      align-items: flex-end;
+      margin-bottom: 26px; }
+      .our-place.article .wrapper .donation .text-progress .ocean-bg {
+        font-size: 100px;
+        line-height: 100px;
+        font-family: 'Cormorant' !important;
+        background-position-x: 0px; }
+      .our-place.article .wrapper .donation .text-progress p:nth-child(2) {
+        padding-left: 5px; }
+    .our-place.article .wrapper .donation .progress-line {
+      width: 100%;
+      height: 30px;
+      background: rgba(255, 255, 255, 0.9);
+      margin-bottom: 77px; }
+      .our-place.article .wrapper .donation .progress-line .progress {
+        height: 100%;
+        width: 15%;
+        background: url(../img/footer-bg.png);
+        background-size: cover; }
+    .our-place.article .wrapper .donation .title {
+      font-size: 32px;
+      line-height: 32px;
+      font-family: 'EB Garamond' !important;
+      letter-spacing: 0.04em;
+      text-transform: uppercase; }
+    .our-place.article .wrapper .donation .donation-amount {
+      display: flex;
+      margin-bottom: 79px; }
+      .our-place.article .wrapper .donation .donation-amount input {
+        border: 0.9px solid rgba(255, 255, 255, 0.9);
+        background: 0;
+        border-radius: 0;
+        margin-left: 26px;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.04em;
+        padding-left: 17px;
+        width: 289px; }
+        .our-place.article .wrapper .donation .donation-amount input::placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+    .our-place.article .wrapper .donation .payment {
+      margin-bottom: 52px; }
+      .our-place.article .wrapper .donation .payment .title {
+        margin-bottom: 46px; }
+      .our-place.article .wrapper .donation .payment input {
+        display: none; }
+      .our-place.article .wrapper .donation .payment label {
+        font-size: 22px;
+        line-height: 32px;
+        padding-left: 45px;
+        letter-spacing: 0.01em;
+        position: relative;
+        display: block;
+        margin-bottom: 23px; }
+        .our-place.article .wrapper .donation .payment label::after {
+          position: absolute;
+          content: url(../img/svg/checkbox-round-box.svg);
+          left: 0;
+          top: 0; }
+        .our-place.article .wrapper .donation .payment label::before {
+          position: absolute;
+          content: url(../img/svg/checkbox-round-checked.svg);
+          left: 7px;
+          top: -2px;
+          opacity: 0;
+          transition: .2s; }
+      .our-place.article .wrapper .donation .payment input:checked + label::before {
+        opacity: 1; }
+    .our-place.article .wrapper .donation .info .title {
+      margin-bottom: 35px; }
+    .our-place.article .wrapper .donation .info .inputs {
+      display: flex;
+      flex-direction: row;
+      gap: 89px;
+      margin-bottom: 45px; }
+      .our-place.article .wrapper .donation .info .inputs input {
+        border: 0.9px solid rgba(255, 255, 255, 0.9);
+        background: 0;
+        border-radius: 0;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.04em;
+        padding: 6px 0;
+        padding-left: 17px;
+        width: 100%; }
+        .our-place.article .wrapper .donation .info .inputs input::placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+    .our-place.article .wrapper .donation .info .submit {
+      box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.6);
+      display: block;
+      width: 330px;
+      height: fit-content;
+      padding: 16px;
+      font-size: 35px;
+      line-height: 24px;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: #202020;
+      margin: 0 auto;
+      background: url(../img/ocean-text-bg.png) center no-repeat;
+      background-size: cover;
+      border: 0;
+      text-transform: uppercase;
+      font-weight: 600 !important;
+      transition: .3s; }
     .our-place.article .wrapper .article-socials {
       display: flex;
       flex-direction: row;
@@ -1755,5 +1946,128 @@ footer {
 
 .lh-45 {
   line-height: 45px !important; }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* --------========SHOP=======--------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.shop .header-block .wrapper {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .shop .header-block .wrapper .logo {
+    margin-bottom: 26px; }
+  .shop .header-block .wrapper h1 {
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-family: 'EB Garamond' !important;
+    margin-bottom: 50px;
+    color: black; }
+  .shop .header-block .wrapper .search {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    height: 50px;
+    width: 670px;
+    position: relative;
+    display: flex;
+    flex-direction: row; }
+    .shop .header-block .wrapper .search input {
+      border: 0;
+      width: 100%;
+      height: 100%;
+      padding-left: 11px;
+      font-size: 22px;
+      line-height: 30px;
+      color: black; }
+    .shop .header-block .wrapper .search .submit {
+      background: 0;
+      height: 100%;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0;
+      background: black;
+      flex-shrink: 0; }
+    .shop .header-block .wrapper .search .cart {
+      position: absolute;
+      top: 4px;
+      left: calc(100% + 63px); }
+      .shop .header-block .wrapper .search .cart .products-amount {
+        font-size: 15px;
+        line-height: 20px;
+        position: absolute;
+        top: -7px;
+        left: calc(100% + 5px);
+        color: #000000; }
+
+.shop .shop-main .wrapper {
+  border-left: 1px solid rgba(35, 35, 35, 0.55);
+  border-right: 1px solid rgba(35, 35, 35, 0.55);
+  padding: 0 54px;
+  padding-top: 75px;
+  padding-bottom: 183px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center; }
+  .shop .shop-main .wrapper .item {
+    width: 350px;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    margin-bottom: 15px; }
+    .shop .shop-main .wrapper .item img {
+      width: 100%;
+      height: 360px;
+      border: 1px solid black;
+      object-fit: cover;
+      margin-bottom: 14px;
+      display: block;
+      grid-column: 1/3; }
+    .shop .shop-main .wrapper .item .name {
+      grid-column: 1/2;
+      font-size: 27px;
+      line-height: 37px;
+      padding-right: 10px;
+      color: black; }
+    .shop .shop-main .wrapper .item .price .normal-price {
+      font-size: 26px;
+      line-height: 35px;
+      text-align: right;
+      color: black; }
+      .shop .shop-main .wrapper .item .price .normal-price span {
+        color: black; }
+    .shop .shop-main .wrapper .item .price .sale {
+      display: none; }
+    .shop .shop-main .wrapper .item .price.is-sale .normal-price {
+      font-size: 22px;
+      line-height: 30px;
+      color: rgba(0, 0, 0, 0.6);
+      position: relative;
+      width: fit-content; }
+      .shop .shop-main .wrapper .item .price.is-sale .normal-price span {
+        color: rgba(0, 0, 0, 0.6); }
+      .shop .shop-main .wrapper .item .price.is-sale .normal-price:after {
+        content: "";
+        border-bottom: 1px solid black;
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        left: 0;
+        transform: rotate(-12deg); }
+    .shop .shop-main .wrapper .item .price.is-sale .sale {
+      font-size: 26px;
+      line-height: 35px;
+      text-align: right;
+      color: #FF2828;
+      display: block; }
+      .shop .shop-main .wrapper .item .price.is-sale .sale span {
+        color: #FF2828; }
 
 /*# sourceMappingURL=style.css.map */
