@@ -2170,8 +2170,70 @@ footer {
       align-self: center;
       justify-self: end;
       padding-left: 8px; }
-  .shop .cart-main .wrapper .total {
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
+  .shop .cart-main .wrapper .total-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+    gap: 20px;
+    width: 100%; }
+    .shop .cart-main .wrapper .total-info .left {
+      padding-top: 3px;
+      max-width: 470px;
+      width: 100%; }
+      .shop .cart-main .wrapper .total-info .left p {
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        margin-bottom: 16px; }
+      .shop .cart-main .wrapper .total-info .left textarea {
+        width: 100%;
+        height: 70px;
+        font-size: 27px;
+        line-height: 37px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        border-radius: 0;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        resize: none; }
+    .shop .cart-main .wrapper .total-info .right {
+      display: flex;
+      max-width: 516px;
+      flex-direction: column; }
+      .shop .cart-main .wrapper .total-info .right .title {
+        display: flex;
+        justify-content: space-between;
+        font-size: 26px;
+        line-height: 35px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        margin-bottom: 27px;
+        width: 100%; }
+        .shop .cart-main .wrapper .total-info .right .title p {
+          color: black; }
+          .shop .cart-main .wrapper .total-info .right .title p span {
+            color: black; }
+      .shop .cart-main .wrapper .total-info .right .tax {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #000000;
+        margin-bottom: 31px; }
+      .shop .cart-main .wrapper .total-info .right button {
+        background: black;
+        font-size: 26px;
+        line-height: 35px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        padding: 10px 46px;
+        width: fit-content;
+        height: fit-content;
+        border: 1px solid black;
+        align-self: flex-end;
+        transition: .3s;
+        box-sizing: border-box; }
+        .shop .cart-main .wrapper .total-info .right button:hover {
+          color: black;
+          background: white; }
 
 /*# sourceMappingURL=style.css.map */
