@@ -332,3 +332,30 @@ if(Runline){
 
 }
 
+//
+// Item gallery
+// 
+
+let gallery = document.querySelector(".item-gallery");
+
+if(gallery){
+
+  let mainPhoto = gallery.querySelector(".main-photo a");
+
+  photoSelection = gallery.querySelectorAll(".photo-block");
+
+  photoSelection.forEach((el)=>{
+
+    el.addEventListener("click", ()=>{
+      
+      photoSelection.forEach((el)=>{
+        el.classList.remove("selected");
+      })
+
+      el.classList.add("selected");
+      mainPhoto.setAttribute("href", el.querySelector("img").getAttribute("src"))
+      mainPhoto.querySelector("img").setAttribute("src", el.querySelector("img").getAttribute("src"))
+
+    });
+  })
+}
