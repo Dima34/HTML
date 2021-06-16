@@ -1662,14 +1662,16 @@ footer {
 /* ------------------------------------ */
 /* ------------------------------------ */
 .lets-do-together {
-  margin-top: 289px;
+  margin-top: 130px;
   margin-bottom: 250px; }
   .lets-do-together .wrapper {
-    padding: 41px 0 10px 0; }
+    padding: 41px 0 10px 90px; }
     .lets-do-together .wrapper .lets-do {
       display: flex;
       justify-content: space-between;
       padding: 0 140px 0 10px; }
+      .lets-do-together .wrapper .lets-do video {
+        width: 550px; }
       .lets-do-together .wrapper .lets-do .lets-do-button {
         display: block;
         position: relative;
@@ -1677,7 +1679,8 @@ footer {
         font-size: 35px;
         line-height: 70px;
         cursor: pointer;
-        transition: .3s; }
+        transition: .3s;
+        margin-top: 160px; }
         .lets-do-together .wrapper .lets-do .lets-do-button::after {
           position: absolute;
           content: url(../img/svg/lets-do-button.svg);
@@ -2649,6 +2652,10 @@ footer {
       .intro .wrapper .intro_left::after {
         transform: scale(0.88);
         transform-origin: top left; }
+  .lets-do-together .wrapper .lets-do video {
+    width: 450px; }
+  .lets-do-together .wrapper .lets-do .lets-do-button {
+    margin-top: 92px; }
   .what-we-do {
     padding: 0;
     min-height: 460px; }
@@ -2870,6 +2877,21 @@ footer {
       z-index: 3; }
     .our-goals .wrapper .goal.video-active .reversed {
       right: calc(100% - 80px); }
+  .lets-do-together {
+    margin-bottom: 80px; }
+    .lets-do-together .wrapper {
+      padding: 41px 0 10px 0px; }
+      .lets-do-together .wrapper .lets-do {
+        padding-right: 60px; }
+        .lets-do-together .wrapper .lets-do video {
+          width: 450px; }
+        .lets-do-together .wrapper .lets-do .lets-do-button {
+          margin-top: 92px;
+          font-size: 26px; }
+          .lets-do-together .wrapper .lets-do .lets-do-button::after {
+            left: -72px;
+            top: -28px;
+            transform: scale(0.8); }
   .ghost-text .wrapper p {
     font-size: 88px;
     line-height: 80px;
@@ -3770,20 +3792,20 @@ footer {
           font-size: 25px;
           line-height: 38px; }
   .lets-do-together {
-    margin-top: 207px; }
-    .lets-do-together .wrapper .lets-do {
-      padding: 0 58px 0 10px; }
-      .lets-do-together .wrapper .lets-do .lets-do-button {
-        font-size: 23px;
-        line-height: 70px; }
-        .lets-do-together .wrapper .lets-do .lets-do-button::after {
-          left: -89px;
-          transform: scale(0.65);
-          top: -29px; }
-    .lets-do-together .wrapper .lets-do-alert {
-      font-size: 50px;
-      line-height: 68px;
-      margin-top: 113px; }
+    margin-bottom: 80px; }
+    .lets-do-together .wrapper {
+      padding: 20px 0 10px 0px; }
+      .lets-do-together .wrapper .lets-do {
+        padding-right: 60px; }
+        .lets-do-together .wrapper .lets-do video {
+          width: 350px; }
+        .lets-do-together .wrapper .lets-do .lets-do-button {
+          margin-top: 77px;
+          font-size: 22px; }
+          .lets-do-together .wrapper .lets-do .lets-do-button::after {
+            left: -95px;
+            top: -30px;
+            transform: scale(0.65); }
   .pedia-intro .wrapper:nth-child(1) {
     padding-top: 65px; }
     .pedia-intro .wrapper:nth-child(1) .intro-logo img {
@@ -4633,15 +4655,18 @@ footer {
           line-height: 38px;
           margin-left: 5px; }
   .lets-do-together {
-    margin-top: 207px; }
+    margin-top: 114px; }
     .lets-do-together .wrapper .lets-do {
-      padding: 0px 10px 0 10px;
+      padding: 0px 0px 0 0px;
       flex-direction: column;
       align-items: center; }
+      .lets-do-together .wrapper .lets-do video {
+        width: 100%; }
       .lets-do-together .wrapper .lets-do .lets-do-button {
         font-size: 23px;
         line-height: 70px;
-        margin-top: 105px; }
+        margin-top: 100px;
+        margin-left: 10px; }
         .lets-do-together .wrapper .lets-do .lets-do-button::after {
           left: -89px;
           transform: scale(0.65);
