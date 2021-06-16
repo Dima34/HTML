@@ -359,3 +359,28 @@ if(gallery){
     });
   })
 }
+
+
+//
+// Burger
+// 
+
+let header = document.querySelector("header");
+
+if(header){
+
+  let headerList = header.querySelector("nav");
+  let openBtn = header.querySelector(".menu-open");
+
+  openBtn.addEventListener("click", ()=>{
+
+    if(openBtn.classList.contains("active")){
+      headerList.classList.remove("active");
+      openBtn.classList.remove("active");
+    } else{
+      headerList.classList.add("active");
+      openBtn.classList.add("active");
+    }
+    
+  })
+}

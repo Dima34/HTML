@@ -2599,8 +2599,8 @@ footer {
   pointer-events: all;
   transition: 1s; }
   .loading video {
-    width: 600px;
-    height: 337px; }
+    width: 300px;
+    height: 165px; }
   .loading.disabled {
     opacity: 0;
     visibility: hidden;
