@@ -1268,6 +1268,12 @@ footer{
         .up-btn{
             display: block;
             margin-bottom: 67px;
+
+            &.back-btn{
+                    
+                transform: rotate(-90deg);
+                
+            }
         }
 
         .footer-centered-text{
@@ -4485,6 +4491,7 @@ footer{
                     width: 103px;
                     height: 92px;
                 }
+
             }
 
             .footer-centered-text{

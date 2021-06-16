@@ -887,6 +887,8 @@ footer {
     footer .wrapper .up-btn {
       display: block;
       margin-bottom: 67px; }
+      footer .wrapper .up-btn.back-btn {
+        transform: rotate(-90deg); }
     footer .wrapper .footer-centered-text {
       font-family: 'Open Sans' !important;
       font-weight: 600 !important;
