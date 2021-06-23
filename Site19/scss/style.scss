@@ -3550,17 +3550,22 @@ footer{
             .left{
                 width: 100%;
 
+                p{
+                    margin-bottom: 45px;
+                }
+
                 img{
 
                     &:nth-child(1){
                         height: 1160px; 
-                    }
-
-                    &:nth-child(2){
-                        height: 1129.03px;; 
+                        margin-bottom: 45px;
                     }
 
                     &:nth-child(3){
+                        height: 1129.03px;; 
+                    }
+
+                    &:nth-child(4){
                         height: 343px; 
                     }
                 }
@@ -3569,17 +3574,21 @@ footer{
             .right{
                 width: 100%;
 
+                p{
+                    margin-bottom: 74px;
+                }
+
                 img{
 
                     &:nth-child(1){
                         height: 1436px;
                     }
 
-                    &:nth-child(2){
+                    &:nth-child(3){
                         height: 760px;; 
                     }
 
-                    &:nth-child(3){
+                    &:nth-child(4){
                         height: 343px; 
                     }
                 }
@@ -5275,11 +5284,11 @@ footer{
                             height: 940px; 
                         }
     
-                        &:nth-child(2){
+                        &:nth-child(3){
                             height: 918px;; 
                         }
     
-                        &:nth-child(3){
+                        &:nth-child(4){
                             height: 281px; 
                         }
                     }
@@ -5287,6 +5296,10 @@ footer{
     
                 .right{
                     width: 100%;
+
+                    p{
+                        margin-bottom: 50px;
+                    }
     
                     img{
     
@@ -5294,11 +5307,11 @@ footer{
                             height: 1160px;
                         }
     
-                        &:nth-child(2){
+                        &:nth-child(3){
                             height: 615px;; 
                         }
     
-                        &:nth-child(3){
+                        &:nth-child(4){
                             height: 281px; 
                         }
                     }
@@ -6675,11 +6688,11 @@ footer{
                             height: 1160px; 
                         }
     
-                        &:nth-child(2){
+                        &:nth-child(3){
                             height: 1129.03px;; 
                         }
     
-                        &:nth-child(3){
+                        &:nth-child(4){
                             height: 343px; 
                         }
                     }
@@ -6695,11 +6708,11 @@ footer{
                             height: 1436px;
                         }
     
-                        &:nth-child(2){
+                        &:nth-child(3){
                             height: 760px;; 
                         }
     
-                        &:nth-child(3){
+                        &:nth-child(4){
                             height: 343px; 
                         }
                     }
@@ -8376,11 +8389,11 @@ footer{
                             height: 694px; 
                         }
     
-                        &:nth-child(2){
+                        &:nth-child(3){
                             height: 673px;; 
                         }
     
-                        &:nth-child(3){
+                        &:nth-child(4){
                             height: 208px; 
                         }
                     }
@@ -8394,11 +8407,11 @@ footer{
                             height: 855px;
                         }
     
-                        &:nth-child(2){
+                        &:nth-child(3){
                             height: 450px;; 
                         }
     
-                        &:nth-child(3){
+                        &:nth-child(4){
                             height: 208px; 
                         }
                     }

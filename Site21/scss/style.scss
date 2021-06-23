@@ -4106,6 +4106,64 @@ footer{
         }
     }
 
+    .our-place{
+
+        .wrapper{
+
+            .intro {
+
+                .subtitle{
+                    font-size: 23px;
+                    line-height: 35px;
+                }
+
+                .left{
+                   top: 0; 
+                }
+
+                .center{
+                    width: 499px;
+                    height: 367px;
+                    margin-top:72px;
+                }
+
+                .right{
+                    margin-top: 176px;
+                }
+            }
+
+            .our-thessaloniki{
+                max-width: 888px;
+                margin: 0 auto;
+
+                .big-title{
+                    font-size: 35px;
+                    line-height: 46px;
+                    margin-bottom: 95px;
+                }
+
+                .place-block{
+
+                    padding-left: 0;
+                    .left{
+                        max-width: 350px;
+                        max-height: 260px;
+                    }
+
+                    .right{
+                        .text{
+
+                            a{
+                                font-size: 22px;
+                                line-height: 29px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
 }
 
@@ -4372,8 +4430,6 @@ footer{
         
     }
 
-
-
     .contacts{
 
 
@@ -4461,6 +4517,80 @@ footer{
 
                 .contanct{
                     margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+    .our-place{
+
+        .horizontal-line:nth-child(1){
+            display: none;
+        }
+
+        .wrapper{
+            border: 0;
+
+            
+
+            .intro {
+
+                .subtitle{
+                    font-size: 20px;
+                    line-height: 30px;
+                    max-width: 678px;
+                }
+
+                .left{
+                   top: 0; 
+                   height: 324px;
+                }
+
+                .center{
+                    width: 405px;
+                    height: 294px;
+                    margin-top:109px;
+                }
+
+                .right{
+                    margin-top: 238px;
+                    height: 324px;
+                }
+            }
+
+            .our-thessaloniki{
+                max-width: 704px;
+                margin: 0 auto;
+
+                .big-title{
+                    font-size: 30px;
+                    line-height: 39px;
+                    margin-bottom: 60px;
+                }
+
+                .place-block{
+                    margin-bottom: 75px;
+                    padding-left: 0;
+
+                    .left{
+                        max-width: 300px;
+                        max-height: 210px;
+                    }
+
+                    .right{
+                        .text{
+
+                            a{
+                                font-size: 17px;
+                                line-height: 22px;
+                            }
+                        }
+
+                        .signature{
+                            font-size: 20px;
+                            line-height: 26px;
+                        }
+                    }
                 }
             }
         }
@@ -4594,6 +4724,49 @@ footer{
     }
 
     
+}
+
+@media screen and (max-width: 800px) {
+    .our-place{
+
+        .horizontal-line:nth-child(1){
+            display: none;
+        }
+
+        .wrapper{
+            border: 0;           
+
+            .intro {
+
+                .subtitle{
+                    font-size: 19px;
+                    line-height: 31px;
+                }
+
+                .left{
+                   top: 25px; 
+                   height: 276px;
+                }
+
+                .center{
+                    width: 405px;
+                    height: 294px;
+                    margin-top:109px;
+                }
+
+                .right{
+                    margin-top: 238px;
+                    height: 246px;
+                }
+            }
+
+            .our-thessaloniki{
+                width: 95%;
+                margin: 0 auto;
+
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -4903,6 +5076,199 @@ footer{
 
             .col2 p {
                 font-size: 15px;
+            }
+        }
+    }
+
+    .our-place{
+
+        .horizontal-line:nth-child(1){
+            display: none;
+        }
+
+        .wrapper{
+            border: 0;           
+
+            .intro {
+
+                .subtitle{
+                    font-size: 19px;
+                    line-height: 31px;
+                    max-width: 95%;
+                }
+
+                .left{
+                   top: 25; 
+                   height: 276px;
+                }
+
+                .center{
+                    width: 80%;
+                    height: 294px;
+                    margin-top:109px;
+                }
+
+                .right{
+                    margin-top: 238px;
+                    height: 246px;
+                }
+            }
+
+            .our-thessaloniki{
+                max-width: 704px;
+                margin: 0 auto;
+
+                .big-title{
+                    font-size: 26px;
+                    line-height: 31px;
+                    margin-bottom: 39px;
+                }
+
+                .place-block{
+                    margin-bottom: 84px;
+                    padding-left: 0;
+                    grid-template-columns: 1fr;
+
+                    .left{
+                        max-width: 100%;
+                        max-height: 42.62vw;
+                        position: relative;
+
+                        img{
+                            width: 76.92%;
+                        }
+
+                        &::after{
+                            content: url(../img/svg/our-place-link-arrow.svg);
+                            display: inline-block;
+                            top: 50%;
+                            right: 0;
+                            transform: translateY(50%);
+                            transition: .3s;
+                            position: absolute;
+                        }
+                    }
+
+                    .right{
+                        grid-row: 1/2;
+
+                        .text{
+
+                            a{
+                                font-size: 20px;
+                                line-height: 26px;
+                                margin-bottom: 33px;
+                                
+                                &::after{
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        .signature{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .our-place{
+
+        .horizontal-line:nth-child(1){
+            display: none;
+        }
+
+        .wrapper{
+            border: 0;           
+
+            .intro {
+
+                .subtitle{
+                    font-size: 19px;
+                    line-height: 31px;
+                    max-width: 95%;
+                }
+
+                .left{
+                   top: 25px; 
+                   height: 276px;
+                   margin-right: -75vw;
+                }
+
+                .center{
+                    width: 49.33vw;
+                    height: 294px;
+                    margin-top:109px;
+                }
+
+                .right{
+                    margin-top: 238px;
+                    height: 246px;
+                    margin-left: -57vw;
+                }
+            }
+
+            .our-thessaloniki{
+                max-width: 704px;
+                margin: 0 auto;
+
+                .big-title{
+                    font-size: 26px;
+                    line-height: 31px;
+                    margin-bottom: 39px;
+                }
+
+                .place-block{
+                    margin-bottom: 84px;
+                    padding-left: 0;
+                    grid-template-columns: 1fr;
+
+                    .left{
+                        max-width: 100%;
+                        max-height: 42.62vw;
+                        position: relative;
+
+                        img{
+                            width: 76.92%;
+                        }
+
+                        &::after{
+                            content: url(../img/svg/our-place-link-arrow.svg);
+                            display: inline-block;
+                            top: 50%;
+                            right: 0;
+                            transform: translateY(50%);
+                            transition: .3s;
+                            position: absolute;
+                        }
+                    }
+
+                    .right{
+                        grid-row: 1/2;
+
+                        .text{
+
+                            a{
+                                font-size: 20px;
+                                line-height: 26px;
+                                margin-bottom: 33px;
+                                
+                                &::after{
+                                    display: none;
+                                }
+                            }
+                        }
+
+                        .signature{
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }
