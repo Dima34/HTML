@@ -2737,7 +2737,11 @@ footer {
         max-height: 260px; }
       .our-place .wrapper .our-thessaloniki .place-block .right .text a {
         font-size: 22px;
-        line-height: 29px; } }
+        line-height: 29px; }
+  .article .horizontal-line:nth-child(1) {
+    display: none; }
+  .article .wrapper {
+    border: 0; } }
 
 @media screen and (max-width: 1100px) {
   .contacts .part1 .wrapper {
@@ -2956,7 +2960,19 @@ footer {
           line-height: 22px; }
         .our-place .wrapper .our-thessaloniki .place-block .right .signature {
           font-size: 20px;
-          line-height: 26px; } }
+          line-height: 26px; }
+  .our-place.article .horizontal-line:nth-child(1) {
+    display: none; }
+  .our-place.article .wrapper {
+    border: 0; }
+    .our-place.article .wrapper .article-block .big-image {
+      max-width: 770px;
+      max-height: 422px; }
+    .our-place.article .wrapper .article-block .wave-border > div {
+      padding: 42px 42px; }
+      .our-place.article .wrapper .article-block .wave-border > div p {
+        font-size: 20px;
+        line-height: 32px; } }
 
 @media screen and (max-width: 900px) {
   .contacts .part1 .wrapper .col1 .text-blk, .contacts .part1 .wrapper .col3 .text-blk {
@@ -3256,60 +3272,73 @@ footer {
             display: none; } }
 
 @media screen and (max-width: 500px) {
-  .our-place .horizontal-line:nth-child(1) {
-    display: none; }
-  .our-place .wrapper {
-    border: 0; }
-    .our-place .wrapper .intro .subtitle {
-      font-size: 19px;
-      line-height: 31px;
-      max-width: 95%; }
-    .our-place .wrapper .intro .left {
-      top: 25px;
-      height: 276px;
-      margin-right: -75vw; }
-    .our-place .wrapper .intro .center {
-      width: 49.33vw;
-      height: 294px;
-      margin-top: 109px; }
-    .our-place .wrapper .intro .right {
-      margin-top: 238px;
-      height: 246px;
-      margin-left: -57vw; }
-    .our-place .wrapper .our-thessaloniki {
-      max-width: 704px;
-      margin: 0 auto; }
-      .our-place .wrapper .our-thessaloniki .big-title {
-        font-size: 26px;
-        line-height: 31px;
-        margin-bottom: 39px; }
-      .our-place .wrapper .our-thessaloniki .place-block {
-        margin-bottom: 84px;
-        padding-left: 0;
-        grid-template-columns: 1fr; }
-        .our-place .wrapper .our-thessaloniki .place-block .left {
-          max-width: 100%;
-          max-height: 42.62vw;
+  .our-place {
+    padding-top: 92px; }
+    .our-place .horizontal-line:nth-child(1) {
+      display: none; }
+    .our-place .wrapper {
+      border: 0; }
+      .our-place .wrapper .logo {
+        display: none; }
+      .our-place .wrapper .intro {
+        padding-top: 0; }
+        .our-place .wrapper .intro .subtitle {
+          font-size: 19px;
+          line-height: 31px;
+          max-width: 95%; }
+        .our-place .wrapper .intro .left {
+          margin-top: 10px;
+          height: 276px;
+          position: relative;
+          z-index: 3;
+          top: 0; }
+        .our-place .wrapper .intro .center {
+          margin: 0px -72px 0 -84px;
+          width: 49.33vw;
+          height: 218px;
+          margin-top: 142px;
+          position: relative;
+          z-index: 2; }
+        .our-place .wrapper .intro .right {
+          margin-top: 201px;
+          height: 279px;
           position: relative; }
-          .our-place .wrapper .our-thessaloniki .place-block .left img {
-            width: 76.92%; }
-          .our-place .wrapper .our-thessaloniki .place-block .left::after {
-            content: url(../img/svg/our-place-link-arrow.svg);
-            display: inline-block;
-            top: 50%;
-            right: 0;
-            transform: translateY(50%);
-            transition: .3s;
-            position: absolute; }
-        .our-place .wrapper .our-thessaloniki .place-block .right {
-          grid-row: 1/2; }
-          .our-place .wrapper .our-thessaloniki .place-block .right .text a {
-            font-size: 20px;
-            line-height: 26px;
-            margin-bottom: 33px; }
-            .our-place .wrapper .our-thessaloniki .place-block .right .text a::after {
-              display: none; }
-          .our-place .wrapper .our-thessaloniki .place-block .right .signature {
-            display: none; } }
+      .our-place .wrapper .our-thessaloniki {
+        max-width: 87.84%;
+        margin: 0 auto;
+        margin-top: 61px; }
+        .our-place .wrapper .our-thessaloniki .big-title {
+          font-size: 26px;
+          line-height: 31px;
+          margin-bottom: 69px; }
+        .our-place .wrapper .our-thessaloniki .place-block {
+          margin-bottom: 84px;
+          padding-left: 0;
+          grid-template-columns: 1fr;
+          gap: 31px; }
+          .our-place .wrapper .our-thessaloniki .place-block .left {
+            max-width: 100%;
+            max-height: 42.62vw;
+            position: relative; }
+            .our-place .wrapper .our-thessaloniki .place-block .left img {
+              width: 76.92%; }
+            .our-place .wrapper .our-thessaloniki .place-block .left::after {
+              content: url(../img/svg/our-place-link-arrow.svg);
+              display: inline-block;
+              top: 50%;
+              right: 0;
+              transform: translateY(-50%);
+              transition: .3s;
+              position: absolute; }
+          .our-place .wrapper .our-thessaloniki .place-block .right {
+            grid-row: 1/2; }
+            .our-place .wrapper .our-thessaloniki .place-block .right .text a {
+              font-size: 20px;
+              line-height: 26px;
+              margin-bottom: 33px; }
+              .our-place .wrapper .our-thessaloniki .place-block .right .text a::after {
+                display: none; }
+            .our-place .wrapper .our-thessaloniki .place-block .right .signature {
+              display: none; } }
 
 /*# sourceMappingURL=style.css.map */

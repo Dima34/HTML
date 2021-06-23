@@ -4164,6 +4164,16 @@ footer{
         }
     }
 
+    .article{
+        .horizontal-line:nth-child(1){
+            display: none;
+        }
+
+        .wrapper{
+
+            border: 0;
+        }
+    }
 
 }
 
@@ -4596,6 +4606,38 @@ footer{
         }
     }
 
+    .our-place.article{
+
+        .horizontal-line:nth-child(1){
+            display: none;
+        }
+
+        .wrapper{
+            border: 0;
+
+            .article-block{
+                
+                .big-image{
+                    max-width: 770px;
+                    max-height: 422px;
+                }
+
+                .wave-border{
+
+                    &>div{
+                        padding: 42px 42px;
+
+                        p{
+                            font-size: 20px;
+                            line-height: 32px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -4722,7 +4764,6 @@ footer{
             }
         }
     }
-
     
 }
 
@@ -5178,15 +5219,21 @@ footer{
 @media screen and (max-width: 500px) {
 
     .our-place{
+        padding-top: 92px;
 
         .horizontal-line:nth-child(1){
             display: none;
         }
-
+        
         .wrapper{
-            border: 0;           
+            border: 0;  
+            
+            .logo{
+                display: none;
+            }    
 
             .intro {
+                padding-top: 0;
 
                 .subtitle{
                     font-size: 19px;
@@ -5195,38 +5242,46 @@ footer{
                 }
 
                 .left{
-                   top: 25px; 
+                   margin-top: 10px;
                    height: 276px;
-                   margin-right: -75vw;
+                   position: relative;
+                   z-index: 3;
+                   top: 0;
                 }
 
                 .center{
+                    margin: 0px -72px 0 -84px;
                     width: 49.33vw;
-                    height: 294px;
-                    margin-top:109px;
+                    height: 218px;
+                    margin-top:142px;
+                    position: relative;
+                    z-index: 2;
                 }
 
                 .right{
-                    margin-top: 238px;
-                    height: 246px;
-                    margin-left: -57vw;
+                    margin-top: 201px;
+                    height: 279px;
+                    position: relative;
+
                 }
             }
 
             .our-thessaloniki{
-                max-width: 704px;
+                max-width:  87.84%;
                 margin: 0 auto;
+                margin-top: 61px;
 
                 .big-title{
                     font-size: 26px;
                     line-height: 31px;
-                    margin-bottom: 39px;
+                    margin-bottom: 69px;
                 }
 
                 .place-block{
                     margin-bottom: 84px;
                     padding-left: 0;
                     grid-template-columns: 1fr;
+                    gap: 31px;
 
                     .left{
                         max-width: 100%;
@@ -5242,7 +5297,7 @@ footer{
                             display: inline-block;
                             top: 50%;
                             right: 0;
-                            transform: translateY(50%);
+                            transform: translateY(-50%);
                             transition: .3s;
                             position: absolute;
                         }
