@@ -769,17 +769,35 @@
     <script src="./js/script.js"></script>
 
     <script>
-        var swiper = new Swiper('.gallery-swiper', {
-            slidesPerView: 3,
-            spaceBetween: 35,
+
+        if(window.innerWidth > 800){
+            var swiper = new Swiper('.gallery-swiper', {
+                slidesPerView: "auto",
+                spaceBetween: 35,
+                centeredSlides: true,
+                loop:true,
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                
+            });
+        } else{
+            var swiper = new Swiper('.gallery-swiper', {
+            slidesPerView: 'auto',
             centeredSlides: true,
             loop:true,
-            
+            spaceBetween: 200,
+
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            
         });
+        }
+        
     </script>
 
     

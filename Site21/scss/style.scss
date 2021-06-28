@@ -1665,34 +1665,36 @@ footer{
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-    
-                    .swiper-slide{
-                        height: 155px !important;
-                        width: 230px !important;
-                        transition: .3s;
-                        opacity: 0;
-                        margin: 0 17px;
-                        border: 1px solid rgba(255, 255, 255, 0.5);
-    
-                        img{
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            transition: .3s;
-                        }
-    
+
+                    .swiper-container{
+                        max-width: 968px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        margin: 0 auto;
                     }
-    
-                    .swiper-slide-active{
+                    .swiper-slide img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    
+                    .swiper-slide {
+                        transition: transform .2s ease;
                         width: 409px !important;
                         height: 296px !important;
-                        opacity: 1;
+                        border: 1px solid rgba(255, 255, 255, 0.5)
                     }
-    
-
-                    .swiper-slide-next, .swiper-slide-prev{
-                        opacity: 1;
-                    } 
+                    
+                    .swiper-slide-next, .swiper-slide-duplicate-next,
+                    .swiper-slide-prev, .swiper-slide-duplicate-prev {
+                        transform: scale(0.56);
+                        transform-origin: left center;
+                    }
+                    
+                    .swiper-slide-prev, .swiper-slide-duplicate-prev{
+                        transform-origin: right center;
+                    }
                 }
     
                 .swiper-button-next, .swiper-button-prev{
@@ -1711,13 +1713,13 @@ footer{
                 }
     
                 .swiper-button-next{
-                    right: -29px;
+                    right: 55px;
                     top: 46.5%;
                     transform: scale(-1, 1);
                 }
     
                 .swiper-button-prev{
-                    left: 27px;
+                    left: 49px;
                     top: 46.5%;
                 }
             }
@@ -4309,6 +4311,10 @@ footer{
 
             .arabella-gallery{
 
+                .oval{
+                    top:201px;
+                }
+
                 .gallery-swiper{
                     transform: translateX(0);
 
@@ -5024,18 +5030,17 @@ footer{
 
             .arabella-gallery{
 
+                .oval{
+                    top: 184px;
+                }
+
                 .big-title{
                     margin-bottom: 38px;
                 }
 
                 .gallery-swiper .swiper-wrapper{
 
-                    .swiper-slide{
-                    }
-
-                    .swiper-slide-active,.swiper-slide-duplicate-active{
-                        display: block;
-                    }
+                   
                 }
             }
 
@@ -5051,6 +5056,64 @@ footer{
                 }
             }
 
+            .arabella-video{
+                .big-title{
+                    margin-bottom: 40px;
+                }
+
+                .videos{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+                    max-width: 450px;
+
+                    .left,.right{
+                        
+                    height: 250px;
+                    }
+                }
+            }
+
+            .social-events{
+                padding: 0 20px;
+            }
+
+            .event-alert{
+                max-width: 700px;
+                margin: 0 auto;
+                margin-bottom: 70px;
+
+                div{
+                    padding: 27px 29px;
+                }
+
+                p,a{
+                    font-size: 23px;
+                    line-height: 45px; 
+                }
+            }
+
+            .event-block{
+                max-width: 675px;
+                margin-bottom: 30px;
+                gap: 54px;
+
+                img{
+                    width: 300px;
+                    height: 350px;
+                }
+
+                p{
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+
+                h2{
+                    font-size: 34px;
+                    line-height: 44px;
+                    margin-bottom: 22px;
+                }
+            }
             
         }
     }
@@ -5261,6 +5324,18 @@ footer{
                 width: 95%;
                 margin: 0 auto;
 
+            }
+        }
+    }
+
+    .cruises{
+
+        .wrapper{
+
+            .arabella-gallery{
+
+                .gallery-swiper{
+                }
             }
         }
     }
@@ -5930,6 +6005,261 @@ footer{
             }
         }
 
+    }
+
+    .cruises{        
+
+        .wrapper{
+
+            .big-title{
+                font-size: 36px;
+                line-height: 47px;
+                letter-spacing: 0.01em;
+                z-index: 4;
+            }
+
+            .logo{
+                display: none;
+            }
+
+            .intro{
+                padding: 0;
+                overflow: hidden;
+                margin-top: -32px;
+
+                
+
+                .line{
+
+                    img{
+                        margin-bottom: 13px;
+                    }
+                }
+
+                .line1{
+                    padding-top: 46px;
+
+                    img{
+                        max-width: 166px;
+                        margin-top: -5px;
+
+                        margin-left: -5px;
+                        transform: scale(-1,1);
+                        
+                    }
+                }
+
+                .line2{
+                    margin-left: -88px;
+                    margin-right: -99px;
+                    padding-top: 10px;
+                    z-index: 2;
+
+                    img{
+                        margin: 0;
+                        height: 294px;
+                        width: 231px;
+                    }
+                }
+
+                .line3{
+                    padding-top: 46px;
+
+                    img{
+                        max-width: 185px;
+                        margin-right: -11px; 
+                        transform: scale(-1,1);
+                    }
+                }
+
+                .text-mobile{
+                    max-width: 355px;
+                    margin: 0 auto;
+                    margin-top: -10px;
+                }
+            }
+
+            .shedule{
+                padding: 0 10px;
+
+                .big-title{
+                    margin-bottom: 29px;
+                }
+
+                .left,.right{
+                    .shedule-block{
+
+                        padding: 10px;
+
+                    }
+                }
+            }
+
+            .arabella-gallery{
+                padding-bottom: 154px;
+
+                .big-title{
+                    margin-bottom: 29px !important;
+                }
+
+                .link{
+                    font-size: 20px;
+                    line-height: 30px;
+                    padding-right: 0;
+                    width: 73.33vw;
+                }
+
+                .oval{
+                    display: none;
+                }
+
+                .big-title{
+                    margin-bottom: 38px;
+                }
+
+                .gallery-swiper{
+                    height: 80vw;
+
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            width: 88vw !important;
+                            height: 66.93vw !important;
+                        }
+                    }
+
+                    .swiper-button-next, .swiper-button-prev{
+                        top: calc(100% + 23px);
+                    } 
+                    
+                    .swiper-button-next{
+                        right: 108px;
+                    }
+
+                    .swiper-button-prev{
+                        left: 109px;
+                    }
+                    
+                }
+            }
+
+            .alcohol{
+                padding: 0 22px;
+
+                .big-title{
+                    font-size: 36px;
+                    line-height: 47px;
+                    letter-spacing: 0.01em;
+                    z-index: 4;
+                    margin-bottom: 25px;
+                }
+
+                &>p{
+                    font-size: 17px;
+                    line-height: 23px;
+                    text-align: left;
+                    margin-bottom: 15px;
+                }
+
+                .drinks{
+                    margin-top: 38px;
+                    max-width: 88vw;
+                    gap: 39px;
+                    
+                    .drink, .drink:nth-child(2n){
+                        grid-template-columns: 26.67% 1fr;
+
+                        .left{
+                            min-height: 115px;
+                        }
+
+                        .right{
+                            .header{
+                                padding: 11px 4px 11px 7px; 
+
+                                .title,.price{
+                                    font-size: 13px;
+                                    line-height: 17px;
+                                }
+                            }
+
+                            .main{
+                                padding: 4px 6px;
+
+                                .description{
+                                    font-size: 13px;
+                                    line-height: 17px;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+
+            .arabella-video{
+                padding: 0 10px;                
+                margin-bottom: 67px;
+
+                .big-title{
+                    margin-bottom:29px;
+                }
+
+                .videos{
+                    max-width: unset;
+                    width: 88vw !important;
+
+
+                    .left,.right{
+                        
+                    height: 52vw;
+                    }
+                }
+            }
+
+            .social-events{
+                padding: 0 20px;
+            }
+
+            .event-alert{
+                max-width: 700px;
+                margin: 0 auto;
+                margin-bottom: 70px;
+
+                div{
+                    padding: 27px 29px;
+                }
+
+                p,a{
+                    font-size: 23px;
+                    line-height: 45px; 
+                }
+            }
+
+            .event-block{
+                max-width: 675px;
+                margin-bottom: 76px;
+                gap: 30px;
+                flex-direction: column;
+                text-align: center;
+
+                img{
+                    width: 300px;
+                    height: 350px;
+                }
+
+                p{
+                    font-size: 20px;
+                    line-height: 27px;
+                }
+
+                h2{
+                    font-size: 34px;
+                    line-height: 44px;
+                    margin-bottom: 22px;
+                }
+            }
+            
+        }
     }
 }
 

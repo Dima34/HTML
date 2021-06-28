@@ -1108,24 +1108,27 @@ footer {
           display: flex;
           flex-direction: row;
           align-items: center; }
+          .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-container {
+            max-width: 968px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin: 0 auto; }
+          .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
           .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide {
-            height: 155px !important;
-            width: 230px !important;
-            transition: .3s;
-            opacity: 0;
-            margin: 0 17px;
-            border: 1px solid rgba(255, 255, 255, 0.5); }
-            .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              transition: .3s; }
-          .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-active {
+            transition: transform .2s ease;
             width: 409px !important;
             height: 296px !important;
-            opacity: 1; }
-          .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-next, .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-prev {
-            opacity: 1; }
+            border: 1px solid rgba(255, 255, 255, 0.5); }
+          .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-next, .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-duplicate-next,
+          .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-prev, .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-duplicate-prev {
+            transform: scale(0.56);
+            transform-origin: left center; }
+          .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-prev, .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-duplicate-prev {
+            transform-origin: right center; }
         .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-next, .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-prev {
           width: fit-content;
           height: fit-content; }
@@ -1135,11 +1138,11 @@ footer {
           .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-next:after, .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-prev:after {
             display: none; }
         .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-next {
-          right: -29px;
+          right: 55px;
           top: 46.5%;
           transform: scale(-1, 1); }
         .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-prev {
-          left: 27px;
+          left: 49px;
           top: 46.5%; }
     .cruises .wrapper .arabella-video {
       margin-bottom: 113px; }
@@ -2819,6 +2822,8 @@ footer {
         box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.7); }
       .cruises .wrapper .shedule .right {
         padding-left: 15px; }
+    .cruises .wrapper .arabella-gallery .oval {
+      top: 201px; }
     .cruises .wrapper .arabella-gallery .gallery-swiper {
       transform: translateX(0); }
       .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-next {
@@ -3166,15 +3171,49 @@ footer {
         margin: 0 auto;
         margin-top: 35px;
         max-width: 469px; }
+  .cruises .wrapper .arabella-gallery .oval {
+    top: 184px; }
   .cruises .wrapper .arabella-gallery .big-title {
     margin-bottom: 38px; }
-  .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-active, .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide-duplicate-active {
-    display: block; }
   .cruises .wrapper .alcohol .drinks {
     grid-template-columns: 1fr; }
     .cruises .wrapper .alcohol .drinks .drink, .cruises .wrapper .alcohol .drinks .drink:nth-child(2n) {
       justify-self: center;
-      width: 100%; } }
+      width: 100%; }
+  .cruises .wrapper .arabella-video .big-title {
+    margin-bottom: 40px; }
+  .cruises .wrapper .arabella-video .videos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 450px; }
+    .cruises .wrapper .arabella-video .videos .left, .cruises .wrapper .arabella-video .videos .right {
+      height: 250px; }
+  .cruises .wrapper .social-events {
+    padding: 0 20px; }
+  .cruises .wrapper .event-alert {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 70px; }
+    .cruises .wrapper .event-alert div {
+      padding: 27px 29px; }
+    .cruises .wrapper .event-alert p, .cruises .wrapper .event-alert a {
+      font-size: 23px;
+      line-height: 45px; }
+  .cruises .wrapper .event-block {
+    max-width: 675px;
+    margin-bottom: 30px;
+    gap: 54px; }
+    .cruises .wrapper .event-block img {
+      width: 300px;
+      height: 350px; }
+    .cruises .wrapper .event-block p {
+      font-size: 20px;
+      line-height: 27px; }
+    .cruises .wrapper .event-block h2 {
+      font-size: 34px;
+      line-height: 44px;
+      margin-bottom: 22px; } }
 
 @media screen and (max-width: 900px) {
   .contacts .part1 .wrapper .col1 .text-blk, .contacts .part1 .wrapper .col3 .text-blk {
@@ -3622,7 +3661,144 @@ footer {
       margin: 0 auto;
       margin-bottom: 17px; }
     .our-place.article .wrapper .donation .info .submit {
-      max-width: 300px; } }
+      max-width: 300px; }
+  .cruises .wrapper .big-title {
+    font-size: 36px;
+    line-height: 47px;
+    letter-spacing: 0.01em;
+    z-index: 4; }
+  .cruises .wrapper .logo {
+    display: none; }
+  .cruises .wrapper .intro {
+    padding: 0;
+    overflow: hidden;
+    margin-top: -32px; }
+    .cruises .wrapper .intro .line img {
+      margin-bottom: 13px; }
+    .cruises .wrapper .intro .line1 {
+      padding-top: 46px; }
+      .cruises .wrapper .intro .line1 img {
+        max-width: 166px;
+        margin-top: -5px;
+        margin-left: -5px;
+        transform: scale(-1, 1); }
+    .cruises .wrapper .intro .line2 {
+      margin-left: -88px;
+      margin-right: -99px;
+      padding-top: 10px;
+      z-index: 2; }
+      .cruises .wrapper .intro .line2 img {
+        margin: 0;
+        height: 294px;
+        width: 231px; }
+    .cruises .wrapper .intro .line3 {
+      padding-top: 46px; }
+      .cruises .wrapper .intro .line3 img {
+        max-width: 185px;
+        margin-right: -11px;
+        transform: scale(-1, 1); }
+    .cruises .wrapper .intro .text-mobile {
+      max-width: 355px;
+      margin: 0 auto;
+      margin-top: -10px; }
+  .cruises .wrapper .shedule {
+    padding: 0 10px; }
+    .cruises .wrapper .shedule .big-title {
+      margin-bottom: 29px; }
+    .cruises .wrapper .shedule .left .shedule-block, .cruises .wrapper .shedule .right .shedule-block {
+      padding: 10px; }
+  .cruises .wrapper .arabella-gallery {
+    padding-bottom: 154px; }
+    .cruises .wrapper .arabella-gallery .big-title {
+      margin-bottom: 29px !important; }
+    .cruises .wrapper .arabella-gallery .link {
+      font-size: 20px;
+      line-height: 30px;
+      padding-right: 0;
+      width: 73.33vw; }
+    .cruises .wrapper .arabella-gallery .oval {
+      display: none; }
+    .cruises .wrapper .arabella-gallery .big-title {
+      margin-bottom: 38px; }
+    .cruises .wrapper .arabella-gallery .gallery-swiper {
+      height: 80vw; }
+      .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-wrapper .swiper-slide {
+        width: 88vw !important;
+        height: 66.93vw !important; }
+      .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-next, .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-prev {
+        top: calc(100% + 23px); }
+      .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-next {
+        right: 108px; }
+      .cruises .wrapper .arabella-gallery .gallery-swiper .swiper-button-prev {
+        left: 109px; }
+  .cruises .wrapper .alcohol {
+    padding: 0 22px; }
+    .cruises .wrapper .alcohol .big-title {
+      font-size: 36px;
+      line-height: 47px;
+      letter-spacing: 0.01em;
+      z-index: 4;
+      margin-bottom: 25px; }
+    .cruises .wrapper .alcohol > p {
+      font-size: 17px;
+      line-height: 23px;
+      text-align: left;
+      margin-bottom: 15px; }
+    .cruises .wrapper .alcohol .drinks {
+      margin-top: 38px;
+      max-width: 88vw;
+      gap: 39px; }
+      .cruises .wrapper .alcohol .drinks .drink, .cruises .wrapper .alcohol .drinks .drink:nth-child(2n) {
+        grid-template-columns: 26.67% 1fr; }
+        .cruises .wrapper .alcohol .drinks .drink .left, .cruises .wrapper .alcohol .drinks .drink:nth-child(2n) .left {
+          min-height: 115px; }
+        .cruises .wrapper .alcohol .drinks .drink .right .header, .cruises .wrapper .alcohol .drinks .drink:nth-child(2n) .right .header {
+          padding: 11px 4px 11px 7px; }
+          .cruises .wrapper .alcohol .drinks .drink .right .header .title, .cruises .wrapper .alcohol .drinks .drink .right .header .price, .cruises .wrapper .alcohol .drinks .drink:nth-child(2n) .right .header .title, .cruises .wrapper .alcohol .drinks .drink:nth-child(2n) .right .header .price {
+            font-size: 13px;
+            line-height: 17px; }
+        .cruises .wrapper .alcohol .drinks .drink .right .main, .cruises .wrapper .alcohol .drinks .drink:nth-child(2n) .right .main {
+          padding: 4px 6px; }
+          .cruises .wrapper .alcohol .drinks .drink .right .main .description, .cruises .wrapper .alcohol .drinks .drink:nth-child(2n) .right .main .description {
+            font-size: 13px;
+            line-height: 17px; }
+  .cruises .wrapper .arabella-video {
+    padding: 0 10px;
+    margin-bottom: 67px; }
+    .cruises .wrapper .arabella-video .big-title {
+      margin-bottom: 29px; }
+    .cruises .wrapper .arabella-video .videos {
+      max-width: unset;
+      width: 88vw !important; }
+      .cruises .wrapper .arabella-video .videos .left, .cruises .wrapper .arabella-video .videos .right {
+        height: 52vw; }
+  .cruises .wrapper .social-events {
+    padding: 0 20px; }
+  .cruises .wrapper .event-alert {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 70px; }
+    .cruises .wrapper .event-alert div {
+      padding: 27px 29px; }
+    .cruises .wrapper .event-alert p, .cruises .wrapper .event-alert a {
+      font-size: 23px;
+      line-height: 45px; }
+  .cruises .wrapper .event-block {
+    max-width: 675px;
+    margin-bottom: 76px;
+    gap: 30px;
+    flex-direction: column;
+    text-align: center; }
+    .cruises .wrapper .event-block img {
+      width: 300px;
+      height: 350px; }
+    .cruises .wrapper .event-block p {
+      font-size: 20px;
+      line-height: 27px; }
+    .cruises .wrapper .event-block h2 {
+      font-size: 34px;
+      line-height: 44px;
+      margin-bottom: 22px; } }
 
 @media screen and (max-width: 500px) {
   .our-place {
