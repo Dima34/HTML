@@ -1460,6 +1460,10 @@ footer{
                 }
             }
 
+            .text-mobile{
+                display: none;
+            }
+
         }
 
         .shedule{
@@ -1596,6 +1600,7 @@ footer{
         .arabella-gallery{
             position: relative;
             padding-bottom: 67px;
+            overflow: hidden;
 
             .big-title{
                 margin-bottom: 56px;
@@ -1655,7 +1660,6 @@ footer{
                 grid-column:1/6;
                 grid-row: 1/2;
                 width: 100%;
-                transform: translateX(-28px);
     
                 .swiper-wrapper{
                     display: flex;
@@ -2231,6 +2235,22 @@ footer{
                 .post-subscription-2{
                     display: flex;
                     justify-content: space-between;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                    margin-bottom: 25px;
+
+                    p{
+                        margin-bottom: 0;
+                    }
+                }
+
+                .article-socials{
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .text{
+                        position: relative;
+                    }
                 }
 
                 &>.alert{
@@ -2513,6 +2533,7 @@ footer{
                         width: 100%;
                         height: 475px;
                         margin-bottom: 32px;
+                        object-fit: cover;
                     }
 
                     .subscription{
@@ -2558,11 +2579,10 @@ footer{
                 .ocean-line{
                     position: relative;
                     width: 100%;
+                    height: 5px;
+                    background: url(../img/ocean-line.png);
+                    background-size: cover;
 
-                    &::after{
-                        content: url(../img/ocean-line.png);
-
-                    }
                 }
             }
 
@@ -2795,7 +2815,7 @@ footer{
 
                 .inputgroup{
                     display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
                     column-gap: 28px;
                     row-gap: 20px;
                     margin-bottom: 30px;
@@ -4175,6 +4195,148 @@ footer{
         }
     }
 
+    .cruises{
+        .horizontal-line:nth-child(1){
+            display: none;
+        }
+    
+        .wrapper{
+            border: 0;
+            padding-top: 17px;
+
+            .logo{
+                margin-bottom: 41px;
+            }
+
+            .big-title{
+                font-size: 42px;
+                line-height: 50px;
+                letter-spacing: 0.06em;
+            }
+
+            .intro{
+                padding: 0 28px;
+                margin-bottom: 72px;
+                
+                p{
+                    font-size: 19px;
+                    line-height: 32px;
+                }
+    
+                .line1{
+                    padding-top: 55px;
+    
+                    p{
+                        margin-bottom: 52px;
+                        max-width: 370px;
+                    }
+    
+                    img{
+                        max-width: 185px;
+                        margin-top: -15px;
+                    }
+                }
+    
+                .line2{
+                    margin-left: -88px;
+    
+                    img{
+                        height: 345px;
+                        width: 300px;
+                        margin-right: 12px;
+                        margin-top: 10px;
+                        margin-bottom: 42px;
+                    }
+    
+                    p{
+                        max-width: 340px;
+                        margin-left: 4px;
+                    }
+                }
+    
+                .line3{
+                    margin-left: -2px;
+    
+                    img{
+                        max-width: 199px;
+                        margin-right: 40px;
+                        margin-top: -5px;
+                        margin-bottom: 33px;
+                    }
+
+                    p{
+                        margin-left: -22px;
+                    }
+                }
+    
+            }
+    
+            .shedule{
+                padding: 0 28px;
+                margin-bottom: 110px;
+                
+                .big-title{
+                    grid-column: 1/3;
+                    margin-bottom: 82px;
+                }
+    
+                p{
+                    font-size: 19px;
+                    line-height: 32px;
+                    letter-spacing: 0.006em;
+                }
+    
+                
+    
+                .left{
+    
+                    &>p{
+                        margin-bottom: 22px;
+                    }
+    
+                    .shedule-block{
+                        margin-top: 60px;
+                        max-width: 450px;
+                        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.7);
+                    }
+                }
+    
+                .right{
+                    padding-left: 15px;
+    
+                }
+            }
+
+            .arabella-gallery{
+
+                .gallery-swiper{
+                    transform: translateX(0);
+
+                    .swiper-button-next {
+                        right: 27px;
+                    }
+                }   
+                
+            }
+
+            .arabella-video{
+                padding: 0 27px;
+
+                .videos{
+                    gap: 40px;
+
+                    .left,.right{
+                        height: 320px;
+                    }
+                }
+            }
+
+            .alcohol{
+                padding: 0 27px;
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -4326,6 +4488,85 @@ footer{
             }
         }
 
+    }
+
+    .our-place.article{
+
+        .horizontal-line:nth-child(1){
+            display: none;
+        }
+
+        .wrapper{
+            border: 0;
+
+            .article-block{
+
+                .block-title{
+                    font-size: 28px;
+                    line-height: 40px;
+                }
+
+                p{
+                    font-size: 19px;
+                    line-height: 30px;
+                    margin-bottom: 15px;
+                }
+                
+                .big-image{
+                    max-width: 770px;
+                    max-height: 422px;
+                }
+
+                .big-rounded-image{
+                    max-width: 652px;
+                    max-height: 392px;
+                }
+
+                .wave-border{
+
+                    &>div{
+                        padding: 42px 42px;
+
+                        p{
+                            font-size: 20px;
+                            line-height: 32px;
+                        }
+                    }
+                }
+
+            }
+
+            .comment-comments{
+
+                .title{
+                    font-size: 25px;
+                    line-height: 32px;
+                    margin-bottom: 35px;
+                }
+
+                .comment{
+                    margin: 30px 0;
+
+                }
+            }
+        }
+    }
+
+    .cruises{
+
+        .wrapper{
+
+            .alcohol{
+                .drinks{
+                    grid-template-columns: 1fr;
+                    
+                    .drink, .drink:nth-child(2n){
+                        justify-self: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 
 }
@@ -4539,9 +4780,7 @@ footer{
         }
 
         .wrapper{
-            border: 0;
-
-            
+            border: 0;            
 
             .intro {
 
@@ -4604,40 +4843,217 @@ footer{
                 }
             }
         }
-    }
 
-    .our-place.article{
+        &.article{
 
-        .horizontal-line:nth-child(1){
-            display: none;
-        }
+            .wrapper{
 
-        .wrapper{
-            border: 0;
+                .article-block{
 
-            .article-block{
-                
-                .big-image{
-                    max-width: 770px;
-                    max-height: 422px;
+                    .right-image-small, .right-image-big, .img-group-big,.left-image 
+                    ,.right-image-medium-circled,.right-image-medium{
+                        gap: 20px;
+                        grid-template-columns: 1fr 1fr;
+                    }
+
+                    .right-image-medium .subscription{
+                        font-size: 20px;
+                        line-height: 19px;
+                    }
+
+                    .left-image,.right-image-medium-circled,.right-image-medium{
+
+                        img{
+                            height: 42vw;
+                        }
+                    }
+
+                    .right-image-medium-circled{
+
+                        img{
+                            width: 42vw; 
+                            margin: 0 auto; 
+                        }
+                        
+                    }
+
+                    .right-image-big {
+                        
+                    }
+
+                    .right-image{
+                        img{
+                            object-fit: cover;
+                        }
+                    }
+
                 }
 
-                .wave-border{
+                .donation{
 
-                    &>div{
-                        padding: 42px 42px;
-
+                    .text-progress{
                         p{
-                            font-size: 20px;
+                            font-size: 22px;
                             line-height: 32px;
+                            letter-spacing: 0.01em;
+                             
+                        }
+
+                        .ocean-bg{
+                            font-size: 71px;
+                            line-height: 60px;
+                        }
+                    }
+
+                    .progress-line{
+                        height: 30px;
+                        margin-bottom: 70px;
+                    }
+
+                    .donation-amount,.info{
+                        .title{
+                            font-size: 28px;
+                            line-height: 32px;                       
+                        }
+                    }
+
+                    .info{
+                        .inputs{
+                            gap: 20px;
                         }
                     }
                 }
-
             }
         }
-    }
+    }  
+    
+    .cruises{
 
+        .wrapper{
+
+            .logo{
+                margin-bottom: 10px;
+            }
+
+            .intro{
+                max-width: 712px;
+                margin: 0 auto;
+                margin-top: -33px;
+                margin-bottom: 35px;
+
+                .line{
+                    p{
+                        display: none;
+                    }
+
+                    img{
+                        margin-bottom: 13px;
+                    }
+                }
+
+                .line1{
+                    padding-top: 29px;
+
+                    img{
+                        max-width: 167px;
+                        margin-top: 0px;
+                        margin-left: 1px;
+                        
+                    }
+                }
+
+                .line2{
+                    margin-left: 0;
+                    padding-top: 10px;
+
+                    img{
+                        margin: 0;
+                        height: 332px;
+                        width: 259px;
+                    }
+                }
+
+                .line3{
+                    padding-top: 20px;
+
+                    img{
+                        max-width: 185px;
+                        margin-right: -11px; 
+                    }
+                }
+
+                .text-mobile{
+                    display: block;
+                    grid-column: 1/4;
+                    text-align: center;
+
+                    p{
+                        font-size: 18px;
+                        line-height: 28px;
+                        margin-bottom: 20px;
+                        max-width: unset;
+                    }
+                }
+            }
+
+            .shedule{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 87px;
+
+                .big-title{
+                    margin-bottom: 29px;
+                }
+
+                .left,.right{
+                    width: 100%;
+                    padding: 0;
+
+                    p{
+                        max-width: unset;
+                        margin-bottom: 17px;
+                    }
+
+                    .shedule-block{
+                        margin: 0 auto;
+                        margin-top: 35px;
+                        max-width: 469px;
+                    }
+                }
+            }
+
+            .arabella-gallery{
+
+                .big-title{
+                    margin-bottom: 38px;
+                }
+
+                .gallery-swiper .swiper-wrapper{
+
+                    .swiper-slide{
+                    }
+
+                    .swiper-slide-active,.swiper-slide-duplicate-active{
+                        display: block;
+                    }
+                }
+            }
+
+            .alcohol{
+
+                .drinks{
+                    grid-template-columns: 1fr;
+                    
+                    .drink, .drink:nth-child(2n){
+                        justify-self: center;
+                        width: 100%;
+                    }
+                }
+            }
+
+            
+        }
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -4764,6 +5180,46 @@ footer{
             }
         }
     }
+
+    .our-place{
+
+        &.article{
+
+            .wrapper{
+
+                .article-block{
+
+                    .right-image-small, .right-image-big, .img-group-big.left-image 
+                    ,.right-image-medium-circled,.right-image-medium,.left-image {
+                        gap: 40px;
+                        grid-template-columns: 1fr;
+                    }
+
+                    .img-group-big {
+                        img{
+                            height: 37vw;
+                        }
+                    }
+
+                    .left-image {
+                        img{
+                            height: 60vw;
+                            width: 70vw;
+                            margin: 0 auto;
+                        }
+                    }
+
+                    .right-image{
+                        img{
+                            object-fit: cover;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }    
     
 }
 
@@ -5214,6 +5670,267 @@ footer{
             }
         }
     }
+
+    .our-place.article{
+
+        .wrapper{
+            padding-left: 22px;
+            padding-right: 22px;
+            padding-bottom: 120px;
+
+            .subtitle{
+                font-size: 22px;
+                line-height: 29px;
+                margin:  20px 0;
+            }
+
+            .subitle-subscription{
+                font-size: 16px;
+                line-height: 21px;
+            }
+
+            .article-block{
+
+                .big-image{
+                    margin: 40px 0;
+                }
+
+                .block-title{
+                    font-size: 22px;
+                    line-height: 29px;
+                    margin-bottom: 20px;
+                }
+
+                .block-small-title{
+                    margin-bottom: 20px;
+                }
+
+                p{
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-bottom: 20px;
+                }
+
+                .link{
+                    font-size: 21px;
+                    line-height: 27px;
+                    padding-right: 47px;
+                }
+
+                .wave-border{
+
+                    &>div{
+                        padding:18px;
+
+                        .title{
+                            font-size: 20px;
+                            line-height: 30px;  
+                        }
+
+                        p,a, span{
+                            font-size: 20px;
+                            line-height: 32px; 
+                        }
+                    }
+                }
+
+                .big-rounded-image{
+                    max-width: 328px;
+                    max-height: 251px;
+                }
+
+                ul{
+
+                    li{
+                        padding-left: 27px;
+                        font-size: 18px;
+                        line-height: 32px; 
+                    }
+                }
+
+                .tip-text{
+                    font-size: 60px;
+                    line-height: 60px; 
+                }
+
+                .right-image-small, .right-image-big, .img-group-big 
+                ,.right-image-medium-circled,.right-image-medium,.left-image {
+                    gap: 40px;
+                    grid-template-columns: 1fr;
+                }
+
+                .img-group-big {
+
+                    img{
+                        height: 77.6vw;
+                        width: 86.93vw;
+                        margin: 0 auto;
+                        display: block;
+                    }
+                }
+
+                .left-image {
+                    img{
+                        height: 60vw;
+                        width: 70vw;
+                        margin: 0 auto;
+                    }
+                }
+
+                .right-image{
+                    img{
+                        object-fit: cover;
+                    }
+                }
+
+                .medium-image,.left-image img, .right-image-medium img{
+                    width: 88vw;
+                    height: 70.67vw;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                .subscription{
+                    display: none;
+                }
+
+                .right-image-medium-circled img{
+                    width: 85.33vw;
+                    height: 85.33vw;
+                }
+
+                .right-image-big img{
+                    width: 88vw;
+                    height: 70.67vw;
+                }
+                
+            }
+
+            .comment-block{
+
+                .post-views{
+                    margin-bottom: 70px;
+                }
+
+                .post-views, .post-views span{
+                    font-size: 22px;
+                    line-height: 32px;
+                }
+
+                .title{
+                    font-size: 20px;
+                    line-height: 31px;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                }
+
+                .comment-subtitle{
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-top: 0;
+                    margin-bottom: 40px;
+                }
+
+                .inputgroup{
+                    display: flex;
+                    flex-direction: column;
+
+                    textarea{
+                        height: 130px;
+
+
+                    }
+
+                    textarea, input{
+                        font-size: 19px;
+                        line-height: 32px;
+                        padding: 8px 14px;
+
+                        &::placeholder{
+                            font-size: 19px;
+                            line-height: 32px;
+                        }
+                    }
+                }
+
+                label{
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+
+                .submit{
+                    font-weight: 600 !important;
+                    font-size: 33px;
+                    line-height: 50px;
+                    text-transform: uppercase;
+                    padding: 3px;
+                }
+            }
+
+            .comment-comments{
+
+                .comment{
+
+                    .text{
+                        font-size: 19px;
+                        line-height: 26px;
+                        margin-bottom: 20px;
+                    }
+
+                    .subscription{
+                        font-size: 22px;
+                        line-height: 29px;
+                        text-align: right;
+                    }
+                }
+            }
+
+            .donation{
+
+                .donation-amount{
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+                    margin-bottom: 70px;
+
+                    .title{
+                        font-size: 21px;
+                        line-height: 27px;
+                    }
+                }
+
+                .payment,.info{
+
+                    .title{
+                        font-size: 21px;
+                        line-height: 27px; 
+                        text-align: center;
+                    }
+                }
+
+                .info{
+
+                    .title{
+                        text-align: center;
+                        
+                    }
+
+                    .inputs{
+                        max-width: 300px;
+                        flex-direction: column;
+                        gap: 17px;
+                        margin: 0 auto;
+                        margin-bottom: 17px;
+                    }
+
+                    .submit{
+                        max-width: 300px;
+                    }
+                }
+            }
+        }
+
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -5322,6 +6039,22 @@ footer{
                         .signature{
                             display: none;
                         }
+                    }
+                }
+            }
+        }
+
+        &.article{
+
+            .wrapper{
+
+                .article-block{
+
+
+                    .img-group-small{
+                        gap: 30px;
+                        flex-direction: column;
+                        display: flex;
                     }
                 }
             }

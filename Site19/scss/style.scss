@@ -2065,7 +2065,6 @@ footer{
         .map-blk{
             position: relative;
             z-index: 2;
-            border: 2px solid #FFE76A;
 
                 
             .map-title{
@@ -2082,7 +2081,8 @@ footer{
                 height: 100%;
 
                 iframe{
-                    height: 513px;
+                    height: 513px;                    
+                    border: 2px solid #FFE76A;
                 }
             }
 

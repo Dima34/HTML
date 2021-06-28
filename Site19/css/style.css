@@ -1448,8 +1448,7 @@ footer {
           color: white; }
     .map .wrapper .map-blk {
       position: relative;
-      z-index: 2;
-      border: 2px solid #FFE76A; }
+      z-index: 2; }
       .map .wrapper .map-blk .map-title {
         margin-bottom: 42px;
         font-size: 35px;
@@ -1462,7 +1461,8 @@ footer {
         display: block;
         height: 100%; }
         .map .wrapper .map-blk p iframe {
-          height: 513px; }
+          height: 513px;
+          border: 2px solid #FFE76A; }
     .map .wrapper img {
       width: 100%; }
   .map .map-wave {
