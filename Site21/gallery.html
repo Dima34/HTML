@@ -69,18 +69,6 @@
                   <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
                   <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
                   <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
-                  <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
-                  <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
-                  <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
-                  <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
-                  <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
-                  <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
-                  <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
-                  <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
-                  <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
-                  <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
-                  <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
-                  <div class="swiper-slide"><img src="./img/creative-part1-img1.png" alt="image"></div>
                 </div>
                 
                 <div class="swiper-button-next"><img src="./img/swiper-arrow.png" alt="arrow"></div>
@@ -163,65 +151,77 @@
     <script src="./js/script.js"></script>
 
     <script>
-        var swiper = new Swiper('.gallery-swiper', {
-            slidesPerView: "auto",
 
-            centeredSlides: true,
-            loop:true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            autoplay: {
-                delay: 0.5,
-            },
-        });
+        if(window.innerWidth < 700){
+            var swiper = new Swiper('.gallery-swiper', {
+                slidesPerView: "auto",
+                centeredSlides: true,
+                loop:true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        } else{
+            var swiper = new Swiper('.gallery-swiper', {
+                slidesPerView: "auto",
 
-        let tertiaryLeft;
-        let tetiratyRight;
-        let prevSlideIndex;
-        let nextSlideIndex;
+                centeredSlides: true,
+                loop:true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 0.5,
+                },
+            });
 
-        setTimeout(()=>{
-            swiper.autoplay.stop()
-        } , 10);
+            let tertiaryLeft;
+            let tetiratyRight;
+            let prevSlideIndex;
+            let nextSlideIndex;
 
-           
+            setTimeout(()=>{
+                swiper.autoplay.stop()
+            } , 10);           
 
-        swiper.on('slideChangeTransitionStart', function () {
-            
-            let activeSlide = document.querySelector(".gallery-swiper")
-            .querySelector(".swiper-slide-active");
-            
-            let slidesList = document.querySelector(".gallery-swiper")
-            .querySelectorAll(".swiper-slide");
-
-            nextSlideIndex = document.querySelector(".gallery-swiper")
-            .querySelector(".swiper-slide-next")
-
-            for (let i = 0; i < slidesList.length; i++) {
-
-                slidesList[i].classList.remove("tetiratySlide")
-                slidesList[i].classList.remove("tetiratySlide-left")
-                slidesList[i].classList.remove("tetiratySlide-right")
-
-                if(slidesList[i].classList.contains("swiper-slide-next")){
-                    nextSlideIndex = i;
-                }
+            swiper.on('slideChangeTransitionStart', function () {
                 
-                if(slidesList[i].classList.contains("swiper-slide-prev")){
-                    prevSlideIndex = i;
+                let activeSlide = document.querySelector(".gallery-swiper")
+                .querySelector(".swiper-slide-active");
+                
+                let slidesList = document.querySelector(".gallery-swiper")
+                .querySelectorAll(".swiper-slide");
+
+                nextSlideIndex = document.querySelector(".gallery-swiper")
+                .querySelector(".swiper-slide-next")
+
+                for (let i = 0; i < slidesList.length; i++) {
+
+                    slidesList[i].classList.remove("tetiratySlide")
+                    slidesList[i].classList.remove("tetiratySlide-left")
+                    slidesList[i].classList.remove("tetiratySlide-right")
+
+                    if(slidesList[i].classList.contains("swiper-slide-next")){
+                        nextSlideIndex = i;
+                    }
+                    
+                    if(slidesList[i].classList.contains("swiper-slide-prev")){
+                        prevSlideIndex = i;
+                    }
                 }
-            }
 
-            tetiratyRight = slidesList[nextSlideIndex+1]
-            tertiaryLeft = slidesList[prevSlideIndex-1];
+                tetiratyRight = slidesList[nextSlideIndex+1]
+                tertiaryLeft = slidesList[prevSlideIndex-1];
 
-            tertiaryLeft.classList.add("tetiratySlide");
-            tertiaryLeft.classList.add("tetiratySlide-left");
-            tetiratyRight.classList.add("tetiratySlide");
-            tetiratyRight.classList.add("tetiratySlide-right");
-        });
+                tertiaryLeft.classList.add("tetiratySlide");
+                tertiaryLeft.classList.add("tetiratySlide-left");
+                tetiratyRight.classList.add("tetiratySlide");
+                tetiratyRight.classList.add("tetiratySlide-right");
+            });
+        }
+       
     </script>
 </body>
 
