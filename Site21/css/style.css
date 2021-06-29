@@ -3329,7 +3329,92 @@ footer {
     .gallery .wrapper {
       grid-template-columns: 1fr 1fr;
       padding: 0 15px;
-      max-width: 653px; } }
+      max-width: 653px; }
+  .intro {
+    padding-top: 98px; }
+    .intro .wrapper {
+      grid-template-columns: 1fr 47.656%; }
+      .intro .wrapper .title {
+        font-size: 90px;
+        line-height: 120px;
+        padding-top: 187px; }
+      .intro .wrapper .intro-gallery {
+        grid-template-columns: 17.285vw 19.31vw 15.625vw; }
+        .intro .wrapper .intro-gallery img {
+          height: 13vw; }
+      .intro .wrapper .intro-donate {
+        padding: 20px;
+        font-size: 23px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        width: 186px; }
+        .intro .wrapper .intro-donate::after {
+          top: 51%;
+          right: 15px; }
+  .departure .wrapper {
+    padding: 46px 45px; }
+    .departure .wrapper .departure-ship {
+      width: 38.2vw;
+      height: 26.32vw; }
+    .departure .wrapper .timer {
+      margin-left: 25px; }
+      .departure .wrapper .timer h2 {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 20px; }
+      .departure .wrapper .timer .timer-group {
+        gap: 30px; }
+        .departure .wrapper .timer .timer-group .timer-item .title {
+          font-size: 15px;
+          line-height: 30px;
+          margin-bottom: 10px; }
+        .departure .wrapper .timer .timer-group .timer-item .box {
+          width: 100px;
+          height: 80px; }
+          .departure .wrapper .timer .timer-group .timer-item .box .time {
+            font-size: 60px;
+            line-height: 40px; }
+          .departure .wrapper .timer .timer-group .timer-item .box::after {
+            left: calc(100% + 10px);
+            top: 19px; }
+          .departure .wrapper .timer .timer-group .timer-item .box::before {
+            content: url(../img/timer-dot.png);
+            position: absolute;
+            left: calc(100% + 10px);
+            top: 47px; }
+      .departure .wrapper .timer .timer-alert {
+        font-size: 20px;
+        line-height: 30px; }
+  .creative .text-blk p {
+    font-size: 22px;
+    line-height: 30px; }
+  .creative .text-blk .ocean-bg {
+    font-size: 79px;
+    line-height: 82px; }
+  .creative .part1 .col1 {
+    padding-top: 474px; }
+  .creative .part1 .col2 {
+    padding-top: 90px; }
+    .creative .part1 .col2 img {
+      margin-bottom: 99px;
+      height: 385px; }
+    .creative .part1 .col2 .text-blk {
+      padding: 67px 24px; }
+  .creative .part1 .col3 {
+    padding-top: 177px; }
+    .creative .part1 .col3 .text-blk {
+      padding: 45px 36px; }
+  .creative .part2 .col2 img {
+    margin-bottom: 108px; }
+  .creative .part2 .col2 .text-blk {
+    padding: 47px 52px; }
+  .creative .part2 .col3 {
+    padding-top: 97px; }
+    .creative .part2 .col3 .text-blk {
+      padding: 45px 30px; }
+    .creative .part2 .col3 img {
+      margin-bottom: 93px; } }
 
 @media screen and (max-width: 900px) {
   .contacts .part1 .wrapper .col1 .text-blk, .contacts .part1 .wrapper .col3 .text-blk {

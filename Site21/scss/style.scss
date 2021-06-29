@@ -5383,6 +5383,182 @@ footer{
         }
     }
 
+    .intro{
+        padding-top: 98px;
+
+        .wrapper{
+            grid-template-columns: 1fr 47.656%;
+    
+    
+            .title{
+                font-size: 90px;
+                line-height: 120px;
+                padding-top: 187px;
+            }
+    
+            .intro-gallery{
+                grid-template-columns: 17.285vw 19.31vw 15.625vw;
+    
+                img{
+                    height: 13vw;
+                }
+            }
+    
+            .intro-donate{
+                padding: 20px;
+                font-size: 23px;
+                line-height: 30px;  
+                display: flex;
+                align-items: center;
+                width: 186px;
+    
+                &::after{
+                    top: 51%;
+                    right: 15px;
+                }
+            }
+           
+        }
+    
+    }
+        
+    .departure{
+    
+        .wrapper{
+            padding: 46px 45px;
+
+            .departure-ship{
+                width: 38.2vw;
+                height: 26.32vw;
+            }
+    
+            .timer{
+                margin-left: 25px;
+    
+                h2{
+                    font-size: 26px;
+                    line-height: 30px;
+                    margin-bottom: 20px;
+                }
+    
+                .timer-group{
+                    gap: 30px;
+                    
+                    .timer-item{
+    
+                        .title{
+                            font-size: 15px;
+                            line-height: 30px;
+                            margin-bottom: 10px;
+                        }
+    
+                        .box{
+                            width: 100px;
+                            height: 80px;
+    
+                            .time{
+                                font-size: 60px;
+                                line-height: 40px;
+                            }
+    
+                            &::after{
+                                left: calc(100% + 10px);
+                                top: 19px;
+                            }
+    
+                            &::before{
+                                content: url(../img/timer-dot.png);
+                                position: absolute;
+                                left: calc(100% + 10px);
+                                top: 47px;
+                            }
+    
+                        }
+                        
+                    }
+                }
+    
+                .timer-alert{
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+    
+    }
+    
+    .creative{
+    
+        .text-blk{
+    
+            p{
+                font-size: 22px;
+                line-height: 30px; 
+            }
+    
+            .ocean-bg{
+                font-size: 79px;
+                line-height: 82px;            
+            }
+        }
+        .part1{
+    
+            .col1{
+                padding-top: 474px;
+            }
+    
+            .col2{
+                padding-top: 90px;
+    
+                img{
+                    margin-bottom: 99px;
+                    height: 385px;
+                }
+    
+                .text-blk{
+                    padding:67px 24px;
+                }
+            }    
+            
+            .col3{
+                padding-top: 177px;
+           
+                .text-blk{
+                    padding: 45px 36px;
+                }
+            }
+        }
+    
+        .part2{  
+    
+            .col2{
+    
+                img{
+                    margin-bottom: 108px;
+                }
+    
+                .text-blk{
+                    padding: 47px 52px;
+                }
+            }
+    
+            
+            .col3{
+                padding-top: 97px;
+           
+                .text-blk{
+                    padding: 45px 30px;
+                }    
+
+                img{
+                    margin-bottom: 93px;
+                }
+                
+            }
+        }
+    
+    }
+
 }
 
 @media screen and (max-width: 900px) {
