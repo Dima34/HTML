@@ -637,6 +637,10 @@ header{
 
 }
 
+.creative-mobile{
+    display: none;
+}
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -6747,6 +6751,224 @@ footer{
             max-width: 653px;
             padding-bottom: 40px;
         }
+    }
+
+    .intro{
+        display: none;
+    }
+
+    .intro-mobile{
+        display: block !important;
+        position: relative;
+
+        .bg{
+            width: 100vw;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            height: 100%;
+        }
+
+        .wrapper{
+            padding-top: 96px;
+            
+            .top-image{
+                display: grid;
+                grid-template-columns: 1fr 59.73vw;
+
+                img{
+                    width: 100%;
+                    grid-column: 2/3;
+                    height: 84.53vw;
+                    object-fit: cover;
+                    border-left: 1px solid rgba(255, 255, 255, 0.5);
+                }
+            }
+
+            .title{
+                font-size: 65px;
+                line-height: 39px;
+                font-family: 'Playfair Display' !important;
+                text-align: center;
+                padding: 33px 5px;
+                padding-bottom: 37px;
+                border-top: 1px solid rgba(255, 255, 255, 0.5);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                letter-spacing: 0.07em;
+            }
+
+            .double-columns{
+                display: grid;
+                grid-template-columns: 53.6% 46.93%;
+
+
+                .left{
+                    grid-template-columns: 1/2;
+                    border-right: 1px solid rgba(255, 255, 255, 0.5);
+                    
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+
+                        &:nth-child(1){
+                            height: 32.53vw;
+                            margin-bottom: 100px;
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                        }
+
+                        &:nth-child(2){
+                            height: 38.67vw;                            
+                            border-top: 1px solid rgba(255, 255, 255, 0.5);
+                        }
+                    }
+                }
+
+                .right{
+                    padding-top: 32.27vw;
+
+                    .intro-donate{
+                        font-family: 'EB Garamond' !important;
+                        font-size: 23px;
+                        line-height: 30px;
+                        text-align: center;
+                        letter-spacing: 0.06em;
+                        height: 100px;
+                        width: 100%;
+                        position: relative;
+                        padding: 34px 18px;
+                        background: #232323;
+                        border-right: 1px solid rgba(255, 255, 255, 0.5);
+                        text-align: left; 
+                        display: block;
+                        border-top: 1px solid rgba(255, 255, 255, 0.5);
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+                        &::after{
+                            content: url(../img/svg/donation-arrow.svg);
+                            position: absolute;
+                            top: 53%;
+                            right: 14px;
+                            transform: translateY(-50%);
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .departure{
+
+        .wrapper{
+            padding: 0;
+            padding-top: 70px;
+            padding-bottom: 44px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            border-left:  0;
+            border-right: 0;
+
+            .departure-ship{
+                width: 359px;
+                height: 257px;
+                margin-left: 0;
+            }
+
+            .timer{
+                margin: 0;
+                margin-bottom: 25px;
+
+                .timer-group{
+
+                    .timer-item{
+
+                        .box{
+                            width: 90px;
+                            height: 80px; 
+                            background-position-x: -10px;                            
+                        }                  
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .creative{
+        display: none;
+    }
+
+    .creative-mobile{
+        display: block;
+        position: relative;
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        .bg{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .pair{
+            margin-bottom: 70px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 210px;
+            align-items: center;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                border-left: 0;
+            }
+
+            .text-blk{
+                width: 100%;
+                background: #232323;
+                box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.3);
+                padding: 24px 12px;
+                border-top: 1px solid rgba(255, 255, 255, 0.4);
+                border-bottom:  1px solid rgba(255, 255, 255, 0.4);
+
+                .ocean-bg{
+                    font-size: 50px;
+                    line-height: 40px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+
+                p{
+                    font-size: 18px;
+                    line-height: 25px; 
+                }
+            }
+
+            &.reversed{
+                img{
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                    border-left: 1px solid rgba(255, 255, 255, 0.4);
+                    border-right: 0;
+                }
+
+                .text-blk{
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                }
+            }
+            
+        }
+        
     }
 
 }
