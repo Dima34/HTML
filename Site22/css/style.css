@@ -191,8 +191,12 @@ body{
   height: 197px;
   margin: 0 auto;
   display: flex;
-  gap: 85px;  
+  /* gap: 85px;   */
   margin-bottom: 148px;
+}
+
+.flipTimer .minutes{
+  margin: 0 85px;
 }
 
 .digit-set{
@@ -220,7 +224,11 @@ body{
 .flipTimer .seconds, .flipTimer .minutes, .flipTimer .hours, .flipTimer .days{
   display: flex;
   flex-direction: row;
-  gap: 27px;
+  /* gap: 27px; */
+}
+
+.flipTimer .digit-set:nth-child(1){
+  margin-right: 27px;
 }
 
 .flipTimer .hours,.flipTimer .minutes, .flipTimer .seconds{
