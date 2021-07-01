@@ -4033,6 +4033,130 @@ footer{
 
 }
 
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------=======COCKTAILS=======------- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+.cocktails{
+    padding-top: 101px;
+
+    .wrapper{
+        border-right:  0.7px solid rgba(35, 35, 35, 0.55);
+        border-left:  0.7px solid rgba(35, 35, 35, 0.55);
+        padding-top: 25px;
+        padding-bottom: 123px;
+         
+        .logo{
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 32px;
+        }
+
+        .cocktail-title{
+            font-size: 24px;
+            line-height: 35px;
+            font-family: 'EB Garamond' !important;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            max-width: 714px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            color:black;
+        }
+
+        .main-image{
+            max-width: 770px;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 31px;
+        }
+
+        .cocktails-subtitle{
+            font-size: 22px;
+            line-height: 35px;
+            font-family: 'EB Garamond' !important;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 55px;
+            color:black;
+        }
+
+        .cocktails-title{
+            font-size: 50px;
+            line-height: 65px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            font-family: 'EB Garamond' !important;
+            margin-bottom: 55px;
+            color:black;
+            text-align: center;
+            margin-top: 55px;
+        }
+
+        .cocktail-block{
+            margin-left: 54px;
+            min-height: 317px;
+            max-width: 1124px;
+            display: flex;
+            gap: 74px;
+            margin-bottom: 60px;
+
+            img{
+                height: 100%;
+                width: 570px;
+                object-fit: cover;
+            }
+
+            div{
+                display: grid;
+                grid-template-rows: min-content 1fr min-content;
+
+                a{
+                    font-size: 22px;
+                    line-height: 29px;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                    position: relative;
+                    color:black;
+                    font-family: 'EB Garamond' !important;
+
+                    &::after{
+                        content: url(../img/svg/cocktail-arrow.svg);
+
+                    }
+                }
+
+                p{
+                    font-size: 22px;
+                    line-height: 32px;
+                    letter-spacing: 0.01em;
+                    margin: 15px 0;
+                    align-self: center;
+                    color:black;
+                }
+
+                span{
+                    font-size: 22px;
+                    line-height: 29px;
+                    text-align: right;
+                    letter-spacing: 0.03em;
+                    width: 100%;
+                    font-family: 'EB Garamond' !important;
+                    color:black;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1279px) {
 
     header{

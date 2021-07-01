@@ -15,7 +15,7 @@ gulp.task("sass-compile", function(){
 })
 
 gulp.task('fileinclude', function() {
-    return gulp.src(['./src/shop-info.html','./src/shop-payment.html','./src/shop-item.html','./src/shop.html','./src/shop-cart.html','./src/index.html','./src/donation.html','./src/museums.html','./src/tellogleio.html','./src/catacombs.html','./src/casa-bianka.html','./src/glasshouse-project.html','./src/farmaceutic-museum.html','./src/our-place.html','./src/cruise.html','./src/gallery.html', './src/history.html','./src/contact-us.html'])
+    return gulp.src(['./src/drinks.html','./src/shop-info.html','./src/shop-payment.html','./src/shop-item.html','./src/shop.html','./src/shop-cart.html','./src/index.html','./src/donation.html','./src/museums.html','./src/tellogleio.html','./src/catacombs.html','./src/casa-bianka.html','./src/glasshouse-project.html','./src/farmaceutic-museum.html','./src/our-place.html','./src/cruise.html','./src/gallery.html', './src/history.html','./src/contact-us.html'])
       .pipe(fileinclude({
         prefix: '@@',
         basepath: '@file'
