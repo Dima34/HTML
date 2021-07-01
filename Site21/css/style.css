@@ -2768,7 +2768,8 @@ footer {
           color: black;
           font-family: 'EB Garamond' !important; }
           .cocktails .wrapper .cocktail-block div a::after {
-            content: url(../img/svg/cocktail-arrow.svg); }
+            content: url(../img/svg/cocktail-arrow.svg);
+            margin-left: 10px; }
         .cocktails .wrapper .cocktail-block div p {
           font-size: 22px;
           line-height: 32px;
@@ -3033,7 +3034,11 @@ footer {
     .creative .part2 .col3 .text-blk {
       padding: 45px 30px; }
     .creative .part2 .col3 img {
-      margin-bottom: 93px; } }
+      margin-bottom: 93px; }
+  .cocktails .wrapper .cocktail-block {
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 30px; } }
 
 @media screen and (max-width: 1100px) {
   .contacts .part1 .wrapper {
@@ -3512,7 +3517,55 @@ footer {
     .creative .part2 .col3 .text-blk {
       padding: 45px 30px; }
     .creative .part2 .col3 img {
-      margin-bottom: 93px; } }
+      margin-bottom: 93px; }
+  .cocktails {
+    padding-top: 98px; }
+    .cocktails .horizontal-line:nth-child(1) {
+      display: none; }
+    .cocktails .wrapper {
+      border: 0; }
+      .cocktails .wrapper .logo {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 25px; }
+      .cocktails .wrapper .cocktail-title {
+        font-size: 21px;
+        line-height: 30px;
+        max-width: 615px;
+        margin-bottom: 23px; }
+      .cocktails .wrapper .main-image {
+        max-width: 595px;
+        height: 286px;
+        margin-bottom: 23px; }
+      .cocktails .wrapper .cocktails-subtitle {
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 615px;
+        margin: 0 auto;
+        margin-bottom: 45px; }
+      .cocktails .wrapper .cocktails-title {
+        font-size: 30px;
+        line-height: 39px;
+        margin-bottom: 45px;
+        margin-top: 45px; }
+      .cocktails .wrapper .cocktail-block {
+        margin: 0 auto;
+        min-height: 202px;
+        max-width: 730px;
+        padding: 0 10px;
+        gap: 37px;
+        margin-bottom: 45px; }
+        .cocktails .wrapper .cocktail-block img {
+          width: 330px; }
+        .cocktails .wrapper .cocktail-block div a {
+          font-size: 20px;
+          line-height: 26px; }
+        .cocktails .wrapper .cocktail-block div p {
+          font-size: 18px;
+          line-height: 30px; }
+        .cocktails .wrapper .cocktail-block div span {
+          font-size: 20px;
+          line-height: 26px; } }
 
 @media screen and (max-width: 900px) {
   .contacts .part1 .wrapper .col1 .text-blk, .contacts .part1 .wrapper .col3 .text-blk {
@@ -3612,6 +3665,8 @@ footer {
     border-bottom: 0; }
     #history header .wrapper {
       background: none; }
+      #history header .wrapper .logo-mobile {
+        content: url(../img/svg/white-logo-small.svg); }
       #history header .wrapper nav {
         top: 0; }
       #history header .wrapper .menu-open p {
@@ -4265,7 +4320,50 @@ footer {
         border-right: 0; }
       .creative-mobile .pair.reversed .text-blk {
         grid-column: 1/2;
-        grid-row: 1/2; } }
+        grid-row: 1/2; }
+  .cocktails {
+    padding-top: 110px; }
+    .cocktails .horizontal-line:nth-child(1) {
+      display: none; }
+    .cocktails .wrapper {
+      border: 0; }
+      .cocktails .wrapper .logo {
+        display: none; }
+      .cocktails .wrapper .cocktail-title {
+        font-size: 20px;
+        line-height: 31px;
+        margin-bottom: 30px; }
+      .cocktails .wrapper .main-image {
+        max-width: unset;
+        width: 100vw;
+        height: 53.33vw;
+        margin-bottom: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.6); }
+      .cocktails .wrapper .cocktails-subtitle {
+        font-size: 17px;
+        line-height: 25px; }
+      .cocktails .wrapper .cocktails-title {
+        font-size: 25px;
+        line-height: 33px; }
+      .cocktails .wrapper .cocktail-block {
+        border-top: 1px solid rgba(0, 0, 0, 0.6);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+        margin: 0 auto;
+        padding: 25px 22px;
+        gap: 33px;
+        margin-top: -1px;
+        margin-bottom: 0px;
+        flex-direction: column; }
+        .cocktails .wrapper .cocktail-block img {
+          width: 88vw;
+          height: 44vw;
+          border: 1px solid rgba(0, 0, 0, 0.6);
+          margin: 0 auto; }
+        .cocktails .wrapper .cocktail-block div p {
+          margin: 25px 0; }
+        .cocktails .wrapper .cocktail-block div span {
+          font-size: 16px;
+          line-height: 21px; } }
 
 @media screen and (max-width: 500px) {
   .our-place {
