@@ -2397,7 +2397,8 @@ footer {
   .shop .cart-payment .wrapper .main {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 40px;
     justify-content: space-between;
     position: relative; }
     .shop .cart-payment .wrapper .main::after {
