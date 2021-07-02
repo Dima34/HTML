@@ -1495,7 +1495,7 @@ footer {
       width: 550px;
       height: 400px;
       margin-left: -58px;
-      border: 1px solid black; }
+      padding-top: 30px; }
     .alt-ways .wrapper .right {
       padding-top: 97px; }
       .alt-ways .wrapper .right .shape-group {
