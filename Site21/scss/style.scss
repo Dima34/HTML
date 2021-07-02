@@ -3590,6 +3590,10 @@ footer{
                 justify-content: space-between;
                 position: relative;
 
+                .way-mobile{
+                    display: none;
+                }
+
                 &::after{
                     content: "";
                     position: absolute;
@@ -4045,7 +4049,6 @@ footer{
         }
 
     }
-
 
 }
 
@@ -6026,6 +6029,72 @@ footer{
 
 
         }
+
+        .cart-payment{
+
+            .wrapper{
+                padding: 0 26px;
+                padding-top: 66px;
+                padding-bottom: 146px;
+
+                .main{
+                    .left .shipping-info .input-group {
+                        gap: 9px;
+                    }
+
+                    .right{
+
+                        .item{
+                            padding-bottom: 35px;
+                            border-top: 1px solid rgba(35, 35, 35, 0.55);
+                            padding-top: 35px;
+                            margin-bottom: 0;
+
+                            &:first-child{
+                                border-top: 0;
+                                padding-top: 0;
+                            }
+
+                            .left{
+
+                                .image{
+                                    width: 80px;
+                                    height: 80px;
+                                    margin-bottom: 0px;
+                                }
+
+                                .name{
+                                    font-size: 20px;
+                                    line-height: 27px;
+                                    letter-spacing: 0.02em; 
+                                    margin-bottom: 5px;
+                                }
+
+                                .type{
+                                    font-size: 18px;
+                                    line-height: 25px;
+                                    letter-spacing: 0.02em;
+                                }
+                            }
+
+                            .right{
+
+                                .price{
+                                    font-size: 22px;
+                                    line-height: 30px;
+                                    margin-bottom: 1px;
+                                }
+
+                                .quantity{
+                                    font-size: 18px;
+                                    line-height: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
 }
@@ -6407,7 +6476,189 @@ footer{
 
             }
         }
+
+        .cart-payment{
+
+            .wrapper{
+                padding: 0px 48px;
+                padding-top: 52px;
+                padding-bottom: 120px;
+    
+                .main{
+                    flex-direction: column-reverse;
+                    
+                    .way-mobile{
+                        display: flex;
+                        margin-bottom: 8px;
+                        padding-left: 7px;
+    
+                        a{
+                            font-size: 16px;
+                            line-height: 22px;
+                            letter-spacing: 0.01em;
+                            color: rgba(0, 0, 0, 0.8);
+                            padding-right: 20px;
+                            display: block;
+                            width: fit-content;
+                            position: relative;
+    
+                            &:last-of-type{
+    
+                                &::after{
+                                    display: none;
+                                }
+                            }
+    
+                            &::after{
+                                content: url(../img/svg/way-arrow.svg);
+                                position: absolute;
+                                right: 7px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+    
+                            &.active{
+                                color: #000000;
+                                font-weight: 400 !important;
+                            }
+                        }
+                    }
+
+                    &::after{
+                        display: none;
+                    }
+                    
+                    .left {
+                        .way{
+                            display: none;
+                        }
+
+                        .shipping-info .input-group {
+                            gap: 0px;
+                        }
+
+                        input{
+                            padding: 20px 20px;
+                        }
+
+                        .contact-info{
+                            margin-bottom: 65px;
+                        }
+
+                        .shipping-info{
+                            margin-bottom: 14px;
+
+                            input{
+                                margin-bottom: 15px;
+                            }
+
+                            .input-group{
+                                flex-direction: column;
+                            }
+                        }
+
+                    }
+                    
+    
+                    .right{
+    
+                        .item{
+                            padding-bottom: 24px;
+                            border-top: 1px solid rgba(35, 35, 35, 0.55);
+                            padding-top: 23px;
+                            margin-bottom: 0;
+    
+                            &:first-child{
+                                border-top: 0;
+                                padding-top: 0;
+                            }
+
+                            
+    
+                            .left{
+    
+                                .image{
+                                    width: 70px;
+                                    height: 70px;
+                                    margin-bottom: 0px;
+                                    margin-right: 9px;
+                                }
+    
+                                .name{
+                                    font-size: 18px;
+                                    line-height: 25px;
+                                    padding-top: 0; 
+
+                                }
+    
+                                .type{
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    letter-spacing: 0.02em;
+                                }
+
+                                
+                            }
+    
+                            .right{
+                                padding-top: 0;
+                                margin-top: -5px;
+
+                                
+    
+                                .price{
+                                    font-size: 20px;
+                                    line-height: 27px; 
+                                    margin-bottom: 5px;
+                                }
+    
+                                .quantity{
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                }
+                            }
+
+                            
+                        }
+
+                        .sub-total{
+                            padding-top: 20px;
+
+                            .group{
+
+                                &:last-child{
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+
+                        .total{
+                            padding-top: 21px;
+                            padding-bottom: 22px;
+
+                            .title, .price{
+                                font-size: 22px;
+                                line-height: 25px;
+                            }
+                        }
+                    }
+                }
+
+                .bottom{
+                    flex-direction: column;
+                    gap: 30px;
+
+                    a:nth-child(1){
+                        font-size: 25px;
+                        line-height: 40px;
+                        letter-spacing: 0.03em;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
     }
+    
 }
 
 @media screen and (max-width: 700px) {
@@ -7815,6 +8066,24 @@ footer{
 
             }
 
+        }
+
+        .cart-payment{
+
+            .wrapper{
+                padding: 0px 15px;
+                padding-top: 90px;
+                padding-bottom: 120px;
+
+                .left{
+                    .cart-billing .input-group, .cart-payment-method label .input-group {
+                        gap: 0;
+                        flex-direction: column;
+                    }
+                }
+
+               
+            }
         }
         
     }
