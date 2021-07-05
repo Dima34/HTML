@@ -941,6 +941,54 @@ footer{
     }
 }
 
+.privacy{
+
+    .wrapper{
+        padding: 0 56px;
+        padding-top: 61px;
+        border-left: 1px solid rgba(35, 35, 35, 0.55);
+        border-right: 1px solid rgba(35, 35, 35, 0.55); 
+        padding-bottom: 150px;
+
+        p,a,h3,li{
+            color: black;
+        }
+
+        h3{
+            font-size: 26px;
+            line-height: 20px;
+            letter-spacing: 0.04em;
+            margin-bottom: 20px;
+
+            &:last-of-type{
+                margin-bottom: 26px;
+            }
+        }
+
+        p, li{
+            font-size: 24px;
+            line-height: 33px;
+            letter-spacing: 0.02em;
+            margin-bottom: 20px;
+        }
+
+        ul{
+
+            li{
+                position: relative;
+                padding-left: 30px;
+
+                &::after{
+                    content: url(../img/black-dot.png);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
 .header-block{
     margin-top: 100px;
 
@@ -5010,7 +5058,6 @@ footer{
 
 }
 
-
 @media screen and (max-width: 1023px) {
 
     header{
@@ -6091,6 +6138,44 @@ footer{
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .privacy{
+
+        .wrapper{
+            padding: 0 51px;
+            padding-top: 40px;
+            border:0;
+            padding-bottom: 101px;
+    
+    
+            h3{
+                font-size: 20px;
+                line-height: 20px;
+    
+                &:last-of-type{
+                    margin-bottom: 20px;
+                }
+            }
+    
+            p, li{
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 15px;
+            }
+    
+            ul{
+    
+                li{
+                    position: relative;
+                    padding-left: 20px;
+    
+                    &::after{
+                        transform: scale(0.7);
                     }
                 }
             }
@@ -8086,6 +8171,28 @@ footer{
             }
         }
         
+    }
+
+    .privacy{
+
+        .wrapper{
+            padding: 0 23px;
+            padding-top: 40px;
+            border:0;
+            padding-bottom: 80px;
+    
+    
+            h3{
+                font-size: 18px;
+                line-height: 20px;
+                margin-bottom: 15px;
+    
+                &:last-of-type{
+                    margin-bottom: 25px;
+                }
+            }
+
+        }
     }
 
 }

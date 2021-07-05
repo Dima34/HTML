@@ -631,6 +631,35 @@ footer {
 #history footer .bg {
   display: none; }
 
+.privacy .wrapper {
+  padding: 0 56px;
+  padding-top: 61px;
+  border-left: 1px solid rgba(35, 35, 35, 0.55);
+  border-right: 1px solid rgba(35, 35, 35, 0.55);
+  padding-bottom: 150px; }
+  .privacy .wrapper p, .privacy .wrapper a, .privacy .wrapper h3, .privacy .wrapper li {
+    color: black; }
+  .privacy .wrapper h3 {
+    font-size: 26px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    margin-bottom: 20px; }
+    .privacy .wrapper h3:last-of-type {
+      margin-bottom: 26px; }
+  .privacy .wrapper p, .privacy .wrapper li {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px; }
+  .privacy .wrapper ul li {
+    position: relative;
+    padding-left: 30px; }
+    .privacy .wrapper ul li::after {
+      content: url(../img/black-dot.png);
+      position: absolute;
+      left: 0;
+      top: 0; }
+
 .header-block {
   margin-top: 100px; }
   .header-block .wrapper {
@@ -3728,7 +3757,26 @@ footer {
         margin-bottom: 1px; }
       .shop .cart-payment .wrapper .main .right .item .right .quantity {
         font-size: 18px;
-        line-height: 25px; } }
+        line-height: 25px; }
+  .privacy .wrapper {
+    padding: 0 51px;
+    padding-top: 40px;
+    border: 0;
+    padding-bottom: 101px; }
+    .privacy .wrapper h3 {
+      font-size: 20px;
+      line-height: 20px; }
+      .privacy .wrapper h3:last-of-type {
+        margin-bottom: 20px; }
+    .privacy .wrapper p, .privacy .wrapper li {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 15px; }
+    .privacy .wrapper ul li {
+      position: relative;
+      padding-left: 20px; }
+      .privacy .wrapper ul li::after {
+        transform: scale(0.7); } }
 
 @media screen and (max-width: 900px) {
   .contacts .part1 .wrapper .col1 .text-blk, .contacts .part1 .wrapper .col3 .text-blk {
@@ -4815,7 +4863,18 @@ footer {
     padding-bottom: 120px; }
     .shop .cart-payment .wrapper .left .cart-billing .input-group, .shop .cart-payment .wrapper .left .cart-payment-method label .input-group {
       gap: 0;
-      flex-direction: column; } }
+      flex-direction: column; }
+  .privacy .wrapper {
+    padding: 0 23px;
+    padding-top: 40px;
+    border: 0;
+    padding-bottom: 80px; }
+    .privacy .wrapper h3 {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 15px; }
+      .privacy .wrapper h3:last-of-type {
+        margin-bottom: 25px; } }
 
 @media screen and (max-width: 500px) {
   .our-place {
