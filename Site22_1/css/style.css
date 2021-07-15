@@ -591,7 +591,7 @@ body{
 
 .group_fire,.group_circle,.group_arrow,.red-square{
   position: absolute;
-  transition: 3s;
+  transition: 1.5s;
 }
 
 .group_circle{
@@ -666,7 +666,7 @@ body{
 }
 
 .person-group._active .group_arrow{
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-name: arrowGrow;
   animation-delay: 1s;
   animation-iteration-count: 1;
@@ -679,9 +679,9 @@ body{
 }
 
 .person-group._active .red-square{
-  animation-duration: 2.5s;
+  animation-duration: 1.25s;
   animation-name: redSquare;
-  animation-delay: 1.5s;
+  animation-delay: .7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -692,9 +692,9 @@ body{
 
 .person-group._active .red-square p{
   /* transform: scale(1) translate(0); */
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-name: textShow;
-  animation-delay: 3.5s;
+  animation-delay:1.7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }

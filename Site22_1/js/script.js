@@ -68,12 +68,12 @@ mouseParallax = (elem, factor = 0.1, reversed = false)=> {
 };
 
 if(window.innerWidth > 1100){
-  mouseParallax(document.querySelectorAll(".info__box-row.row-1 img"), 0.002);
-  mouseParallax(document.querySelectorAll(".info__box-row.row-2 img"), 0.001, true);
-  mouseParallax(document.querySelectorAll(".info__box-row.row-3 img"), 0.00155);
-  mouseParallax(document.querySelectorAll(".info__box-row.row-4 img"), 0.0002);
-  mouseParallax(document.querySelectorAll(".info__box-row.row-5 img"), 0.0018, true);
-  mouseParallax(document.querySelectorAll(".bumperCup"), 0.001);
+  mouseParallax(document.querySelectorAll(".info__box-row.row-1 img"), 0.004);
+  mouseParallax(document.querySelectorAll(".info__box-row.row-2 img"), 0.003, true);
+  mouseParallax(document.querySelectorAll(".info__box-row.row-3 img"), 0.00355);
+  mouseParallax(document.querySelectorAll(".info__box-row.row-4 img"), 0.001);
+  mouseParallax(document.querySelectorAll(".info__box-row.row-5 img"), 0.0038, true);
+  mouseParallax(document.querySelectorAll(".bumperCup"), 0.003);
 }
 
 
