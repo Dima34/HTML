@@ -2030,6 +2030,11 @@ body{
   .spotify__link-box {
     transform: scale(0.9);
   }
+
+  .map__footer{
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 @media (max-width: 990px) {
   .map__package {
