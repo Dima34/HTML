@@ -1478,7 +1478,7 @@ body{
     left: 380px;
   }
   .application {
-    max-height: 2400px;
+    max-height: 2550px;
   }
   .application__line {
     height: 1390px;
@@ -1489,6 +1489,25 @@ body{
   .spotify__package  {
     top: 520px;
   }
+
+  .spotify-note-big{
+    transform: translate(125px, 45px);
+  }
+  
+  .spotify-note-small{
+    transform: translate(157px, 93px);
+  }
+  
+  .spotify-play-btn{  
+    transform: translate(261px, 80px);
+  }
+
+  .person-group{
+    position: relative;
+    left: -100px;
+  }
+
+
 }
 
 @media (max-width: 1440px) {
@@ -1573,7 +1592,33 @@ body{
   .spotify__bumper {
     width: 60%;
   }
+
+  .person-group{
+    transform: scale(0.8);
+    margin-top: -230px;
+  }
+
+  .line-top {
+    left: -518px;
+  }
+
+  .application {
+    max-height: 2564px;
+  }
+
+  .spotify__link-box{
+    transform: scale(0.8);
+  }
+
+  .spotify__link{
+    margin-left: 0;
+  }
+
+  .spotify__bumper{
+    transform: scale(0.85);
+  }
 }
+
 
 @media (max-width: 1366px) {
   .spotify__package {
@@ -1687,6 +1732,23 @@ body{
   .application .app .line {
     display: none;
   }
+
+  .spotify__link-box{
+    transform: scale(0.5);
+  }
+
+  .spotify__link{
+    margin-left: 0;
+  }
+
+  .spotify__bumper{
+    transform: scale(0.6);
+    top: 705px;
+  }
+
+  .line-bottom{
+    right: -596px;
+  }
 }
 @media (max-width: 1080px) {
   .application__line {
@@ -1766,6 +1828,23 @@ body{
   .owl-carousel {
     top: -60px;
   }
+
+  .person-group {
+    transform: scale(1);
+    margin-top: 0;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  .line-top,.line-bottom{
+    display: none;
+  }
+
+  .spotify__bumper{
+    transform: scale(1);
+    left: 50%;
+  }
+
 }
 @media (max-width: 1024px){
   .application__line {
@@ -1922,6 +2001,35 @@ body{
   .spotify__package img {
     width: 140%;
   }
+
+  .spotify__bumper,.person-group{
+    transform: scale(0.8);
+    transform-origin: left top;
+  }
+
+  .person-group{
+    margin-left: -50px;
+  }
+
+  .application .info{
+    margin-top: 0;
+  }
+
+  .application .app{
+    max-height: 740px;
+  }
+
+  .spotify-circle-big,
+  .spotify-circle-small,
+  .spotify-note-big,
+  .spotify-note-small,
+  .spotify-play-btn{
+    transform: translate(0);
+  }
+
+  .spotify__link-box {
+    transform: scale(0.9);
+  }
 }
 @media (max-width: 990px) {
   .map__package {
@@ -2033,6 +2141,32 @@ body{
   .spotify .app__item-text {
     margin-top: 10px;
   }
+
+  .spotify__bumper,.person-group{
+    transform: scale(0.7);
+    transform-origin: left top;
+    margin-top: -100px;
+  }
+
+  .spotify__link{
+    padding-left: 0;
+  }
+
+  .application .app {
+    max-height: 740px;
+  }
+
+  .spotify-circle-big,
+  .spotify-circle-small,
+  .spotify-note-big,
+  .spotify-note-small,
+  .spotify-play-btn{
+    transform: translate(0);
+  }
+
+  .spotify__link-box {
+    transform: scale(0.8);
+  }
 }
 
 @media (max-width: 768px) {
@@ -2080,7 +2214,13 @@ body{
   .spotify__bottom {
     bottom: -2px;
     height: 3000px;
-}
+  }
+
+  .person-group {
+    margin-top: -25px;
+  }
+
+
 }
 
 @media (max-width: 700px) {
@@ -2093,9 +2233,26 @@ body{
   }
 }
 @media (max-width: 660px) {
-  .spotify__link-box img{
-    width: 70%;
-}
+  .person-group {
+    transform: scale(0.55);
+    margin-left: 0;
+  }
+
+  .application {
+    max-height: 2671px;
+  }
+
+  .application .info {
+    margin-top: -160px;
+  }
+
+  .spotify__link{
+    transform: scale(0.8);
+  }
+
+  .person-group {
+    margin-top: 160px;
+  }
 
   .header-ellipse {
     top: -125px;
@@ -2135,7 +2292,7 @@ body{
     left: -30px;
   }
   .application .info {
-    padding-top: 130px; 
+    padding-top: 0px; 
   }
   .owl-carousel {
     top: -40px;
@@ -2174,6 +2331,19 @@ body{
 } 
 
 @media (max-width: 526px) {
+  .spotify__link-box {
+    transform: scale(0.65);
+  }
+
+  .spotify .app {
+    padding-top: 50px;
+  }
+
+  .person-group {
+    transform: scale(0.45);
+    margin-left: 0;
+  }
+
   .application .info__text {
     min-width: 270px;
     max-width: 300px;
@@ -2388,6 +2558,30 @@ body{
 }
 
 @media ( max-width: 480px) {
+
+  .person-group{
+    transform: scale(0.40);
+    margin: 0 auto;
+    margin-top: 120px;
+  }
+
+  .application .info {
+    margin-top: -250px;
+  }
+
+  .spotify__link {
+    transform: scale(0.7);
+    margin-right: 25px;
+  }
+
+  .application {
+    max-height: 2749px;
+  }
+
+  .application .app {
+    max-height: 840px;
+  }
+
   .application__line {
     height: 1240px;
     top: 1270px;
@@ -2396,8 +2590,8 @@ body{
     display: none;
   }
   .header__offer-figure2 {
-  display: block;
-}
+    display: block;
+  }
 
   .open-in {
     font-size: 60px;
@@ -2432,12 +2626,7 @@ body{
   .spotify__bottom {
     bottom: -20px;
   }
-  .spotify__link-box {
-    width: 80%;
-  }
-  .spotify__link-box img {
-    width: 310px;
-  }
+  
   .spotify__bottom {
     bottom: -90px;
   }
