@@ -1081,6 +1081,7 @@ body{
 .line-bottom._active .c1 {
   stroke-dasharray:0,1450;
   animation: draw 2s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 @keyframes draw{100%{stroke-dasharray:1450,0;}}
 
