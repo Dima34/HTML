@@ -322,6 +322,10 @@ body{
   opacity: 0;
 }
 
+.intro{
+  overflow: hidden;
+}
+
 .header__offer-figure.active .running_anim{
   animation: GirlsRide 1.25s ease-in-out forwards;
   animation-iteration-count: 1;
