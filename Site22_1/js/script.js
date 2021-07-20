@@ -36,8 +36,11 @@ if (animItems.length > 0) {
 }
 
 window.onload = function() {
-  console.log( document.querySelector('.header__offer-figure'));
   document.querySelector('.header__offer-figure').classList.add("active")
+  document.querySelector('.figure-girl').setAttribute('src','./gif/girl_run.gif');
+  setTimeout(()=>{
+    document.querySelector('.figure-girl').setAttribute('src','./gif/girl_stay.gif');
+  }, 1100)
 };
 
 mouseParallax = (elem, factor = 0.1, reversed = false)=> {

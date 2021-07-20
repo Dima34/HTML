@@ -308,7 +308,7 @@ body{
   left: calc(50% - 636px);
 }
 
-.running_anim{
+/* .running_anim{
   position: absolute;
   left: 247px;
   top: 250px;
@@ -320,6 +320,22 @@ body{
   left: 247px;
   top: 250px;
   opacity: 0;
+} */
+
+.figure-girl{
+  position: absolute;
+  left: 247px;
+  top: 250px;
+}
+
+.header__offer-figure.active .figure-girl{
+  animation: GirlsRide 1.25s ease-in-out forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
+
+.figure-bg2{
+  display: none;
 }
 
 .intro{
@@ -357,9 +373,9 @@ body{
     transform: translateX(-0px);
     opacity: 1;
   }
-  100%{
+  /* 100%{
     opacity: 0;
-  }
+  } */
 }
 
 .header__offer-figure2 {
@@ -1717,7 +1733,7 @@ body{
   }
   .header__offer-figure {
     top: -160px;
-    left: 50px;
+    left: -8%;
   }
   .header__row-text {
     width: 80%;
