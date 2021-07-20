@@ -307,6 +307,51 @@ body{
   top: -200px;
   left: calc(50% - 636px);
 }
+
+.running_anim{
+  position: absolute;
+  left: 247px;
+  top: 250px;
+  animation: GirlsRide 0.9s ease-in-out forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.in_place_anim{
+  position: absolute;
+  left: 247px;
+  top: 250px;
+  animation: GirlInPlace forwards;
+  animation-iteration-count: 1;
+  animation-delay:1.3s;
+  opacity: 0;
+}
+
+@keyframes GirlInPlace {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+@keyframes GirlsRide {
+  0%{
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  99%{
+    transform: translateX(-0px);
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
 .header__offer-figure2 {
   display: none;
 }
@@ -2010,6 +2055,7 @@ body{
   .person-group{
     margin-left: -50px;
   }
+
 
   .application .info{
     margin-top: 0;
