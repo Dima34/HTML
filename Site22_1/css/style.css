@@ -312,9 +312,6 @@ body{
   position: absolute;
   left: 247px;
   top: 250px;
-  animation: GirlsRide 0.85s ease-in-out forwards;
-  animation-iteration-count: 1;
-  animation-delay: 0.5s;
   opacity: 0;
 }
 
@@ -322,10 +319,19 @@ body{
   position: absolute;
   left: 247px;
   top: 250px;
+  opacity: 0;
+}
+
+.header__offer-figure.active .running_anim{
+  animation: GirlsRide 1.2s ease-in-out forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.7s;
+}
+
+.header__offer-figure.active .in_place_anim{
   animation: GirlInPlace forwards;
   animation-iteration-count: 1;
-  animation-delay:1.3s;
-  opacity: 0;
+  animation-delay:1.85s;
 }
 
 @keyframes GirlInPlace {

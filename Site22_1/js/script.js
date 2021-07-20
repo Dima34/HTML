@@ -35,6 +35,11 @@ if (animItems.length > 0) {
   
 }
 
+window.onload = function() {
+  console.log( document.querySelector('.header__offer-figure'));
+  document.querySelector('.header__offer-figure').classList.add("active")
+};
+
 mouseParallax = (elem, factor = 0.1, reversed = false)=> {
   // Add event listener
   if(elem.length>0){
