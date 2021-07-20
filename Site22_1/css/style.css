@@ -312,7 +312,7 @@ body{
   position: absolute;
   left: 247px;
   top: 250px;
-  animation: GirlsRide 0.9s ease-in-out forwards;
+  animation: GirlsRide 0.85s ease-in-out forwards;
   animation-iteration-count: 1;
   animation-delay: 0.5s;
   opacity: 0;
