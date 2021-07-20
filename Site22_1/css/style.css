@@ -1910,8 +1910,16 @@ body{
     margin-left: 15px;
   }
 
+  .intro{
+    padding-bottom: 50px;
+  }
+
   .header2 .header__offer{
     width: 100%;
+  }
+
+  .header__offer {
+    min-height: 880px;
   }
 
   .open-in{
@@ -1921,7 +1929,8 @@ body{
   }
 
   .header__offer-figure {
-    top: 100px;
+    top: 20px;
+    left: -42%;
   }
   .header__offer {
     top: 0;
@@ -2328,19 +2337,32 @@ body{
   display: none;
   }
   .header__offer {
-    margin: auto;
+    margin: 0 auto;
   }
+
+  .figure-bg1{
+    display: none;
+  }
+
   .header__offer-figure {
-    top: 100px;
-    left: -10px;
-    width: 110%;
-}
+    top: 160px; 
+  }
+
+  .figure-girl {
+    left: 116px;
+    top: 45px;
+  }
+
+  .figure-bg2{
+    display: block;
+  }
+  
   .header__offer-soon, .header__offer-discovery {
     font-size: 50px; 
   }
   .application .mark {
     width: 70%;
-    margin: auto;
+    margin: 0 auto;
     top: 80px;
     left: -30px;
   }
@@ -2382,6 +2404,26 @@ body{
     transform: rotate(0deg);
   }
 } 
+
+@media (max-width: 560px){
+  .header__offer-figure {
+    left: 0;
+  }
+
+  .figure-girl {
+    width: 50vw;
+    left: 16vw;
+    top: 11vw;
+  }
+
+  .figure-bg2{
+    width: 90vw;
+  }
+
+  .header__offer {
+    min-height: 550px;
+  }
+}
 
 @media (max-width: 526px) {
   .spotify__link-box {
@@ -2639,9 +2681,6 @@ body{
     height: 1240px;
     top: 1270px;
 }
-  .header__offer-figure {
-    display: none;
-  }
   .header__offer-figure2 {
     display: block;
   }
