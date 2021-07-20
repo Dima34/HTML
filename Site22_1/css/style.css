@@ -323,15 +323,15 @@ body{
 }
 
 .header__offer-figure.active .running_anim{
-  animation: GirlsRide 1.2s ease-in-out forwards;
+  animation: GirlsRide 1.25s ease-in-out forwards;
   animation-iteration-count: 1;
-  animation-delay: 0.7s;
+  animation-delay: 0.72s;
 }
 
 .header__offer-figure.active .in_place_anim{
   animation: GirlInPlace forwards;
   animation-iteration-count: 1;
-  animation-delay:1.85s;
+  animation-delay:1.90s;
 }
 
 @keyframes GirlInPlace {
