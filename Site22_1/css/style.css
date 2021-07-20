@@ -308,27 +308,15 @@ body{
   left: calc(50% - 636px);
 }
 
-/* .running_anim{
-  position: absolute;
-  left: 247px;
-  top: 250px;
-  opacity: 0;
-}
-
-.in_place_anim{
-  position: absolute;
-  left: 247px;
-  top: 250px;
-  opacity: 0;
-} */
-
 .figure-girl{
   position: absolute;
   left: 247px;
   top: 250px;
+  display: none;
 }
 
 .header__offer-figure.active .figure-girl{
+  display: block;
   animation: GirlsRide 1.25s ease-in-out forwards;
   animation-iteration-count: 1;
   animation-delay: 0s;
@@ -340,18 +328,6 @@ body{
 
 .intro{
   overflow: hidden;
-}
-
-.header__offer-figure.active .running_anim{
-  animation: GirlsRide 1.25s ease-in-out forwards;
-  animation-iteration-count: 1;
-  animation-delay: 0.72s;
-}
-
-.header__offer-figure.active .in_place_anim{
-  animation: GirlInPlace forwards;
-  animation-iteration-count: 1;
-  animation-delay:1.90s;
 }
 
 @keyframes GirlInPlace {
