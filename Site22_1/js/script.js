@@ -40,7 +40,7 @@ window.onload = function() {
   document.querySelector('.figure-girl').setAttribute('src','./gif/girl_run.gif');
   setTimeout(()=>{
     document.querySelector('.figure-girl').setAttribute('src','./gif/girl_stay.gif');
-  }, 1100)
+  }, 1110)
 };
 
 mouseParallax = (elem, factor = 0.1, reversed = false)=> {
