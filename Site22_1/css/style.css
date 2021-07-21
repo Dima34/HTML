@@ -2836,9 +2836,40 @@ body{
     transform: scale(0.3);
     margin-left: 10vw;
   }
+
+  .spotify {
+    padding-top: 0;
+  }
+
+  .header {
+    min-height: 750px;
+  }
+
+  .five__box-left-green{
+    margin-bottom: 6px;
+    margin-top: 30px;
+  }
+
+  .five__box-left-green, .five__box-left-white{
+    max-width: 280px;
+    height: 89px;
+  }
+
+  .five__box-left-green p, .five__box-left-white p{
+    font-size: 20px;
+  }
 }
 
 @media ( max-width: 414px) {
+
+  .header__offer {
+    min-height: 507px;
+  }
+
+  .person-group{
+    transform: scale(0.40) translateX(-7%);
+  }
+
   .application .info__box .row-3 .text {
     width: 295px;
     height: 193px;

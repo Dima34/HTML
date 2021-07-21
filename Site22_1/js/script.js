@@ -43,6 +43,14 @@ window.onload = function() {
   }, 1380)
 };
 
+// document.addEventListener('DOMContentLoaded', ()=>{
+//   document.querySelector('.header__offer-figure').classList.add("active")
+//   document.querySelector('.figure-girl').setAttribute('src','./gif/girl_run.gif');
+//   setTimeout(()=>{
+//     document.querySelector('.figure-girl').setAttribute('src','./gif/girl_stay.gif');
+//   }, 1340)
+// })
+
 mouseParallax = (elem, factor = 0.1, reversed = false)=> {
   // Add event listener
   if(elem.length>0){
