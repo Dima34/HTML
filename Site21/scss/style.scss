@@ -407,7 +407,6 @@ header{
             .timer-group{
                 display: flex;
                 align-items: center;
-                gap: 34px;
                 
                 .timer-item{
                     display: flex;
@@ -461,6 +460,10 @@ header{
                             }
                         }
 
+                    }
+
+                    &:nth-child(2){
+                        margin: 0 32px;
                     }
                 }
             }
@@ -4650,7 +4653,6 @@ footer{
                 }
     
                 .timer-group{
-                    gap: 52px;
                     
                     .timer-item{
     
@@ -4681,6 +4683,10 @@ footer{
                                 top: 60px;
                             }
     
+                        }
+
+                        &:nth-child(2){
+                            margin: 0 52px;
                         }
                         
                     }
@@ -5693,7 +5699,6 @@ footer{
                 }
     
                 .timer-group{
-                    gap: 30px;
                     
                     .timer-item{
     
@@ -5725,8 +5730,14 @@ footer{
                             }
     
                         }
+
+                        &:nth-child(2){
+                            margin: 0 30px;
+                        }
                         
                     }
+
+                   
                 }
     
                 .timer-alert{
@@ -7765,6 +7776,7 @@ footer{
             .double-columns{
                 display: grid;
                 grid-template-columns: 53.6% 46.93%;
+                overflow: hidden;
 
 
                 .left{

@@ -293,8 +293,7 @@ header {
         margin-bottom: 29px; }
       .departure .wrapper .timer .timer-group {
         display: flex;
-        align-items: center;
-        gap: 34px; }
+        align-items: center; }
         .departure .wrapper .timer .timer-group .timer-item {
           display: flex;
           flex-direction: column; }
@@ -328,6 +327,8 @@ header {
               top: 39px; }
           .departure .wrapper .timer .timer-group .timer-item:nth-child(3) .box::after, .departure .wrapper .timer .timer-group .timer-item:nth-child(3) .box::before {
             display: none; }
+          .departure .wrapper .timer .timer-group .timer-item:nth-child(2) {
+            margin: 0 32px; }
       .departure .wrapper .timer .timer-alert {
         font-size: 30px;
         line-height: 53px;
@@ -3023,26 +3024,26 @@ footer {
         font-size: 30px;
         line-height: 53px;
         margin-bottom: 20px; }
-      .departure .wrapper .timer .timer-group {
-        gap: 52px; }
-        .departure .wrapper .timer .timer-group .timer-item .title {
-          font-size: 22px;
-          line-height: 30px;
-          margin-bottom: 18px; }
-        .departure .wrapper .timer .timer-group .timer-item .box {
-          width: 125px;
-          height: 100px; }
-          .departure .wrapper .timer .timer-group .timer-item .box .time {
-            font-size: 80px;
-            line-height: 40px; }
-          .departure .wrapper .timer .timer-group .timer-item .box::after {
-            left: calc(100% + 20px);
-            top: 27px; }
-          .departure .wrapper .timer .timer-group .timer-item .box::before {
-            content: url(../img/timer-dot.png);
-            position: absolute;
-            left: calc(100% + 20px);
-            top: 60px; }
+      .departure .wrapper .timer .timer-group .timer-item .title {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 18px; }
+      .departure .wrapper .timer .timer-group .timer-item .box {
+        width: 125px;
+        height: 100px; }
+        .departure .wrapper .timer .timer-group .timer-item .box .time {
+          font-size: 80px;
+          line-height: 40px; }
+        .departure .wrapper .timer .timer-group .timer-item .box::after {
+          left: calc(100% + 20px);
+          top: 27px; }
+        .departure .wrapper .timer .timer-group .timer-item .box::before {
+          content: url(../img/timer-dot.png);
+          position: absolute;
+          left: calc(100% + 20px);
+          top: 60px; }
+      .departure .wrapper .timer .timer-group .timer-item:nth-child(2) {
+        margin: 0 52px; }
       .departure .wrapper .timer .timer-alert {
         font-size: 27px;
         line-height: 53px; }
@@ -3526,26 +3527,26 @@ footer {
         font-size: 26px;
         line-height: 30px;
         margin-bottom: 20px; }
-      .departure .wrapper .timer .timer-group {
-        gap: 30px; }
-        .departure .wrapper .timer .timer-group .timer-item .title {
-          font-size: 15px;
-          line-height: 30px;
-          margin-bottom: 10px; }
-        .departure .wrapper .timer .timer-group .timer-item .box {
-          width: 100px;
-          height: 80px; }
-          .departure .wrapper .timer .timer-group .timer-item .box .time {
-            font-size: 60px;
-            line-height: 40px; }
-          .departure .wrapper .timer .timer-group .timer-item .box::after {
-            left: calc(100% + 10px);
-            top: 19px; }
-          .departure .wrapper .timer .timer-group .timer-item .box::before {
-            content: url(../img/timer-dot.png);
-            position: absolute;
-            left: calc(100% + 10px);
-            top: 47px; }
+      .departure .wrapper .timer .timer-group .timer-item .title {
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 10px; }
+      .departure .wrapper .timer .timer-group .timer-item .box {
+        width: 100px;
+        height: 80px; }
+        .departure .wrapper .timer .timer-group .timer-item .box .time {
+          font-size: 60px;
+          line-height: 40px; }
+        .departure .wrapper .timer .timer-group .timer-item .box::after {
+          left: calc(100% + 10px);
+          top: 19px; }
+        .departure .wrapper .timer .timer-group .timer-item .box::before {
+          content: url(../img/timer-dot.png);
+          position: absolute;
+          left: calc(100% + 10px);
+          top: 47px; }
+      .departure .wrapper .timer .timer-group .timer-item:nth-child(2) {
+        margin: 0 30px; }
       .departure .wrapper .timer .timer-alert {
         font-size: 20px;
         line-height: 30px; }
@@ -4621,7 +4622,8 @@ footer {
         letter-spacing: 0.07em; }
       .intro-mobile .wrapper .double-columns {
         display: grid;
-        grid-template-columns: 53.6% 46.93%; }
+        grid-template-columns: 53.6% 46.93%;
+        overflow: hidden; }
         .intro-mobile .wrapper .double-columns .left {
           grid-template-columns: 1/2;
           border-right: 1px solid rgba(255, 255, 255, 0.5); }

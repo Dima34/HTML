@@ -384,3 +384,22 @@ if(header){
     
   })
 }
+
+//
+//  Shop sale checker
+//
+
+const shopMain = document.querySelector(".shop-main");
+
+if(shopMain){
+  
+  const itemPrices = shopMain.querySelectorAll(".item .price");
+  
+  itemPrices.forEach((el)=>{
+    if(el.querySelector('.sale span').innerHTML != ''){
+      console.log("is empty");
+      console.log(el);
+      el.classList.add('is-sale')
+    }
+  })
+}
