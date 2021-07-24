@@ -38,9 +38,20 @@ if (animItems.length > 0) {
 window.onload = function() {
   document.querySelector('.header__offer-figure').classList.add("active")
   document.querySelector('.figure-girl').setAttribute('src','./gif/girl_run.gif');
-  setTimeout(()=>{
-    document.querySelector('.figure-girl').setAttribute('src','./gif/girl_stay.gif');
-  }, 2490)
+
+  if(window.innerWidth > 480){
+    setTimeout(()=>{
+      document.querySelector('.figure-girl').setAttribute('src','./gif/girl_stay.gif');
+    }, 3355)
+
+  } else{
+    setTimeout(()=>{
+      document.querySelector('.figure-girl').setAttribute('src','./gif/girl_stay.gif');
+    }, 5455)
+
+    console.log("that else");
+  }
+  
 };
 
 // document.addEventListener('DOMContentLoaded', ()=>{

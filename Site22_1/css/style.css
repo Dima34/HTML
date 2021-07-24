@@ -317,7 +317,7 @@ body{
 
 .header__offer-figure.active .figure-girl{
   display: block;
-  animation: GirlsRide 2.25s ease-in-out forwards;
+  animation: GirlsRide 2.15s ease-in-out forwards;
   animation-iteration-count: 1;
   animation-delay: 0s;
 }
@@ -1546,6 +1546,11 @@ body{
 }
 
 @media (max-width: 1440px) {
+
+  .header__offer-figure.active .figure-girl{
+    animation: GirlsRide 2.45s ease-in-out forwards;
+  }
+
   .wrapper {
     max-width: 1240px;
   }
@@ -2641,6 +2646,10 @@ body{
 }
 
 @media ( max-width: 480px) {
+
+  .header__offer-figure.active .figure-girl{
+    animation: GirlsRide 5.45s ease-in-out forwards;
+  }
 
   .person-group{
     transform: scale(0.40);
