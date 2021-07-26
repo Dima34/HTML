@@ -47,7 +47,7 @@ window.onload = function() {
   } else{
     setTimeout(()=>{
       document.querySelector('.figure-girl').setAttribute('src','./gif/girl_stay.gif');
-    }, 5455)
+    }, 2155)
 
     console.log("that else");
   }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    @@include('./header.html')
+
+    <div class="main">
+
+        <div class="wrapper">
+            <sidebar>
+                <h2 class="categories-title">Категории</h2>
+
+                <ul class="categories-list">
+
+                    <li><a href="#">
+                        <img src="./img/svg/berries.svg" alt="berries">
+                        <p>Картошка</p>
+                    </a></li>
+
+                    <li><a href="#">
+                        <img src="./img/svg/berries.svg" alt="berries">
+                        <p>Морковь</p>
+                    </a></li>
+
+                    <li><a href="#">
+                        <img src="./img/svg/berries.svg" alt="berries">
+                        <p>Фасоль</p>
+                    </a></li>
+
+                    <li><a href="#">
+                        <img src="./img/svg/berries.svg" alt="berries">
+                        <p>Ягоды</p>
+                    </a></li>
+
+                </ul>
+
+            </sidebar>
+            
+            <div class="content">
+
+                <div class="category-block">
+
+                    <div class="block-content">
+                        <div class="shop-item">
+                            <img src="https://aif-s3.aif.ru/images/019/946/5664da9ad88a002d2012ac2a911d4ebe.jpg" alt="">
+                            <p class="item_name">Фасоль</p>
+                            <p class="item_price">12499p.</p>
+                        </div>
+    
+                        <div class="shop-item">
+                            <img src="https://aif-s3.aif.ru/images/019/946/5664da9ad88a002d2012ac2a911d4ebe.jpg" alt="">
+                            <p class="item_name">Фасоль</p>
+                            <p class="item_price">12499p.</p>
+                        </div>
+
+                        <div class="shop-item">
+                            <img src="https://aif-s3.aif.ru/images/019/946/5664da9ad88a002d2012ac2a911d4ebe.jpg" alt="">
+                            <p class="item_name">Фасоль</p>
+                            <p class="item_price">12499p.</p>
+                        </div>
+                    </div>                  
+                    
+                    <button class="show-all">Показать все</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    @@include('./footer.html')
+   
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

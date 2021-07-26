@@ -332,7 +332,7 @@ body{
 
 @keyframes GirlsRide {
   0%{
-    transform: translateX(-900px);
+    transform: translateX(-500px);
     opacity: 0;
   }
   99%{

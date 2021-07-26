@@ -1,0 +1,254 @@
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+src: url('../fonts/open-sans-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+src: local(''),
+        url('../fonts/open-sans-v20-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/open-sans-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/open-sans-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/open-sans-v20-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/open-sans-v20-latin_cyrillic-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-600 - latin_cyrillic */
+@font-face {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+src: url('../fonts/open-sans-v20-latin_cyrillic-600.eot'); /* IE9 Compat Modes */
+src: local(''),
+        url('../fonts/open-sans-v20-latin_cyrillic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/open-sans-v20-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/open-sans-v20-latin_cyrillic-600.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/open-sans-v20-latin_cyrillic-600.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/open-sans-v20-latin_cyrillic-600.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-800 - latin_cyrillic */
+@font-face {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 800;
+src: url('../fonts/open-sans-v20-latin_cyrillic-800.eot'); /* IE9 Compat Modes */
+src: local(''),
+        url('../fonts/open-sans-v20-latin_cyrillic-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/open-sans-v20-latin_cyrillic-800.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/open-sans-v20-latin_cyrillic-800.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/open-sans-v20-latin_cyrillic-800.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/open-sans-v20-latin_cyrillic-800.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+html{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    background: #F7FBFE;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.button{
+    border-radius: 18px;
+    background: 0;
+    border: 0;
+    font-weight: 600;
+}
+a{
+    transition: .3s;
+
+    &:hover{
+        color:  #4174a5;
+    }
+}
+
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#header{
+    width: 100vw;
+    margin-bottom: 50px;
+    background: white;
+    border-bottom: 3px solid #EAEAEA;
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        padding: 20px 15px;
+    }
+}
+
+.header__logo{
+    height: 42px;
+    width: auto;
+    margin-right: 30px;
+}
+
+.header__search{
+    display: flex;
+
+    input{
+       border: 0;
+       border-radius: 50px;
+       background: #F7FBFE;
+       padding: 15px 25px;
+    }
+
+    .search_search-btn{
+        margin-left: -40px;
+        margin-right: 40px;
+        transform: translateY(2px);
+        display: block;
+        background: 0;
+        border: 0;
+
+    }
+}
+
+.header__navigation{
+    display: flex;
+    margin-right: 20px;
+
+    li{
+        a{
+            padding: 10px 15px;
+            font-size: 18px;
+            transition: .3s;
+            font-weight: 600;
+            color: black;
+
+            &:hover{
+                color:  #4174a5;
+            }
+        }
+        
+    }
+}
+
+.header__cart{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 30px;
+
+    svg{
+        margin-right: 5px;
+    }
+}
+
+.header__profile-interract{
+    
+    button{         
+        padding: 15px 24px;
+        
+    }
+
+    .interract_login{
+        background: #4174a5; 
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-right: 10px;
+        
+    }
+
+    .interract_register{
+        border: 2px solid #4174a5;
+    }
+}
+
+.main{
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 50px;
+
+
+        sidebar{
+            width: 100%;
+            background: white;
+            border-radius: 18px;
+            padding: 30px 35px;
+            height: fit-content;
+
+            .categories-title{
+                font-weight: 600;
+                font-size: 24px;
+                margin-bottom: 10px;
+                color: #4174a5;
+            }
+
+            .categories-list{
+
+                li{
+                    padding-left: 10px;
+                    margin-bottom: 5px;
+
+                    a{
+                        display: flex;
+
+                    }
+
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                    }
+                    
+                }
+            }
+        }
+
+        .content{            
+            width: 100%;
+            background: white;
+            border-radius: 18px;
+            padding: 30px 35px;
+
+            .category-block{
+
+            }
+
+            .block-content{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 40px;
+            }
+        }
+    }
+
+    .shop-item{
+        border: 1px solid #F3F3F3;
+        border-radius: 40px;
+        padding: 30px 30px 26px 30px;
+
+        img{
+            width: 100%;
+            height:  121px;
+            object-fit: cover;
+            margin-bottom: 16px;
+            border-radius: 16px;
+        }
+
+        p{
+            font-size: 18px;
+            line-height: 19px;
+            word-break: break-all;
+        }
+
+        .item_name{
+            margin-bottom: 10px;
+        }
+
+        .item_price{
+            
+            font-size: 16px;
+            line-height: 17px;
+        }
+    }
+}
