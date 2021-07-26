@@ -180,7 +180,7 @@ a {
   padding: 20px 20px 25px 20px; }
   .main .shop-item img {
     width: 100%;
-    height: 141px;
+    height: 171px;
     object-fit: cover;
     margin-bottom: 16px;
     border-radius: 16px; }
@@ -212,5 +212,9 @@ footer {
       margin-bottom: 10px; }
       footer .wrapper ul li a {
         display: flex; }
+    footer .wrapper .col1 {
+      padding-right: 40px; }
+    footer .wrapper .footer_logo {
+      margin-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */
