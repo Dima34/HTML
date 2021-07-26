@@ -119,7 +119,8 @@ a {
 .main .wrapper {
   display: grid;
   grid-template-columns: 300px 1fr;
-  column-gap: 50px; }
+  column-gap: 50px;
+  padding-bottom: 50px; }
   .main .wrapper sidebar {
     width: 100%;
     background: white;
@@ -129,7 +130,7 @@ a {
     .main .wrapper sidebar .categories-title {
       font-weight: 600;
       font-size: 24px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       color: #4174a5; }
     .main .wrapper sidebar .categories-list li {
       padding-left: 10px;
@@ -144,19 +145,42 @@ a {
     width: 100%;
     background: white;
     border-radius: 18px;
-    padding: 30px 35px; }
+    padding: 40px 50px; }
+    .main .wrapper .content .item-block {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #EAEAEA;
+      padding-bottom: 20px;
+      margin-bottom: 40px; }
+      .main .wrapper .content .item-block .item-block_title {
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 30px;
+        color: black; }
+      .main .wrapper .content .item-block .show-all {
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        border: 0;
+        background: 0;
+        text-decoration: underline;
+        color: #4174a5; }
+      .main .wrapper .content .item-block:last-child {
+        border-bottom: 0;
+        margin-bottom: -20px; }
     .main .wrapper .content .block-content {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 40px; }
+      column-gap: 40px;
+      margin-bottom: 15px; }
 
 .main .shop-item {
   border: 1px solid #F3F3F3;
   border-radius: 40px;
-  padding: 30px 30px 26px 30px; }
+  padding: 20px 20px 25px 20px; }
   .main .shop-item img {
     width: 100%;
-    height: 121px;
+    height: 141px;
     object-fit: cover;
     margin-bottom: 16px;
     border-radius: 16px; }
@@ -165,9 +189,28 @@ a {
     line-height: 19px;
     word-break: break-all; }
   .main .shop-item .item_name {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-weight: 600; }
   .main .shop-item .item_price {
     font-size: 16px;
     line-height: 17px; }
+
+footer {
+  width: 100vw;
+  background: white; }
+  footer .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    padding: 50px 25px; }
+    footer .wrapper h3 {
+      font-weight: 600;
+      font-size: 22px;
+      margin-bottom: 17px;
+      color: #4174a5; }
+    footer .wrapper ul li {
+      margin-bottom: 10px; }
+      footer .wrapper ul li a {
+        display: flex; }
 
 /*# sourceMappingURL=style.css.map */
