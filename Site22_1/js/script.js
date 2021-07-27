@@ -39,17 +39,18 @@ window.onload = function() {
   document.querySelector('.header__offer-figure').classList.add("active")
   document.querySelector('.figure-girl').setAttribute('src','./gif/girl_run.gif');
 
-  if(window.innerWidth > 480){
+  if(window.innerWidth > 1080){
     setTimeout(()=>{
       document.querySelector('.figure-girl').setAttribute('src','./gif/girl_stay.gif');
-    }, 3355)
+    }, 1655)
 
-  } else{
-    setTimeout(()=>{
-      document.querySelector('.figure-girl').setAttribute('src','./gif/girl_stay.gif');
-    }, 2155)
-
-    console.log("that else");
+  } else if(window.innerWidth > 560){
+    
+    document.querySelector('.figure-girl').setAttribute('src','./gif/girl_stay.gif');
+    
+  }else{
+    document.querySelector('.figure-girl').setAttribute('src','./gif/girl_stay_mobile.gif');
+    document.querySelector('.five__box-right .man').setAttribute('src','./gif/man_mob.gif');
   }
   
 };
