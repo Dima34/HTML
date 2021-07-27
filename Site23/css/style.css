@@ -1,47 +1,67 @@
-/* open-sans-regular - latin_cyrillic */
+/* inter-300 - latin_cyrillic */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/inter-v3-latin_cyrillic-300.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v3-latin_cyrillic-300.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v3-latin_cyrillic-300.woff2") format("woff2"), url("../fonts/inter-v3-latin_cyrillic-300.woff") format("woff"), url("../fonts/inter-v3-latin_cyrillic-300.ttf") format("truetype"), url("../fonts/inter-v3-latin_cyrillic-300.svg#Inter") format("svg");
+  /* Legacy iOS */ }
+
+/* inter-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/open-sans-v20-latin_cyrillic-regular.eot");
+  src: url("../fonts/inter-v3-latin_cyrillic-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/open-sans-v20-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/open-sans-v20-latin_cyrillic-regular.woff") format("woff"), url("../fonts/open-sans-v20-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/open-sans-v20-latin_cyrillic-regular.svg#OpenSans") format("svg");
+  src: local(""), url("../fonts/inter-v3-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v3-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/inter-v3-latin_cyrillic-regular.woff") format("woff"), url("../fonts/inter-v3-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/inter-v3-latin_cyrillic-regular.svg#Inter") format("svg");
   /* Legacy iOS */ }
 
-/* open-sans-600 - latin_cyrillic */
+/* inter-500 - latin_cyrillic */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v3-latin_cyrillic-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v3-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v3-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/inter-v3-latin_cyrillic-500.woff") format("woff"), url("../fonts/inter-v3-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/inter-v3-latin_cyrillic-500.svg#Inter") format("svg");
+  /* Legacy iOS */ }
+
+/* inter-600 - latin_cyrillic */
+@font-face {
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/open-sans-v20-latin_cyrillic-600.eot");
+  src: url("../fonts/inter-v3-latin_cyrillic-600.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/open-sans-v20-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v20-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/open-sans-v20-latin_cyrillic-600.woff") format("woff"), url("../fonts/open-sans-v20-latin_cyrillic-600.ttf") format("truetype"), url("../fonts/open-sans-v20-latin_cyrillic-600.svg#OpenSans") format("svg");
+  src: local(""), url("../fonts/inter-v3-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v3-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/inter-v3-latin_cyrillic-600.woff") format("woff"), url("../fonts/inter-v3-latin_cyrillic-600.ttf") format("truetype"), url("../fonts/inter-v3-latin_cyrillic-600.svg#Inter") format("svg");
   /* Legacy iOS */ }
 
-/* open-sans-800 - latin_cyrillic */
+/* inter-800 - latin_cyrillic */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
-  src: url("../fonts/open-sans-v20-latin_cyrillic-800.eot");
+  src: url("../fonts/inter-v3-latin_cyrillic-800.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/open-sans-v20-latin_cyrillic-800.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v20-latin_cyrillic-800.woff2") format("woff2"), url("../fonts/open-sans-v20-latin_cyrillic-800.woff") format("woff"), url("../fonts/open-sans-v20-latin_cyrillic-800.ttf") format("truetype"), url("../fonts/open-sans-v20-latin_cyrillic-800.svg#OpenSans") format("svg");
+  src: local(""), url("../fonts/inter-v3-latin_cyrillic-800.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v3-latin_cyrillic-800.woff2") format("woff2"), url("../fonts/inter-v3-latin_cyrillic-800.woff") format("woff"), url("../fonts/inter-v3-latin_cyrillic-800.ttf") format("truetype"), url("../fonts/inter-v3-latin_cyrillic-800.svg#Inter") format("svg");
   /* Legacy iOS */ }
 
 html {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
   background: #F7FBFE; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Inter' !important;
+  font-style: normal;
+  font-weight: 400; }
 
 .button {
   border-radius: 18px;
   background: 0;
   border: 0;
-  font-weight: 600; }
+  font-weight: 500; }
 
 a {
   transition: .3s; }
@@ -56,7 +76,7 @@ a {
   width: 100vw;
   margin-bottom: 50px;
   background: white;
-  border-bottom: 3px solid #EAEAEA; }
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05); }
   #header .wrapper {
     display: flex;
     align-items: center;
@@ -89,7 +109,7 @@ a {
     padding: 10px 15px;
     font-size: 18px;
     transition: .3s;
-    font-weight: 600;
+    font-weight: 500;
     color: black; }
     .header__navigation li a:hover {
       color: #4174a5; }
@@ -126,7 +146,9 @@ a {
     background: white;
     border-radius: 18px;
     padding: 30px 35px;
-    height: fit-content; }
+    padding-top: 50px;
+    height: fit-content;
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05); }
     .main .wrapper sidebar .categories-title {
       font-weight: 600;
       font-size: 24px;
@@ -145,18 +167,20 @@ a {
     width: 100%;
     background: white;
     border-radius: 18px;
-    padding: 40px 50px; }
+    padding: 40px 50px;
+    padding-top: 50px;
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05); }
     .main .wrapper .content .item-block {
       display: flex;
       flex-direction: column;
-      border-bottom: 1px solid #EAEAEA;
       padding-bottom: 20px;
       margin-bottom: 40px; }
       .main .wrapper .content .item-block .item-block_title {
-        font-weight: 600;
-        font-size: 24px;
-        margin-bottom: 30px;
-        color: black; }
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        color: black;
+        margin-bottom: 50px; }
       .main .wrapper .content .item-block .show-all {
         display: block;
         width: fit-content;
@@ -172,26 +196,50 @@ a {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 40px;
+      row-gap: 40px;
       margin-bottom: 15px; }
 
 .main .shop-item {
   border: 1px solid #F3F3F3;
   border-radius: 40px;
-  padding: 20px 20px 25px 20px; }
-  .main .shop-item img {
+  padding: 25px 21px 34px 21px;
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05); }
+  .main .shop-item a {
+    display: block; }
+  .main .shop-item .item_image {
     width: 100%;
     height: 171px;
     object-fit: cover;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     border-radius: 16px; }
-  .main .shop-item p {
-    font-size: 18px;
-    line-height: 19px;
-    word-break: break-all; }
+  .main .shop-item .item_shop-name {
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #4174A5;
+    margin-bottom: 15px; }
   .main .shop-item .item_name {
-    margin-bottom: 10px;
-    font-weight: 600; }
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+    word-break: break-all; }
+  .main .shop-item .item_info-group {
+    margin-bottom: 15px; }
+    .main .shop-item .item_info-group .item_sub-text {
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 13px;
+      text-transform: uppercase;
+      color: #BDBDBD;
+      margin-bottom: 7px; }
+    .main .shop-item .item_info-group .item_stars {
+      display: flex; }
+      .main .shop-item .item_info-group .item_stars svg {
+        margin-right: 6px; }
+    .main .shop-item .item_info-group:last-child {
+      margin-bottom: 0; }
   .main .shop-item .item_price {
+    font-weight: 700;
     font-size: 16px;
     line-height: 17px; }
 
