@@ -122,6 +122,8 @@ a{
        border-radius: 50px;
        background: #F7FBFE;
        padding: 15px 25px;
+        padding-right: 40px;
+
     }
 
     .search_search-btn{
@@ -169,20 +171,59 @@ a{
 .header__profile-interract{
     
     button{         
-        padding: 13px 22px;        
+        padding: 11px 22px;        
     }
 
     .interract_login{
         background: #4174a5; 
+        border: 2px solid #4174a5;
         font-size: 16px;
         line-height: 19px;
         text-align: center;
         color: #FFFFFF;
-        margin-right: 10px;        
+        margin-right: 10px;   
+        transition: .3s;
+        
+        &:hover{
+            opacity: 0.8;
+        }
     }
 
     .interract_register{
         border: 2px solid #4174a5;
+        transition: .3s;
+
+        &:hover{
+            background: #4174a5;
+            color: white;
+        }
+    }
+}
+
+.header_profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+    .profile-name{
+        font-size: 18px;
+        text-align: center;
+        color: #02569C;
+        display: inline-block;
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+
+    .profile-image{
+        width: 64px;
+        height: 64px;
+        border: 2px solid #02569C;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+        flex-shrink: 0;
+        transform: translateY(-2px);
     }
 }
 
@@ -255,8 +296,9 @@ a{
             .item-block{
                 display: flex;
                 flex-direction: column;
-                padding-bottom: 20px;
+                padding-bottom: 30px;
                 margin-bottom: 40px;
+                border-bottom: 1px solid #c4c4c4;
 
                 .item-block_title{
                     font-weight: 700;
@@ -274,6 +316,11 @@ a{
                     background: 0;
                     text-decoration: underline;
                     color: #4174a5;
+                    transition: .3s;
+
+                    &:hover{
+                        opacity: 0.7;
+                    }
                 }
 
                 &:last-child{
@@ -316,6 +363,22 @@ a{
             text-decoration-line: underline;
             color: #4174A5;
             margin-bottom: 15px;
+
+            &.verified{
+                position: relative;
+                padding-left: 20px;
+
+                &::before{
+                    content: "";
+                    background: url(../img/svg/verified-ico.svg);
+                    background-size: cover;
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    left: 0;
+                    top: 1px;
+                }
+            }
         }
 
         .item_name{
