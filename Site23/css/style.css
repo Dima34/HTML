@@ -397,7 +397,7 @@ footer {
     top: 0; }
     #header #menuToggle {
       display: block; }
-    #header .header__navigation, #header .header__cource, #header .header__profile-interract, #header .header__profile {
+    #header .header__navigation, #header .header__cource, #header .header__profile-interract, #header .header_profile {
       display: none; }
     #header .wrapper {
       padding: 20px 40px; }
@@ -428,6 +428,27 @@ footer {
       #header .burger__profile-interract button {
         padding: 15px 10px;
         margin-bottom: 5px; }
+    #header .burger__profile {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      position: relative;
+      margin-top: 10px;
+      margin-bottom: 30px; }
+      #header .burger__profile .profile-name {
+        font-size: 18px;
+        color: #02569C;
+        display: inline-block;
+        flex-shrink: 0;
+        align-self: center; }
+      #header .burger__profile .profile-image {
+        width: 54px;
+        height: 54px;
+        border: 2px solid #02569C;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+        flex-shrink: 0;
+        transform: translateY(-2px); }
   .main {
     margin-top: 140px; }
     .main sidebar {
