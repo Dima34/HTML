@@ -424,7 +424,7 @@ footer {
     #header .burger__profile-interract {
       display: flex;
       flex-direction: column;
-      margin-bottom: 20px; }
+      margin-bottom: 80px; }
       #header .burger__profile-interract button {
         padding: 15px 10px;
         margin-bottom: 5px; }
