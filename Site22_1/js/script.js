@@ -55,13 +55,12 @@ window.onload = function() {
   
 };
 
-// document.addEventListener('DOMContentLoaded', ()=>{
-//   document.querySelector('.header__offer-figure').classList.add("active")
-//   document.querySelector('.figure-girl').setAttribute('src','./gif/girl_run.gif');
-//   setTimeout(()=>{
-//     document.querySelector('.figure-girl').setAttribute('src','./gif/girl_stay.gif');
-//   }, 1340)
-// })
+if(window.innerWidth < 560){
+  
+  document.querySelector('.figure-girl').setAttribute('src','./gif/girl_stay_mobile.gif');
+  
+}
+
 
 mouseParallax = (elem, factor = 0.1, reversed = false)=> {
   // Add event listener
