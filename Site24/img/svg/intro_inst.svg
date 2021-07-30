@@ -6,6 +6,7 @@
 <rect width="25" height="25" fill="url(#pattern1)"/>
 <rect width="25" height="25" fill="white"/>
 </g>
+<circle cx="12.4997" cy="12.5002" r="5.76923" fill="#000527"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="scale(0.00195312)"/>

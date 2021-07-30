@@ -9,7 +9,7 @@
     <title>Gasroenterology</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -62,9 +62,11 @@
     <div class="intro">
         <img src="./img/intro-photo.png" alt="logo" class="bg">
         <div class="wrapper">
-            <h1>ονομαζομαι Δημητρης Στογιαννου και ειμαι Γαστρεντερολογος</h1>
             <p class="intro__notation">Δημιούργησα αυτή τη σελίδα γιατί πιστεύω πως τίποτα δεν έχει σημασία εάν δεν είμαστε υγιείς</p>
-            <img src="./img/svg/mouse-ico.svg" alt="mouse icon" class="intro__mouse-ico">
+            <h1 class="intro__title">ονομαζομαι Δημητρης Στογιαννου και ειμαι Γαστρεντερολογος</h1>            
+            
+            <img src="./img/svg/mouse-ico.svg" width="50" height="70" alt="mouse icon" class="intro__mouse-ico">
+            
             <div class="intro__contacts">
                 <a href="#"><img src="./img/svg/intro_inst.svg" alt="intagram"></a>
                 <a href="#"><img src="./img/svg/intro_twit.svg" alt="twitter"></a>
@@ -72,16 +74,215 @@
             </div>
         </div>
     </div>
-  
 
-    <footer>
+    <div class="info">
+        <div class="wrapper">
+            <img src="./img/info_img.png" alt="info image" class="info__image">
+            <div class="info__text-block">
+                <h3>
+                    Με τα χρονια ο οργανισμος εμφανιζει προβληματα που μας ταλαιπωρουν, γι’ αυτο στοχος ειναι να βοηθησουμε το σωμα στον καθημερινο του αγωνα, 
+                    να γινουμε συμμαχοι του, να το αγαπησουμε.
+                </h3>
+                <p>
+                    Πως όμως θα το πετύχουμε αυτό; Με τη βοήθεια της Peptopedia.gr φυσικά! Εδώ θα βρείτε χρήσιμες συμβουλές γραμμένες με απλά λόγια: θα καταλάβετε πως λειτουργεί ο οργανισμός, ποια είναι τα προβλήματα και πως θα τα ξεπεράσετε.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="articles">
+
+        <div class="wrapper">
+
+            <h2 class="articles__title">Τα Aρθρα μου</h2>
+            <p class="article__subtitile">
+                Για να σας διευκολύνω στην αναζήτησή σας έχω δημιουργήσει διάφορες κατηγορίες στις οποίες θα βρείτε άρθρα σχετικά 
+                με ότι σας απασχολεί!
+            </p>
+            <p class="article__link-title">ΚατηγοριεΣ:</p>
+
+            <div class="link-block">
+                <img src="./img/svg/articles_man.svg" alt="man" class="article__man">
+
+                <a href="#" class="link">
+                    <span class="link_num">01</span>
+                    <p class="link_title">ΠεπτολεξικΟ</p>
+                    <img src="./img/svg/link-arrow.svg" alt="link-arrow" class="link-arrow">
+                </a>
+
+                <a href="#" class="link">
+                    <span class="link_num">02</span>
+                    <p class="link_title">ΥγεΙα</p>
+                    <img src="./img/svg/link-arrow.svg" alt="link-arrow" class="link-arrow">
+                </a>
+
+                <a href="#" class="link">
+                    <span class="link_num">03</span>
+                    <p class="link_title">ΕνδοσκοπΗσεις</p>
+                    <img src="./img/svg/link-arrow.svg" alt="link-arrow" class="link-arrow">
+                </a>
+
+                <a href="#" class="link">
+                    <span class="link_num">04</span>
+                    <p class="link_title">ΕναλλακτικΗ ιατρικΗ</p>
+                    <img src="./img/svg/link-arrow.svg" alt="link-arrow" class="link-arrow">
+                </a>
+
+                <a href="#" class="link">
+                    <span class="link_num">05</span>
+                    <p class="link_title">ΠεπτοχαρΑ</p>
+                    <img src="./img/svg/link-arrow.svg" alt="link-arrow" class="link-arrow">
+                </a>
+
+                <a href="#" class="link">
+                    <span class="link_num">06</span>
+                    <p class="link_title">Tips & tricks (διατροφΗ, Ασκηση) </p> 
+                    <span class="link_description"> (διατροφΗ, Ασκηση) </span>
+                    <img src="./img/svg/link-arrow.svg" alt="link-arrow" class="link-arrow">
+                </a>
+
+                <a href="#" class="link">
+                    <span class="link_num">07</span>
+                    <p class="link_title">ΠεπτολεξικΟ</p> 
+                    <span class="link_description"> (οισοφΑγος, στομΑχι, Εντερο, πρωκτΟς, πΑγκρεας, συκΩτι, χοληφΟρα)</span>
+                    <img src="./img/svg/link-arrow.svg" alt="link-arrow" class="link-arrow">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="article-swiper">
+        <div class="wrapper">
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div class="article-card">
+                        <h2 class="card_title">Πεπτολεξικό</h2>
+                        <p class="card_text">Αιτίες της διαβρωτικής γαστροδωδεκαδακτυλίτιδας – συμπτώματα και θεραπείες</p>
+                        <p class="card_date">June 28, 2021</p>
+                        <a href="#" class="card_link">ΑΝΑΓΝΩΣΗ</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="article-card">
+                        <h2 class="card_title">Πεπτολεξικό</h2>
+                        <p class="card_text">Αιτίες της διαβρωτικής γαστροδωδεκαδακτυλίτιδας – συμπτώματα και θεραπείες</p>
+                        <p class="card_date">June 28, 2021</p>
+                        <a href="#" class="card_link">ΑΝΑΓΝΩΣΗ</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="article-card">
+                        <h2 class="card_title">Πεπτολεξικό</h2>
+                        <p class="card_text">Αιτίες της διαβρωτικής γαστροδωδεκαδακτυλίτιδας – συμπτώματα και θεραπείες</p>
+                        <p class="card_date">June 28, 2021</p>
+                        <a href="#" class="card_link">ΑΝΑΓΝΩΣΗ</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="article-card">
+                        <h2 class="card_title">Πεπτολεξικό</h2>
+                        <p class="card_text">Αιτίες της διαβρωτικής γαστροδωδεκαδακτυλίτιδας – συμπτώματα και θεραπείες</p>
+                        <p class="card_date">June 28, 2021</p>
+                        <a href="#" class="card_link">ΑΝΑΓΝΩΣΗ</a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="article-card">
+                        <h2 class="card_title">Πεπτολεξικό</h2>
+                        <p class="card_text">Αιτίες της διαβρωτικής γαστροδωδεκαδακτυλίτιδας – συμπτώματα και θεραπείες</p>
+                        <p class="card_date">June 28, 2021</p>
+                        <a href="#" class="card_link">ΑΝΑΓΝΩΣΗ</a>
+                    </div>
+                  </div>
+
+                </div>
+            </div>   
+            
+            <div class="swiper-button-next">
+                <img src="./img/svg/slider-arrow.svg" alt="arrow">
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./img/svg/slider-arrow.svg" alt="arrow">
+            </div>
+        </div>
+    </div>
+
+    <div class="intro-contacts">
+        <div class="wrapper">
+            <h2 class="intro-contacts_title">ΕπικοινωνΙα</h2>
+
+            <p>Οπλιστείτε με χαμόγελο και ελάτε να αντιμετωπίσουμε μαζί κάθε πρόβλημα υγείας που σας απασχολεί!</p>
+            <p><span>Διεύθυνση:</span>Νικ. Παπαγεωργίου 21, Λαγκαδάς 572 00</p>
+            <p><span>Τηλέφωνο:</span><a href="tel:6907036814">6907036814</a></p>
+        </div>
+    </div>
+
+    <div class="write-me">
+        <div class="wrapper">
+
+            <form action="">
+
+                <h2 class="form_title">Πες Γεια</h2>
+
+                <p class="form_subtitle">
+                    Πείτε μας τι σας απασχολεί, θα 
+                    πικοινωνήσουμε μαζί σας εντός <span>24</span> ωρών.
+                </p>
+
+                <input placeholder="Όνομα" type="text" name="name" id="" class="form-name">
+                <input placeholder="E-mail" type="email" name="Email" id="" class="form-name">
+                <textarea placeholder="Η ερώτησή σας" name="message" id=""></textarea>
+                <button class="form_submit" type="submit">ΑποστολΗ</button>
+            </form>
+            
+            <div class="write-me__image">
+                <img src="./img/write-me_image.png" alt="write-me" >
+            </div>
+            
+        </div>
+    </div>
 
     
+    <footer>
 
+    <div class="wrapper">
+        <a href="./index.html" class="footer__logo"><img src="./img/svg/logo.svg" alt="logo"></a>
+
+        <ul class="footer__nav">
+            <li><a href="#">Αρχική σελίδα</a></li>
+            <li><a href="#">Άρθρο</a></li>
+            <li><a href="#">Για μένα</a></li>
+            <li><a href="#">Πες Γεια</a></li>
+        </ul>
+
+        <div class="footer__contacts">
+            <a href="#"><img src="./img/svg/intro_inst.svg" alt="intagram"></a>
+            <a href="#"><img src="./img/svg/intro_twit.svg" alt="twitter"></a>
+            <a href="#"><img src="./img/svg/intro_fb.svg" alt="facebook"></a>
+        </div>
+    </div>
 
 </footer>
    
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: "auto",
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
 </body>
 
 </html>

@@ -6,14 +6,20 @@ console.log(
 );
 
 
-function ibg(){
+const hasChidItem = document.querySelectorAll(".has-child");
 
-    let ibg=document.querySelectorAll(".ibg");
-    for (var i = 0; i < ibg.length; i++) {
-    if(ibg[i].querySelector('img')){
-    ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
-    }
-    }
+if (hasChidItem.length > 0) {
+  
+  hasChidItem.forEach((el)=>{
+    el.addEventListener('click', ()=>{
+      
+      if (el.classList.contains('active')) {
+        el.classList.remove('active')
+      } else{
+        el.classList.add('active')
+      }
+
+    })
+  })
+
 }
-    
-ibg();
