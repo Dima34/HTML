@@ -320,17 +320,19 @@ a{
         padding: 0 35px 0 34px;
         padding-top: 100px;
         display: flex;
+        justify-content: space-between;
 
         .info__image{
             width: 420px;
             height: 500px;
             object-fit: cover;
             margin-bottom: -48px;
-            margin-right: 99px;
+            margin-right: 20px;
         }
 
         .info__text-block{
             margin-top: 65px;
+            max-width: 692px;
 
             h3{
               @include Gara();
@@ -744,6 +746,7 @@ footer{
     background: #00072C;
     position: relative;
     padding-bottom: 43px;
+    margin-top: -1px;
 
     .wrapper{
         display: flex;
