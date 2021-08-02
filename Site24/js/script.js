@@ -23,3 +23,32 @@ if (hasChidItem.length > 0) {
   })
 
 }
+
+// 
+// Burger active
+// 
+
+const header = document.getElementById('header');
+
+if(header){
+  
+  const burger = header.querySelector(".header__burger");
+  const nav =  header.querySelector("nav");
+
+  burger.addEventListener('click', ()=>{
+    
+    if(burger.classList.contains('active')){
+      burger.classList.remove("active")
+      nav.classList.remove('active')
+      document.querySelector("body").style.position = 'unset'
+      document.querySelector("body").style.width = 'unset'
+    } else{
+      burger.classList.add("active")
+      nav.classList.add('active')
+      document.querySelector("body").style.position = 'fixed'
+      document.querySelector("body").style.width = '100vw'
+    }
+
+  })
+
+}
