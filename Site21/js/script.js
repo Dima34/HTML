@@ -30,7 +30,7 @@ if(timerGroup){
     timerId = setInterval(updateTimer, 1000);
   }
   
-  function initTimer(){
+  function initTimer(date = date){
     
     timerGroup.setAttribute("day", convertDay(date.getDay()));
 

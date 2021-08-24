@@ -123,8 +123,10 @@ a{
     
                     li{
                         color: black;
+                        text-shadow: unset;
                         a{
                             color: black;
+                            text-shadow: unset;
                         }
                     }
                 }
@@ -907,6 +909,7 @@ footer{
 }
 
 .article-main{
+    padding: 0 35px;
     padding-top: 153px;
 
     .wrapper{
@@ -918,7 +921,7 @@ footer{
     }
 
     .article__image{
-        margin-top: -30px;
+        margin-top: -150px;
         width: 340px;
         height: 403px;
         position: relative;
@@ -1113,6 +1116,19 @@ footer{
         }
     }
 
+    .article-main{
+
+        .wrapper{
+            p,h1{
+                padding: 0;
+            }
+            
+            .article__image{
+                margin-right: 35px;
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 1279px) {
@@ -1164,6 +1180,11 @@ footer{
 
         .wrapper{
             padding: 16px 50px;
+        }
+
+        &.white{
+            border-bottom: 1px solid #86A5F3;
+            background: 0;
         }
     }
 
