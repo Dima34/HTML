@@ -4703,6 +4703,8 @@ footer {
       display: grid;
       grid-template-columns: 1fr 1fr;
       min-height: 210px;
+      height: fit-content;
+      height: -moz-fit-content;
       align-items: center; }
       .creative-mobile .pair img {
         width: 100%;
