@@ -143,7 +143,7 @@ if(timerGroup){
 
   }
 
-  function GetCurrentDateblock(dayNum){
+  function GetCurrentDateblock(dayNum, dateBlock = dateBlock){
     return dateBlock.querySelectorAll(".day")[dayNum]
   }
 
