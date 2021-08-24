@@ -45,7 +45,7 @@ if(timerGroup){
 
   let date = new Date();
 
-  initTimer();
+  initTimer(date);
 
   let timerId
 
@@ -53,11 +53,11 @@ if(timerGroup){
     timerId = setInterval(updateTimer, 1000);
   }
   
-  function initTimer(date = date){
+  function initTimer(datenow){
     
-    timerGroup.setAttribute("day", convertDay(date.getDay()));
+    timerGroup.setAttribute("day", convertDay(datenow.getDay()));
 
-    let dayBlock = GetCurrentDateblock(date.getDay());
+    let dayBlock = GetCurrentDateblock(datenow.getDay());
 
     let timeList = [];
 
