@@ -3219,7 +3219,8 @@ footer {
       display: flex !important;
       flex-direction: row;
       align-items: center;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      background: red; }
       header .wrapper .menu-open .burger-image {
         display: flex;
         flex-direction: column; }
