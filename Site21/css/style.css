@@ -4707,7 +4707,7 @@ footer {
       align-items: center; }
       .creative-mobile .pair img {
         width: 100%;
-        height: 100%;
+        height: auto;
         object-fit: cover;
         border: 1px solid rgba(255, 255, 255, 0.4);
         border-left: 0; }
@@ -4725,7 +4725,8 @@ footer {
           text-align: center; }
         .creative-mobile .pair .text-blk p {
           font-size: 18px;
-          line-height: 25px; }
+          line-height: 25px;
+          text-align: center; }
       .creative-mobile .pair.reversed img {
         grid-column: 2/3;
         grid-row: 1/2;
