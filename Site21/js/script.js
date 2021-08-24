@@ -192,9 +192,9 @@ if(timerGroup){
 
   }
 
-  function getNearTime(timeArray){
-    let currentH = date.getHours();
-    let currentM = date.getMinutes();
+  function getNearTime(timeArray, dateValue = date){
+    let currentH = dateValue.getHours();
+    let currentM = dateValue.getMinutes();
 
     let nearTime = {hours : undefined, minutes : undefined};
    
