@@ -5,15 +5,60 @@ console.log(
   'color: #c434c4; background: #eee; font-size: 30px '
 );
 
+// Child list
 
-function ibg(){
+const hasChildElems = document.querySelectorAll(".has-child");
 
-    let ibg=document.querySelectorAll(".ibg");
-    for (var i = 0; i < ibg.length; i++) {
-    if(ibg[i].querySelector('img')){
-    ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
-    }
-    }
-}
+if(hasChildElems.length > 0){
+
+  hasChildElems.forEach((el, index)=>{
+
+    el.addEventListener("click", ()=>{
     
-ibg();
+      el.classList.contains("active") ? el.classList.remove("active") : el.classList.add("active");
+
+    })
+
+  })
+  
+}
+
+// 
+// Parallax
+// 
+
+mouseParallax = (elem, factor = 0.1, reversed = false)=> {
+  // Add event listener
+  if(elem.length>0){
+      document.addEventListener("mousemove", parallax);
+  
+      // Magic happens here
+      function parallax(e) {
+          let _w = window.innerWidth/2;
+          let _h = window.innerHeight/2;
+          let _mouseX = e.clientX;
+          let _mouseY = e.clientY;
+          let _depth;
+
+          if(reversed == true){
+              _depth = `${(_mouseX - _w) * -factor}% ,${(_mouseY - _h) * -factor}%`;
+          }
+          else{
+              _depth = `${(_mouseX - _w) * factor}% ,${(_mouseY - _h) * factor}%`;
+          }
+
+          let x = `${_depth}`;
+          elem.forEach((e)=>{
+              e.style.transform = `translate(${x})`;
+          })
+          
+      }
+  }
+  
+
+};
+
+if(window.innerWidth > 1100){
+  mouseParallax(document.querySelectorAll(".intro__confetti"), 0.0005);
+  mouseParallax(document.querySelectorAll(".intro__confetti-flakes"), 0.0005);
+}

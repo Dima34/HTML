@@ -304,10 +304,47 @@ body{
 
 .header__offer-figure {
   position: absolute;
-  top: -200px;
+  top: -170px;
   left: calc(50% - 636px);
 }
 
+.figure-girl{
+  position: absolute;
+  left: 247px;
+  top: 250px;
+  display: none;
+}
+
+.header__offer-figure.active .figure-girl{
+  display: block;
+  animation: GirlsRide 1.8s ease-in-out forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+}
+
+.figure-bg2{
+  display: none;
+}
+
+.intro{
+  overflow: hidden;
+}
+
+@keyframes GirlsRide {
+  0%{
+    transform: translateX(-700px);
+    opacity: 0;
+  }
+  99%{
+    transform: translateX(-0px);
+    opacity: 1;
+  }
+
+}
+
+.header__offer-figure2 {
+  display: none;
+}
 .header__offer-soon, .header__offer-discovery {
   z-index: 4;
   text-transform: uppercase;
@@ -325,6 +362,7 @@ body{
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+          margin: 0px 0px 0px auto;
 }
 
 .five {
@@ -464,15 +502,17 @@ body{
   font-family: Avenir Next Cyr;
   font-style: italic;
   font-weight: 750;
-  font-size: 144px;
+  font-size: 124px;
   line-height: 176px;
+  text-transform: uppercase;
   text-align: center;
   color: #096D47;
+  padding-top: 20px;
 }
 
 .app-spotify {
   background: #fff;
-  min-height: 4500px;
+  min-height: 4490px;
   padding-top: 120px;
 }
 
@@ -486,6 +526,7 @@ body{
   z-index: 5;
   top: -120px;
   right: 0;
+  opacity: .3;
 }
 
 .application .line2 {
@@ -499,8 +540,8 @@ body{
 .application__line {
   width: 100%;
   position: absolute;
-  top: 1110px;
-  height: 1900px;
+  top: 1100px;
+  height: 1470px;
   left: 0px;
   z-index: 2;
 }
@@ -567,8 +608,169 @@ body{
   left: 380px;
   z-index: 5;
   -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
+
+.person-group{
+  position: relative;
+  width: 982px;
+  margin-top: -266px;
+  z-index: 6;
+}
+
+.group_person{
+  position: relative;
+  left: 232px;
+  z-index: 2;
+}
+
+.group_fire,.group_circle,.group_arrow,.red-square{
+  position: absolute;
+  transition: 1.5s;
+}
+
+.group_circle{
+  left: 231px;
+  top: 91px;
+}
+
+.group_fire{
+  left: 60px;
+  top: -8px;
+}
+
+.group_arrow{
+  right: 121px;
+  top: 141px;
+}
+
+.red-square{
+  width: 406px;
+  height: 225px;
+  right: 0;
+  bottom: 46px;
+  padding: 63px 10px 10px 130px;
+  z-index: 1;
+}
+
+.red-square::after{
+  content: url(../img/group-square.svg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.red-square_text{  
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transform: rotate(-8.17deg);
+  width: 230px;  
+  font-family: HelveticaNeueCyr;
+  font-weight: 750;
+}
+
+.red-square_text span{  
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.person-group._anim-items .group_circle{
+  transform: scale(0.5);
+}
+
+.person-group._active .group_circle{
+  transform: scale(1);
+}
+
+.person-group._anim-items .group_fire{
+  transform: scale(0.5) translate(-50px, -50px);
+  transform-origin: right bottom;
+}
+
+.person-group._active .group_fire{
+  transform: scale(1) translate(0);
+}
+
+
+.person-group._anim-items .group_arrow{
+  transform: scale(0.5) translate(-50px, -50px);
+  transform-origin: left bottom;
+}
+
+.person-group._active .group_arrow{
+  animation-duration: 1.5s;
+  animation-name: arrowGrow;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.person-group._anim-items .red-square{
+  transform: scale(0.5) translate(-100%, 0);
+  transform-origin: left;
+}
+
+.person-group._active .red-square{
+  animation-duration: 1.25s;
+  animation-name: redSquare;
+  animation-delay: .7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.person-group._anim-items .red-square p{
+  opacity: 0;
+}
+
+.person-group._active .red-square p{
+  /* transform: scale(1) translate(0); */
+  animation-duration: 0.5s;
+  animation-name: textShow;
+  animation-delay:1.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes arrowGrow {
+  from {
+    transform: scale(0.5) translate(-50px, -50px);
+  }
+
+  to {
+    transform: scale(1) translate(0);
+  }
+}
+
+@keyframes redSquare {
+  from {
+    transform: scale(0.5) translate(-100%, 0);
+  }
+
+  to {
+    transform: scale(1) translate(0);
+  }
+}
+
+@keyframes textShow {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.application{
+  overflow: hidden;
+}
+
+.application .wrapper{
+  overflow: visible;
+} 
 
 .application .app .barcode p {
   margin-top: 10px;
@@ -627,7 +829,14 @@ body{
 
 .application .info {
   position: relative;
-  height: 1500px;
+  height: 1500px;  
+  margin-top: 270px;
+}
+
+.line-top{
+  top: 17px;
+  left: -194px;
+  position: absolute;
 }
 
 .application .info__text {
@@ -896,6 +1105,21 @@ body{
   min-height: 1800px;
 }
 
+.line-bottom{
+  bottom: 46px;
+  right: -296px;
+  position: absolute;
+  z-index: 2;
+  display: block;
+}
+
+.line-bottom._active .c1 {
+  stroke-dasharray:0,1450;
+  animation: draw 2s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+@keyframes draw{100%{stroke-dasharray:1450,0;}}
+
 .spotify .wrapper {
   overflow: inherit;
 }
@@ -934,10 +1158,16 @@ body{
 }
 
 .spotify__bumper {
-  top: 790px;
+  top: 785px;
   position: absolute;
   z-index: 5;
   left: -70px;
+}
+
+.bumperCup{
+  position: absolute;
+  left: 57px;
+  top: 6px;
 }
 
 .spotify__linebottom {
@@ -967,9 +1197,10 @@ body{
 }
 
 .spotify__link {
-  margin-top: 25px;
+  margin-top: 74px;
+  padding-left: 33px;
   position: relative;
-  z-index: 4;
+  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -988,6 +1219,59 @@ body{
           align-items: center;
 }
 
+.spotify-button{
+  position: relative;
+  z-index: 3;
+}
+
+.spotify-circle-big,
+.spotify-circle-small,
+.spotify-note-big,
+.spotify-note-small,
+.spotify-play-btn{
+  position: absolute;
+  transition: .3s ease-in-out;
+  pointer-events: none;
+}
+
+.spotify-circle-big{
+  left: -50px;
+  top: -31px;
+  transform: translate(-158px, -96px);
+}
+
+.spotify-circle-small{
+  left: -66px;
+  top: -7px;
+  transform: translate(-175px, -6px);
+}
+
+.spotify-note-big{
+  right: -147px;
+  top: -42px;
+  transform: translate(175px, 45px);
+}
+
+.spotify-note-small{
+  right: -135px;
+  top: 81px;
+  transform: translate(207px, 93px);
+}
+
+.spotify-play-btn{  
+  right: -193px;
+  top: 34px;
+  transform: translate(311px, 80px);
+}
+
+.spotify__link-box:hover .spotify-circle-big,
+.spotify__link-box:hover .spotify-circle-small,
+.spotify__link-box:hover .spotify-note-big,
+.spotify__link-box:hover .spotify-note-small,
+.spotify__link-box:hover .spotify-play-btn{
+  transform: translate(0);
+}
+
 .spotify__link-left {
   z-index: 2;
   left: -40px;
@@ -1004,7 +1288,7 @@ body{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 100px;
+  padding-top: 167px;
 }
 
 .spotify .app__box {
@@ -1229,10 +1513,10 @@ body{
     left: 380px;
   }
   .application {
-    max-height: 2400px;
+    max-height: 2550px;
   }
   .application__line {
-    display: none;
+    height: 1390px;
   }
   .spotify__bottom {
     bottom: -180px;
@@ -1240,11 +1524,38 @@ body{
   .spotify__package  {
     top: 520px;
   }
+
+  .spotify-note-big{
+    transform: translate(125px, 45px);
+  }
+  
+  .spotify-note-small{
+    transform: translate(157px, 93px);
+  }
+  
+  .spotify-play-btn{  
+    transform: translate(261px, 80px);
+  }
+
+  .person-group{
+    position: relative;
+    left: -100px;
+  }
+
+
 }
 
 @media (max-width: 1440px) {
+
+  .header__offer-figure.active .figure-girl{
+    animation: GirlsRide 2.45s ease-in-out forwards;
+  }
+
   .wrapper {
     max-width: 1240px;
+  }
+  .application__line {
+    top: 1020px;
   }
   .header__row-text {
     position: relative;
@@ -1252,6 +1563,9 @@ body{
   }
   .header__offer-figure {
     left: 0;
+  }
+  .header__offer-soon, .header__offer-discovery {
+    font-size: 75px;
   }
   .five {
     max-height: 898px;
@@ -1318,7 +1632,33 @@ body{
   .spotify__bumper {
     width: 60%;
   }
+
+  .person-group{
+    transform: scale(0.8);
+    margin-top: -230px;
+  }
+
+  .line-top {
+    left: -518px;
+  }
+
+  .application {
+    max-height: 2564px;
+  }
+
+  .spotify__link-box{
+    transform: scale(0.8);
+  }
+
+  .spotify__link{
+    margin-left: 0;
+  }
+
+  .spotify__bumper{
+    transform: scale(0.85);
+  }
 }
+
 
 @media (max-width: 1366px) {
   .spotify__package {
@@ -1333,6 +1673,9 @@ body{
 }
 
 @media (max-width: 1280px) {
+  .header__offer-soon, .header__offer-discovery {
+    font-size: 55px;
+  }
   .header__offer-figure {
     width: 100%;
   }
@@ -1342,9 +1685,15 @@ body{
   .five__text {
     bottom: -70px;
   }
+  .application__line {
+    top:980px;
+  }
 }
 
 @media (max-width: 1230px) {
+  .application__line {
+    top:850px;
+  }
   .wrapper {
     max-width: 1024px;
   }
@@ -1353,7 +1702,7 @@ body{
   }
   .header__offer-figure {
     top: -160px;
-    left: 50px;
+    left: -8%;
   }
   .header__row-text {
     width: 80%;
@@ -1423,8 +1772,34 @@ body{
   .application .app .line {
     display: none;
   }
+
+  .spotify__link-box{
+    transform: scale(0.5);
+  }
+
+  .spotify__link{
+    margin-left: 0;
+  }
+
+  .spotify__bumper{
+    transform: scale(0.6);
+    top: 705px;
+  }
+
+  .line-bottom{
+    right: -596px;
+  }
 }
 @media (max-width: 1080px) {
+
+  .figure-girl {
+    display: block;
+    animation: none;
+  }
+
+  .application__line {
+    top:1000px;
+  }
 
   .header-ellipse{
     top: -60px;
@@ -1499,9 +1874,29 @@ body{
   .owl-carousel {
     top: -60px;
   }
+
+  .person-group {
+    transform: scale(1);
+    margin-top: 0;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  .line-top,.line-bottom{
+    display: none;
+  }
+
+  .spotify__bumper{
+    transform: scale(1);
+    left: 50%;
+  }
+
 }
 @media (max-width: 1024px){
-
+  .application__line {
+    height: 1240px;
+    top: 1330px;
+  }
   
   .flipTimer{
     transform: scale(0.5);
@@ -1514,8 +1909,16 @@ body{
     margin-left: 15px;
   }
 
+  .intro{
+    padding-bottom: 50px;
+  }
+
   .header2 .header__offer{
     width: 100%;
+  }
+
+  .header__offer {
+    min-height: 880px;
   }
 
   .open-in{
@@ -1525,7 +1928,8 @@ body{
   }
 
   .header__offer-figure {
-    top: 100px;
+    top: 20px;
+    left: -42%;
   }
   .header__offer {
     top: 0;
@@ -1535,8 +1939,8 @@ body{
     width: 60%;
     top: 120px;
   }
-  .header__offer-soon, .header__offer-discovery {
-    font-size: 72px;
+  .header__offer-soon {
+    padding-top: 50px;
   }
   .wrapper {
     max-width: 700px
@@ -1639,10 +2043,11 @@ body{
             transform: skewX(0deg);
   }
   .application .info__text {
-    font-size: 26px;
-    line-height: 44px;
-    margin-left: 15px;
+    min-width: 370px;
+    max-width: 400px;
+    font-size: 18px;
     text-align: left;
+    left: -30px;
   }
   .spotify__package {
     right: 0;
@@ -1650,6 +2055,41 @@ body{
   }
   .spotify__package img {
     width: 140%;
+  }
+
+  .spotify__bumper,.person-group{
+    transform: scale(0.8);
+    transform-origin: left top;
+  }
+
+  .person-group{
+    margin-left: -50px;
+  }
+
+
+  .application .info{
+    margin-top: 0;
+  }
+
+  .application .app{
+    max-height: 740px;
+  }
+
+  .spotify-circle-big,
+  .spotify-circle-small,
+  .spotify-note-big,
+  .spotify-note-small,
+  .spotify-play-btn{
+    transform: translate(0);
+  }
+
+  .spotify__link-box {
+    transform: scale(0.9);
+  }
+
+  .map__footer{
+    flex-direction: column;
+    gap: 30px;
   }
 }
 @media (max-width: 990px) {
@@ -1762,6 +2202,32 @@ body{
   .spotify .app__item-text {
     margin-top: 10px;
   }
+
+  .spotify__bumper,.person-group{
+    transform: scale(0.7);
+    transform-origin: left top;
+    margin-top: -100px;
+  }
+
+  .spotify__link{
+    padding-left: 0;
+  }
+
+  .application .app {
+    max-height: 740px;
+  }
+
+  .spotify-circle-big,
+  .spotify-circle-small,
+  .spotify-note-big,
+  .spotify-note-small,
+  .spotify-play-btn{
+    transform: translate(0);
+  }
+
+  .spotify__link-box {
+    transform: scale(0.8);
+  }
 }
 
 @media (max-width: 768px) {
@@ -1809,7 +2275,13 @@ body{
   .spotify__bottom {
     bottom: -2px;
     height: 3000px;
-}
+  }
+
+  .person-group {
+    margin-top: -25px;
+  }
+
+
 }
 
 @media (max-width: 700px) {
@@ -1822,6 +2294,26 @@ body{
   }
 }
 @media (max-width: 660px) {
+  .person-group {
+    transform: scale(0.55);
+    margin-left: 0;
+  }
+
+  .application {
+    max-height: 2671px;
+  }
+
+  .application .info {
+    margin-top: -160px;
+  }
+
+  .spotify__link{
+    transform: scale(0.8);
+  }
+
+  .person-group {
+    margin-top: 160px;
+  }
 
   .header-ellipse {
     top: -125px;
@@ -1844,24 +2336,37 @@ body{
   display: none;
   }
   .header__offer {
-    margin: auto;
+    margin: 0 auto;
   }
+
+  .figure-bg1{
+    display: none;
+  }
+
   .header__offer-figure {
-    top: 100px;
-    left: -10px;
-    width: 120%;
-}
+    top: 160px; 
+  }
+
+  .figure-girl {
+    left: 116px;
+    top: 45px;
+  }
+
+  .figure-bg2{
+    display: block;
+  }
+  
   .header__offer-soon, .header__offer-discovery {
     font-size: 50px; 
   }
   .application .mark {
     width: 70%;
-    margin: auto;
+    margin: 0 auto;
     top: 80px;
     left: -30px;
   }
   .application .info {
-    padding-top: 130px; 
+    padding-top: 0px; 
   }
   .owl-carousel {
     top: -40px;
@@ -1899,7 +2404,70 @@ body{
   }
 } 
 
+@media (max-width: 560px){
+
+  @keyframes GirlsRide {
+    0%{
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    99%{
+      transform: translateX(-0px);
+      opacity: 1;
+    }
+  
+  }
+  .header__offer-figure {
+    left: 0;
+  }
+
+  .figure-girl {
+    width: 50vw;
+    left: 16vw;
+    top: 11vw;
+    display: block;
+  }
+
+  .figure-bg2{
+    width: 90vw;
+  }
+
+  .header__offer {
+    min-height: 550px;
+  }
+}
+
 @media (max-width: 526px) {
+  .spotify__link-box {
+    transform: scale(0.65);
+  }
+
+  .spotify .app {
+    padding-top: 50px;
+  }
+
+  .person-group {
+    transform: scale(0.45);
+    margin-left: 0;
+  }
+
+  .application .info__text {
+    min-width: 270px;
+    max-width: 300px;
+    font-size: 15px;
+    left: 40px;
+}
+  .spotify__package-description{
+    top: -90px;
+    right: -130px;
+  }
+  .spotify__bottom {
+    bottom: -22px;
+  }
+  .application .info__box {
+      max-width: 100%;
+      
+  }
 
   .flipTimer{
     transform: scale(0.4);
@@ -2098,6 +2666,41 @@ body{
 
 @media ( max-width: 480px) {
 
+  .header__offer-figure.active .figure-girl{
+    animation: GirlsRide 5.45s ease-in-out forwards;
+  }
+
+  .person-group{
+    transform: scale(0.40);
+    margin: 0 auto;
+    margin-top: 120px;
+  }
+
+  .application .info {
+    margin-top: -250px;
+  }
+
+  .spotify__link {
+    transform: scale(0.7);
+    margin-right: 25px;
+  }
+
+  .application {
+    max-height: 2749px;
+  }
+
+  .application .app {
+    max-height: 840px;
+  }
+
+  .application__line {
+    height: 1240px;
+    top: 1270px;
+}
+  .header__offer-figure2 {
+    display: block;
+  }
+
   .open-in {
     font-size: 60px;
     line-height: 75px;
@@ -2112,9 +2715,16 @@ body{
     width: 150%;
   }
   .header__offer-discovery{
-    right: 100px;
+    font-size: 43px;
+    right: 60px;
     position: relative;
   }
+  .header__offer-soon {
+    font-size: 43px;
+    right: -60px;
+    position: relative;
+  }
+  
   .five__box {
     padding-top: 0px;
 }
@@ -2124,12 +2734,7 @@ body{
   .spotify__bottom {
     bottom: -20px;
   }
-  .spotify__link-box {
-    width: 70%;
-  }
-  .spotify__link-box img {
-    width: 310px;
-  }
+  
   .spotify__bottom {
     bottom: -90px;
   }
@@ -2139,16 +2744,16 @@ body{
   }
   .five__box-text {
     width: 310px;
-    font-size: 16px;
+    font-size: 14px;
   }
   .owl-carousel {
     width: 90%;
   }
   .application .info__text {
-    min-width: 340px;
-    max-width: 360px;
-    font-size: 18px;
-  }
+    min-width: 270px;
+    max-width: 300px;
+    font-size: 15px;
+}
   .application .app__box {
     height: 700px;
   }
@@ -2163,29 +2768,64 @@ body{
     bottom: -100px;
   }
   .spotify__package-description {
-    right: -120px;
+    right: -44px;
   }
   .spotify__package img {
     width: 140%;
   }
   .application .info__box .row-1 .text p, .application .info__box .row-2 .text p, .application .info__box .row-3 .text p, .application .info__box .row-4 .text p, .application .info__box .row-5 .text p {
-    font-size: 18px;
+    font-size: 15px;
   }
   .spotify__bottom {
-    bottom: -130px;
+    bottom: 0px;
   }
+  .application__bgr-line {
+    position: absolute;
+    z-index: 5;
+    top: 659px;
+    right: 0;
+    opacity: .4;
+}
+.application .line2 {
+  top: -273px;
+  opacity: .4;
+}
   .five__box-left-green, .five__box-left-white {
-    max-width: 360px;
+    max-width: 320px;
   }
   .five__text-bottom {
-    font-size: 64px;
+    font-size: 44px;
+    line-height: 80px;
   }
   .five {
     background: #096d47;
-    max-height: 1270px;
+    height: 1180px;
   }
   .app-spotify {
     min-height: 4060px;
+  }
+  .application .info__box .row-1 .text {
+    width: 380px;
+    height: 162px;
+  }
+  .application .info__box .row-2 .text{
+    width: 280px;
+    height: 118px;
+  }
+  .application .info__box .row-3 .text{
+    width: 386px;
+    height: 193px;
+  }
+  .application .info__box .row-4 .text{
+    width: 380px;
+    height: 118px;
+  }
+  .application .info__box .row-5 .text{
+    width: 280px;
+    height: 118px;
+  }
+  .spotify__title  {
+    font-size: 26px;
   }
 }
 
@@ -2211,5 +2851,51 @@ body{
   .flipTimer{
     transform: scale(0.3);
     margin-left: 10vw;
+  }
+
+  .spotify {
+    padding-top: 0;
+  }
+
+  .header {
+    min-height: 750px;
+  }
+
+  .five__box-left-green{
+    margin-bottom: 6px;
+    margin-top: 30px;
+  }
+
+  .five__box-left-green, .five__box-left-white{
+    max-width: 280px;
+    height: 89px;
+  }
+
+  .five__box-left-green p, .five__box-left-white p{
+    font-size: 20px;
+  }
+}
+
+@media ( max-width: 414px) {
+
+  .header__offer {
+    min-height: 507px;
+  }
+
+  .person-group{
+    transform: scale(0.40) translateX(-7%);
+  }
+
+  .application .info__box .row-3 .text {
+    width: 295px;
+    height: 193px;
+  }
+  .application .info__box .row-4 .text {
+    width: 290px;
+    height: 118px;
+  }
+  .application .info__box .row-1 .text {
+    width: 300px;
+    height: 162px;
   }
 }
