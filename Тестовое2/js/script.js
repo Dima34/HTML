@@ -66,13 +66,23 @@ tl4.pause();
 tl5.pause();
 
 const buttonContainer = document.querySelector('.payment__button_container')
-console.log("SVG", buttonContainer);
+
 buttonContainer.onmouseover = function() {
-  console.log("SVG mouseOver");
+    console.log("SVG mouseOver");
+    tl1.play();
+    tl2.play();
+    tl3.play();
+    tl4.play();
+    tl5.play();
 }
 
 buttonContainer.onmouseout = function() {
-  console.log("SVG mouseOut");
+    console.log("SVG mouseOut");
+    tl1.pause();
+    tl2.pause();
+    tl3.pause();
+    tl4.pause();
+    tl5.pause();
 }
 
 

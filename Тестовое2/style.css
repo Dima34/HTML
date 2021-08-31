@@ -64,34 +64,30 @@ p{
     pointer-events: none;
 }
 
-.payment__button::after{
-    content: "";
-    position: absolute;
-    background: #006CFF 0% 0% no-repeat padding-box;
-    border-radius: 20px;
-    height: 42px;
-    width: 42px;
-    top: 0;
-    right: 0;
-    transition: .7s ease-in-out;
-    z-index: 1;
-    pointer-events: all;
-}
-
 .payment__button_plus-ico, .payment__button_wallet-ico{
     position: absolute;
 }
 
+.payment__button_plus-ico{
+    left: 11px;
+}
+
+.payment__button_wallet-ico{
+    left: 10px;
+}
+
 .payment__button_container{
-    width: 21px;
-    height: 21px;
+    background: #006CFF 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    height: 42px;
+    width: 42px;
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     transition: .7s;
-    right: 10px;
-    z-index: 3;
+    right: 0px;
+    z-index: 2;
     pointer-events: all;
 }
 
@@ -188,8 +184,7 @@ p{
 }
 
 .payment__button:hover .payment__button_container{
-    
-    right: calc(100% - 50px);
+    width: 100%;
 }
 
 .payment__button:hover .payment__button_wallet-ico{
