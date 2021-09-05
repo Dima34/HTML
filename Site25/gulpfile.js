@@ -15,7 +15,17 @@ gulp.task("sass-compile", function(){
 })
 
 gulp.task('fileinclude', function() {
-    return gulp.src(['./src/index.html', './src/article.html', './src/articles.html','./src/contacts.html'])
+    return gulp.src([
+        './src/index.html', 
+        './src/article.html', 
+        './src/articles.html',
+        './src/contacts.html',
+        './src/shop.html',
+        './src/shop-cart.html',
+        './src/shop-info.html',
+        './src/shop-item.html',
+        './src/shop-payment.html',
+      ])
       .pipe(fileinclude({
         prefix: '@@',
         basepath: '@file'

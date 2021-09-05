@@ -104,11 +104,57 @@ mouseParallax = (elem, factor = 0.1, reversed = false)=> {
           
       }
   }
-  
-
 };
 
 if(window.innerWidth > 1100){
   mouseParallax(document.querySelectorAll(".intro__confetti"), 0.0005);
   mouseParallax(document.querySelectorAll(".intro__confetti-flakes"), 0.0005);
+}
+
+//
+// Item gallery
+// 
+
+let gallery = document.querySelector(".left-side__item-gallery");
+
+if(gallery){
+
+  let mainPhoto = gallery.querySelector(".item-gallery_main-photo a");
+
+  photoSelection = gallery.querySelectorAll(".photo-selection_item");
+
+  photoSelection.forEach((el)=>{
+
+    el.addEventListener("click", ()=>{
+      
+      photoSelection.forEach((el)=>{
+        el.classList.remove("selected");
+      })
+
+      el.classList.add("selected");
+      mainPhoto.setAttribute("href", el.querySelector("img").getAttribute("src"))
+      mainPhoto.querySelector("img").setAttribute("src", el.querySelector("img").getAttribute("src"))
+
+    });
+  })
+}
+
+//
+//  Shop sale checker
+//
+
+const shopMain = document.querySelector(".shop-cathalog");
+
+if(shopMain){
+  
+  const itemPrices = shopMain.querySelectorAll(".cathalog__item_price");
+  console.log(itemPrices);
+  
+  itemPrices.forEach((el)=>{
+    if(el.querySelector('.price_sale span').innerHTML != ''){
+      console.log("is empty");
+      console.log(el);
+      el.classList.add('is-sale')
+    }
+  })
 }
