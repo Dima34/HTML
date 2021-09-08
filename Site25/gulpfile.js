@@ -17,6 +17,7 @@ gulp.task("sass-compile", function(){
 gulp.task('fileinclude', function() {
     return gulp.src([
         './src/index.html', 
+        './src/privacy.html', 
         './src/article.html', 
         './src/articles.html',
         './src/contacts.html',
