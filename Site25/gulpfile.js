@@ -26,6 +26,7 @@ gulp.task('fileinclude', function() {
         './src/shop-info.html',
         './src/shop-item.html',
         './src/shop-payment.html',
+        './src/shop-favorite.html',
       ])
       .pipe(fileinclude({
         prefix: '@@',
