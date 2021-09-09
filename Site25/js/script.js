@@ -151,7 +151,7 @@ if(shopMain){
   console.log(itemPrices);
   
   itemPrices.forEach((el)=>{
-    if(el.querySelector('.price_sale span').innerHTML != ''){
+    if(el.querySelector('.price_sale span').innerHTML != " "){
       console.log("is empty");
       console.log(el);
       el.classList.add('is-sale')
