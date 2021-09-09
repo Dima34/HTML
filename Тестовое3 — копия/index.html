@@ -31,7 +31,7 @@
                     <li class="navigation_list_item has-child"><a href="#"><span>Shop now</span></a></li>
                     <li class="navigation_list_item header__support"><a href="#"><span>Support</span></a></li>
                     <li id="navigation_more-list">
-                        <button class="more-list_open-btn">More</button>
+                        <button class="more-list_open-btn"><span>More</span></button>
                         <ul class="more-list_container" style="position: absolute; opacity: 0; visibility: hidden; pointer-events: none;"></ul>
                     </li>
                 </ul>
@@ -128,6 +128,7 @@ ul{
     max-width: 1605px;
     height: 100%;
     margin: 0 auto;
+    padding-top: 1px;
 }
 
 header{
@@ -484,79 +485,113 @@ header.search .header__search-blk{
     right: 3px;
 }
 
+.more-list_open-btn span{
+    position: relative;
+}
+
+.more-list_open-btn span::after{
+    font-family: "MWF-MDL2";
+    content: "";
+    position: absolute;
+    font-size: 8px;
+    display: inline-block;
+    color: currentColor;
+    font-weight: 700;
+    top: 6px;
+    right: calc(0% - 16px);
+}
+
 
 @media screen and (max-width: 1778px) {
+
+    .header__search-blk {
+        margin-left: 83px;
+        margin-right: 32px;
+    }
+
+    .header__search_input{
+        margin-top: -2px;
+    }
+
+    .header__search_input::placeholder{
+        margin-left: 1px;
+    }
+
+    .header__search_search-btn {
+        right: 4px;
+        top: 1px;
+    }
 
     header{
         padding: 0 24px;
     }
 
     header .wrapper{
-        max-width: 1591px;
+        max-width: 1621px;
     }
 
     .header__logo {
-        padding: 17px 6px 16px 5px;
+        padding: 16px 6px 16px 22px;
     }
 
     .header__pagename {
-        padding: 17px 10px 16px 28px;
+        padding: 16px 13px 16px 28px;
         margin-right: 0;
     }
 
     .header__pagename::before {
-        top: 17px;
+        top: 16px;
     }
 
     .navigation_list_item.has-child a{
-        padding: 19px 24px 16px 10.2px;
-    }
+        padding:18px 24px 16px 10.3px;
+    } 
 
     .navigation_list_item a{
-        padding: 19px 12px 10px 4px;
+        padding: 18px 12px 10px 3px;
     }
 
     .header__navigation-right .navigation_list_item a{
-        padding-top: 18px;
+        padding-top: 17px;
     }
 
     .header__sign-in a{
-        padding-right: 48px;
+        padding-right: 49px;
     }
 
     .header__cart a{
-        padding-right: 40px;
+        padding-right: 41px;
     }
 
     .header__cart a:after {
-        right: 18px;
-        top: 18px;
+        right: 19px;
+        top: 17px;
     }
 
     .header__search {
-        margin-right: 33px;
+        margin-right: 35px;
     }
 
     .header__search a::after{
         right: -10px;
-        top: 20px;
+        top: 19px;
     }
 
     .header__all-microsoft{
-        margin-right: 4px;
+        margin-right: 5px;
     }
 
     .navigation_list_item.header__all-microsoft a{
-        padding-top: 19px;
+        padding-top: 18px;
     }
 
     .header__sign-in svg {
-        top: 11px;
+        top: 10px;
         right: 5px;
     }
 
     .header__cart a .tip {
-        left: -2px;
+        left: -14px;
     }
 
     .header__search a .tip {
@@ -574,7 +609,16 @@ header.search .header__search-blk{
     }
 
     .header__logo{
-        padding-left: 9px;
+        padding: 16px 7px 16px 10px;
+    }
+
+    .header__pagename {
+        padding: 16px 11px 16px 28px;
+    }
+
+    .header__pagename::before {
+        top: 16px;
+        left: -1;
     }
 
     .header__cart span:first-child, 
@@ -583,25 +627,24 @@ header.search .header__search-blk{
         display: none;
     }
 
-    .navigation_list_item.has-child a {
-        padding-right: 23px;
-    }
-
     .navigation_list_item a{   
-        padding: 19px 12px 10px 7px;
+        padding: 19px 12px 10px 5px;
     }
 
     .header__sign-in a {
-        padding-right: 33px;
-        padding-top: 19px;
+        padding-right: 25px;
     }
 
-    .header__sign-in{
-        margin-right: 3px;
+    .header__navigation-left .navigation_list_item {
+        margin-right: 1.3px;
+    }
+
+    .header__navigation-left .navigation_list_item a{
+        padding-right: 27px;
     }
 
     .header__cart{
-        margin-right: 10px;
+        margin-right: 13px;
     }
 
     .header__cart a {
@@ -609,7 +652,8 @@ header.search .header__search-blk{
     }
 
     .header__cart a:after {
-        right: 7px;
+        right: 6px;
+        top: 16px;
     }
 
     .header__search {
@@ -629,18 +673,32 @@ header.search .header__search-blk{
     }
 
     .header__sign-in svg {
-        top: 11px;
-        right: 7px;
+        top: 10px;
+        right: -2px;
     }
 
     .header__cart a .tip {
-        left: -82px;
+        left: -81px;
     }
 
     .header__search a .tip {
-        right: -1px;
         top: calc(100% - 10px);
     }
+
+    
+    .navigation_list_item.has-child a {
+        padding-right: 27px;
+    }
+
+    .header__search-blk {
+        margin-left: 44px;
+        margin-right: -13px;
+    }
+
+    .header__search_close{
+        width: 82px;
+    }
+
 }
 
 @media screen and (max-width: 1083px) {
@@ -648,17 +706,62 @@ header.search .header__search-blk{
         padding: 0 24px;
     } 
 
+    header .wrapper{
+        padding-top: 0;
+    }
+
+    .header__logo {
+        padding: 16px 7px 16px 10px;
+    }
+
+    .header__pagename {
+        padding: 16px 11px 16px 28px;
+    }
+
+    .header__pagename::before {
+        top: 16px;
+    }
+
+    #navigation_more-list.active button {
+        font-size: 13px;
+        color: #262626;
+        display: inline-block;
+        margin-top: 1px;
+        padding: 20px 19px 16px 10px;
+    }
+
+    .navigation_list_item.has-child a {
+        padding: 18px 24px 16px 10.2px;
+    }
+
     .header__sign-in {
-        margin-right: 7px;
+        margin-right: 0px;
     }
 
     .header__cart a {
         padding-right: 23px;
     }
 
+    .header__sign-in a {
+        padding-right: 31px;
+    }
+
+    .header__sign-in svg {
+        right: 4px;
+    }
+
+    .header__search a::after {
+        right: 7px;
+        top: 19px;
+    }
+
+    .header__all-microsoft {
+        margin-right: 9px;
+    }
+
     .header__cart a:after {
         right: 6px;
-        top: 17px;
+        top: 16px;
     }
 
     .header__cart a .tip {
@@ -669,6 +772,10 @@ header.search .header__search-blk{
 @media screen and (max-width: 859px){
     .tip{
         display: none;
+    }
+
+    header .wrapper{
+        padding-top: 0;
     }
 
     header.search .header__logo,
@@ -693,7 +800,7 @@ header.search .header__search-blk{
     }
 
     .header__search-blk{
-        margin: -1px 27px 2px 1px;
+        margin: 3px 13px 3px 1px;
     }
 
     .header__search_input{
@@ -735,9 +842,9 @@ header.search .header__search-blk{
 
     .header__logo{
         margin: 0 auto;
-        padding-left: 25px;
+        padding-left: 28px;
         padding-top: 16px;
-        padding-bottom: 13px;
+        padding-bottom: 14px;
     }
 
     .header__burger-open{
@@ -751,13 +858,13 @@ header.search .header__search-blk{
         width: 32px;
         height: 32px;
         font-size: 16px;
-        margin-left: 2px;
+        margin-left: 3px;
         margin-top: 2px;
     }
 
     .header__sign-in{
-        margin-right: 27px;
-        transform: translateY(3px);
+        margin-right: 15px;
+        transform: translateY(2px);
     }
 
     .header__sign-in svg{
@@ -771,7 +878,8 @@ header.search .header__search-blk{
     }
 
     .header__cart{
-        margin-right: 23px;
+        margin-right: 24px;
+        transform: translateY(-1px);
     }
 
     .header__sign-in a, 
@@ -802,8 +910,7 @@ header.search .header__search-blk{
         display: block;
         font-weight: 600;
         height: 100%;
-        margin: 0 1px;
-        padding: 0 9px 0 15px;
+        padding: 0 11px 0 16px;
         text-align: left;    
         font-size: 15px;
         font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -836,7 +943,7 @@ header.search .header__search-blk{
     }
 
     .burger-menu_item a{
-        padding: 14px 15px 18.2px;
+        padding: 14px 15px 19px;
         width: 100%;
         padding-right: 24px;
         margin-left: 1px;
@@ -858,7 +965,7 @@ header.search .header__search-blk{
         font-size: 9px;
         font-weight: 700;
         position: absolute;
-        right: 34px;
+        right: 22px;
         top: 21px;
     }
 
