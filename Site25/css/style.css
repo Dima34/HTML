@@ -353,18 +353,21 @@ footer {
     margin-bottom: 60px; }
   .main-themes .search-block {
     margin-bottom: 93px; }
+  .main-themes .page-selection {
+    margin-top: -10px;
+    margin-bottom: 114px;
+    padding: 0 38px; }
 
 .articles__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 115px; }
-  .articles__list .article-card {
-    margin-bottom: 90px; }
-    .articles__list .article-card:nth-child(2n) {
-      margin-top: 80px;
-      justify-self: end; }
-  .articles__list .page-selection {
-    margin-top: -90px; }
+  padding-bottom: 0px; }
+  .articles__list .article-card:nth-child(2n) {
+    margin-top: 80px;
+    justify-self: end; }
+  .articles__list .article-card:nth-child(2n-1) {
+    margin-bottom: 90px;
+    justify-self: end; }
 
 .article-card {
   width: 435px;
@@ -853,6 +856,17 @@ footer {
   letter-spacing: 0.01em;
   font-style: italic;
   text-align: right; }
+
+.article-section__verse {
+  margin: 40px auto;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+  .article-section__verse span {
+    color: #5A033D; }
 
 .shop-header {
   padding-top: 150px;
@@ -1790,6 +1804,41 @@ footer {
   overflow: hidden;
   position: relative; }
 
+.comments {
+  max-width: 970px;
+  margin: 0 auto;
+  margin-top: 75px;
+  margin-bottom: 80px; }
+
+.comments__title {
+  font-family: 'EB Garamond' !important;
+  font-size: 40px;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 36px;
+  color: #5A033D; }
+
+.comments__comment {
+  padding: 25px 0;
+  border-top: 1px solid rgba(144, 50, 112, 0.9);
+  border-bottom: 1px solid rgba(144, 50, 112, 0.9);
+  margin: 30px; }
+  .comments__comment:last-child {
+    margin-bottom: 0; }
+
+.comment_text {
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 23px; }
+
+.comment_subsription {
+  font-size: 22px;
+  line-height: 29px;
+  font-family: 'EB Garamond' !important;
+  text-align: right; }
+
 @media screen and (max-width: 1440px) {
   .intro__confetti {
     width: 541px;
@@ -2151,15 +2200,7 @@ footer {
     column-gap: 50px;
     margin: 0 auto; }
     .articles__list .article-card {
-      margin-bottom: 50px; }
-    .articles__list .page-selection {
-      margin-top: -50px; }
-      .articles__list .page-selection a {
-        min-width: 50px;
-        height: 50px; }
-        .articles__list .page-selection a:hover {
-          color: #5A033D;
-          background: white; }
+      margin-bottom: 20px; }
   .article-card {
     width: 320px;
     height: 320px; }
@@ -2238,7 +2279,13 @@ footer {
   .shop-header__cart {
     right: 52%; }
   .shop-header__favorite {
-    left: 52%; } }
+    left: 52%; }
+  .main-themes .page-selection {
+    max-width: 690px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: -10px;
+    margin-bottom: 114px; } }
 
 @media screen and (max-width: 800px) {
   .cart-payment .wrapper {
@@ -2356,8 +2403,6 @@ footer {
     grid-template-columns: 1fr; }
     .articles__list .article-card:nth-child(2n) {
       margin-top: 0px; }
-    .articles__list .page-selection {
-      margin-top: 0px; }
   .main-themes .wrapper {
     padding: 0 27px; }
     .main-themes .wrapper .main__title {
@@ -2366,6 +2411,10 @@ footer {
       text-align: left;
       padding-right: 60px;
       margin-bottom: 152px; }
+  .main-themes .page-selection {
+    max-width: 320px;
+    margin-top: 30px;
+    margin-bottom: 114px; }
   .cathegories__main {
     width: 300px; }
   .search-block .submit {
@@ -2700,6 +2749,17 @@ footer {
     transform: scale(-0.5, 0.5);
     left: -20px !important; }
   .swiper-button-next {
-    right: -20px !important; } }
+    right: -20px !important; }
+  .comments__title {
+    font-size: 30px;
+    line-height: 39px; }
+  .comment_text {
+    font-size: 19px;
+    line-height: 26px;
+    margin-bottom: 20px; }
+  .comment_subsription {
+    font-size: 22px;
+    line-height: 29px;
+    text-align: right; } }
 
 /*# sourceMappingURL=style.css.map */
