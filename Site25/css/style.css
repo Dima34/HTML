@@ -1679,14 +1679,19 @@ footer {
     margin-bottom: 75px; }
   .privacy .wrapper p, .privacy .wrapper a, .privacy .wrapper h3, .privacy .wrapper li {
     color: black; }
-  .privacy .wrapper h3 {
+  .privacy .wrapper h2, .privacy .wrapper h4, .privacy .wrapper span {
+    font-weight: 400; }
+  .privacy .wrapper h2, .privacy .wrapper h3 {
     font-size: 26px;
     line-height: 20px;
     letter-spacing: 0.04em;
     margin-bottom: 20px; }
-    .privacy .wrapper h3:last-of-type {
+    .privacy .wrapper h2:last-of-type, .privacy .wrapper h3:last-of-type {
       margin-bottom: 26px; }
-  .privacy .wrapper p, .privacy .wrapper li {
+  .privacy .wrapper h2 {
+    margin-bottom: 40px;
+    margin-top: 60px; }
+  .privacy .wrapper p, .privacy .wrapper li, .privacy .wrapper h4 {
     font-size: 24px;
     line-height: 33px;
     letter-spacing: 0.02em;
@@ -2124,12 +2129,12 @@ footer {
     padding-top: 141px;
     border: 0;
     padding-bottom: 101px; }
-    .privacy .wrapper h3 {
+    .privacy .wrapper h3, .privacy .wrapper h2 {
       font-size: 20px;
       line-height: 20px; }
-      .privacy .wrapper h3:last-of-type {
+      .privacy .wrapper h3:last-of-type, .privacy .wrapper h2:last-of-type {
         margin-bottom: 20px; }
-    .privacy .wrapper p, .privacy .wrapper li {
+    .privacy .wrapper p, .privacy .wrapper li, .privacy .wrapper h4, .privacy .wrapper span {
       font-size: 16px;
       line-height: 22px;
       margin-bottom: 15px; }
@@ -2682,11 +2687,11 @@ footer {
     padding: 0 23px;
     border: 0;
     padding-bottom: 80px; }
-    .privacy .wrapper h3 {
+    .privacy .wrapper h3, .privacy .wrapper h2 {
       font-size: 18px;
       line-height: 20px;
       margin-bottom: 15px; }
-      .privacy .wrapper h3:last-of-type {
+      .privacy .wrapper h3:last-of-type, .privacy .wrapper h2:last-of-type {
         margin-bottom: 25px; }
   .swiper-button-prev, .swiper-button-next {
     transform: scale(0.5);
