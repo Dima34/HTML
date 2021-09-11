@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <link rel="icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -96,12 +98,142 @@
         
     </div>
 
+    <section class="same-items">
 
+        <div class="wrapper">
+            <h2 class="same-items__header">Same items</h2>
+
+            <div class="same-items__carousel">
+                <div class="swiper-container">
+
+                    <div class="swiper-wrapper">
+    
+                        <div class="swiper-slide">
+                            @@include('./shop-card.html', {
+                                "image": "./img/item1.webp",
+                                "name": "Adelaide",
+                                "sale": "20,22",
+                                "price": "45,00"                
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include('./shop-card.html', {
+                                "image": "./img/item1.webp",
+                                "name": "Adelaide",
+                                "sale": "20,22",
+                                "price": "45,00"                
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include('./shop-card.html', {
+                                "image": "./img/item1.webp",
+                                "name": "Adelaide",
+                                "sale": "20,22",
+                                "price": "45,00"                
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include('./shop-card.html', {
+                                "image": "./img/item1.webp",
+                                "name": "Adelaide",
+                                "sale": "20,22",
+                                "price": "45,00"                
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include('./shop-card.html', {
+                                "image": "./img/item1.webp",
+                                "name": "Adelaide",
+                                "sale": "20,22",
+                                "price": "45,00"                
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include('./shop-card.html', {
+                                "image": "./img/item1.webp",
+                                "name": "Adelaide",
+                                "sale": "20,22",
+                                "price": "45,00"                
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include('./shop-card.html', {
+                                "image": "./img/item1.webp",
+                                "name": "Adelaide",
+                                "sale": "20,22",
+                                "price": "45,00"                
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include('./shop-card.html', {
+                                "image": "./img/item1.webp",
+                                "name": "Adelaide",
+                                "sale": "20,22",
+                                "price": "45,00"                
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include('./shop-card.html', {
+                                "image": "./img/item1.webp",
+                                "name": "Adelaide",
+                                "sale": "20,22",
+                                "price": "45,00"                
+                            })
+                        </div>
+    
+                    </div>
+                </div>   
+                
+                <div class="swiper-button-next">
+                    <img src="./img/svg/slider-arrow.svg" alt="arrow">
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="./img/svg/slider-arrow.svg" alt="arrow">
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     @@include('./footer.html')
    
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="./js/script.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const carouselWrapper = document.querySelector(".same-items__carousel");
+
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: "auto",
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+
+            on: {
+                realIndexChange: function () {
+                    this.isBeginning ? carouselWrapper.classList.add("start") : carouselWrapper.classList.remove("start");
+                    this.isEnd ? carouselWrapper.classList.add("end") : carouselWrapper.classList.remove("end");
+                },
+                
+                init: function(){
+                    carouselWrapper.classList.add("start")
+                }
+
+            }
+        });
+
+
+    </script>
     
     
 </body>
