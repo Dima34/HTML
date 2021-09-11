@@ -750,17 +750,16 @@ footer {
   padding-top: 149px; }
   .main-article .search-block {
     margin-bottom: 63px; }
-
-.article-section {
-  margin-bottom: 100px; }
-  .article-section p, .article-section li {
+  .main-article p, .main-article li {
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.01em;
     margin-bottom: 20px; }
-  .article-section ul {
+  .main-article ul {
     list-style: disc;
     padding-left: 20px; }
+  .main-article h1, .main-article h2 {
+    margin-top: 100px; }
 
 .article-section__ordered-list {
   margin: 55px 0;
