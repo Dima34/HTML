@@ -158,3 +158,27 @@ if(shopMain){
     }
   })
 }
+
+// Закрытие поиска при клике вне его блока
+function CheckClass(el, Class){
+  return el.classList != undefined ? el.classList.contains(Class) : false;
+}
+
+const popup = document.querySelector(".popup-wrapper");
+
+if(popup){
+  
+  setTimeout(() => {
+    popup.classList.add("active")
+  }, 120000);
+
+  document.addEventListener("click", (e)=>{
+    if(popup.classList.contains("active")){
+      e.path.some((el)=>{
+        return CheckClass(el, "popup")
+      }) 
+      ? console.log("open") : popup.classList.remove("active");
+    }
+})
+
+}

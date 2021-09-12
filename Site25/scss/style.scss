@@ -1016,7 +1016,6 @@ footer{
 }
 
 
-
 .article-block__content{
   display: flex;
   flex-direction: column;
@@ -2502,6 +2501,186 @@ footer{
   @include Gara();
   text-align: right;
 }
+
+.popup-wrapper{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  left: 0;
+  top: 0;
+  z-index: 6;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: .3s;
+
+  &.active{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+
+  &::after{
+    content: url(../img/svg/close.svg);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+
+.popup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 454px;
+  background:#F6F5F1;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.popup__image{
+  width: 316px;
+  height: 264px;
+  position: relative;
+  background:url(../img/popup-image.png) center;
+  background-size: cover;
+  transform: rotate(2.5deg);
+  margin-top: -37px;
+  margin-bottom: 5px;
+}
+
+.popup__text{
+  font-size: 29px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #EFC8C1;
+  text-shadow: 2px 1px 0px #FFFFFF; 
+  text-align: center;
+  max-width: 408px;
+  margin-bottom: 22px;
+
+  span{
+    color: #DF5A91;
+    font-weight: 500;
+  }
+}
+
+.popup__link{
+  font-size: 26px;
+  line-height: 35px;
+  letter-spacing: 0.07em;
+  text-transform: lowercase;
+  position: relative;
+  color: #DF5A91;
+  border-top: 6px solid #F0C9C1;
+  width: 100%;
+  text-align: center;
+  padding: 13px 10px 20px 10px;
+  font-weight: 400;
+}
+
+.news-sub{
+  background: #EAD2DA;
+  padding: 0 20px;
+  padding-top: 100px;
+  padding-bottom: 44px;
+  color: #5A033D;
+  text-align: center;
+}
+
+.news-sub__title{
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 31px;
+  @include Gara();
+}
+
+.news-sub__subtitle{
+  font-size: 25px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 49px;
+}
+
+.news-sub__groupbox{
+  display: flex;
+  max-width: 608px;
+  width: 100%;
+  gap: 15px;
+  margin: 0 auto;
+  margin-bottom: 37px;
+
+  input{
+    padding: 11px 15px;
+    font-size: 22px;
+    line-height: 30px;
+    color: #5A033D;
+    border: 1px solid rgba(144, 50, 112, 0.9);
+    background: 0;
+    @include Open(300);
+    width: 100%;
+
+    &::placeholder{
+      font-size: 22px;
+      line-height: 30px;
+      opacity: 1;
+      color: #5A033D;
+      @include Open(300);
+    }
+  }
+
+  button{
+    background: #5A033D;
+    padding: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    @include Gara();
+    color: #FFFFFF;
+    border: 1px solid rgba(144, 50, 112, 0.9);
+    transition: .3s;
+
+    &:hover{
+      background:unset;
+      color: #5A033D;
+    }
+  }
+}
+
+.news-sub__attention{
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 31px;
+
+  a{
+    font-weight: 400;
+    color: #5A033D;
+  }
+}
+
+.news-sub__alert{
+  font-size: 18px;
+  line-height: 25px;
+  color: #D61B3C;
+  opacity: 0;
+  transition: .3s;
+
+  &.active{
+    opacity: 1;
+  }
+}
+
 
 @media screen and (max-width: 1440px) {
   .intro__confetti{
@@ -4086,6 +4265,56 @@ footer{
     font-size: 22px;
     line-height: 29px;
     text-align: right;
+  }
+
+  .popup-wrapper{
+    padding: 100px 20px;
+  }
+
+  .popup{
+    max-width: 392px;
+  }
+
+  .popup__image{
+    transform: unset;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+  }
+
+  .popup__text{
+    max-width: 285px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .popup__link {
+    font-size: 22px;
+    line-height: 28px;
+    border-top: 4px solid #F0C9C1;
+  }
+
+  .popup__image {
+    width: 295px;
+    height: 247px;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .news-sub__title{
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .news-sub__subtitle{
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  .news-sub__groupbox{
+    flex-direction: column;
+    max-width: 350px;
   }
 
 }
