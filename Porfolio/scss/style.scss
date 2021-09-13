@@ -1,0 +1,308 @@
+// <!-- Made by Djigit_ telegram: @Djigit34 -->
+
+/* rubik-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/rubik-v14-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/rubik-v14-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/rubik-v14-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/rubik-v14-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/rubik-v14-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/rubik-v14-latin_cyrillic-regular.svg#Rubik') format('svg'); /* Legacy iOS */
+}
+/* rubik-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/rubik-v14-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/rubik-v14-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/rubik-v14-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/rubik-v14-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/rubik-v14-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/rubik-v14-latin_cyrillic-500.svg#Rubik') format('svg'); /* Legacy iOS */
+}
+/* rubik-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/rubik-v14-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/rubik-v14-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/rubik-v14-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/rubik-v14-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/rubik-v14-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/rubik-v14-latin_cyrillic-700.svg#Rubik') format('svg'); /* Legacy iOS */
+}
+
+@mixin Rubik($size){
+  font-family: 'Rubik' !important;
+  font-weight: $size !important;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  @include Rubik(400);
+  background: #F8F8F8;
+}
+
+a{
+  color: #1168DF;
+}
+
+input, textarea{
+  background: 0;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  line-height: 130%;
+  padding: 8px 0;
+  letter-spacing: 0.5px;
+  resize: 0;
+  @include Rubik(400);
+  resize: none;
+}
+
+.wrapper{
+  max-width: 1200px;
+  padding: 0 80px 0 78px;
+  margin: 0 auto;
+}
+
+p,li{
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.intro{
+  width: 100%;
+  min-height: 114vh;
+  background: url(../img/intro-bg.png) center bottom;
+  background-size: cover;
+  
+  .wrapper{
+    padding-top: 36.76vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+}
+
+button{
+  border-radius: 61px;
+  padding: 10px 30px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  border: 0;
+  border: 3px solid #1168DF;
+  width: fit-content;
+  @include Rubik(500);
+  letter-spacing: 0.8px;
+  transition: .3s;
+  color: #1168DF;
+  background: #FFFFFF;
+
+  &:hover{
+    background: #1168DF;
+    color: #FFFFFF;
+  }
+}
+
+header{
+  padding: 15px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  background: rgba(255, 255, 255, 0.1);
+  transition: .3s;
+
+  &.not-at-top{
+    // background: rgba(255, 255, 255, 0.5);
+    // backdrop-filter: blur(6px);
+    background: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .wrapper{
+    padding: 0 67px;
+    display: flex;
+    align-items: center;
+  }
+
+  a{
+    font-weight: 500 !important;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    transition: .3s;
+    margin-right: 33px;
+
+    &:hover{
+      color: #1168DF;
+    }
+  }
+}
+
+.header__write-me{
+  border-radius: 61px;
+  padding: 16px 39px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  border: 0;
+  border: 3px solid #1168DF;
+  width: fit-content;
+  @include Rubik(500);
+  letter-spacing: 0.8px;
+  transition: .3s;  
+  background: #1168DF;
+  color: #FFFFFF;
+
+  &:hover{
+    color: #1168DF;
+    background: #FFFFFF;
+  }
+}
+
+.header__write-me{
+  margin-left: auto;
+}
+
+.intro__header{
+  max-width: 460px;
+  font-size: 52px;
+  line-height: 62px;
+  font-weight: 700 !important;
+  margin-bottom: 15px;
+}
+
+.intro__subtitle{
+  margin-bottom: 40px;
+  max-width: 414px;
+}
+
+.about-me{
+  margin-bottom: 106px;
+}
+
+.about-me__content{
+  padding-left: 42px;
+}
+
+.section__title{
+  font-size: 42px;
+  line-height: 50px;
+  color: #000000;
+  margin-bottom: 23px;
+  font-weight: 700 !important;
+}
+
+.about-me__text{
+  max-width: 649px;
+  margin-bottom: 34px;
+  padding-left: 3px;
+}
+
+.section__subtitle{
+  font-size: 30px;
+  line-height: 130%;
+  font-weight: 500 !important;
+  margin-bottom: 23px;
+}
+
+.section__list_item{
+  font-weight: 500 !important;
+  padding-left: 35px;
+  position: relative;
+
+  img{
+    margin-left: 10px;
+    transform: translate(2px, -3px);
+  }
+
+  &::after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    background: #000000;
+  }
+}
+
+.my-projects__item{
+  margin-bottom: 100px;
+}
+
+.swiper-slide{
+  width: 1044px;
+  height: 522px;
+  box-shadow: 7px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.my-project__slider{
+  margin-top: 35px;
+  margin-bottom: 37px;
+}
+
+.my-project__description{
+  max-width: 518px;
+}
+
+.contant-me{
+  margin-bottom: 218px;
+
+  .section__title{
+    margin-bottom: 14px;
+  }
+}
+
+.contact-me__form{
+  margin-top: 32px;
+  margin-bottom: 82px;
+  padding-left: 45px;
+  max-width: 525px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  label{
+    font-size: 24px;
+    line-height: 130%;
+    padding-left: 2px;
+  }
+
+  input,textarea{
+    margin-top: 2px;
+    margin-left: 3px;
+    margin-bottom: 31px;
+  }
+
+  textarea{
+    height: 90px;
+  }
+
+}
+
+.contact-me__link{
+  transition: .3s;
+
+  &:hover{
+    opacity: .8;
+  }
+
+}

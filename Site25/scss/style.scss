@@ -216,7 +216,7 @@ a{
       white-space: nowrap;
     }
 
-    &.active{
+    &:hover{
 
       ul{
         top: calc(100% + 32px);
@@ -2949,7 +2949,7 @@ footer{
           }
         }
 
-        &.active{
+        &:hover{
           span{
             color: #8C025D; 
           }

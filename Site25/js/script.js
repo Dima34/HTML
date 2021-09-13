@@ -5,23 +5,6 @@ console.log(
   'color: #c434c4; background: #eee; font-size: 30px '
 );
 
-// Child list
-
-const hasChildElems = document.querySelectorAll(".has-child");
-
-if(hasChildElems.length > 0){
-
-  hasChildElems.forEach((el, index)=>{
-
-    el.addEventListener("click", ()=>{
-    
-      el.classList.contains("active") ? el.classList.remove("active") : el.classList.add("active");
-
-    })
-
-  })
-  
-}
 
 // burger
 

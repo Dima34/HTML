@@ -144,7 +144,7 @@ a {
     #header .has-child a {
       color: #FFFFFF;
       white-space: nowrap; }
-    #header .has-child.active ul {
+    #header .has-child:hover ul {
       top: calc(100% + 32px);
       opacity: 1;
       visibility: visible; }
@@ -2153,15 +2153,15 @@ footer {
         box-shadow: unset; }
       #header .burger-slider__nav .has-child:hover span {
         color: white; }
-      #header .burger-slider__nav .has-child.active span {
+      #header .burger-slider__nav .has-child:hover span {
         color: #8C025D; }
-      #header .burger-slider__nav .has-child.active .burger__child-list {
+      #header .burger-slider__nav .has-child:hover .burger__child-list {
         max-height: 999px;
         margin-top: -15px;
         margin-bottom: 20px; }
-        #header .burger-slider__nav .has-child.active .burger__child-list li {
+        #header .burger-slider__nav .has-child:hover .burger__child-list li {
           text-align: center; }
-        #header .burger-slider__nav .has-child.active .burger__child-list a {
+        #header .burger-slider__nav .has-child:hover .burger__child-list a {
           font-size: 28px;
           line-height: 37px;
           letter-spacing: 0.02em;
