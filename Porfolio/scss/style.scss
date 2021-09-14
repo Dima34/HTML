@@ -45,6 +45,10 @@
   font-weight: $size !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -463,6 +467,10 @@ header{
 }
 
 @media screen and(max-width:425px){
+
+  .intro .wrapper {
+    padding-top: 30.76vh;
+  }
   
   header a {
     font-size: 16px;
