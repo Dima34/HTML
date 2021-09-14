@@ -153,7 +153,21 @@
 
     <script type="module">
         let swiper = new Swiper('.my-project__slider',{
-            spaceBetween: 30,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                spaceBetween: 10
+                },
+
+                425: {
+                spaceBetween: 15
+                },
+
+                // when window width is >= 640px
+                1000: {
+                spaceBetween: 30
+                }
+            }
         });
     </script>
 </body>

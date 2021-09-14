@@ -178,6 +178,7 @@ header{
 
 .header__write-me{
   margin-left: auto;
+  margin-right: 0;
 }
 
 .intro__header{
@@ -244,14 +245,23 @@ header{
   }
 }
 
+.my-projects{
+  overflow: hidden;
+}
+
 .my-projects__item{
   margin-bottom: 100px;
 }
 
 .swiper-slide{
-  width: 1044px;
-  height: 522px;
+  width: 58.38%;
+  height: 27.19%;
   box-shadow: 7px 8px 8px rgba(0, 0, 0, 0.1);
+  
+  img{
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .my-project__slider{
@@ -305,4 +315,169 @@ header{
     opacity: .8;
   }
 
+}
+
+@media screen and(max-width:1280px){
+
+  .wrapper {
+    max-width: 1200px;
+    padding: 0 50px 0 48px;
+  }
+  
+  header{
+    header .wrapper {
+      padding: 0 45px;
+    }
+
+    a{
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  .header__write-me{
+    padding: 14px 33px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .intro__header, .section__title {
+    font-size: 44px;
+    line-height: 55px;
+    margin-bottom: 10px;
+  }
+
+  p, li {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .intro__subtitle{
+    max-width: 400px;
+  }
+
+  .section__subtitle {
+    font-size: 28px;
+    line-height: 110%;
+  }
+
+  .my-project__slider {
+    margin-top: 27px;
+    margin-bottom: 30px;
+  }
+
+  .my-projects__item {
+    margin-bottom: 80px;
+  }
+
+  .about-me__content {
+    padding-left: 25px;
+  }
+
+  .contant-me {
+    margin-bottom: 168px;
+  }
+
+}
+
+@media screen and(max-width:750px){
+
+  header .wrapper {
+    padding: 0 35px;
+  }
+
+  .intro__header, .section__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  p, li {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .intro__subtitle {
+    max-width: 350px;
+  }
+
+}
+
+@media screen and(max-width:550px){
+
+  .intro__header{
+    text-align: center;
+  }
+
+  .intro__subtitle{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .intro .wrapper {
+    padding-top: 41.76vh;
+  }
+
+  .section__title {
+    font-size: 34px;
+  }
+
+  p, li {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .section__subtitle {
+    font-size: 26px;
+    line-height: 95%;
+  }
+
+  .my-projects__item {
+    margin-bottom: 60px;
+  }
+
+}
+
+@media screen and(max-width:500px){
+
+  header .wrapper {
+    padding: 0 25px;
+  }
+
+  .header__write-me {
+    padding: 12px 16px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+    padding: 0 30px 0 28px;
+  }
+
+  header {
+    padding: 20px 0;
+  }
+
+}
+
+@media screen and(max-width:425px){
+  
+  header a {
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 18px;
+  }
+
+  .about-me__content {
+    padding-left: 10px;
+  }
+
+}
+
+@media screen and(max-width:400px){
+  header .wrapper {
+    padding: 0 20px;
+  }
 }
