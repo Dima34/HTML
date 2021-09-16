@@ -66,10 +66,6 @@
          url('../fonts/open-sans-v18-latin_greek-ext_greek_cyrillic-800.svg#OpenSans') format('svg'); /* Legacy iOS */
   }
 
-body{
-    margin: 0;
-    padding: 0;
-}
 
 @mixin Open($size){
     font-family: 'Open Sans' !important;

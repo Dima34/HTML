@@ -1,0 +1,186 @@
+// <!-- Made by Djigit_ telegram: @Djigit34 -->
+
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v18-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v18-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v18-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v18-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v18-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v18-latin_cyrillic-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/montserrat-v18-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v18-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v18-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v18-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v18-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v18-latin_cyrillic-500.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+@mixin Mont($size){
+  font-family: 'Montserrat' !important;
+  font-weight: $size !important;
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+.wrapper{
+  margin: 0 auto;
+}
+
+body{
+  background: #1F1F1F;
+}
+
+// ---------------------
+// ------ INTRO --------
+// ---------------------
+
+.intro{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+
+  .wrapper{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+.intro__title{
+  margin-bottom: 30px;
+}
+
+.intro__subtitle{
+  margin-left: auto;
+  @include Mont(500);
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 46px;
+  text-align: right;
+  color: white;
+
+  span{
+    display: block;
+  }
+}
+
+.intro__arrow-down{
+  position: relative;
+  animation: shakeArrow 3s infinite ease-in-out;
+  ani
+
+  &::after{
+    position: absolute;
+    content: " ";
+    width: 150px;
+    height: 150px;
+    left: -70px;
+    top: 0;
+  }
+}
+
+@keyframes shakeArrow {
+  0%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(30px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+// ---------------------
+// ------ DINOS --------
+// ---------------------
+
+.dinos{
+  margin-top: -82px;
+  height: 1214px;
+  position: relative;
+}
+
+.dinos__dino{
+  position: absolute;
+}
+
+.dinos__dino-left{
+  left: 0;
+  top: 0;
+}
+
+.dinos__dino-center{
+  left: 50%;
+  top: 282px;
+  transform: translateX(-50%);
+}
+
+.dinos__dino-right{
+  right: -4px;
+  top: 177px;
+}
+
+
+// ---------------------
+// ----- RUNLINE -------
+// ---------------------
+
+.runline{
+  overflow: hidden;
+}
+
+.runline__line{
+  width: fit-content;
+  display: flex;
+
+  p{
+    font-size: 320px;
+    line-height: 432px;
+    border: 2px solid #FFFFFF;
+  }
+
+  .wrapper{
+    width: 886px;
+  }
+}
+
+.runline__desc{
+  display: flex;
+
+}
+
+.runline__desc_item{
+  display: flex;
+  flex-direction: column;
+  @include Mont(500);
+  font-size: 24px;
+  line-height: 120%;
+  
+  span{
+    background: white;
+  }
+}
