@@ -4,4 +4,6 @@ console.log(
   '%cTG: @Djigit34 / @yura_k18',
   'color: #c434c4; background: #eee; font-size: 30px '
 );
-
+window.addEventListener("resize", ()=>{
+  console.log(window.outerWidth);
+})
