@@ -338,7 +338,8 @@ body{
 // ---------------------
 
 .what-we-create{
-  margin-bottom: 280px;
+  padding-bottom: 140px;
+  margin-bottom: 140px;
 
   .wrapper{
     width: 1719px;
@@ -468,7 +469,8 @@ body{
 // ---------------------
 
 .how-it-works{
-  margin-bottom: 232px;
+  margin-bottom: 0;
+  padding-bottom: 130px;
   overflow: hidden;
   
   .wrapper{
@@ -540,8 +542,8 @@ body{
 
 .how-it-works__ship{
   position: absolute;
-  right: -211px;
-  bottom: -174px;
+  right: -203px;
+  bottom: -158px;
 }
 
 // ---------------------
@@ -549,12 +551,13 @@ body{
 // ---------------------
 
 .register{
-  margin-bottom: 85px;
+  padding-top: 70px;
+  margin-top: -13px;
 
   .wrapper{
     width: 991px;
     position: relative;
-    transform: translateX(33px);
+    transform: translateX(24px);
 
     &::after{
       content: url(../img/svg/register-border.svg);
@@ -581,7 +584,9 @@ body{
 // ---------------------
 
 .why-we-can{
-  margin-bottom: 224px;
+  padding-bottom: 100px;
+  margin-bottom: 124px;
+  padding-top: 49px;
 
   .wrapper{
     width: 1670px;
@@ -590,6 +595,32 @@ body{
     display: grid;
     grid-template-columns: 1fr min-content;
     position: relative;
+
+    &::after{
+      content: " ";
+      position: absolute;
+      width: 373px;
+      height: 85px;
+      top: 107px;
+      right: 227px;
+      background: #00FFCB;
+      filter: blur(90px);
+      opacity: .5;
+      border-radius: 50%;
+    }
+
+    &::before{
+      content: " ";
+      position: absolute;
+      width: 385px;
+      height: 76px;
+      top: 235px;
+      right: 131px;
+      background: #FF598E;
+      filter: blur(90px);
+      opacity: 0.8;
+      border-radius: 50%;
+    }
   }
 }
 
@@ -602,6 +633,8 @@ body{
   text-align: right;
   cursor: default;
   grid-column: 1/3;
+  position: relative;
+  z-index: 2;
 
   span{
     -webkit-text-stroke: 2px #FF598E;
@@ -662,7 +695,7 @@ body{
 // ---------------------
 
 .how-vet-works{
-  margin-bottom: 394px;
+  margin-bottom: 240px;
 
   .wrapper{
     width: 1578px;
@@ -766,7 +799,9 @@ body{
 // ---------------------
 
 .methodic{
-  margin-bottom: 295px;
+  padding-bottom: 150px;
+  margin-bottom: 145px;
+  padding-top: 150px;
 
   .wrapper{
     width: 1201px;
@@ -785,6 +820,7 @@ body{
   padding-bottom: 16px;
   margin-bottom: 68px;
   position: relative;
+  cursor: default;
 
   span{
     @include Pix();
@@ -942,6 +978,8 @@ body{
   line-height: 114.5%;
   text-align: center;
   @include Rounded();
+  position: relative;
+  z-index: 2;
 
   span{
     @include Pix();
@@ -970,6 +1008,14 @@ body{
   margin: 0 auto;
   margin-top: 44px;
   margin-bottom: 155px;
+  position: relative;
+
+  &::after{
+    content: url(../img/svg/form-arrow.png);
+    position: absolute;
+    right: -116px;
+    top: 80%;
+  }
 
   input{
     border-radius: 50px;
@@ -1007,6 +1053,7 @@ body{
     @include Rounded();
     transition: .3s;
     margin-top: 46px;
+    max-width: 500px;
 
     &:hover{
       transform: translateY(-3px);
@@ -1078,6 +1125,7 @@ body{
 // ---------------------
 
 .its-match{
+  padding-bottom: 270px;
 
   .wrapper{
     width: 1077px;
@@ -1157,6 +1205,7 @@ body{
 .join,
 .its-match{
   width: 1920px;
+  overflow: hidden;
 }
 
 // ---------------------
@@ -1705,6 +1754,7 @@ footer{
   }
 
   .join{
+    margin-bottom: 0;
 
     .wrapper{
       width: unset;
@@ -1733,6 +1783,7 @@ footer{
     display: grid;
     grid-template-rows: min-content;
     margin-top: 0;
+    margin-bottom: 0;
 
     input{
       font-size: 14px;
@@ -1819,6 +1870,30 @@ footer{
     line-height: 120%;
     margin: 0;
     text-align: center;
+  }
+
+  footer{
+    margin-top: 55px;
+    margin-bottom: 33px;
+    
+    p,a{
+      font-size: 9px;
+      line-height: 11px;
+    } 
+  
+    a{
+      text-decoration: underline;
+    }
+  }
+  
+  .footer__logo{
+    margin-bottom: 13px;
+
+    svg{
+      width: 56px;
+      height: 13px;
+    }
+    
   }
 
 }
