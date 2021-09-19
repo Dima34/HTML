@@ -65,7 +65,11 @@
 
     <div id = "dinos" class="dinos">
 
-        <img src="./img/dino-left.webp" alt="dino left" class="dinos__dino dinos__dino-left">
+        <picture  class="dinos__dino dinos__dino-left">
+            <source media="(max-width: 501px)" srcset="./img/dino-left-mobile.webp">
+            <source media="(min-width: 501px)" srcset="./img/dino-left.webp">
+            <img src="./img/dino-left.webp" alt="dino right">
+        </picture>
 
         <svg class="dinos__dino dinos__dino-center" width="790" height="633" viewBox="0 0 790 633" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M402.333 595.758C398.974 597.099 395.615 599.144 392.586 602.815C392.586 602.815 381.565 617.083 408.437 614.115C397.679 623.81 412.564 625.591 421.807 621.92C440.095 617.611 447.032 608.861 451.884 611.015C446.088 621.326 461.127 614.335 466.769 613.038" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
@@ -242,8 +246,12 @@
             </linearGradient>
             </defs>
         </svg>
-            
-        <img src="./img/dino-right.webp" alt="dino right" class="dinos__dino dinos__dino-right">
+
+        <picture  class="dinos__dino dinos__dino-right">
+            <source media="(max-width: 501px)" srcset="./img/dino-right-mobile.webp">
+            <source media="(min-width: 501px)" srcset="./img/dino-right.webp">
+            <img src="./img/dino-right.webp" alt="dino right">
+        </picture>
 
     </div>
 
