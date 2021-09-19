@@ -948,14 +948,14 @@ footer {
     margin-top: -14px;
     margin-bottom: 9px; }
   .dinos__dino-left {
-    width: 137px; }
+    content: url(../img/dino-left-mobile.webp); }
   .dinos__dino-center {
     width: 157px;
     height: 125px;
     top: 49px; }
   .dinos__dino-right {
     top: 31px;
-    width: 112px; }
+    content: url(../img/dino-right-mobile.webp); }
   .runline {
     padding: 0;
     padding-bottom: 50px; }
@@ -1226,8 +1226,9 @@ footer {
     text-align: center;
     font-family: 'Rounded'; }
   .connect-to__octopus {
-    width: 149px;
-    height: 174px;
+    content: url(../img/connect-to-mobile.webp);
+    width: unset;
+    height: unset;
     margin: 0 auto;
     margin-bottom: 35px; }
   .connect-to__table {
