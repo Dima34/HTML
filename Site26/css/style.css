@@ -848,6 +848,25 @@ body {
 .its-match {
   width: 1920px; }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 268px;
+  margin-bottom: 200px; }
+  footer p, footer a {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    font-family: 'Montserrat' !important;
+    font-weight: 400 !important;
+    color: #FFFFFF; }
+  footer a {
+    text-decoration: underline; }
+
+.footer__logo {
+  margin-bottom: 44px; }
+
 @media screen and (max-width: 501px) {
   .intro,
   .dinos,
