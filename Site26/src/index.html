@@ -11,7 +11,7 @@
     <link rel="icon" href="./img/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>  
@@ -262,9 +262,14 @@
                 <p>коллаборация</p>
                 <p>коллаборация</p>
                 <p>коллаборация</p>
+                <p>коллаборация</p>
+                <p>коллаборация</p>
+                <p>коллаборация</p>
             </div>
 
         </div>
+
+        <h2 class="runline__title-mobile">коллаборация</h2>
 
         <div class="wrapper">
             <div class="runline__desc">
@@ -349,8 +354,15 @@
                 </li>
             </ul>
 
-            <img class="how-it-works__ship" src="./img/svg/how-it-works-ship.svg" alt="ship">
-                 
+            <img class="how-it-works__ship-mobile" src="./img/svg/how-it-works-ship-mobile.svg" alt="ship">
+             
+            <div class="how-it-works__ship-container">
+                <img class="container_star" src="./img/svg/ship_star.svg" alt="ship star" class="ship-container_star">
+                <img class="container_mount" src="./img/svg/ship_mount-left.svg" alt="left mount">
+                <img class="ship-container_ship" src="./img/svg/ship_ship.svg" alt="ship">
+                <img class="container_mount" src="./img/svg/ship_mount-right.svg" alt="right mount">
+            </div>
+
         </div>
 
     </section>
@@ -381,8 +393,17 @@
                 <p>получается</p>
             </h2>
     
-            <img src="./img/svg/why-we-can_illustration.svg" alt="why we can illustration" class="why-we-can__illustration">
-    
+            <picture  class="why-we-can__illustration">
+                <source media="(max-width: 501px)" srcset="./img/svg/why-we-can_illustration-mobile.svg">
+                <source media="(min-width: 501px)" srcset="./img/svg/why-we-can_illustration.svg">
+                <img src="./img/svg/why-we-can_illustration.svg" alt="why we can illustration">
+            </picture>
+
+            <h2 class="why-we-can__header-mobile">
+                <span>почему</span>
+                у нас получается
+            </h2>
+
             <div class="why-we-can__content">В поисках рецепта идеальной коллабы мы подружились с директорами по маркетингу и участниками бренд-команд по всей России. Они помогли создать нашу базу данных о ценностях и аудитории более чем 300 брендов. На основе этой базы мы разработали методику <span>VET</span>.</div>
     
             <svg class="why-we-can__feather" width="465" height="372" viewBox="0 0 465 372" fill="none" xmlns="http://www.w3.org/2000/svg">
