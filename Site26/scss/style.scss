@@ -1282,7 +1282,61 @@ footer{
 // ------- BRIEF -------
 // ---------------------
 
+.textarea-wrapper{
+  width: 100%;
+  min-height: 76px;
+  position: relative;
+
+  &::after{
+    content: "";
+    padding: 25px 19px 19px 10px;
+  }
+}
+
+.textarea-placeholder{
+  font-size: 17px;
+  line-height: 120%;
+  @include Root();
+  color: #C4C4C4;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  padding: 19px 19px 19px 10px;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &.hide{
+    opacity: 0;
+  }
+}
+
+textarea{
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 0px 0px 15px 15px;
+  min-height: 70px;
+  width: 100%;
+  resize: none;
+  padding: 25px 19px 19px 10px;
+  font-size: 17px;
+  line-height: 120%;
+  @include Root();
+  position: relative;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &::placeholder{
+    opacity: 0;
+  }
+}
+
 .brief{
+  padding-top: 76px;
+  padding-bottom: 350px;
 
   .wrapper{
     width: 921px;
@@ -1291,15 +1345,288 @@ footer{
     padding: 0 115px;
   }
 
-  .brief__header{
-    font-size: 170px;
+  input{
+    background: 0;
+    border-radius: 0;
+    border: 0;
+    padding: 4px 0;
+    font-size: 16px;
     line-height: 120%;
-    @include Pix();
-    margin-bottom: 24px;
-    margin-top: -38px;
+    text-indent: 10px;
+    color: black;
+    border-bottom: 1px solid #C4C4C4;
+    display: block;
+    width: 100%;
+    margin-bottom: 37px;
+
+    &::placeholder{
+      color: #C4C4C4;
+      opacity: 1;
+      padding: 0;
+      transform: translateX(-9px);
+    }
+  }
+
+  select{
+    background: #FFFFFF;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 32px;
+    font-size: 17px;
+    line-height: 120%;
+    padding: 8px ;
+    padding-left: 14px;
+    padding-right: 30px;
+    color: #C4C4C4;
+    border: 0;
+    width: 195px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    position: relative;
+
+    option{
+      font-size: 17px;
+      line-height: 120%;
+
+      *
+      {
+      border-radius: 15px;
+      background-color: red;
+      }
+    }
   }
 }
 
+.brief__header{
+  font-size: 170px;
+  line-height: 120%;
+  @include Pix();
+  margin-bottom: 0px;
+  transform: translateY(-33px);
+  background: linear-gradient(90deg, #00FFCB 4.64%, #A597FD 57.32%, #FF598E 99.99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brief__subtitle{
+  @include Root();
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 22px;
+  color: #000000;
+  width: 630px;
+}
+
+.brief__contacts{
+  margin-top: 215px;
+  margin-bottom: 110px;
+
+  .brief__section-title{
+
+    &::after{
+      content: " ";
+      position: absolute;
+      width: 131px;
+      height: 76.59px;
+      left: -27px;
+      top: 0;
+      
+      background: #3FFFD8;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      filter: blur(30px);
+      opacity: .7;
+    }
+  }
+}
+
+.brief__input-group{
+  margin-bottom: 43px;
+}
+
+.brief__section-title{
+  position: relative;
+  font-size: 60px;
+  line-height: 120%;
+  color: #000000;
+  @include Pix();
+  margin-bottom: 32px;
+
+  span{
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.brief__section-label,.radio-group_title,.dropdonwn__title,.text-block__header{
+  font-size: 24px;
+  line-height: 120%;
+  @include Root();
+  color: #000000;
+  margin-bottom: 45px;
+
+  span{
+    color: #FF5289;
+  }
+}
+
+.brief__section-suntitle{
+  font-size: 14px;
+  line-height: 120%;
+  color: #000000;
+  margin-bottom: 43px;
+  @include Root();
+  margin-top: -40px;
+}
+
+.brief__brand-platform{
+  .brief__section-title::after{
+    content: " ";
+    position: absolute;
+    width: 131px;
+    height: 76.59px;
+    left: -27px;
+    top: 0;
+    
+    background: #A597FD;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    filter: blur(30px);
+    opacity: .7;
+  }
+
+  .brief__dropdown-group{
+    margin-bottom: 66px;
+  }
+
+  .textarea-wrapper{
+    margin-bottom: 54px;
+  }
+}
+
+.radio-group_title{
+  margin-bottom: 9px;
+  display: flex;
+  grid-column: 1/4;
+}
+
+.radio-group_radio{
+
+  input{
+    display: none;
+  }
+
+  label{
+    display: block;
+    min-height: 36px;
+    position: relative;
+    width: fit-content;
+    padding-left: 28px;
+    color: #C4C4C4;
+    font-size: 17px;
+    line-height: 120%;
+    @include Root();
+    display: flex;
+    flex-direction: column;
+
+    p{
+      display: block;
+      height: fit-content;
+      margin-top: 6px;
+    }
+
+    .label__content{
+      margin-top: 31px;
+      margin-left: -28px;
+    }
+
+    &::before{
+      position: absolute;
+      content: url(../img/svg/checkbox.svg);
+      left: 0;
+      top: 7px;
+    }
+
+    select{
+      pointer-events: none;
+    }
+  }
+  
+  input:checked + label{
+    color: black;
+
+    &::before{
+      content: url(../img/svg/checkbox-checked.svg);
+    }
+
+    select{
+      color: black;
+      pointer-events: all;
+    }
+  }
+}
+
+.withSelect{
+  position: relative;
+
+  &::after{
+    content: url(../img/svg/checkboc-arrow.png);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-102%);
+    width: 11px;
+    height: 11px;
+  }
+}
+
+.brief__radio-group{
+  display: grid;
+  grid-template-columns: 223px 223px 223px;
+  column-gap: 13px;
+  margin-bottom: 56px;
+}
+
+.brief__dropdown-group{
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-wrapper{
+  position: relative;
+  width: fit-content;
+
+  select{
+    width: 339px;
+    color: black;
+  }
+
+  &::before{
+    content: url(../img/svg/checkboc-arrow.png);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-70%);
+    width: 11px;
+    height: 11px;
+    z-index: 2;
+  }
+}
+
+.dropdonwn__title{
+  margin-bottom: 16px;
+}
+
+.text-block__header{
+  margin-bottom: 13px;
+   
+  span{
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+  }
+}
 
 
 @media screen and (max-width: 501px){

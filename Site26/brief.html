@@ -18,11 +18,287 @@
 
     <div class="brief">
         <div class="wrapper">
+
             <h1 class="brief__header">бриф</h1>
+            <h2 class="brief__subtitle">Поздравляем! Вы в шаге от того, чтобы вступить в закрытый клуб Colable.</h2>
+            <h2 class="brief__subtitle">Итак, путешествие в мир вашего бренда начинается! Чтобы оно успешно завершилось, просим оставить в брифе как можно больше информации. Let's go!</h2>
+
+            <section class="brief__contacts">
+                <h2 class="brief__section-title"><span>Контакты</span></h2>
+
+                <div class="brief__input-group">
+                    <h3 class="brief__section-label">Ваши<span>*</span></h3>
+                    <input type="text" placeholder="ФИО" name="yourContactsFIO" id="yourContactsFIO">
+                    <input type="text" placeholder="Должность" name="yourContactsRank" id="yourContactsRank">
+                    <input type="phone" placeholder="Телефон" name="yourContactsPhone" id="yourContactsPhone">
+                    <input type="email" placeholder="Почта" name="yourContactsEmail" id="yourContactsEmail">
+                </div>
+
+                <div class="brief__input-group">
+                    <h3 class="brief__section-label">Запасного контактного лица<span>*</span></h3>
+                    <p class="brief__section-suntitle">К кому мы можем обратиться в случае, если вы будете недоступны</p>
+                    <input type="text" placeholder="ФИО" name="yourContactsFIO" id="yourContactsFIO">
+                    <input type="text" placeholder="Должность" name="yourContactsRank" id="yourContactsRank">
+                    <input type="phone" placeholder="Телефон" name="yourContactsPhone" id="yourContactsPhone">
+                    <input type="email" placeholder="Почта" name="yourContactsEmail" id="yourContactsEmail">
+                </div>
+                
+            </section>
+
+            <section class="brief__brand-platform">
+                <h2 class="brief__section-title"><span>Платформа бренда</span></h2>
+
+                <input class="placeholderStar" type="text" placeholder="Название бренда" name="brandPlatformBrandName" id="brandPlatformBrandName">
+                <input type="text" placeholder="Сайт" name="brandPlatformSiteLink" id="brandPlatformSiteLink">
+                
+                <div class="brief__radio-group">
+                    <h3 class="radio-group_title">География<span>*</span></h3>
+
+                    <div class="radio-group_radio">
+                        <input type="radio" name="geografy" id="geografyLocal">
+                        <label for="geografyLocal" class="withSelect">
+                            <select name="geografyLocalSelect" id="geografyLocalSelect">
+                                <option value="1">ЦФО</option>
+                                <option value="1">Северо-западный ФО</option>
+                                <option value="1">Южный ФО</option>
+                                <option value="1">Северо-кавказский ФО</option>
+                                <option value="1">Приволжский ФО</option>
+                                <option value="1">Уральский ФО</option>
+                                <option value="1">Сибирский ФО</option>
+                                <option value="1">Дальневосточный ФО</option>
+                                <option selected="selected" value="1">Локальный</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="radio-group_radio">
+                        <input type="radio" name="geografy" id="geografyFederal">
+                        <label for="geografyFederal">
+                            <p>Федеральный</p> 
+                        </label>
+                    </div>
+
+                    <div class="radio-group_radio">
+                        <input type="radio" name="geografy" id="geografyMulti">
+                        <label for="geografyMulti">
+                            <p>Международный</p> 
+                        </label>
+                    </div>
+                </div>
+
+                <div class="brief__radio-group">
+                    <h3 class="radio-group_title">Вид бренда</h3>
+
+                    <div class="radio-group_radio">
+                        <input type="radio" name="brand" id="brandMother">
+                        <label for="brandMother">
+                            <p>Материнский</p>
+                            <p class="label__content">
+                                Главный носитель функциональных и эмоциональных ценностей, на основе которого возникают производные бренды
+                            </p>
+                        </label>
+                    </div>
+
+                    <div class="radio-group_radio">
+                        <input type="radio" name="brand" id="brandZone">
+                        <label for="brandZone">
+                            <p>Зонтичный</p>
+                            <p class="label__content">
+                                Предполагает использование сразу в нескольких категориях, когда под одним брендом существуют товары совершенного разного назначения, но объединенные общими потребительскими ценностями
+                            </p> 
+                        </label>
+                    </div>
+
+                    <div class="radio-group_radio">
+                        <input type="radio" name="brand" id="brandSubbrand">
+                        <label for="brandSubbrand">
+                            <p>Суббренд</p>
+                            <p class="label__content">
+                                Возникает как производный от материнского и несет аналогичные ему базовые атрибуты, но в названии имеет расширение в виде добавленных слов
+                            </p> 
+                        </label>
+                    </div>
+                </div>
+
+                <div class="brief__radio-group">
+                    <h3 class="radio-group_title">Тип бренда</h3>
+
+                    <div class="radio-group_radio">
+                        <input type="radio" name="brandType" id="brandTypeMother">
+                        <label for="brandTypeMother">
+                            <p>Потребительский</p>
+                            <p class="label__content">
+                                Cовокупность вербальных и визуальных элементов бренда, транслирующих конкурентные преимущества продукта/товара целевым группам
+                            </p>
+                        </label>
+                    </div>
+
+                    <div class="radio-group_radio">
+                        <input type="radio" name="brandType" id="brandTypeZone">
+                        <label for="brandTypeZone">
+                            <p>Корпоративный</p>
+                            <p class="label__content">
+                                Cовокупность визуальных и вербальных элементов бренда компании/предприятия, транслирующих его конкурентные преимущества/обещания целевым группам: сотрудникам, инвесторам, дистрибуторам, конечным потребителям товаров или услуг корпорации, а также обществу и государству
+                            </p> 
+                        </label>
+                    </div>
+
+                    <div class="radio-group_radio">
+                        <input type="radio" name="brandType" id="brandTypeSubbrand">
+                        <label for="brandTypeSubbrand">
+                            <p>Ритейл</p>
+                            <p class="label__content">
+                                Это образ в сознании покупателя физического места для совершения покупок
+                            </p> 
+                        </label>
+                    </div>
+                </div>
+
+                <div class="brief__dropdown-group">
+                    <h3 class="dropdonwn__title">Категория бизнеса <span>*</span></h3>
+                    
+                    <div class="dropdown-wrapper">
+                        <select name="cathegorySelect" id="cathegorySelect">
+                            <option value="1">Наука и образование</option>
+                            <option value="1">Развлечения</option>
+                            <option value="1">Логистика</option>
+                            <option value="1">Девелопмент</option>
+                            <option value="1">НКО</option>
+                            <option value="1">Искусство и культура</option>
+                            <option value="1">Мода и одежда</option>
+                            <option value="1">Хозяйственные товары</option>
+                            <option value="1">Бьюти</option>
+                            <option value="1">Бытовая химия</option>
+                            <option value="1">Профессиональные услуги</option>
+                            <option value="1">Производство и промышленность</option>
+                            <option value="1">Сервисы и технологии</option>
+                            <option value="1">E-com</option>
+                            <option value="1">HoReCa</option>
+                            <option value="1">Еда и напитки</option>
+                            <option value="1">Авто</option>
+                            <option value="1">Фарма</option>
+                            <option value="1">Медицина</option>
+                            <option value="1">Финансы</option>
+                            <option value="1">Агросектор</option>
+                            <option value="1">Детские товары</option>
+                            <option value="1">Travel</option>
+                            <option value="1">Спорт</option>
+                            <option value="1">Личный бренд</option>
+                            <option value="1">Государственный сектор</option>
+                            <option value="1">Ритейл</option>
+                            <option value="1">Страхование</option>
+                            <option value="1">Другое</option>
+                            <option selected="selected" disabled value="1">Локальный</option>
+                        </select>
+                    </div>
+                    
+                </div>
+
+                <div class="brief__text-block">
+                    <h3 class="text-block__header">Позиционирование бренда</h3>
+                    <div class="textarea-wrapper">
+                        <p class="textarea-placeholder"></p>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                    
+                </div>
+
+                <div class="brief__text-block">
+                    <h3 class="text-block__header">RTB <span>(Reasons to believe) </span> </h3>
+                    <div class="textarea-wrapper">
+                        <p class="textarea-placeholder"></p>
+                        <textarea placeholder="Reasons to believe — основные причины верить вашему бренду." name="" id=""></textarea>
+                    </div>
+                   
+                </div>
+
+                <div class="brief__text-block">
+                    <h3 class="text-block__header">Рациональные преимущества</h3>
+                    <div class="textarea-wrapper">
+                        <p class="textarea-placeholder"></p>
+                        <textarea placeholder = "Рациональные преимущества — это характеристики, которые подтверждают эмоциональные составляющие бренда. Они воздействуют на логическое мышление и убеждают потребителя в ценности бренда." name="" id=""></textarea>
+                    </div>
+                </div>
+
+                <div class="brief__text-block">
+                    <h3 class="text-block__header">Ценности</h3>
+                    <div class="textarea-wrapper">
+                        <p class="textarea-placeholder"></p>
+                        <textarea placeholder = "Придают бренду уникальность и выделяют его среди конкурентов." name="" id=""></textarea>
+                    </div>
+                </div>
+
+                <div class="brief__text-block">
+                    <h3 class="text-block__header">Характер бренда</h3>
+                    <div class="textarea-wrapper">
+                        <p class="textarea-placeholder"></p>
+                        <textarea placeholder = "Персонификация, одушевление нашего бренда. Это определенная стилистика, которой подчинены все материалы и коммуникации бренда. " name="" id=""></textarea>
+                    </div>
+                </div>
+
+                <div class="brief__text-block">
+                    <h3 class="text-block__header">Суть бренда</h3>
+                    <div class="textarea-wrapper">
+                        <p class="textarea-placeholder"></p>
+                        <textarea placeholder = "Результирующее убеждение, ключевое обещание бренда потребителю." name="" id=""></textarea>
+                    </div>
+                </div>
+
+                <div class="brief__text-block">
+                    <h3 class="text-block__header">Миссия</h3>
+                    <div class="textarea-wrapper">
+                        <p class="textarea-placeholder"></p>
+                        <textarea placeholder = "Это смысл существования компании и социальные цели, которым она служит." name="" id=""></textarea>
+                    </div>
+                </div>
+
+                <div class="brief__text-block">
+                    <h3 class="text-block__header">Tone of voice</h3>
+                    <div class="textarea-wrapper">
+                        <p class="textarea-placeholder"></p>
+                        <textarea placeholder = "Тональность, которой придерживается бренд в коммуникации со своим 
+                        потребителем." name="" id=""></textarea>
+                    </div>
+                </div>
+                
+            </section>
         </div>
     </div>
 
     <script src="./js/script.js"></script>
+    <script src="./js/autosize.min.js"></script>
+    <script>
+        autosize(document.querySelectorAll('textarea'));
+
+        const textareaWraper = document.querySelectorAll(".textarea-wrapper");
+
+        textareaWraper.forEach((el)=>{
+            
+            let innerArea = el.querySelector("textarea");
+            let innerHolder = el.querySelector(".textarea-placeholder");
+
+            innerHolder.innerHTML = innerArea.getAttribute("placeholder");
+
+            let areaHeight = Number(getComputedStyle(innerArea).height.slice(0,-2))
+            let holderHeight = Number(getComputedStyle(innerHolder).height.slice(0,-2))
+            
+            let heighter = holderHeight > areaHeight ? holderHeight : areaHeight;
+
+            el.setAttribute("minHeight", heighter);
+            el.style.height = heighter+"px";
+            innerArea.style.minHeight = heighter+"px";
+
+            innerArea.addEventListener("input", ()=>{
+                
+                areaHeight = Number(getComputedStyle(innerArea).height.slice(0,-2))
+                console.log(areaHeight);
+                el.style.height = areaHeight+"px";
+                areaHeight > holderHeight ? el.style.height = areaHeight+"px" : el.height = el.getAttribute("minHeight")+"px"; 
+
+                innerArea.value == "" ?  innerHolder.classList.remove("hide") : innerHolder.classList.add("hide") 
+            })
+        })
+    </script>
 </body>
 
 </html>

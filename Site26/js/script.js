@@ -93,7 +93,7 @@ function queryA(clas){
     tmp = document.querySelectorAll(clas);
     return tmp;
 }
-
+//
 let first = true;
 
 function scrolling(e){
