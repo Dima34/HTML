@@ -1,7 +1,7 @@
-console.log('%cDeveloped by Djigit & yur4ik96', 'color: #c434c4; font-size: 50px ');
+console.log('%cDeveloped by Djigit', 'color: #c434c4; font-size: 50px ');
 
 console.log(
-  '%cTG: @Djigit34 / @yura_k18',
+  '%cTG: @Djigit34',
   'color: #c434c4; background: #eee; font-size: 30px '
 );
 
@@ -11,14 +11,11 @@ const viewportText = "width=device-width, initial-scale=";
 
 function checkWidth(designWidth,viewportMeta,viewportText){
   if(window.outerWidth > 500){
-    
-    let scale = window.outerWidth / 1920;
+    let scale = window.outerWidth / designWidth;
     viewportMeta.setAttribute("content", viewportText+scale);
 
   } else{
-
     viewportMeta.setAttribute("content", viewportText+"1");
-
   }
 }
 
@@ -116,7 +113,6 @@ if(textWrapepr){
   const innerElemAmount = Number(textLine.querySelectorAll('p').length);
 
   const lineLength = innerElemLenght * innerElemAmount;
-  console.log(lineLength);
   
   let currPos = 0;
   textLine.style.transform = "translateX("+0+"px)";
@@ -131,4 +127,55 @@ if(textWrapepr){
       }
     }    
   }, 25);
+}
+
+//
+//  Single Range
+//
+
+const rangeLabel = document.querySelector(".single-range__label")
+
+if(rangeLabel){
+
+  const rangeLine = rangeLabel.querySelector(".range-line");
+  const range = rangeLabel.querySelector("input");
+  const MSex = document.querySelector(".percent-left");
+  const WSex = document.querySelector(".percent-right");
+
+  let rangeWidth = Number(getComputedStyle(rangeLabel).width.slice(0,-2));
+
+  let syncLine = (rangeLine, range, msex, wsex) => {
+    rangeLine.style.width = (rangeWidth) / Number(range.getAttribute("max")) * range.value + "px";
+    msex.firstChild.data = range.value + "%";
+    wsex.firstChild.data = (100 - range.value) + "%";
+  }
+
+  syncLine(rangeLine, range,MSex, WSex)
+
+  range.addEventListener("input", ()=>{
+    syncLine(rangeLine, range,MSex, WSex)
+  }) 
+  
+}
+
+//
+// girl anim
+// 
+
+const girl = document.querySelector(".illustrarion_girl")
+
+if(girl){
+
+  if(window.innerWidth > 500){
+    const firstSrc = girl.getAttribute("src")
+    const secondSrc = girl.getAttribute("secondSrc")
+    console.log(firstSrc);
+    console.log(secondSrc);
+    let changed = false
+
+    setInterval(()=>{
+      changed ? girl.setAttribute("src", firstSrc) : girl.setAttribute("src", secondSrc);
+      changed = !changed;
+    }, 1000)  
+  }
 }
