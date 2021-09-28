@@ -1412,6 +1412,10 @@ textarea{
   }
 }
 
+.brief-image{
+  position: absolute;
+}
+
 .brief{
   padding-top: 76px;
   padding-bottom: 350px;
@@ -1420,7 +1424,7 @@ textarea{
     width: 921px;
     background: #FFFFFF;
     border-radius: 50px 0px 0px 50px;
-    padding: 0 115px;
+    padding: 0 103px;
   }
 
   input{
@@ -1485,22 +1489,30 @@ textarea{
   background: linear-gradient(90deg, #00FFCB 4.64%, #A597FD 57.32%, #FF598E 99.99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: -19px;
 }
 
 .brief__subtitle{
   @include Root();
   font-size: 18px;
   line-height: 120%;
-  margin-bottom: 22px;
   color: #000000;
   width: 630px;
+  margin-bottom: 24px;
 }
 
 .brief__contacts{
-  margin-top: 215px;
-  margin-bottom: 110px;
+  margin-top: 225px;
+  margin-bottom: 162px;
+  position: relative;
+
+  .brief-image{
+    left: -405px;
+    top: -126px;
+  }
 
   .brief__section-title{
+    margin-bottom: 48px;
 
     &::after{
       content: " ";
@@ -1520,7 +1532,7 @@ textarea{
 }
 
 .brief__input-group{
-  margin-bottom: 43px;
+  margin-bottom: 80px;
 }
 
 .brief__section-title{
@@ -1542,23 +1554,36 @@ textarea{
   line-height: 120%;
   @include Root();
   color: #000000;
-  margin-bottom: 45px;
+  margin-bottom: 36px;
 
   span{
     color: #FF5289;
   }
 }
 
-.brief__section-suntitle{
+.brief__section-subtitle{
   font-size: 14px;
   line-height: 120%;
   color: #000000;
-  margin-bottom: 43px;
-  @include Root();
-  margin-top: -40px;
+  margin-bottom: 47px;
+  font-family: 'Root';
+  margin-top: -26px;
 }
 
 .brief__brand-platform{
+  position: relative;
+  margin-bottom: 194px;
+
+
+  .brief-image{ 
+    right: -498px;
+    top: -69px;
+  }
+
+  .brief__section-title{
+    margin-bottom: 50px;
+  }
+
   .brief__section-title::after{
     content: " ";
     position: absolute;
@@ -1650,6 +1675,7 @@ textarea{
   grid-template-columns: 223px 223px 223px;
   column-gap: 13px;
   margin-bottom: 56px;
+  margin-top: 67px;
 }
 
 .brief__dropdown-group{
@@ -1693,8 +1719,18 @@ textarea{
 }
 
 .brief__brand-media{
+  position: relative;
+
+  .brief-image{
+    left: -539px;
+    top: -147px;
+  }
+
   .brief__section-title{
     white-space: nowrap;
+    margin-bottom: 40px;
+    margin-bottom: 53px;
+    
   }
 }
 

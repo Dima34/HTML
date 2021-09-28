@@ -24,6 +24,7 @@
             <h2 class="brief__subtitle">Итак, путешествие в мир вашего бренда начинается! Чтобы оно успешно завершилось, просим оставить в брифе как можно больше информации. Let's go!</h2>
 
             <section class="brief__contacts">
+                <img src="./img/brief-contacts__image.svg" alt="contacts image" class="brief-image">
                 <h2 class="brief__section-title"><span>Контакты</span></h2>
 
                 <div class="brief__input-group">
@@ -36,7 +37,7 @@
 
                 <div class="brief__input-group">
                     <h3 class="brief__section-label">Запасного контактного лица<span>*</span></h3>
-                    <p class="brief__section-suntitle">К кому мы можем обратиться в случае, если вы будете недоступны</p>
+                    <p class="brief__section-subtitle">К кому мы можем обратиться в случае, если вы будете недоступны</p>
                     <input type="text" placeholder="ФИО" name="yourContactsFIO" id="yourContactsFIO">
                     <input type="text" placeholder="Должность" name="yourContactsRank" id="yourContactsRank">
                     <input type="phone" placeholder="Телефон" name="yourContactsPhone" id="yourContactsPhone">
@@ -46,6 +47,7 @@
             </section>
 
             <section class="brief__brand-platform">
+                <img src="./img/brief-platform__turtle.svg" alt="contacts image" class="brief-image">
                 <h2 class="brief__section-title"><span>Платформа бренда</span></h2>
 
                 <input class="placeholderStar" type="text" placeholder="Название бренда" name="brandPlatformBrandName" id="brandPlatformBrandName">
@@ -264,6 +266,7 @@
             </section>
 
             <section class="brief__brand-media">
+                <img src="./img/brief-media__image.svg" alt="contacts image" class="brief-image">
                 <h2 class="brief__section-title">Медиаресурсы бренда</h2>
 
                 <div class="brand-media_content">
@@ -378,7 +381,7 @@
             </section>
 
             <section class="brief__core">
-                <h2 class="brief__section-title">Медиаресурсы бренда <span>*</span></h2>
+                <h2 class="brief__section-title">Ядро целевой аудитории <span>*</span></h2>
 
                 <div class="core_range-wrapper">
                     <h3 class="brief-content-title">
@@ -386,16 +389,100 @@
                     </h3>
 
                     <div class="core_range">
-                        <p>M</p>
+                        <p class="percent_sex">M</p>
                         <p class="percent percent-left">30%</p>
                         <label class="single-range__label" data-foo="20" for="coreRange">
                             <div class="range-line"></div>
                             <input type="range" name="coreRange" id="coreRange" min="0" max="100" step="1" value="25">
                         </label>
                         <p class="percent percent-right">70%</p>
-                        <p>Ж</p>
+                        <p class="percent_sex">Ж</p>
+                    </div>
+
+                    <div class="brief_radio-group">
+                        <h2 class="text-block__header">Семейное положение</h2>
+
+                        <input type="radio" name = "coreMarriage" id = "coreInMarriage">
+                        <label for="coreInMarriage">В браке</label>
+                        <input type="radio" name = "coreMarriage" id = "coreNotInMarriage">
+                        <label for="coreNotInMarriage">Не в браке</label>
+                    </div>
+
+                    <div class="brief__dropdown-group">
+                        <h3 class="dropdonwn__title">Уровень дохода</h3>
+                        
+                        <div class="dropdown-wrapper">
+                            <select name="cathegorySelect" id="cathegorySelect">
+                                <option value="1">Нижний средний</option>
+                                <option value="1">Средний класс</option>
+                                <option value="1">Верхний средний</option>
+                                <option value="1">Высокий доход</option>
+                                <option value="1">Бедные</option>
+                                <option selected="selected" disabled="" value="1">Уровень дохода</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+
+                    <div class="brief__dropdown-group">
+                        <h3 class="dropdonwn__title">Род занятий</h3>
+                        
+                        <div class="dropdown-wrapper">
+                            <select name="cathegorySelect" id="cathegorySelect">
+                                <option value="1">Руководители среднего звена</option>
+                                <option value="1">Топ-менеджеры</option>
+                                <option value="1">Специалисты</option>
+                                <option value="1">Service</option>
+                                <option value="1">Пенсионеры</option>
+                                <option value="1">В декрете</option>
+                                <option value="1">Неработающие</option>
+                                <option selected="selected" disabled="" value="1">Локальный</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+
+                    <div class="brief__text-block">
+                        <h3 class="text-block__header">Драйверы <span>(причины, мотивы покупки)</span></h3>
+                        <div class="textarea-wrapper" minheight="71">
+                            <p class="textarea-placeholder">.</p>
+                            <textarea name="" id="" style="overflow: hidden; overflow-wrap: break-word; height: 86px; min-height: 86px;"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="brief__text-block">
+                        <h3 class="text-block__header">Барьеры <span>(причины отказа от покупки, сдерживающие факторы)</span></h3>
+                        <div class="textarea-wrapper" minheight="71">
+                            <p class="textarea-placeholder"></p>
+                            <textarea name="" id="" style="overflow: hidden; overflow-wrap: break-word; height: 86px; min-height: 86px;"></textarea>
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <section class="brief_total">
+                <h2 class="brief__section-title">Прочее</h2>
+                <img src="./img/brief-summary_image.svg" alt="contacts image" class="brief-image">
+
+                <div class="brief__text-block">
+                    <div class="textarea-wrapper">
+                        <p class="textarea-placeholder"></p>
+                        <textarea placeholder = "" name="" id=""></textarea>
+                    </div>
+                </div>
+
+                <div class="brief_radio-group">
+                    <h2 class="text-block__header">Хотите получать новости проекта и быть 
+                        в курсе о новых брендах в базе Colable? <span>*</span></h2>
+
+                    <input type="radio" name="totalNews" id="totalYesNews">
+                    <label for="totalYesNews">Да</label>
+                    <input type="radio" checked name="totalNews" id="totalNoNews">
+                    <label for="totalNoNews">Нет</label>
+                </div>
+
+                <button class="total-submit">Зарегистрироваться</button>
+                <p class="total-submit_alert">Нажимая на кнопку, вы даете согласие на обработку персональных данных.</p>
             </section>
         </div>
     </div>
