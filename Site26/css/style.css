@@ -982,7 +982,8 @@ footer {
   margin-bottom: 44px; }
 
 .select-wrapper {
-  position: relative; }
+  position: relative;
+  width: fit-content; }
   .select-wrapper::after {
     content: "";
     background: url(../img/svg/checkboc-arrow.png);
@@ -1144,6 +1145,10 @@ textarea {
   .brief__section-title span {
     position: relative;
     z-index: 2; }
+  .brief__section-title span.red {
+    margin-left: -20px;
+    font-family: 'Root';
+    color: #FF5289; }
 
 .brief__section-label, .radio-group_title, .dropdonwn__title, .text-block__header {
   font-size: 24px;
@@ -1268,7 +1273,8 @@ textarea {
     color: black; }
 
 .brief__brand-media {
-  position: relative; }
+  position: relative;
+  margin-bottom: 136px; }
   .brief__brand-media .brief-image {
     left: -539px;
     top: -147px; }
@@ -1276,6 +1282,18 @@ textarea {
     white-space: nowrap;
     margin-bottom: 40px;
     margin-bottom: 53px; }
+    .brief__brand-media .brief__section-title::after {
+      content: " ";
+      position: absolute;
+      width: 131px;
+      height: 76.59px;
+      left: -27px;
+      top: 0;
+      background: #3FFFD8;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      filter: blur(30px);
+      opacity: .7; }
 
 .media_contnet-item {
   display: grid;
@@ -1299,9 +1317,33 @@ textarea {
     margin-bottom: 0;
     margin-left: 19px; }
 
+.brief__core {
+  margin-bottom: 125px; }
+  .brief__core .brief__section-title {
+    margin-bottom: 40px; }
+    .brief__core .brief__section-title::after {
+      content: " ";
+      position: absolute;
+      width: 131px;
+      height: 76.59px;
+      left: -27px;
+      top: 0;
+      background: #A597FD;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      filter: blur(30px);
+      opacity: .7; }
+  .brief__core .brief_radio-group, .brief__core .brief__dropdown-group, .brief__core .brief__text-block {
+    margin-bottom: 50px; }
+
+.core_range-wrapper .text-block__header {
+  margin-bottom: 19px; }
+
 .core_range {
   align-content: center;
-  display: flex; }
+  display: flex;
+  max-width: 693px;
+  margin-bottom: 61px; }
   .core_range label {
     display: block;
     position: relative;
@@ -1339,7 +1381,8 @@ textarea {
         /* 1 */
         height: 25px;
         background: url(../img/svg/single-range_item.svg);
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        transform: translateY(4px); }
 
 .percent_sex {
   font-size: 24px;
@@ -1397,8 +1440,91 @@ textarea {
   .brief_radio-group input:checked + label::after {
     background: url(../img/svg/checkbox-checked.svg) center; }
 
+.double-radio__container {
+  display: flex;
+  align-items: center; }
+  .double-radio__container p {
+    font-size: 24px;
+    line-height: 29px;
+    color: black;
+    font-family: 'Root'; }
+
+.double-radio__container_from {
+  margin-right: 30px; }
+
+.double-radio__container_to {
+  margin-left: 30px; }
+
+.brief_double-radio-group {
+  margin-bottom: 51px; }
+  .brief_double-radio-group .dual-range {
+    --range-size:20px;
+    --range-width:580px;
+    --handle-size:1.3;
+    height: 3px;
+    width: var(--range-width);
+    background: #C4C4C4;
+    border-radius: 50px;
+    position: relative;
+    user-select: none; }
+    .brief_double-radio-group .dual-range .highlight {
+      position: absolute;
+      height: 3px;
+      width: calc(calc(var(--x-2) - var(--x-1)) + calc(var(--range-size) * var(--handle-size)));
+      left: var(--x-1);
+      background: linear-gradient(90deg, #00FFCB 4.64%, #A597FD 57.32%, #FF598E 99.99%);
+      z-index: 1;
+      border-radius: 50px; }
+    .brief_double-radio-group .dual-range .handle {
+      width: calc(var(--range-size) * var(--handle-size));
+      height: calc(var(--range-size) * var(--handle-size));
+      background: #fff;
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid grey;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      cursor: grab; }
+      .brief_double-radio-group .dual-range .handle:active {
+        cursor: grabbing; }
+      .brief_double-radio-group .dual-range .handle.left {
+        left: var(--x-1); }
+        .brief_double-radio-group .dual-range .handle.left::after {
+          color: #00FFCB; }
+      .brief_double-radio-group .dual-range .handle.right {
+        left: var(--x-2); }
+        .brief_double-radio-group .dual-range .handle.right::after {
+          color: #FF598E; }
+      .brief_double-radio-group .dual-range .handle::after {
+        content: attr(data-value);
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 50%;
+        font-size: 14px;
+        line-height: 120%;
+        font-family: 'Root';
+        transform: translateX(-50%);
+        width: 49px;
+        height: 34px;
+        background: url(../img/dual-range-sky.png) center 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+
 .core-section {
   margin-bottom: 58px; }
+
+.brief_total {
+  padding-bottom: 253px;
+  position: relative; }
+  .brief_total .brief-image {
+    right: -477px;
+    top: -45px; }
+  .brief_total .brief__text-block {
+    margin-bottom: 72px; }
+  .brief_total .brief_radio-group {
+    margin-bottom: 120px; }
 
 .total-submit {
   background: linear-gradient(90deg, #00FFCB 4.64%, #A597FD 57.32%, #FF598E 99.99%);
@@ -1423,6 +1549,7 @@ textarea {
   color: #000000;
   width: 351px;
   text-align: center;
+  display: block;
   margin: 0 auto;
   margin-top: 15px; }
 

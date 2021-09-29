@@ -8,16 +8,15 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=1920">
     <title>colable - Brief</title>
-    <link rel="icon" href="./img/favicon.jpeg" type="image/jpeg">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="/img/favicon.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
 </head>
 
 <body>  
 
     <div class="brief">
-        <form action="" method = "POST">
         <div class="wrapper">
 
             <h1 class="brief__header">бриф</h1>
@@ -39,10 +38,10 @@
                 <div class="brief__input-group">
                     <h3 class="brief__section-label">Запасного контактного лица<span>*</span></h3>
                     <p class="brief__section-subtitle">К кому мы можем обратиться в случае, если вы будете недоступны</p>
-                    <input type="text" placeholder="ФИО" name="secondContactsFIO" id="secondContactsFIO">
-                    <input type="text" placeholder="Должность" name="secondContactsRank" id="secondContactsRank">
-                    <input type="phone" placeholder="Телефон" name="secondContactsPhone" id="secondContactsPhone">
-                    <input type="email" placeholder="Почта" name="secondContactsEmail" id="secondContactsEmail">
+                    <input type="text" placeholder="ФИО" name="yourContactsFIO" id="yourContactsFIO">
+                    <input type="text" placeholder="Должность" name="yourContactsRank" id="yourContactsRank">
+                    <input type="phone" placeholder="Телефон" name="yourContactsPhone" id="yourContactsPhone">
+                    <input type="email" placeholder="Почта" name="yourContactsEmail" id="yourContactsEmail">
                 </div>
                 
             </section>
@@ -482,15 +481,14 @@
                     <label for="totalNoNews">Нет</label>
                 </div>
 
-                <button type="submit" class="total-submit">Зарегистрироваться</button>
+                <button class="total-submit">Зарегистрироваться</button>
                 <p class="total-submit_alert">Нажимая на кнопку, вы даете согласие на обработку персональных данных.</p>
             </section>
         </div>
-        </form>
     </div>
 
-    <script src="./js/script.js"></script>
-    <script src="./js/autosize.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/autosize.min.js"></script>
     <script>
         autosize(document.querySelectorAll('textarea'));
 

@@ -157,7 +157,7 @@
                 </div>
 
                 <div class="brief__dropdown-group">
-                    <h3 class="dropdonwn__title">Категория бизнеса <span>*</span></h3>
+                    <h3 class="dropdonwn__title">Категория бизнеса <span >*</span></h3>
                     
                     <div class="dropdown-wrapper">
                         <select name="cathegorySelect" id="cathegorySelect">
@@ -267,7 +267,7 @@
 
             <section class="brief__brand-media">
                 <img src="./img/brief-media__image.svg" alt="contacts image" class="brief-image">
-                <h2 class="brief__section-title">Медиаресурсы бренда</h2>
+                <h2 class="brief__section-title"><span>Медиаресурсы бренда</span> </h2>
 
                 <div class="brand-media_content">
                     <div class="media_contnet-item">
@@ -281,7 +281,7 @@
                             <input type="text" placeholder="Ссылка на Instagram">
                         </div>
 
-                        <div class="content-item_select-wrapper">
+                        <div class="select-wrapper">
                             <select name="instSubscribersAmount" id="instSubscribersAmount">
                                 <option value="1">больше  100 000</option>
                                 <option value="1">50 000-100 000</option>
@@ -301,7 +301,7 @@
                             <input type="text" placeholder="Ссылка на Facebook">
                         </div>
 
-                        <div class="content-item_select-wrapper">
+                        <div class="select-wrapper">
                             <select name="fbSubscribersAmount" id="fbSubscribersAmount">
                                 <option value="1">больше  100 000</option>
                                 <option value="1">50 000-100 000</option>
@@ -322,7 +322,7 @@
                             <input type="text" placeholder="Ссылка на YouTube">
                         </div>
 
-                        <div class="content-item_select-wrapper">
+                        <div class="select-wrapper">
                             <select name="ytSubscribersAmount" id="ytSubscribersAmount">
                                 <option value="1">больше  100 000</option>
                                 <option value="1">50 000-100 000</option>
@@ -343,7 +343,7 @@
                             <input type="text" placeholder="Ссылка на Telegram">
                         </div>
 
-                        <div class="content-item_select-wrapper">
+                        <div class="select-wrapper">
                             <select name="tgSubscribersAmount" id="tgSubscribersAmount">
                                 <option value="1">больше  100 000</option>
                                 <option value="1">50 000-100 000</option>
@@ -363,7 +363,7 @@
                             <input type="text" placeholder="Ссылка на Twitter">
                         </div>
 
-                        <div class="content-item_select-wrapper">
+                        <div class="select-wrapper">
                             <select name="tSubscribersAmount" id="tSubscribersAmount">
                                 <option value="1">больше  100 000</option>
                                 <option value="1">50 000-100 000</option>
@@ -381,10 +381,10 @@
             </section>
 
             <section class="brief__core">
-                <h2 class="brief__section-title">Ядро целевой аудитории <span>*</span></h2>
+                <h2 class="brief__section-title"><span>Ядро целевой аудитории</span> <span class="red">*</span></h2>
 
                 <div class="core_range-wrapper">
-                    <h3 class="brief-content-title">
+                    <h3 class="text-block__header">
                         Процентный состав мужчин и женщин
                     </h3>
 
@@ -397,6 +397,21 @@
                         </label>
                         <p class="percent percent-right">70%</p>
                         <p class="percent_sex">Ж</p>
+                    </div>
+
+                    <div class="brief_double-radio-group">
+                        <h2 class="text-block__header">Возраст</h2>
+
+                        <div class="double-radio__container">
+                            <p class="double-radio__container_from">От</p>
+                            <div class="dual-range" data-min="0" data-max="100">
+                                <span class="handle left"></span>
+                                <span class="highlight"></span>
+                                <span class="handle right"></span>
+                            </div>
+                            <p class="double-radio__container_to">До</p>
+                        </div>
+                        
                     </div>
 
                     <div class="brief_radio-group">
@@ -467,7 +482,7 @@
                 <div class="brief__text-block">
                     <div class="textarea-wrapper">
                         <p class="textarea-placeholder"></p>
-                        <textarea placeholder = "" name="" id=""></textarea>
+                        <textarea placeholder = "О чём ещё вы хотели бы упомянуть?" name="" id=""></textarea>
                     </div>
                 </div>
 
