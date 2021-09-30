@@ -9,6 +9,7 @@ const designWidth = 1920;
 const viewportMeta = document.querySelector("meta[name='viewport']");
 const viewportText = "width=device-width, initial-scale=";
 
+
 function checkWidth(designWidth,viewportMeta,viewportText){
   if(window.outerWidth > 500){
     let scale = window.outerWidth / designWidth;
@@ -19,11 +20,14 @@ function checkWidth(designWidth,viewportMeta,viewportText){
   }
 }
 
-checkWidth(designWidth,viewportMeta,viewportText);
-
-window.addEventListener("resize", ()=>{
+if(!document.querySelector(".privacy__main")){
   checkWidth(designWidth,viewportMeta,viewportText);
-})
+
+  window.addEventListener("resize", ()=>{
+    checkWidth(designWidth,viewportMeta,viewportText);
+  })
+
+}
 
 //
 //  Animation
