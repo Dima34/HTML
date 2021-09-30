@@ -1572,6 +1572,11 @@ textarea {
   display: block;
   margin: 0 auto;
   margin-top: 15px; }
+  .total-submit_alert a {
+    font-size: inherit;
+    line-height: inherit;
+    color: #00FFCB;
+    text-decoration: un; }
 
 .privacy__main {
   padding: 76px 10px 115px 10px; }
@@ -2103,7 +2108,7 @@ textarea {
       content: " ";
       height: 320px;
       background: #1F1F1F;
-      width: 120vw;
+      width: 180vw;
       left: -50%;
       top: 0;
       position: absolute; }
@@ -2137,7 +2142,7 @@ textarea {
       content: " ";
       height: 320px;
       background: #1F1F1F;
-      width: 120vw;
+      width: 180vw;
       left: -50%;
       top: 0;
       position: absolute; }
@@ -2184,7 +2189,7 @@ textarea {
       content: " ";
       height: 320px;
       background: #1F1F1F;
-      width: 120vw;
+      width: 180vw;
       left: -50%;
       top: 0;
       position: absolute; }
@@ -2250,7 +2255,7 @@ textarea {
       content: " ";
       height: 320px;
       background: #1F1F1F;
-      width: 120vw;
+      width: 180vw;
       left: -50%;
       top: 0;
       position: absolute; }
