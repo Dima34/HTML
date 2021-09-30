@@ -17,7 +17,6 @@
 <body>  
 
     <div class="brief">
-        <form action="" method = "POST">
         <div class="wrapper">
 
             <h1 class="brief__header">бриф</h1>
@@ -39,10 +38,10 @@
                 <div class="brief__input-group">
                     <h3 class="brief__section-label">Запасного контактного лица<span>*</span></h3>
                     <p class="brief__section-subtitle">К кому мы можем обратиться в случае, если вы будете недоступны</p>
-                    <input type="text" placeholder="ФИО" name="secondContactsFIO" id="secondContactsFIO">
-                    <input type="text" placeholder="Должность" name="secondContactsRank" id="secondContactsRank">
-                    <input type="phone" placeholder="Телефон" name="secondContactsPhone" id="secondContactsPhone">
-                    <input type="email" placeholder="Почта" name="secondContactsEmail" id="secondContactsEmail">
+                    <input type="text" placeholder="ФИО" name="yourContactsFIO" id="yourContactsFIO">
+                    <input type="text" placeholder="Должность" name="yourContactsRank" id="yourContactsRank">
+                    <input type="phone" placeholder="Телефон" name="yourContactsPhone" id="yourContactsPhone">
+                    <input type="email" placeholder="Почта" name="yourContactsEmail" id="yourContactsEmail">
                 </div>
                 
             </section>
@@ -158,7 +157,7 @@
                 </div>
 
                 <div class="brief__dropdown-group">
-                    <h3 class="dropdonwn__title">Категория бизнеса <span>*</span></h3>
+                    <h3 class="dropdonwn__title">Категория бизнеса <span >*</span></h3>
                     
                     <div class="dropdown-wrapper">
                         <select name="cathegorySelect" id="cathegorySelect">
@@ -191,7 +190,7 @@
                             <option value="1">Ритейл</option>
                             <option value="1">Страхование</option>
                             <option value="1">Другое</option>
-                            <option selected="selected" disabled value="1">Локальный</option>
+                            <option selected="selected" disabled value="1">Выберите категорию</option>
                         </select>
                     </div>
                     
@@ -268,7 +267,7 @@
 
             <section class="brief__brand-media">
                 <img src="./img/brief-media__image.svg" alt="contacts image" class="brief-image">
-                <h2 class="brief__section-title">Медиаресурсы бренда</h2>
+                <h2 class="brief__section-title"><span>Медиаресурсы бренда</span> </h2>
 
                 <div class="brand-media_content">
                     <div class="media_contnet-item">
@@ -282,7 +281,7 @@
                             <input type="text" placeholder="Ссылка на Instagram">
                         </div>
 
-                        <div class="content-item_select-wrapper">
+                        <div class="select-wrapper">
                             <select name="instSubscribersAmount" id="instSubscribersAmount">
                                 <option value="1">больше  100 000</option>
                                 <option value="1">50 000-100 000</option>
@@ -302,7 +301,7 @@
                             <input type="text" placeholder="Ссылка на Facebook">
                         </div>
 
-                        <div class="content-item_select-wrapper">
+                        <div class="select-wrapper">
                             <select name="fbSubscribersAmount" id="fbSubscribersAmount">
                                 <option value="1">больше  100 000</option>
                                 <option value="1">50 000-100 000</option>
@@ -323,7 +322,7 @@
                             <input type="text" placeholder="Ссылка на YouTube">
                         </div>
 
-                        <div class="content-item_select-wrapper">
+                        <div class="select-wrapper">
                             <select name="ytSubscribersAmount" id="ytSubscribersAmount">
                                 <option value="1">больше  100 000</option>
                                 <option value="1">50 000-100 000</option>
@@ -344,7 +343,7 @@
                             <input type="text" placeholder="Ссылка на Telegram">
                         </div>
 
-                        <div class="content-item_select-wrapper">
+                        <div class="select-wrapper">
                             <select name="tgSubscribersAmount" id="tgSubscribersAmount">
                                 <option value="1">больше  100 000</option>
                                 <option value="1">50 000-100 000</option>
@@ -364,7 +363,7 @@
                             <input type="text" placeholder="Ссылка на Twitter">
                         </div>
 
-                        <div class="content-item_select-wrapper">
+                        <div class="select-wrapper">
                             <select name="tSubscribersAmount" id="tSubscribersAmount">
                                 <option value="1">больше  100 000</option>
                                 <option value="1">50 000-100 000</option>
@@ -382,15 +381,15 @@
             </section>
 
             <section class="brief__core">
-                <h2 class="brief__section-title">Ядро целевой аудитории <span>*</span></h2>
+                <h2 class="brief__section-title"><span>Ядро целевой аудитории</span> <span class="red">*</span></h2>
 
                 <div class="core_range-wrapper">
-                    <h3 class="brief-content-title">
+                    <h3 class="text-block__header">
                         Процентный состав мужчин и женщин
                     </h3>
 
                     <div class="core_range">
-                        <p class="percent_sex">M</p>
+                        <p class="percent_sex m">M</p>
                         <p class="percent percent-left">30%</p>
                         <label class="single-range__label" data-foo="20" for="coreRange">
                             <div class="range-line"></div>
@@ -398,6 +397,21 @@
                         </label>
                         <p class="percent percent-right">70%</p>
                         <p class="percent_sex">Ж</p>
+                    </div>
+
+                    <div class="brief_double-radio-group">
+                        <h2 class="text-block__header">Возраст</h2>
+
+                        <div class="double-radio__container">
+                            <p class="double-radio__container_from">От</p>
+                            <div class="dual-range" data-min="0" data-max="100">
+                                <span class="handle left"></span>
+                                <span class="highlight"></span>
+                                <span class="handle right"></span>
+                            </div>
+                            <p class="double-radio__container_to">До</p>
+                        </div>
+                        
                     </div>
 
                     <div class="brief_radio-group">
@@ -462,13 +476,13 @@
             </section>
 
             <section class="brief_total">
-                <h2 class="brief__section-title">Прочее</h2>
+                <h2 class="brief__section-title"><span>Прочее</span></h2>
                 <img src="./img/brief-summary_image.svg" alt="contacts image" class="brief-image">
 
                 <div class="brief__text-block">
                     <div class="textarea-wrapper">
                         <p class="textarea-placeholder"></p>
-                        <textarea placeholder = "" name="" id=""></textarea>
+                        <textarea placeholder = "О чём ещё вы хотели бы упомянуть?" name="" id=""></textarea>
                     </div>
                 </div>
 
@@ -476,17 +490,16 @@
                     <h2 class="text-block__header">Хотите получать новости проекта и быть 
                         в курсе о новых брендах в базе Colable? <span>*</span></h2>
 
-                    <input type="radio" name="totalNews" id="totalYesNews">
+                    <input type="radio" checked name="totalNews" id="totalYesNews">
                     <label for="totalYesNews">Да</label>
-                    <input type="radio" checked name="totalNews" id="totalNoNews">
+                    <input type="radio" name="totalNews" id="totalNoNews">
                     <label for="totalNoNews">Нет</label>
                 </div>
 
-                <button type="submit" class="total-submit">Зарегистрироваться</button>
+                <button class="total-submit">Зарегистрироваться</button>
                 <p class="total-submit_alert">Нажимая на кнопку, вы даете согласие на обработку персональных данных.</p>
             </section>
         </div>
-        </form>
     </div>
 
     <script src="./js/script.js"></script>
