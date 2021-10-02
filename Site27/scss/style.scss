@@ -20,6 +20,10 @@ body{
   text-transform: uppercase;
 }
 
+h2{
+
+}
+
 .intro{
   background: url(../img/1.jpg) center;
   background-size: cover;
@@ -59,7 +63,7 @@ body{
   margin-right: 10.5vw;
   text-align: right;
   color: #a9ebff;
-  text-shadow: black 35px 37px 35px;
+  text-shadow: black 35px 37px 22px;
 
   span{
     font-size: 5.8vw;
@@ -93,7 +97,7 @@ body{
   font-size: 3.4vw;
   line-height: 4.45vw;
   letter-spacing: 0.18vw;
-  text-shadow: black .2vw .2vw 40px;
+  text-shadow: black .2vw .2vw 20px;
   
 
   &::after{
@@ -145,13 +149,64 @@ body{
   color: #a9ebff;
   font-size: 6.2vw;
   margin-top: 10.11vw;
-  text-shadow: black 1px 1px 30px;
+  text-shadow: black 1px 1px 15px;
 }
 
 .vision__subtitle{
   font-size: 3.64vw; 
-  margin-top: 10.11vw;
-  text-shadow: black 1px 1px 30px;
+  margin-top: 2.7vw;
+  text-shadow: black 1px 1px 15px;
   color: white;
 }
+
+.vision__sescription{
+  font-size: 2.8vw; 
+  margin-top: 3.4vw;
+  text-shadow: black 1px 1px 15px;
+  color: white;
+}
+
+.royality{
+  background: url(../img/4.jpg) center;
+  background-size: cover;
+  margin: 0 auto;
+  width: 100vw;
+  aspect-ratio: 128/115;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.royality__title{
+  margin-top: auto;
+  display: block;
+  color: #a9ebff;
+  font-size: 6.2vw;
+  text-shadow: black 1px 1px 15px;
+}
+
+.royality__subtitle{
+  font-size: 3.64vw; 
+  margin-top: 2.7vw;
+  text-shadow: black 1px 1px 15px;
+  color: white;
+  margin-bottom: 14vw;
+}
+
+.video{
+  margin: 0 auto;
+  width: 100vw;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  iframe{
+    width: 100vw;
+    height: 100%;
+  }
+}
+
 
