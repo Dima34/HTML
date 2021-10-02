@@ -5,13 +5,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <meta name="viewport" content="width=1920">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>colable - Brief</title>
     <link rel="icon" href="./img/favicon.jpeg" type="image/jpeg">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
 </head>
 
 <body>  
@@ -405,11 +403,13 @@
                         <div class="double-radio__container">
                             <p class="double-radio__container_from">От</p>
                             <div class="dual-range" data-min="0" data-max="100">
-                                <span class="handle left"></span>
+                                <span toId = "ageFrom" class="handle left"></span>
                                 <span class="highlight"></span>
-                                <span class="handle right"></span>
+                                <span toId = "ageTo" class="handle right"></span>
                             </div>
                             <p class="double-radio__container_to">До</p>
+                            <input type="range" name="ageFrom" id="ageFrom" style="display: none;">
+                            <input type="range" name="ageTo" id="ageTo" style="display: none;">
                         </div>
                         
                     </div>
@@ -507,6 +507,20 @@
 
     <script src="./js/script.js"></script>
     <script src="./js/autosize.min.js"></script>
+
+    <script>
+        const html = document.querySelector("html")
+
+        function checkWidth(){
+            (window.innerWidth < 851 && window.innerWidth > 501) ? html.style.fontSize = ((window.innerWidth) / 851) + "px" : html.style.fontSize = "1px";
+        }
+
+        checkWidth()
+
+        window.addEventListener("resize", checkWidth)
+    </script>
+
+
     <script>
         autosize(document.querySelectorAll('textarea'));
 

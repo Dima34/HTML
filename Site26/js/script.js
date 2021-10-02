@@ -5,29 +5,6 @@ console.log(
   'color: #c434c4; background: #eee; font-size: 30px '
 );
 
-const designWidth = 1920;
-const viewportMeta = document.querySelector("meta[name='viewport']");
-const viewportText = "width=device-width, initial-scale=";
-
-
-function checkWidth(designWidth,viewportMeta,viewportText){
-  if(window.outerWidth > 500){
-    let scale = window.outerWidth / designWidth;
-    viewportMeta.setAttribute("content", viewportText+scale);
-
-  } else{
-    viewportMeta.setAttribute("content", viewportText+"1");
-  }
-}
-
-if(!document.querySelector(".privacy__main")){
-  checkWidth(designWidth,viewportMeta,viewportText);
-
-  window.addEventListener("resize", ()=>{
-    checkWidth(designWidth,viewportMeta,viewportText);
-  })
-
-}
 
 //
 //  Animation
@@ -256,7 +233,7 @@ class dualRangeSlider {
 		}
 		this.activeHandle.dataset.value = this.calcHandleValue((newX + handleRect.width/2) / parentRect.width)
 		this.range.style.setProperty(property, newX + "px");
-
+    document.getElementById(this.activeHandle.getAttribute("toId")).value = this.calcHandleValue((newX + handleRect.width/2) / parentRect.width)
 	}
 	
 	calcHandleValue(percentage) {
