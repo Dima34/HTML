@@ -149,13 +149,14 @@ input[type="range"] {
     align-items: center;
     justify-content: center;
     height: 100%;
-    // margin-top: 17.21vh;
     margin-top: 2%;
   }
 }
 
 .intro__title{
   margin-bottom: 30rem;
+  width: 930rem;
+  height: 212rem;
 }
 
 .intro__subtitle{
@@ -175,7 +176,11 @@ input[type="range"] {
 .intro__arrow-down{
   position: relative;
   animation: shakeArrow 3s infinite ease-in-out;
-  ani
+
+  svg{
+    width: 12rem;
+    height: 145rem;
+  }
 
   &::after{
     position: absolute;
@@ -215,12 +220,18 @@ input[type="range"] {
 
 .dinos__dino{
   position: absolute;
-  // animation-timing-function: ease-in-out;
 }
 
 .dinos__dino-left{
   left: 0;
   top: 0;
+  width: 809rem;
+  height: 1157rem;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .dinos__dino-center{
@@ -229,12 +240,25 @@ input[type="range"] {
   transform: translateX(-50%);
   opacity: 0;
   animation-fill-mode: forwards;
+  width: 790rem;
+  height: 633rem;
   
+  img{
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .dinos__dino-right{
   right: -4rem;
   top: 177rem;
+  width: 660rem;
+  height: 1046rem;
+  
+  img{
+    width: 100%;
+    height: 100%;
+  }
 }
 
 // ---------------------
@@ -425,6 +449,8 @@ input[type="range"] {
 .what-we-create__illustartion{
   margin-bottom: 9rem;
   margin-right: 18rem;
+  width: 484rem;
+  height: 475rem;
 }
 
 .what-we-create__line1_text{
@@ -629,12 +655,16 @@ input[type="range"] {
   position: absolute;
   left: 0;
   top: 0;
+  width: 544rem;
+  height: 825rem;
 }
 
 .ship-container_ship{
   position: absolute;
   top: 383rem;
   right: -203rem;
+  width: 1010rem;
+  height: 427rem;
 }
 
 // ---------------------
@@ -643,6 +673,7 @@ input[type="range"] {
 
 .register{
   padding-top: 70rem;
+  padding-bottom: 13rem;
   margin-top: -13rem;
 
   .wrapper{
@@ -651,10 +682,14 @@ input[type="range"] {
     transform: translateX(24rem);
 
     &::after{
-      content: url(../img/svg/register-border.svg);
+      content: "";
+      background: url(../img/svg/register-border.svg);
+      background-size: cover;
       position: absolute;
       left: -227rem;
       top: -62rem;
+      width: 1661rem;
+      height: 420rem;
     }
   }
 }
@@ -773,12 +808,21 @@ input[type="range"] {
   justify-self: end;
   display: block;
   margin-top: -173rem;
+  width: 587rem;
+  height: 530rem;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .why-we-can__feather{
   position: absolute;
   bottom: -73rem;
   right: 22rem;
+  width: 465rem;
+  height: 372rem;
 }
 
 // ---------------------
@@ -898,6 +942,8 @@ input[type="range"] {
   position: absolute;
   left: -24rem;
   top: 32rem;
+  width: 80rem;
+  height: 79rem;
 }
 
 // ---------------------
@@ -946,6 +992,13 @@ input[type="range"] {
         color: #68FFE0;
       }
     }
+
+    .methodic__item_illustration{
+      svg{
+        width: 159rem;
+        height: 78rem;
+      }
+    }
   }
 
   &:nth-child(2){
@@ -958,6 +1011,13 @@ input[type="range"] {
         color: #B9C3FC;
       }
     }
+
+    .methodic__item_illustration{
+      svg{
+        width: 168rem;
+        height: 77rem;
+      }
+    }
   }
 
   &:nth-child(3){
@@ -965,6 +1025,13 @@ input[type="range"] {
     .methodic__item_text{
       span{
         color: #FF7EA7;
+      }
+    }
+
+    .methodic__item_illustration{
+      svg{
+        width: 258rem;
+        height: 79rem;
       }
     }
   }
@@ -985,6 +1052,8 @@ input[type="range"] {
   position: absolute;
   left: 15%;
   top: -107rem;
+  width: 1508rem;
+  height: 600rem;
 }
 
 // ---------------------
@@ -1033,6 +1102,10 @@ input[type="range"] {
   margin-right: 125rem; 
   margin-top: -35rem;
   margin-bottom: 150rem;
+
+  img{
+    width: 100%;
+  }
 }
 
 .connect-to__table_header{
@@ -1068,6 +1141,11 @@ input[type="range"] {
     border: 1rem solid white;
   }
   
+  img{
+    max-width: 80%;
+    max-height: 80%;
+  }
+
 }
 
 // ---------------------
@@ -1123,7 +1201,11 @@ input[type="range"] {
   position: relative;
 
   &::after{
-    content: url(../img/svg/form-arrow.png);
+    content: "";
+    background: url(../img/svg/form-arrow.png);
+    background-size: cover;
+    width: 177rem;
+    height: 399rem;
     position: absolute;
     right: -116rem;
     top: 80%;
@@ -1171,6 +1253,11 @@ input[type="range"] {
       transform: translateY(-3rem);
     }
   }
+}
+
+.progress_item_arrow{
+  width: 12rem;
+  height: 58rem;
 }
 
 .join__form_caption{
@@ -1281,6 +1368,8 @@ input[type="range"] {
   position: absolute;
   right: 0;
   bottom: 0;
+  width: 228rem;
+  height: 364rem;
 }
 
 .its-math__square{
@@ -1288,6 +1377,8 @@ input[type="range"] {
   left: 331rem;
   top: 488rem;
   z-index: 2;
+  width: 350rem;
+  height: 350rem;
 }
 
 .its-match__title{
@@ -1336,7 +1427,7 @@ input[type="range"] {
 .connect-to,
 .join,
 .its-match{
-  width: 1920rem;
+  max-width: 1920px;
   overflow: hidden;
 }
 
@@ -1366,6 +1457,11 @@ footer{
 
 .footer__logo{
   margin-bottom: 44rem;
+
+  svg{
+    width: 190rem;
+    height: 44rem;
+  }
 }
 
 // ---------------------
@@ -2274,8 +2370,15 @@ textarea{
     top: 49rem;
   }
 
+  .dinos__dino-left{
+    width: 137rem;
+    height: 200rem;
+  }
+
   .dinos__dino-right{
     top: 31rem;
+    width: 112rem;
+    height: 178rem;
   }
 
   .runline{
@@ -2426,6 +2529,7 @@ textarea{
 
   .what-we-create__illustartion{
     width: 118rem;
+    height: unset;
     margin: 0;
     margin-bottom: 4rem;
   }
@@ -2542,6 +2646,7 @@ textarea{
   .why-we-can__illustration{
     align-self: center;
     width: 139rem;
+    height: unset;
     margin: 0;
     margin-bottom: 32rem;
   }

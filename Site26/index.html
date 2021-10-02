@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>colable</title>
     <link rel="icon" href="./img/favicon.jpeg" type="image/jpeg">
     <link rel="stylesheet" href="./css/reset.css">
@@ -793,8 +793,8 @@
         const html = document.querySelector("html")
 
         function checkWidth(){
-            console.log(123);
-            (window.innerWidth < 851 && window.innerWidth > 501) ? html.style.fontSize = ((window.innerWidth) / 851) + "px" : html.style.fontSize = "1px";
+            console.log(window.innerWidth);
+            (window.innerWidth < 1980 && window.innerWidth > 501) ? html.style.fontSize = ((window.innerWidth) / 1980) + "px" : html.style.fontSize = "1px";
         }
 
         checkWidth()
