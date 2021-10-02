@@ -10,10 +10,8 @@ console.log(
 //  Animation
 //
 
-let loadingTime = 2500;
 
-document.addEventListener("DOMContentLoaded", 
-()=>{
+document.addEventListener("DOMContentLoaded", ()=>{
   scrolling()
 });
 
@@ -150,8 +148,6 @@ if(girl){
   if(window.innerWidth > 500){
     const firstSrc = girl.getAttribute("src")
     const secondSrc = girl.getAttribute("secondSrc")
-    console.log(firstSrc);
-    console.log(secondSrc);
     let changed = false
 
     setInterval(()=>{
