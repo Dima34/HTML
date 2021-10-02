@@ -247,6 +247,7 @@ body{
   flex-direction: column;
   text-align: left;
   padding-left: 10.1vw;
+  padding-right: 7.1vw;
 }
 
 .controls__title{
@@ -273,6 +274,31 @@ body{
   color: white;
   margin-left: 0.6vw;
   max-width: 69vw;
+}
+
+.controls__benefits{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10.3vw;
+}
+
+.benefits_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.benefit__thumb{
+  width: 14.5vw;
+  height: auto;
+}
+
+.benefit__description{
+  font-size: 2.8vw;
+  margin-top: 0.8vw;
+  color: white;
+  text-align: center;
 }
 
 .sound{
