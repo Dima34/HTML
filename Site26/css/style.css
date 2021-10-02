@@ -2256,7 +2256,7 @@ textarea {
       top: 0;
       position: absolute; }
     .brief__brand-platform .brief-image {
-      content: url("../img/brief-turtle-mobile.png");
+      content: url("../img/brief-turtle-mobile.webp");
       left: -26rem;
       top: 40rem; }
     .brief__brand-platform .brief__section-title {
@@ -2303,7 +2303,7 @@ textarea {
       top: 0;
       position: absolute; }
     .brief__brand-media .brief-image {
-      content: url(../img/brief-media__image-mobile.png);
+      content: url(../img/brief-media__image-mobile.webp);
       top: 20rem;
       left: -11rem; }
     .brief__brand-media .brief__section-title {
@@ -2357,7 +2357,7 @@ textarea {
     padding-top: 320rem;
     margin-bottom: 70rem; }
     .brief_total .brief-image {
-      content: url(../img/brief-summary_image-mobile.png);
+      content: url(../img/brief-summary_image-mobile.webp);
       left: -24rem;
       top: 20rem; }
     .brief_total::before {
