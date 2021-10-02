@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/GothamPro-Light.woff2"); }
+
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/GothamPro.woff2"); }
+
+body {
+  font-family: 'Gotham';
+  font-weight: 300px;
+  text-transform: uppercase; }
+
+.intro {
+  background: url(../img/1.jpg) center;
+  background-size: cover;
+  margin: 0 auto;
+  width: 100vw;
+  aspect-ratio: 128/115;
+  display: flex;
+  flex-direction: column; }
+
+.intro__header {
+  margin-left: auto;
+  margin-right: 11vw;
+  margin-top: 6.3vw;
+  display: flex; }
+
+.intro__header-logo {
+  width: 21.5vw;
+  height: auto; }
+
+.intro__header-description {
+  text-align: right;
+  font-size: 2.6vw;
+  margin-top: 0.2vw;
+  margin-right: 2vw;
+  color: white; }
+
+.intro__title {
+  margin-top: auto;
+  margin-left: auto;
+  font-size: 9.5vw;
+  line-height: 7.3vw;
+  margin-bottom: 1vw;
+  margin-right: 10.5vw;
+  text-align: right;
+  color: #a9ebff;
+  text-shadow: black 35px 37px 35px; }
+  .intro__title span {
+    font-size: 5.8vw;
+    margin-top: -2vw;
+    display: inline-block;
+    color: white; }
+
+.characteristic {
+  background: url(../img/2.jpg) center;
+  background-size: cover;
+  margin: 0 auto;
+  width: 100vw;
+  aspect-ratio: 128/115;
+  display: flex;
+  flex-direction: column; }
+
+.characteristic__content {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content;
+  margin: 0 auto;
+  margin-bottom: 11.5vw;
+  margin-top: auto;
+  gap: 8vw;
+  padding-left: 11.5vw;
+  color: white;
+  font-size: 3.4vw;
+  line-height: 4.45vw;
+  letter-spacing: 0.18vw;
+  text-shadow: black .2vw .2vw 40px; }
+  .characteristic__content::after {
+    content: "";
+    width: 0.4vw;
+    height: 22vw;
+    background: #a9ebff;
+    position: absolute;
+    left: 49%;
+    transform: translate(-50%);
+    left: 49.8%;
+    top: -2.2vw; }
+
+.characteristic__content-left li {
+  text-align: right; }
+
+.characteristic__content-right li {
+  text-align: left; }
+
+.vision {
+  background: url(../img/3.jpg) center;
+  background-size: cover;
+  margin: 0 auto;
+  width: 100vw;
+  aspect-ratio: 128/115;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+
+.vision__video {
+  aspect-ratio: 16/9;
+  margin-top: 3.05vw;
+  width: 71.46vw; }
+
+.vision__title {
+  color: #a9ebff;
+  font-size: 6.2vw;
+  margin-top: 10.11vw;
+  text-shadow: black 1px 1px 30px; }
+
+.vision__subtitle {
+  font-size: 3.64vw;
+  margin-top: 10.11vw;
+  text-shadow: black 1px 1px 30px;
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */
