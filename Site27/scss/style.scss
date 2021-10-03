@@ -88,7 +88,7 @@ body{
   margin-right: 8.1vw;
   text-align: right;
   color: #a9ebff;
-  text-shadow: black 35px 37px 22px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 
   span{
     font-size: 3.05vw;
@@ -409,8 +409,8 @@ footer {
     vertical-align: middle;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     border-radius: 30px;
-    padding: 13px 26px;
-    box-shadow: 0 5px 10px rgba(0,0 ,0, 50%);
+    padding: 15px 26px 14px 29px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     background: #e21d35;
     color: #fff;
     border: 2px solid #e21d35;
@@ -446,6 +446,10 @@ footer {
     margin-top: -1px;
   }
   
+  .intro-wrapper{
+    z-index: 1;
+  }
+
   .intro{
     position: absolute;
     left: 0;
@@ -488,13 +492,14 @@ footer {
     margin-right: 10.5vw;
     text-align: right;
     color: #a9ebff;
-    text-shadow: black 35px 37px 22px;
+    text-shadow: rgba(#0f263c, 0.5) 10px 10px 7px;
   
     span{
       font-size: 5.8vw;
       margin-top: -2vw;
       display: inline-block;
       color: white;
+      text-shadow: rgba(#0f263c, 0.5) 5px 5px 7px;
     }
   }
   
