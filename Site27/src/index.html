@@ -14,13 +14,14 @@
 
 <body>
     
-    <div class="wrapper">
+    <div class="wrapper intro-wrapper">
         <section class="intro">
             <div class="intro__header">
                 <h2 class="intro__header-description">
                     смарт<br>телевізори
                 </h2>
-                <a href="./index.html"><img class="intro__header-logo" src="./img/logo.webp" alt="ergo logo" width="109" height="41"></a>
+                <a href="./index.html"><img class="intro__header-logo" width="287.59"
+                    height="107.21" src="./img/logo.svg" alt="ergo logo" width="109" height="41"></a>
             </div>
             <h1 class="intro__title">
                 РОЗКІШ —<br>
@@ -30,7 +31,7 @@
     </div>
     
 
-    <div class="wrapper">
+    <div class="wrapper characteristic-wrapper">
         <section class="characteristic">
             <div class="characteristic__content">
                 <ul class="characteristic__content-left">
@@ -48,7 +49,7 @@
         </section>
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper vision-wrapper">
         <section class="vision">
             <video src="./video/neo-video.mp4" class="vision__video" loop muted autoplay></video>
 
@@ -58,7 +59,7 @@
         </section>
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper royality-wrapper">
         <section class="royality">
             <h2 class="royality__title">розкішний</h2>
             <h3 class="royality__subtitle">безрамковий дизайн</h3>
@@ -72,48 +73,61 @@
     </div>
     
 
-    <div class="wrapper">
+    <div class="wrapper controls-wrapper">
         <section class="controls">
-            <h2 class="controls__title">magic <br> remote <br> control</h2>
-            <h3 class="controls__subtitle">Багатофункціональний<br> Smart-пульт</h3>
+            <h2 class="controls__title">magic <br> remote <br class="br-mob"> control</h2>
+            <h3 class="controls__subtitle">Багатофункціональний<br class="br-mob"> Smart-пульт</h3>
             <p class="controls__description">Завдяки зручному колесу прокрутки, голосовому управлінню та проcтій навігації magic remote перетворює користування в чисте задоволення.</p>
 
             <ul class="controls__benefits">
                 <li class="benefits_item">
-                    <img src="./img/benefits-coursor.webp" alt="benefit coursour icon" width="75" height="77" class="benefit__thumb">
+                    <img src="./img/benefits-coursor.webp" width="156" height="156" alt="benefit coursour icon" width="75" height="77" class="benefit__thumb">
                     <p class="benefit__description">Режим <br> указки</p>
                 </li>
 
                 <li class="benefits_item">
-                    <img src="./img/benefits-scroll.webp" alt="benefit scroll icon" width="75" height="77" class="benefit__thumb">
+                    <img src="./img/benefits-scroll.webp" width="156" height="156" alt="benefit scroll icon" width="75" height="77" class="benefit__thumb">
                     <p class="benefit__description">Колесо <br> прокрутки</p>
                 </li>
 
                 <li class="benefits_item">
-                    <img src="./img/benefits-micro.webp" alt="benefit microphone icon" width="75" height="77" class="benefit__thumb">
+                    <img src="./img/benefits-micro.webp" width="156" height="156" alt="benefit microphone icon" width="75" height="77" class="benefit__thumb">
                     <p class="benefit__description">Голосове <br> керування</p>
                 </li>
 
                 <li class="benefits_item">
-                    <img src="./img/benefits-bluetooth.webp" alt="benefit bluetooth icon" width="75" height="77" class="benefit__thumb">
+                    <img src="./img/benefits-bluetooth.webp" width="156" height="156" alt="benefit bluetooth icon" width="75" height="77" class="benefit__thumb">
                     <p class="benefit__description">Bluetooth</p>
                 </li>
             </ul>
         </section>
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper sound-wrapper">
         <section class="sound">
             <h2 class="sound__title">20 Вт</h2>
             <h3 class="sound__subtitle">power sound</h3>
 
             <div class="sound__characteristics">
-                <p>підтримка<br> аудіо кодеків<br> DOLBY DIGITAL, AAC</p>
-                <p>виразні<br> низькі частоти</p>
-                <p>підключення<br> HI-FI акустики<br> HDMI ARC, COAXIAL</p>
+                <p>підтримка<br class="br-mob"> аудіо кодеків <br class="br-ds"><br class="br-mob"> DOLBY DIGITAL, AAC</p>
+                <p>виразні<br class="br-mob"><br class="br-ds"> низькі частоти</p>
+                <p>підключення<br class="br-mob"> HI-FI акустики<br class="br-ds"> <br class="br-mob"> HDMI ARC, COAXIAL</p>
             </div>
         </section>
     </div>
+
+    <footer id="footer">
+        <a href="https://ergo-ua.com/ua/products/tvs/?filter=77765&amp;utm_source=site&amp;utm_medium=click&amp;utm_campaign=newtv2">Переглянути
+            моделi</a>
+    </footer>
+
+    <script>
+        const footer = document.querySelector("footer");
+
+        window.addEventListener("scroll", ()=>{
+            window.scrollY > 250 ? footer.classList.add("active") : footer.classList.remove("active")
+        })
+    </script>
 
 </body>
 
