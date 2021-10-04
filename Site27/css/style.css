@@ -502,6 +502,7 @@ footer {
     letter-spacing: unset;
     margin-left: 0; }
   .vision__description {
+    letter-spacing: 0.09vw;
     font-size: 2.8vw;
     margin-top: 3.4vw;
     text-shadow: black 1px 1px 15px;
