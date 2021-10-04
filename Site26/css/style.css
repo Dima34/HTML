@@ -1153,7 +1153,6 @@ textarea {
     padding: 4rem 0;
     font-size: 16rem;
     line-height: 120%;
-    text-indent: 10rem;
     color: black;
     border-bottom: 1rem solid #C4C4C4;
     display: block;
@@ -1162,8 +1161,7 @@ textarea {
     .brief input::placeholder {
       color: #C4C4C4;
       opacity: 1;
-      padding: 0;
-      transform: translateX(-9rem); }
+      padding: 0; }
   .brief select {
     background: #FFFFFF;
     box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.15);
