@@ -1133,7 +1133,8 @@ textarea {
     opacity: 0; }
 
 .brief-image {
-  position: absolute; }
+  position: absolute;
+  pointer-events: none; }
 
 .brief {
   overflow-x: hidden;
