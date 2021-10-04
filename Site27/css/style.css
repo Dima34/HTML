@@ -161,7 +161,6 @@ body {
 
 .vision__description {
   font-size: 1.2vw;
-  letter-spacing: 0.068em;
   line-height: 1.9vw;
   margin-top: 1.7vw;
   text-shadow: black 1px 1px 15px;
@@ -511,6 +510,14 @@ footer {
     font-weight: unset;
     line-height: unset;
     margin-left: 0; }
+    .vision__description span {
+      text-align: justify;
+      display: inline-block;
+      width: 100%; }
+      .vision__description span:nth-child(1) {
+        word-spacing: 1.55vw; }
+      .vision__description span:nth-child(3) {
+        word-spacing: 0.13em; }
   .royality {
     position: absolute;
     left: 0;
