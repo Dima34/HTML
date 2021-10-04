@@ -160,6 +160,23 @@ if(girl){
 }
 
 // 
+// Geografy input
+// 
+
+const globalGeografyInput = document.getElementById("geografyGlobalInput")
+const geografyLocal = document.getElementById("geografyLocal");
+const geografyLocalSelect = document.getElementById("geografyLocalSelect");
+const geografyFederal = document.getElementById("geografyFederal");
+const geografyMulti = document.getElementById("geografyMulti");
+
+geografyLocal.addEventListener("change", ()=>globalGeografyInput.value = geografyLocalSelect.value);
+geografyLocalSelect.addEventListener("change", ()=>globalGeografyInput.value = geografyLocalSelect.value);
+geografyFederal.addEventListener("change", ()=>globalGeografyInput.value = "Федеральный");
+geografyMulti.addEventListener("change", ()=>globalGeografyInput.value = "Международный");
+
+setInterval(()=>console.log(globalGeografyInput.value), 500)
+
+// 
 // dual range
 // 
 

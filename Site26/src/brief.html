@@ -54,20 +54,25 @@
                 <div class="brief__radio-group">
                     <h3 class="radio-group_title">География<span>*</span></h3>
 
+                    <input type="text" style="display: none;" name="geografyGlobalInput" id="geografyGlobalInput">
+
                     <div class="radio-group_radio">
                         <input type="radio" name="geografy" id="geografyLocal">
+                        
                         <label for="geografyLocal" class="withSelect">
-                            <select name="geografyLocalSelect" id="geografyLocalSelect">
-                                <option value="1">ЦФО</option>
-                                <option value="1">Северо-западный ФО</option>
-                                <option value="1">Южный ФО</option>
-                                <option value="1">Северо-кавказский ФО</option>
-                                <option value="1">Приволжский ФО</option>
-                                <option value="1">Уральский ФО</option>
-                                <option value="1">Сибирский ФО</option>
-                                <option value="1">Дальневосточный ФО</option>
-                                <option selected="selected" value="1">Локальный</option>
-                            </select>
+                            <div class="select-wrapper">
+                                <select name="geografyLocalSelect" id="geografyLocalSelect">
+                                    <option value="ЦФО">ЦФО</option>
+                                    <option value="Северо-западный ФО">Северо-западный ФО</option>
+                                    <option value="Южный ФО">Южный ФО</option>
+                                    <option value="Северо-кавказский ФО">Северо-кавказский ФО</option>
+                                    <option value="Приволжский ФО">Приволжский ФО</option>
+                                    <option value="Уральский ФО">Уральский ФО</option>
+                                    <option value="Сибирский ФО">Сибирский ФО</option>
+                                    <option value="Дальневосточный ФО">Дальневосточный ФО</option>
+                                    <option selected="selected" hidden value="1">Локальный</option>
+                                </select>
+                            </div>
                         </label>
                     </div>
 
@@ -187,8 +192,9 @@
                             <option value="1">Государственный сектор</option>
                             <option value="1">Ритейл</option>
                             <option value="1">Страхование</option>
+                            <option value="1">Финтех</option>
                             <option value="1">Другое</option>
-                            <option selected="selected" disabled value="1">Выберите категорию</option>
+                            <option selected="selected" hidden disabled value="1">Выберите категорию</option>
                         </select>
                     </div>
                     
@@ -289,13 +295,13 @@
 
                         <div class="select-wrapper">
                             <select name="instSubscribersAmount" id="instSubscribersAmount">
-                                <option value="1">больше  100 000</option>
-                                <option value="1">50 000-100 000</option>
-                                <option value="1">30 000-50 000</option>
-                                <option value="1">10 000-30 000</option>
                                 <option value="1">до 5 000</option>
                                 <option value="1">до 10 000</option>
-                                <option disabled selected="selected" value="1">Количесвто подпищиков</option>
+                                <option value="1">10 000-30 000</option>
+                                <option value="1">30 000-50 000</option>
+                                <option value="1">50 000-100 000</option>
+                                <option value="1">больше  100 000</option>
+                                <option disabled selected="selected" hidden value="1">Количество подписчиков</option>
                             </select>
                         </div>
                        
@@ -309,13 +315,13 @@
 
                         <div class="select-wrapper">
                             <select name="fbSubscribersAmount" id="fbSubscribersAmount">
-                                <option value="1">больше  100 000</option>
-                                <option value="1">50 000-100 000</option>
-                                <option value="1">30 000-50 000</option>
-                                <option value="1">10 000-30 000</option>
                                 <option value="1">до 5 000</option>
                                 <option value="1">до 10 000</option>
-                                <option disabled selected="selected" value="1">Количесвто подпищиков</option>
+                                <option value="1">10 000-30 000</option>
+                                <option value="1">30 000-50 000</option>
+                                <option value="1">50 000-100 000</option>
+                                <option value="1">больше  100 000</option>
+                                <option disabled selected="selected" hidden value="1">Количество подписчиков</option>
                             </select>
                         </div>
                         
@@ -330,13 +336,13 @@
 
                         <div class="select-wrapper">
                             <select name="ytSubscribersAmount" id="ytSubscribersAmount">
-                                <option value="1">больше  100 000</option>
-                                <option value="1">50 000-100 000</option>
-                                <option value="1">30 000-50 000</option>
-                                <option value="1">10 000-30 000</option>
                                 <option value="1">до 5 000</option>
                                 <option value="1">до 10 000</option>
-                                <option disabled selected="selected" value="1">Количесвто подпищиков</option>
+                                <option value="1">10 000-30 000</option>
+                                <option value="1">30 000-50 000</option>
+                                <option value="1">50 000-100 000</option>
+                                <option value="1">больше  100 000</option>
+                                <option disabled selected="selected" hidden value="1">Количество подписчиков</option>
                             </select>
                         </div>
                         
@@ -351,13 +357,13 @@
 
                         <div class="select-wrapper">
                             <select name="tgSubscribersAmount" id="tgSubscribersAmount">
-                                <option value="1">больше  100 000</option>
-                                <option value="1">50 000-100 000</option>
-                                <option value="1">30 000-50 000</option>
-                                <option value="1">10 000-30 000</option>
                                 <option value="1">до 5 000</option>
                                 <option value="1">до 10 000</option>
-                                <option disabled selected="selected" value="1">Количесвто подпищиков</option>
+                                <option value="1">10 000-30 000</option>
+                                <option value="1">30 000-50 000</option>
+                                <option value="1">50 000-100 000</option>
+                                <option value="1">больше  100 000</option>
+                                <option disabled selected="selected" hidden value="1">Количество подписчиков</option>
                             </select>
                         </div>
                         
@@ -371,13 +377,13 @@
 
                         <div class="select-wrapper">
                             <select name="tSubscribersAmount" id="tSubscribersAmount">
-                                <option value="1">больше  100 000</option>
-                                <option value="1">50 000-100 000</option>
-                                <option value="1">30 000-50 000</option>
-                                <option value="1">10 000-30 000</option>
                                 <option value="1">до 5 000</option>
                                 <option value="1">до 10 000</option>
-                                <option disabled selected="selected" value="1">Количесвто подпищиков</option>
+                                <option value="1">10 000-30 000</option>
+                                <option value="1">30 000-50 000</option>
+                                <option value="1">50 000-100 000</option>
+                                <option value="1">больше  100 000</option>
+                                <option disabled selected="selected" hidden value="1">Количество подписчиков</option>
                             </select>
                         </div>
                         
@@ -391,13 +397,13 @@
 
                         <div class="select-wrapper">
                             <select name="vkSubscribersAmount" id="vkSubscribersAmount">
-                                <option value="1">больше  100 000</option>
-                                <option value="1">50 000-100 000</option>
-                                <option value="1">30 000-50 000</option>
-                                <option value="1">10 000-30 000</option>
                                 <option value="1">до 5 000</option>
                                 <option value="1">до 10 000</option>
-                                <option disabled selected="selected" value="1">Количесвто подпищиков</option>
+                                <option value="1">10 000-30 000</option>
+                                <option value="1">30 000-50 000</option>
+                                <option value="1">50 000-100 000</option>
+                                <option value="1">больше  100 000</option>
+                                <option disabled selected="selected" hidden value="1">Количество подписчиков</option>
                             </select>
                         </div>
                         
@@ -462,14 +468,14 @@
                                 <option value="1">Верхний средний</option>
                                 <option value="1">Высокий доход</option>
                                 <option value="1">Бедные</option>
-                                <option selected="selected" disabled="" value="1">Уровень дохода</option>
+                                <option selected="selected" hidden disabled="" value="1">Уровень дохода</option>
                             </select>
                         </div>
                         
                     </div>
 
                     <div class="brief__dropdown-group">
-                        <h3 class="dropdonwn__title">Род занятий</h3>
+                        <h3 class="dropdonwn__title">Род занятости</h3>
                         
                         <div class="dropdown-wrapper">
                             <select name="cathegorySelect" id="cathegorySelect">
@@ -480,7 +486,7 @@
                                 <option value="1">Пенсионеры</option>
                                 <option value="1">В декрете</option>
                                 <option value="1">Неработающие</option>
-                                <option selected="selected" disabled="" value="1">Локальный</option>
+                                <option selected="selected" hidden disabled="" value="1">Локальный</option>
                             </select>
                         </div>
                         
