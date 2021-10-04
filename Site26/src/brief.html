@@ -221,6 +221,14 @@
                 </div>
 
                 <div class="brief__text-block">
+                    <h3 class="text-block__header">Эмоциональные преимущества</h3>
+                    <div class="textarea-wrapper">
+                        <p class="textarea-placeholder"></p>
+                        <textarea placeholder = "" name="" id=""></textarea>
+                    </div>
+                </div>
+
+                <div class="brief__text-block">
                     <h3 class="text-block__header">Ценности</h3>
                     <div class="textarea-wrapper">
                         <p class="textarea-placeholder"></p>
@@ -375,6 +383,26 @@
                         
                     </div>
 
+                    <div class="media_contnet-item">
+                        <div class="content-item_input">
+                            <img src="./img/svg/vk-ico.svg" alt="vk vk-logo">
+                            <input type="text" placeholder="Ссылка на Vkontakte">
+                        </div>
+
+                        <div class="select-wrapper">
+                            <select name="vkSubscribersAmount" id="vkSubscribersAmount">
+                                <option value="1">больше  100 000</option>
+                                <option value="1">50 000-100 000</option>
+                                <option value="1">30 000-50 000</option>
+                                <option value="1">10 000-30 000</option>
+                                <option value="1">до 5 000</option>
+                                <option value="1">до 10 000</option>
+                                <option disabled selected="selected" value="1">Количесвто подпищиков</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+
                 </div>
             </section>
 
@@ -392,6 +420,7 @@
                         <label class="single-range__label" data-foo="20" for="coreRange">
                             <div class="range-line"></div>
                             <input type="range" name="coreRange" id="coreRange" min="0" max="100" step="1" value="25">
+                            <input type="range" name="womanRange" id="womanRange" style="display: none;">
                         </label>
                         <p class="percent percent-right">70%</p>
                         <p class="percent_sex">Ж</p>

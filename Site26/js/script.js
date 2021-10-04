@@ -120,6 +120,7 @@ if(rangeLabel){
   const range = rangeLabel.querySelector("input");
   const MSex = document.querySelector(".percent-left");
   const WSex = document.querySelector(".percent-right");
+  const womanRange = document.getElementById("womanRange");
 
   let rangeWidth = Number(getComputedStyle(rangeLabel).width.slice(0,-2));
 
@@ -131,8 +132,9 @@ if(rangeLabel){
 
   syncLine(rangeLine, range,MSex, WSex)
 
-  range.addEventListener("input", ()=>{
+  range.addEventListener("input", (el)=>{
     syncLine(rangeLine, range,MSex, WSex)
+    womanRange.value = 100-el.path[0].value;
   }) 
   
 }
