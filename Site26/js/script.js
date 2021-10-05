@@ -171,22 +171,22 @@ const geografyMulti = document.getElementById("geografyMulti");
 
 geografyLocal.addEventListener("change", ()=>{
   geografyLocalSelect.value < 0 ? geografyLocalSelect.classList.add("alert") : geografyLocalSelect.classList.remove("alert")
-  globalGeografyInput.value = geografyLocalSelect.value
+  globalGeografyInput.value = geografyLocalSelect.value;
 });
 
 geografyLocalSelect.addEventListener("change", ()=>{
   geografyLocalSelect.value < 0 ? geografyLocalSelect.classList.add("alert") : geografyLocalSelect.classList.remove("alert")
-  globalGeografyInput.value = geografyLocalSelect.value
+  globalGeografyInput.value = geografyLocalSelect.value;
 });
 
 geografyFederal.addEventListener("change", ()=>{
   geografyLocalSelect.classList.remove("alert")
-  globalGeografyInput.value = "Федеральный"
+  globalGeografyInput.value = "Федеральный";
 });
 
 geografyMulti.addEventListener("change", ()=>{
   geografyLocalSelect.classList.remove("alert")
-  globalGeografyInput.value = "Международный"
+  globalGeografyInput.value = "Международный";
 });
 
 // 

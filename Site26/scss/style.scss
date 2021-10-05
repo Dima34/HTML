@@ -605,7 +605,6 @@ input[type="range"] {
 
 .how-it-works__list-item{
   display: flex;
-  align-items: center;
   margin-bottom: 30rem;
   cursor: default;
 
@@ -640,6 +639,7 @@ input[type="range"] {
   width: 582rem;
   color: #999999;
   transition: .3s;
+  margin-top: 28rem;
 }
 
 .how-it-works__ship-mobile{
@@ -804,7 +804,8 @@ input[type="range"] {
   margin-top: 72rem;
 
   span{
-    color: #EC90BD;
+    color: #68FFE0;
+    
   }
 }
 
@@ -1342,7 +1343,7 @@ input[type="range"] {
       position: absolute;
       width: 940.45rem;
       height: 187.57rem;
-      bottom: 50rem;
+      bottom: -114rem;
       left: 25rem;
       background: linear-gradient(90deg, #00FFCB 0.01%, #A597FD 49.92%, #FF5289 99.99%);
       background-blend-mode: luminosity;
@@ -1396,17 +1397,6 @@ input[type="range"] {
   z-index: 2;
 }
 
-.its-math__subtitle{
-  font-size: 30rem;
-  line-height: 120%;
-  @include Rounded();
-  margin-left: 335rem;
-  max-width: 527rem;
-  margin-top: 76rem;
-  position: relative;
-  z-index: 2;
-}
-
 .its-match__header-illustration-mobile{
   display: none;
 }
@@ -1433,6 +1423,10 @@ input[type="range"] {
 .its-match{
   max-width: 1920px;
   overflow: hidden;
+}
+
+.its-match{
+  overflow: visible;
 }
 
 // ---------------------
@@ -1557,6 +1551,7 @@ textarea{
     background: #FFFFFF;
     border-radius: 50rem 0rem 0rem 50rem;
     padding: 0 103rem;
+    padding-bottom: 253rem;
   }
 
   input{
@@ -1620,7 +1615,7 @@ textarea{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: -19rem;
-  margin-top: -22px;
+  margin-top: -22rem;
   display: inline-block;
 }
 
@@ -2199,7 +2194,6 @@ textarea{
 }
 
 .brief_total{
-  padding-bottom: 253rem;
   position: relative;
 
   .brief-image{
@@ -2995,13 +2989,6 @@ textarea{
     margin-top: -10rem;
   }
 
-  .its-math__subtitle{
-    font-size: 14rem;
-    line-height: 120%;
-    margin: 0;
-    text-align: center;
-  }
-
   footer{
     margin-top: 55rem;
     margin-bottom: 33rem;
@@ -3009,11 +2996,9 @@ textarea{
     p,a{
       font-size: 9rem;
       line-height: 11rem;
+
+      text-decoration: none;
     } 
-  
-    a{
-      text-decoration: underline;
-    }
   }
   
   .footer__logo{
@@ -3030,11 +3015,12 @@ textarea{
     width: unset;
     background: white;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 70rem;;
 
     .wrapper{
       max-width: 270rem;
       padding: 0;
+      padding-bottom: 0;
     }
 
     input{
@@ -3297,7 +3283,6 @@ textarea{
   .brief_total{
     margin-top: 0;
     padding-top: 320rem;
-    padding-bottom: 70rem;
 
     .brief-image{
       content: url(../img/brief-summary_image-mobile.webp);
