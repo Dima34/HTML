@@ -73,6 +73,8 @@ body {
 
 select {
   cursor: pointer; }
+  select.alert {
+    box-shadow: 0rem 0rem 7rem rgba(255, 82, 137, 0.5) !important; }
 
 input[type="range"] {
   -webkit-appearance: none;
@@ -1413,7 +1415,8 @@ textarea {
     font-family: 'Root';
     color: #000000; }
     .media_contnet-item p:last-child {
-      text-align: right; }
+      text-align: right;
+      margin-right: 22rem; }
   .media_contnet-item select {
     width: 289rem; }
 
@@ -1702,6 +1705,15 @@ textarea {
   color: #1F1F1F;
   margin-bottom: 35rem;
   word-break: break-all; }
+
+.group-title span {
+  font-family: 'Montserrat' !important;
+  font-weight: 500 !important;
+  color: #FF5289;
+  font-size: 24rem;
+  line-height: 120%;
+  transform: translateX(-6rem);
+  display: inline-block; }
 
 @media screen and (max-width: 851px) {
   .brief .wrapper {
@@ -2184,7 +2196,8 @@ textarea {
   .brief {
     width: unset;
     background: white;
-    padding-top: 0; }
+    padding-top: 0;
+    padding-bottom: 0; }
     .brief .wrapper {
       max-width: 270rem;
       padding: 0; }
@@ -2354,7 +2367,7 @@ textarea {
   .brief_total {
     margin-top: 0;
     padding-top: 320rem;
-    margin-bottom: 70rem; }
+    padding-bottom: 70rem; }
     .brief_total .brief-image {
       content: url(../img/brief-summary_image-mobile.webp);
       left: -24rem;

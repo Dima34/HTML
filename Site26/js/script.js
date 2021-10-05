@@ -169,12 +169,25 @@ const geografyLocalSelect = document.getElementById("geografyLocalSelect");
 const geografyFederal = document.getElementById("geografyFederal");
 const geografyMulti = document.getElementById("geografyMulti");
 
-geografyLocal.addEventListener("change", ()=>globalGeografyInput.value = geografyLocalSelect.value);
-geografyLocalSelect.addEventListener("change", ()=>globalGeografyInput.value = geografyLocalSelect.value);
-geografyFederal.addEventListener("change", ()=>globalGeografyInput.value = "Федеральный");
-geografyMulti.addEventListener("change", ()=>globalGeografyInput.value = "Международный");
+geografyLocal.addEventListener("change", ()=>{
+  geografyLocalSelect.value < 0 ? geografyLocalSelect.classList.add("alert") : geografyLocalSelect.classList.remove("alert")
+  globalGeografyInput.value = geografyLocalSelect.value
+});
 
-setInterval(()=>console.log(globalGeografyInput.value), 500)
+geografyLocalSelect.addEventListener("change", ()=>{
+  geografyLocalSelect.value < 0 ? geografyLocalSelect.classList.add("alert") : geografyLocalSelect.classList.remove("alert")
+  globalGeografyInput.value = geografyLocalSelect.value
+});
+
+geografyFederal.addEventListener("change", ()=>{
+  geografyLocalSelect.classList.remove("alert")
+  globalGeografyInput.value = "Федеральный"
+});
+
+geografyMulti.addEventListener("change", ()=>{
+  geografyLocalSelect.classList.remove("alert")
+  globalGeografyInput.value = "Международный"
+});
 
 // 
 // dual range
