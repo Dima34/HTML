@@ -190,6 +190,49 @@ geografyMulti.addEventListener("change", ()=>{
 });
 
 // 
+// check required inputs
+// 
+
+const requiredInputs = document.querySelectorAll(".requiredContent");
+
+if(requiredInputs.length > 0){
+  const formSumbit = document.querySelector(".total-submit");
+  let requiredAmount = 0
+
+  requiredInputs.forEach((el)=>{
+    console.log(el.value);
+    el.setAttribute("needToFill", true)
+    requiredAmount++;
+  })
+
+  requiredInputs.forEach((el)=>{
+    el.addEventListener("change", ()=>{
+      // Check if input is empty
+      // If it is, we change needToFill to false
+      // if we cleared it and it is empty needToFill will be true
+      (el.value != "" && el.value != "-1") ? el.setAttribute("needToFill", false) : el.setAttribute("needToFill", true)
+
+      // chek in each input chang how much inputs must be filled
+      let needToFill = 0;
+      requiredInputs.forEach((it)=>{
+        if(it.getAttribute("needToFill") == "true"){
+          needToFill ++;
+        }
+      })
+
+      // if inputs which must be filled = 0, we remove disabled attribute from button
+      needToFill != 0 ? formSumbit.setAttribute("disabled","") : formSumbit.removeAttribute("disabled")
+
+      console.log(`need to fill - `, needToFill);
+
+      formSumbit.hasAttribute("disabled") ? formSumbit.innerHTML = "Заполните все обязательные поля" : formSumbit.innerHTML = "Зарегистрироваться";
+    })
+  })
+
+}
+
+
+// 
 // dual range
 // 
 

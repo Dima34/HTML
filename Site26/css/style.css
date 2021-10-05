@@ -1647,7 +1647,17 @@ textarea {
   padding: 12rem 10rem;
   margin-bottom: 15rem;
   margin: 0 auto;
-  display: block; }
+  display: block;
+  transition: .3s; }
+  .total-submit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 5px rgba(45, 45, 45, 0.3); }
+  .total-submit[disabled] {
+    background: #2d2d2d;
+    cursor: not-allowed; }
+    .total-submit[disabled]:hover {
+      transform: translateY(0);
+      box-shadow: 0; }
 
 .total-submit_alert {
   font-size: 14rem;

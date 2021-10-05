@@ -27,19 +27,19 @@
 
                 <div class="brief__input-group">
                     <h3 class="brief__section-label">Ваши<span>*</span></h3>
-                    <input type="text" placeholder="ФИО" name="yourContactsFIO" id="yourContactsFIO">
-                    <input type="text" placeholder="Должность" name="yourContactsRank" id="yourContactsRank">
-                    <input type="phone" placeholder="Телефон" name="yourContactsPhone" id="yourContactsPhone">
-                    <input type="email" placeholder="Почта" name="yourContactsEmail" id="yourContactsEmail">
+                    <input type="text" placeholder="ФИО" name="yourContactsFIO" class="requiredContent" id="yourContactsFIO">
+                    <input type="text" placeholder="Должность" name="yourContactsRank" class="requiredContent" id="yourContactsRank">
+                    <input type="phone" placeholder="Телефон" name="yourContactsPhone" class="requiredContent" id="yourContactsPhone">
+                    <input type="email" placeholder="Почта" name="yourContactsEmail" class="requiredContent" id="yourContactsEmail">
                 </div>
 
                 <div class="brief__input-group">
                     <h3 class="brief__section-label">Запасного контактного лица<span>*</span></h3>
                     <p class="brief__section-subtitle">К кому мы можем обратиться в случае, если вы будете недоступны</p>
-                    <input type="text" placeholder="ФИО" name="yourContactsFIO" id="yourContactsFIO">
-                    <input type="text" placeholder="Должность" name="yourContactsRank" id="yourContactsRank">
-                    <input type="phone" placeholder="Телефон" name="yourContactsPhone" id="yourContactsPhone">
-                    <input type="email" placeholder="Почта" name="yourContactsEmail" id="yourContactsEmail">
+                    <input type="text" placeholder="ФИО" name="yourContactsFIO" class="requiredContent" id="yourContactsFIO">
+                    <input type="text" placeholder="Должность" name="yourContactsRank" class="requiredContent" id="yourContactsRank">
+                    <input type="phone" placeholder="Телефон" name="yourContactsPhone" class="requiredContent" id="yourContactsPhone">
+                    <input type="email" placeholder="Почта" name="yourContactsEmail" class="requiredContent" id="yourContactsEmail">
                 </div>
                 
             </section>
@@ -54,7 +54,7 @@
                 <div class="brief__radio-group">
                     <h3 class="radio-group_title">География<span>*</span></h3>
 
-                    <input type="text" style="display: none;" name="geografyGlobalInput" id="geografyGlobalInput">
+                    <input type="text" value = "-1" style="display: none;" name="geografyGlobalInput" class="" id="geografyGlobalInput">
 
                     <div class="radio-group_radio">
                         <input type="radio" name="geografy" id="geografyLocal">
@@ -163,7 +163,7 @@
                     <h3 class="dropdonwn__title">Категория бизнеса <span >*</span></h3>
                     
                     <div class="dropdown-wrapper">
-                        <select name="cathegorySelect" id="cathegorySelect">
+                        <select name="cathegorySelect" class="requiredContent" id="cathegorySelect">
                             <option value="1">Наука и образование</option>
                             <option value="1">Развлечения</option>
                             <option value="1">Логистика</option>
@@ -194,7 +194,7 @@
                             <option value="1">Страхование</option>
                             <option value="1">Финтех</option>
                             <option value="1">Другое</option>
-                            <option selected="selected" hidden disabled value="1">Выберите категорию</option>
+                            <option selected="selected" hidden disabled value="-1">Выберите категорию</option>
                         </select>
                     </div>
                     
@@ -452,7 +452,7 @@
                     <div class="brief_radio-group">
                         <h2 class="text-block__header">Семейное положение</h2>
 
-                        <input type="radio" name = "coreMarriage" id = "coreInMarriage">
+                        <input type="radio" checked name = "coreMarriage" id = "coreInMarriage">
                         <label for="coreInMarriage">В браке</label>
                         <input type="radio" name = "coreMarriage" id = "coreNotInMarriage">
                         <label for="coreNotInMarriage">Не в браке</label>
@@ -462,13 +462,13 @@
                         <h3 class="dropdonwn__title">Уровень дохода</h3>
                         
                         <div class="dropdown-wrapper">
-                            <select name="cathegorySelect" id="cathegorySelect">
+                            <select name="cashLevelSelect" class="requiredContent" id="cashLevelSelect">
                                 <option value="1">Нижний средний</option>
                                 <option value="1">Средний класс</option>
                                 <option value="1">Верхний средний</option>
                                 <option value="1">Высокий доход</option>
                                 <option value="1">Бедные</option>
-                                <option selected="selected" hidden disabled="" value="1">Уровень дохода</option>
+                                <option selected="selected" hidden disabled="" value="-1">Уровень дохода</option>
                             </select>
                         </div>
                         
@@ -478,7 +478,7 @@
                         <h3 class="dropdonwn__title">Род занятости</h3>
                         
                         <div class="dropdown-wrapper">
-                            <select name="cathegorySelect" id="cathegorySelect">
+                            <select name="occupationSelect" class="requiredContent" id="occupationSelect">
                                 <option value="1">Руководители среднего звена</option>
                                 <option value="1">Топ-менеджеры</option>
                                 <option value="1">Специалисты</option>
@@ -486,7 +486,7 @@
                                 <option value="1">Пенсионеры</option>
                                 <option value="1">В декрете</option>
                                 <option value="1">Неработающие</option>
-                                <option selected="selected" hidden disabled="" value="1">Род занятий</option>
+                                <option selected="selected" hidden disabled="" value="-1">Род занятий</option>
                             </select>
                         </div>
                         
@@ -496,7 +496,7 @@
                         <h3 class="text-block__header">Драйверы <span>(причины, мотивы покупки)</span></h3>
                         <div class="textarea-wrapper" minheight="71">
                             <p class="textarea-placeholder">.</p>
-                            <textarea name="" id="" style="overflow: hidden; overflow-wrap: break-word; height: 86px; min-height: 86px;"></textarea>
+                            <textarea name="" class="requiredContent" id="" style="overflow: hidden; overflow-wrap: break-word; height: 86px; min-height: 86px;"></textarea>
                         </div>
                     </div>
 
@@ -504,7 +504,7 @@
                         <h3 class="text-block__header">Барьеры <span>(причины отказа от покупки, сдерживающие факторы)</span></h3>
                         <div class="textarea-wrapper" minheight="71">
                             <p class="textarea-placeholder"></p>
-                            <textarea name="" id="" style="overflow: hidden; overflow-wrap: break-word; height: 86px; min-height: 86px;"></textarea>
+                            <textarea name="" class="requiredContent" id="" style="overflow: hidden; overflow-wrap: break-word; height: 86px; min-height: 86px;"></textarea>
                         </div>
                     </div>
                 </div>
@@ -531,7 +531,7 @@
                     <label for="totalNoNews">Нет</label>
                 </div>
 
-                <button class="total-submit">Зарегистрироваться</button>
+                <button class="total-submit" disabled>Заполните все обязательные поля</button>
                 <div class="total-submit_alert">
                     <span>Нажимая на кнопку, вы даете согласие на</span> <br>
                     <a href="./brief.html">обработку персональных данных.</a>
@@ -578,9 +578,7 @@
             innerArea.style.minHeight = heighter+"px";
 
             innerArea.addEventListener("input", ()=>{
-                
                 areaHeight = Number(getComputedStyle(innerArea).height.slice(0,-2))
-                console.log(areaHeight);
                 el.style.height = areaHeight+"px";
                 areaHeight > holderHeight ? el.style.height = areaHeight+"px" : el.height = el.getAttribute("minHeight")+"px"; 
 

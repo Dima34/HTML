@@ -2227,6 +2227,22 @@ textarea{
   margin-bottom: 15rem;
   margin: 0 auto;
   display: block;
+  transition: .3s;
+
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 5px rgba(#2d2d2d, 0.3);
+  }
+
+  &[disabled]{
+    background: #2d2d2d;
+    cursor: not-allowed;
+
+    &:hover{
+      transform: translateY(0);
+      box-shadow: 0;
+    }
+  }
 }
 
 .total-submit_alert{
@@ -3330,6 +3346,8 @@ textarea{
     font-size: 21rem;
     line-height: 30rem;
     padding: 5rem;
+
+    
   }
 
   .total-submit_alert{
