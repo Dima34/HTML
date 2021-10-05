@@ -170,6 +170,10 @@ const geografyFederal = document.getElementById("geografyFederal");
 const geografyMulti = document.getElementById("geografyMulti");
 
 geografyLocal.addEventListener("change", ()=>{
+  console.log("oninput");
+})
+
+geografyLocal.addEventListener("change", ()=>{
   geografyLocalSelect.value < 0 ? geografyLocalSelect.classList.add("alert") : geografyLocalSelect.classList.remove("alert")
   globalGeografyInput.value = geografyLocalSelect.value;
 });
@@ -207,27 +211,51 @@ if(requiredInputs.length > 0){
 
   requiredInputs.forEach((el)=>{
     el.addEventListener("change", ()=>{
-      // Check if input is empty
-      // If it is, we change needToFill to false
-      // if we cleared it and it is empty needToFill will be true
-      (el.value != "" && el.value != "-1") ? el.setAttribute("needToFill", false) : el.setAttribute("needToFill", true)
-
-      // chek in each input chang how much inputs must be filled
-      let needToFill = 0;
-      requiredInputs.forEach((it)=>{
-        if(it.getAttribute("needToFill") == "true"){
-          needToFill ++;
-        }
-      })
-
-      // if inputs which must be filled = 0, we remove disabled attribute from button
-      needToFill != 0 ? formSumbit.setAttribute("disabled","") : formSumbit.removeAttribute("disabled")
-
-      console.log(`need to fill - `, needToFill);
-
-      formSumbit.hasAttribute("disabled") ? formSumbit.innerHTML = "Заполните все обязательные поля" : formSumbit.innerHTML = "Зарегистрироваться";
+      checkFields(el,requiredInputs, formSumbit)
     })
   })
+
+  function checkFields(element, elemList, submit){
+    // Check if input is empty
+    // If it is, we change needToFill to false
+    // if we cleared it and it is empty needToFill will be true
+    (element.value != "" && element.value != "-1") ? element.setAttribute("needToFill", false) : element.setAttribute("needToFill", true)
+
+    // chek in each input chang how much inputs must be filled
+    let needToFill = 0;
+    elemList.forEach((it)=>{
+      if(it.getAttribute("needToFill") == "true"){
+        needToFill ++;
+      }
+    })
+
+    // if inputs which must be filled = 0, we remove disabled attribute from button
+    needToFill != 0 ? submit.setAttribute("disabled","") : submit.removeAttribute("disabled")
+
+    console.log(`need to fill - `, needToFill);
+
+    submit.hasAttribute("disabled") ? submit.innerHTML = "Заполните все обязательные поля" : submit.innerHTML = "Зарегистрироваться";
+  }
+
+  geografyLocal.addEventListener("change", ()=>{
+    globalGeografyInput.value = geografyLocalSelect.value;
+    checkFields(globalGeografyInput,requiredInputs, formSumbit)
+  });
+
+  geografyLocalSelect.addEventListener("change", ()=>{
+    globalGeografyInput.value = geografyLocalSelect.value;
+    checkFields(globalGeografyInput,requiredInputs, formSumbit)
+  });
+  
+  geografyFederal.addEventListener("change", ()=>{
+    globalGeografyInput.value = "Федеральный";
+    checkFields(globalGeografyInput,requiredInputs, formSumbit)
+  });
+  
+  geografyMulti.addEventListener("change", ()=>{
+    globalGeografyInput.value = "Международный";
+    checkFields(globalGeografyInput,requiredInputs, formSumbit)
+  });
 
 }
 
