@@ -58,35 +58,21 @@
 
                     <div class="radio-group_radio">
                         <input type="radio" name="geografy" id="geografyLocal">
-                        
-                        <label for="geografyLocal" class="withSelect">
-                            <div class="select-wrapper">
-                                <select name="geografyLocalSelect" id="geografyLocalSelect">
-                                    <option value="ЦФО">ЦФО</option>
-                                    <option value="Северо-западный ФО">Северо-западный ФО</option>
-                                    <option value="Южный ФО">Южный ФО</option>
-                                    <option value="Северо-кавказский ФО">Северо-кавказский ФО</option>
-                                    <option value="Приволжский ФО">Приволжский ФО</option>
-                                    <option value="Уральский ФО">Уральский ФО</option>
-                                    <option value="Сибирский ФО">Сибирский ФО</option>
-                                    <option value="Дальневосточный ФО">Дальневосточный ФО</option>
-                                    <option selected="selected" hidden value="-1">Локальный</option>
-                                </select>
-                            </div>
+                        <label for="geografyLocal">
+                            <p>Локальный</p>
+                            <p class="label__content">
+                                В рамках региона
+                            </p>
                         </label>
                     </div>
 
                     <div class="radio-group_radio">
                         <input type="radio" name="geografy" id="geografyFederal">
                         <label for="geografyFederal">
-                            <p>Федеральный</p> 
-                        </label>
-                    </div>
-
-                    <div class="radio-group_radio">
-                        <input type="radio" name="geografy" id="geografyMulti">
-                        <label for="geografyMulti">
-                            <p>Международный</p> 
+                            <p>Федеральный</p>
+                            <p class="label__content">
+                                В пределах страны
+                            </p>
                         </label>
                     </div>
                 </div>
@@ -531,11 +517,15 @@
                     <label for="totalNoNews">Нет</label>
                 </div>
 
-                <button class="total-submit" disabled>Заполните все обязательные поля</button>
-                <div class="total-submit_alert">
+                <button class="total-submit" disabled>Зарегистрироваться</button>
+
+                <h2 class="total-submit_field-alert active">Заполните все обязательные поля</h2>
+
+                <div class="total-submit_alert ">
                     <span>Нажимая на кнопку, вы даете согласие на</span> <br>
                     <a href="./brief.html">обработку персональных данных.</a>
-                    </div>
+                </div>
+
             </section>
         </div>
     </div>

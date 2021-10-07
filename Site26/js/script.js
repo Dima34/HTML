@@ -165,33 +165,17 @@ if(girl){
 
 const globalGeografyInput = document.getElementById("geografyGlobalInput")
 const geografyLocal = document.getElementById("geografyLocal");
-const geografyLocalSelect = document.getElementById("geografyLocalSelect");
 const geografyFederal = document.getElementById("geografyFederal");
-const geografyMulti = document.getElementById("geografyMulti");
 
 geografyLocal.addEventListener("change", ()=>{
-  console.log("oninput");
-})
-
-geografyLocal.addEventListener("change", ()=>{
-  geografyLocalSelect.value < 0 ? geografyLocalSelect.classList.add("alert") : geografyLocalSelect.classList.remove("alert")
-  globalGeografyInput.value = geografyLocalSelect.value;
+  globalGeografyInput.value = "Локальный";
 });
 
-geografyLocalSelect.addEventListener("change", ()=>{
-  geografyLocalSelect.value < 0 ? geografyLocalSelect.classList.add("alert") : geografyLocalSelect.classList.remove("alert")
-  globalGeografyInput.value = geografyLocalSelect.value;
-});
 
 geografyFederal.addEventListener("change", ()=>{
-  geografyLocalSelect.classList.remove("alert")
   globalGeografyInput.value = "Федеральный";
 });
 
-geografyMulti.addEventListener("change", ()=>{
-  geografyLocalSelect.classList.remove("alert")
-  globalGeografyInput.value = "Международный";
-});
 
 // 
 // check required inputs
@@ -201,6 +185,7 @@ const requiredInputs = document.querySelectorAll(".requiredContent");
 
 if(requiredInputs.length > 0){
   const formSumbit = document.querySelector(".total-submit");
+  const fieldAlert = document.querySelector(".total-submit_field-alert")
   let requiredAmount = 0
 
   requiredInputs.forEach((el)=>{
@@ -234,28 +219,20 @@ if(requiredInputs.length > 0){
 
     console.log(`need to fill - `, needToFill);
 
-    submit.hasAttribute("disabled") ? submit.innerHTML = "Заполните все обязательные поля" : submit.innerHTML = "Зарегистрироваться";
+    submit.hasAttribute("disabled") ? fieldAlert.classList.add("active") : fieldAlert.classList.remove("active");
   }
 
   geografyLocal.addEventListener("change", ()=>{
-    globalGeografyInput.value = geografyLocalSelect.value;
+    globalGeografyInput.value = "Локальный";
     checkFields(globalGeografyInput,requiredInputs, formSumbit)
   });
 
-  geografyLocalSelect.addEventListener("change", ()=>{
-    globalGeografyInput.value = geografyLocalSelect.value;
-    checkFields(globalGeografyInput,requiredInputs, formSumbit)
-  });
   
   geografyFederal.addEventListener("change", ()=>{
     globalGeografyInput.value = "Федеральный";
     checkFields(globalGeografyInput,requiredInputs, formSumbit)
   });
-  
-  geografyMulti.addEventListener("change", ()=>{
-    globalGeografyInput.value = "Международный";
-    checkFields(globalGeografyInput,requiredInputs, formSumbit)
-  });
+
 
 }
 
