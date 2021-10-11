@@ -2345,6 +2345,72 @@ textarea{
   }
 }
 
+.brief__file-add{
+  display: flex;
+  justify-content: space-between
+}
+
+.file-add_textblock{
+  @include Root();
+  color: #000000;
+  max-width: 350rem;
+
+  h2{
+    font-size: 24rem;
+    line-height: 108%;
+  }
+
+  p{
+    font-size: 17rem;
+    line-height: 18.36rem;
+  }
+
+  span{
+    color: #FF598E;
+  }
+}
+
+.brief .file-add_input{
+  display: none;
+}
+
+.file-add_input-label{
+  font-size: 18rem;
+  line-height: 27rem;
+  @include Rounded();
+  text-align: center;
+  color: #000000;
+  background: linear-gradient(90deg, #00FFCB 4.64%, #A597FD 57.32%, #FF598E 99.99%);
+  width: 203rem;
+  height: 43rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 78rem;
+  cursor: pointer;
+  margin-right: 72rem;
+  margin-top: 18rem;
+
+  span{
+    background: #fff;
+    border-radius: 78rem;
+    height: calc(100% - 4rem);
+    width: calc(100% - 4rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+  }
+
+  &:hover{
+
+    span{
+      background: rgba(#fff, 0);
+    }
+    
+  }
+}
+
 .total-submit{
   background: linear-gradient(90deg, #00FFCB 4.64%, #A597FD 57.32%, #FF598E 99.99%);
   border-radius: 78rem;
@@ -2361,7 +2427,7 @@ textarea{
   transition: .3s;
 
   &:hover{
-    transform: translateY(-5px);
+    transform: translateY(-5rem);
     box-shadow: 0px 5px 5px rgba(#2d2d2d, 0.3);
   }
 
@@ -3335,6 +3401,7 @@ textarea{
 
   .brief__brand-platform{
     margin-bottom: 70rem;
+    padding-top: 300rem;
 
     &::before{
       content: " ";
@@ -3604,5 +3671,35 @@ textarea{
 
   .dropdown-wrapper {
     width: unset;
+  }
+
+  .brief__file-add{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .file-add_textblock{
+    h2{
+      font-size: 18rem;
+      line-height: 108%;
+    }
+
+    p{
+      font-size: 14rem;
+      line-height: 15rem;
+    }
+  
+  }
+
+  .file-add_input-label{
+    margin-left: auto;
+    margin-right: auto;
+    width: 203rem;
+    height: 43rem;
+
+    span{
+      font-size: 14rem;
+      line-height: 21rem;
+    }
   }
 }

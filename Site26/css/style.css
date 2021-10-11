@@ -1742,6 +1742,54 @@ textarea {
   .brief_total .brief_radio-group {
     margin-bottom: 120rem; }
 
+.brief__file-add {
+  display: flex;
+  justify-content: space-between; }
+
+.file-add_textblock {
+  font-family: 'Root';
+  color: #000000;
+  max-width: 350rem; }
+  .file-add_textblock h2 {
+    font-size: 24rem;
+    line-height: 108%; }
+  .file-add_textblock p {
+    font-size: 17rem;
+    line-height: 18.36rem; }
+  .file-add_textblock span {
+    color: #FF598E; }
+
+.brief .file-add_input {
+  display: none; }
+
+.file-add_input-label {
+  font-size: 18rem;
+  line-height: 27rem;
+  font-family: 'Rounded';
+  text-align: center;
+  color: #000000;
+  background: linear-gradient(90deg, #00FFCB 4.64%, #A597FD 57.32%, #FF598E 99.99%);
+  width: 203rem;
+  height: 43rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 78rem;
+  cursor: pointer;
+  margin-right: 72rem;
+  margin-top: 18rem; }
+  .file-add_input-label span {
+    background: #fff;
+    border-radius: 78rem;
+    height: calc(100% - 4rem);
+    width: calc(100% - 4rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s; }
+  .file-add_input-label:hover span {
+    background: rgba(255, 255, 255, 0); }
+
 .total-submit {
   background: linear-gradient(90deg, #00FFCB 4.64%, #A597FD 57.32%, #FF598E 99.99%);
   border-radius: 78rem;
@@ -1757,7 +1805,7 @@ textarea {
   display: block;
   transition: .3s; }
   .total-submit:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5rem);
     box-shadow: 0px 5px 5px rgba(45, 45, 45, 0.3); }
   .total-submit[disabled] {
     background: #2d2d2d;
@@ -2425,7 +2473,8 @@ textarea {
   .brief__core {
     margin-bottom: 70px; }
   .brief__brand-platform {
-    margin-bottom: 70rem; }
+    margin-bottom: 70rem;
+    padding-top: 300rem; }
     .brief__brand-platform::before {
       content: " ";
       height: 320rem;
@@ -2599,6 +2648,23 @@ textarea {
     line-height: 90%;
     margin-bottom: 29rem; }
   .dropdown-wrapper {
-    width: unset; } }
+    width: unset; }
+  .brief__file-add {
+    flex-direction: column;
+    text-align: center; }
+  .file-add_textblock h2 {
+    font-size: 18rem;
+    line-height: 108%; }
+  .file-add_textblock p {
+    font-size: 14rem;
+    line-height: 15rem; }
+  .file-add_input-label {
+    margin-left: auto;
+    margin-right: auto;
+    width: 203rem;
+    height: 43rem; }
+    .file-add_input-label span {
+      font-size: 14rem;
+      line-height: 21rem; } }
 
 /*# sourceMappingURL=style.css.map */
