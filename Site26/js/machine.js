@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", ()=>{
+    setTimeout(()=>{
+        document.querySelector(".generator__right").classList.add("loaded")
+    },1000)
+    
+})
+
 const machineBlock = document.querySelector(".generator__main");
 
 if(machineBlock){
