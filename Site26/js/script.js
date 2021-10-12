@@ -167,14 +167,18 @@ const globalGeografyInput = document.getElementById("geografyGlobalInput")
 const geografyLocal = document.getElementById("geografyLocal");
 const geografyFederal = document.getElementById("geografyFederal");
 
-geografyLocal.addEventListener("change", ()=>{
-  globalGeografyInput.value = "Локальный";
-});
+if(geografyLocal){
+  geografyLocal.addEventListener("change", ()=>{
+    globalGeografyInput.value = "Локальный";
+  });
+  
+  
+  geografyFederal.addEventListener("change", ()=>{
+    globalGeografyInput.value = "Федеральный";
+  });
+}
 
 
-geografyFederal.addEventListener("change", ()=>{
-  globalGeografyInput.value = "Федеральный";
-});
 
 // 
 // Merriage input
@@ -184,15 +188,16 @@ const globalMerriageInput = document.getElementById("merriageGlobalInput")
 const inMarriage = document.getElementById("coreInMarriage");
 const notInMarriage = document.getElementById("coreNotInMarriage");
 
-inMarriage.addEventListener("change", ()=>{
-  globalMerriageInput.value = "В браке";
-});
-
-
-notInMarriage.addEventListener("change", ()=>{
-  globalMerriageInput.value = "Не в браке";
-});
-
+if(inMarriage){
+  inMarriage.addEventListener("change", ()=>{
+    globalMerriageInput.value = "В браке";
+  });
+  
+  
+  notInMarriage.addEventListener("change", ()=>{
+    globalMerriageInput.value = "Не в браке";
+  });
+}
 
 // 
 // check required inputs
@@ -260,9 +265,6 @@ if(requiredInputs.length > 0){
     globalMerriageInput.value = "Не в браке";
     checkFields(globalMerriageInput,requiredInputs, formSumbit)
   });
-
-
-
 }
 
 
@@ -271,7 +273,10 @@ if(requiredInputs.length > 0){
 // 
 
 window.addEventListener('DOMContentLoaded', () => {
-	new dualRangeSlider(document.querySelector(".dual-range"))
+  if(document.querySelector(".dual-range")){
+    new dualRangeSlider(document.querySelector(".dual-range"))
+  }
+	
 })
 
 
