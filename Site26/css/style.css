@@ -2443,7 +2443,8 @@ textarea {
     .connect-to .wrapper {
       width: 79.69vw;
       display: grid;
-      grid-template-columns: min-content; }
+      grid-template-columns: min-content;
+      justify-content: center; }
   .connect-to__container {
     width: unset;
     margin: 0; }
