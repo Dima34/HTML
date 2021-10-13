@@ -1585,7 +1585,7 @@ input[type="range"] {
 }
 
 .generator__machine{
-  margin-top: 112rem;
+  margin-top: 110rem;
   cursor: pointer;
   width: 600rem;
   height: 600rem;
@@ -2869,6 +2869,10 @@ textarea{
   }
 }
 
+.connect-to__table-mobile{
+  display: none;
+}
+
 @media screen and (max-width: 851px){
   .brief{
     .wrapper{
@@ -2889,8 +2893,13 @@ textarea{
 
 @media screen and (max-width: 501px){
 
+ 
   .generator{
     display: none;
+
+    &img{
+      display: none;
+    }
   }
   .brief-image{
     width: unset !important;
@@ -3393,34 +3402,22 @@ textarea{
   .connect-to__table{
     border: 0;
     grid-template-rows: min-content 56rem 56rem 56rem 56rem 56rem 56rem 56rem;
-    grid-template-columns: 77rem 77rem 77rem;
+    grid-template-columns: repeat(4, 63rem);
     width: fit-content;
-    gap: 12rem;
+    margin: 0 auto;
     margin-bottom: 58rem;
+  
   }
 
-  .connect-to__table_cell{
-    display: none;
-    border: 0;
-
-    &.fill{
-      display: flex;
-
-      img{
-        max-width: 80%;
-        max-height: 80%;
-        
-      }
-    }
-  }
+  
 
   .connect-to__table_header{
-    border: 0;
-    font-size: 30rem;
-    line-height: 112.5%;
-    text-align: center;
-    grid-column: 1/4;
     padding: 0;
+    font-size: 18px;
+    line-height: 19px;
+    padding-top: 6px;
+    text-align: center;
+    grid-column: 1/5;
 
     h2{
       margin: 0;
@@ -4048,5 +4045,12 @@ textarea{
       font-size: 14rem;
       line-height: 21rem;
     }
+  }
+
+  .connect-to__table{
+    display: none;
+  }
+  .connect-to__table-mobile{
+    display: grid;
   }
 }
