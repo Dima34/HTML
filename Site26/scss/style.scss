@@ -689,14 +689,14 @@ input[type="range"] {
     position: relative;
 
     &::after{
-      content: url(../img/svg/how-it-works-star.png);
+      content: url(../img/how-it-works-star.png);
       position: absolute;
       top: 497rem;
       right: 35rem;
     }
   
     &::before{
-      content: url(../img/svg/how-it-works-star.png);
+      content: url(../img/how-it-works-star.png);
       position: absolute;
       top: 390rem;
       right: 250rem;
@@ -1339,10 +1339,10 @@ input[type="range"] {
 
   &::after{
     content: "";
-    background: url(../img/svg/form-arrow.png);
+    background: url(../img/svg/form-arrow.svg);
     background-size: cover;
-    width: 177rem;
-    height: 399rem;
+    width: 173rem;
+    height: 349rem;
     position: absolute;
     right: -116rem;
     top: 80%;
@@ -1947,7 +1947,7 @@ footer{
 
   &::after{
     content: "";
-    background: url(../img/svg/checkboc-arrow.png);
+    background: url(../img/svg/arrow-down.svg);
     background-repeat: no-repeat;
     position: absolute;
     right: 10rem;
@@ -2311,7 +2311,7 @@ textarea{
   }
 
   &::before{
-    content: url(../img/svg/checkboc-arrow.png);
+    content: url(../img/svg/arrow-down.svg);
     position: absolute;
     right: 10rem;
     top: 50%;
