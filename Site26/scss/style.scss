@@ -561,7 +561,7 @@ input[type="range"] {
 
 .what-we-create__illustartion{
   margin-bottom: 9rem;
-  margin-right: 18rem;
+  margin-right: 114rem;
   width: 484rem;
   height: 475rem;
 }
@@ -571,8 +571,8 @@ input[type="range"] {
   font-size: 170rem;
   line-height: 103.4%;
   text-transform: lowercase;
+  margin-right: 370rem;
   @include Rounded();
-  margin-right:71rem;
   background: linear-gradient(90deg, #00FFCB 4.64%, #A597FD 57.32%, #FF598E 99.99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -786,7 +786,7 @@ input[type="range"] {
 
 .register{
   padding-top: 70rem;
-  padding-bottom: 20rem;
+  padding-bottom: 26rem;
   margin-top: -13rem;
 
   .wrapper{
@@ -799,11 +799,16 @@ input[type="range"] {
       background: url(../img/svg/register-border.svg);
       background-size: cover;
       position: absolute;
-      left: -227rem;
+      left: -200rem;
       top: -62rem;
       width: 1661rem;
       height: 420rem;
+      pointer-events: none;
     }
+  }
+
+  a{
+    margin-left: unset;
   }
 }
 
@@ -812,6 +817,10 @@ input[type="range"] {
   line-height: 120%;
   @include Rounded();
   margin-bottom: 36rem;
+
+  .mb{
+    display: none;
+  }
 
   span{
     color: #3FFFD8;
@@ -1365,30 +1374,32 @@ input[type="range"] {
     }
   }
 
-  button{
-    background: linear-gradient(90deg, #00FFCB 4.64%, #A597FD 57.32%, #FF598E 99.99%);
-    background-size: 100% 200%;
-    background-position: 0% 0%;
-    border-radius: 78rem;
-    width: 482rem;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    font-size: 30rem;
-    line-height: 45rem;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 11rem 25rem 14rem 25rem;
-    margin-bottom: 10rem;
-    border: 0;
-    @include Rounded();
-    transition: .3s;
-    margin-top: 46rem;
-    max-width: 500rem;
+  
+}
 
-    &:hover{
-      transform: translateY(-3rem);
-    }
+.button{
+  background: linear-gradient(90deg, #00FFCB 4.64%, #A597FD 57.32%, #FF598E 99.99%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+  border-radius: 78rem;
+  width: 482rem;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  font-size: 30rem;
+  line-height: 45rem;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 11rem 25rem 14rem 25rem;
+  margin-bottom: 10rem;
+  border: 0;
+  @include Rounded();
+  transition: .3s;
+  margin-top: 46rem;
+  max-width: 500rem;
+
+  &:hover{
+    transform: translateY(-3rem);
   }
 }
 
@@ -2614,10 +2625,12 @@ textarea{
     .handle {
       width:calc(var(--range-size) * var(--handle-size));
       height:calc(var(--range-size) * var(--handle-size));
-      background:#fff;
+      // background:#fff;
       position:absolute;
       border-radius:50%;
-      border: 1rem solid grey;
+      width: 30px;
+      height: 30px;
+      // border: 1rem solid grey;
       top:50%;
       transform:translateY(-50%);
       z-index:2;
@@ -2631,6 +2644,16 @@ textarea{
 
         &::after{
           color: #00FFCB;
+          left: 25%;
+        }
+
+        &:before{
+          content: url(../img/svg/handle-left.svg);
+          position: absolute;
+          left: 25%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          pointer-events: none;
         }
       }
       
@@ -2639,6 +2662,16 @@ textarea{
 
         &::after{
           color: #FF598E;
+          left: 82%;
+        }
+
+        &:before{
+          content: url(../img/svg/handle-right.svg);
+          position: absolute;
+          right: -5%;
+          top: 50%;
+          transform: translate(0%, -50%);
+          pointer-events: none;
         }
       }
       
@@ -2646,7 +2679,6 @@ textarea{
         content: attr(data-value);
         position: absolute;
         top: calc(100% + 8rem);
-        left: 50%;
         font-size: 14rem;
         line-height: 120%;
         font-family: 'Root';
@@ -3129,6 +3161,7 @@ textarea{
   }
 
   .how-it-works{
+    padding-bottom: 150rem;
     .wrapper{
       width: unset;
       width: 100%;
@@ -3198,10 +3231,18 @@ textarea{
   }
 
   .register__text{
-    font-size: 14rem;
+    font-size: 13rem;
     line-height: 120%;
     margin-bottom: 17rem;
     text-align: center;
+
+    .ds{
+      display: none;
+    }
+
+    .mb{
+      display: block;
+    }
   }
 
   .why-we-can__feather,
@@ -3546,13 +3587,13 @@ textarea{
     input[userName]{
       grid-row: 1/2;
     }
+  }
 
-    button{
-      font-size: 14rem;
-      line-height: 21rem;
-      margin-top: 1rem;
-      margin-bottom: 7rem;
-    }
+  .button{
+    font-size: 14rem;
+    line-height: 21rem;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
   }
 
   .join__form_caption{
