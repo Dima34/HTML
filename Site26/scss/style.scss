@@ -274,11 +274,13 @@ input[type="range"] {
 }
 
 .video__title{
-  font-size: 24px;
+  font-size: 24rem;
   line-height: 120%;
   @include Mont(500);
-  margin-bottom: 105px;
+  margin: 0 auto;
+  margin-bottom: 105rem;
   text-align: center;
+  max-width: 971rem;
 }
 
 .video__playground{
@@ -288,7 +290,6 @@ input[type="range"] {
   max-height: 1080px;
   background: #d3d3d3;
   position: relative;
-  font-size: 16px;
 }
 
 .playground__play{
@@ -828,7 +829,7 @@ input[type="range"] {
 
 .register{
   padding-top: 70rem;
-  padding-bottom: 26rem;
+  padding-bottom: 40rem;
   margin-top: -13rem;
 
   .wrapper{
@@ -1976,9 +1977,6 @@ footer{
     color: #FFFFFF;
   } 
 
-  a{
-    text-decoration: underline;
-  }
 }
 
 .footer__logo{
@@ -2969,6 +2967,24 @@ textarea{
 
 @media screen and (max-width: 501px){
 
+  .playground__play{
+    img{
+      width: 64px;
+      height: auto;
+    }
+  }
+
+  .video{
+    margin-bottom: 35px;
+  }
+
+  .video__title{
+    max-width: 259rem;
+    text-align: left;
+    margin-bottom: 20rem;
+    font-size: 13rem;
+    line-height: 120%;
+  }
  
   .generator{
     display: none;
@@ -3713,8 +3729,6 @@ textarea{
     p,a{
       font-size: 9rem;
       line-height: 11rem;
-
-      text-decoration: none;
     } 
   }
   
