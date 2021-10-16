@@ -266,6 +266,48 @@ input[type="range"] {
 }
 
 // ---------------------
+// ------ VIDEO --------
+// ---------------------
+
+.video{
+  margin: 0 auto;
+}
+
+.video__title{
+  font-size: 24px;
+  line-height: 120%;
+  @include Mont(500);
+  margin-bottom: 105px;
+  text-align: center;
+}
+
+.video__playground{
+  width: 100vw;
+  max-width: 1920px;
+  height: 56.25vw;
+  max-height: 1080px;
+  background: #d3d3d3;
+  position: relative;
+  font-size: 16px;
+}
+
+.playground__play{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition:.3s ;
+  z-index: 2;
+  cursor: pointer;
+  background: 0;
+  border: 0;
+
+  &:hover{
+    transform:  translate(-50%, -50%) scale(1.1);
+  }
+}
+
+// ---------------------
 // ----- RUNLINE -------
 // ---------------------
 
@@ -2764,6 +2806,7 @@ textarea{
   cursor: pointer;
   margin-right: 72rem;
   margin-top: 18rem;
+  transition: .3s;
 
   span{
     background: #fff;
@@ -2777,6 +2820,7 @@ textarea{
   }
 
   &:hover{
+    color: white;
 
     span{
       background: rgba(#fff, 0);

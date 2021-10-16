@@ -166,12 +166,16 @@ if(girl){
 const globalGeografyInput = document.getElementById("geografyGlobalInput")
 const geografyLocal = document.getElementById("geografyLocal");
 const geografyFederal = document.getElementById("geografyFederal");
+const geografyMulti = document.getElementById("geografyMulti");
 
 if(geografyLocal){
   geografyLocal.addEventListener("change", ()=>{
     globalGeografyInput.value = "Локальный";
   });
-  
+
+  geografyMulti.addEventListener("change", ()=>{
+    globalGeografyInput.value = "Международный";
+  });  
   
   geografyFederal.addEventListener("change", ()=>{
     globalGeografyInput.value = "Федеральный";
@@ -211,7 +215,6 @@ if(requiredInputs.length > 0){
   let requiredAmount = 0
 
   requiredInputs.forEach((el)=>{
-    console.log(el.value);
     el.setAttribute("needToFill", true)
     requiredAmount++;
   })
@@ -248,7 +251,12 @@ if(requiredInputs.length > 0){
     globalGeografyInput.value = "Локальный";
     checkFields(globalGeografyInput,requiredInputs, formSumbit)
   });
+  
 
+  geografyMulti.addEventListener("change", ()=>{
+    globalGeografyInput.value = "Междонародный";
+    checkFields(globalGeografyInput,requiredInputs, formSumbit)
+  });
   
   geografyFederal.addEventListener("change", ()=>{
     globalGeografyInput.value = "Федеральный";

@@ -10,6 +10,7 @@
     <link rel="icon" href="./img/favicon.jpeg" type="image/jpeg">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/modal-video.min.css">
 </head>
 
 <body>  
@@ -55,7 +56,7 @@
         <picture  class="dinos__dino dinos__dino-left">
             <source media="(max-width: 501px)" srcset="./img/dino-left-mobile.webp">
             <source media="(min-width: 501px)" srcset="./img/dino-left.webp">
-            <img src="./img/dino-left.webp" alt="dino right">
+            <img  loading="lazy" decoding="async" src="./img/dino-left.webp" alt="dino right">
         </picture>
 
         <svg class="dinos__dino dinos__dino-center" width="790" height="633" viewBox="0 0 790 633" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -237,9 +238,23 @@
         <picture  class="dinos__dino dinos__dino-right">
             <source media="(max-width: 501px)" srcset="./img/dino-right-mobile.webp">
             <source media="(min-width: 501px)" srcset="./img/dino-right.webp">
-            <img src="./img/dino-right.webp" alt="dino right">
+            <img  loading="lazy" decoding="async" src="./img/dino-right.webp" alt="dino right">
         </picture>
 
+    </div>
+
+    <div class="video">
+        <h2 class="video__title">
+            Миссия Colable — вдохновить бренды на внедрение креативных решений, <br> которые разнообразят рынок российской рекламы и ускорят его развитие.
+        </h2>
+        
+        <div class="video__playground">
+            
+            <button class="playground__play" data-video-id='619427082' data-channel="vimeo">
+                <img width="132" height="132" loading="lazy" decoding="async" src="./img/video__play.webp" alt="play video about colable">
+            </button>
+            
+        </div>
     </div>
 
     <div class="runline">
@@ -314,8 +329,6 @@
         <div class="wrapper">
 
             <div class="what-we-create__line1">
-                <!-- <img class="what-we-create__illustartion" src="./img/svg/what-we-create__illustration.svg" alt="what we create illustration"> -->
-
                 <video class = "what-we-create__illustartion" autoplay playsinline muted loop src="./video/batman.mp4"></video>
 
                 <p class="what-we-create__line1_text">
@@ -373,13 +386,13 @@
                 </li>
             </ul>
 
-            <img class="how-it-works__ship-mobile" src="./img/svg/how-it-works-ship-mobile.svg" alt="ship">
+            <img  loading="lazy" decoding="async" class="how-it-works__ship-mobile" src="./img/svg/how-it-works-ship-mobile.svg" alt="ship">
              
             <div class="how-it-works__ship-container">
-                <img class="container_star" src="./img/svg/ship_star.svg" alt="ship star" class="ship-container_star">
-                <img class="container_mount" src="./img/svg/ship_mount-left.svg" alt="left mount">
-                <img class="ship-container_ship" src="./img/svg/ship_ship.svg" alt="ship">
-                <img class="container_mount" src="./img/svg/ship_mount-right.svg" alt="right mount">
+                <img  loading="lazy" decoding="async" class="container_star" src="./img/svg/ship_star.svg" alt="ship star" class="ship-container_star">
+                <img  loading="lazy" decoding="async" class="container_mount" src="./img/svg/ship_mount-left.svg" alt="left mount">
+                <img  loading="lazy" decoding="async" class="ship-container_ship" src="./img/svg/ship_ship.svg" alt="ship">
+                <img  loading="lazy" decoding="async" class="container_mount" src="./img/svg/ship_mount-right.svg" alt="right mount">
             </div>
 
         </div>
@@ -414,7 +427,7 @@
             <picture  class="why-we-can__illustration">
                 <source media="(max-width: 501px)" srcset="./img/svg/why-we-can_illustration-mobile.svg">
                 <source media="(min-width: 501px)" srcset="./img/svg/why-we-can_illustration.svg">
-                <img src="./img/svg/why-we-can_illustration.svg" alt="why we can illustration">
+                <img  loading="lazy" decoding="async" src="./img/svg/why-we-can_illustration.svg" alt="why we can illustration">
             </picture>
 
             <h2 class="why-we-can__header-mobile">
@@ -501,12 +514,12 @@
             </div>
 
             <div class="connect-to__octopus">
-                <img class="octopus_eye-right" width="63" height="63" src="./img/eye-right.png" alt="octopus_eye-right">
-                <img class="octopus_eye-left" width="63" height="63" src="./img/eye-left.png" alt="octopus_eye-left">
+                <img  loading="lazy" decoding="async" class="octopus_eye-right" width="63" height="63" src="./img/eye-right.png" alt="octopus_eye-right">
+                <img  loading="lazy" decoding="async" class="octopus_eye-left" width="63" height="63" src="./img/eye-left.png" alt="octopus_eye-left">
                 <picture>
                     <source media="(max-width: 501px)" srcset="./img/connect-to-mobile.webp">
                     <source media="(min-width: 501px)" srcset="./img/connect-to.webp">
-                    <img src="./img/connect-to.webp" alt="dino right">
+                    <img  loading="lazy" decoding="async" src="./img/connect-to.webp" alt="dino right">
                 </picture>
             </div>
             
@@ -634,30 +647,30 @@
 
             <div class="connect-to__table">
                 <div class="connect-to__table_header"><h2>К нам уже присоединились</h2></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_microsoft.png" alt="microsoft"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_mir.png" alt="mir"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_vk.png" alt="vkontakte"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_opel.png" alt="opel"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_yandex.png" alt="yandex dzen"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_microsoft.png" alt="microsoft"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_mir.png" alt="mir"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_vk.png" alt="vkontakte"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_opel.png" alt="opel"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_yandex.png" alt="yandex dzen"></div>
                 <div class="connect-to__table_cell"></div>
                 <div class="connect-to__table_cell"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_peugeot.png" alt="peugeot"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_perekrestook.png" alt="perekrestok"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_hh.png" alt="hh"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_sitimibil.png" alt="sitimobil"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_eldorado.png" alt="eldorado"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_citroen.png" alt="citroen"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_5.png" alt="pyaterochka"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_svyaznoy.png" alt="svyaznoy"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_sber.png" alt="sber apteka"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_peugeot.png" alt="peugeot"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_perekrestook.png" alt="perekrestok"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_hh.png" alt="hh"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_sitimibil.png" alt="sitimobil"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_eldorado.png" alt="eldorado"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_citroen.png" alt="citroen"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_5.png" alt="pyaterochka"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_svyaznoy.png" alt="svyaznoy"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_sber.png" alt="sber apteka"></div>
                 <div class="connect-to__table_cell"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_samolet.png" alt="samolet"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_samolet.png" alt="samolet"></div>
                 <div class="connect-to__table_cell"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_mvideo.png" alt="mvideo"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_mvideo.png" alt="mvideo"></div>
                 <div class="connect-to__table_cell"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_dpd.png" alt="dpd"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_bonduelle.png" alt="bouduelle"></div>
-                <div class="connect-to__table_cell fill"><img src="./img/table_tanuli.png" alt="tanuki"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_dpd.png" alt="dpd"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_bonduelle.png" alt="bouduelle"></div>
+                <div class="connect-to__table_cell fill"><img  loading="lazy" decoding="async" src="./img/table_tanuli.png" alt="tanuki"></div>
                 <div class="connect-to__table_cell"></div>
                 <div class="connect-to__table_cell"></div>
             </div>   
@@ -941,11 +954,11 @@
         <div class="wrapper">   
 
             <div class="its-match__header-illustration">
-                <img class="illustration_draco" src="./img/its-match_draco.webp" alt="illustration draco">
-                <img src="./img/its-match_girl2.webp" secondSrc = "./img/its-match_girl1.webp" alt="illustrarion girl" class="illustrarion_girl">
+                <img  loading="lazy" decoding="async" class="illustration_draco" src="./img/its-match_draco.webp" alt="illustration draco">
+                <img  loading="lazy" decoding="async" src="./img/its-match_girl2.webp" secondSrc = "./img/its-match_girl1.webp" alt="illustrarion girl" class="illustrarion_girl">
             </div>
 
-            <img src="./img/its-match__header-illustration-mobile.webp" alt="its match header illustration mobile" class="its-match__header-illustration-mobile">
+            <img  loading="lazy" decoding="async" src="./img/its-match__header-illustration-mobile.webp" alt="its match header illustration mobile" class="its-match__header-illustration-mobile">
                 
             <svg class="its-math__square" width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="1" y="1" width="348" height="348" stroke="#3FFFD8" stroke-width="2"/>
@@ -992,9 +1005,9 @@
                         <h2 class="preset__title"><span>Cyberpunk 2077</span> + <span>Додо Пицца</span></h2>
                         <p class="preset__desc">Запустили спецпроект по запуску новой <br> пиццы Додо 2077 с соусом киберкола <br> барбекю в коллаборации с игрой.</p>
                         <div class="preset__images">
-                            <img src="./img/col1-1.webp" alt="col1">
-                            <img src="./img/col1-2.webp" alt="col1">
-                            <img width="562" height="266" src="./img/col1-3.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" src="./img/col1-1.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" src="./img/col1-2.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" width="562" height="266" src="./img/col1-3.webp" alt="col1">
                         </div>
                         <div class="preset__result">
                             <h2>Результат</h2>
@@ -1011,9 +1024,9 @@
                         <h2 class="preset__title"><span>ПИК</span> + <span>Cream Soda</span></h2>
                         <p class="preset__desc">Интегрировали ЖК от ПИК в музыкальный <br> клип «Плачу на техно» и запустили флешмоб</p>
                         <div class="preset__images">
-                            <img src="./img/col2-1.webp" alt="col1">
-                            <img src="./img/col2-2.webp" alt="col1">
-                            <img src="./img/col2-3.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" src="./img/col2-1.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" src="./img/col2-2.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" src="./img/col2-3.webp" alt="col1">
                         </div>
                         <div class="preset__result">
                             <h2>Результат</h2>
@@ -1032,9 +1045,9 @@
                             Предложили отказаться от пакета и <br> обувной коробки при покупке в пользу <br> многоразовой сумки из переработанного <br> пластика. Средства направили на <br> сохранение лесов России.
                         </p>
                         <div class="preset__images">
-                            <img src="./img/col3-1.webp" alt="col1">
-                            <img src="./img/col3-2.webp" alt="col1">
-                            <img src="./img/col3-3.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" src="./img/col3-1.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" src="./img/col3-2.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" src="./img/col3-3.webp" alt="col1">
                         </div>
                         <div class="preset__result">
                             <h2>Результат</h2>
@@ -1052,9 +1065,9 @@
                             в которой вещи кастомизируются<br> уникальным принтом цифрового «я».
                         </p>
                         <div class="preset__images">
-                            <img src="./img/col4-1.webp" alt="col1">
-                            <img src="./img/col4-2.webp" alt="col1">
-                            <img src="./img/col4-3.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" src="./img/col4-1.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" src="./img/col4-2.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" src="./img/col4-3.webp" alt="col1">
                         </div>
                         <div class="preset__result">
                             <h2>Результат</h2>
@@ -1069,9 +1082,9 @@
                         <h2 class="preset__title"><span>Wargaming</span> + <span>ZOLLIDER</span></h2>
                         <p class="preset__desc">Продвинули бренд мужской <br> косметики среди геймеров.</p>
                         <div class="preset__images">
-                            <img src="./img/col5-1.webp" alt="col1">
-                            <img src="./img/col5-2.webp" alt="col1">
-                            <img src="./img/col5-3.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" src="./img/col5-1.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" src="./img/col5-2.webp" alt="col1">
+                            <img  loading="lazy" decoding="async" src="./img/col5-3.webp" alt="col1">
                         </div>
                         <div class="preset__result">
                             <h2>Результат</h2>
@@ -1097,8 +1110,14 @@
    
     <script src="./js/script.js"></script>
     <script defer src="./js/machine.js"></script>
+    <script src="./js/modal-video.min.js"></script>
 
     <script>
+        new ModalVideo('.playground__play', {channel: 'vimeo'});
+	</script>
+        
+    <script>
+
         const html = document.querySelector("html")
 
         function checkWidth(){
