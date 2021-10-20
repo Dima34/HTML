@@ -48,7 +48,11 @@
                 <img src="./img/brief-platform__turtle.svg" alt="contacts image" class="brief-image">
                 <h2 class="brief__section-title"><span>Платформа бренда</span></h2>
 
-                <input class="placeholderStar" type="text" placeholder="Название бренда" name="brandPlatformBrandName" id="brandPlatformBrandName">
+                <div class="custom-placeholder_container">
+                    <input type="text" placeholder="" name="brandPlatformBrandName" id="brandPlatformBrandName">
+                    <p class="custom-placeholder">Название бренда<span>*</span></p>
+                </div>
+                
                 <input type="text" placeholder="Сайт" name="brandPlatformSiteLink" id="brandPlatformSiteLink">
                 
                 <div class="brief__radio-group">
@@ -239,8 +243,9 @@
                 <div class="brief__text-block">
                     <h3 class="text-block__header">Эмоциональные преимущества</h3>
                     <div class="textarea-wrapper">
-                        <p class="textarea-placeholder"></p>
-                        <textarea placeholder = "" name="" id=""></textarea>
+                        <p class="textarea-placeholder">Эмоциональные преимущества — это характеристики, из которых складывается ключевая ценность бренда и которые формируют образ бренда. Эмоциональные характеристики вдохновляют потребителя.</p>
+                        <textarea placeholder = "Эмоциональные преимущества — это характеристики, из которых складывается ключевая ценность бренда и которые формируют образ бренда. Эмоциональные характеристики вдохновляют потребителя.
+                        " name="" id=""></textarea>
                     </div>
                 </div>
 
@@ -331,6 +336,26 @@
 
                     <div class="media_contnet-item">
                         <div class="content-item_input">
+                            <img src="./img/svg/vk-ico.svg" alt="vk vk-logo">
+                            <input type="text" placeholder="Ссылка на Vkontakte">
+                        </div>
+
+                        <div class="select-wrapper">
+                            <select name="vkSubscribersAmount" id="vkSubscribersAmount">
+                                <option value="1">до 5 000</option>
+                                <option value="1">до 10 000</option>
+                                <option value="1">10 000-30 000</option>
+                                <option value="1">30 000-50 000</option>
+                                <option value="1">50 000-100 000</option>
+                                <option value="1">больше  100 000</option>
+                                <option disabled selected="selected" hidden value="1">Количество подписчиков</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+
+                    <div class="media_contnet-item">
+                        <div class="content-item_input">
                             <img src="./img/svg/fb-ico.svg" alt="inst inst-logo">
                             <input type="text" placeholder="Ссылка на Facebook">
                         </div>
@@ -399,26 +424,6 @@
 
                         <div class="select-wrapper">
                             <select name="tSubscribersAmount" id="tSubscribersAmount">
-                                <option value="1">до 5 000</option>
-                                <option value="1">до 10 000</option>
-                                <option value="1">10 000-30 000</option>
-                                <option value="1">30 000-50 000</option>
-                                <option value="1">50 000-100 000</option>
-                                <option value="1">больше  100 000</option>
-                                <option disabled selected="selected" hidden value="1">Количество подписчиков</option>
-                            </select>
-                        </div>
-                        
-                    </div>
-
-                    <div class="media_contnet-item">
-                        <div class="content-item_input">
-                            <img src="./img/svg/vk-ico.svg" alt="vk vk-logo">
-                            <input type="text" placeholder="Ссылка на Vkontakte">
-                        </div>
-
-                        <div class="select-wrapper">
-                            <select name="vkSubscribersAmount" id="vkSubscribersAmount">
                                 <option value="1">до 5 000</option>
                                 <option value="1">до 10 000</option>
                                 <option value="1">10 000-30 000</option>
@@ -510,7 +515,7 @@
                                 <option value="1">Пенсионеры</option>
                                 <option value="1">В декрете</option>
                                 <option value="1">Неработающие</option>
-                                <option selected="selected" hidden disabled="" value="-1">Род занятий</option>
+                                <option selected="selected" hidden disabled="" value="-1">Род занятости</option>
                             </select>
                         </div>
                         
@@ -548,8 +553,9 @@
                 <div class="brief_radio-group">
                     <h2 class="text-block__header group-title">Хотите получать новости проекта и быть 
                         в курсе о новых брендах в базе Colable? <span>*</span></h2>
+                    <input type="text" class="requiredContent" style="display: none;" name="newsGlobal" class="" id="newsGlobal">
 
-                    <input type="radio" checked name="totalNews" id="totalYesNews">
+                    <input type="radio" name="totalNews" id="totalYesNews">
                     <label for="totalYesNews">Да</label>
                     <input type="radio" name="totalNews" id="totalNoNews">
                     <label for="totalNoNews">Нет</label>
@@ -575,7 +581,7 @@
         const html = document.querySelector("html")
 
         function checkWidth(){
-            (window.innerWidth < 851 && window.innerWidth > 501) ? html.style.fontSize = ((window.innerWidth) / 851) + "px" : html.style.fontSize = "1px";
+            (window.outerWidth < 851 && window.outerWidth > 501) ? html.style.fontSize = ((window.outerWidth) / 851) + "px" : html.style.fontSize = "1px";
         }
 
         checkWidth()
@@ -613,6 +619,19 @@
                 innerArea.value == "" ?  innerHolder.classList.remove("hide") : innerHolder.classList.add("hide") 
             })
         })
+
+        const customPlaceholder = document.querySelectorAll(".custom-placeholder_container");
+
+        customPlaceholder.forEach(el=>{
+            let p = document.createElement('p');
+            let innerHolder = el.querySelector(".custom-placeholder");
+            let innerArea = el.querySelector("input");
+
+            el.addEventListener("input", ()=>{
+                innerArea.value == "" ?  innerHolder.classList.remove("disabled") : innerHolder.classList.add("disabled") 
+            })
+        })
+        
     </script>
 </body>
 

@@ -329,7 +329,7 @@
         <div class="wrapper">
 
             <div class="what-we-create__line1">
-                <video class = "what-we-create__illustartion" autoplay playsinline muted loop src="./video/batman.mp4"></video>
+                <video class = "what-we-create__illustartion" playsinline muted src="./video/batman.mp4"></video>
 
                 <p class="what-we-create__line1_text">
                     создай
@@ -370,7 +370,7 @@
 
                 <li class="how-it-works__list-item">
                     <span class="how-it-works__list-item_order-num">03</span>
-                    <p class="how-it-works__list-item_text">Мы подбираем варианты партнеров с помощью уникальной технологии VET</p>
+                    <p class="how-it-works__list-item_text">Colable подбирает варианты <br> партнеров с помощью уникальной технологии VET</p>
                 </li>
 
                 <li class="how-it-works__list-item">
@@ -510,7 +510,7 @@
 
             <div class="connect-to__container">
                 <h2 class="connect-to__title">команда</h2>
-                <p class="connect-to__subtitle">Подключаем лучшие мозги для создания идей. В состав Colable входят стратеги, маркетологи и креативщики из лучших российских агентств, а также независимые эксперты.</p>
+                <p class="connect-to__subtitle">Подключаем лучшие мозги для создания идей. В состав Colable входят стратеги, маркетологи и креативщики из лучших российских агентств, <br> а также независимые эксперты.</p>
             </div>
 
             <div class="connect-to__octopus">
@@ -920,7 +920,8 @@
 
                     <svg class="progress_item_arrow" width="12" height="81" viewBox="0 0 12 81" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 81L11.7735 71L0.226494 71L6 81ZM5 -4.37114e-08L5 72L7 72L7 4.37114e-08L5 -4.37114e-08Z" fill="white"/>
-                    </svg>                                             
+                    </svg>   
+                                                              
                 </div>
 
                 <div class="join__progress_item ">
@@ -1121,7 +1122,7 @@
         const html = document.querySelector("html")
 
         function checkWidth(){
-            (window.innerWidth < 1980 && window.innerWidth > 501) ? html.style.fontSize = ((window.innerWidth) / 1980) + "px" : html.style.fontSize = "1px";
+            (window.outerWidth < 1980 && window.outerWidth > 500) ? html.style.fontSize = ((window.outerWidth) / 1980) + "px" : html.style.fontSize = "1px";
         }
 
         checkWidth()

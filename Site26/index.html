@@ -329,7 +329,7 @@
         <div class="wrapper">
 
             <div class="what-we-create__line1">
-                <video class = "what-we-create__illustartion" autoplay playsinline muted loop src="./video/batman.mp4"></video>
+                <video class = "what-we-create__illustartion" playsinline muted src="./video/batman.mp4"></video>
 
                 <p class="what-we-create__line1_text">
                     создай
@@ -370,7 +370,7 @@
 
                 <li class="how-it-works__list-item">
                     <span class="how-it-works__list-item_order-num">03</span>
-                    <p class="how-it-works__list-item_text">Мы подбираем варианты партнеров с помощью уникальной технологии VET</p>
+                    <p class="how-it-works__list-item_text">Colable подбирает варианты <br> партнеров с помощью уникальной технологии VET</p>
                 </li>
 
                 <li class="how-it-works__list-item">
@@ -510,7 +510,7 @@
 
             <div class="connect-to__container">
                 <h2 class="connect-to__title">команда</h2>
-                <p class="connect-to__subtitle">Подключаем лучшие мозги для создания идей. В состав Colable входят стратеги, маркетологи и креативщики из лучших российских агентств, а также независимые эксперты.</p>
+                <p class="connect-to__subtitle">Подключаем лучшие мозги для создания идей. В состав Colable входят стратеги, маркетологи и креативщики из лучших российских агентств, <br> а также независимые эксперты.</p>
             </div>
 
             <div class="connect-to__octopus">
@@ -920,7 +920,8 @@
 
                     <svg class="progress_item_arrow" width="12" height="81" viewBox="0 0 12 81" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 81L11.7735 71L0.226494 71L6 81ZM5 -4.37114e-08L5 72L7 72L7 4.37114e-08L5 -4.37114e-08Z" fill="white"/>
-                    </svg>                                             
+                    </svg>   
+                                                              
                 </div>
 
                 <div class="join__progress_item ">
@@ -1109,25 +1110,13 @@
     <footer>
 
     <a class="footer__logo" href="./index.html">
-        <svg width="190" height="44" viewBox="0 0 190 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M130.69 30.8341V0.15625H118.715V43.9997H136.766L141.622 30.8341H130.69Z" fill="white"/>
-        <path d="M40.2376 8.9248L35.0898 26.4528H46.3416L41.1969 8.9248H40.2376Z" fill="white"/>
-        <path d="M32.5133 35.2314L29.9395 44.0001H51.4959L48.919 35.2314H32.5133Z" fill="white"/>
-        <path d="M83.201 36.9881C81.4405 34.2103 80.4129 30.9126 80.4129 27.3707V23.8162C78.5376 22.0813 76.0413 21.0197 73.2967 21.0197H72.4708C77.7521 21.0197 82.0336 16.6948 82.0336 11.3616V9.8114C82.0336 4.47816 77.7521 0.15332 72.4708 0.15332H48.502L58.2106 26.4782H67.9099C70.1143 26.4782 71.8996 28.282 71.8996 30.5086V31.1569C71.8996 33.3835 70.1143 35.1873 67.9099 35.1873H61.4209L64.6685 43.9967H73.2998C77.8514 43.9999 81.7324 41.078 83.201 36.9881ZM70.6545 13.6352C70.6545 15.8774 68.8569 17.6938 66.637 17.6938H57.9715V8.92514H66.637C68.8569 8.92514 70.6545 10.7415 70.6545 12.9838V13.6352Z" fill="white"/>
-        <path d="M152.513 35.2314L149.939 44.0001H171.496L168.919 35.2314H152.513Z" fill="white"/>
-        <path d="M160.238 8.9248L155.09 26.4528H166.342L161.197 8.9248H160.238Z" fill="white"/>
-        <path d="M11.9751 43.9997V32.068H21.1653L25.307 20.8347H11.9751V11.3896H28.7906L32.9324 0.15625H11.9751H10.5562H0V43.9997H11.9751Z" fill="white"/>
-        <path d="M168.443 0L184.669 44H190V0H168.443Z" fill="white"/>
-        <path d="M99.0633 35.3472H100.063C103.503 35.3472 106.294 32.5318 106.294 29.0619V0H92.832V29.0619C92.832 32.5318 95.6232 35.3472 99.0633 35.3472Z" fill="white"/>
-        </svg>
+        <img src="./img/footer__logo.png" alt="footer icon">  
     </a>
 
-    <p>
-        Produced by FABULA creative agency, realized by 
-        <!-- <a href="https://dima34.github.io/HTML/Portfolio">D</a> -->
-    </p>
+    
     <a href="tel:+74951182669">+7 495 118-26-69</a>
     <a href="mailto:hello@colable.ru">hello@colable.ru</a>
+    <p class="footer__subtitle">Produced by <a href="https://fabulaprod.ru/">FABULA</a> creative agency<!-- realized by <a href="https://dima34.github.io/HTML/Portfolio">D</a> tg: @Djigit34 --></p> 
 
 </footer>
    
@@ -1144,7 +1133,7 @@
         const html = document.querySelector("html")
 
         function checkWidth(){
-            (window.innerWidth < 1980 && window.innerWidth > 501) ? html.style.fontSize = ((window.innerWidth) / 1980) + "px" : html.style.fontSize = "1px";
+            (window.outerWidth < 1980 && window.outerWidth > 500) ? html.style.fontSize = ((window.outerWidth) / 1980) + "px" : html.style.fontSize = "1px";
         }
 
         checkWidth()

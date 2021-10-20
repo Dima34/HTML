@@ -71,12 +71,23 @@ function queryA(clas){
 }
 //
 let first = true;
+let batmanVideo = document.querySelector(".what-we-create__illustartion");
 
 function scrolling(e){
   animPartiallyVisibleALL(queryA(".dinos__dino-left"),"animate__fadeInLeft", "1.2s");
   animPartiallyVisibleALL(queryA(".dinos__dino-right"),"animate__fadeInRight", "1.2s");
   animPartiallyVisibleALL(queryA(".dinos__dino-center"),"animate__fadeIn", "2.5s", "1.2s");
   animPartiallyVisibleALL(queryA(".ship-container_ship"),"animate__slideInRight", "2.5s");
+
+  if(batmanVideo){
+    if(isFullyVisible(batmanVideo)){
+      if(!batmanVideo.hasAttribute("played")){
+        batmanVideo.play();
+        batmanVideo.setAttribute("played", "")
+      }
+    }
+  }
+  
 }
 
 // 
@@ -148,7 +159,7 @@ const girl = document.querySelector(".illustrarion_girl")
 if(girl){
 
   if(window.innerWidth > 500){
-    const firstSrc = girl.getAttribute("src")
+    const firstSrc = girl.getAttribute("firstSrc")
     const secondSrc = girl.getAttribute("secondSrc")
     let changed = false
 
@@ -183,6 +194,12 @@ if(geografyLocal){
 }
 
 
+// 
+// News input
+// 
+const globalNewsInput = document.getElementById("newsGlobal")
+const totalYesNews = document.getElementById("totalYesNews");
+const totalNoNews = document.getElementById("totalNoNews");
 
 // 
 // Merriage input
@@ -251,7 +268,6 @@ if(requiredInputs.length > 0){
     globalGeografyInput.value = "Локальный";
     checkFields(globalGeografyInput,requiredInputs, formSumbit)
   });
-  
 
   geografyMulti.addEventListener("change", ()=>{
     globalGeografyInput.value = "Междонародный";
@@ -268,10 +284,19 @@ if(requiredInputs.length > 0){
     checkFields(globalMerriageInput,requiredInputs, formSumbit)
   });
 
-
   notInMarriage.addEventListener("change", ()=>{
     globalMerriageInput.value = "Не в браке";
     checkFields(globalMerriageInput,requiredInputs, formSumbit)
+  });
+
+  totalYesNews.addEventListener("change", ()=>{
+    globalNewsInput.value = "Да";
+    checkFields(globalNewsInput,requiredInputs, formSumbit)
+  });
+
+  totalNoNews.addEventListener("change", ()=>{
+    globalNewsInput.value = "Да";
+    checkFields(globalNewsInput,requiredInputs, formSumbit)
   });
 }
 

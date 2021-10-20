@@ -356,7 +356,7 @@ input[type="range"] {
     position: absolute;
     border-radius: 50%;
     height: 180rem;
-    filter: blur(70rem);
+    filter: blur(100rem);
     opacity: .8;
   }
   
@@ -375,7 +375,7 @@ input[type="range"] {
     &:after{
       width: 656rem;
       left: -34rem;
-      top: -76rem;
+      top: -0rem;
       background: #00FFCB;
     }
 
@@ -408,7 +408,7 @@ input[type="range"] {
     &:after{
       width: 658rem;
       left: 25rem;
-      top: -73rem;
+      top: 0rem;
       background: #A597FD;
     }
 
@@ -442,7 +442,7 @@ input[type="range"] {
       width: 737rem;
       height: 203rem;
       left: 100rem;
-      top: -87rem;
+      top: 0rem;
       background: #FF598E;
     }
 
@@ -605,8 +605,8 @@ input[type="range"] {
 .what-we-create__illustartion{
   margin-bottom: 9rem;
   margin-right: 114rem;
-  width: 484rem;
-  height: 475rem;
+  width: 500rem;
+  height: 500rem;
 }
 
 .what-we-create__line1_text{
@@ -1033,6 +1033,7 @@ input[type="range"] {
 .how-vet-works__contnet-item{
   display: flex;
   cursor: default;
+  position: relative;
 
   &:nth-child(2n){
     margin-left: 4rem;
@@ -1042,28 +1043,24 @@ input[type="range"] {
     }
   }
 
-  &.item1{
-    position: relative;
+  &::after{
+    content: " ";
+    width: 284rem;
+    height: 123rem;
+    position: absolute;
+    top: 65rem;
+    right: 148rem;
+    background: linear-gradient(90deg, #00FFCB 0.01%, #A597FD 49.92%, #FF5289 99.99%);
+    filter: blur(40rem);
+    opacity: .0;
+    transform: rotate(12.39deg);
+    transition: .3s;
+  }
+
+  &:hover{
 
     &::after{
-      content: " ";
-      width: 284rem;
-      height: 123rem;
-      position: absolute;
-      top: 65rem;
-      right: 148rem;
-      background: linear-gradient(90deg, #00FFCB 0.01%, #A597FD 49.92%, #FF5289 99.99%);
-      filter: blur(40rem);
       opacity: .7;
-      transform: rotate(12.39deg);
-      transition: .3s;
-    }
-
-    &:hover{
-
-      &::after{
-        transform: rotate(12.39deg) translateX(15rem);
-      }
     }
   }
 }
@@ -1448,7 +1445,7 @@ input[type="range"] {
 
 .progress_item_arrow{
   width: 30rem;
-  height: 149rem;
+  height: 127rem;
   margin-bottom: 20rem;
   display: inline-block;
 }
@@ -1662,7 +1659,7 @@ input[type="range"] {
   &.loaded{
     .right-preset{
       transition: opacity 1s;
-      transition-delay: 4s;
+      transition-delay: 2s;
     }
   }
 }
@@ -1970,8 +1967,8 @@ footer{
   margin-bottom: 200rem;
   
   p,a{
-    font-size: 24rem;
-    line-height: 29rem;
+    font-size: 24px;
+    line-height: 29px;
     text-align: center;
     @include Mont(400);
     color: #FFFFFF;
@@ -1980,12 +1977,21 @@ footer{
 }
 
 .footer__logo{
-  margin-bottom: 44rem;
+  margin-bottom: 12rem;
 
   svg{
     width: 190rem;
     height: 44rem;
   }
+}
+
+.footer__subtitle{
+  margin-top: 7px;
+}
+
+.footer__subtitle, .footer__subtitle a{
+  font-size: 10.5px;
+  line-height: 13px;
 }
 
 // ---------------------
@@ -2024,7 +2030,7 @@ footer{
   font-size: 17rem;
   line-height: 120%;
   @include Root();
-  color: #C4C4C4;
+  color: #5E5E5E;
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -2039,7 +2045,7 @@ footer{
 }
 
 textarea{
-  border: 1rem solid #C4C4C4;
+  border: 1rem solid #5E5E5E;
   box-sizing: border-box;
   border-radius: 0rem 0rem 15rem 15rem;
   min-height: 70rem;
@@ -2088,13 +2094,13 @@ textarea{
     font-size: 16rem;
     line-height: 120%;
     color: black;
-    border-bottom: 1rem solid #C4C4C4;
+    border-bottom: 1rem solid #5E5E5E;
     display: block;
     width: 100%;
     margin-bottom: 37rem;
 
     &::placeholder{
-      color: #C4C4C4;
+      color: #5E5E5E;
       opacity: 1;
       padding: 0;
     }
@@ -2109,7 +2115,6 @@ textarea{
     padding: 8rem ;
     padding-left: 14rem;
     padding-right: 30rem;
-    color: #C4C4C4;
     border: 0;
     width: 195rem;
     -webkit-appearance:none;
@@ -2128,6 +2133,30 @@ textarea{
       background-color: red;
       }
     }
+  }
+}
+
+.custom-placeholder_container{
+  position: relative;
+}
+
+
+.custom-placeholder{
+  position: absolute;
+  font-size: 17rem;
+  line-height: 120%;
+  left: 0;
+  bottom: 5rem;
+  color: #5E5E5E;
+  @include Root();
+  pointer-events: none;
+
+  span{
+    color: #FF598E;
+  }
+
+  &.disabled{
+    opacity: 0;
   }
 }
 
@@ -2291,7 +2320,7 @@ textarea{
     position: relative;
     width: fit-content;
     padding-left: 28rem;
-    color: #C4C4C4;
+    color: #5E5E5E;
     font-size: 17rem;
     line-height: 120%;
     @include Root();
@@ -2469,8 +2498,6 @@ textarea{
       left: -27rem;
       top: 0;
       background: #A597FD;
-      border: 1rem solid #000000;
-      box-sizing: border-box;
       filter: blur(30rem);
       opacity: .7;
     }
@@ -2665,12 +2692,10 @@ textarea{
     .handle {
       width:calc(var(--range-size) * var(--handle-size));
       height:calc(var(--range-size) * var(--handle-size));
-      // background:#fff;
       position:absolute;
       border-radius:50%;
       width: 30px;
       height: 30px;
-      // border: 1rem solid grey;
       top:50%;
       transform:translateY(-50%);
       z-index:2;
@@ -2853,7 +2878,7 @@ textarea{
 
     &:hover{
       transform: translateY(0);
-      box-shadow: 0;
+      box-shadow: 0px 5px 5px rgba(#ffffff, 0.0);
     }
   }
 }
