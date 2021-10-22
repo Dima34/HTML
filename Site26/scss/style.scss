@@ -284,8 +284,9 @@ input[type="range"] {
 }
 
 .video__playground{
+  max-width: 2560px;
+  margin: 0 auto;
   width: 100vw;
-  max-width: 1920px;
   height: 56.25vw;
   max-height: 1080px;
   background: #d3d3d3;
@@ -970,16 +971,20 @@ input[type="range"] {
   }
 }
 
-.why-we-can__illustration{
+.why-we-can__illustration {
   justify-self: end;
   display: block;
-  margin-top: -173rem;
+  margin-top: -164rem;
   width: 587rem;
-  height: 530rem;
+  height: 530rem; 
 
-  img{
+  video{
     width: 100%;
     height: 100%;
+  }
+
+  img {
+    display: none;
   }
 }
 
@@ -1383,7 +1388,7 @@ input[type="range"] {
   width: 689rem;
   margin: 0 auto;
   margin-top: 44rem;
-  margin-bottom: 155rem;
+  margin-bottom: 130rem;
   position: relative;
 
   &::after{
@@ -1393,7 +1398,7 @@ input[type="range"] {
     width: 173rem;
     height: 349rem;
     position: absolute;
-    right: -116rem;
+    right: -107rem;
     top: 80%;
   }
 
@@ -1445,8 +1450,8 @@ input[type="range"] {
 
 .progress_item_arrow{
   width: 30rem;
-  height: 127rem;
-  margin-bottom: 20rem;
+  height: 83.5rem;
+  margin-bottom: 11rem;
   display: inline-block;
 }
 
@@ -1505,7 +1510,7 @@ input[type="range"] {
   font-size: 24rem;
   line-height: 120%;
   @include Mont(500);
-  margin-bottom: 34rem;
+  margin-bottom: 21rem;
 }
 
 
@@ -1592,6 +1597,9 @@ input[type="range"] {
 // ---------------------
 
 .generator{
+  .wrapper{
+    max-width: 1920px;
+  }
 }
 
 .generator__title{
@@ -1947,7 +1955,6 @@ input[type="range"] {
 .connect-to,
 .join,
 .its-match{
-  max-width: 1920px;
   overflow: hidden;
 }
 
@@ -3351,14 +3358,24 @@ textarea{
     }
   }
 
-  .why-we-can__illustration{
+  .why-we-can__illustration {
     align-self: center;
     width: 139rem;
     height: unset;
     margin: 0;
     margin-bottom: 32rem;
-  }
 
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  
+    video{
+      display: none;
+    }
+  }
+  
   .why-we-can__header-mobile{
     display: block;
     font-size: 30rem;
