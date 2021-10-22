@@ -49,6 +49,7 @@
                 <h2 class="brief__section-title"><span>Платформа бренда</span></h2>
 
                 <div class="custom-placeholder_container">
+                    <input type="text" id="brandNameTranslit" class="translit" style="display:none;">
                     <input type="text" placeholder="" name="brandPlatformBrandName" id="brandPlatformBrandName">
                     <p class="custom-placeholder">Название бренда<span>*</span></p>
                 </div>
@@ -625,13 +626,81 @@
         customPlaceholder.forEach(el=>{
             let p = document.createElement('p');
             let innerHolder = el.querySelector(".custom-placeholder");
-            let innerArea = el.querySelector("input");
+            let innerArea = document.getElementById("brandPlatformBrandName");
 
             el.addEventListener("input", ()=>{
                 innerArea.value == "" ?  innerHolder.classList.remove("disabled") : innerHolder.classList.add("disabled") 
             })
         })
         
+        //
+        // Translit
+        //
+
+        const translitItems = document.querySelectorAll(".translit");
+
+        const translitList = {
+        'а' : 'a',
+        'б' : 'b',
+        'в' : 'v',
+        'г' : 'g',
+        'д' : 'd',
+        'е' : 'e',
+        'ё' : 'jo',
+        'ж' : 'zh',
+        'з' : 'z',
+        'и' : 'i',
+        'й' : 'j',
+        'к' : 'k',
+        'л' : 'l',
+        'м' : 'm',
+        'н' : 'n',
+        'о' : 'o',
+        'п' : 'p',
+        'р' : 'r',
+        'с' : 's',
+        'т' : 't',
+        'у' : 'u',
+        'ф' : 'f',
+        'х' : 'р',
+        'ц' : 'с',
+        'ч' : 'cg',
+        'ш' : 'sh',
+        'щ' : 'shh',
+        'ъ' : '',
+        'ы' : 'y',
+        'ь' : '',
+        'э' : 'je',
+        'ю' : 'ju',
+        'я' : 'ja',
+        ' ' : '_',
+        }
+
+        function getTranslitedString(testString){
+        let newString = "";
+
+        for(char of testString.toLowerCase()){
+            let ch = char;
+            
+            if(translitList[char] != undefined){
+            ch = translitList[char]
+            }
+            
+            newString+=ch;
+        }
+
+        return newString
+        }
+
+        if(translitItems.length > 0){
+            const brandNameInput = document.getElementById("brandPlatformBrandName");
+            const brandNameTranslit = document.getElementById("brandNameTranslit");
+
+            brandNameInput.addEventListener("change", ()=>{
+                brandNameTranslit.value = getTranslitedString(brandNameInput.value);
+                console.log(brandNameTranslit.value);
+            })
+        }
     </script>
 </body>
 
