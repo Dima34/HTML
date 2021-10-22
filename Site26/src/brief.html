@@ -50,7 +50,7 @@
 
                 <div class="custom-placeholder_container">
                     <input type="text" id="brandNameTranslit" class="translit" style="display:none;">
-                    <input type="text" placeholder="" name="brandPlatformBrandName" id="brandPlatformBrandName">
+                    <input type="text" class="requiredContent" name="brandPlatformBrandName" id="brandPlatformBrandName">
                     <p class="custom-placeholder">Название бренда<span>*</span></p>
                 </div>
                 
@@ -562,7 +562,11 @@
                     <label for="totalNoNews">Нет</label>
                 </div>
 
-                <button class="total-submit" disabled>Зарегистрироваться</button>
+                <div class="total-submit_wrapper">
+                    <button class="total-submit" disabled>Зарегистрироваться</button>
+                    <div class="total-submit_fake-submit"></div>
+                </div>
+                
 
                 <h2 class="total-submit_field-alert active">Заполните все обязательные поля</h2>
 
@@ -676,20 +680,20 @@
         ' ' : '_',
         }
 
-        function getTranslitedString(testString){
-        let newString = "";
+            function getTranslitedString(testString){
+            let newString = "";
 
-        for(char of testString.toLowerCase()){
-            let ch = char;
-            
-            if(translitList[char] != undefined){
-            ch = translitList[char]
+            for(char of testString.toLowerCase()){
+                let ch = char;
+                
+                if(translitList[char] != undefined){
+                ch = translitList[char]
+                }
+                
+                newString+=ch;
             }
-            
-            newString+=ch;
-        }
 
-        return newString
+            return newString
         }
 
         if(translitItems.length > 0){
@@ -698,9 +702,80 @@
 
             brandNameInput.addEventListener("change", ()=>{
                 brandNameTranslit.value = getTranslitedString(brandNameInput.value);
-                console.log(brandNameTranslit.value);
             })
         }
+            
+        //
+        // Scroll to not valid
+        //
+        
+        function getOffset(el) {
+            const rect = el.getBoundingClientRect();
+            return rect.top + window.scrollY;
+        }
+        
+        function ValidMail(el) {
+            var re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+            var valid = re.test(el.value);
+            return valid;
+        }
+
+        function ValidPhone(el) {
+            var re = /^\d[\d\(\)\ -]{4,14}\d$/;
+            var valid = re.test(el.value);
+            return valid;
+        }  
+            
+        const itemsToValidation = document.querySelectorAll('input[type="email"], input[type="tel"]');
+            
+        itemsToValidation.forEach(el=>{
+            el.addEventListener("change", element=>{
+                if(el.getAttribute("type") == "email"){
+                    let validResult = ValidMail(el);
+                    validResult ? el.classList.remove("not-valid") : el.classList.add("not-valid");
+                } else{
+                    let validResult = ValidPhone(el)
+                    validResult ? el.classList.remove("not-valid") : el.classList.add("not-valid");
+                }
+            })
+        })
+            
+        const submitButton = document.querySelector(".total-submit");
+        submitButton.addEventListener("click", ()=>{
+            
+            let notValidItem = document.querySelector(".not-valid");
+            
+            if(notValidItem){				
+                window.scrollTo({
+                    top: getOffset(notValidItem)- 250,
+                    behavior: "smooth"
+                });
+            }
+            
+        })
+        
+
+        //
+        // Scroll to need to fill areas
+        //
+
+        const buttonWrapper = document.querySelector(".total-submit_wrapper");
+
+        if(buttonWrapper){
+            buttonWrapper.addEventListener("click", ()=>{
+                let needToFillList = document.querySelector('[needtofill="true"]')
+                if(needToFillList){
+                    let parentElems = needToFillList.parentNode;
+
+                    window.scrollTo({
+                        top: getOffset(parentElems) - 300,
+                        behavior: "smooth"
+                    });
+                }         
+            })
+        }
+
+
     </script>
 </body>
 
