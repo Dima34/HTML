@@ -11,14 +11,13 @@ if(machineBlock){
     const machine = machineBlock.querySelector(".generator__machine");
     const screen = machineBlock.querySelector(".generator__screen video");
     const presets = machineBlock.querySelectorAll(".right-preset");
-    
+
     let states = [
-        "./video/0-1.mp4",
-        "./video/1-2.mp4",
-        "./video/2-3.mp4",
-        "./video/3-4.mp4",
-        "./video/4-5.mp4",
-        "./video/5-0.mp4",
+        {from: 0, to: 4.4},
+        {from: 4.5, to:8.3 },
+        {from: 8.4, to:12.2 },
+        {from: 12.3, to:16.3 },
+        {from: 16.3, to:20.2 },
     ]
 
     function writeState(state){
@@ -39,8 +38,16 @@ if(machineBlock){
     }
 
     function setVideo(){
-        let videoURL = states[getState()]
-        screen.setAttribute("src",videoURL);
+        screen.currentTime = states[getState()].from;
+        screen.play();
+        machine.classList.add("inProgress");
+
+        let stopAfter = (states[getState()].to - states[getState()].from)*1000
+
+        setTimeout(()=>{
+            screen.pause()
+            machine.classList.remove("inProgress");
+        }, stopAfter)
     }  
     
     function playVideo(){
@@ -56,13 +63,14 @@ if(machineBlock){
         })
     }
 
-    
-
     machine.addEventListener("click", ()=>{
-        machine.play();
-        nextState(getState());
-        setVideo()
-        playVideo()
-        activePreset()
+        if(!machine.classList.contains("inProgress")){
+            machine.play();
+            nextState(getState());
+            setVideo()
+            playVideo()
+            activePreset()
+        }
+        
     })
 }
