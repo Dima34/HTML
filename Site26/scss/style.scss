@@ -2996,6 +2996,12 @@ textarea{
   display: none;
 }
 
+@media screen and (max-width: 1500px){
+  .brief-image{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 851px){
   .brief{
     .wrapper{
@@ -3045,6 +3051,7 @@ textarea{
   .brief-image{
     width: unset !important;
     height: unset !important;
+    display: block;
   }
 
   .intro,

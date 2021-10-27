@@ -2213,6 +2213,10 @@ textarea {
 .connect-to__table-mobile {
   display: none; }
 
+@media screen and (max-width: 1500px) {
+  .brief-image {
+    display: none; } }
+
 @media screen and (max-width: 851px) {
   .brief .wrapper {
     padding-left: 45rem;
@@ -2240,7 +2244,8 @@ textarea {
       display: none; }
   .brief-image {
     width: unset !important;
-    height: unset !important; }
+    height: unset !important;
+    display: block; }
   .intro,
   .dinos,
   .runline,

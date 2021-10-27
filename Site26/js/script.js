@@ -229,6 +229,7 @@ const requiredInputs = document.querySelectorAll(".requiredContent");
 if(requiredInputs.length > 0){
   const formSumbit = document.querySelector(".total-submit");
   const fieldAlert = document.querySelector(".total-submit_field-alert")
+  const fakeSubmit = document.querySelector(".total-submit_fake-submit")
   let requiredAmount = 0
 
   requiredInputs.forEach((el)=>{
@@ -262,6 +263,7 @@ if(requiredInputs.length > 0){
     console.log(`need to fill - `, needToFill);
 
     submit.hasAttribute("disabled") ? fieldAlert.classList.add("active") : fieldAlert.classList.remove("active");
+    submit.hasAttribute("disabled") ? fakeSubmit.style.display = "block" : fakeSubmit.style.display = "none";
   }
 
   geografyLocal.addEventListener("change", ()=>{
