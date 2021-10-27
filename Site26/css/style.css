@@ -68,7 +68,8 @@ html {
   margin: 0 auto; }
 
 body {
-  background: #1F1F1F;
+  /* background: #1F1F1F; */
+  background: #040505;
   color: white; }
 
 select {
