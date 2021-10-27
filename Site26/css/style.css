@@ -753,20 +753,27 @@ input[type="range"] {
     margin-left: 4rem; }
     .how-vet-works__contnet-item:nth-child(2n) .content-item_content {
       margin-left: -75rem; }
+  .how-vet-works__contnet-item:nth-child(1)::after {
+    background: linear-gradient(0deg, #FF5289, #FF5289); }
+  .how-vet-works__contnet-item:nth-child(2)::after {
+    background: linear-gradient(90deg, #A597FD 64.58%, #00FFCB 99.99%); }
+  .how-vet-works__contnet-item:nth-child(3)::after {
+    background: linear-gradient(90deg, #A597FD 26.05%, #FF5289 99.99%); }
+  .how-vet-works__contnet-item:nth-child(4)::after {
+    background: linear-gradient(90deg, #A597FD 0.01%, #00FFCB 65.13%); }
   .how-vet-works__contnet-item::after {
     content: " ";
-    width: 284rem;
-    height: 123rem;
+    width: 205rem;
+    height: 106rem;
     position: absolute;
-    top: 65rem;
-    right: 148rem;
-    background: linear-gradient(90deg, #00FFCB 0.01%, #A597FD 49.92%, #FF5289 99.99%);
-    filter: blur(40rem);
+    top: 125rem;
+    right: 228rem;
+    filter: blur(60rem);
     opacity: .0;
     transform: rotate(12.39deg);
     transition: .3s; }
   .how-vet-works__contnet-item:hover::after {
-    opacity: .7; }
+    opacity: .9; }
 
 .content-item__num {
   font-size: 200rem;
@@ -1422,7 +1429,6 @@ input[type="range"] {
 .what-we-create,
 .how-it-works,
 .register,
-.why-we-can,
 .how-vet-works,
 .connect-to,
 .join,

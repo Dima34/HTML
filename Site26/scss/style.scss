@@ -1054,15 +1054,38 @@ input[type="range"] {
     }
   }
 
+  &:nth-child(1){
+    &::after{
+      background: linear-gradient(0deg, #FF5289, #FF5289);
+    }
+  }
+
+  &:nth-child(2){
+    &::after{
+      background: linear-gradient(90deg, #A597FD 64.58%, #00FFCB 99.99%);
+    }
+  }
+
+  &:nth-child(3){
+    &::after{
+      background: linear-gradient(90deg, #A597FD 26.05%, #FF5289 99.99%);
+    }
+  }
+
+  &:nth-child(4){
+    &::after{
+      background: linear-gradient(90deg, #A597FD 0.01%, #00FFCB 65.13%);
+    }
+  }
+
   &::after{
     content: " ";
-    width: 284rem;
-    height: 123rem;
+    width: 205rem;
+    height: 106rem;
     position: absolute;
-    top: 65rem;
-    right: 148rem;
-    background: linear-gradient(90deg, #00FFCB 0.01%, #A597FD 49.92%, #FF5289 99.99%);
-    filter: blur(40rem);
+    top: 125rem;
+    right: 228rem;
+    filter: blur(60rem);
     opacity: .0;
     transform: rotate(12.39deg);
     transition: .3s;
@@ -1071,7 +1094,7 @@ input[type="range"] {
   &:hover{
 
     &::after{
-      opacity: .7;
+      opacity: .9;
     }
   }
 }
@@ -1956,7 +1979,6 @@ input[type="range"] {
 .what-we-create,
 .how-it-works,
 .register,
-.why-we-can,
 .how-vet-works,
 .connect-to,
 .join,
