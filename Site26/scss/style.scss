@@ -606,8 +606,31 @@ input[type="range"] {
 .what-we-create__illustartion{
   margin-bottom: 9rem;
   margin-right: 114rem;
-  width: 500rem;
+  width: 493rem; 
   height: 500rem;
+  background-size: auto 100% !important;
+
+  &.active{
+    animation: WhatWeCreatePlay 1s steps(19);
+    animation-fill-mode: forwards;
+  }
+
+  position: relative;
+}
+
+.what-we-create__illustartion-light{
+  position: absolute;
+  left: 431rem;
+  top: 223rem;
+  width: 40rem; 
+  height: 40rem;
+  background-size: auto 100% !important;
+  animation: WhatWeCreatePlay 1s steps(5) infinite;
+}
+
+@keyframes WhatWeCreatePlay { 
+  0% { background-position:    0% 0; } 
+  100% { background-position: 100% 0; }
 }
 
 .what-we-create__line1_text{
@@ -886,6 +909,7 @@ input[type="range"] {
     flex-direction: column;
     display: grid;
     grid-template-columns: 1fr min-content;
+    position: relative;
   }
 }
 
@@ -970,6 +994,8 @@ input[type="range"] {
   line-height: 120%;
   font-family: 'Rounded';
   margin-top: 72rem;
+  position: relative;
+  z-index: 2;
 
   span{
     color: #68FFE0;
@@ -981,17 +1007,35 @@ input[type="range"] {
   justify-self: end;
   display: block;
   margin-top: -164rem;
+  position: relative;  
   width: 587rem;
   height: 530rem; 
 
-  video{
-    width: 100%;
-    height: 100%;
+  & .main-image{
+    width: 587rem;
+    height: 530rem; 
   }
 
-  img {
-    display: none;
+  & .eyes{
+    width: 38rem;
+    height: 8rem;
+    left: 70rem;
+    bottom: 456rem;
   }
+}
+
+.why-we-can__illustration .eyes{
+  position: absolute;
+  animation: eyes 2s infinite;
+  animation-delay: 3s;
+  transform-origin: bottom;
+}
+
+@keyframes eyes { 
+  0% { transform: scale(1, 1); } 
+  5%{transform: scale(1, 0);}
+  10% { transform: scale(1, 1); }
+  100% { transform: scale(1, 1); }
 }
 
 .why-we-can__feather{
@@ -1080,12 +1124,13 @@ input[type="range"] {
 
   &::after{
     content: " ";
-    width: 205rem;
-    height: 106rem;
+    width: 217.85rem;
+    height: 144.39rem;
     position: absolute;
-    top: 125rem;
-    right: 228rem;
-    filter: blur(60rem);
+    top: 102rem;
+    right: 268rem;
+    filter: blur(43rem);
+    border-radius: 50%;
     opacity: .0;
     transform: rotate(12.39deg);
     transition: .3s;
@@ -1612,7 +1657,7 @@ input[type="range"] {
   @include Pix();
   margin-top: -47rem;
   text-transform: lowercase;
-  margin-left: 44rem;
+  margin-left: 20rem;
   position: relative;
   z-index: 2;
 }
@@ -1727,6 +1772,16 @@ input[type="range"] {
       margin-right: 129rem;
       margin-top: 27rem;
       letter-spacing: 0.6rem;
+      text-transform: uppercase; 
+      background-image: linear-gradient(to right, #68FFE0, #B9C3FC, #df7999, #68FFE0);
+      -webkit-background-clip: text; 
+      background-clip: text; 
+      color: transparent;
+      
+      background-size: 300%;
+      background-position: -100%;  
+      
+      animation: animatedText 5s infinite alternate-reverse;
     }
   }
 
@@ -3417,14 +3472,16 @@ textarea{
     margin: 0;
     margin-bottom: 32rem;
 
-    img{
-      display: block;
-      width: 100%;
-      height: 100%;
+    & .main-image{
+      width: 139rem;
+      height: auto; 
     }
   
-    video{
-      display: none;
+    & .eyes{
+      width: auto;
+      height: 1.5rem;
+      left: 17.5rem;
+      bottom: 109.2rem;
     }
   }
   
@@ -4357,4 +4414,8 @@ textarea{
   }
 }
 
-
+@keyframes animatedText{
+  to{
+    background-position: 100%; 
+  }
+}
