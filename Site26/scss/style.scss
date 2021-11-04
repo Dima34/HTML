@@ -242,13 +242,27 @@ input[type="range"] {
   left: 50%;
   top: 282rem;
   transform: translateX(-50%);
-  // opacity: 0;
-  animation-fill-mode: forwards;
-  width: 738rem;
+  opacity: 0;
+  width: 737rem;
   height: 600rem;
-  background-size: auto 100% !important;
-  animation: WhatWeCreatePlay 2s steps(50) infinite;
- 
+  position: relative;
+  overflow: hidden;
+
+  img{
+    width: auto;
+    height: 100%;
+    transform: translateX(0%);
+    animation: centerDinoPlay 2.5s steps(51) infinite;
+  }
+
+  &.center__fade{
+    animation: fadeIn 5s forwards;    
+  }
+}
+
+@keyframes centerDinoPlay { 
+  0% { transform: translateX(0); } 
+  100% { transform: translateX(-100%); }
 }
 
 .dinos__dino-right{
@@ -3191,6 +3205,10 @@ textarea{
     width: 157rem;
     height: 125rem;
     top: 49rem;
+
+    img{
+      animation: none;
+    }
   }
 
   .dinos__dino-left{

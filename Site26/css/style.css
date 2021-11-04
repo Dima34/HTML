@@ -160,11 +160,24 @@ input[type="range"] {
   left: 50%;
   top: 282rem;
   transform: translateX(-50%);
-  animation-fill-mode: forwards;
-  width: 738rem;
+  opacity: 0;
+  width: 737rem;
   height: 600rem;
-  background-size: auto 100% !important;
-  animation: WhatWeCreatePlay 2s steps(50) infinite; }
+  position: relative;
+  overflow: hidden; }
+  .dinos__dino-center img {
+    width: auto;
+    height: 100%;
+    transform: translateX(0%);
+    animation: centerDinoPlay 2.5s steps(51) infinite; }
+  .dinos__dino-center.center__fade {
+    animation: fadeIn 5s forwards; }
+
+@keyframes centerDinoPlay {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-100%); } }
 
 .dinos__dino-right {
   right: -4rem;
@@ -2348,6 +2361,8 @@ textarea {
     width: 157rem;
     height: 125rem;
     top: 49rem; }
+    .dinos__dino-center img {
+      animation: none; }
   .dinos__dino-left {
     width: 137rem;
     height: 200rem; }
