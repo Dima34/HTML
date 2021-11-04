@@ -77,7 +77,7 @@ const whatWeIllustartion = document.querySelector(".what-we-create__illustartion
 function scrolling(e){
   animPartiallyVisibleALL(queryA(".dinos__dino-left"),"animate__fadeInLeft", "1.2s");
   animPartiallyVisibleALL(queryA(".dinos__dino-right"),"animate__fadeInRight", "1.2s");
-  animPartiallyVisibleALL(queryA(".dinos__dino-center"),"animate__fadeIn", "2.5s", "1.2s");
+  // animPartiallyVisibleALL(queryA(".dinos__dino-center"),"animate__fadeIn", "2.5s", "1.2s");
   animPartiallyVisibleALL(queryA(".ship-container_ship"),"animate__slideInRight", "2.5s");
   animPartiallyVisibleALL(queryA(".what-we-create__illustartion"),"active");
 
