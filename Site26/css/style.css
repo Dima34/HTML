@@ -1287,8 +1287,19 @@ input[type="range"] {
 .generator__machine {
   margin-top: 110rem;
   cursor: pointer;
-  width: 600rem;
-  height: 600rem; }
+  width: 599rem;
+  height: 600rem;
+  background-size: auto 100% !important; }
+  .generator__machine.play {
+    animation: GeneratorPlay 2s steps(25); }
+
+@keyframes GeneratorPlay {
+  0% {
+    background-position: 0% 0; }
+  50% {
+    background-position: 100% 0; }
+  100% {
+    background-position: 0% 0; } }
 
 .generator__screen {
   position: absolute;

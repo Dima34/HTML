@@ -1729,11 +1729,22 @@ input[type="range"] {
   flex-shrink: 0;
 }
 
-.generator__machine{
+.generator__machine {
   margin-top: 110rem;
   cursor: pointer;
-  width: 600rem;
+  width: 599rem;
   height: 600rem;
+  background-size: auto 100% !important;
+
+  &.play{
+    animation: GeneratorPlay 2s steps(25);
+  }
+}
+
+@keyframes GeneratorPlay { 
+  0% { background-position:    0% 0; } 
+  50% { background-position: 100% 0; }
+  100% { background-position:    0% 0; }
 }
 
 .generator__screen{

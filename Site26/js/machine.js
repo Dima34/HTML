@@ -18,6 +18,7 @@ if(machineBlock){
         {from: 8.4, to:12.2 },
         {from: 12.3, to:16.3 },
         {from: 16.3, to:20.2 },
+        {from: 20.3, to:24 },
     ]
 
     function writeState(state){
@@ -47,6 +48,7 @@ if(machineBlock){
         setTimeout(()=>{
             screen.pause()
             machine.classList.remove("inProgress");
+            machine.classList.remove("play")
         }, stopAfter)
     }  
     
@@ -65,7 +67,7 @@ if(machineBlock){
 
     machine.addEventListener("click", ()=>{
         if(!machine.classList.contains("inProgress")){
-            machine.play();
+            machine.classList.add("play")
             nextState(getState());
             setVideo()
             playVideo()
