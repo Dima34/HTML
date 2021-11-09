@@ -1552,48 +1552,20 @@ footer {
     width: 11rem;
     height: 11rem; }
 
-.textarea-wrapper {
-  width: 100%;
-  min-height: 76rem;
-  position: relative; }
-  .textarea-wrapper::after {
-    content: "";
-    padding: 25rem 19rem 19rem 10rem; }
-
-.textarea-placeholder {
-  font-size: 17rem;
-  line-height: 120%;
-  font-family: 'Root';
-  color: #5E5E5E;
-  position: absolute;
-  width: 100%;
-  z-index: 2;
-  padding: 19rem 19rem 19rem 10rem;
-  pointer-events: none;
-  top: 50%;
-  transform: translateY(-50%); }
-  .textarea-placeholder.hide {
-    opacity: 0; }
-
 textarea {
   border: 1rem solid #5E5E5E;
   box-sizing: border-box;
   border-radius: 0rem 0rem 15rem 15rem;
-  min-height: 70rem;
   width: 100%;
   resize: none;
-  padding: 25rem 19rem 19rem 10rem;
+  padding: 21rem 19rem;
   font-size: 17rem;
   line-height: 120%;
   font-family: 'Root';
   position: relative;
-  left: 0;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  margin-bottom: 54rem; }
   textarea::placeholder {
-    opacity: 0; }
+    opacity: 1; }
 
 .brief-image {
   position: absolute;
@@ -1692,7 +1664,7 @@ textarea {
   margin-bottom: 162rem;
   position: relative; }
   .brief__contacts .brief-image {
-    left: -405rem;
+    left: -394rem;
     top: -126rem;
     width: 566rem;
     height: 481rem; }
@@ -1750,7 +1722,7 @@ textarea {
   position: relative;
   margin-bottom: 194rem; }
   .brief__brand-platform .brief-image {
-    right: -498rem;
+    right: -510rem;
     top: -69rem;
     width: 652rem;
     height: 168rem; }
@@ -1770,8 +1742,6 @@ textarea {
     opacity: .7; }
   .brief__brand-platform .brief__dropdown-group {
     margin-bottom: 66rem; }
-  .brief__brand-platform .textarea-wrapper {
-    margin-bottom: 54rem; }
 
 .radio-group_title {
   margin-bottom: 9rem;
@@ -1798,7 +1768,8 @@ textarea {
     height: fit-content;
     margin-top: 6rem; }
   .radio-group_radio label .label__content {
-    margin-top: 31rem;
+    font-size: 14rem;
+    margin-top: 20rem;
     margin-left: -28rem; }
   .radio-group_radio label::before {
     position: absolute;
@@ -1861,7 +1832,7 @@ textarea {
   position: relative;
   margin-bottom: 136rem; }
   .brief__brand-media .brief-image {
-    left: -539rem;
+    left: -528rem;
     top: -147rem;
     width: 667rem;
     height: 479rem; }
@@ -1919,8 +1890,6 @@ textarea {
       background: #A597FD;
       filter: blur(30rem);
       opacity: .7; }
-  .brief__core .brief_radio-group, .brief__core .brief__dropdown-group, .brief__core .brief__text-block {
-    margin-bottom: 50rem; }
 
 .core_range-wrapper .text-block__header {
   margin-bottom: 19rem; }
@@ -2125,12 +2094,12 @@ textarea {
   .brief_total .brief-image {
     width: 647rem;
     height: 285rem;
-    right: -477rem;
+    right: -488rem;
     top: -45rem; }
-  .brief_total .brief__text-block {
-    margin-bottom: 72rem; }
   .brief_total .brief_radio-group {
     margin-bottom: 120rem; }
+    .brief_total .brief_radio-group h2 {
+      margin-bottom: 25px; }
 
 .brief__file-add {
   display: flex;
@@ -2144,6 +2113,7 @@ textarea {
     font-size: 24rem;
     line-height: 108%; }
   .file-add_textblock p {
+    margin-top: 7rem;
     font-size: 17rem;
     line-height: 18.36rem; }
   .file-add_textblock span {
@@ -2225,20 +2195,21 @@ textarea {
 .total-submit_field-alert {
   opacity: 0;
   text-align: center;
-  font-size: 24rem;
-  line-height: 29rem;
-  font-family: 'Root';
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'Montserrat' !important;
+  font-weight: 400 !important;
   color: #FF5289;
-  margin-top: 10rem;
+  margin-top: 21rem;
   margin-bottom: -35rem;
   transition: .3s; }
   .total-submit_field-alert.active {
-    margin-bottom: 0;
+    margin-bottom: -12rem;
     opacity: 1; }
 
 .total-submit_alert {
-  font-size: 14rem;
-  line-height: 16rem;
+  font-size: 14px;
+  line-height: 16px;
   text-align: center;
   font-family: 'Montserrat' !important;
   font-weight: 400 !important;
@@ -2251,8 +2222,7 @@ textarea {
   .total-submit_alert a {
     font-size: inherit;
     line-height: inherit;
-    color: #00FFCB;
-    text-decoration: un; }
+    text-decoration: underline; }
 
 .privacy__main {
   padding: 76rem 10rem 115rem 10rem; }
@@ -3047,8 +3017,6 @@ textarea {
         background: #00FFCB;
         content: "";
         position: absolute; }
-  .brief_total .brief__text-block {
-    margin-bottom: 42rem; }
   .brief_total .brief_radio-group {
     margin-bottom: 68rem; }
   .total-submit_wrapper {

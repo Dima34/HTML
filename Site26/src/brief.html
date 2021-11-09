@@ -217,78 +217,50 @@
 
                 <div class="brief__text-block">
                     <h3 class="text-block__header">Позиционирование бренда</h3>
-                    <div class="textarea-wrapper">
-                        <p class="textarea-placeholder"></p>
                         <textarea name="" id=""></textarea>
-                    </div>
                     
                 </div>
 
                 <div class="brief__text-block">
                     <h3 class="text-block__header">RTB <span>(Reasons to believe) </span> </h3>
-                    <div class="textarea-wrapper">
-                        <p class="textarea-placeholder"></p>
                         <textarea placeholder="Reasons to believe — основные причины верить вашему бренду." name="" id=""></textarea>
-                    </div>
                    
                 </div>
 
                 <div class="brief__text-block">
                     <h3 class="text-block__header">Рациональные преимущества</h3>
-                    <div class="textarea-wrapper">
-                        <p class="textarea-placeholder"></p>
                         <textarea placeholder = "Рациональные преимущества — это характеристики, которые подтверждают эмоциональные составляющие бренда. Они воздействуют на логическое мышление и убеждают потребителя в ценности бренда." name="" id=""></textarea>
-                    </div>
                 </div>
 
                 <div class="brief__text-block">
                     <h3 class="text-block__header">Эмоциональные преимущества</h3>
-                    <div class="textarea-wrapper">
-                        <p class="textarea-placeholder">Эмоциональные преимущества — это характеристики, из которых складывается ключевая ценность бренда и которые формируют образ бренда. Эмоциональные характеристики вдохновляют потребителя.</p>
                         <textarea placeholder = "Эмоциональные преимущества — это характеристики, из которых складывается ключевая ценность бренда и которые формируют образ бренда. Эмоциональные характеристики вдохновляют потребителя.
                         " name="" id=""></textarea>
-                    </div>
                 </div>
 
                 <div class="brief__text-block">
                     <h3 class="text-block__header">Ценности</h3>
-                    <div class="textarea-wrapper">
-                        <p class="textarea-placeholder"></p>
                         <textarea placeholder = "Придают бренду уникальность и выделяют его среди конкурентов." name="" id=""></textarea>
-                    </div>
                 </div>
 
                 <div class="brief__text-block">
                     <h3 class="text-block__header">Характер бренда</h3>
-                    <div class="textarea-wrapper">
-                        <p class="textarea-placeholder"></p>
                         <textarea placeholder = "Персонификация, одушевление нашего бренда. Это определенная стилистика, которой подчинены все материалы и коммуникации бренда. " name="" id=""></textarea>
-                    </div>
                 </div>
 
                 <div class="brief__text-block">
                     <h3 class="text-block__header">Суть бренда</h3>
-                    <div class="textarea-wrapper">
-                        <p class="textarea-placeholder"></p>
                         <textarea placeholder = "Результирующее убеждение, ключевое обещание бренда потребителю." name="" id=""></textarea>
-                    </div>
                 </div>
 
                 <div class="brief__text-block">
                     <h3 class="text-block__header">Миссия</h3>
-                    <div class="textarea-wrapper">
-                        <p class="textarea-placeholder"></p>
                         <textarea placeholder = "Это смысл существования компании и социальные цели, которым она служит." name="" id=""></textarea>
-                    </div>
                 </div>
 
                 <div class="brief__text-block">
                     <h3 class="text-block__header">Tone of voice</h3>
-                    <div class="textarea-wrapper">
-                        <p class="textarea-placeholder"></p>
-                        <textarea placeholder = "Тональность, которой придерживается бренд в коммуникации со своим 
-                        потребителем." name="" id=""></textarea>
-                    </div>
+                        <textarea placeholder = "Тональность, которой придерживается бренд в коммуникации со своим потребителем." name="" id=""></textarea>
                 </div>
 
                 <div class="brief__file-add">
@@ -524,20 +496,17 @@
 
                     <div class="brief__text-block">
                         <h3 class="text-block__header">Драйверы <span>(причины, мотивы покупки)</span></h3>
-                        <div class="textarea-wrapper" minheight="71">
-                            <p class="textarea-placeholder">.</p>
                             <textarea name="" class="requiredContent" id="" style="overflow: hidden; overflow-wrap: break-word; height: 86px; min-height: 86px;"></textarea>
-                        </div>
+                        
                     </div>
 
                     <div class="brief__text-block">
                         <h3 class="text-block__header">Барьеры <span>(причины отказа от покупки, сдерживающие факторы)</span></h3>
-                        <div class="textarea-wrapper" minheight="71">
-                            <p class="textarea-placeholder"></p>
                             <textarea name="" class="requiredContent" id="" style="overflow: hidden; overflow-wrap: break-word; height: 86px; min-height: 86px;"></textarea>
-                        </div>
+                        
                     </div>
                 </div>
+                
             </section>
 
             <section class="brief_total">
@@ -545,10 +514,7 @@
                 <img src="./img/brief-summary_image.svg" alt="contacts image" class="brief-image">
 
                 <div class="brief__text-block">
-                    <div class="textarea-wrapper">
-                        <p class="textarea-placeholder"></p>
                         <textarea placeholder = "О чём ещё вы хотели бы упомянуть?" name="" id=""></textarea>
-                    </div>
                 </div>
 
                 <div class="brief_radio-group">
@@ -572,10 +538,11 @@
 
                 <div class="total-submit_alert ">
                     <span>Нажимая на кнопку, вы даете согласие на</span> <br>
-                    <a href="./brief.html">обработку персональных данных.</a>
+                    <a href="./privacy.html">обработку персональных данных.</a>
                 </div>
 
             </section>
+            
         </div>
     </div>
 
@@ -583,6 +550,8 @@
     <script src="./js/autosize.min.js"></script>
 
     <script>
+        autosize(document.querySelectorAll('textarea'));
+
         const html = document.querySelector("html")
 
         function checkWidth(){
@@ -596,35 +565,7 @@
 
 
     <script>
-        autosize(document.querySelectorAll('textarea'));
-
-        const textareaWraper = document.querySelectorAll(".textarea-wrapper");
-
-        textareaWraper.forEach((el)=>{
-            
-            let innerArea = el.querySelector("textarea");
-            let innerHolder = el.querySelector(".textarea-placeholder");
-
-            innerHolder.innerHTML = innerArea.getAttribute("placeholder");
-
-            let areaHeight = Number(getComputedStyle(innerArea).height.slice(0,-2))
-            let holderHeight = Number(getComputedStyle(innerHolder).height.slice(0,-2))
-            
-            let heighter = holderHeight > areaHeight ? holderHeight : areaHeight;
-
-            el.setAttribute("minHeight", heighter);
-            el.style.height = heighter+"px";
-            innerArea.style.minHeight = heighter+"px";
-
-            innerArea.addEventListener("input", ()=>{
-                areaHeight = Number(getComputedStyle(innerArea).height.slice(0,-2))
-                el.style.height = areaHeight+"px";
-                areaHeight > holderHeight ? el.style.height = areaHeight+"px" : el.height = el.getAttribute("minHeight")+"px"; 
-
-                innerArea.value == "" ?  innerHolder.classList.remove("hide") : innerHolder.classList.add("hide") 
-            })
-        })
-
+        
         const customPlaceholder = document.querySelectorAll(".custom-placeholder_container");
 
         customPlaceholder.forEach(el=>{

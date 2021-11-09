@@ -2127,55 +2127,23 @@ footer{
   }
 }
 
-.textarea-wrapper{
-  width: 100%;
-  min-height: 76rem;
-  position: relative;
-
-  &::after{
-    content: "";
-    padding: 25rem 19rem 19rem 10rem;
-  }
-}
-
-.textarea-placeholder{
-  font-size: 17rem;
-  line-height: 120%;
-  @include Root();
-  color: #5E5E5E;
-  position: absolute;
-  width: 100%;
-  z-index: 2;
-  padding: 19rem 19rem 19rem 10rem;
-  pointer-events: none;
-  top: 50%;
-  transform: translateY(-50%);
-
-  &.hide{
-    opacity: 0;
-  }
-}
 
 textarea{
   border: 1rem solid #5E5E5E;
   box-sizing: border-box;
   border-radius: 0rem 0rem 15rem 15rem;
-  min-height: 70rem;
   width: 100%;
   resize: none;
-  padding: 25rem 19rem 19rem 10rem;
+  padding: 21rem 19rem;
   font-size: 17rem;
   line-height: 120%;
   @include Root();
   position: relative;
-  left: 0;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
+  margin-bottom: 54rem;
   
   &::placeholder{
-    opacity: 0;
+    opacity: 1;
   }
 }
 
@@ -2300,8 +2268,8 @@ textarea{
   margin-bottom: 162rem;
   position: relative;
 
-  .brief-image{
-    left: -405rem;
+  .brief-image {
+    left: -394rem;
     top: -126rem;
     width: 566rem;
     height: 481rem;
@@ -2379,8 +2347,8 @@ textarea{
   margin-bottom: 194rem;
 
 
-  .brief-image{ 
-    right: -498rem;
+  .brief-image {
+    right: -510rem;
     top: -69rem;
     width: 652rem;
     height: 168rem;
@@ -2409,9 +2377,6 @@ textarea{
     margin-bottom: 66rem;
   }
 
-  .textarea-wrapper{
-    margin-bottom: 54rem;
-  }
 }
 
 .radio-group_title{
@@ -2446,7 +2411,8 @@ textarea{
     }
 
     .label__content{
-      margin-top: 31rem;
+      font-size: 14rem;
+      margin-top: 20rem;
       margin-left: -28rem;
     }
 
@@ -2533,7 +2499,7 @@ textarea{
   margin-bottom: 136rem;
 
   .brief-image{
-    left: -539rem;
+    left: -528rem;
     top: -147rem;
     width: 667rem;
     height: 479rem;
@@ -2615,9 +2581,6 @@ textarea{
     }
   }
 
-  .brief_radio-group,.brief__dropdown-group,.brief__text-block{
-    margin-bottom: 50rem;
-  }
 }
 
 .core_range-wrapper{
@@ -2881,18 +2844,16 @@ textarea{
   .brief-image{
     width: 647rem;
     height: 285rem;
-    right: -477rem;
+    right: -488rem;
     top: -45rem;
-
-  }
-
-
-  .brief__text-block{
-    margin-bottom: 72rem;
   }
 
   .brief_radio-group{
     margin-bottom: 120rem;
+
+    h2{
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -2912,6 +2873,7 @@ textarea{
   }
 
   p{
+    margin-top: 7rem;
     font-size: 17rem;
     line-height: 18.36rem;
   }
@@ -3015,23 +2977,23 @@ textarea{
 .total-submit_field-alert{
   opacity: 0;
   text-align: center;
-  font-size: 24rem;
-  line-height: 29rem;
-  @include Root();
+  font-size: 14px;
+  line-height: 16px;
+  @include Mont(400);
   color: #FF5289;
-  margin-top: 10rem;
+  margin-top: 21rem;
   margin-bottom: -35rem;
   transition: .3s;
 
   &.active{
-    margin-bottom: 0;
+    margin-bottom: -12rem;
     opacity: 1;
   }
 }
 
 .total-submit_alert{
-  font-size: 14rem;
-  line-height: 16rem;
+  font-size: 14px;
+  line-height: 16px;
   text-align: center;
   @include Mont(400);
   color: #000000;
@@ -3044,8 +3006,7 @@ textarea{
   a{
     font-size: inherit;
     line-height: inherit;
-    color: #00FFCB;
-    text-decoration: un;
+    text-decoration: underline;
   }
 }
 
@@ -4232,9 +4193,7 @@ textarea{
     }
   }
 
-  .brief_total .brief__text-block {
-    margin-bottom: 42rem;
-  }
+  
 
   .brief_total .brief_radio-group {
     margin-bottom: 68rem;
