@@ -65,7 +65,9 @@
         <picture  class="dinos__dino dinos__dino-left">
             <source media="(max-width: 501px)" srcset="./img/dino-left-mobile.webp">
             <source media="(min-width: 501px)" srcset="./img/dino-left.webp">
-            <img  loading="lazy" decoding="async" src="./img/dino-left.webp" alt="dino right">
+            <source media="(max-width: 501px)" srcset="./img/dino-left-mobile.png">
+            <source media="(min-width: 501px)" srcset="./img/dino-left.png">
+            <img  loading="lazy" decoding="async" src="./img/dino-left.png" alt="dino right">
         </picture>
         
         <div class="dinos__dino dinos__dino-center">
@@ -97,7 +99,7 @@
         <button class="video__playground play-the-video" data-video-id='336257407' data-channel="vimeo">
 
             <div class="playground__left">
-                <img class="video__man" src="../img/svg/man-for-video.svg" width="560" alt="man which points to the video">
+                <img class="video__man" src="./img/svg/man-for-video.svg" width="560" alt="man which points to the video">
                 
                 <picture>
                     <source srcset="./img/svg/video__play.svg" 
