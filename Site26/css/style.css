@@ -939,7 +939,8 @@ input[type="range"] {
   margin-bottom: 174rem;
   position: relative; }
   .connect-to__octopus img {
-    width: 100%; }
+    width: 100%;
+    height: auto; }
   .connect-to__octopus .octopus_eye-right {
     width: 57rem;
     height: 57rem;
@@ -982,7 +983,7 @@ input[type="range"] {
   .reasons__header .pix {
     line-height: 99.33%;
     font-family: 'Pix';
-    -webkit-text-stroke: 2rem #3FFFD8;
+    -webkit-text-stroke: .8rem #3FFFD8;
     color: #1F1F1F;
     margin-left: 86rem;
     letter-spacing: 6.1rem; }
@@ -2345,7 +2346,7 @@ textarea {
     .playground__right .pix {
       margin-top: -13rem;
       margin-right: -44rem;
-      -webkit-text-stroke: 2rem #00FFCB;
+      -webkit-text-stroke: .8rem #00FFCB;
       color: #1F1F1F; }
   .generator {
     display: none; }
@@ -2377,17 +2378,27 @@ textarea {
     height: fit-content; }
     .intro .wrapper {
       display: block;
-      margin-top: 41rem; }
+      margin-top: 121rem;
+      display: flex;
+      flex-direction: column; }
   .intro__title {
     width: 155rem;
     height: 35rem;
     margin-bottom: 5rem; }
   .intro__subtitle {
-    font-size: 6rem;
+    font-size: 9rem;
     line-height: 120%;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3rem;
+    width: 150rem; }
   .intro__arrow-down {
-    display: none; }
+    animation: none;
+    margin-top: 9rem; }
+    .intro__arrow-down svg {
+      height: 27rem; }
   .dinos {
     height: 209rem;
     margin-top: -14rem;
@@ -2519,8 +2530,10 @@ textarea {
     margin: 0;
     font-size: 30rem;
     line-height: 103.4%; }
+  .what-we-create__line2_text {
+    -webkit-text-stroke: .8rem #3FFFD8; }
   .how-it-works {
-    padding-bottom: 150rem; }
+    padding-bottom: 190rem; }
     .how-it-works .wrapper {
       width: unset;
       width: 100%; }
@@ -2552,9 +2565,10 @@ textarea {
   .how-it-works__ship-container {
     display: none; }
   .how-it-works__ship-mobile {
+    width: 200rem;
     display: block;
-    top: 100.5%;
-    right: 11rem; }
+    top: 101.5%;
+    right: 27rem; }
   .register {
     margin-bottom: 32rem;
     padding-top: 29rem; }
@@ -2611,7 +2625,7 @@ textarea {
     .why-we-can__header-mobile span {
       font-family: 'Pix';
       color: #1F1F1F;
-      -webkit-text-stroke: 1rem #FFFFFF;
+      -webkit-text-stroke: .8rem #FFFFFF;
       display: block; }
   .why-we-can__content {
     margin: 0;
@@ -2707,7 +2721,7 @@ textarea {
     text-align: center;
     font-family: 'Rounded'; }
   .connect-to__octopus {
-    content: url(../img/connect-to-mobile.webp);
+    content: url(../img/svg/connect-to-mobile.svg);
     width: unset;
     height: unset;
     margin: 0 auto;
@@ -2865,11 +2879,13 @@ textarea {
     footer p, footer a {
       font-size: 9rem;
       line-height: 11rem; }
-  .footer__logo svg {
-    width: 56rem;
-    height: 13rem; }
+  .footer__logo {
+    margin-bottom: 13rem; }
+    .footer__logo svg {
+      width: 56rem;
+      height: 13rem; }
   .footer__sublogo {
-    margin-bottom: 46px; }
+    margin-bottom: 46rem; }
   .brief {
     width: unset;
     background: white;
@@ -3135,6 +3151,9 @@ textarea {
     display: none; }
   .connect-to__table-mobile {
     display: grid; }
+    .connect-to__table-mobile .connect-to__table_cell img {
+      max-width: unset;
+      max-height: unset; }
   .how-vet-works__contnet-item::after {
     display: none; } }
 

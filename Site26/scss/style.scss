@@ -1289,7 +1289,8 @@ input[type="range"] {
   position: relative;
 
   img{
-    width: 100%;
+    width: 100%; 
+    height: auto;
   }
 
   .octopus_eye-right{
@@ -1343,7 +1344,7 @@ input[type="range"] {
   .pix{
     line-height: 99.33%;
     @include Pix();
-    -webkit-text-stroke: 2rem #3FFFD8;
+    -webkit-text-stroke: .8rem #3FFFD8;
     color: #1F1F1F;
     margin-left: 86rem;
     letter-spacing: 6.1rem;
@@ -3177,7 +3178,7 @@ textarea{
     & .pix{
       margin-top: -13rem;
       margin-right: -44rem;
-      -webkit-text-stroke: 2rem #00FFCB;
+      -webkit-text-stroke: .8rem #00FFCB;
       color: #1F1F1F;
     }
   }
@@ -3223,7 +3224,9 @@ textarea{
 
     .wrapper{
       display: block;
-      margin-top: 41rem;
+      margin-top: 121rem;
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -3234,13 +3237,23 @@ textarea{
   }
 
   .intro__subtitle{
-    font-size: 6rem;
+    font-size: 9rem;
     line-height: 120%;
     margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3rem;
+    width: 150rem;
   }
 
   .intro__arrow-down{
-    display: none;
+    animation: none;
+    margin-top: 9rem;
+
+    svg{
+      height: 27rem;
+    }
   }
 
   .dinos{
@@ -3425,8 +3438,12 @@ textarea{
     line-height: 103.4%;
   }
 
+  .what-we-create__line2_text{
+    -webkit-text-stroke: .8rem #3FFFD8;
+  }
+
   .how-it-works{
-    padding-bottom: 150rem;
+    padding-bottom: 190rem;
     .wrapper{
       width: unset;
       width: 100%;
@@ -3475,9 +3492,10 @@ textarea{
   }
 
   .how-it-works__ship-mobile{
+    width: 200rem;
     display: block;
-    top: 100.5%;
-    right: 11rem;
+    top: 101.5%;
+    right: 27rem;
   }
 
   .register{
@@ -3563,7 +3581,7 @@ textarea{
     span{
       @include Pix();
       color: #1F1F1F;
-      -webkit-text-stroke: 1rem #FFFFFF;
+      -webkit-text-stroke: .8rem #FFFFFF;
       display: block;
     }
   }
@@ -3714,7 +3732,7 @@ textarea{
   }
 
   .connect-to__octopus{
-    content: url(../img/connect-to-mobile.webp);
+    content: url(../img/svg/connect-to-mobile.svg);
     width: unset;
     height: unset;
     margin: 0 auto;
@@ -3954,6 +3972,7 @@ textarea{
   }
   
   .footer__logo{
+    margin-bottom: 13rem;
 
     svg{
       width: 56rem;
@@ -3963,7 +3982,7 @@ textarea{
   }
 
   .footer__sublogo{
-    margin-bottom: 46px;
+    margin-bottom: 46rem;
   }
 
   .brief{
@@ -4378,7 +4397,10 @@ textarea{
   .connect-to__table-mobile{
     display: grid;
 
-
+    .connect-to__table_cell img{
+      max-width: unset;
+      max-height: unset;
+    }
   }
 
   .how-vet-works__contnet-item::after{
