@@ -4,40 +4,30 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/montserrat-v18-latin_cyrillic-regular.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/montserrat-v18-latin_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v18-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/montserrat-v18-latin_cyrillic-regular.woff") format("woff"), url("../fonts/montserrat-v18-latin_cyrillic-regular.ttf") format("truetype"), url("../fonts/montserrat-v18-latin_cyrillic-regular.svg#Montserrat") format("svg");
-  /* Legacy iOS */ }
+  font-display: swap;
+  src: url("../fonts/montserrat-v18-latin_cyrillic-regular.woff2") format("woff2"); }
 
 /* montserrat-500 - latin_cyrillic */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/montserrat-v18-latin_cyrillic-500.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/montserrat-v18-latin_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v18-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/montserrat-v18-latin_cyrillic-500.woff") format("woff"), url("../fonts/montserrat-v18-latin_cyrillic-500.ttf") format("truetype"), url("../fonts/montserrat-v18-latin_cyrillic-500.svg#Montserrat") format("svg");
-  /* Legacy iOS */ }
+  font-display: swap;
+  src: url("../fonts/montserrat-v18-latin_cyrillic-500.woff2") format("woff2"); }
 
 /* montserrat-600 - latin_cyrillic */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/montserrat-v18-latin_cyrillic-600.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/montserrat-v18-latin_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v18-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/montserrat-v18-latin_cyrillic-600.woff") format("woff"), url("../fonts/montserrat-v18-latin_cyrillic-600.ttf") format("truetype"), url("../fonts/montserrat-v18-latin_cyrillic-600.svg#Montserrat") format("svg");
-  /* Legacy iOS */ }
+  font-display: swap;
+  src: url("../fonts/montserrat-v18-latin_cyrillic-600.woff2") format("woff2"); }
 
-/* montserrat-700 - latin_cyrillic */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/montserrat-v18-latin_cyrillic-700.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/montserrat-v18-latin_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v18-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/montserrat-v18-latin_cyrillic-700.woff") format("woff"), url("../fonts/montserrat-v18-latin_cyrillic-700.ttf") format("truetype"), url("../fonts/montserrat-v18-latin_cyrillic-700.svg#Montserrat") format("svg");
-  /* Legacy iOS */ }
+  src: url("../fonts/montserrat-v18-latin_cyrillic-700.woff2") format("woff2"); }
 
 @font-face {
   font-family: 'Root';
@@ -90,6 +80,9 @@ input[type="range"] {
 
 .pix {
   font-family: 'Pix'; }
+
+.mobile {
+  display: none; }
 
 .intro {
   min-height: 100vh;
@@ -2315,16 +2308,19 @@ textarea {
     padding: 50rem 30rem; } }
 
 @media screen and (max-width: 501px) {
+  .mobile {
+    display: block; }
   .video__title {
     max-width: 259rem;
     text-align: left;
-    margin-bottom: 20rem;
+    margin-bottom: -36rem;
     font-size: 13rem;
-    line-height: 120%; }
+    line-height: 120%;
+    text-align: center; }
   .video__playground {
     flex-direction: column;
     margin-left: 32rem;
-    margin-bottom: 70rem; }
+    margin-bottom: 16rem; }
   .playground__left {
     margin-top: 68rem;
     display: flex;
@@ -2570,7 +2566,7 @@ textarea {
     top: 101.5%;
     right: 27rem; }
   .register {
-    margin-bottom: 32rem;
+    margin-bottom: 0rem;
     padding-top: 29rem; }
     .register .wrapper {
       width: 83.44vw;
@@ -2591,7 +2587,7 @@ textarea {
   .why-we-can__header {
     display: none; }
   .why-we-can {
-    margin-bottom: 49rem;
+    margin-bottom: 33rem;
     padding-top: 0;
     padding-bottom: 0; }
     .why-we-can .wrapper {
@@ -2602,18 +2598,18 @@ textarea {
         display: none; }
   .why-we-can__illustration {
     align-self: center;
-    width: 139rem;
+    width: 220rem;
     height: unset;
     margin: 0;
     margin-bottom: 32rem; }
     .why-we-can__illustration .main-image {
-      width: 139rem;
+      width: 220rem;
       height: auto; }
     .why-we-can__illustration .eyes {
       width: auto;
-      height: 1.5rem;
-      left: 17.5rem;
-      bottom: 109.2rem; }
+      height: 3rem;
+      left: 26rem;
+      bottom: 171.9rem; }
   .why-we-can__header-mobile {
     display: block;
     font-size: 30rem;
@@ -2750,11 +2746,11 @@ textarea {
     top: 42rem; }
   .connect-to__reasons {
     grid-row: 5/6;
-    margin-bottom: 55px; }
+    margin-bottom: 5px; }
   .reasons__header {
     font-size: 30px;
     line-height: 103.4%;
-    margin-bottom: 53rem; }
+    margin-bottom: 60rem; }
     .reasons__header .rainbow {
       font-size: 85px;
       line-height: 113%;
@@ -2843,7 +2839,7 @@ textarea {
     display: none; }
   .its-match {
     grid-row: 10/11;
-    margin-bottom: 75rem;
+    margin-bottom: 40rem;
     padding-bottom: 0; }
     .its-match .wrapper {
       width: 215rem; }
@@ -2878,14 +2874,15 @@ textarea {
     margin-bottom: 31rem; }
     footer p, footer a {
       font-size: 9rem;
-      line-height: 11rem; }
-  .footer__logo {
-    margin-bottom: 13rem; }
-    .footer__logo svg {
-      width: 56rem;
-      height: 13rem; }
+      line-height: 11rem;
+      padding: 0 5rem; }
+  .footer__logo svg {
+    width: 56rem;
+    height: 13rem; }
   .footer__sublogo {
-    margin-bottom: 46rem; }
+    margin-bottom: 11rem; }
+  .footer__links {
+    padding: 0 5rem; }
   .brief {
     width: unset;
     background: white;
@@ -3150,7 +3147,9 @@ textarea {
   .connect-to__table {
     display: none; }
   .connect-to__table-mobile {
-    display: grid; }
+    display: grid;
+    grid-template-rows: min-content 56rem 56rem 56rem 56rem 56rem 56rem;
+    margin-bottom: 27rem; }
     .connect-to__table-mobile .connect-to__table_cell img {
       max-width: unset;
       max-height: unset; }

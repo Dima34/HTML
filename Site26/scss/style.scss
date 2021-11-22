@@ -5,52 +5,32 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/montserrat-v18-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/montserrat-v18-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/montserrat-v18-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/montserrat-v18-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/montserrat-v18-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/montserrat-v18-latin_cyrillic-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+  font-display: swap;
+  src: url('../fonts/montserrat-v18-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
 }
 /* montserrat-500 - latin_cyrillic */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/montserrat-v18-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/montserrat-v18-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/montserrat-v18-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/montserrat-v18-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/montserrat-v18-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/montserrat-v18-latin_cyrillic-500.svg#Montserrat') format('svg'); /* Legacy iOS */
+  font-display: swap;
+  src: url('../fonts/montserrat-v18-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
 }
 /* montserrat-600 - latin_cyrillic */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/montserrat-v18-latin_cyrillic-600.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/montserrat-v18-latin_cyrillic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/montserrat-v18-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/montserrat-v18-latin_cyrillic-600.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/montserrat-v18-latin_cyrillic-600.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/montserrat-v18-latin_cyrillic-600.svg#Montserrat') format('svg'); /* Legacy iOS */
-}
+  font-display: swap;
+  src:  url('../fonts/montserrat-v18-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
 /* montserrat-700 - latin_cyrillic */
+}
+
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/montserrat-v18-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/montserrat-v18-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/montserrat-v18-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/montserrat-v18-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/montserrat-v18-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/montserrat-v18-latin_cyrillic-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+  src:url('../fonts/montserrat-v18-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
 }
 
 @font-face {
@@ -138,6 +118,10 @@ input[type="range"] {
 
 .pix{
   @include Pix();
+}
+
+.mobile{
+  display: none;
 }
 
 // ---------------------
@@ -3136,18 +3120,22 @@ textarea{
 
 @media screen and (max-width: 501px){
 
+  .mobile{
+    display: block;
+  }
   .video__title {
     max-width: 259rem;
     text-align: left;
-    margin-bottom: 20rem;
+    margin-bottom: -36rem;
     font-size: 13rem;
     line-height: 120%;
+    text-align: center;
   }
 
   .video__playground{
     flex-direction: column;
     margin-left: 32rem;
-    margin-bottom: 70rem;
+    margin-bottom: 16rem;
   }
   
   .playground__left{
@@ -3499,7 +3487,7 @@ textarea{
   }
 
   .register{
-    margin-bottom: 32rem;
+    margin-bottom: 0rem;
     padding-top: 29rem;
 
     .wrapper{
@@ -3534,7 +3522,7 @@ textarea{
   }
 
   .why-we-can{
-    margin-bottom: 49rem;
+    margin-bottom: 33rem;
     padding-top: 0;
     padding-bottom: 0;
 
@@ -3551,21 +3539,21 @@ textarea{
 
   .why-we-can__illustration {
     align-self: center;
-    width: 139rem;
+    width: 220rem;
     height: unset;
     margin: 0;
     margin-bottom: 32rem;
 
     & .main-image{
-      width: 139rem;
+      width: 220rem;
       height: auto; 
     }
   
     & .eyes{
       width: auto;
-      height: 1.5rem;
-      left: 17.5rem;
-      bottom: 109.2rem;
+      height: 3rem;
+      left: 26rem;
+      bottom: 171.9rem;
     }
   }
   
@@ -3775,13 +3763,13 @@ textarea{
 
   .connect-to__reasons{
     grid-row: 5/6;
-    margin-bottom: 55px;
+    margin-bottom: 5px;
   }
 
   .reasons__header{
     font-size: 30px;
     line-height: 103.4%;
-    margin-bottom: 53rem;
+    margin-bottom: 60rem;
 
   
     .rainbow{
@@ -3917,7 +3905,7 @@ textarea{
 
   .its-match{
     grid-row: 10/11;
-    margin-bottom: 75rem;
+    margin-bottom: 40rem;
     padding-bottom: 0;
 
     .wrapper{
@@ -3968,11 +3956,11 @@ textarea{
     p,a{
       font-size: 9rem;
       line-height: 11rem;
+      padding: 0 5rem;
     } 
   }
   
   .footer__logo{
-    margin-bottom: 13rem;
 
     svg{
       width: 56rem;
@@ -3982,7 +3970,11 @@ textarea{
   }
 
   .footer__sublogo{
-    margin-bottom: 46rem;
+    margin-bottom: 11rem;
+  }
+
+  .footer__links{
+    padding: 0 5rem;
   }
 
   .brief{
@@ -4396,6 +4388,9 @@ textarea{
   }
   .connect-to__table-mobile{
     display: grid;
+    grid-template-rows: min-content 56rem 56rem 56rem 56rem 56rem 56rem;
+    margin-bottom: 27rem;
+
 
     .connect-to__table_cell img{
       max-width: unset;
