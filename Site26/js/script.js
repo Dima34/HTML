@@ -80,7 +80,10 @@ function scrolling(e){
   animPartiallyVisibleALL(queryA(".dinos__dino-center"),"center__fade");
   animPartiallyVisibleALL(queryA(".ship-container_ship"),"animate__slideInRight", "2.5s");
   animPartiallyVisibleALL(queryA(".what-we-create__illustartion"),"active");
-
+  animPartiallyVisibleALL(queryA(".brief__contacts .brief-image"),"animate__fadeInLeft", "1.2s");
+  animPartiallyVisibleALL(queryA(".brief__brand-platform .brief-image"),"animate__fadeInRight", "1.2s");
+  animPartiallyVisibleALL(queryA(".brief__brand-media .brief-image"),"animate__fadeInLeft", "1.2s");
+  animPartiallyVisibleALL(queryA(".brief_total .brief-image"),"animate__fadeInRight", "1.2s");
 
   if(whatWeIllustartion){
     if(!isPartiallyVisible(whatWeIllustartion)){
