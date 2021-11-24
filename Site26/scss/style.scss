@@ -1664,6 +1664,7 @@ input[type="range"] {
 
 .illustration_draco{
   width: 616rem;
+  height: auto;
   position: relative;
   top: 0rem;
   left: 22rem;
@@ -2102,8 +2103,8 @@ footer{
   margin-bottom: 200rem;
   
   p,a{
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 24rem;
+    line-height: 29rem;
     text-align: center;
     @include Mont(400);
     color: #FFFFFF;
@@ -2113,14 +2114,20 @@ footer{
 
 .footer__logo{
 
-  svg{
-    width: 190rem;
-    height: 44rem;
+  img{
+    width: 204rem;
+    height: 46rem;
   }
 }
 
 .footer__sublogo{
   margin-bottom: 46rem;
+
+  img{
+    width: 216rem;
+    height: 14rem;
+  }
+ 
 }
 
 
@@ -3962,15 +3969,20 @@ textarea{
   
   .footer__logo{
 
-    svg{
-      width: 56rem;
-      height: 13rem;
+    img{
+      width: 93rem;
+      height: 21rem;
     }
     
   }
 
   .footer__sublogo{
     margin-bottom: 11rem;
+
+    img{
+      width: 93rem;
+      height: 5rem;
+    }
   }
 
   .footer__links{

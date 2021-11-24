@@ -1239,6 +1239,7 @@ input[type="range"] {
 
 .illustration_draco {
   width: 616rem;
+  height: auto;
   position: relative;
   top: 0rem;
   left: 22rem; }
@@ -1543,19 +1544,22 @@ footer {
   margin-top: 268rem;
   margin-bottom: 200rem; }
   footer p, footer a {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 24rem;
+    line-height: 29rem;
     text-align: center;
     font-family: 'Montserrat' !important;
     font-weight: 400 !important;
     color: #FFFFFF; }
 
-.footer__logo svg {
-  width: 190rem;
-  height: 44rem; }
+.footer__logo img {
+  width: 204rem;
+  height: 46rem; }
 
 .footer__sublogo {
   margin-bottom: 46rem; }
+  .footer__sublogo img {
+    width: 216rem;
+    height: 14rem; }
 
 .select-wrapper {
   position: relative;
@@ -2876,11 +2880,14 @@ textarea {
       font-size: 9rem;
       line-height: 11rem;
       padding: 0 5rem; }
-  .footer__logo svg {
-    width: 56rem;
-    height: 13rem; }
+  .footer__logo img {
+    width: 93rem;
+    height: 21rem; }
   .footer__sublogo {
     margin-bottom: 11rem; }
+    .footer__sublogo img {
+      width: 93rem;
+      height: 5rem; }
   .footer__links {
     padding: 0 5rem; }
   .brief {

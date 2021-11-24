@@ -15,59 +15,67 @@
 <body>
     @@include('./header.html')
 
-    <section class="hero">
-        <div class="wrapper">
-            <h1>BEAUTYINFO</h1>
-            <h2 class="subtitle">cosmetic & skin care product reviews</h2>
-            <p class="hero__scroll-down">scroll down</p>
-        </div>
-    </section>
-
-    <section class="articles">
-        <div class="wrapper">
-            <h2 class="articles__header">Articles</h2>
-            <div class="post-grid">
-                <div class="card">
-                    <div class="card__header">
-                        <time datetime="25.02.2021">25.02.2021</time>
-                        <a href="#">Μακιγιάζ </a>
-                    </div>
-                    <img src="../img/card.png" alt="card image">
-                    <h3 class="card__title">Lorem Ipsum</h3>
-                    <p class="card__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exe.
-                    </p>
-                    <a href="#" class="card-link">More</a>
-                </div>
-
-                <div class="card">
-                    <div class="card__header">
-                        <time datetime="25.02.2021">25.02.2021</time>
-                        <a href="#">Μακιγιάζ </a>
-                    </div>
-                    <img src="../img/card.png" alt="card image">
-                    <h3 class="card__title">Lorem Ipsum</h3>
-                    <p class="card__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exe.
-                    </p>
-                    <a href="#" class="card-link">More</a>
-                </div>
-
-                <div class="card">
-                    <div class="card__header">
-                        <time datetime="25.02.2021">25.02.2021</time>
-                        <a href="#">Μακιγιάζ </a>
-                    </div>
-                    <img src="../img/card.png" alt="card image">
-                    <h3 class="card__title">Lorem Ipsum</h3>
-                    <p class="card__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exe.
-                    </p>
-                    <a href="#" class="card-link">More</a>
-                </div>
+    <main>
+        <section class="hero">
+            <div class="wrapper">
+                <h1>BEAUTYINFO</h1>
+                <h2 class="subtitle">cosmetic & skin care product reviews</h2>
+                <p class="hero__scroll-down">scroll down</p>
             </div>
-        </div>
-    </section>
+        </section>
+    
+        <section class="articles">
+            <div class="wrapper">
+                <h2 class="articles__header">Articles</h2>
+                <div class="post-grid">
+                    @@include('./card.html', {
+                        "date":"25.02.2021",
+                        "category": "Μακιγιάζ ",
+                        "title":"Lorem Ipsum",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exe."
+                    })
+    
+                    @@include('./card.html', {
+                        "date":"25.02.2021",
+                        "category": "Μακιγιάζ ",
+                        "title":"Lorem Ipsum Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod temporLorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor inciduntLorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt inciduntLorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunteiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exe."
+                    })
+    
+                    @@include('./card.html', {
+                        "date":"25.02.2021",
+                        "category": "Μακιγιάζ ",
+                        "title":"Lorem Ipsum",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exe."
+                    })
+    
+                    @@include('./card.html', {
+                        "date":"25.02.2021",
+                        "category": "Μακιγιάζ ",
+                        "title":"Lorem Ipsum",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exe."
+                    })
+    
+                    @@include('./card.html', {
+                        "date":"25.02.2021",
+                        "category": "Μακιγιάζ ",
+                        "title":"Lorem Ipsum",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exe."
+                    })
+    
+                    @@include('./card.html', {
+                        "date":"25.02.2021",
+                        "category": "Μακιγιάζ ",
+                        "title":"Lorem Ipsum",
+                        "text":"Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exe."
+                    })
+                </div>
+                <button class="articles__all button">All Articles</button>
+    
+            </div>
+        </section>
+    </main>
+    
 
     @@include('./footer.html')
    
