@@ -13,7 +13,7 @@ function shuffle(array) {
         array[randomIndex], array[currentIndex]];
     }
   
-    return array;
+    return array.slice(0, maxPerTime);
 }
 
 function getCookie(name) {
@@ -134,6 +134,7 @@ function getTimeInSeconds(time){
 const updateTime = 2 //Time in minutes after which time will update
 const container = document.getElementById("card_container");
 const containerInner = container.querySelectorAll("div")
+const maxPerTime = 20;
 let items = []
 
 if(containerInner.length > 0){
