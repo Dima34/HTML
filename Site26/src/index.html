@@ -385,6 +385,8 @@
             <div class="connect-to__container">
                 <h2 class="connect-to__title">команда</h2>
                 <p class="connect-to__subtitle">Подключаем лучшие мозги для создания идей. В состав Colable входят стратеги, маркетологи и креативщики из лучших российских агентств, <br> а также независимые эксперты.</p>
+
+                <button class="connect-to_button button" id="popup-open">Стать частью команды Colable</button>
             </div>
 
             <div class="connect-to__octopus">
@@ -623,12 +625,13 @@
         <div class="wrapper">
 
             <h2 class="join__title">До коллабы мечты осталось <span>совсем немного!</span></h2>
-            <p class="join__subtitle">Заполняйте форму и присоединяйтесь к нашему клубу!</p>
+            <p class="join__subtitle">Чтобы подать заявку на регистрацию в Colable, заполните форму.</p>
 
             <form class="join__form" id = "join_form" action="">
-                <input placeholder="Бренд" type="text" name="brand" id="formBrand">
+                <input placeholder="Сайт бренда" type="text" name="brand" id="formBrand">
                 <input userName placeholder="Имя" type="text" name="name" id="formName">
                 <input placeholder="Почта" type="email" name="email" id="formEmail">
+                <input placeholder="Телефон" type="tel" name="phone" id="formPhone">
 
                 <button class="button" type="submit">Присоединиться к Colable</button>
 
@@ -644,11 +647,11 @@
             <div class="join__progress">
 
                 <div class="join__progress_item">
-                    <h3 class="progress_item_title">отправим </h3>
-                    <p class="progress_item_text">
+                    <h3 class="progress_item_title">отправим презентацию </h3>
+                    <!-- <p class="progress_item_text">
                         презентацию <br>
                         с подробным описанием проекта
-                    </p>
+                    </p> -->
 
                     <svg class="progress_item_arrow" width="12" height="81" viewBox="0 0 12 81" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 81L11.7735 71L0.226494 71L6 81ZM5 -4.37114e-08L5 72L7 72L7 4.37114e-08L5 -4.37114e-08Z" fill="white"/>
@@ -657,12 +660,7 @@
                 </div>
 
                 <div class="join__progress_item ">
-                    <h3 class="progress_item_title">заполните</h3>
-                    <p class="progress_item_text">
-                        бриф и вышлете нам <br>
-                        бренд-платформу
-
-                    </p>
+                    <h3 class="progress_item_title">заполните бриф</h3>
 
                     <svg class="progress_item_arrow" width="12" height="81" viewBox="0 0 12 81" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 81L11.7735 71L0.226494 71L6 81ZM5 -4.37114e-08L5 72L7 72L7 4.37114e-08L5 -4.37114e-08Z" fill="white"/>
@@ -670,11 +668,7 @@
                 </div>
 
                 <div class="join__progress_item">
-                    <h3 class="progress_item_title">зарегистрируем</h3>
-                    <p class="progress_item_text">
-                        ваш бренд в Colable
-                    </p>
-                     
+                    <h3 class="progress_item_title">зарегистрируем вас</h3>                     
                 </div>
                 
             </div>
@@ -839,6 +833,28 @@
         </div>
     </section>
 
+    <div class="cookie" id="cookie">
+        <p>Да, мы тоже собираем cookie. <br>
+            Это как печенье, только больше похоже
+            на файлы с неперсонифицорованными
+            текстовыми <a href="https://colable.ru/privacy/">данными о пользователях.</a></p>
+        <button class="button" id="cookie-close">OK</button>
+    </div>
+
+    <div class="connect-popup" id="popup-wrapper">
+        <div class="popup" id="popup-inner">
+            <button class="popup-close" id="popup-close">
+                <img src="../img/pp-close.svg" alt="close popup">
+            </button>
+            <p>Ты копирайтер, маркетолог или стратег?</p>
+            <h2>присоединяйся</h2>
+            <p>и мы вместе будем генерировать крутые идеи для коллабораций!   </p>
+            <img width="15" height="39" src="../img/pp-arrow-down.svg" alt="" >
+            <p>Присылай нам CV на</p>
+            <a href="mailto:hello@colable.ru">hello@colable.ru</a>
+            <p>с темой «Хочу в команду»</p>
+        </div>
+    </div>
 
     @@include('./footer.html')
    

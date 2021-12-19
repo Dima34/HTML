@@ -16,24 +16,41 @@
 
 <body>
     <header id="header">
-    <div class="wrapper">
-        <a href="./index.html" class="header__logo" aria-label = 'to main page'>
-            <img src="./img/logo.svg" width="121" height="17" alt="logo">
-        </a>
+    <div class="wrapper"> 
+
+        <ul class="header__left">
+            <li><a href="#" aria-label="out whatsapp"><img width="39" height="38" src="./img/whatsapp.svg" alt="our whatsapp"></a></li>
+            <li><a href="#" aria-label="out instagram"><img width="39" height="38" src="./img/instagram.svg" alt="our instagram"></a></li>
+        </ul>
 
         <nav class="header__navigation">
             <button class="header__close-burger" aria-label="close menu">
                 <img width="36" height="36" src="./img/burger-close.svg" alt="close burger">
             </button>
             <ul>
+                <li class="header_nav-title">
+                    <p>Σπίτι</p>
+                </li>
                 <li class="has-child">
-                    <a href="#">Μακιγιάζ</a>
-                    <button class="header__navigation_list-opener" aria-label="open submenu"></button>
+                    <div class="header__navigation-item-container">
+                        <a href="#">Μακιγιάζ</a>
+                        <button class="header__navigation_list-opener" aria-label="open submenu">
+                            <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.3161 1.56616L10.9637 12.6505L1.61133 1.56616" stroke="#6D6875" stroke-width="3.08434" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
                     
                     <ul>
                         <li class="has-child">
-                            <a href="#">Πρόσωπο</a>
-                            <button class="header__navigation_list-opener" aria-label="open submenu"></button>
+                            <div class="header__navigation-item-container">
+                                <a href="#">Πρόσωπο</a>
+                                <button class="header__navigation_list-opener" aria-label="open submenu">
+                                    <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.3161 1.56616L10.9637 12.6505L1.61133 1.56616" stroke="#6D6875" stroke-width="3.08434" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
                             
                             <ul>
                                 <li>
@@ -61,9 +78,16 @@
                     </ul>
                 </li>
                 <li class="has-child">
-                    <a href="#">Περιποίηση προσώπου</a>
-                    <button class="header__navigation_list-opener" aria-label="open submenu"></button>                    
-                   
+                    <div class="header__navigation-item-container">
+                        <a href="#">Περιποίηση προσώπου</a>
+                        <button class="header__navigation_list-opener" aria-label="open submenu">
+                            <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.3161 1.56616L10.9637 12.6505L1.61133 1.56616" stroke="#6D6875" stroke-width="3.08434" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                                
+                        </button>                    
+                    </div>
+
                     <ul>
                         <li>
                             <div class="header__navigation-item-container">
@@ -83,27 +107,23 @@
                     </ul>
                 </li>
             </ul>
-            <ul class="header__navigation_socials-mobile">
-                <li><a href="#" aria-label="out whatsapp"><img width="39" height="38" src="./img/whatsapp.svg" alt="our whatsapp"></a></li>
-                <li><a href="#" aria-label="out instagram"><img width="39" height="38" src="./img/instagram.svg" alt="our instagram"></a></li>
-            </ul>
         </nav>
 
-        <nav class="header__second-nav">
-            <ul class="header__socials">
-                <li><a href="#" aria-label="out whatsapp"><img width="39" height="38" src="./img/whatsapp.svg" alt="our whatsapp"></a></li>
-                <li><a href="#" aria-label="out instagram"><img width="39" height="38" src="./img/instagram.svg" alt="our instagram"></a></li>
-            </ul>
+        <a href="./index.html" class="header__logo" aria-label = 'to main page'>
+            <img src="./img/logo.svg" width="121" height="17" alt="logo">
+        </a>
+
+        <nav class="header__right">
             <button aria-label="search on site" class="header__search"><img width="39" height="38" src="./img/search.svg"
                     alt="Open the search"></button>
             <button class="header__burger" aria-label="open menu">
-                <img width="22" height="17" src="./img/burger.svg" alt="open menu">
+                <img width="30" height="30" src="./img/burger.svg" alt="open menu">
             </button>
         </nav>
     </div>
 </header>
 
-    <main>
+    <main class="article-wrapper">
         
         <div class="article" id="article">
             <div class="wrapper">
@@ -170,6 +190,54 @@
                         <img width="64" height="64" src="./img/footer_up.svg" alt="footer up">
                     </a>
                 </div>
+            </div>
+        </div>
+
+        <div class="page-separator wrapper"></div>
+
+        <div class="comment-form">
+            <div class="wrapper">
+                <form action="">
+                    <textarea placeholder="Leave your review"></textarea>
+                    <input placeholder="Name" type="text">
+                    <input placeholder="Email" type="text">
+                    <button class="card__link button" class="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="page-separator wrapper"></div>
+
+        <div class="comments">
+            <div class="wrapper">
+                
+                <div class="comment">
+                    <div class="comment-header">
+                        <p>21.10</p>
+                        <h2>Anton NIkonchuk</h2>
+                        <p>2021</p>
+                    </div>
+                    <p class="comment_text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.”</p>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-header">
+                        <p>21.10</p>
+                        <h2>Anton NIkonchuk</h2>
+                        <p>2021</p>
+                    </div>
+                    <p class="comment_text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.”</p>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-header">
+                        <p>21.10</p>
+                        <h2>Anton NIkonchuk</h2>
+                        <p>2021</p>
+                    </div>
+                    <p class="comment_text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.”</p>
+                </div>
+
             </div>
         </div>
 

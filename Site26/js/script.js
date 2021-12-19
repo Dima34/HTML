@@ -393,3 +393,51 @@ class dualRangeSlider {
 		window.removeEventListener("touchmove", this.moveTouchListener);
 	}
 }
+
+//
+// Cookie close
+//
+
+const cookieWindow = document.getElementById("cookie")
+const cookieClose = document.getElementById("cookie-close")
+
+if(cookieWindow){
+  cookieClose.addEventListener("click", ()=>{cookieWindow.classList.add("closed")})
+}
+
+// 
+// Popup open
+// 
+
+function chechHeight(element, wrapper){
+  const elHeight = getComputedStyle(element).height.slice(0,-2);
+  const windowHeight = window.innerHeight;
+
+  if(elHeight < windowHeight){
+      wrapper.classList.add("center")
+  } else{
+      wrapper.classList.remove("center") 
+  }
+}
+
+const popupWpapper = document.getElementById("popup-wrapper")
+
+if(popupWpapper){
+  const popupOpen = document.getElementById("popup-open")
+  const popupClose = document.getElementById("popup-close")
+  const popupInner = document.getElementById("popup-inner")
+
+  console.log(popupOpen);
+  console.log(popupClose);
+  console.log(popupInner);
+
+  popupOpen.addEventListener("click", ()=>{
+      popupWpapper.classList.add("opened")
+      chechHeight(popupInner,popupWpapper)
+  })
+
+  popupClose.addEventListener("click", ()=>{
+      popupWpapper.classList.remove("opened")
+      chechHeight(popupInner,popupWpapper)
+  })
+}
